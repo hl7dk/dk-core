@@ -8,3 +8,4 @@ Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatu
 Alias: $dk-marital-status = http://hl7.dk/fhir/CodeSystem/dk-marital-status
 Alias: $dk-core-cpr-identifier-system_1 = http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system
 Alias: $dk-marital-status_1 = http://hl7.dk/fhir/core/ValueSet/dk-marital-status
+Alias: $authorisationIDSystem = https://autregweb.sst.dk
