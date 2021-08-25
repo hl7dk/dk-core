@@ -1,6 +1,6 @@
-CodeSystem: DkCoreAuthorizationCodes
-Title: "dk-autorization-codes"
-Description: "DK health authorization codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"
+CodeSystem: DkCoreProfessionGroupCodes
+Title: "dk-profession-groups-codes"
+Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"
 * #C511 "Ambulancebehandler"
 * #9495 "Bandagist"
 * #B511 "Behandlerfarmaceut"
