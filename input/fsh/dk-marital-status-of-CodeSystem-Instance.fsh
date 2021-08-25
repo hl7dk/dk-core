@@ -6,6 +6,7 @@ Usage: #definition
 * url = "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"
 * version = "0.9.0"
 * status = #active
+* name = "DK Marital Status Codes"
 * experimental = false
 * date = "2019-01-29T00:00:00+00:00"
 * publisher = "HL7 Denmark"
