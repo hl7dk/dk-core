@@ -16,7 +16,7 @@ Description: "This structure holds the danish *Central Person Register* (CPR) id
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
 * type.coding.code = #NNDNK (exactly)
 * system 1..
-* system from $dk-core-cpr-identifier-system_1 (required)
+* system = "urn:oid:1.2.208.176.1.2" (exactly)
 * value 1..
 * value obeys cpr
 * value ^maxLength = 10
