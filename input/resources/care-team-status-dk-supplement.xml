@@ -1,0 +1,92 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+
+
+   <supplements value="http://hl7.org/fhir/care-team-status"></supplements>
+
+
+
+   <id value="care-team-status-dk-supplement"></id>
+   
+   <url value="http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement"></url>
+   
+   <version value="3.0.2"></version>
+   <name value="CareTeamStatus"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <publisher value="HL7 DK"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.dk"></value>
+      </telecom>
+   </contact>
+   <description value="Indicates the status of the care team."></description>
+   <caseSensitive value="true"></caseSensitive>
+   
+   <content value="supplement"></content>
+   <concept>
+      <code value="proposed"></code>
+      <display value="Proposed"></display>
+      <definition value="The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Forslag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="The care team is currently participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="suspended"></code>
+      <display value="Suspended"></display>
+      <definition value="The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Suspenderet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="inactive"></code>
+      <display value="Inactive"></display>
+      <definition value="The care team was, but is no longer, participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Inaktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered In Error"></display>
+      <definition value="The care team should have never existed."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+</CodeSystem>

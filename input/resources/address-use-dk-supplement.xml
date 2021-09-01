@@ -1,0 +1,72 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="address-use-dk-supplement"></id>
+   <url value="http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"></url>
+   <supplements value="http://hl7.org/fhir/address-use" ></supplements>
+   <version value="4.0.1"></version>
+   <name value="AddressUse"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <publisher value="HL7 DK"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.dk"></value>
+      </telecom>
+   </contact>
+   <description value="The use of an address"></description>
+   <caseSensitive value="true"></caseSensitive>
+   
+   <content value="supplement"></content>
+   <concept>
+      <code value="home"></code>
+      <display value="Home"></display>
+      <definition value="A communication address at a home."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Hjem"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="work"></code>
+      <display value="Work"></display>
+      <definition value="An office address. First choice for business related contacts during business hours."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Arbejde"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="temp"></code>
+      <display value="Temporary"></display>
+      <definition value="A temporary address. The period can provide more detailed information."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Midlertidig"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="old"></code>
+      <display value="Old / Incorrect"></display>
+      <definition value="This address is no longer in use (or was never correct, but retained for records)."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Gammel / forkert"></value>
+      </designation>
+   </concept>
+</CodeSystem>

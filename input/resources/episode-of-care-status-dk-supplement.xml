@@ -1,0 +1,119 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+
+
+   <supplements value="http://hl7.org/fhir/episode-of-care-status" ></supplements>
+
+
+
+
+
+   <id value="episode-of-care-status-dk-supplement"></id>
+   
+   <url value="http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement"></url>
+   <version value="3.0.2"></version>
+   <name value="EpisodeOfCareStatus"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <publisher value="HL7 DK"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.dk"></value>
+      </telecom>
+   </contact>
+   <description value="The status of the episode of care."></description>
+   <caseSensitive value="true"></caseSensitive>
+   
+   <content value="supplement"></content>
+   <concept>
+      <code value="planned"></code>
+      <display value="Planned"></display>
+      <definition value="This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Planlagt"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="waitlist"></code>
+      <display value="Waitlist"></display>
+      <definition value="This episode has been placed on a waitlist, pending the episode being made active (or cancelled)."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Venteliste"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="This episode of care is current."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="onhold"></code>
+      <display value="On Hold"></display>
+      <definition value="This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite)."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Pauseret"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="finished"></code>
+      <display value="Finished"></display>
+      <definition value="This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Færdig"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="cancelled"></code>
+      <display value="Cancelled"></display>
+      <definition value="The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Annulleret"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered in Error"></display>
+      <definition value="This instance should not have been part of this patient's medical record."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+</CodeSystem>
