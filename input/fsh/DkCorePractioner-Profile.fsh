@@ -2,14 +2,15 @@ Profile: DkCorePractitioner
 Parent: Practitioner
 Id: dk-core-practitioner
 Title: "Danish Core Practitioner Profile"
+Description:  "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"
 * ^contact[0].name = "HL7 Denmark"
 * ^contact[0].telecom[0].system = #url
 * ^contact[0].telecom[0].value = "https://www.hl7.dk/"
 * ^jurisdiction[0] = urn:iso:std:iso:3166#DK
 * ^copyright = "CC-BY-SA-4.0"
 
-* qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "identifier.system"
+* qualification ^slicing.discriminator.type = #type
+* qualification ^slicing.discriminator.path = "identifier"
 * qualification ^slicing.rules = #open
 * qualification ^slicing.ordered = false   // can be omitted, since false is the default
 * qualification ^slicing.description = "Slice based on the identifier.systemm value which allows for official qualifications to
@@ -17,7 +18,6 @@ Declaring the slices, and their cardinalities, to allow a KL-code and a SNOMED C
 * qualification contains
    officialHealthAuthorization 0..1 
 
-* qualification[officialHealthAuthorization].identifier.system = $authorisationIDSystem
 * qualification[officialHealthAuthorization].identifier only AuthorizationIdentifier
 * qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
 
