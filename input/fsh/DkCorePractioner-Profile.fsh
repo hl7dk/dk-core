@@ -8,7 +8,18 @@ Title: "Danish Core Practitioner Profile"
 * ^jurisdiction[0] = urn:iso:std:iso:3166#DK
 * ^copyright = "CC-BY-SA-4.0"
 
-* qualification.code from DkCoreProfessionGroupValueSet (extensible)
+* qualification ^slicing.discriminator.type = #value
+* qualification ^slicing.discriminator.path = "identifier.system"
+* qualification ^slicing.rules = #open
+* qualification ^slicing.ordered = false   // can be omitted, since false is the default
+* qualification ^slicing.description = "Slice based on the identifier.systemm value which allows for official qualifications to
+Declaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code"
+* qualification contains
+   officialHealthAuthorization 0..1 
+
+* qualification[officialHealthAuthorization].identifier.system = $authorisationIDSystem
+* qualification[officialHealthAuthorization].identifier only AuthorizationIdentifier
+* qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
 
 Instance:       HanneSocialraadgiver
 InstanceOf:     DkCorePractitioner
@@ -24,6 +35,6 @@ Title:          "AbrahamLæge"
 Description:    "Eksempel på lægen Abraham fra akutsygeplejen"
 * name.given = "Abraham"
 * name.family = "Murakami"
-* qualification[0].identifier.value = "005ML"
-* qualification[0].identifier.system = $authorisationIDSystem
-* qualification[0].code = DkCoreProfessionGroupCodes#7170 "Læge"
+* qualification[officialHealthAuthorization].identifier.value = "005ML"
+* qualification[officialHealthAuthorization].identifier.system = $authorisationIDSystem
+* qualification[officialHealthAuthorization].code = DkCoreProfessionGroupCodes#7170 "Læge"
