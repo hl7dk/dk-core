@@ -26,7 +26,7 @@ Title: "Danish Core Organization Profile"
 * identifier[Ydernummer].value 1..
 * identifier[CVR-ID] only CVRIdentifier
 * identifier[Kommunekode].system 1..
-* identifier[Kommunekode].system = "urn:oid:2.16.840.1.113883.2.24.1.1" (exactly)
+* identifier[Kommunekode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes" (exactly) // Does not include municipalities in greenland
 * identifier[Kommunekode].value 1..
 * identifier[Regionskode].system 1..
 * identifier[Regionskode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
@@ -36,12 +36,12 @@ Title: "Danish Core Organization Profile"
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-STS-ORG-ID or CVR-ID"
 Severity: #error
-Expression: "identifier.where(system='https://www.kombit.dk/sts/organisation' or system='urn:oid:1.2.208.176.1.4' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
+Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://www.kombit.dk/sts/organisation' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
 
 Instance: b08997bb-4476-4dd0-84dd-2e297f809364
 InstanceOf: DkCoreOrganization
 Title: "TestOrganization"
 Description: "Test organization with SOR id"
 * identifier
-  * system = "urn:oid:1.2.208.176.1.4"
+  * system = "urn:oid:1.2.208.176.1.1"
   * value = "12345678901"
