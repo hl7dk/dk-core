@@ -13,8 +13,6 @@ Description: "This structure holds the danish *Central Person Register* (CPR) id
 * ^jurisdiction[0] = urn:iso:std:iso:3166#DK
 * ^copyright = "CC-BY-SA-4.0"
 * use = #official (exactly)
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* type.coding.code = #NNDNK (exactly)
 * system 1..
 * system from $dk-core-cpr-identifier-system_1 (required)
 * value 1..
