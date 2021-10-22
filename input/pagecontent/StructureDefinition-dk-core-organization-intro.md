@@ -1,0 +1,4 @@
+### Scope and usage
+The Danish Core Organization profile is intended to encapsulate the most common and basic data model of organizations in Danish healthcare system, covering both primary sector (GP's), secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Organization is broardly defined (just as it is in the original FHIR ressource) and may be used to define all organizations directly or indirectly involved in citizen and patient care. 
+
+Please notice, that an organization shall always have at least one identifier. Some identifiers are common in a Danish context, why they are included in the profile. However, it is therefore allowed to add a new identifier for a special usage. 
