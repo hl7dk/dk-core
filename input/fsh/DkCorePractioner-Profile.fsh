@@ -9,8 +9,8 @@ Description:  "HL7 Denmark core profile for health professionals and other actor
 * ^jurisdiction[0] = urn:iso:std:iso:3166#DK
 * ^copyright = "CC-BY-SA-4.0"
 
-* qualification ^slicing.discriminator.type = #type
-* qualification ^slicing.discriminator.path = "identifier"
+* qualification ^slicing.discriminator.type = #value
+* qualification ^slicing.discriminator.path = "identifier.system"
 * qualification ^slicing.rules = #open
 * qualification ^slicing.ordered = false   // can be omitted, since false is the default
 * qualification ^slicing.description = "Slice based on the identifier.systemm value which allows for official qualifications to

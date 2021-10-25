@@ -1,6 +1,7 @@
 Extension: MunicipalityCodes
 Id: dk-core-municipalityCodes
 Title: "Danish Core Municipality codes"
+Description: "Identifier holding the official identifier for a danish municipality"
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2021-03-14T16:56:07+01:00"

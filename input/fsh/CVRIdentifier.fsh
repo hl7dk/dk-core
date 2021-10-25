@@ -1,6 +1,7 @@
 Profile: CVRIdentifier
 Parent: Identifier
 Id: dk-core-cvr-identifier
+Description: "Identifier holding an official company number"
 * ^status = #draft
 * use = #official (exactly)
 * system 1..

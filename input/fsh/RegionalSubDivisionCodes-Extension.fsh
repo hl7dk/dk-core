@@ -1,6 +1,7 @@
 Extension: RegionalSubDivisionCodes
 Id: dk-core-RegionalSubDivisionCodes
 Title: "Danish Core Regional Sub Division Codes Extension"
+Description: "Identifier holding the official organization identifier for a danish region"
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2021-03-14T16:56:07+01:00"

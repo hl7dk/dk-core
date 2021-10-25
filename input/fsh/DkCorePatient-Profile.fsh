@@ -2,6 +2,7 @@ Profile: DkCorePatient
 Parent: Patient
 Id: dk-core-patient
 Title: "Danish Core Patient Profile"
+Description:  "HL7 Denmark core profile for a patient"
 * ^version = "0.9.0"
 * ^date = "2020-02-04"
 * ^publisher = "HL7 Denmark"

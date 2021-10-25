@@ -1,6 +1,7 @@
 Profile: AuthorizationIdentifier
 Parent: Identifier
 Id: dk-core-authorization-identifier
+Description: "Identifier holding the official authorization identifier for a practitioner"
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2021-03-14T16:56:07+01:00"
