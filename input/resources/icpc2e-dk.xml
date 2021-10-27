@@ -1,0 +1,4813 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="icpc2E-DK" />
+    <url value="http://hl7.dk/fhir/core/CodeSystem/icpc2E-DK" />
+    <identifier>
+        <use value="official" />
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:oid:2.16.840.1.113883.6.138.2" />
+    </identifier>
+    <title value="International Classification of Primary Care, second edition (1998), danish translation" />
+    <name value="ICPC-DK-2" />
+    <status value="draft" />
+    <experimental value="false" />
+    <publisher value="HL7 Denmark" />
+    <contact>
+        <name value="HL7 Denmark" />
+        <telecom>
+            <system value="url" />
+            <value value="http://www.hl7.dk" />
+        </telecom>
+    </contact>
+    <description value="International Classification of Primary Care / prepared by the Classification Committee of the World Organization of National Colleges, Academies and Academic Associations of General Practitioners/Family Physicians (WONCA), known more briefly as the World" />
+    <caseSensitive value="true" />
+    <content value="supplement" />
+    <supplements value="http://hl7.org/fhir/sid/icpc-2" />
+    <concept>
+        <code value="A01" />
+        <designation>
+            <language value="da" />
+            <value value="Almen/udbredt smerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A02" />
+        <designation>
+            <language value="da" />
+            <value value="Kulderystelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A03" />
+        <designation>
+            <language value="da" />
+            <value value="Feber" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A04" />
+        <designation>
+            <language value="da" />
+            <value value="Almen svækkelse/træthed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A05" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdomsfølelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A06" />
+        <designation>
+            <language value="da" />
+            <value value="Besvimelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A07" />
+        <designation>
+            <language value="da" />
+            <value value="Koma" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A08" />
+        <designation>
+            <language value="da" />
+            <value value="Hævelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A09" />
+        <designation>
+            <language value="da" />
+            <value value="Svedproblem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A10" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A11" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i brystet, IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A13" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for behandling" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A16" />
+        <designation>
+            <language value="da" />
+            <value value="Irritabelt spædbarn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A18" />
+        <designation>
+            <language value="da" />
+            <value value="Bekymring vedr udseende" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A20" />
+        <designation>
+            <language value="da" />
+            <value value="Anmodning/samtale om dødshjælp" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A21" />
+        <designation>
+            <language value="da" />
+            <value value="Risikofaktor for kræft" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A23" />
+        <designation>
+            <language value="da" />
+            <value value="Risikofaktor IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A25" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for død/dødsproces" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A29" />
+        <designation>
+            <language value="da" />
+            <value value="Alment symptom/almen klage IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A70" />
+        <designation>
+            <language value="da" />
+            <value value="Tuberkulose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A71" />
+        <designation>
+            <language value="da" />
+            <value value="Mæslinger" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A72" />
+        <designation>
+            <language value="da" />
+            <value value="Skoldkopper" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A73" />
+        <designation>
+            <language value="da" />
+            <value value="Malaria" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A74" />
+        <designation>
+            <language value="da" />
+            <value value="Røde hunde" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A75" />
+        <designation>
+            <language value="da" />
+            <value value="Mononukleose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A76" />
+        <designation>
+            <language value="da" />
+            <value value="Virusinfektion med udslæt IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A77" />
+        <designation>
+            <language value="da" />
+            <value value="Virusinfektion IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A78" />
+        <designation>
+            <language value="da" />
+            <value value="Infektionssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A79" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A80" />
+        <designation>
+            <language value="da" />
+            <value value="Skade IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A81" />
+        <designation>
+            <language value="da" />
+            <value value="Multiple skader" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A82" />
+        <designation>
+            <language value="da" />
+            <value value="Følgetilstand efter skade" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A84" />
+        <designation>
+            <language value="da" />
+            <value value="Medicinforgiftning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A85" />
+        <designation>
+            <language value="da" />
+            <value value="Medicinbivirkning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A86" />
+        <designation>
+            <language value="da" />
+            <value value="Forgiftning med ikke-medicinsk stof" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A87" />
+        <designation>
+            <language value="da" />
+            <value value="Komplikation til lægelig behandling" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A88" />
+        <designation>
+            <language value="da" />
+            <value value="Skadevirkning af ydre fysisk faktor" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A89" />
+        <designation>
+            <language value="da" />
+            <value value="Komplikation til protese/implantat/transplantat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A90" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødte misdannelser IKA/multiple" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A91" />
+        <designation>
+            <language value="da" />
+            <value value="Undersøgelse med abnormt fund IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A92" />
+        <designation>
+            <language value="da" />
+            <value value="Allergi/allergisk reaktion IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A93" />
+        <designation>
+            <language value="da" />
+            <value value="Præmaturt barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A94" />
+        <designation>
+            <language value="da" />
+            <value value="Perinatal sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A95" />
+        <designation>
+            <language value="da" />
+            <value value="Perinatal død" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A96" />
+        <designation>
+            <language value="da" />
+            <value value="Død" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A97" />
+        <designation>
+            <language value="da" />
+            <value value="Ingen sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A98" />
+        <designation>
+            <language value="da" />
+            <value value="Helbredsbevar/forebyggende tiltag" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="A99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom/tilstand af uspecifik natur/lokalisation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B04" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr blod" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B25" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for AIDS/HIV" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i blod/lymfesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom i blod/lymfesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr blod/lymfe/immunsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr lymfe/immunsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B70" />
+        <designation>
+            <language value="da" />
+            <value value="Akut lymfadenit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B71" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk/uspecifik lymfadenit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B72" />
+        <designation>
+            <language value="da" />
+            <value value="Hodgkins sygdom/lymfom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B73" />
+        <designation>
+            <language value="da" />
+            <value value="Leukæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B74" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i blod/lymfesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B75" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst i blod/lymfesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B76" />
+        <designation>
+            <language value="da" />
+            <value value="Traumatisk miltruptur" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B77" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på blod/lymfe/milt IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B78" />
+        <designation>
+            <language value="da" />
+            <value value="Arvelig hæmolytisk anæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B79" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt abnormitet i blod/lymfesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B80" />
+        <designation>
+            <language value="da" />
+            <value value="Jernmangelanæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B81" />
+        <designation>
+            <language value="da" />
+            <value value="Vitamin B12-/folinsyremangelanæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B82" />
+        <designation>
+            <language value="da" />
+            <value value="Uspecifik anæmi IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B83" />
+        <designation>
+            <language value="da" />
+            <value value="Purpura/koagulationsdefekt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B84" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorme hvide blodlegemer uden kendt årsag" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B87" />
+        <designation>
+            <language value="da" />
+            <value value="Forstørret milt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B90" />
+        <designation>
+            <language value="da" />
+            <value value="HIV-infektion/AIDS" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="B99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i blod/lymfe/milt/immunsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D01" />
+        <designation>
+            <language value="da" />
+            <value value="Udbredt/turevis smerte i abdomen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D02" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i epigastriet" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D03" />
+        <designation>
+            <language value="da" />
+            <value value="Halsbrand" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D04" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i rectum/anus" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D05" />
+        <designation>
+            <language value="da" />
+            <value value="Perianal kløe" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D06" />
+        <designation>
+            <language value="da" />
+            <value value="Lokaliseret smerte i abdomen IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D07" />
+        <designation>
+            <language value="da" />
+            <value value="Dyspepsi/fordøjelsesbesvær" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D08" />
+        <designation>
+            <language value="da" />
+            <value value="Flatulens/luft i maven/ræben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D09" />
+        <designation>
+            <language value="da" />
+            <value value="Kvalme" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D10" />
+        <designation>
+            <language value="da" />
+            <value value="Opkastning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D11" />
+        <designation>
+            <language value="da" />
+            <value value="Diare" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D12" />
+        <designation>
+            <language value="da" />
+            <value value="Forstoppelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D13" />
+        <designation>
+            <language value="da" />
+            <value value="Gulsot" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D14" />
+        <designation>
+            <language value="da" />
+            <value value="Blodopkastning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D15" />
+        <designation>
+            <language value="da" />
+            <value value="Melæna" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D16" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning fra endetarm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D17" />
+        <designation>
+            <language value="da" />
+            <value value="Ufrivillig afgang af afføring" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D18" />
+        <designation>
+            <language value="da" />
+            <value value="Ændret afføringsmønster" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D19" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra tand/tandkød" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D20" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra mund/tunge/læbe" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D21" />
+        <designation>
+            <language value="da" />
+            <value value="Synkebesvær" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D23" />
+        <designation>
+            <language value="da" />
+            <value value="Forstørret lever" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D24" />
+        <designation>
+            <language value="da" />
+            <value value="Udfyldning i abdomen IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D25" />
+        <designation>
+            <language value="da" />
+            <value value="Udspilet abdomen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i fordøjelsessystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom i fordøjelsessystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr fordøjelsessystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra fordøjelsessystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D70" />
+        <designation>
+            <language value="da" />
+            <value value="Gastrointestinal infektion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D71" />
+        <designation>
+            <language value="da" />
+            <value value="Fåresyge" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D72" />
+        <designation>
+            <language value="da" />
+            <value value="Virushepatit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D73" />
+        <designation>
+            <language value="da" />
+            <value value="Formodet infektiøs gastroenterit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D74" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i mavesæk" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D75" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i tyktarm/endetarm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D76" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i bugspytkirtel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D77" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i fordøjelsessystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D78" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst i fordøjelsessystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D79" />
+        <designation>
+            <language value="da" />
+            <value value="Fremmedlegeme i fordøjelsessystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D80" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på fordøjelsessystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D81" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i fordøjelsessystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D82" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i tand/tandkød" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D83" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i mund/tunge/læbe" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D84" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i spiserør" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D85" />
+        <designation>
+            <language value="da" />
+            <value value="Sår på tolvfingertarm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D87" />
+        <designation>
+            <language value="da" />
+            <value value="Mavekatar" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D88" />
+        <designation>
+            <language value="da" />
+            <value value="Blindtarmsbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D89" />
+        <designation>
+            <language value="da" />
+            <value value="Lyskebrok" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D90" />
+        <designation>
+            <language value="da" />
+            <value value="Hiatushernie" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D91" />
+        <designation>
+            <language value="da" />
+            <value value="Abdominalt brok IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D92" />
+        <designation>
+            <language value="da" />
+            <value value="Divertikelsygdom i tarm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D93" />
+        <designation>
+            <language value="da" />
+            <value value="Colon irritabile" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D94" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk enterit/ulcerøs kolit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D95" />
+        <designation>
+            <language value="da" />
+            <value value="Analfissur/perianal absces" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D96" />
+        <designation>
+            <language value="da" />
+            <value value="Orm/parasit IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D97" />
+        <designation>
+            <language value="da" />
+            <value value="Leversygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D98" />
+        <designation>
+            <language value="da" />
+            <value value="Galdeblærebetændelse/galdesten" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="D99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i fordøjelsessystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F02" />
+        <designation>
+            <language value="da" />
+            <value value="Rødt øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F03" />
+        <designation>
+            <language value="da" />
+            <value value="Sekretion fra øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F04" />
+        <designation>
+            <language value="da" />
+            <value value="Synlig mobil tråd/plet i synsfelt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F05" />
+        <designation>
+            <language value="da" />
+            <value value="Synsklage IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F13" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm fornemmelse i øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F14" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm øjenbevægelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F15" />
+        <designation>
+            <language value="da" />
+            <value value="Abnormt udseende af øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F16" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra øjenlåg" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F17" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr briller" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F18" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr kontaktlinser" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for øjensygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra øje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F70" />
+        <designation>
+            <language value="da" />
+            <value value="Infektiøs konjunktivit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F71" />
+        <designation>
+            <language value="da" />
+            <value value="Allergisk konjunktivit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F72" />
+        <designation>
+            <language value="da" />
+            <value value="Øjenlågsbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F73" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion/inflammation i øje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F74" />
+        <designation>
+            <language value="da" />
+            <value value="Svulst i øje/øjenomgivelser" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F75" />
+        <designation>
+            <language value="da" />
+            <value value="Kontusion/blødning i øje/øjenomgivelser" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F76" />
+        <designation>
+            <language value="da" />
+            <value value="Fremmedlegeme i øje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F79" />
+        <designation>
+            <language value="da" />
+            <value value="Øjenskade IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F80" />
+        <designation>
+            <language value="da" />
+            <value value="Tårekanalstenose hos spædbarn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F81" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse af øje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F82" />
+        <designation>
+            <language value="da" />
+            <value value="Nethindeløsning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F83" />
+        <designation>
+            <language value="da" />
+            <value value="Retinopati" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F84" />
+        <designation>
+            <language value="da" />
+            <value value="Maculadegeneration" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F85" />
+        <designation>
+            <language value="da" />
+            <value value="Ulcus corneae" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F86" />
+        <designation>
+            <language value="da" />
+            <value value="Trakom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F91" />
+        <designation>
+            <language value="da" />
+            <value value="Refraktionsanomali" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F92" />
+        <designation>
+            <language value="da" />
+            <value value="Katarakt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F93" />
+        <designation>
+            <language value="da" />
+            <value value="Glaukom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F94" />
+        <designation>
+            <language value="da" />
+            <value value="Blindhed/svagsyn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F95" />
+        <designation>
+            <language value="da" />
+            <value value="Skelen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="F99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i øje/øjenomgivelser IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H01" />
+        <designation>
+            <language value="da" />
+            <value value="Øresmerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H02" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr hørelsen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H03" />
+        <designation>
+            <language value="da" />
+            <value value="Tinnitus" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H04" />
+        <designation>
+            <language value="da" />
+            <value value="Øreflåd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H05" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning fra øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H13" />
+        <designation>
+            <language value="da" />
+            <value value="Klapfornemmelse for øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H15" />
+        <designation>
+            <language value="da" />
+            <value value="Kosmetisk øreproblem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for øresygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra øre IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H70" />
+        <designation>
+            <language value="da" />
+            <value value="Betændelse i ydre øregang" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H71" />
+        <designation>
+            <language value="da" />
+            <value value="Akut mellemørebetændelse/myringit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H72" />
+        <designation>
+            <language value="da" />
+            <value value="Serøs mellemørebetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H73" />
+        <designation>
+            <language value="da" />
+            <value value="Tillukning af eustakiske rør" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H74" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk mellemørebetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H75" />
+        <designation>
+            <language value="da" />
+            <value value="Svulst i øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H76" />
+        <designation>
+            <language value="da" />
+            <value value="Fremmedlegeme i øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H77" />
+        <designation>
+            <language value="da" />
+            <value value="Perforation af trommehinde" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H78" />
+        <designation>
+            <language value="da" />
+            <value value="Overfladisk skade på øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H79" />
+        <designation>
+            <language value="da" />
+            <value value="Øreskade IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H80" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse af øre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H81" />
+        <designation>
+            <language value="da" />
+            <value value="Voksprop i øregang" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H82" />
+        <designation>
+            <language value="da" />
+            <value value="Vertigosyndrom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H83" />
+        <designation>
+            <language value="da" />
+            <value value="Otosklerose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H84" />
+        <designation>
+            <language value="da" />
+            <value value="Aldersbetinget tunghørhed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H85" />
+        <designation>
+            <language value="da" />
+            <value value="Støjskade" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H86" />
+        <designation>
+            <language value="da" />
+            <value value="Døvhed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="H99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i øre/mastoideus IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i hjerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K02" />
+        <designation>
+            <language value="da" />
+            <value value="Trykken/knugen i hjerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K03" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i kardiovaskulære system IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K04" />
+        <designation>
+            <language value="da" />
+            <value value="Hjertebanken" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K05" />
+        <designation>
+            <language value="da" />
+            <value value="Uregelmæssig hjerterytme IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K06" />
+        <designation>
+            <language value="da" />
+            <value value="Fremtrædende vener" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K07" />
+        <designation>
+            <language value="da" />
+            <value value="Ødem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K22" />
+        <designation>
+            <language value="da" />
+            <value value="Risikofaktor for hjerte/karsygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K24" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for hjertesygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K25" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for forhøjet blodtryk" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for hjerte/karsygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr hjerte/karsygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra hjerte/karsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K70" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i hjerte/karsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K71" />
+        <designation>
+            <language value="da" />
+            <value value="Gigtfeber/reumatisk hjertesygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K72" />
+        <designation>
+            <language value="da" />
+            <value value="Svulst i hjerte/karsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K73" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i hjerte/karsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K74" />
+        <designation>
+            <language value="da" />
+            <value value="Iskæmisk hjertesygdom med angina pectoris" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K75" />
+        <designation>
+            <language value="da" />
+            <value value="Akut myokardieinfarkt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K76" />
+        <designation>
+            <language value="da" />
+            <value value="Iskæmisk hjertesygdom uden angina pectoris" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K77" />
+        <designation>
+            <language value="da" />
+            <value value="Hjertesvigt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K78" />
+        <designation>
+            <language value="da" />
+            <value value="Atrieflimren/flagren" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K79" />
+        <designation>
+            <language value="da" />
+            <value value="Anfaldsvis takykardi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K80" />
+        <designation>
+            <language value="da" />
+            <value value="Hjerterytmeforstyrrelse IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K81" />
+        <designation>
+            <language value="da" />
+            <value value="Mislyd over hjerte/arterie IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K82" />
+        <designation>
+            <language value="da" />
+            <value value="Pulmonal hjertesygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K83" />
+        <designation>
+            <language value="da" />
+            <value value="Hjerteklapsygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K84" />
+        <designation>
+            <language value="da" />
+            <value value="Hjertesygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K85" />
+        <designation>
+            <language value="da" />
+            <value value="Forhøjet blodtryk" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K86" />
+        <designation>
+            <language value="da" />
+            <value value="Ukompliceret hypertension" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K87" />
+        <designation>
+            <language value="da" />
+            <value value="Kompliceret hypertension" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K88" />
+        <designation>
+            <language value="da" />
+            <value value="Ortostatisk hypotension" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K89" />
+        <designation>
+            <language value="da" />
+            <value value="Transitorisk cerebral iskæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K90" />
+        <designation>
+            <language value="da" />
+            <value value="Apopleksi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K91" />
+        <designation>
+            <language value="da" />
+            <value value="Cerebrovaskulær sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K92" />
+        <designation>
+            <language value="da" />
+            <value value="Aterosklerose/perifer karsygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K93" />
+        <designation>
+            <language value="da" />
+            <value value="Lungeemboli" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K94" />
+        <designation>
+            <language value="da" />
+            <value value="Årebetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K95" />
+        <designation>
+            <language value="da" />
+            <value value="Åreknude på ben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K96" />
+        <designation>
+            <language value="da" />
+            <value value="Hæmoride" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="K99" />
+        <designation>
+            <language value="da" />
+            <value value="Kredsløbssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L01" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra cervikalregion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L02" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra ryg" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L03" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra lænd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L04" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra brystkasse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L05" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra flanke/armhule" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L07" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra kæbe" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L08" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra skulder" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L09" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra arm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L10" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra albue" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L11" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra håndled" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L12" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra hånd/finger" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L13" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra hofte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L14" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra lår/underben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L15" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra knæ" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L16" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra ankel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L17" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra fod/tå" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L18" />
+        <designation>
+            <language value="da" />
+            <value value="Muskelsmerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L19" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra muskel IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L20" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra led IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom i muskel/skeletsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra muskel/skeletsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L70" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L71" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L72" />
+        <designation>
+            <language value="da" />
+            <value value="Fraktur af underarm" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L73" />
+        <designation>
+            <language value="da" />
+            <value value="Fraktur af underben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L74" />
+        <designation>
+            <language value="da" />
+            <value value="Fraktur i hånd/fod" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L75" />
+        <designation>
+            <language value="da" />
+            <value value="Fraktur af lårben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L76" />
+        <designation>
+            <language value="da" />
+            <value value="Fraktur IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L77" />
+        <designation>
+            <language value="da" />
+            <value value="Forstuvning af ankel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L78" />
+        <designation>
+            <language value="da" />
+            <value value="Forstuvning af knæ" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L79" />
+        <designation>
+            <language value="da" />
+            <value value="Forstuvning af led IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L80" />
+        <designation>
+            <language value="da" />
+            <value value="Luksation/subluksation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L81" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på muskel/skeletsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L82" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L83" />
+        <designation>
+            <language value="da" />
+            <value value="Cervikalsyndrom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L84" />
+        <designation>
+            <language value="da" />
+            <value value="Rygsyndrom uden smerteudstråling" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L85" />
+        <designation>
+            <language value="da" />
+            <value value="Erhvervet rygdeformitet" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L86" />
+        <designation>
+            <language value="da" />
+            <value value="Rygsyndrom med smerteudstråling" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L87" />
+        <designation>
+            <language value="da" />
+            <value value="Bursit/tendinit/synovit IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L88" />
+        <designation>
+            <language value="da" />
+            <value value="Reumatoid artrit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L89" />
+        <designation>
+            <language value="da" />
+            <value value="Artrose i hofteled" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L90" />
+        <designation>
+            <language value="da" />
+            <value value="Artrose i knæ" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L91" />
+        <designation>
+            <language value="da" />
+            <value value="Artrose IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L92" />
+        <designation>
+            <language value="da" />
+            <value value="Skuldersyndrom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L93" />
+        <designation>
+            <language value="da" />
+            <value value="Tennisalbue" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L94" />
+        <designation>
+            <language value="da" />
+            <value value="Osteokondrose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L95" />
+        <designation>
+            <language value="da" />
+            <value value="Osteoporose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L96" />
+        <designation>
+            <language value="da" />
+            <value value="Akut indre knæskade" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L97" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst i muskel/skeletsystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L98" />
+        <designation>
+            <language value="da" />
+            <value value="Erhvervet deformitet af ekstremitet" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i muskel/skeletsystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N01" />
+        <designation>
+            <language value="da" />
+            <value value="Hovedpine" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N03" />
+        <designation>
+            <language value="da" />
+            <value value="Ansigtssmerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N04" />
+        <designation>
+            <language value="da" />
+            <value value="Rastløse ben" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N05" />
+        <designation>
+            <language value="da" />
+            <value value="Paræstesi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N06" />
+        <designation>
+            <language value="da" />
+            <value value="Føleforstyrrelse IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N07" />
+        <designation>
+            <language value="da" />
+            <value value="Krampeanfald" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N08" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm ufrivillig bevægelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N16" />
+        <designation>
+            <language value="da" />
+            <value value="Forstyrrelse af lugte/smagssans" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N17" />
+        <designation>
+            <language value="da" />
+            <value value="Svimmelhed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N18" />
+        <designation>
+            <language value="da" />
+            <value value="Lammelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N19" />
+        <designation>
+            <language value="da" />
+            <value value="Taleforstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for neurologisk sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra nervesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N70" />
+        <designation>
+            <language value="da" />
+            <value value="Poliomyelit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N71" />
+        <designation>
+            <language value="da" />
+            <value value="Meningit/encefalit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N72" />
+        <designation>
+            <language value="da" />
+            <value value="Tetanus" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N73" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i nervesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N74" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N75" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N76" />
+        <designation>
+            <language value="da" />
+            <value value="Uspecifik svulst i nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N79" />
+        <designation>
+            <language value="da" />
+            <value value="Hjernerystelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N80" />
+        <designation>
+            <language value="da" />
+            <value value="Hjernelæsion IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N81" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på nervesystem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N85" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i nervesystem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N86" />
+        <designation>
+            <language value="da" />
+            <value value="Dissemineret sklerose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N87" />
+        <designation>
+            <language value="da" />
+            <value value="Parkinsons sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N88" />
+        <designation>
+            <language value="da" />
+            <value value="Epilepsi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N89" />
+        <designation>
+            <language value="da" />
+            <value value="Migræne" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N90" />
+        <designation>
+            <language value="da" />
+            <value value="Hortons hovedpine" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N91" />
+        <designation>
+            <language value="da" />
+            <value value="Facialisparese" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N92" />
+        <designation>
+            <language value="da" />
+            <value value="Trigeminusneuralgi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N93" />
+        <designation>
+            <language value="da" />
+            <value value="Karpaltunnelsyndrom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N94" />
+        <designation>
+            <language value="da" />
+            <value value="Perifer neuropati" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N95" />
+        <designation>
+            <language value="da" />
+            <value value="Spændingshovedpine" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="N99" />
+        <designation>
+            <language value="da" />
+            <value value="Neurologisk sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P01" />
+        <designation>
+            <language value="da" />
+            <value value="Angst/nervøsitet/anspændthed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P02" />
+        <designation>
+            <language value="da" />
+            <value value="Akut belastningsreaktion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P03" />
+        <designation>
+            <language value="da" />
+            <value value="Nedtrykthed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P04" />
+        <designation>
+            <language value="da" />
+            <value value="Irritabel/vredladen følelse/adfærd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P05" />
+        <designation>
+            <language value="da" />
+            <value value="Alderspræget følelse/adfærd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P06" />
+        <designation>
+            <language value="da" />
+            <value value="Søvnforstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P07" />
+        <designation>
+            <language value="da" />
+            <value value="Manglende seksuel lyst" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P08" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat seksuel tilfredsstillelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P09" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt vedr. seksuel afvigelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P10" />
+        <designation>
+            <language value="da" />
+            <value value="Stammen/støden/tic" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P11" />
+        <designation>
+            <language value="da" />
+            <value value="Spiseproblem hos barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P12" />
+        <designation>
+            <language value="da" />
+            <value value="Ikke-organisk enurese" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P13" />
+        <designation>
+            <language value="da" />
+            <value value="Ikke-organisk enkoprese" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P15" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk alkoholmisbrug" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P16" />
+        <designation>
+            <language value="da" />
+            <value value="Akut alkoholforgiftning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P17" />
+        <designation>
+            <language value="da" />
+            <value value="Tobaksmisbrug" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P18" />
+        <designation>
+            <language value="da" />
+            <value value="Medicinmisbrug" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P19" />
+        <designation>
+            <language value="da" />
+            <value value="Stofmisbrug" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P20" />
+        <designation>
+            <language value="da" />
+            <value value="Hukommelsessvigt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P22" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr barns adfærd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P23" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr adfærd i pubertet" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P24" />
+        <designation>
+            <language value="da" />
+            <value value="Specifikt indlæringsproblem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P25" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr forandring i livsfase hos voksen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for psykisk sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr psykisk sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P29" />
+        <designation>
+            <language value="da" />
+            <value value="Psykisk symptom/klage IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P70" />
+        <designation>
+            <language value="da" />
+            <value value="Demens" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P71" />
+        <designation>
+            <language value="da" />
+            <value value="Organisk psykose IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P72" />
+        <designation>
+            <language value="da" />
+            <value value="Skizofreni" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P73" />
+        <designation>
+            <language value="da" />
+            <value value="Maniodepressiv psykose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P74" />
+        <designation>
+            <language value="da" />
+            <value value="Angsttilstand" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P75" />
+        <designation>
+            <language value="da" />
+            <value value="Somatoform forstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P76" />
+        <designation>
+            <language value="da" />
+            <value value="Depression" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P77" />
+        <designation>
+            <language value="da" />
+            <value value="Selvmord/selvmordsforsøg" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P78" />
+        <designation>
+            <language value="da" />
+            <value value="Neurasteni" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P79" />
+        <designation>
+            <language value="da" />
+            <value value="Fobisk/obsessiv/kompulsiv tilstand" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P80" />
+        <designation>
+            <language value="da" />
+            <value value="Personlighedsforstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P81" />
+        <designation>
+            <language value="da" />
+            <value value="Hyperkinetisk forstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P82" />
+        <designation>
+            <language value="da" />
+            <value value="Posttraumatisk belastningsreaktion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P85" />
+        <designation>
+            <language value="da" />
+            <value value="Mental retardering" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P86" />
+        <designation>
+            <language value="da" />
+            <value value="Anoreksi/bulimi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P98" />
+        <designation>
+            <language value="da" />
+            <value value="Psykose IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="P99" />
+        <designation>
+            <language value="da" />
+            <value value="Psykisk sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte fra luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R02" />
+        <designation>
+            <language value="da" />
+            <value value="Åndenød" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R03" />
+        <designation>
+            <language value="da" />
+            <value value="Piben/hvæsen i bryst" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R04" />
+        <designation>
+            <language value="da" />
+            <value value="Vejrtrækningsproblem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R05" />
+        <designation>
+            <language value="da" />
+            <value value="Hoste" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R06" />
+        <designation>
+            <language value="da" />
+            <value value="Næseblod" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R07" />
+        <designation>
+            <language value="da" />
+            <value value="Snue/nysen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R08" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra næse IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R09" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra bihule" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R21" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra svælg" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R23" />
+        <designation>
+            <language value="da" />
+            <value value="Stemmeændring/hæshed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R24" />
+        <designation>
+            <language value="da" />
+            <value value="Blodopspytning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R25" />
+        <designation>
+            <language value="da" />
+            <value value="Abnormt opspyt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for luftvejssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra luftveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R71" />
+        <designation>
+            <language value="da" />
+            <value value="Kighoste" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R72" />
+        <designation>
+            <language value="da" />
+            <value value="Streptokokfaryngit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R73" />
+        <designation>
+            <language value="da" />
+            <value value="Byld i næse IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R74" />
+        <designation>
+            <language value="da" />
+            <value value="Akut øvre luftvejsinfektion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R75" />
+        <designation>
+            <language value="da" />
+            <value value="Akut/kronisk bihulebetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R76" />
+        <designation>
+            <language value="da" />
+            <value value="Akut tonsillit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R77" />
+        <designation>
+            <language value="da" />
+            <value value="Akut laryngit/trakeit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R78" />
+        <designation>
+            <language value="da" />
+            <value value="Akut bronkit/bronkiolit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R79" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk bronkit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R80" />
+        <designation>
+            <language value="da" />
+            <value value="Influenza" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R81" />
+        <designation>
+            <language value="da" />
+            <value value="Lungebetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R82" />
+        <designation>
+            <language value="da" />
+            <value value="Pleurit/pleuraekssudat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R83" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i luftveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R84" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i bronkie/lunge" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R85" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i luftveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R86" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R87" />
+        <designation>
+            <language value="da" />
+            <value value="Fremmedlegeme i næse/strube/bronkie" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R88" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på luftveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R89" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R90" />
+        <designation>
+            <language value="da" />
+            <value value="Hypertrofi af tonsiller/polypper" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R92" />
+        <designation>
+            <language value="da" />
+            <value value="Uspecifik svulst i luftveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R95" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk obstruktiv lungesygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R96" />
+        <designation>
+            <language value="da" />
+            <value value="Astma" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R97" />
+        <designation>
+            <language value="da" />
+            <value value="Høfeber" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R98" />
+        <designation>
+            <language value="da" />
+            <value value="Hyperventilation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R99" />
+        <designation>
+            <language value="da" />
+            <value value="Luftvejssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte/ømhed i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S02" />
+        <designation>
+            <language value="da" />
+            <value value="Kløe" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S03" />
+        <designation>
+            <language value="da" />
+            <value value="Vorte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S04" />
+        <designation>
+            <language value="da" />
+            <value value="Lokal knude/fortykkelse i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S05" />
+        <designation>
+            <language value="da" />
+            <value value="Udbredte knuder/fortykkelser i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S06" />
+        <designation>
+            <language value="da" />
+            <value value="Lokaliseret udslæt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S07" />
+        <designation>
+            <language value="da" />
+            <value value="Generaliseret udslæt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S08" />
+        <designation>
+            <language value="da" />
+            <value value="Ændret hudfarve" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S09" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i finger/tå" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S10" />
+        <designation>
+            <language value="da" />
+            <value value="Byld i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S11" />
+        <designation>
+            <language value="da" />
+            <value value="Posttraumatisk hudinfektion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S12" />
+        <designation>
+            <language value="da" />
+            <value value="Insektstik" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S13" />
+        <designation>
+            <language value="da" />
+            <value value="Bid af dyr/menneske" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S14" />
+        <designation>
+            <language value="da" />
+            <value value="Forbrænding/skoldning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S15" />
+        <designation>
+            <language value="da" />
+            <value value="Fremmedlegeme i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S16" />
+        <designation>
+            <language value="da" />
+            <value value="Læsion/kontusion med intakt hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S17" />
+        <designation>
+            <language value="da" />
+            <value value="Overfladisk hudlæsion/hudafskrabning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S18" />
+        <designation>
+            <language value="da" />
+            <value value="Laceration/snitsår" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S19" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på hud IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S20" />
+        <designation>
+            <language value="da" />
+            <value value="Hård hud/ligtorn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S21" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr hudforandring" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S22" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra negl" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S23" />
+        <designation>
+            <language value="da" />
+            <value value="Hårtab/skaldethed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S24" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra hår/hovedbund" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for hudkræft" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for hudsygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr hudsygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra hud IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S70" />
+        <designation>
+            <language value="da" />
+            <value value="Herpes zoster" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S71" />
+        <designation>
+            <language value="da" />
+            <value value="Herpes simplex-infektion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S72" />
+        <designation>
+            <language value="da" />
+            <value value="Scabies" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S73" />
+        <designation>
+            <language value="da" />
+            <value value="Pedikulose/hudinfestation IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S74" />
+        <designation>
+            <language value="da" />
+            <value value="Hudsvamp" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S75" />
+        <designation>
+            <language value="da" />
+            <value value="Candida-infektion i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S76" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i hud IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S77" />
+        <designation>
+            <language value="da" />
+            <value value="Hudkræft" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S78" />
+        <designation>
+            <language value="da" />
+            <value value="Lipom i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S79" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst i hud IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S80" />
+        <designation>
+            <language value="da" />
+            <value value="Solskoldning/aktinisk keratose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S81" />
+        <designation>
+            <language value="da" />
+            <value value="Hæmangiom/lymfangiom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S82" />
+        <designation>
+            <language value="da" />
+            <value value="Modermærke" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S83" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i hud IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S84" />
+        <designation>
+            <language value="da" />
+            <value value="Impetigo" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S85" />
+        <designation>
+            <language value="da" />
+            <value value="Pilonidalcyste/-fistel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S86" />
+        <designation>
+            <language value="da" />
+            <value value="Seboroisk dermatit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S87" />
+        <designation>
+            <language value="da" />
+            <value value="Atopisk dermatit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S88" />
+        <designation>
+            <language value="da" />
+            <value value="Allergisk/toksisk kontaktdermatit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S89" />
+        <designation>
+            <language value="da" />
+            <value value="Bledermatit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S90" />
+        <designation>
+            <language value="da" />
+            <value value="Pityriasis rosea" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S91" />
+        <designation>
+            <language value="da" />
+            <value value="Psoriasis" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S92" />
+        <designation>
+            <language value="da" />
+            <value value="Svedkirtelsygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S93" />
+        <designation>
+            <language value="da" />
+            <value value="Aterom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S94" />
+        <designation>
+            <language value="da" />
+            <value value="Nedgroet negl" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S95" />
+        <designation>
+            <language value="da" />
+            <value value="Molluscum contagiosum" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S96" />
+        <designation>
+            <language value="da" />
+            <value value="Akne" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S97" />
+        <designation>
+            <language value="da" />
+            <value value="Kronisk sår i hud" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S98" />
+        <designation>
+            <language value="da" />
+            <value value="Nældefeber" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="S99" />
+        <designation>
+            <language value="da" />
+            <value value="Hudsygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T01" />
+        <designation>
+            <language value="da" />
+            <value value="Overdreven tørst" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T02" />
+        <designation>
+            <language value="da" />
+            <value value="Overdreven appetit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T03" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat appetit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T04" />
+        <designation>
+            <language value="da" />
+            <value value="Ernæringsproblem hos spædbarn/barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T05" />
+        <designation>
+            <language value="da" />
+            <value value="Ernæringsproblem hos voksen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T07" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm vægtstigning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T08" />
+        <designation>
+            <language value="da" />
+            <value value="Abnormt vægttab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T10" />
+        <designation>
+            <language value="da" />
+            <value value="Forsinket vækst" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T11" />
+        <designation>
+            <language value="da" />
+            <value value="Dehydrering" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i endokrine system" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for endokrin/metabolisk sygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr endokrin/metabolisk sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr endokrine/metaboliske/ernæringsmæssige forh IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T70" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion i endokrine system" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T71" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i skjoldbruskkirtel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T72" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i skjoldbruskkirtel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T73" />
+        <designation>
+            <language value="da" />
+            <value value="Svulst i endokrine system IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T78" />
+        <designation>
+            <language value="da" />
+            <value value="Thyroglossuscyste" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T80" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i endokrine/metaboliske system" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T81" />
+        <designation>
+            <language value="da" />
+            <value value="Struma" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T82" />
+        <designation>
+            <language value="da" />
+            <value value="Fedme" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T83" />
+        <designation>
+            <language value="da" />
+            <value value="Overvægt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T85" />
+        <designation>
+            <language value="da" />
+            <value value="Tyrotoksikose" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T86" />
+        <designation>
+            <language value="da" />
+            <value value="Myksødem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T87" />
+        <designation>
+            <language value="da" />
+            <value value="Hypoglykæmi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T89" />
+        <designation>
+            <language value="da" />
+            <value value="Diabetes type 1" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T90" />
+        <designation>
+            <language value="da" />
+            <value value="Diabetes type 2" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T91" />
+        <designation>
+            <language value="da" />
+            <value value="Mangel på vitamin/ernæring" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T92" />
+        <designation>
+            <language value="da" />
+            <value value="Urinsur gigt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T93" />
+        <designation>
+            <language value="da" />
+            <value value="Lipidforstyrrelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="T99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom vedr endokrine/metaboliske/ernæringsmæssige forhold IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte ved vandladning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U02" />
+        <designation>
+            <language value="da" />
+            <value value="Hyppig vandladning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U04" />
+        <designation>
+            <language value="da" />
+            <value value="Urininkontinens" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U05" />
+        <designation>
+            <language value="da" />
+            <value value="Vandladningsproblem IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U06" />
+        <designation>
+            <language value="da" />
+            <value value="Blod i urin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U07" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr urin IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U08" />
+        <designation>
+            <language value="da" />
+            <value value="Urinretention" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U13" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra urinblære IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U14" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra nyre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for urinvejssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra urinveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U70" />
+        <designation>
+            <language value="da" />
+            <value value="Nyrebækkenbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U71" />
+        <designation>
+            <language value="da" />
+            <value value="Blærebetændelse/urinvejsinfekt IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U72" />
+        <designation>
+            <language value="da" />
+            <value value="Urinrørsbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U75" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i nyre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U76" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i urinblære" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U77" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i urinveje IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U78" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U79" />
+        <designation>
+            <language value="da" />
+            <value value="Uspecifik svulst i urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U80" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U85" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i urinveje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U88" />
+        <designation>
+            <language value="da" />
+            <value value="Glomerulonefrit/nefropati" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U90" />
+        <designation>
+            <language value="da" />
+            <value value="Ortostatisk albuminuri" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U95" />
+        <designation>
+            <language value="da" />
+            <value value="Urinvejssten" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U98" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm urinprøve" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="U99" />
+        <designation>
+            <language value="da" />
+            <value value="Urinvejssygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W01" />
+        <designation>
+            <language value="da" />
+            <value value="Spørgsmål om svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W02" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W03" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning i svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W05" />
+        <designation>
+            <language value="da" />
+            <value value="Opkastning i svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W10" />
+        <designation>
+            <language value="da" />
+            <value value="Postkoital svangerskabsforebyggelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W11" />
+        <designation>
+            <language value="da" />
+            <value value="Peroral svangerskabsforebyggelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W12" />
+        <designation>
+            <language value="da" />
+            <value value="Intrauterin svangerskabsforebyggelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W13" />
+        <designation>
+            <language value="da" />
+            <value value="Sterilisation ?" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W14" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskabsforebyggelse ? IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W15" />
+        <designation>
+            <language value="da" />
+            <value value="Infertilitet/subfertilitet ?" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W17" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperal blødning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W18" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperalt symptom/klage IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W19" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr amning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W21" />
+        <designation>
+            <language value="da" />
+            <value value="Bekymring vedr udseende i svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for svangerskabskomplikation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr svangerskab IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W70" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperal infektion/sepsis" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W71" />
+        <designation>
+            <language value="da" />
+            <value value="Infektion som komplikation til svangerskab/pueriet IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W72" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i forbindelse med svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W73" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst vedr svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W75" />
+        <designation>
+            <language value="da" />
+            <value value="Skade som komplikation til svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W76" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse som svangerskabskomplikation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W78" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W79" />
+        <designation>
+            <language value="da" />
+            <value value="Uønsket svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W80" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskab uden for livmoder" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W81" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskabsforgiftning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W82" />
+        <designation>
+            <language value="da" />
+            <value value="Spontan abort" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W83" />
+        <designation>
+            <language value="da" />
+            <value value="Provokeret abort" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W84" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskab med høj risiko" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W85" />
+        <designation>
+            <language value="da" />
+            <value value="Debuterende diabetes i svangerskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W90" />
+        <designation>
+            <language value="da" />
+            <value value="Ukompliceret fødsel med levendefødt barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W91" />
+        <designation>
+            <language value="da" />
+            <value value="Ukompliceret fødsel med dødfødt barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W92" />
+        <designation>
+            <language value="da" />
+            <value value="Kompliceret fødsel med levendefødt barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W93" />
+        <designation>
+            <language value="da" />
+            <value value="Kompliceret fødsel med dødfødt barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W94" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperal mastit" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W95" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperal mammasygdom IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W96" />
+        <designation>
+            <language value="da" />
+            <value value="Puerperal komplikation IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="W99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom under svangerskab/fødsel IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X02" />
+        <designation>
+            <language value="da" />
+            <value value="Menstruationssmerte" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X03" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte mellem menstruationer" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X04" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte ved samleje (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X05" />
+        <designation>
+            <language value="da" />
+            <value value="Manglende/sparsom menstruation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X06" />
+        <designation>
+            <language value="da" />
+            <value value="Kraftig menstruation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X07" />
+        <designation>
+            <language value="da" />
+            <value value="Uregelmæssig/hyppig menstruation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X08" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning mellem menstruationer" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X09" />
+        <designation>
+            <language value="da" />
+            <value value="Præmenstruelt symptom/klage" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X10" />
+        <designation>
+            <language value="da" />
+            <value value="Udsættelse af menstruation" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X11" />
+        <designation>
+            <language value="da" />
+            <value value="Klimakterielt symptom/klage" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X12" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning efter menopause" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X13" />
+        <designation>
+            <language value="da" />
+            <value value="Blødning efter samleje" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X14" />
+        <designation>
+            <language value="da" />
+            <value value="Udflåd fra vagina" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X15" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra vagina IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X16" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra vulva" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X17" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra underliv (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X18" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i mamma (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X19" />
+        <designation>
+            <language value="da" />
+            <value value="Knude i mamma (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X20" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra brystvorte (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X21" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra bryst (Kvinde) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X22" />
+        <designation>
+            <language value="da" />
+            <value value="Bekymring vedr brystets udseende (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X23" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for seksuelt overført sygdom (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X24" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for seksuel dysfunktion (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X25" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for brystkræft (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom i kønsorgan/mamma (Kvinde) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra kønsorgan (Kvinde) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X70" />
+        <designation>
+            <language value="da" />
+            <value value="Syfilis (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X71" />
+        <designation>
+            <language value="da" />
+            <value value="Gonore (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X72" />
+        <designation>
+            <language value="da" />
+            <value value="Candida-infektion i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X73" />
+        <designation>
+            <language value="da" />
+            <value value="Trichomonas-infektion i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X74" />
+        <designation>
+            <language value="da" />
+            <value value="Underlivsbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X75" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i livmoderhals" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X76" />
+        <designation>
+            <language value="da" />
+            <value value="Brystkræft (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X77" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i kvindeligt kønsorgan IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X78" />
+        <designation>
+            <language value="da" />
+            <value value="Fibrom i livmoder" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X79" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i bryst (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X80" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet svulst i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X81" />
+        <designation>
+            <language value="da" />
+            <value value="Uspecifik svulst i kønsorgan (Kvinde) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X82" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X83" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X84" />
+        <designation>
+            <language value="da" />
+            <value value="Vaginit/vulvit IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X85" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i livmoderhals IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X86" />
+        <designation>
+            <language value="da" />
+            <value value="Abnorm cytologisk prøve fra livmoderhals" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X87" />
+        <designation>
+            <language value="da" />
+            <value value="Prolaps af livmoder/skede" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X88" />
+        <designation>
+            <language value="da" />
+            <value value="Fibrocystisk sygdom i mamma (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X89" />
+        <designation>
+            <language value="da" />
+            <value value="Præmenstruelt syndrom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X90" />
+        <designation>
+            <language value="da" />
+            <value value="Herpes genitalis (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X91" />
+        <designation>
+            <language value="da" />
+            <value value="Kondylom (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X92" />
+        <designation>
+            <language value="da" />
+            <value value="Chlamydiainfektion i kønsorgan (Kvinde)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="X99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i kønsorgan (Kvinde) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y01" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i penis" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y02" />
+        <designation>
+            <language value="da" />
+            <value value="Smerte i testikel/pung" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y03" />
+        <designation>
+            <language value="da" />
+            <value value="Udflåd fra urinrør (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y04" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra penis IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y05" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra testikel/pung IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y06" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra prostata" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y07" />
+        <designation>
+            <language value="da" />
+            <value value="Erektiv dysfunktion" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y08" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage vedr seksuel funktion (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y10" />
+        <designation>
+            <language value="da" />
+            <value value="Infertilitet/subfertilitet (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y13" />
+        <designation>
+            <language value="da" />
+            <value value="Sterilisation (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y14" />
+        <designation>
+            <language value="da" />
+            <value value="Svangerskabsforebyggelse (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y16" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra mamma (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y24" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for seksuel dysfunktion (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y25" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for seksuelt overført sygdom (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y26" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for kræft i kønsorgan (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for sygdom i kønsorgan (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr kønsorgan (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y29" />
+        <designation>
+            <language value="da" />
+            <value value="Symptom/klage fra kønsorgan (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y70" />
+        <designation>
+            <language value="da" />
+            <value value="Syfilis (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y71" />
+        <designation>
+            <language value="da" />
+            <value value="Gonore (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y72" />
+        <designation>
+            <language value="da" />
+            <value value="Herpes genitalis (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y73" />
+        <designation>
+            <language value="da" />
+            <value value="Betændelse i prostata/sædblære" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y74" />
+        <designation>
+            <language value="da" />
+            <value value="Betændelse i testikel/bitestikel" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y75" />
+        <designation>
+            <language value="da" />
+            <value value="Forhudsbetændelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y76" />
+        <designation>
+            <language value="da" />
+            <value value="Kondylom (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y77" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i prostata" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y78" />
+        <designation>
+            <language value="da" />
+            <value value="Kræft i kønsorgan (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y79" />
+        <designation>
+            <language value="da" />
+            <value value="Godartet/uspecifik svulst i kønsorgan (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y80" />
+        <designation>
+            <language value="da" />
+            <value value="Skade på kønsorgan (Mand)" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y81" />
+        <designation>
+            <language value="da" />
+            <value value="Forhudsforsnævring" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y82" />
+        <designation>
+            <language value="da" />
+            <value value="Hypospadi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y83" />
+        <designation>
+            <language value="da" />
+            <value value="Retentio testis" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y84" />
+        <designation>
+            <language value="da" />
+            <value value="Medfødt misdannelse i kønsorgan (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y85" />
+        <designation>
+            <language value="da" />
+            <value value="Prostatahypertrofi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y86" />
+        <designation>
+            <language value="da" />
+            <value value="Hydrocele" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Y99" />
+        <designation>
+            <language value="da" />
+            <value value="Sygdom i kønsorgan (Mand) IKA" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z01" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr fattigdom/økonomi" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z02" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr mad/vand" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z03" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr bolig/naboskab" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z04" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr sociale/kulturelle forhold" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z05" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr arbejde" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z06" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr arbejdsløshed" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z07" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr uddannelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z08" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr social sikring/velfærd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z09" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr juridisk forhold" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z10" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr sundhedsvæsen" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z11" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr komplians/sygdomsforståelse" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z12" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr partner" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z13" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr partners adfærd" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z14" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr partners sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z15" />
+        <designation>
+            <language value="da" />
+            <value value="Tab/dødsfald vedr partner" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z16" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z18" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr barns sygdom" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z19" />
+        <designation>
+            <language value="da" />
+            <value value="Tab/dødsfald vedr barn" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z20" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr forældre/familie" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z21" />
+        <designation>
+            <language value="da" />
+            <value value="Adfærdsproblem hos forældre/familie" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z22" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr sygdom hos forældre/familie" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z23" />
+        <designation>
+            <language value="da" />
+            <value value="Tab/dødsfald vedr forældre/familiemedlemmer" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z24" />
+        <designation>
+            <language value="da" />
+            <value value="Problem vedr forhold til venner" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z25" />
+        <designation>
+            <language value="da" />
+            <value value="Offer for fysisk vold" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z27" />
+        <designation>
+            <language value="da" />
+            <value value="Frygt for socialt problem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z28" />
+        <designation>
+            <language value="da" />
+            <value value="Nedsat funktion/handicap vedr socialt problem" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="Z29" />
+        <designation>
+            <language value="da" />
+            <value value="Socialt problem IKA" />
+        </designation>
+    </concept>
+</CodeSystem>
