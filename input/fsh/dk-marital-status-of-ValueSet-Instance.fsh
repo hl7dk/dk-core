@@ -22,9 +22,9 @@ Usage: #definition
 * compose.include[1].system = "http://hl7.dk/fhir/CodeSystem/dk-marital-status"
 * compose.include[1].concept[0].code = #P
 * compose.include[1].concept[0].display = "Registered partnership"
-* compose.include[1].concept[0].designation[0].language = #da-DK
+* compose.include[1].concept[0].designation[0].language = #da
 * compose.include[1].concept[0].designation[0].value = "Registreret partnerskab"
 * compose.include[1].concept[1].code = #O
 * compose.include[1].concept[1].display = "Dissolved partnership"
-* compose.include[1].concept[1].designation[0].language = #da-DK
+* compose.include[1].concept[1].designation[0].language = #da
 * compose.include[1].concept[1].designation[0].value = "Ophævet partnerskab"
