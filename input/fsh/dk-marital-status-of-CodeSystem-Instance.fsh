@@ -18,9 +18,9 @@ Usage: #definition
 * content = #complete
 * concept[0].code = #P
 * concept[0].display = "Registered partnership"
-* concept[0].designation[0].language = #da-DK
+* concept[0].designation[0].language = #da
 * concept[0].designation[0].value = "Registreret partnerskab"
 * concept[1].code = #O
 * concept[1].display = "Dissolved partnership"
-* concept[1].designation[0].language = #da-DK
+* concept[1].designation[0].language = #da
 * concept[1].designation[0].value = "Ophævet partnerskab"
