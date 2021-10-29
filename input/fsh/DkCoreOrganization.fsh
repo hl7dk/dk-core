@@ -32,7 +32,6 @@ Description:  "HL7 Denmark core profile for a danish health organization"
 * identifier[Regionskode].system 1..
 * identifier[Regionskode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
 * identifier[Regionskode].value 1..
-* type MS
 
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-STS-ORG-ID or CVR-ID"
