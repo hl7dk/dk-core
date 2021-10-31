@@ -4,6 +4,7 @@ Id: dk-core-organization
 Title: "Danish Core Organization Profile"
 Description:  "HL7 Denmark core profile for a danish health organization"
 * ^status = #draft
+* type from sor-organization-type (required)
 * obeys dk-core-organization-mandatory-identifier
 * identifier 1..
 * identifier ^slicing.discriminator[0].type = #value
@@ -40,8 +41,9 @@ Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https:
 
 Instance: b08997bb-4476-4dd0-84dd-2e297f809364
 InstanceOf: DkCoreOrganization
-Title: "TestOrganization"
-Description: "Test organization with SOR id"
+Title: "MedCom Test Organization"
+Description: "MedCom Test Organization with SOR id"
 * identifier
   * system = "urn:oid:1.2.208.176.1.1"
   * value = "12345678901"
+* type = http://snomed.info/sct#264372000
