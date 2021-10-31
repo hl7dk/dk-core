@@ -11,7 +11,7 @@ Usage: #definition
 * contact[0].telecom[0].system = #url
 * contact[0].telecom[0].value = "https://www.hl7.dk/"
 * responsible = "CPR-kontoret, Økonomi- og Indenrigsministeriets departement"
-* type = $v2-0203#NNDNK "National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code"
+//* type = $v2-0203#NNDNK "National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code"
 * description = "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."
 * jurisdiction[0] = urn:iso:std:iso:3166#DK
 * uniqueId[0].type = #oid
