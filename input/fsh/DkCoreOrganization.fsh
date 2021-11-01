@@ -43,7 +43,9 @@ Instance: b08997bb-4476-4dd0-84dd-2e297f809364
 InstanceOf: DkCoreOrganization
 Title: "MedCom Test Organization"
 Description: "MedCom Test Organization with SOR id"
-* identifier
-  * system = "urn:oid:1.2.208.176.1.1"
-  * value = "12345678901"
+* identifier[+].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "12345678901"
+* identifier[+].system = "urn:oid:2.16.840.1.113883.2.24.1.1"
+* identifier[=].value = "00221122"
 * type = http://snomed.info/sct#264372000
+
