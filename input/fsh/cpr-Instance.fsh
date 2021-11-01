@@ -2,7 +2,7 @@ Instance: cpr
 InstanceOf: NamingSystem
 Description: "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."
 Usage: #definition
-* name = "DanishCivilRegistrationSystem"
+* name = "DkCoreDanishCivilRegistrationSystem"
 * status = #active
 * kind = #identifier
 * date = "1968-04-02"

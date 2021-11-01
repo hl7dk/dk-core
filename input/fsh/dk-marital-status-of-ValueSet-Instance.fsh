@@ -6,7 +6,7 @@ Usage: #definition
 * id = "dk-marital-status"
 * url = "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
 * version = "0.9.0"
-* name = "DK Marital Status Codes"
+* name = "DkCoreMaritalStatusCodes"
 * title = "DK MaritalStatus"
 * status = #active
 * experimental = false
@@ -19,7 +19,7 @@ Usage: #definition
 * jurisdiction[0] = urn:iso:std:iso:3166#DK
 * copyright = "CC-BY-SA-4.0"
 * compose.include[0].valueSet[0] = "http://hl7.org/fhir/ValueSet/marital-status"
-* compose.include[1].system = "http://hl7.dk/fhir/CodeSystem/dk-marital-status"
+* compose.include[1].system = "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"
 * compose.include[1].concept[0].code = #P
 * compose.include[1].concept[0].display = "Registered partnership"
 * compose.include[1].concept[0].designation[0].language = #da

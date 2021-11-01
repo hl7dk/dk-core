@@ -2,7 +2,7 @@ ValueSet: DK_Valid_Identifier
 Id: dk-core-cpr-identifier-system
 Title: "CPR Identifier"
 Description: "This value set defines the set of codes that can be used to identify the danish CPR system."
-* ^name = "DK Valid Identifier"
+* ^name = "DkCoreValidIdentifier"
 * ^version = "0.9.0"
 * ^status = #active
 * ^experimental = false

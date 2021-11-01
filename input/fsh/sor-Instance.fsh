@@ -2,7 +2,7 @@ Instance: sor
 InstanceOf: NamingSystem
 Description: "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former."
 Usage: #definition
-* name = "Sundhedsvæsenets Organisationsregister (SOR)"
+* name = "DkCoreSor"
 * status = #active
 * kind = #identifier
 * date = "2021-03-14T16:56:07+01:00"

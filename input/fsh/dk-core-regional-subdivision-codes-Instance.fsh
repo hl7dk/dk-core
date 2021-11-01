@@ -4,7 +4,7 @@ Description: "Subdivision codes (Regional codes) used in Denmark as found on htt
 Usage: #definition
 * url = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
 * version = "0.9.0"
-* name = "Regional subdivision codes"
+* name = "DKCoreRegionalSubdivisionCodes"
 * status = #draft
 * experimental = true
 * date = "2019-02-02T00:00:00+00:00"

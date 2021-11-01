@@ -3,6 +3,7 @@ InstanceOf: CodeSystem
 Description: "DK marital statuses"
 Usage: #definition
 * id = "dk-marital-status"
+* name = "DkCoreMaritalStatus"
 * url = "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"
 * version = "0.9.0"
 * status = #active
