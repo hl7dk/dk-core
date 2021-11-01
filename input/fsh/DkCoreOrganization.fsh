@@ -19,7 +19,7 @@ Description:  "HL7 Denmark core profile for a danish health organization"
     Kommunekode ..1 and
     Regionskode ..1
 * identifier[EAN-ID].system 1..
-* identifier[EAN-ID].system = "urn:oid:1.3.88" (exactly)
+* identifier[EAN-ID].system = "https://www.gs1.org/gln" (exactly)
 * identifier[EAN-ID].value 1..
 * identifier[SOR-ID] only SORIdentifier
 * identifier[KOMBIT-STS-ORG-ID] only KombitStsOrgIdentifier
