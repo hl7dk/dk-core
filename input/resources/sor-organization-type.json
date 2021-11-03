@@ -9,7 +9,8 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct/554471000005108/version/20210930",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/554471000005108",
         "concept": [
           {
             "code": "554221000005108",
@@ -420,12 +421,7 @@
                 "value": "Dietician clinic"
               }
             ]
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct/554471000005108/version/20180331",
-        "concept": [
+          },
           {
             "code": "557511000005107",
             "display": "Acupuncture clinic",
@@ -515,12 +511,7 @@
                 "value": "Social psychological counseling"
               }
             ]
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct/554471000005108/version/20180930",
-        "concept": [
+          },
           {
             "code": "557671000005101",
             "display": "Osteopathy clinic",
