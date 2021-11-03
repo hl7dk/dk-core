@@ -5,7 +5,7 @@ Description: "Example of a patient with confidential adress and name"
 Usage: #example
 * meta.security.system = "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
 * meta.security.code = #R 
-* meta.security.display = "retricted"
+* meta.security.display = "restricted"
 * identifier[0].system = "urn:oid:1.2.208.176.1.2"
 * identifier[0].value = "0908760405"
 * name[0].use = #official
