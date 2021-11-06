@@ -18,9 +18,7 @@ Description:  "HL7 Denmark core profile for a danish health organization"
     CVR-ID ..1 and
     Kommunekode ..1 and
     Regionskode ..1
-* identifier[EAN-ID].system 1..
-* identifier[EAN-ID].system = "https://www.gs1.org/gln" (exactly)
-* identifier[EAN-ID].value 1..
+* identifier[EAN-ID] only GLNIdentifier
 * identifier[SOR-ID] only SORIdentifier
 * identifier[KOMBIT-STS-ORG-ID] only KombitStsOrgIdentifier
 * identifier[Ydernummer].system 1..
@@ -47,5 +45,7 @@ Description: "MedCom Test Organization with SOR id"
 * identifier[=].value = "12345678901"
 * identifier[+].system = "urn:oid:2.16.840.1.113883.2.24.1.1"
 * identifier[=].value = "26919991"
+* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[=].value = "5798002472264"
 * type = http://snomed.info/sct#264372000
 
