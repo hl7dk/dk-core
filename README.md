@@ -6,6 +6,7 @@ Meetings are every odd week on mondays 15:00 - 16:00, be sharp or not. Meetings 
 
 Don't submit a PIN code, as it is not needed.
 
+
 # Governance
 Artifacts found in this repository should be treated as unstable, under continous evaluation, as propsal and not part of the danish national standards unless stated explicitly. Any artifacts that have been found mature enough are submitted to HL7 DK for further approval.
 
