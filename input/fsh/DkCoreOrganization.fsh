@@ -49,6 +49,6 @@ Description: "MedCom Test Organization with SOR id"
 * identifier[+].system = "https://www.gs1.org/gln"
 * identifier[=].value = "5798002472264"
 * identifier[+].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"
-* identifier[=].value = "5798002472264"
+* identifier[=].value = "0751"
 * type = http://snomed.info/sct#264372000
 
