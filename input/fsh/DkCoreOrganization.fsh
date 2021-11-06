@@ -26,8 +26,9 @@ Description:  "HL7 Denmark core profile for a danish health organization"
 * identifier[Ydernummer].value 1..
 * identifier[CVR-ID] only CVRIdentifier
 * identifier[Kommunekode].system 1..
-* identifier[Kommunekode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes" (exactly) // Does not include municipalities in greenland
+* identifier[Kommunekode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes" (exactly)
 * identifier[Kommunekode].value 1..
+* identifier[Kommunekode].value from http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes
 * identifier[Regionskode].system 1..
 * identifier[Regionskode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
 * identifier[Regionskode].value 1..
@@ -46,6 +47,8 @@ Description: "MedCom Test Organization with SOR id"
 * identifier[+].system = "urn:oid:2.16.840.1.113883.2.24.1.1"
 * identifier[=].value = "26919991"
 * identifier[+].system = "https://www.gs1.org/gln"
+* identifier[=].value = "5798002472264"
+* identifier[+].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"
 * identifier[=].value = "5798002472264"
 * type = http://snomed.info/sct#264372000
 

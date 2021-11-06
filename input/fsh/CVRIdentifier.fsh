@@ -25,5 +25,5 @@ Expression:  "
     (value.substring(4,1).toInteger()*4)+
     (value.substring(5,1).toInteger()*3)+
     (value.substring(6,1).toInteger()*2)+
-    (value.substring(7,1).toInteger()*1)) mod 11=0)"
+    (value.substring(7,1).toInteger()*1)) mod(11)=0)"
 Severity:    #error
