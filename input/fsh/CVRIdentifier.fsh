@@ -5,7 +5,7 @@ Description: "Identifier holding an official company number"
 * ^status = #draft
 * use = #official (exactly)
 * system 1..
-* system = "urn:oid:2.16.840.1.113883.2.24.1.1" (exactly)
+* system = "http://cvr.dk" (exactly)
 * value 1..
 * value obeys CVR-length and CVR-modulus-11
 
