@@ -1,6 +1,7 @@
 Profile: SORIdentifier
 Parent: Identifier
 Id: dk-core-sor-identifier
+Title: "SOR Identifier"
 Description: "Identifier holding the official SOR identifier for a danish healthcare organization"
 * ^version = "0.9.0"
 * ^status = #draft

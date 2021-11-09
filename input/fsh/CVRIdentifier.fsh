@@ -1,6 +1,7 @@
 Profile: CVRIdentifier
 Parent: Identifier
 Id: dk-core-cvr-identifier
+Title: "Danish Official Company Number"
 Description: "Identifier holding an official company number"
 * ^status = #draft
 * use = #official (exactly)

@@ -1,6 +1,7 @@
 Profile: Lpr3Identifier
 Parent: Identifier
 Id: lpr3-Identifier
+Title: "LPR3 Identifier"
 Description: "Identifier holding a LPR3 identifier for an organization"
 * ^version = "0.9.0"
 * ^status = #draft
