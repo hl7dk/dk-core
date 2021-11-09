@@ -1,6 +1,7 @@
 Profile: GLNIdentifier
 Parent: Identifier
 Id: dk-core-gln-identifier
+Title: "GLN Identifier"
 Description: "Identifier holding a 13 digit GLN"
 * ^status = #draft
 * use = #official (exactly)
