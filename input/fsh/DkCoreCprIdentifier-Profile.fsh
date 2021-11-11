@@ -2,7 +2,7 @@ Profile: DkCoreCprIdentifier
 Parent: Identifier
 Id: dk-core-cpr-identifier
 Title: "Danish Central Person Register (CPR) Identifier"
-Description: "This structure holds the danish *Central Person Register* (CPR) identifier"
+Description: "This structure holds the danish [CPR](https://cpr.dk/) identifier"
 * ^version = "0.9.0"
 * ^status = #draft
 * ^date = "2019-11-02"
