@@ -1,7 +1,7 @@
 Profile: DkCoreCprIdentifier
 Parent: Identifier
 Id: dk-core-cpr-identifier
-Title: "Danish Core Central Person Register Extension"
+Title: "Danish Central Person Register (CPR) Identifier"
 Description: "This structure holds the danish *Central Person Register* (CPR) identifier"
 * ^version = "0.9.0"
 * ^status = #draft
