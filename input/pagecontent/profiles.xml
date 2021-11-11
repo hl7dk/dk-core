@@ -17,7 +17,7 @@
   {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
 
         <li>
-            <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}  
+            <a href="{{sd.path}}">{{sd.title}}</a>
         </li>
   {%- endif -%}
 {%- endfor -%}  
