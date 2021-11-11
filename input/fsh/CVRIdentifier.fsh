@@ -17,8 +17,7 @@ Severity:    #error
 
 Invariant:   CVR-modulus-11
 Description: "CVR must pass the modulus 11 check"
-Expression:  "
-    ((
+Expression:  "((
     (value.substring(0,1).toInteger()*2)+
     (value.substring(1,1).toInteger()*7)+
     (value.substring(2,1).toInteger()*6)+
