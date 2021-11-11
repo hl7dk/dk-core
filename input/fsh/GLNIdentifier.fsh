@@ -17,8 +17,7 @@ Severity:    #error
 
 Invariant:   gln-modulus-10
 Description: "GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually"
-Expression:  "
-    ((
+Expression:  "((
     (value.substring(0,1).toInteger()*1)+
     (value.substring(1,1).toInteger()*3)+
     (value.substring(2,1).toInteger()*1)+
