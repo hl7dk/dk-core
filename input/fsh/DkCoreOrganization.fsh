@@ -52,3 +52,45 @@ Description: "MedCom Test Organization with SOR id"
 * identifier[=].value = "0751"
 * type = http://snomed.info/sct#264372000
 
+Instance: CenterForDiabetes
+InstanceOf: DkCoreOrganization
+Title: "Center for Diabetes"
+Description: "Center for Diabetes"
+* identifier[+].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "633271000016006"
+* identifier[+].system = "http://cvr.dk"
+* identifier[=].value = "64942212"
+* type = http://snomed.info/sct#264361005
+
+Instance: CenterForDiabetesTeamDiabetes
+InstanceOf: DkCoreOrganization
+Title: "Center for Diabetes Team Diabetes"
+Description: "Center for Diabetes Team Diabetes"
+* identifier[+].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "1133181000016000"
+* identifier[+].system = "http://cvr.dk"
+* identifier[=].value = "64942212"
+* type = http://snomed.info/sct#264361005
+* partOf = Reference(CenterForDiabetes)
+
+Instance: CenterForDiabetesTeamHjerte
+InstanceOf: DkCoreOrganization
+Title: "Center for Diabetes Team Hjerte"
+Description: "Center for Diabetes Team Hjerte"
+* identifier[+].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "1133191000016003"
+* identifier[+].system = "http://cvr.dk"
+* identifier[=].value = "64942212"
+* type = http://snomed.info/sct#264361005
+* partOf = Reference(CenterForDiabetes)
+
+Instance: CenterForDiabetesTeamKvalitet
+InstanceOf: DkCoreOrganization
+Title: "Center for Diabetes Team Kvalitet"
+Description: "Center for Diabetes Team Kvalitet"
+* identifier[+].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "1133201000016001"
+* identifier[+].system = "http://cvr.dk"
+* identifier[=].value = "64942212"
+* type = http://snomed.info/sct#264361005
+* partOf = Reference(CenterForDiabetes)
