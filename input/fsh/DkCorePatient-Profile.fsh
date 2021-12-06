@@ -20,7 +20,7 @@ Description:  "HL7 Denmark core profile for a patient"
 * identifier ^slicing.rules = #open
 * identifier contains cpr ..1
 * identifier[cpr] only DkCoreCprIdentifier
-* name 1.. MS
+* name 0.. MS
 * name ^slicing.discriminator[0].type = #value
 * name ^slicing.discriminator[0].path = "use"
 * name ^slicing.rules = #open
