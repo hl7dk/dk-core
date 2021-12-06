@@ -4,7 +4,7 @@ The Danish Core Organization profile is intended to encapsulate the most common 
 Please notice, that an organization shall always have at least one identifier. Some identifiers are common in a Danish context, why they are included in the profile, see the list below. However, it is allowed to add a new identifier for a special usage. 
 - *EAN identifier*: this specifically, refers to what is commonly known as the **EAN** number - which in fact is a [Global Location Number](https://www.gs1.org/standards/id-keys/gln).
 - *SOR identifier*: a register for Danish health care organizations which contains information about organizations and their location. 
-- *KOMBIT STS organization identifier*: holding the organization code. This is issued by KOMBIT.
+- *KOMBIT organization identifier*: holding the organization code. This is issued by KOMBIT.
 - *Ydernummer identifier*: an identifier for private health professionals like general practitioners or physiotherapists. 
 - *CVR identifier*: an official company identifier for Danish companies.
 - *Kommunal identifier*: the official identifier for a Danish municipality.

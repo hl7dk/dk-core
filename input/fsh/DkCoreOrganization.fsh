@@ -13,14 +13,14 @@ Description:  "HL7 Denmark core profile for a danish health organization"
 * identifier contains
     EAN-ID ..1 and
     SOR-ID ..1 and
-    KOMBIT-STS-ORG-ID ..1 and
+    KOMBIT-ORG-ID ..1 and
     Ydernummer ..1 and
     CVR-ID ..1 and
     Kommunekode ..1 and
     Regionskode ..1
 * identifier[EAN-ID] only GLNIdentifier
 * identifier[SOR-ID] only SORIdentifier
-* identifier[KOMBIT-STS-ORG-ID] only KombitStsOrgIdentifier
+* identifier[KOMBIT-ORG-ID] only KombitOrgIdentifier
 * identifier[Ydernummer].system 1..
 * identifier[Ydernummer].system = "urn:oid:1.2.208.176.1.4" (exactly)
 * identifier[Ydernummer].value 1..
@@ -34,9 +34,9 @@ Description:  "HL7 Denmark core profile for a danish health organization"
 * identifier[Regionskode].value 1..
 
 Invariant: dk-core-organization-mandatory-identifier
-Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-STS-ORG-ID or CVR-ID"
+Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error
-Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://www.kombit.dk/sts/organisation' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
+Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://kombit.dk/sts/organisation' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
 
 Instance: b08997bb-4476-4dd0-84dd-2e297f809364
 InstanceOf: DkCoreOrganization
