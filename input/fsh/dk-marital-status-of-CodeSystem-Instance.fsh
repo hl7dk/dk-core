@@ -2,6 +2,7 @@ Instance: dk-marital-status-of-CodeSystem
 InstanceOf: CodeSystem
 Description: "DK marital statuses"
 Usage: #definition
+* caseSensitive = false
 * id = "dk-marital-status"
 * name = "DkCoreMaritalStatus"
 * url = "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"

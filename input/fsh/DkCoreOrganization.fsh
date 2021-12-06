@@ -48,8 +48,8 @@ Description: "MedCom Test Organization with SOR id"
 * identifier[=].value = "26919991"
 * identifier[+].system = "https://www.gs1.org/gln"
 * identifier[=].value = "5798002472264"
-* identifier[+].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"
-* identifier[=].value = "0751"
+* identifier[+].system = "https://kombit.dk/sts/organisation"
+* identifier[=].value = "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6"
 * type = http://snomed.info/sct#264372000
 
 Instance: CenterForDiabetes

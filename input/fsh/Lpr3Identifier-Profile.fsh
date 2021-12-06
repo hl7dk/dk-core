@@ -15,6 +15,6 @@ Description: "Identifier holding a LPR3 identifier for an organization"
 * system 1..
 * system = "https://www.esundhed.dk/Registre/Landspatientsregisteret" (exactly)
 * value 1..
-* value obeys uuid
-* value ^constraint[1].requirements = "LPR3 episode of care identifiers must conform to a UUID"
+* value obeys uuidv5
+* value ^constraint[1].requirements = "LPR3 episode of care identifiers must conform to a UUIDv5"
 * value ^constraint[1].source = "https://scandihealth.github.io/lpr3-docs/"

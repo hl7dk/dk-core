@@ -1,4 +1,4 @@
 Invariant: uuid
-Description: "LPR3 episode of care identifiers must conform to a UUIDv5"
+Description: "General UUID expression"
 Severity: #error
-Expression: "value.matches('[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[5][a-fA-F0-9]{3}-[89aAbB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}')"
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"

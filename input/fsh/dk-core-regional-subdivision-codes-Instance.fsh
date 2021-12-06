@@ -3,6 +3,7 @@ InstanceOf: CodeSystem
 Title: ""
 Description: "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"
 Usage: #definition
+* caseSensitive = false
 * url = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
 * version = "0.9.0"
 * name = "DKCoreRegionalSubdivisionCodes"

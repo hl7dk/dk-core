@@ -1,6 +1,7 @@
 CodeSystem: DkCoreProfessionGroupCodes
 Title: "dk-profession-groups-codes"
 Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"
+* ^caseSensitive = false
 * #C511 "Ambulancebehandler"
 * #9495 "Bandagist"
 * #B511 "Behandlerfarmaceut"
@@ -22,13 +23,3 @@ Description: "DK health ProfessionGroup codes as defined by https://www.retsinfo
 * #5166 "Sygeplejerske"
 * #5433 "Tandlæge"
 * #5431 "Tandplejer"
-//* id = "dk-autorization-codes"
-//* url = "http://hl7.dk/fhir/core/CodeSystem/dk-autorization-codes"
-//* publisher = "HL7 Denmark"
-//* contact[0].name = "HL7 Denmark"
-//* contact[0].telecom[0].system = #url
-//* contact[0].telecom[0].value = "https://www.hl7.dk/"
-//* jurisdiction[0] = urn:iso:std:iso:3166#DK
-//* copyright = "CC-BY-SA-4.0"
-//* content = #complete
-//* status = #active

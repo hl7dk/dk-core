@@ -13,3 +13,4 @@ Description: "Official CPR CodeSystem"
 * ^copyright = "CC-BY-SA-4.0"
 * ^content = #complete
 * #urn:oid:1.2.208.176.1.2
+* ^caseSensitive = false
