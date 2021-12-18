@@ -145,8 +145,8 @@ url_data = ig_url.split(ig_id)
 
 #checks
 ## url_data[2] must exist
-if url_data[2] != '':
-    exit(1)
+#if url_data[2] != '':
+#    exit(1)
 base = url_data[0]
 ig_canonical = url_data[0]+ig_id
 
