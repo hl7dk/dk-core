@@ -64,6 +64,19 @@ history_template_repo = release['history_template_repo']
 ig_registry_repo = 'https://github.com/FHIR/ig-registry.git'
 
 
+
+# Try and build the IG just to see if it is ok
+if not(skip_1_build):
+  print('\n### Running the publisher to see if everything is ok')
+  result = os.system('java -jar ./input-cache/publisher.jar -ig ig.ini') 
+  if (result!=0):
+      print('Error: IG publication process not successful. Check the IG')
+      exit(2)
+
+  print('\n### Publisher ran ok')
+
+
+
 #### 1.1 ask user for missing variables
 
 #if (webrootfolder==''):
@@ -196,16 +209,6 @@ else:
 os.chdir(igrootfolder)
 print(os.getcwd())
 
-
-# Try and build the IG
-if not(skip_1_build):
-  print('\n### Running the publisher to see if everything is ok')
-  result = os.system('java -jar ./input-cache/publisher.jar -ig ig.ini') 
-  if (result!=0):
-      print('Error: IG publication process not successful. Check the IG')
-      exit(2)
-
-  print('\n### Publisher ran ok')
 
 
 
@@ -367,5 +370,4 @@ if (keep_release_token):
       os. remove(os.path.join('.','release.json'))
 
 exit(0)
-
 
