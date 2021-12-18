@@ -5,6 +5,13 @@
   "canonical": "http://hl7.dk/fhir/core",
   "list": [
     {
+      "version": "1.1.0",
+      "desc": "Release version 1.1.0 contains three DK core profiles. The Danish Core Practitioner and Organization profiles are both introduced in this release, and the Danish Core Patient profile has been updated with some minor changes. These updates include 1) change of the minimum allowed length from 15 to 11 units in the element for the SOR-identifier Patient.generalPractitioner:referencesSORUnit.identifier, 2) removal of the fixed value 'NNDNK' in the element Patient.identifier.type.coding.code, and 3) change of the invariant expression for validation of a CPR. ",
+      "path": "https://hl7.dk/fhir/core/1.1.0/",
+      "status": "release",
+      "fhirVersion": "4.0.1"
+    },
+    {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7dk/dk-core",
