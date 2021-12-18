@@ -6,7 +6,7 @@ Usage: #definition
 * id = "dk-marital-status"
 * url = "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
 * version = "0.9.0"
-* name = "DkCoreMaritalStatusCodes"
+* name = "DK Marital Status Codes"
 * title = "DK MaritalStatus"
 * status = #active
 * experimental = false
