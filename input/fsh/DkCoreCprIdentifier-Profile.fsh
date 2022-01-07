@@ -14,7 +14,8 @@ Description: "This structure holds the danish [CPR](https://cpr.dk/) identifier"
 * ^copyright = "CC-BY-SA-4.0"
 * use = #official (exactly)
 * system 1..
-* system from $dk-core-cpr-identifier-system_1 (required)
+* system = "urn:oid:1.2.208.176.1.2" (exactly)
+//* system from $dk-core-cpr-identifier-system_1 (required)
 * value 1..
 * value obeys cpr
 * value ^maxLength = 10
