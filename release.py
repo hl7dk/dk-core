@@ -37,8 +37,8 @@ if (not(os.path.exists(os.path.join('.','release.json')))):
 with open(os.path.join('.','release.json')) as fd:
     release = json.load(fd)     
 
-
-igrootfolder = os.path.join('..',release['ig'])
+igrootfolder = os.getcwd()
+#igrootfolder = os.path.join('..',release['ig'])
 
 # Variable: release.json.history-template / Default HL7
 
