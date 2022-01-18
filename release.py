@@ -235,7 +235,7 @@ print('\n### Reading and checking publish.ini')
 piinifilename=(os.path.join(webrootfolder, 'publish.ini'))
 if (os.path.exists(piinifilename)):
     publishini.read(piinifilename)
-    if (publishini['website']['url'] != ig_canonical):
+    if (publishini['website']['url'] != base):
         print ("URL in ig.ini does not match that of the IG")
         exit(7)
 else:
@@ -251,7 +251,7 @@ else:
     package = package-feed.xml
     publication = publication-feed.xml
     """)
-    publishini['website']['url'] = ig_canonical
+    publishini['website']['url'] = base
     publishini['website']['org'] = org
     with open(os.path.join('.',webrootfolder, 'publish.ini'), 'w') as inifile:
         publishini.write(inifile)
