@@ -2,16 +2,14 @@
 This repo hosts a set of profiles that are intended to be reviewed and refactored by the DK FHIR SIG. Depending on the feedback recieved in form of PR's and issues, this repo is to be the primary place to store profiles.
 
 # Meetings
-Meetings are every odd week on mondays 15:00 - 16:00, be sharp or not. Meetings are kindly hosted by MedCom at hl7@rooms.medcom.dk. Either use something like Pexip/Skype or use your browser and point it at https://rooms.medcom.dk/
-
-Don't submit a PIN code, as it is not needed.
+Meetings are every odd week on mondays 15:00 - 16:00, be sharp or not.
 
 
 # Governance
 Artifacts found in this repository should be treated as unstable, under continous evaluation, as propsal and not part of the danish national standards unless stated explicitly. Any artifacts that have been found mature enough are submitted to HL7 DK for further approval.
 
 # TL;DR
-```every odd week on mondays 15:00 - 16:00 @```https://rooms.medcom.dk/webapp/conference/hl7@rooms.medcom.dk - NO PIN!
+```every odd week on mondays 15:00 - 16:00 @```
 
 # Webhooks
 Webhook has been set up as specified on https://github.com/FHIR/auto-ig-builder
