@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2022-02-19T15:25:03+00:00"/>
+  <date value="2022-05-23T06:59:28+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -35,6 +35,11 @@
   <packageId value="hl7.fhir.dk.core"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -207,6 +212,14 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -627,7 +640,7 @@
         <reference value="Patient/ukendt"/>
       </reference>
       <name value="Example of valid patient unknown identifier registry"/>
-      <description value="Example of valid patient unknown identifier registry. The patient is a &#39;John Doe&#39; with an Identifier from an unofficial register"/>
+      <description value="Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>

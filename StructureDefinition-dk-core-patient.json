@@ -2346,7 +2346,8 @@
             "severity": "error",
             "human": "SHALL at least contain a contact's details or a reference to an organization",
             "expression": "name.exists() or telecom.exists() or address.exists() or organization.exists()",
-            "xpath": "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)"
+            "xpath": "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Patient"
           }
         ],
         "isModifier": false,

@@ -2427,7 +2427,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "SHALL at least contain a contact's details or a reference to an organization" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "name.exists() or telecom.exists() or address.exists() or organization.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];

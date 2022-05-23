@@ -20,7 +20,7 @@
   "name": "DkCoreOrganization",
   "title": "Danish Core Organization Profile",
   "status": "draft",
-  "date": "2022-02-19T15:25:03+00:00",
+  "date": "2022-05-23T06:59:28+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -2369,7 +2369,8 @@
             "severity": "error",
             "human": "The telecom of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,
@@ -2425,7 +2426,8 @@
             "severity": "error",
             "human": "An address of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,
