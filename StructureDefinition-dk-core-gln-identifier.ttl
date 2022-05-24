@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "GLNIdentifier"];
   fhir:StructureDefinition.title [ fhir:value "GLN Identifier"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-23T06:59:28+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-24T18:54:59+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Denmark"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -429,7 +429,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "gln-modulus-10" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "((\n    (value.substring(0,1).toInteger()*1)+\n    (value.substring(1,1).toInteger()*3)+\n    (value.substring(2,1).toInteger()*1)+\n    (value.substring(3,1).toInteger()*3)+\n    (value.substring(4,1).toInteger()*1)+\n    (value.substring(5,1).toInteger()*3)+\n    (value.substring(6,1).toInteger()*1)+\n    (value.substring(7,1).toInteger()*3)+\n    (value.substring(8,1).toInteger()*1)+\n    (value.substring(9,1).toInteger()*3)+\n    (value.substring(10,1).toInteger()*1)+\n    (value.substring(11,1).toInteger()*3)\n    ) mod(10)+value.substring(12,1).toInteger()=10)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "((\n(10-((value.substring(0,1).toInteger()*1)+\n(value.substring(1,1).toInteger()*3)+\n(value.substring(2,1).toInteger()*1)+\n(value.substring(3,1).toInteger()*3)+\n(value.substring(4,1).toInteger()*1)\n+(value.substring(5,1).toInteger()*3)\n+(value.substring(6,1).toInteger()*1)\n+(value.substring(7,1).toInteger()*3)\n+(value.substring(8,1).toInteger()*1)\n+(value.substring(9,1).toInteger()*3)\n+(value.substring(10,1).toInteger()*1)\n+(value.substring(11,1).toInteger()*3))mod(10))mod(10))=value.substring(12,1).toInteger())" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier";
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier>
@@ -582,7 +582,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "gln-modulus-10" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "((\n    (value.substring(0,1).toInteger()*1)+\n    (value.substring(1,1).toInteger()*3)+\n    (value.substring(2,1).toInteger()*1)+\n    (value.substring(3,1).toInteger()*3)+\n    (value.substring(4,1).toInteger()*1)+\n    (value.substring(5,1).toInteger()*3)+\n    (value.substring(6,1).toInteger()*1)+\n    (value.substring(7,1).toInteger()*3)+\n    (value.substring(8,1).toInteger()*1)+\n    (value.substring(9,1).toInteger()*3)+\n    (value.substring(10,1).toInteger()*1)+\n    (value.substring(11,1).toInteger()*3)\n    ) mod(10)+value.substring(12,1).toInteger()=10)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "((\n(10-((value.substring(0,1).toInteger()*1)+\n(value.substring(1,1).toInteger()*3)+\n(value.substring(2,1).toInteger()*1)+\n(value.substring(3,1).toInteger()*3)+\n(value.substring(4,1).toInteger()*1)\n+(value.substring(5,1).toInteger()*3)\n+(value.substring(6,1).toInteger()*1)\n+(value.substring(7,1).toInteger()*3)\n+(value.substring(8,1).toInteger()*1)\n+(value.substring(9,1).toInteger()*3)\n+(value.substring(10,1).toInteger()*1)\n+(value.substring(11,1).toInteger()*3))mod(10))mod(10))=value.substring(12,1).toInteger())" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier";
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier>

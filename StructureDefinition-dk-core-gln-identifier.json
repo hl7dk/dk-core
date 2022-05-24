@@ -10,7 +10,7 @@
   "name": "GLNIdentifier",
   "title": "GLN Identifier",
   "status": "draft",
-  "date": "2022-05-23T06:59:28+00:00",
+  "date": "2022-05-24T18:54:59+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -412,7 +412,7 @@
             "key": "gln-modulus-10",
             "severity": "error",
             "human": "GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually",
-            "expression": "((\n    (value.substring(0,1).toInteger()*1)+\n    (value.substring(1,1).toInteger()*3)+\n    (value.substring(2,1).toInteger()*1)+\n    (value.substring(3,1).toInteger()*3)+\n    (value.substring(4,1).toInteger()*1)+\n    (value.substring(5,1).toInteger()*3)+\n    (value.substring(6,1).toInteger()*1)+\n    (value.substring(7,1).toInteger()*3)+\n    (value.substring(8,1).toInteger()*1)+\n    (value.substring(9,1).toInteger()*3)+\n    (value.substring(10,1).toInteger()*1)+\n    (value.substring(11,1).toInteger()*3)\n    ) mod(10)+value.substring(12,1).toInteger()=10)",
+            "expression": "((\n(10-((value.substring(0,1).toInteger()*1)+\n(value.substring(1,1).toInteger()*3)+\n(value.substring(2,1).toInteger()*1)+\n(value.substring(3,1).toInteger()*3)+\n(value.substring(4,1).toInteger()*1)\n+(value.substring(5,1).toInteger()*3)\n+(value.substring(6,1).toInteger()*1)\n+(value.substring(7,1).toInteger()*3)\n+(value.substring(8,1).toInteger()*1)\n+(value.substring(9,1).toInteger()*3)\n+(value.substring(10,1).toInteger()*1)\n+(value.substring(11,1).toInteger()*3))mod(10))mod(10))=value.substring(12,1).toInteger())",
             "source": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier"
           }
         ],
@@ -560,7 +560,7 @@
             "key": "gln-modulus-10",
             "severity": "error",
             "human": "GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually",
-            "expression": "((\n    (value.substring(0,1).toInteger()*1)+\n    (value.substring(1,1).toInteger()*3)+\n    (value.substring(2,1).toInteger()*1)+\n    (value.substring(3,1).toInteger()*3)+\n    (value.substring(4,1).toInteger()*1)+\n    (value.substring(5,1).toInteger()*3)+\n    (value.substring(6,1).toInteger()*1)+\n    (value.substring(7,1).toInteger()*3)+\n    (value.substring(8,1).toInteger()*1)+\n    (value.substring(9,1).toInteger()*3)+\n    (value.substring(10,1).toInteger()*1)+\n    (value.substring(11,1).toInteger()*3)\n    ) mod(10)+value.substring(12,1).toInteger()=10)",
+            "expression": "((\n(10-((value.substring(0,1).toInteger()*1)+\n(value.substring(1,1).toInteger()*3)+\n(value.substring(2,1).toInteger()*1)+\n(value.substring(3,1).toInteger()*3)+\n(value.substring(4,1).toInteger()*1)\n+(value.substring(5,1).toInteger()*3)\n+(value.substring(6,1).toInteger()*1)\n+(value.substring(7,1).toInteger()*3)\n+(value.substring(8,1).toInteger()*1)\n+(value.substring(9,1).toInteger()*3)\n+(value.substring(10,1).toInteger()*1)\n+(value.substring(11,1).toInteger()*3))mod(10))mod(10))=value.substring(12,1).toInteger())",
             "source": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier"
           }
         ]
