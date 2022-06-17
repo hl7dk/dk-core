@@ -45,23 +45,25 @@ Description: "Extension for the last date a condition was confirmed valid with i
 Instance: JohnDiabetes
 InstanceOf: DkCoreCondition
 Title: "John diabetes"
-Description: "Johns diabetes-diagnose fra lægen Abraham"
+Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"
 Usage: #example
 * code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
 * code.coding[SKS-D].code = #DE11
-* code.coding[SKS-D].display = "Type 2-diabetes (kan ikke valideres fordi der ikke er adgang til koderne)"
+* code.coding[SKS-D].display = "Type 2-diabetes"
 * subject = Reference(john)
 * asserter = Reference(AbrahamLaege)
 * recorder = Reference(AbrahamLaege)
-* extension[conditionLastAssertedDate].valueDateTime = 2021-04-12
-* onsetDateTime = 2017-04-01
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+* category.coding.code = #encounter-diagnosis
+* onsetDateTime = 2020-02-20
 * recordedDate = 2020-03-15
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
-Description: "Example of the citizen, Mark, who has a pressure ulcer"
+Title: "John tryksår"
+Description: "John, tryksår, kommunal tilstand"
 Usage: #example
 * code.text = "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion."
 * code.coding[FSIIIConditionCode].system = "urn:oid:1.2.208.176.2.21"
@@ -71,8 +73,53 @@ Usage: #example
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
+* extension[conditionLastAssertedDate].valueDateTime = 2020-12-12
 * subject = Reference(john)
 * recordedDate = 2020-06-05
+
+Instance: JohnMelanoma
+InstanceOf: DkCoreCondition
+Title: "John mistanke om Modermærkekræft"
+Description: "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese"
+Usage: #example
+* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
+* code.coding[SKS-D].code = #DC43
+* code.coding[SKS-D].display = "Modermærkekræft i huden"
+* subject = Reference(john)
 * asserter = Reference(AbrahamLaege)
+* recorder = Reference(AbrahamLaege)
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+* category.coding.code = #encounter-diagnosis
+* recordedDate = 2021-05-01
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
 
+Instance: HenvisningFraLageTilSygehus
+InstanceOf: ServiceRequest
+Title: "Henvisning vedr. modermærkekræft"
+Description: "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft"
+Usage: #example
+* requester = Reference(LaegerneHasserisBymidte)
+* reasonCode.text = "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft"
+* reasonReference = Reference(JohnMelanoma)
+* subject = Reference(John)
+* authoredOn = 2021-05-01
+* status = http://hl7.org/fhir/request-status#active
+* intent = http://hl7.org/fhir/request-intent#proposal
+* priority = http://hl7.org/fhir/request-priority#asap
 
+Instance: JohnPacemaker
+InstanceOf: DkCoreCondition
+Title: "John pacemakeer"
+Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
+Usage: #example
+* code.coding[SCTConditionCode].system = "http://snomed.info/sct"
+* code.coding[SCTConditionCode].code = #441509002
+* code.coding[SCTConditionCode].display = " kardiel pacemaker in situ"
+* subject = Reference(john)
+* recorder = Reference(AbrahamLaege)
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+* category.coding.code = #problem-list-item
+* recordedDate = 2021-05-01
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed

@@ -94,3 +94,15 @@ Description: "Center for Diabetes Team Kvalitet"
 * identifier[=].value = "64942212"
 * type = http://snomed.info/sct#264361005
 * partOf = Reference(CenterForDiabetes)
+
+Instance: LaegerneHasserisBymidte
+InstanceOf: DkCoreOrganization
+Title: "LaegerneHasserisBymidte"
+Usage: #example
+Description: "Praktisernede læge i Hasseris, som defineret af SOR"
+* identifier[0].value = "61731000016000"
+* identifier[0].system = "urn:oid:1.2.208.176.1.1"
+* name = "Lægerne Hasseris Bymidte"
+* telecom.value = "98182233"
+* telecom.system = http://hl7.org/fhir/contact-point-system#phone
+* type = http://snomed.info/sct#394761003
