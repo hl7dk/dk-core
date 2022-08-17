@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 3, info = 4
-IG Publisher Version: 1.1.120
-Generated Tue May 24 18:57:41 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#1.1.1 (canonical = http://hl7.dk/fhir/core)
+IG Publisher Version: 1.1.128
+Generated Wed Aug 17 21:18:06 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#1.1.1 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 0 / 1
@@ -62,7 +62,7 @@ Generated Tue May 24 18:57:41 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
-WARNING: CodeSystem/dk-marital-status: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: CodeSystem/dk-marital-status: CodeSystem: Rule csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
 == fsh-generated/resources/NamingSystem-cpr.json ==
 == fsh-generated/resources/NamingSystem-sor.json ==
@@ -100,7 +100,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-cpr-identifier-system.json ==
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==
-WARNING: ValueSet/dk-marital-status: ValueSet: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: ValueSet/dk-marital-status: ValueSet: Rule vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == input/resources/address-type-dk-supplement.xml ==
 == input/resources/address-use-dk-supplement.xml ==
 == input/resources/care-team-status-dk-supplement.xml ==

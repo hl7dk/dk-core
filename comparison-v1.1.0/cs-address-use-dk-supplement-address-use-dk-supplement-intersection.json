@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-9",
+  "name" : "IntersectionAddressUseAndAddressUse",
+  "title" : "Intersection of null And null",
+  "status" : "draft",
+  "date" : "2022-08-17T21:15:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "home",
+    "display" : "Home",
+    "definition" : "A communication address at a home.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Hjem"
+    }]
+  },
+  {
+    "code" : "work",
+    "display" : "Work",
+    "definition" : "An office address. First choice for business related contacts during business hours.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Arbejde"
+    }]
+  },
+  {
+    "code" : "temp",
+    "display" : "Temporary",
+    "definition" : "A temporary address. The period can provide more detailed information.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Midlertidig"
+    }]
+  },
+  {
+    "code" : "old",
+    "display" : "Old / Incorrect",
+    "definition" : "This address is no longer in use (or was never correct, but retained for records).",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Gammel / forkert"
+    }]
+  }]
+}

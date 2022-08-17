@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-17",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-17",
+  "name" : "UnionConsentStateAndConsentState",
+  "title" : "Union of null And null",
+  "status" : "draft",
+  "date" : "2022-08-17T21:15:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "draft",
+    "display" : "Pending",
+    "definition" : "The consent is in development or awaiting use but is not yet intended to be acted upon.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Under udarbejdelse"
+    }]
+  },
+  {
+    "code" : "proposed",
+    "display" : "Proposed",
+    "definition" : "The consent has been proposed but not yet agreed to by all parties. The negotiation stage.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Forslag"
+    }]
+  },
+  {
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "The consent is to be followed and enforced.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "rejected",
+    "display" : "Rejected",
+    "definition" : "The consent has been rejected by one or more of the parties.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Afvist"
+    }]
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inactive",
+    "definition" : "The consent is terminated or replaced.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Inaktiv"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "display" : "Entered in Error",
+    "definition" : "The consent was created wrongly (e.g. wrong patient) and should be ignored",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
+}

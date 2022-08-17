@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-14",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-14",
+  "name" : "UnionCareTeamStatusAndCareTeamStatus",
+  "title" : "Union of null And null",
+  "status" : "draft",
+  "date" : "2022-08-17T21:15:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "proposed",
+    "display" : "Proposed",
+    "definition" : "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Forslag"
+    }]
+  },
+  {
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "The care team is currently participating in the coordination and delivery of care.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspended",
+    "definition" : "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Suspenderet"
+    }]
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inactive",
+    "definition" : "The care team was, but is no longer, participating in the coordination and delivery of care.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Inaktiv"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "display" : "Entered In Error",
+    "definition" : "The care team should have never existed.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
+}

@@ -1,0 +1,140 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-41",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8a0da74f-a49f-4db6-9d49-cb4c291fb7a8-41",
+  "name" : "UnionPublicationStatusAndPublicationStatus",
+  "title" : "Union of null And null",
+  "status" : "draft",
+  "date" : "2022-08-17T21:15:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "draft",
+    "display" : "Draft",
+    "definition" : "This resource is still under development and is not yet considered to be ready for normal use.",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udkast"
+    },
+    {
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    }]
+  },
+  {
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "This resource is ready for normal use.",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    },
+    {
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    }]
+  },
+  {
+    "code" : "retired",
+    "display" : "Retired",
+    "definition" : "This resource has been withdrawn or superseded and should no longer be used.",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udgået"
+    },
+    {
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Ukendt"
+    }]
+  }]
+}
