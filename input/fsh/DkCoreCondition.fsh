@@ -2,7 +2,7 @@ Profile: DkCoreCondition
 Parent: Condition
 Id: dk-core-condition
 Title: "Danish Core Condition Profile"
-Description:  "HL7 Denmark core profile for conditions, as specified by danish health and social care organizations"
+Description:  "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"
 
 //Slicing code, declaring disciminator, and slicing type
 * code.coding ^slicing.discriminator.type = #value
@@ -33,13 +33,21 @@ Description:  "HL7 Denmark core profile for conditions, as specified by danish h
 
 * extension contains
    http://hl7.org/fhir/StructureDefinition/condition-dueTo named dueTo 0..1 and
-   ConditionLastAssertedDate named conditionLastAssertedDate 0..1
+   ConditionLastAssertedDate named conditionLastAssertedDate 0..1 and
+   NotFollowedAnymore named notFollowedAnymore 0..1
 
+* asserter only Reference(Practitioner or PractitionerRole)
 
 Extension: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"
 Description: "Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up"
 * value[x] only dateTime
+
+Extension: NotFollowedAnymore
+Title: "NotFollowedAnymore"
+Description: "Extension for the date where a condition lost focus in a specific clinical context"
+* value[x] only dateTime
+
 
 
 Instance: JohnDiabetes
