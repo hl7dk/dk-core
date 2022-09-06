@@ -14,13 +14,13 @@ Description:  "HL7 Denmark core profile for a patient"
 * obeys marital-status-unknown-usage
 * . ^constraint[5].requirements = "Marital status is legally unknown in Denmark"
 * . ^constraint[5].source = "https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
-* identifier 1.. MS
+* identifier 1..
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains cpr ..1
 * identifier[cpr] only DkCoreCprIdentifier
-* name 0.. MS
+* name 0..
 * name ^slicing.discriminator[0].type = #value
 * name ^slicing.discriminator[0].path = "use"
 * name ^slicing.rules = #open
@@ -32,8 +32,8 @@ Description:  "HL7 Denmark core profile for a patient"
 * address.extension ^slicing.discriminator[0].path = "url"
 * address.extension ^slicing.rules = #open
 * address.extension contains
-    MunicipalityCodes named municipalityCode 0..* and
-    RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
+    MunicipalityCodes named municipalityCode 0..1 and
+    RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator[0].type = #value
 * generalPractitioner ^slicing.discriminator[0].path = "identifier.system"
