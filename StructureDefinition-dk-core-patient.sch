@@ -166,8 +166,6 @@
     <sch:title>f:Patient/f:address</sch:title>
     <sch:rule context="f:Patient/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes']) &lt;= 1">extension with URL = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes']) &lt;= 1">extension with URL = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

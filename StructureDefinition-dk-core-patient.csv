@@ -30,7 +30,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Patient.identifier","Patient.identifier","","","",1,*,"","","Y","Identifier {[]} {[]}
+"Patient.identifier","Patient.identifier","","","",1,*,"Y","","Y","Identifier {[]} {[]}
 ","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","value:system}
 ","",,"open","Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id",".id","FiveWs.identifier","PID-3"
@@ -46,7 +46,7 @@ It is often used to filter patient lists to exclude inactive patients
 
 Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death.","If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.","Need to be able to mark a patient record as not to be used because it was created in error.","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Patient.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","statusCode","n/a","FiveWs.status"
-"Patient.name","Patient.name","","","",0,*,"","","Y","HumanName {[]} {[]}
+"Patient.name","Patient.name","","","",0,*,"Y","","Y","HumanName {[]} {[]}
 ","A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"","value:use}
 ","",,"open","Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
@@ -105,10 +105,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Patient.address.extension:municipalityCode","Patient.address.extension","municipalityCode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes]]} {[]}
+"Patient.address.extension:municipalityCode","Patient.address.extension","municipalityCode","","",0,*,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes]]} {[]}
 ","Danish Core Municipality codes","Identifier holding the official identifier for a danish municipality","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.address.extension:regionalSubDivisionCodes","Patient.address.extension","regionalSubDivisionCodes","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes]]} {[]}
+"Patient.address.extension:regionalSubDivisionCodes","Patient.address.extension","regionalSubDivisionCodes","","",0,*,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes]]} {[]}
 ","Danish Core Regional Sub Division Codes Extension","Identifier holding the official organization identifier for a danish region","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.use","Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
