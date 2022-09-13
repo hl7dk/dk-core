@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "88ee2f50-2f84-4b31-bd7a-e200cb9445d5-93",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/88ee2f50-2f84-4b31-bd7a-e200cb9445d5-93",
+  "name" : "IntersectionDkCoreValidIdentifierAndDkCoreValidIdentifier",
+  "title" : "Intersection of CPR Identifier And CPR Identifier",
+  "status" : "active",
+  "date" : "2022-09-13T07:22:37+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "urn:oid:1.2.208.176.1.2",
+        "display" : "OID representation of CPR"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system",
+      "code" : "urn:oid:1.2.208.176.1.2",
+      "display" : "OID representation of CPR"
+    }]
+  }
+}
