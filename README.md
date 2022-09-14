@@ -2,8 +2,7 @@
 This repo hosts a set of profiles that are intended to be reviewed and refactored by the DK FHIR SIG. Depending on the feedback recieved in form of PR's and issues, this repo is to be the primary place to store profiles.
 
 # Meetings
-Meetings are every odd week on mondays 15:00 - 16:00, be sharp or not.
-
+Meetings are every odd week on mondays 15:00 - 16:00, be sharp or not. Meeting minutes can be found at https://confluence.hl7.org/pages/viewpage.action?pageId=81026436
 
 # Governance
 Artifacts found in this repository should be treated as unstable, under continous evaluation, as propsal and not part of the danish national standards unless stated explicitly. Any artifacts that have been found mature enough are submitted to HL7 DK for further approval.

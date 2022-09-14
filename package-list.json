@@ -1,29 +1,24 @@
 {
   "package-id": "hl7.fhir.dk.core",
   "title": "HL7 FHIR Implementation Guide: DK Core",
-  "canonical": "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
+  "canonical": "http://hl7.dk/fhir/core",
   "introduction": "Intro text",
-  "category": null,
+  "category": "National Core",
   "list": [
     {
       "version": "current",
       "desc": "Continuous Integration Build",
-      "path": "http://localhost/",
-      "status": "ci-build",
-      "current": true
+      "path": "http://build.fhir.org/ig/hl7dk/dk-core",
+      "status": "ci-build"
     },
     {
-      "version": "1.1.0",
+      "version": "2.0.0",
+      "desc": "Release version 2.0.0 contains three DKcore profiles. In DkCorePatient the cardinality of the extensions dk-core-RegionalSubDivisionCodes and dk-core-municipalityCodes is changed from 0..* to 0..1 and the MustSupport flags are removed from Patient.id and Patient.name. DkCoreCprIdentifier.system is changed from a ValueSet to a fixed value, where both solutions contain the same OID. In DkCoreOrganization the binding strength of the ValueSet attached to the element Organization.type is changed from required to preferred.",
       "status": "release",
-      "date": "2021-12-18",
-      "desc": "DK Code",
+      "date": "2022-09-07",
       "sequence": "Release",
-      "history_template_repo": "https://github.com/openhie/fhir-ig-history-template.git",
-      "intro": "Intro text",
-      "category": "test",
-      "ci_url": "http://localhost/",
-      "org": "HL7DK",
-      "path": "http://build.fhir.org/ig/hl7dk/dk-core",
+      "history_template_repo": "https://github.com/hl7dk/fhir-ig-history-template.git",
+      "path": "http://hl7.dk/fhir/core/2.0.0",
       "fhirversion": "4.0.1",
       "current": true
     }

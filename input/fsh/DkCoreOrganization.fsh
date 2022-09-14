@@ -4,7 +4,7 @@ Id: dk-core-organization
 Title: "Danish Core Organization Profile"
 Description:  "HL7 Denmark core profile for a danish health organization"
 * ^status = #draft
-* type from sor-organization-type (required)
+* type from sor-organization-type (preferred)
 * obeys dk-core-organization-mandatory-identifier
 * identifier 1..
 * identifier ^slicing.discriminator[0].type = #value
