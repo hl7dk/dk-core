@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6d972eeb-6fc2-4b3a-859a-4b89f140ae67-74",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6d972eeb-6fc2-4b3a-859a-4b89f140ae67-74",
+  "id" : "7da6e496-a226-4e7a-bc9f-128e430ca7a6-74",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7da6e496-a226-4e7a-bc9f-128e430ca7a6-74",
   "name" : "UnionDkCorePractitionerAndDkCorePractitioner",
   "title" : "Union of Danish Core Practitioner Profile And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2022-09-17T09:48:39+00:00",
+  "date" : "2022-09-17T09:59:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -358,7 +358,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -374,7 +374,7 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "left: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.; right: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
+      "comment" : "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
       "min" : 0,
       "max" : "*",
@@ -389,7 +389,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{

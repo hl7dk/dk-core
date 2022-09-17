@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="715f0452-4553-4a69-b228-bc0164a9fa59"/>
+  <id value="988f06bc-066f-4050-8181-44e170adc281"/>
   <meta>
-    <lastUpdated value="2022-09-17T09:48:15.648+00:00"/>
+    <lastUpdated value="2022-09-17T09:59:31.079+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 21 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">dk-profession-groups-codes v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">dk-profession-groups-codes v2.1.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -202,11 +202,11 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="DkCoreProfessionGroupValueSet"/>
         <title value="dk-profession-group-valueset"/>
         <status value="active"/>
-        <date value="2022-09-17T09:48:15+00:00"/>
+        <date value="2022-09-17T09:59:31+00:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -228,8 +228,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:67b2a591-b97b-4216-a9d7-60e396451f0e"/>
-          <timestamp value="2022-09-17T09:48:54+00:00"/>
+          <identifier value="urn:uuid:4ab65f82-0700-4bf5-8459-6f175de6429d"/>
+          <timestamp value="2022-09-17T10:00:07+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -237,7 +237,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
@@ -358,7 +358,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 1 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v2.1.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -384,7 +384,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="DkCoreValidIdentifier"/>
         <title value="CPR Identifier"/>
         <status value="active"/>
@@ -412,8 +412,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:db3a016a-1cf8-4dfd-bb10-9c436696c232"/>
-          <timestamp value="2022-09-17T09:48:54+00:00"/>
+          <identifier value="urn:uuid:58bdcb8a-2df1-4e37-bd7d-546a8eecd9a8"/>
+          <timestamp value="2022-09-17T10:00:07+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -421,7 +421,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system"/>
@@ -445,10 +445,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">GreenlandMunicipalityCodes v2.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">GreenlandMunicipalityCodes v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes.html">MunicipalityCodes v2.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes.html">MunicipalityCodes v2.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1300,7 +1300,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="MunicipalityCodes"/>
         <status value="draft"/>
         <experimental value="true"/>
@@ -1327,8 +1327,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:794552f4-c8a1-48dc-a635-6f56d721c816"/>
-          <timestamp value="2022-09-17T09:48:54+00:00"/>
+          <identifier value="urn:uuid:93e08792-f215-48e1-959e-83c878b0ed01"/>
+          <timestamp value="2022-09-17T10:00:07+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1336,11 +1336,11 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|2.1.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
@@ -1876,7 +1876,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">DKCoreRegionalSubdivisionCodes v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">DKCoreRegionalSubdivisionCodes v2.1.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1934,7 +1934,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <status value="draft"/>
         <experimental value="true"/>
@@ -1961,8 +1961,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:e88902fa-01a4-4be5-8c59-1e8e203968b7"/>
-          <timestamp value="2022-09-17T09:48:54+00:00"/>
+          <identifier value="urn:uuid:d2b3d4b9-3184-418b-a8fb-7b07377b2771"/>
+          <timestamp value="2022-09-17T10:00:08+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1970,7 +1970,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
@@ -2020,7 +2020,7 @@
                   <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-marital-status.html">DK Marital Status Codes v2.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-marital-status.html">DK Marital Status Codes v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
@@ -2241,7 +2241,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="DK Marital Status Codes"/>
         <title value="DK MaritalStatus"/>
         <status value="active"/>
@@ -2269,8 +2269,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:e2d4222c-a246-4b71-a851-79c362801aaa"/>
-          <timestamp value="2022-09-17T09:48:55+00:00"/>
+          <identifier value="urn:uuid:40669c3f-afa1-41c3-a2ae-fcfb01d0e79d"/>
+          <timestamp value="2022-09-17T10:00:08+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2290,7 +2290,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
@@ -2942,10 +2942,10 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SorOrganizationType"/>
         <status value="active"/>
-        <date value="2022-09-17T09:48:15+00:00"/>
+        <date value="2022-09-17T09:59:31+00:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -2968,8 +2968,8 @@
         </jurisdiction>
         <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:c872b200-bd3c-4695-b4b5-0994296c0f65"/>
-          <timestamp value="2022-09-17T09:48:55+00:00"/>
+          <identifier value="urn:uuid:f0a1d77d-27e6-4ad5-bee6-9f02902dba47"/>
+          <timestamp value="2022-09-17T10:00:08+00:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>

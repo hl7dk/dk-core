@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url": "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "name": "DKCore",
   "title": "HL7 FHIR Implementation Guide: DK Core",
   "status": "active",
-  "date": "2022-09-17T09:48:15+00:00",
+  "date": "2022-09-17T09:59:31+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -50,12 +50,6 @@
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
       "version": "4.0.0"
-    },
-    {
-      "id": "hl7_fhir_uv_ipa",
-      "uri": "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
-      "packageId": "hl7.fhir.uv.ipa",
-      "version": "0.1.0"
     }
   ],
   "definition": {
@@ -81,7 +75,7 @@
           },
           {
             "url": "value",
-            "valueString": "release"
+            "valueString": "ci-build"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
