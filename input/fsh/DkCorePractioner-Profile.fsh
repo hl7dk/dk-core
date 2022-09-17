@@ -1,5 +1,5 @@
 Profile: DkCorePractitioner
-Parent: Practitioner
+Parent: IPAPractitioner
 Id: dk-core-practitioner
 Title: "Danish Core Practitioner Profile"
 Description:  "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"
@@ -28,6 +28,7 @@ Description:    "Eksempel på socialrådgiveren Hanne"
 * name.given = "Hanne"
 * name.family = "Mortensen"
 * qualification.code.text = "Socialrådgiver"
+* active = true
 
 Instance:       AbrahamLaege
 InstanceOf:     DkCorePractitioner
@@ -38,3 +39,4 @@ Description:    "Eksempel på lægen Abraham fra akutsygeplejen"
 * qualification[officialHealthAuthorization].identifier.value = "005ML"
 * qualification[officialHealthAuthorization].identifier.system = $authorisationIDSystem
 * qualification[officialHealthAuthorization].code = DkCoreProfessionGroupCodes#7170 "Læge"
+* active = true

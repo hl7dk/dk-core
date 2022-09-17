@@ -1,5 +1,5 @@
 Profile: DkCorePatient
-Parent: Patient
+Parent: IPAPatient
 Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description:  "HL7 Denmark core profile for a patient"
@@ -20,7 +20,7 @@ Description:  "HL7 Denmark core profile for a patient"
 * identifier ^slicing.rules = #open
 * identifier contains cpr ..1
 * identifier[cpr] only DkCoreCprIdentifier
-* name 0..
+* name 1..
 * name ^slicing.discriminator[0].type = #value
 * name ^slicing.discriminator[0].path = "use"
 * name ^slicing.rules = #open
@@ -74,6 +74,7 @@ Usage: #example
 * generalPractitioner[0].identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner[0].identifier.value = "79641000016006"
 * generalPractitioner[0].display = "Peter Sønderby"
+* active = true
 
 Instance: mogensen
 InstanceOf: DkCorePatient
@@ -89,6 +90,7 @@ Usage: #example
 * gender = #male
 * birthDate = "1964-12-11"
 * maritalStatus = $dk-marital-status#P "Registreret partnerskab"
+* active = true
 
 Instance: ukendt
 InstanceOf: DkCorePatient
@@ -102,6 +104,7 @@ Usage: #example
 * name[0].given[0] = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
+* active = true
 
 Instance: john
 InstanceOf: DkCorePatient
@@ -122,3 +125,4 @@ Usage: #example
 * generalPractitioner[0].identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner[0].identifier.value = "487341000016005"
 * generalPractitioner[0].display = "Charlottenlund Lægehus"
+* active = true

@@ -25,3 +25,4 @@ Only personnel using systems in public/official affairs are allowed to see name 
 * address[0].use = #home
 * address[0].line = "Julianevej 22"
 * address[0].city = "6000 Kolding"
+* active = true
