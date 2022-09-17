@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "88ee2f50-2f84-4b31-bd7a-e200cb9445d5-75",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/88ee2f50-2f84-4b31-bd7a-e200cb9445d5-75",
+  "id" : "6d972eeb-6fc2-4b3a-859a-4b89f140ae67-75",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6d972eeb-6fc2-4b3a-859a-4b89f140ae67-75",
   "name" : "IntersectionDkCorePractitionerAndDkCorePractitioner",
   "title" : "Intersection of Danish Core Practitioner Profile And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2022-09-13T07:22:37+00:00",
+  "date" : "2022-09-17T09:48:39+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -98,7 +98,7 @@
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-          "valueUrl" : "string"
+          "valueUrl" : "id"
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
@@ -356,7 +356,7 @@
       "definition" : "Whether this practitioner's record is in active use.",
       "comment" : "If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.",
       "requirements" : "Need to be able to mark a practitioner record as not to be used because it was created in error.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "boolean"
@@ -370,7 +370,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -386,9 +386,9 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
+      "comment" : "left: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.; right: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "HumanName"
@@ -401,7 +401,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
