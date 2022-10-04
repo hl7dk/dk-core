@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2022-09-17T10:02:16+00:00"/>
+  <date value="2022-10-04T11:09:51+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -35,6 +35,11 @@
   <packageId value="hl7.fhir.dk.core"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="higtools">
+    <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
+    <packageId value="hl7.fhir.uv.tools"/>
+    <version value="current"/>
+  </dependsOn>
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
@@ -249,6 +254,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-condition"/>
+      </reference>
+      <name value="Danish Core Condition Profile"/>
+      <description value="HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -318,17 +334,6 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lpr3-Identifier"/>
-      </reference>
-      <name value="LPR3 Identifier"/>
-      <description value="Identifier holding a LPR3 identifier for an organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/dk-core-sor-identifier"/>
       </reference>
       <name value="SOR Identifier"/>
@@ -340,10 +345,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ConditionLastAssertedDate"/>
+      </reference>
+      <name value="ConditionLastAssertedDate"/>
+      <description value="Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/dk-core-municipalityCodes"/>
       </reference>
       <name value="Danish Core Municipality codes"/>
       <description value="Identifier holding the official identifier for a danish municipality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NotFollowedAnymore"/>
+      </reference>
+      <name value="NotFollowedAnymore"/>
+      <description value="Extension for the date where a condition lost focus in a specific clinical context"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -491,6 +518,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionPressureUlcer"/>
+      </reference>
+      <name value="John tryksår"/>
+      <description value="John, tryksår, kommunal tilstand"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -510,6 +548,61 @@
       <name value="HanneSocialrådgiver"/>
       <description value="Eksempel på socialrådgiveren Hanne"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HenvisningFraLageTilSygehus"/>
+      </reference>
+      <name value="Henvisning vedr. modermærkekræft"/>
+      <description value="Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/JohnDiabetes"/>
+      </reference>
+      <name value="John diabetes"/>
+      <description value="Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/JohnMelanoma"/>
+      </reference>
+      <name value="John mistanke om Modermærkekræft"/>
+      <description value="Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/JohnPacemaker"/>
+      </reference>
+      <name value="John pacemakeer"/>
+      <description value="Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/LaegerneHasserisBymidte"/>
+      </reference>
+      <name value="LaegerneHasserisBymidte"/>
+      <description value="Praktisernede læge i Hasseris, som defineret af SOR"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -743,35 +836,56 @@
       <exampleBoolean value="false"/>
     </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="extensions.html"/>
+        </extension>
         <nameUrl value="extensions.html"/>
         <title value="Extensions"/>
         <generation value="html"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="guidance.html"/>
+        </extension>
         <nameUrl value="guidance.html"/>
         <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles.html"/>
+        </extension>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="html"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="terminology.html"/>
+        </extension>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
         <generation value="html"/>

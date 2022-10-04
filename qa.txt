@@ -1,17 +1,21 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 0, warn = 3, info = 4
-IG Publisher Version: 1.2.1
-Generated Sat Sep 17 10:05:05 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 0 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 0 / 1 / 1
+err = 22, warn = 5, info = 7
+IG Publisher Version: 1.2.4
+Generated Tue Oct 04 11:13:01 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 1 / 0 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-JohnDiabetes : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-JohnMelanoma : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-JohnPacemaker : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 0 / 1
@@ -19,6 +23,7 @@ Generated Sat Sep 17 10:05:05 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-LaegerneHasserisBymidte : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 0 / 1
@@ -27,8 +32,12 @@ Generated Sat Sep 17 10:05:05 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Patient-ukendt : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Practitioner-AbrahamLaege : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-condition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-gln-identifier : 0 / 0 / 1
@@ -38,31 +47,48 @@ Generated Sat Sep 17 10:05:05 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-practitioner : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-cpr-identifier-system : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status : 0 / 1 / 1
- /github/workspace/input/resources/address-type-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/address-use-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/care-team-status-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/consent-state-codes-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/days-of-week-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/episode-of-care-status-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/publication-status-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/request-status-dk-supplement : 0 / 0 / 1
- /github/workspace/input/resources/sor-organization-type : 0 / 0 / 1
+ /github/workspace/input/resources/address-type-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/address-use-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/care-team-status-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/consent-state-codes-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/days-of-week-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/episode-of-care-status-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/publication-status-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/request-status-dk-supplement : 1 / 0 / 1
+ /github/workspace/input/resources/sor-organization-type : 2 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/ServiceRequest-HenvisningFraLageTilSygehus.html#/html/body/div/div/div/div/div/div/p/a at Line 209, column 501: The link 'John' for "John" cannot be resolved
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
+ERROR: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-administrative-gender-supplement.json ==
+ERROR: CodeSystem/administrative-gender-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system.json ==
+ERROR: CodeSystem/dk-core-cpr-identifier-system: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes.json ==
+ERROR: CodeSystem/dk-core-municipality-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
+ERROR: CodeSystem/dk-core-municipality-codes-greenland: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
+ERROR: CodeSystem/dk-core-regional-subdivision-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
 WARNING: CodeSystem/dk-marital-status: CodeSystem: Rule csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: CodeSystem/dk-marital-status: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+== fsh-generated/resources/Condition-ConditionPressureUlcer.json ==
+INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.21' is unknown so the code cannot be validated
+ERROR: Condition/ConditionPressureUlcer: Condition.code.coding[1]: The Coding provided (http://snomed.info/sct#420324007) is not in the value set http://hl7.org/fhir/ValueSet/condition-code, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/ValueSet/condition-code ([]))
+== fsh-generated/resources/Condition-JohnDiabetes.json ==
+INFORMATION: Condition/JohnDiabetes: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-JohnMelanoma.json ==
+INFORMATION: Condition/JohnMelanoma: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-JohnPacemaker.json ==
+WARNING: Condition/JohnPacemaker: Condition.code.coding[0]: The display " kardiel pacemaker in situ" is not a valid display for the code {http://snomed.info/sct}441509002 - should be one of ['Cardiac pacemaker in situ', 'Cardiac pacemaker in situ (finding)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#441509002'
+WARNING: Condition/JohnPacemaker: Condition.code.coding[0].display: value should not start or finish with whitespace ' kardiel...situ'
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
 == fsh-generated/resources/NamingSystem-cpr.json ==
 == fsh-generated/resources/NamingSystem-sor.json ==
@@ -70,6 +96,7 @@ WARNING: CodeSystem/dk-marital-status: CodeSystem: Rule csd-0: 'Name should be u
 == fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet.json ==
+== fsh-generated/resources/Organization-LaegerneHasserisBymidte.json ==
 == fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
 == fsh-generated/resources/Patient-283.json ==
 == fsh-generated/resources/Patient-Confidential.json ==
@@ -82,8 +109,14 @@ INFORMATION: Patient/ukendt: Patient.name[0]: This element does not match any kn
 == fsh-generated/resources/Practitioner-AbrahamLaege.json ==
 == fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
 INFORMATION: Practitioner/HanneSocialraadgiver: Practitioner.qualification[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner
+== fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
+ERROR: ServiceRequest/HenvisningFraLageTilSygehus: ServiceRequest.subject: Unable to resolve resource with reference 'John'
+== fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
+== fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-condition.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json ==
@@ -93,20 +126,31 @@ INFORMATION: Practitioner/HanneSocialraadgiver: Practitioner.qualification[0]: T
 == fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-practitioner.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json ==
-== fsh-generated/resources/StructureDefinition-lpr3-Identifier.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet.json ==
+ERROR: ValueSet/DkCoreProfessionGroupValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json ==
+ERROR: ValueSet/dk-core-MunicipalityCodes: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
+ERROR: ValueSet/dk-core-RegionalSubDivisionCodes: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-dk-core-cpr-identifier-system.json ==
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==
 WARNING: ValueSet/dk-marital-status: ValueSet: Rule vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == input/resources/address-type-dk-supplement.xml ==
+ERROR: CodeSystem/address-type-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/address-use-dk-supplement.xml ==
+ERROR: CodeSystem/address-use-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/care-team-status-dk-supplement.xml ==
+ERROR: CodeSystem/care-team-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/consent-state-codes-dk-supplement.xml ==
+ERROR: CodeSystem/consent-state-codes-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/days-of-week-dk-supplement.xml ==
+ERROR: CodeSystem/days-of-week-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/episode-of-care-status-dk-supplement.xml ==
+ERROR: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/publication-status-dk-supplement.xml ==
+ERROR: CodeSystem/publication-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/request-status-dk-supplement.xml ==
+ERROR: CodeSystem/request-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
 == input/resources/sor-organization-type.json ==
+ERROR: ValueSet/sor-organization-type: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+ERROR: ValueSet/sor-organization-type: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile

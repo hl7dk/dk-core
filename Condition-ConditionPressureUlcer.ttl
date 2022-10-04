@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Condition/ConditionPressureUlcer> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ConditionPressureUlcer"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition";
+       fhir:index 0;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionPressureUlcer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"ConditionPressureUlcer\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-condition.html\">Danish Core Condition Profile</a></p></div><p><b>ConditionLastAssertedDate</b>: 2020-12-12</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#I4.4 \"Problemer med tryksår\"; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#420324007 \"Pressure ulcer stage 2\")</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> \" MEYERHOFEN\"</p><p><b>recordedDate</b>: 2020-06-05</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate" ];
+     fhir:Extension.valueDateTime [ fhir:value "2020-12-12"^^xsd:date ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "problem-list-item" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.208.176.2.21" ];
+       fhir:Coding.code [ fhir:value "I4.4" ];
+       fhir:Coding.display [ fhir:value "Problemer med tryksår" ]
+     ], [
+       fhir:index 1;
+       a sct:420324007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "420324007" ];
+       fhir:Coding.display [ fhir:value "Pressure ulcer stage 2" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion." ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/john>;
+     fhir:Reference.reference [ fhir:value "Patient/john" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2020-06-05"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Condition/ConditionPressureUlcer.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

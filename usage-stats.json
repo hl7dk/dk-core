@@ -5,6 +5,20 @@
   "jurisdiction": "DK",
   "extensions": [
     {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate",
+      "title": "ConditionLastAssertedDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore",
+      "title": "NotFollowedAnymore",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes",
       "title": "Danish Core Regional Sub Division Codes Extension",
       "types": [
@@ -28,6 +42,12 @@
     }
   ],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
+        "title": "Danish Core Condition Profile"
+      }
+    ],
     "Organization": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
@@ -48,11 +68,20 @@
     ]
   },
   "usage": {
+    "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate": [
+      "Condition"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore": [
+      "Condition"
+    ],
     "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes": [
       "Patient.address"
     ],
     "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes": [
       "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -86,6 +115,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

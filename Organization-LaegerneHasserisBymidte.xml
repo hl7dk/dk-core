@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="LaegerneHasserisBymidte"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="LaegerneHasserisBymidte"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "LaegerneHasserisBymidte" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 61731000016000</p><p><b>type</b>: GP practice site <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#394761003)</span></p><p><b>name</b>: Lægerne Hasseris Bymidte</p><p><b>telecom</b>: ph: 98182233</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.1"/>
+    <value value="61731000016000"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394761003"/>
+    </coding>
+  </type>
+  <name value="Lægerne Hasseris Bymidte"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="98182233"/>
+  </telecom>
+</Organization>

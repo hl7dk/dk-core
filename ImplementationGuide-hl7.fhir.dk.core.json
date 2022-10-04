@@ -10,7 +10,7 @@
   "name": "DKCore",
   "title": "HL7 FHIR Implementation Guide: DK Core",
   "status": "draft",
-  "date": "2022-09-17T10:02:16+00:00",
+  "date": "2022-10-04T11:09:51+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -45,6 +45,12 @@
     "4.0.1"
   ],
   "dependsOn": [
+    {
+      "id": "higtools",
+      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
+      "packageId": "hl7.fhir.uv.tools",
+      "version": "current"
+    },
     {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
@@ -387,6 +393,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/dk-core-condition"
+        },
+        "name": "Danish Core Condition Profile",
+        "description": "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:complex-type"
           }
         ],
@@ -475,20 +495,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/lpr3-Identifier"
-        },
-        "name": "LPR3 Identifier",
-        "description": "Identifier holding a LPR3 identifier for an organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:complex-type"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/dk-core-sor-identifier"
         },
         "name": "SOR Identifier",
@@ -503,10 +509,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ConditionLastAssertedDate"
+        },
+        "name": "ConditionLastAssertedDate",
+        "description": "Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/dk-core-municipalityCodes"
         },
         "name": "Danish Core Municipality codes",
         "description": "Identifier holding the official identifier for a danish municipality",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NotFollowedAnymore"
+        },
+        "name": "NotFollowedAnymore",
+        "description": "Extension for the date where a condition lost focus in a specific clinical context",
         "exampleBoolean": false
       },
       {
@@ -695,6 +729,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/ConditionPressureUlcer"
+        },
+        "name": "John tryksår",
+        "description": "John, tryksår, kommunal tilstand",
+        "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -718,6 +766,76 @@
         "name": "HanneSocialrådgiver",
         "description": "Eksempel på socialrådgiveren Hanne",
         "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/HenvisningFraLageTilSygehus"
+        },
+        "name": "Henvisning vedr. modermærkekræft",
+        "description": "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/JohnDiabetes"
+        },
+        "name": "John diabetes",
+        "description": "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise",
+        "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/JohnMelanoma"
+        },
+        "name": "John mistanke om Modermærkekræft",
+        "description": "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese",
+        "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/JohnPacemaker"
+        },
+        "name": "John pacemakeer",
+        "description": "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode",
+        "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/LaegerneHasserisBymidte"
+        },
+        "name": "LaegerneHasserisBymidte",
+        "description": "Praktisernede læge i Hasseris, som defineret af SOR",
+        "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
       },
       {
         "extension": [
@@ -1015,36 +1133,78 @@
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "downloads.html"
+            }
+          ],
           "nameUrl": "downloads.html",
           "title": "Downloads",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "extensions.html"
+            }
+          ],
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "guidance.html"
+            }
+          ],
           "nameUrl": "guidance.html",
           "title": "Guidance",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "profiles.html"
+            }
+          ],
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "terminology.html"
+            }
+          ],
           "nameUrl": "terminology.html",
           "title": "Terminology",
           "generation": "html"

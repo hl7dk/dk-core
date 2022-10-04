@@ -194,6 +194,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-dk-core-condition.html"
+                     title="StructureDefinition/dk-core-condition">Danish Core Condition Profile</a>
+               </td>
+               <td>
+<p>HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-dk-core-organization.html"
                      title="StructureDefinition/dk-core-organization">Danish Core Organization Profile</a>
                </td>
@@ -278,15 +287,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-lpr3-Identifier.html"
-                     title="StructureDefinition/lpr3-Identifier">LPR3 Identifier</a>
-               </td>
-               <td>
-<p>Identifier holding a LPR3 identifier for an organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-dk-core-sor-identifier.html"
                      title="StructureDefinition/dk-core-sor-identifier">SOR Identifier</a>
                </td>
@@ -308,11 +308,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-ConditionLastAssertedDate.html"
+                     title="StructureDefinition/ConditionLastAssertedDate">ConditionLastAssertedDate</a>
+               </td>
+               <td>
+<p>Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-dk-core-municipalityCodes.html"
                      title="StructureDefinition/dk-core-municipalityCodes">Danish Core Municipality codes</a>
                </td>
                <td>
 <p>Identifier holding the official identifier for a danish municipality</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NotFollowedAnymore.html"
+                     title="StructureDefinition/NotFollowedAnymore">NotFollowedAnymore</a>
+               </td>
+               <td>
+<p>Extension for the date where a condition lost focus in a specific clinical context</p>
 </td>
             </tr>
             <tr>
@@ -631,6 +649,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Condition-ConditionPressureUlcer.html"
+                     title="Condition/ConditionPressureUlcer">John tryksår</a>
+               </td>
+               <td>
+<p>John, tryksår, kommunal tilstand</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Patient-Confidential.html" title="Patient/Confidential">Example of a patient with confidential adress and name</a>
                </td>
                <td>
@@ -644,6 +671,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Eksempel på socialrådgiveren Hanne</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-HenvisningFraLageTilSygehus.html"
+                     title="ServiceRequest/HenvisningFraLageTilSygehus">Henvisning vedr. modermærkekræft</a>
+               </td>
+               <td>
+<p>Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-JohnDiabetes.html" title="Condition/JohnDiabetes">John diabetes</a>
+               </td>
+               <td>
+<p>Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-JohnMelanoma.html" title="Condition/JohnMelanoma">John mistanke om Modermærkekræft</a>
+               </td>
+               <td>
+<p>Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-JohnPacemaker.html" title="Condition/JohnPacemaker">John pacemakeer</a>
+               </td>
+               <td>
+<p>Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-LaegerneHasserisBymidte.html"
+                     title="Organization/LaegerneHasserisBymidte">LaegerneHasserisBymidte</a>
+               </td>
+               <td>
+<p>Praktisernede læge i Hasseris, som defineret af SOR</p>
 </td>
             </tr>
             <tr>
@@ -706,7 +775,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 17, 2022 10:02+0000">2022-09-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 4, 2022 11:09+0000">2022-10-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
