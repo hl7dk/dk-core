@@ -281,10 +281,10 @@
 
 <div style="display:inline-block" markdown="1">
 
-<h2 id="introduction">Introduction</h2>
-<p>The Danish Core Patient profile is intended to encapsulate the most common and basic data model of patients in danish healthcare systems covering both primary sector, secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most danish contexts.</p>
+<h3 id="scope-and-usage">Scope and usage</h3>
+<p>The Danish Core Patient profile is intended to encapsulate the most common and basic data model of patients in Danish healthcare systems covering both primary sector, secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Note that the profile is usable for those that recieve health and social care in muicipalities, even in contexts where they are more commonly known as citizens ([DA] borgere).</p>
 
-<h2 id="patient-identifiers">Patient identifiers</h2>
+<h4 id="patient-identifiers">Patient identifiers</h4>
 <p>This patient profile currently only reflects the use of the established national danish patient identifiers called <a href="https://cpr.dk/">CPR</a>. More official identifiers are expected to be used and profiled in the future, eg:</p>
 
 <ul>
@@ -293,11 +293,11 @@
   <li><strong>catastrophe</strong> CPR numbers.</li>
 </ul>
 
-<h3 id="dkcorecpridentifier">DkCoreCprIdentifier</h3>
+<h4 id="dkcorecpridentifier">DkCoreCprIdentifier</h4>
 
 <p>The element identifier.type describe the specific purpose of an identifier. It is desired to use the code ‘NNDNK’ from the CodeSystem <a href="https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html">IdentifierType</a> as the type for <a href="https://hl7.dk/fhir/core/StructureDefinition-dk-core-cpr-identifier.html">DkCoreCprIdentifier</a>. However, it is currently not recommended to use this code, due to known problems with the validation tool when validating the code ‘NNDNK’.</p>
 
-<h2 id="use-of-security-label-on-patients">Use of security label on patients</h2>
+<h3 id="use-of-security-label-on-patients">Use of security label on patients</h3>
 <p>Danish citizens that have requested name and address protection (<a href="https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6">Navne- og adressebeskyttelse</a>) should be labeled with the security label as follows:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;Patient xmlns="http://hl7.org/fhir"&gt;
@@ -1073,7 +1073,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 4, 2022 14:18+0000">2022-10-04</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 4, 2022 19:52+0000">2022-10-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
