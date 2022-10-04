@@ -21,6 +21,9 @@ Declaring the slices, and their cardinalities, to allow a KL-code and a SNOMED C
 * qualification[officialHealthAuthorization].identifier only AuthorizationIdentifier
 * qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
 
+* qualification[officialHealthAuthorization].identifier ^short = "[DA] Autorisationskode, som specificeret af autorisationsregisteret"
+* qualification[officialHealthAuthorization].code ^short = "[DA] Kode for kvalifikation, som specificeret af autorisationsregisteret"
+
 Instance:       HanneSocialraadgiver
 InstanceOf:     DkCorePractitioner
 Title:          "HanneSocialrådgiver"

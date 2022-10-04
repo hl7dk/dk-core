@@ -12,7 +12,7 @@ Description:  "HL7 Denmark core profile for professionally asserted conditions, 
 * code.coding ^slicing.description = "Slice based on the code.system value which allow different code-systems to represent a condition"  // optional - does not appear
 //Declaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code
 * code.coding contains
-   FSIIIConditionCode 0..1 and SCTConditionCode 0..1 and FFBCodes 0..1 and SKS-D 0..1 and ICPC2codes 0..1
+   FSIIIConditionCode 0..1 and SCTConditionCode 0..1 and FFBConditionCode 0..1 and SKS-D 0..1 and ICPC2code 0..1
 
 //Declaring the value set binding for the KLConditionCode slice, and setting the system.
 //System is fixed to allow the slicing to work
@@ -25,11 +25,11 @@ Description:  "HL7 Denmark core profile for professionally asserted conditions, 
 * code.coding[SCTConditionCode].system = "http://snomed.info/sct" // eller 1.2.208.176.2.5
 
 
-* code.coding[FFBCodes].system = "urn:oid:1.2.208.176.2.22"
+* code.coding[FFBConditionCode].system = "urn:oid:1.2.208.176.2.22"
 
 * code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12" //eller (1.2.208.176.2.4)
 
-* code.coding[ICPC2codes].system = "urn:oid:1.2.208.176.2.31"
+* code.coding[ICPC2code].system = "urn:oid:1.2.208.176.2.31"
 
 * extension contains
    http://hl7.org/fhir/StructureDefinition/condition-dueTo named dueTo 0..1 and
@@ -37,6 +37,15 @@ Description:  "HL7 Denmark core profile for professionally asserted conditions, 
    NotFollowedAnymore named notFollowedAnymore 0..1
 
 * asserter only Reference(Practitioner or PractitionerRole)
+
+* code.coding ^short = "Condition code, [DA] tilstandskode"
+* code.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
+* code.coding[FFBConditionCode] ^short = "[DA] FFB undertemakode"
+* code.coding[SCTConditionCode] ^short = "SNOMED CT condition code"
+* code.coding[ICPC2code] ^short = "ICPC2 code"
+* code.coding[SKS-D] ^short = "[DA] Kode fra D-hierarkiet i SKS"
+* extension[conditionLastAssertedDate] ^short = "Last date a condition was confirmed valid in its current state"
+* extension[notFollowedAnymore] ^short = "Date where a condition lost focus in a specific clinical context"
 
 Extension: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"

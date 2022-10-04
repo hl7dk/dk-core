@@ -41,6 +41,12 @@ Description:  "HL7 Denmark core profile for a patient"
 * generalPractitioner contains referencedSORUnit 0..*
 * generalPractitioner[referencedSORUnit].identifier only SORIdentifier
 
+* name[official] ^short = "[DA] Officielt navn, som det fremgår af CPR registeret"
+* identifier[cpr] ^short = "[DA] cpr-nummer, som det fremgår af CPR registeret"
+* address.extension[municipalityCode] ^short = "[DA] Kommunekode"
+* address.extension[regionalSubDivisionCodes] ^short = "[DA] Regionskode"
+* generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
+
 Invariant: cpr
 Description: "Requirement of danish civil registration numbers"
 Severity: #error

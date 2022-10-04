@@ -33,6 +33,14 @@ Description:  "HL7 Denmark core profile for a danish health organization"
 * identifier[Regionskode].system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
 * identifier[Regionskode].value 1..
 
+* identifier[Regionskode] ^short = "[DA] Regionskode"
+* identifier[Kommunekode] ^short = "[DA] Kommunekode"
+* identifier[CVR-ID] ^short = "VAT identification number, [DA] CVR-nummer"
+* identifier[Ydernummer] ^short = "Ydernummer"
+* identifier[KOMBIT-ORG-ID] ^short = "[DA] Organisationsenheds-id som specificeret af FK-ORG"
+* identifier[SOR-ID] ^short = "[DA] SOR-id"
+* identifier[EAN-ID] ^short = "GLN identifier, [DA] EAN-nummer"
+
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error

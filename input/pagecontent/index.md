@@ -28,3 +28,6 @@ This guide is the product of collaborative work undertaken with participants fro
 
 * [Danish FHIR Implementers Community](https://confluence.hl7.org/display/HD/DK+FHIR+SIG)
 * [HL7 Denmark](https://www.hl7.dk)
+
+### Language
+The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Danish terms are prefixed with 'Da'
