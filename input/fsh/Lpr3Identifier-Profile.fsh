@@ -1,4 +1,4 @@
-Profile: Lpr3Identifier
+/* Profile: Lpr3Identifier
 Parent: Identifier
 Id: lpr3-Identifier
 Title: "LPR3 Identifier"
@@ -17,4 +17,4 @@ Description: "Identifier holding a LPR3 identifier for an organization"
 * value 1..
 * value obeys uuidv5
 * value ^constraint[1].requirements = "LPR3 episode of care identifiers must conform to a UUIDv5"
-* value ^constraint[1].source = "https://scandihealth.github.io/lpr3-docs/"
+* value ^constraint[1].source = "https://scandihealth.github.io/lpr3-docs/" */
