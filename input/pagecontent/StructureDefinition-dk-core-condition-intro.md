@@ -17,4 +17,4 @@ Given that we have a condition, which is a problem-list-item, ending a condition
 
 Condition.extension:conditionLastAssertedDate holds information about the last date a condition was confirmed valid in its current state. Eg. with its current clinical- and verification status, and severity.
 
-The condition model cover both primary sector (GP's), secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts.
+The condition model cover both primary sector, secondary sector (medical specialists ([DA] speciallæger) and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts.

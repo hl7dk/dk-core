@@ -119,7 +119,7 @@ Usage: #example
 * requester = Reference(LaegerneHasserisBymidte)
 * reasonCode.text = "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft"
 * reasonReference = Reference(JohnMelanoma)
-* subject = Reference(John)
+* subject = Reference(john)
 * authoredOn = 2021-05-01
 * status = http://hl7.org/fhir/request-status#active
 * intent = http://hl7.org/fhir/request-intent#proposal

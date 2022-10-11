@@ -8,7 +8,7 @@ This document is a working specification that is expected to be implemented and 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
 
 ### Scope
-The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specifc profiles on top. As such, dk-core does not provide profiles for specifc use use cases out-of-the-box. 
+The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specific profiles on top. As such, dk-core does not provide profiles for specific use use cases out-of-the-box. 
 
 This document presents Danish use concepts defined via FHIR processable artefacts:
 
@@ -32,17 +32,17 @@ This guide is the product of collaborative work undertaken with participants fro
 * [HL7 Denmark](https://www.hl7.dk)
 
 ### Language
-The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are expalined using both Danish and Dnglish. Danish terms and explanaitions are prefixed with 'Da'
+The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are expalined using both Danish and English. Danish terms and explanaitions are prefixed with 'Da'
 
 ### Connection between dk-core and common Danish architectures and standards
-HL7 Denmark makes decisions about the adoption of other common Danish architectures and standards, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explainantion.
+HL7 Denmark includes common Danish architectures and standards if relevant, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explainantion.
 
 #### Principle decisions
 * HL7 Denmark considers Danish legislation as the first source of truth when designing models, HL7 Denmark seeks to represent known named entities relevant for health data interoperability truthfully.
-* HL7 Denmark upholds the requirements of the FHIR-standard whenever it is is possible within the bounderies of the Danish legislation.
-* Enitites that are named both in the FHIR-standard and Danish legislation, keeps FHIR naming and requirements, but should explain its relation to Danish names/requirements.
-* Danish standards and arhitectures are consideres when designing FHIR-profiles. HL7 Denmark uses them when they are relevant for interoperability of health data, and when they are compatiple with the FHIR-standard. Often public information and data models used as basis of public registries are too detailed, to warrant replication in a FHIR-standard. E.g. The Organization profile references organisation registries such as SOR and FK-ORG rather than re-constructing each of their attributes in the FHIR-profile, only attributes relevant for interoperability is provided in the FHIR-profiles.
+* HL7 Denmark upholds the requirements of the FHIR standard whenever it is possible within the bounderies of the Danish legislation.
+* Enitites that are named both in the FHIR standard and Danish legislation, keeps FHIR naming and requirements, but should explain its relation to Danish names/requirements.
+* Danish standards and arhitectures are considered when designing FHIR profiles. HL7 Denmark uses them when they are relevant for interoperability of health data, and when they are compatiple with the FHIR standard. Often public information and data models used as basis of public registries are too detailed, to warrant replication in a FHIR standard. E.g. The Organization profile references organisation registries such as SOR and FK-ORG rather than re-constructing each of their attributes in the FHIR-profile, only attributes relevant for interoperability is provided in the FHIR profiles.
 
 #### Specific decisions
-* Patient.maritalStatus uses the extendable ValueSet required by the FHIR standard. However, Danish legislation and reistries have two additional statuses not covered by the international ValueSet, so these two codes are added in dk-core.
-* Several basic resources such as Patient and Organization has an adress. In dk-core these adresses use the [FHIR datatype](http://hl7.org/fhir/R4/datatypes.html#Address), which is very basic compared to the [Danish Adress standard](https://arkitektur.digst.dk/adresse). However, adresses can be refered faithfully using the international standard e.g. Adress.text can be mapped directly to the Danish Adresse.adressebetegnelse. If more details are nedded than FHIR instanses provide, the (Danish adress registry)[https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar] can be used for look-up. 
+* Patient.maritalStatus uses the extendable ValueSet required by the FHIR standard. However, Danish legislation and registries have two additional statuses not covered by the international ValueSet, so these two codes are added in dk-core.
+* Several basic resources such as Patient and Organization has an adress. In dk-core these adresses use the [FHIR datatype](http://hl7.org/fhir/R4/datatypes.html#Address), which is very basic compared to the [Danish Adress standard](https://arkitektur.digst.dk/adresse). However, adresses can be refered faithfully using the international standard e.g. Adress.text can be mapped directly to the Danish Adresse.adressebetegnelse. If more details are needed than FHIR instanses provide, the [Danish adress registry](https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar) can be used for look-up. 
