@@ -1,10 +1,10 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 22, warn = 5, info = 7
-IG Publisher Version: 1.2.4
-Generated Tue Oct 04 20:57:39 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 1 / 0 / 0
+err = 21, warn = 5, info = 7
+IG Publisher Version: 1.2.6
+Generated Tue Oct 11 09:28:44 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system : 1 / 0 / 1
@@ -32,7 +32,7 @@ Generated Tue Oct 04 20:57:39 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Patient-ukendt : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Practitioner-AbrahamLaege : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
@@ -63,25 +63,24 @@ Generated Tue Oct 04 20:57:39 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/input/resources/sor-organization-type : 2 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/ServiceRequest-HenvisningFraLageTilSygehus.html#/html/body/div/div/div/div/div/div/p/a at Line 209, column 501: The link 'John' for "John" cannot be resolved
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
-ERROR: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-administrative-gender-supplement.json ==
-ERROR: CodeSystem/administrative-gender-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/administrative-gender-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system.json ==
-ERROR: CodeSystem/dk-core-cpr-identifier-system: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/dk-core-cpr-identifier-system: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes.json ==
-ERROR: CodeSystem/dk-core-municipality-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/dk-core-municipality-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
-ERROR: CodeSystem/dk-core-municipality-codes-greenland: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/dk-core-municipality-codes-greenland: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
-ERROR: CodeSystem/dk-core-regional-subdivision-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/dk-core-regional-subdivision-codes: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
 WARNING: CodeSystem/dk-marital-status: CodeSystem: Rule csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: CodeSystem/dk-marital-status: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/dk-marital-status: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Condition-ConditionPressureUlcer.json ==
 INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.21' is unknown so the code cannot be validated
-ERROR: Condition/ConditionPressureUlcer: Condition.code.coding[1]: The Coding provided (http://snomed.info/sct#420324007) is not in the value set http://hl7.org/fhir/ValueSet/condition-code, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/ValueSet/condition-code ([]))
+ERROR: Condition/ConditionPressureUlcer: Condition.code.coding[1]: The Coding provided (http://snomed.info/sct#420324007) is not in the value set http://hl7.org/fhir/ValueSet/condition-code, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/ValueSet/condition-code)
 == fsh-generated/resources/Condition-JohnDiabetes.json ==
 INFORMATION: Condition/JohnDiabetes: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-JohnMelanoma.json ==
@@ -110,7 +109,6 @@ INFORMATION: Patient/ukendt: Patient.name[0]: This element does not match any kn
 == fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
 INFORMATION: Practitioner/HanneSocialraadgiver: Practitioner.qualification[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner
 == fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
-ERROR: ServiceRequest/HenvisningFraLageTilSygehus: ServiceRequest.subject: Unable to resolve resource with reference 'John'
 == fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
 == fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore'): The Implementation Guide contains no examples for this extension
@@ -136,21 +134,21 @@ ERROR: ValueSet/dk-core-RegionalSubDivisionCodes: ValueSet: The ShareableValueSe
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==
 WARNING: ValueSet/dk-marital-status: ValueSet: Rule vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == input/resources/address-type-dk-supplement.xml ==
-ERROR: CodeSystem/address-type-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/address-type-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/address-use-dk-supplement.xml ==
-ERROR: CodeSystem/address-use-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/address-use-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/care-team-status-dk-supplement.xml ==
-ERROR: CodeSystem/care-team-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/care-team-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/consent-state-codes-dk-supplement.xml ==
-ERROR: CodeSystem/consent-state-codes-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/consent-state-codes-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/days-of-week-dk-supplement.xml ==
-ERROR: CodeSystem/days-of-week-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/days-of-week-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/episode-of-care-status-dk-supplement.xml ==
-ERROR: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/publication-status-dk-supplement.xml ==
-ERROR: CodeSystem/publication-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/publication-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/request-status-dk-supplement.xml ==
-ERROR: CodeSystem/request-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/request-status-dk-supplement: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == input/resources/sor-organization-type.json ==
 ERROR: ValueSet/sor-organization-type: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 ERROR: ValueSet/sor-organization-type: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile

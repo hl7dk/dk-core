@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DKCore"];
   fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-04T20:54:27+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-11T09:25:49+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -50,15 +50,6 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "higtools" ];
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools";
-       fhir:link <http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.tools" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
-  ], [
-     fhir:index 1;
      fhir:Element.id [ fhir:value "hl7tx" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
