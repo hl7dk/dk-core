@@ -14,7 +14,7 @@ We use the Condition profile for describing both conditions that are true for an
 Given that we have a condition, which is a problem-list-item, ending the condition have two meanings:
 * The first is that the patient no longer has the condition e.g. a pressure ulcer has healed. In this case, Condition.clinicalStatus=inactive and Condition.abatementTime is the date where the condition was no longer a problem.
 * The second meaning of "ended" is that the condition falls out of focus in a professional context e.g. if the patient moves, or another professional group takes over the care for the patient. A Condition no longer in focus can be represented in two ways:
- - The Condition.category looses its "problem-list-item" flag. The idea is to state that from a patient viewpoint the condition has not changed, but in this professional context it is no longer in focus.
- - The Condition.extension.NotFollowedAnymore is populated with the date that it lost focus in a specific professional context.
+  * The Condition.category looses its "problem-list-item" flag. The idea is to state that from a patient viewpoint the condition has not changed, but in this professional context it is no longer in focus.
+  * The Condition.extension.NotFollowedAnymore is populated with the date that it lost focus in a specific professional context.
 
 The Condition profile cover both primary sector, secondary sector (medical specialists ([DA] speciallæger) and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts.

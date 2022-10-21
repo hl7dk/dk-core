@@ -133,7 +133,7 @@ Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt m
 Usage: #example
 * code.coding[SCTConditionCode].system = "http://snomed.info/sct"
 * code.coding[SCTConditionCode].code = #441509002
-* code.coding[SCTConditionCode].display = " kardiel pacemaker in situ"
+* code.coding[SCTConditionCode].display = "Cardiac pacemaker in situ"
 * subject = Reference(john)
 * recorder = Reference(AbrahamLaege)
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
