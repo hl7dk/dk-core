@@ -27,7 +27,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}",".typeCode"
 "Condition.extension:conditionLastAssertedDate","Condition.extension","conditionLastAssertedDate","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate]]} {[]}
-","Last date a condition was confirmed valid in its current state","Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Last date a condition was confirmed valid in its current state","Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.extension:notFollowedAnymore","Condition.extension","notFollowedAnymore","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore]]} {[]}
@@ -216,7 +216,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Anatomical location, if relevant","The anatomical location where this condition manifests itself.","Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](http://hl7.org/fhir/R4/extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 442083009  |Anatomical or acquired body structure|",".targetBodySiteCode","363698007"
 "Condition.subject","Condition.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient]]}
 ","Who has the condition?","Indicates the patient or group who the condition record is associated with.","","Group is typically used for veterinary or public health use cases.","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject"
 "Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -232,10 +232,10 @@ Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","When in resolutio
 "Condition.recordedDate","Condition.recordedDate","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Date record was first recorded","The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date.","","","","","","","","","",,,,,"",,,,"Condition.recordedDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","REL-11",".participation[typeCode=AUT].time","FiveWs.recorded"
-"Condition.recorder","Condition.recorder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"Condition.recorder","Condition.recorder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Who recorded the condition","Individual who recorded the record and takes responsibility for its content.","","","","","","","","","",,,,,"",,,,"Condition.recorder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=AUT].role","FiveWs.author"
-"Condition.asserter","Condition.asserter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
+"Condition.asserter","Condition.asserter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
 ","Person who asserts this condition","Individual who is making the condition statement.","","","","","","","","","",,,,,"",,,,"Condition.asserter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","REL-7.1 identifier + REL-7.12 type code",".participation[typeCode=INF].role","FiveWs.source"
 "Condition.stage","Condition.stage","","","",0,*,"","","","BackboneElement {[]} {[]}

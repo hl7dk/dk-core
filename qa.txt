@@ -1,10 +1,10 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 21, warn = 5, info = 7
-IG Publisher Version: 1.2.6
-Generated Tue Oct 11 09:28:44 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 0 / 0
+err = 20, warn = 9, info = 8
+IG Publisher Version: 1.2.8
+Generated Fri Oct 21 11:31:32 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system : 1 / 0 / 1
@@ -12,7 +12,8 @@ Generated Tue Oct 11 09:28:44 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-ElseGraviditet : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnDiabetes : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnMelanoma : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnPacemaker : 0 / 2 / 1
@@ -27,6 +28,7 @@ Generated Tue Oct 11 09:28:44 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-else : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-john : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-mogensen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ukendt : 0 / 0 / 3
@@ -63,6 +65,10 @@ Generated Tue Oct 11 09:28:44 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/input/resources/sor-organization-type : 2 / 0 / 1
 </table>
 == n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
 ERROR: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-administrative-gender-supplement.json ==
@@ -80,7 +86,8 @@ WARNING: CodeSystem/dk-marital-status: CodeSystem: Rule csd-0: 'Name should be u
 ERROR: CodeSystem/dk-marital-status: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Condition-ConditionPressureUlcer.json ==
 INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.21' is unknown so the code cannot be validated
-ERROR: Condition/ConditionPressureUlcer: Condition.code.coding[1]: The Coding provided (http://snomed.info/sct#420324007) is not in the value set http://hl7.org/fhir/ValueSet/condition-code, and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/ValueSet/condition-code)
+== fsh-generated/resources/Condition-ElseGraviditet.json ==
+INFORMATION: Condition/ElseGraviditet: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-JohnDiabetes.json ==
 INFORMATION: Condition/JohnDiabetes: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-JohnMelanoma.json ==
@@ -99,6 +106,7 @@ WARNING: Condition/JohnPacemaker: Condition.code.coding[0].display: value should
 == fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
 == fsh-generated/resources/Patient-283.json ==
 == fsh-generated/resources/Patient-Confidential.json ==
+== fsh-generated/resources/Patient-else.json ==
 == fsh-generated/resources/Patient-john.json ==
 INFORMATION: Patient/john: Patient.name[1]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient
 == fsh-generated/resources/Patient-mogensen.json ==

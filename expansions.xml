@@ -1,11 +1,980 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="83b01e20-eb4c-4213-ba88-5ecf6d54e9ca"/>
+  <id value="21a10282-5015-4b1b-af75-6117c31a8382"/>
   <meta>
-    <lastUpdated value="2022-10-11T09:25:49.142+00:00"/>
+    <lastUpdated value="2022-10-21T11:28:25.941+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+    <resource>
+      <ValueSet>
+        <id value="sor-organization-type"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 68 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT Danish edition 30-Sep 2021</li>
+                <li>SNOMED CT International edition 31-Jul 2022</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554221000005108"> </a>  
+                  <a href="http://snomed.info/id/554221000005108">554221000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dwilling place</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-546821000005103"> </a>  
+                  <a href="http://snomed.info/id/546821000005103">546821000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Occupational therapy clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-547011000005103"> </a>  
+                  <a href="http://snomed.info/id/547011000005103">547011000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Physiotherapy clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-546811000005109"> </a>  
+                  <a href="http://snomed.info/id/546811000005109">546811000005109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rehabilitation center</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550621000005101"> </a>  
+                  <a href="http://snomed.info/id/550621000005101">550621000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>District nursing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550631000005103"> </a>  
+                  <a href="http://snomed.info/id/550631000005103">550631000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Midwife clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550641000005106"> </a>  
+                  <a href="http://snomed.info/id/550641000005106">550641000005106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chiropractic clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550651000005108"> </a>  
+                  <a href="http://snomed.info/id/550651000005108">550651000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical laboratory</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550661000005105"> </a>  
+                  <a href="http://snomed.info/id/550661000005105">550661000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Emergency medical service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554211000005102"> </a>  
+                  <a href="http://snomed.info/id/554211000005102">554211000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Prehospital unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550711000005101"> </a>  
+                  <a href="http://snomed.info/id/550711000005101">550711000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Psychological counseling clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550671000005100"> </a>  
+                  <a href="http://snomed.info/id/550671000005100">550671000005100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical specialist practice site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554061000005105"> </a>  
+                  <a href="http://snomed.info/id/554061000005105">554061000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chiropodist clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554041000005106"> </a>  
+                  <a href="http://snomed.info/id/554041000005106">554041000005106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Health administration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554021000005101"> </a>  
+                  <a href="http://snomed.info/id/554021000005101">554021000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Health visitors</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550681000005102"> </a>  
+                  <a href="http://snomed.info/id/550681000005102">550681000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dental practice</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550691000005104"> </a>  
+                  <a href="http://snomed.info/id/550691000005104">550691000005104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dental care clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550701000005104"> </a>  
+                  <a href="http://snomed.info/id/550701000005104">550701000005104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dental technician clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554231000005106"> </a>  
+                  <a href="http://snomed.info/id/554231000005106">554231000005106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vaccination clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554051000005108"> </a>  
+                  <a href="http://snomed.info/id/554051000005108">554051000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Reflexology clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550811000005108"> </a>  
+                  <a href="http://snomed.info/id/550811000005108">550811000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Administrative unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-547211000005108"> </a>  
+                  <a href="http://snomed.info/id/547211000005108">547211000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Municipality</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550891000005100"> </a>  
+                  <a href="http://snomed.info/id/550891000005100">550891000005100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Private</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550881000005103"> </a>  
+                  <a href="http://snomed.info/id/550881000005103">550881000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Region</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550411000005105"> </a>  
+                  <a href="http://snomed.info/id/550411000005105">550411000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Other health institution</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554851000005102"> </a>  
+                  <a href="http://snomed.info/id/554851000005102">554851000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Asylum centre</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550861000005106"> </a>  
+                  <a href="http://snomed.info/id/550861000005106">550861000005106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Physiotherapy and occupational clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554881000005108"> </a>  
+                  <a href="http://snomed.info/id/554881000005108">554881000005108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Handicap and psychiatry</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554861000005100"> </a>  
+                  <a href="http://snomed.info/id/554861000005100">554861000005100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Handicap</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554821000005109"> </a>  
+                  <a href="http://snomed.info/id/554821000005109">554821000005109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Home care</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554411000005101"> </a>  
+                  <a href="http://snomed.info/id/554411000005101">554411000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Employment agency</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554871000005105"> </a>  
+                  <a href="http://snomed.info/id/554871000005105">554871000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Psychiatry</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550821000005102"> </a>  
+                  <a href="http://snomed.info/id/550821000005102">550821000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Service unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550871000005101"> </a>  
+                  <a href="http://snomed.info/id/550871000005101">550871000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Emergency admission unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554241000005103"> </a>  
+                  <a href="http://snomed.info/id/554241000005103">554241000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Technical location number</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550841000005107"> </a>  
+                  <a href="http://snomed.info/id/550841000005107">550841000005107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Research unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550851000005109"> </a>  
+                  <a href="http://snomed.info/id/550851000005109">550851000005109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-551611000005102"> </a>  
+                  <a href="http://snomed.info/id/551611000005102">551611000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Surgical ward</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554071000005100"> </a>  
+                  <a href="http://snomed.info/id/554071000005100">554071000005100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hospital pharmacy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-550831000005104"> </a>  
+                  <a href="http://snomed.info/id/550831000005104">550831000005104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Education unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-554031000005103"> </a>  
+                  <a href="http://snomed.info/id/554031000005103">554031000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dietician clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557511000005107"> </a>  
+                  <a href="http://snomed.info/id/557511000005107">557511000005107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Acupuncture clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557501000005109"> </a>  
+                  <a href="http://snomed.info/id/557501000005109">557501000005109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pharmacy branch</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557531000005103"> </a>  
+                  <a href="http://snomed.info/id/557531000005103">557531000005103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Prosthetist clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557591000005104"> </a>  
+                  <a href="http://snomed.info/id/557591000005104">557591000005104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Web-based care</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557521000005101"> </a>  
+                  <a href="http://snomed.info/id/557521000005101">557521000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Alternative treatment clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557561000005105"> </a>  
+                  <a href="http://snomed.info/id/557561000005105">557561000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Consulting firm</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557541000005106"> </a>  
+                  <a href="http://snomed.info/id/557541000005106">557541000005106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cosmetic treatment clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557581000005102"> </a>  
+                  <a href="http://snomed.info/id/557581000005102">557581000005102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Optometrist or optician clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-556841000005105"> </a>  
+                  <a href="http://snomed.info/id/556841000005105">556841000005105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Social psychological counseling</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-557671000005101"> </a>  
+                  <a href="http://snomed.info/id/557671000005101">557671000005101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Osteopathy clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-398070004"> </a>  
+                  <a href="http://snomed.info/id/398070004">398070004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>State</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-394761003"> </a>  
+                  <a href="http://snomed.info/id/394761003">394761003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>General practitioner practice site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-20078004"> </a>  
+                  <a href="http://snomed.info/id/20078004">20078004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Substance abuse treatment center</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-722173008"> </a>  
+                  <a href="http://snomed.info/id/722173008">722173008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Prison based care site</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-702871004"> </a>  
+                  <a href="http://snomed.info/id/702871004">702871004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Infertility clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-276037005"> </a>  
+                  <a href="http://snomed.info/id/276037005">276037005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Volunteer helper</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-22232009"> </a>  
+                  <a href="http://snomed.info/id/22232009">22232009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hospital</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-702824005"> </a>  
+                  <a href="http://snomed.info/id/702824005">702824005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Audiology clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-42665001"> </a>  
+                  <a href="http://snomed.info/id/42665001">42665001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nursing home</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264361005"> </a>  
+                  <a href="http://snomed.info/id/264361005">264361005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Health centre</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-703069008"> </a>  
+                  <a href="http://snomed.info/id/703069008">703069008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nurse practitioner clinic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-309964003"> </a>  
+                  <a href="http://snomed.info/id/309964003">309964003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Radiology department</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-309904001"> </a>  
+                  <a href="http://snomed.info/id/309904001">309904001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intensive care unit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-309939001"> </a>  
+                  <a href="http://snomed.info/id/309939001">309939001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Palliative care department</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-225728007"> </a>  
+                  <a href="http://snomed.info/id/225728007">225728007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Accident and Emergency department</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255203001"> </a>  
+                  <a href="http://snomed.info/id/255203001">255203001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Additional values</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264372000"> </a>  
+                  <a href="http://snomed.info/id/264372000">264372000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pharmacy</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+        <version value="2.1.0"/>
+        <name value="SorOrganizationType"/>
+        <status value="active"/>
+        <date value="2022-10-21T11:28:25+00:00"/>
+        <publisher value="HL7 Denmark"/>
+        <contact>
+          <name value="HL7 Denmark"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
+          </telecom>
+        </contact>
+        <description value="Value set used for indicating the organization type for organizations from SOR"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+        <expansion>
+          <identifier value="urn:uuid:dd6a4a55-e820-46eb-a762-67d30d064dcc"/>
+          <timestamp value="2022-10-21T11:28:58+00:00"/>
+          <total value="68"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554221000005108"/>
+            <display value="Dwilling place"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="546821000005103"/>
+            <display value="Occupational therapy clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="547011000005103"/>
+            <display value="Physiotherapy clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="546811000005109"/>
+            <display value="Rehabilitation center"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550621000005101"/>
+            <display value="District nursing"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550631000005103"/>
+            <display value="Midwife clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550641000005106"/>
+            <display value="Chiropractic clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550651000005108"/>
+            <display value="Medical laboratory"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550661000005105"/>
+            <display value="Emergency medical service"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554211000005102"/>
+            <display value="Prehospital unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550711000005101"/>
+            <display value="Psychological counseling clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550671000005100"/>
+            <display value="Medical specialist practice site"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554061000005105"/>
+            <display value="Chiropodist clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554041000005106"/>
+            <display value="Health administration"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554021000005101"/>
+            <display value="Health visitors"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550681000005102"/>
+            <display value="Dental practice"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550691000005104"/>
+            <display value="Dental care clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550701000005104"/>
+            <display value="Dental technician clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554231000005106"/>
+            <display value="Vaccination clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554051000005108"/>
+            <display value="Reflexology clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550811000005108"/>
+            <display value="Administrative unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="547211000005108"/>
+            <display value="Municipality"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550891000005100"/>
+            <display value="Private"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550881000005103"/>
+            <display value="Region"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550411000005105"/>
+            <display value="Other health institution"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554851000005102"/>
+            <display value="Asylum centre"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550861000005106"/>
+            <display value="Physiotherapy and occupational clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554881000005108"/>
+            <display value="Handicap and psychiatry"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554861000005100"/>
+            <display value="Handicap"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554821000005109"/>
+            <display value="Home care"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554411000005101"/>
+            <display value="Employment agency"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554871000005105"/>
+            <display value="Psychiatry"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550821000005102"/>
+            <display value="Service unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550871000005101"/>
+            <display value="Emergency admission unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554241000005103"/>
+            <display value="Technical location number"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550841000005107"/>
+            <display value="Research unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550851000005109"/>
+            <display value="Clinical unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="551611000005102"/>
+            <display value="Surgical ward"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554071000005100"/>
+            <display value="Hospital pharmacy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="550831000005104"/>
+            <display value="Education unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="554031000005103"/>
+            <display value="Dietician clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557511000005107"/>
+            <display value="Acupuncture clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557501000005109"/>
+            <display value="Pharmacy branch"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557531000005103"/>
+            <display value="Prosthetist clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557591000005104"/>
+            <display value="Web-based care"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557521000005101"/>
+            <display value="Alternative treatment clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557561000005105"/>
+            <display value="Consulting firm"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557541000005106"/>
+            <display value="Cosmetic treatment clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557581000005102"/>
+            <display value="Optometrist or optician clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="556841000005105"/>
+            <display value="Social psychological counseling"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="557671000005101"/>
+            <display value="Osteopathy clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="398070004"/>
+            <display value="State"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="394761003"/>
+            <display value="General practitioner practice site"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="20078004"/>
+            <display value="Substance abuse treatment center"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722173008"/>
+            <display value="Prison based care site"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="702871004"/>
+            <display value="Infertility clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276037005"/>
+            <display value="Volunteer helper"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22232009"/>
+            <display value="Hospital"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="702824005"/>
+            <display value="Audiology clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42665001"/>
+            <display value="Nursing home"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264361005"/>
+            <display value="Health centre"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="703069008"/>
+            <display value="Nurse practitioner clinic"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309964003"/>
+            <display value="Radiology department"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309904001"/>
+            <display value="Intensive care unit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309939001"/>
+            <display value="Palliative care department"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225728007"/>
+            <display value="Accident and Emergency department"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255203001"/>
+            <display value="Additional values"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264372000"/>
+            <display value="Pharmacy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
     <resource>
@@ -206,7 +1175,7 @@
         <name value="DkCoreProfessionGroupValueSet"/>
         <title value="dk-profession-group-valueset"/>
         <status value="active"/>
-        <date value="2022-10-11T09:25:49+00:00"/>
+        <date value="2022-10-21T11:28:25+00:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -228,8 +1197,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5a56f6cd-89af-4b60-860d-afd64bce1980"/>
-          <timestamp value="2022-10-11T09:26:20+00:00"/>
+          <identifier value="urn:uuid:e26df817-a8c9-4cee-b747-a9ea3c166253"/>
+          <timestamp value="2022-10-21T11:29:02+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -343,90 +1312,6 @@
             <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
             <code value="5431"/>
             <display value="Tandplejer"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
-    <resource>
-      <ValueSet>
-        <id value="dk-core-cpr-identifier-system"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v2.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-cpr-identifier-system-urn-oid-1.2.208.176.1.2"> </a>  
-                  <a href="CodeSystem-dk-core-cpr-identifier-system.html#dk-core-cpr-identifier-system-urn.58oid.581.462.46208.46176.461.462">urn:oid:1.2.208.176.1.2</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system</td>
-                <td>OID representation of CPR</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
-        <version value="2.1.0"/>
-        <name value="DkCoreValidIdentifier"/>
-        <title value="CPR Identifier"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2019-11-01T09:29:23+11:00"/>
-        <publisher value="HL7 Denmark"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="This value set defines the set of codes that can be used to identify the danish CPR system."/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-            <display value="Denmark"/>
-          </coding>
-        </jurisdiction>
-        <copyright value="CC-BY-SA-4.0"/>
-        <expansion>
-          <identifier value="urn:uuid:97795ec5-0e86-40d2-9226-86d34dd20d0f"/>
-          <timestamp value="2022-10-11T09:26:20+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|2.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system"/>
-            <code value="urn:oid:1.2.208.176.1.2"/>
-            <display value="OID representation of CPR"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1327,8 +2212,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:1bdfd7a9-554b-49c6-b3a4-0814db330c2c"/>
-          <timestamp value="2022-10-11T09:26:20+00:00"/>
+          <identifier value="urn:uuid:c561c155-a984-42d0-a742-b8edcd992522"/>
+          <timestamp value="2022-10-21T11:29:02+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1961,8 +2846,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:079627d7-0ddb-4f6c-b5e9-a601bea01b95"/>
-          <timestamp value="2022-10-11T09:26:20+00:00"/>
+          <identifier value="urn:uuid:d53908f1-ba09-47a5-aba0-e4a3240be460"/>
+          <timestamp value="2022-10-21T11:29:02+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2269,8 +3154,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:d2afe2bc-e7b0-45dc-ae12-8e77eaba7295"/>
-          <timestamp value="2022-10-11T09:26:20+00:00"/>
+          <identifier value="urn:uuid:3f6376d9-1032-480f-b10f-4fced46327a4"/>
+          <timestamp value="2022-10-21T11:29:04+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2367,21 +3252,17 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
     <resource>
       <ValueSet>
-        <id value="sor-organization-type"/>
+        <id value="dk-core-cpr-identifier-system"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 68 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>SNOMED CT Danish edition 30-Sep 2021</li>
-                <li>SNOMED CT International edition 31-Jul 2022</li>
-              </ul>
-            </div>
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v2.1.0 (CodeSystem)</a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2396,556 +3277,22 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554221000005108"> </a>  
-                  <a href="http://snomed.info/id/554221000005108">554221000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dwilling place</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-546821000005103"> </a>  
-                  <a href="http://snomed.info/id/546821000005103">546821000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Occupational therapy clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-547011000005103"> </a>  
-                  <a href="http://snomed.info/id/547011000005103">547011000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Physiotherapy clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-546811000005109"> </a>  
-                  <a href="http://snomed.info/id/546811000005109">546811000005109</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Rehabilitation center</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550621000005101"> </a>  
-                  <a href="http://snomed.info/id/550621000005101">550621000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>District nursing</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550631000005103"> </a>  
-                  <a href="http://snomed.info/id/550631000005103">550631000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Midwife clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550641000005106"> </a>  
-                  <a href="http://snomed.info/id/550641000005106">550641000005106</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Chiropractic clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550651000005108"> </a>  
-                  <a href="http://snomed.info/id/550651000005108">550651000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Medical laboratory</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550661000005105"> </a>  
-                  <a href="http://snomed.info/id/550661000005105">550661000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Emergency medical service</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554211000005102"> </a>  
-                  <a href="http://snomed.info/id/554211000005102">554211000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Prehospital unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550711000005101"> </a>  
-                  <a href="http://snomed.info/id/550711000005101">550711000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Psychological counseling clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550671000005100"> </a>  
-                  <a href="http://snomed.info/id/550671000005100">550671000005100</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Medical specialist practice site</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554061000005105"> </a>  
-                  <a href="http://snomed.info/id/554061000005105">554061000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Chiropodist clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554041000005106"> </a>  
-                  <a href="http://snomed.info/id/554041000005106">554041000005106</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Health administration</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554021000005101"> </a>  
-                  <a href="http://snomed.info/id/554021000005101">554021000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Health visitors</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550681000005102"> </a>  
-                  <a href="http://snomed.info/id/550681000005102">550681000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dental practice</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550691000005104"> </a>  
-                  <a href="http://snomed.info/id/550691000005104">550691000005104</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dental care clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550701000005104"> </a>  
-                  <a href="http://snomed.info/id/550701000005104">550701000005104</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dental technician clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554231000005106"> </a>  
-                  <a href="http://snomed.info/id/554231000005106">554231000005106</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Vaccination clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554051000005108"> </a>  
-                  <a href="http://snomed.info/id/554051000005108">554051000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Reflexology clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550811000005108"> </a>  
-                  <a href="http://snomed.info/id/550811000005108">550811000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Administrative unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-547211000005108"> </a>  
-                  <a href="http://snomed.info/id/547211000005108">547211000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Municipality</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550891000005100"> </a>  
-                  <a href="http://snomed.info/id/550891000005100">550891000005100</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Private</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550881000005103"> </a>  
-                  <a href="http://snomed.info/id/550881000005103">550881000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Region</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550411000005105"> </a>  
-                  <a href="http://snomed.info/id/550411000005105">550411000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Other health institution</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554851000005102"> </a>  
-                  <a href="http://snomed.info/id/554851000005102">554851000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Asylum centre</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550861000005106"> </a>  
-                  <a href="http://snomed.info/id/550861000005106">550861000005106</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Physiotherapy and occupational clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554881000005108"> </a>  
-                  <a href="http://snomed.info/id/554881000005108">554881000005108</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Handicap and psychiatry</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554861000005100"> </a>  
-                  <a href="http://snomed.info/id/554861000005100">554861000005100</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Handicap</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554821000005109"> </a>  
-                  <a href="http://snomed.info/id/554821000005109">554821000005109</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Home care</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554411000005101"> </a>  
-                  <a href="http://snomed.info/id/554411000005101">554411000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Employment agency</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554871000005105"> </a>  
-                  <a href="http://snomed.info/id/554871000005105">554871000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Psychiatry</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550821000005102"> </a>  
-                  <a href="http://snomed.info/id/550821000005102">550821000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Service unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550871000005101"> </a>  
-                  <a href="http://snomed.info/id/550871000005101">550871000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Emergency admission unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554241000005103"> </a>  
-                  <a href="http://snomed.info/id/554241000005103">554241000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Technical location number</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550841000005107"> </a>  
-                  <a href="http://snomed.info/id/550841000005107">550841000005107</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Research unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550851000005109"> </a>  
-                  <a href="http://snomed.info/id/550851000005109">550851000005109</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Clinical unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-551611000005102"> </a>  
-                  <a href="http://snomed.info/id/551611000005102">551611000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Surgical ward</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554071000005100"> </a>  
-                  <a href="http://snomed.info/id/554071000005100">554071000005100</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Hospital pharmacy</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-550831000005104"> </a>  
-                  <a href="http://snomed.info/id/550831000005104">550831000005104</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Education unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-554031000005103"> </a>  
-                  <a href="http://snomed.info/id/554031000005103">554031000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dietician clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557511000005107"> </a>  
-                  <a href="http://snomed.info/id/557511000005107">557511000005107</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Acupuncture clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557501000005109"> </a>  
-                  <a href="http://snomed.info/id/557501000005109">557501000005109</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Pharmacy branch</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557531000005103"> </a>  
-                  <a href="http://snomed.info/id/557531000005103">557531000005103</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Prosthetist clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557591000005104"> </a>  
-                  <a href="http://snomed.info/id/557591000005104">557591000005104</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Web-based care</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557521000005101"> </a>  
-                  <a href="http://snomed.info/id/557521000005101">557521000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Alternative treatment clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557561000005105"> </a>  
-                  <a href="http://snomed.info/id/557561000005105">557561000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Consulting firm</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557541000005106"> </a>  
-                  <a href="http://snomed.info/id/557541000005106">557541000005106</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Cosmetic treatment clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557581000005102"> </a>  
-                  <a href="http://snomed.info/id/557581000005102">557581000005102</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Optometrist or optician clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-556841000005105"> </a>  
-                  <a href="http://snomed.info/id/556841000005105">556841000005105</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Social psychological counseling</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-557671000005101"> </a>  
-                  <a href="http://snomed.info/id/557671000005101">557671000005101</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Osteopathy clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-398070004"> </a>  
-                  <a href="http://snomed.info/id/398070004">398070004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>State</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-394761003"> </a>  
-                  <a href="http://snomed.info/id/394761003">394761003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>General practitioner practice site</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-20078004"> </a>  
-                  <a href="http://snomed.info/id/20078004">20078004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Substance abuse treatment center</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-722173008"> </a>  
-                  <a href="http://snomed.info/id/722173008">722173008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Prison based care site</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-702871004"> </a>  
-                  <a href="http://snomed.info/id/702871004">702871004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Infertility clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-276037005"> </a>  
-                  <a href="http://snomed.info/id/276037005">276037005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Volunteer helper</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-22232009"> </a>  
-                  <a href="http://snomed.info/id/22232009">22232009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Hospital</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-702824005"> </a>  
-                  <a href="http://snomed.info/id/702824005">702824005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Audiology clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-42665001"> </a>  
-                  <a href="http://snomed.info/id/42665001">42665001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Nursing home</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-264361005"> </a>  
-                  <a href="http://snomed.info/id/264361005">264361005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Health centre</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-703069008"> </a>  
-                  <a href="http://snomed.info/id/703069008">703069008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Nurse practitioner clinic</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-309964003"> </a>  
-                  <a href="http://snomed.info/id/309964003">309964003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Radiology department</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-309904001"> </a>  
-                  <a href="http://snomed.info/id/309904001">309904001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Intensive care unit</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-309939001"> </a>  
-                  <a href="http://snomed.info/id/309939001">309939001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Palliative care department</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-225728007"> </a>  
-                  <a href="http://snomed.info/id/225728007">225728007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Accident and Emergency department</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-255203001"> </a>  
-                  <a href="http://snomed.info/id/255203001">255203001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Additional values</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-264372000"> </a>  
-                  <a href="http://snomed.info/id/264372000">264372000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Pharmacy</td>
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-cpr-identifier-system-urn-oid-1.2.208.176.1.2"> </a>  
+                  <a href="CodeSystem-dk-core-cpr-identifier-system.html#dk-core-cpr-identifier-system-urn.58oid.581.462.46208.46176.461.462">urn:oid:1.2.208.176.1.2</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system</td>
+                <td>OID representation of CPR</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
         <version value="2.1.0"/>
-        <name value="SorOrganizationType"/>
+        <name value="DkCoreValidIdentifier"/>
+        <title value="CPR Identifier"/>
         <status value="active"/>
-        <date value="2022-10-11T09:25:49+00:00"/>
+        <experimental value="false"/>
+        <date value="2019-11-01T09:29:23+11:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -2958,7 +3305,7 @@
             <value value="jenskristianvilladsen@gmail.com"/>
           </telecom>
         </contact>
-        <description value="Value set used for indicating the organization type for organizations from SOR"/>
+        <description value="This value set defines the set of codes that can be used to identify the danish CPR system."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2966,370 +3313,23 @@
             <display value="Denmark"/>
           </coding>
         </jurisdiction>
-        <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+        <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:aa5edaf4-faae-4186-b167-28489d151119"/>
-          <timestamp value="2022-10-11T09:26:21+00:00"/>
-          <total value="68"/>
+          <identifier value="urn:uuid:5d9c5fbb-5164-431f-aea6-f23d8740462c"/>
+          <timestamp value="2022-10-21T11:29:05+00:00"/>
+          <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|2.1.0"/>
           </parameter>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554221000005108"/>
-            <display value="Dwilling place"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="546821000005103"/>
-            <display value="Occupational therapy clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="547011000005103"/>
-            <display value="Physiotherapy clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="546811000005109"/>
-            <display value="Rehabilitation center"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550621000005101"/>
-            <display value="District nursing"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550631000005103"/>
-            <display value="Midwife clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550641000005106"/>
-            <display value="Chiropractic clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550651000005108"/>
-            <display value="Medical laboratory"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550661000005105"/>
-            <display value="Emergency medical service"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554211000005102"/>
-            <display value="Prehospital unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550711000005101"/>
-            <display value="Psychological counseling clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550671000005100"/>
-            <display value="Medical specialist practice site"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554061000005105"/>
-            <display value="Chiropodist clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554041000005106"/>
-            <display value="Health administration"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554021000005101"/>
-            <display value="Health visitors"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550681000005102"/>
-            <display value="Dental practice"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550691000005104"/>
-            <display value="Dental care clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550701000005104"/>
-            <display value="Dental technician clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554231000005106"/>
-            <display value="Vaccination clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554051000005108"/>
-            <display value="Reflexology clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550811000005108"/>
-            <display value="Administrative unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="547211000005108"/>
-            <display value="Municipality"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550891000005100"/>
-            <display value="Private"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550881000005103"/>
-            <display value="Region"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550411000005105"/>
-            <display value="Other health institution"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554851000005102"/>
-            <display value="Asylum centre"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550861000005106"/>
-            <display value="Physiotherapy and occupational clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554881000005108"/>
-            <display value="Handicap and psychiatry"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554861000005100"/>
-            <display value="Handicap"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554821000005109"/>
-            <display value="Home care"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554411000005101"/>
-            <display value="Employment agency"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554871000005105"/>
-            <display value="Psychiatry"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550821000005102"/>
-            <display value="Service unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550871000005101"/>
-            <display value="Emergency admission unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554241000005103"/>
-            <display value="Technical location number"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550841000005107"/>
-            <display value="Research unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550851000005109"/>
-            <display value="Clinical unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="551611000005102"/>
-            <display value="Surgical ward"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554071000005100"/>
-            <display value="Hospital pharmacy"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="550831000005104"/>
-            <display value="Education unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="554031000005103"/>
-            <display value="Dietician clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557511000005107"/>
-            <display value="Acupuncture clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557501000005109"/>
-            <display value="Pharmacy branch"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557531000005103"/>
-            <display value="Prosthetist clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557591000005104"/>
-            <display value="Web-based care"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557521000005101"/>
-            <display value="Alternative treatment clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557561000005105"/>
-            <display value="Consulting firm"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557541000005106"/>
-            <display value="Cosmetic treatment clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557581000005102"/>
-            <display value="Optometrist or optician clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="556841000005105"/>
-            <display value="Social psychological counseling"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="557671000005101"/>
-            <display value="Osteopathy clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="398070004"/>
-            <display value="State"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="394761003"/>
-            <display value="General practitioner practice site"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="20078004"/>
-            <display value="Substance abuse treatment center"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="722173008"/>
-            <display value="Prison based care site"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="702871004"/>
-            <display value="Infertility clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="276037005"/>
-            <display value="Volunteer helper"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="22232009"/>
-            <display value="Hospital"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="702824005"/>
-            <display value="Audiology clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="42665001"/>
-            <display value="Nursing home"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="264361005"/>
-            <display value="Health centre"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="703069008"/>
-            <display value="Nurse practitioner clinic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309964003"/>
-            <display value="Radiology department"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309904001"/>
-            <display value="Intensive care unit"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309939001"/>
-            <display value="Palliative care department"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="225728007"/>
-            <display value="Accident and Emergency department"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="255203001"/>
-            <display value="Additional values"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="264372000"/>
-            <display value="Pharmacy"/>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system"/>
+            <code value="urn:oid:1.2.208.176.1.2"/>
+            <display value="OID representation of CPR"/>
           </contains>
         </expansion>
       </ValueSet>
