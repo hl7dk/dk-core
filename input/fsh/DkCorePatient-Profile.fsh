@@ -96,6 +96,21 @@ Usage: #example
 * birthDate = "1964-12-11"
 * maritalStatus = $dk-marital-status#P "Registreret partnerskab"
 
+Instance: else
+InstanceOf: DkCorePatient
+Title: "Example of a woman of childbearing age"
+Description: "Example of a woman of childbearing age. Else is a MedCom test-patient"
+Usage: #example
+* identifier[0].system = "urn:oid:1.2.208.176.1.2"
+* identifier[0].value = "0201919990"
+* name[0].use = #official
+* name[0].family = "Lauridsen"
+* name[0].given[0] = "Else"
+* name[0].given[1] = "Test"
+* gender = #female
+* birthDate = "1991-02-02"
+* maritalStatus = $v3-MaritalStatus#M "Married"
+
 Instance: ukendt
 InstanceOf: DkCorePatient
 Title: "Example of valid patient unknown identifier registry"

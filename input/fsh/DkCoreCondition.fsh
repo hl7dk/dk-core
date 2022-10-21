@@ -36,7 +36,9 @@ Description:  "HL7 Denmark core profile for professionally asserted conditions, 
    ConditionLastAssertedDate named conditionLastAssertedDate 0..1 and
    NotFollowedAnymore named notFollowedAnymore 0..1
 
-* asserter only Reference(Practitioner or PractitionerRole)
+* subject only Reference (DkCorePatient)
+* asserter only Reference(DkCorePractitioner or PractitionerRole)
+* recorder only Reference (DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
 
 * code.coding ^short = "Condition code, [DA] tilstandskode"
 * code.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
@@ -49,14 +51,13 @@ Description:  "HL7 Denmark core profile for professionally asserted conditions, 
 
 Extension: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"
-Description: "Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up"
+Description: "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"
 * value[x] only dateTime
 
 Extension: NotFollowedAnymore
 Title: "NotFollowedAnymore"
 Description: "Extension for the date where a condition lost focus in a specific clinical context"
 * value[x] only dateTime
-
 
 
 Instance: JohnDiabetes
@@ -86,7 +87,7 @@ Usage: #example
 * code.coding[FSIIIConditionCode].system = "urn:oid:1.2.208.176.2.21"
 * code.coding[FSIIIConditionCode].code = #I4.4
 * code.coding[FSIIIConditionCode].display = "Problemer med tryksår"
-* code.coding[SCTConditionCode] = http://snomed.info/sct#420324007 "Pressure ulcer stage 2"
+* code.coding[SCTConditionCode] = http://snomed.info/sct#1163220007 "Pressure injury stage II"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
@@ -127,7 +128,7 @@ Usage: #example
 
 Instance: JohnPacemaker
 InstanceOf: DkCoreCondition
-Title: "John pacemakeer"
+Title: "John pacemaker"
 Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
 Usage: #example
 * code.coding[SCTConditionCode].system = "http://snomed.info/sct"
@@ -138,5 +139,20 @@ Usage: #example
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
 * recordedDate = 2021-05-01
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+
+Instance: ElseGraviditet
+InstanceOf: DkCoreCondition
+Title: "Else Graviditet"
+Description: "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten"
+Usage: #example
+* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
+* code.coding[SKS-D].code = #DZ340
+* code.coding[SKS-D].display = "Graviditet, førstegangsfødende"
+* subject = Reference(else)
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+* category.coding.code = #encounter-diagnosis
+* recordedDate = 2021-07-03
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
