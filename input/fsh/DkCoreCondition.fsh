@@ -2,157 +2,111 @@ Profile: DkCoreCondition
 Parent: Condition
 Id: dk-core-condition
 Title: "Danish Core Condition Profile"
-Description:  "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"
-
-//Slicing code, declaring disciminator, and slicing type
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding ^slicing.ordered = false   // can be omitted, since false is the default
-* code.coding ^slicing.description = "Slice based on the code.system value which allow different code-systems to represent a condition"  // optional - does not appear
-//Declaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code
-* code.coding contains
-   FSIIIConditionCode 0..1 and SCTConditionCode 0..1 and FFBConditionCode 0..1 and SKS-D 0..1 and ICPC2code 0..1
-
-//Declaring the value set binding for the KLConditionCode slice, and setting the system.
-//System is fixed to allow the slicing to work
-
-* code.coding[FSIIIConditionCode].system = "urn:oid:1.2.208.176.2.21"
-
-//Declaring the value set binding for the SCTConditionCode slice, and setting the system.
-//System is fixed to allow the slicing to work (See Aliases for value set, and system info)
-* code.coding[SCTConditionCode] from http://hl7.org/fhir/ValueSet/condition-code
-* code.coding[SCTConditionCode].system = "http://snomed.info/sct" // eller 1.2.208.176.2.5
-
-
-* code.coding[FFBConditionCode].system = "urn:oid:1.2.208.176.2.22"
-
-* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12" //eller (1.2.208.176.2.4)
-
-* code.coding[ICPC2code].system = "urn:oid:1.2.208.176.2.31"
-
+Description: "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"
+* ^status = #active
 * extension contains
-   http://hl7.org/fhir/StructureDefinition/condition-dueTo named dueTo 0..1 and
-   ConditionLastAssertedDate named conditionLastAssertedDate 0..1 and
-   NotFollowedAnymore named notFollowedAnymore 0..1
-
-* subject only Reference (DkCorePatient)
-* asserter only Reference(DkCorePractitioner or PractitionerRole)
-* recorder only Reference (DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
-
-* code.coding ^short = "Condition code, [DA] tilstandskode"
-* code.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
-* code.coding[FFBConditionCode] ^short = "[DA] FFB undertemakode"
-* code.coding[SCTConditionCode] ^short = "SNOMED CT condition code"
-* code.coding[ICPC2code] ^short = "ICPC2 code"
-* code.coding[SKS-D] ^short = "[DA] Kode fra D-hierarkiet i SKS"
+    $condition-dueTo named dueTo 0..1 and
+    ConditionLastAssertedDate named conditionLastAssertedDate 0..1 and
+    NotFollowedAnymore named notFollowedAnymore 0..1
 * extension[conditionLastAssertedDate] ^short = "Last date a condition was confirmed valid in its current state"
 * extension[notFollowedAnymore] ^short = "Date where a condition lost focus in a specific clinical context"
-
-Extension: ConditionLastAssertedDate
-Title: "ConditionLastAssertedDate"
-Description: "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"
-* value[x] only dateTime
-
-Extension: NotFollowedAnymore
-Title: "NotFollowedAnymore"
-Description: "Extension for the date where a condition lost focus in a specific clinical context"
-* value[x] only dateTime
-
-
-Instance: JohnDiabetes
-InstanceOf: DkCoreCondition
-Title: "John diabetes"
-Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"
-Usage: #example
-* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
-* code.coding[SKS-D].code = #DE11
-* code.coding[SKS-D].display = "Type 2-diabetes"
-* subject = Reference(john)
-* asserter = Reference(AbrahamLaege)
-* recorder = Reference(AbrahamLaege)
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-* category.coding.code = #encounter-diagnosis
-* onsetDateTime = 2020-02-20
-* recordedDate = 2020-03-15
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* code.coding ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^slicing.ordered = false
+  * ^slicing.description = "Slice based on the code.system value which allow different code-systems to represent a condition"
+  * ^short = "Condition code, [DA] tilstandskode"
+* code.coding contains
+    FSIIIConditionCode 0..1 and
+    SCTConditionCode 0..1 and
+    FFBConditionCode 0..1 and
+    SKS-D 0..1 and
+    ICPC2code 0..1
+* code.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
+  * system 1..
+  * system = "urn:oid:1.2.208.176.2.21"
+* code.coding[SCTConditionCode] from $condition-code (required)
+  * ^short = "SNOMED CT condition code"
+  * system 1..
+  * system = "http://snomed.info/sct"
+* code.coding[FFBConditionCode] ^short = "[DA] FFB undertemakode"
+  * system 1..
+  * system = "urn:oid:1.2.208.176.2.22"
+* code.coding[SKS-D] ^short = "[DA] Kode fra D-hierarkiet i SKS"
+  * system 1..
+  * system = "urn:oid:1.2.208.176.2.4.12"
+* code.coding[ICPC2code] ^short = "ICPC2 code"
+  * system 1..
+  * system = "urn:oid:1.2.208.176.2.31"
+* subject only Reference(DkCorePatient)
+* recorder only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
+* asserter only Reference(DkCorePractitioner or PractitionerRole)
 
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
 Title: "John tryksår"
 Description: "John, tryksår, kommunal tilstand"
 Usage: #example
+* code.coding[0] = urn:oid:1.2.208.176.2.21#I4.4 "Problemer med tryksår"
+* code.coding[+] = $sct#1163220007 "Pressure injury stage II"
 * code.text = "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion."
-* code.coding[FSIIIConditionCode].system = "urn:oid:1.2.208.176.2.21"
-* code.coding[FSIIIConditionCode].code = #I4.4
-* code.coding[FSIIIConditionCode].display = "Problemer med tryksår"
-* code.coding[SCTConditionCode] = http://snomed.info/sct#1163220007 "Pressure injury stage II"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-* category.coding.code = #problem-list-item
-* extension[conditionLastAssertedDate].valueDateTime = 2020-12-12
-* subject = Reference(john)
-* recordedDate = 2020-06-05
-
-Instance: JohnMelanoma
-InstanceOf: DkCoreCondition
-Title: "John mistanke om Modermærkekræft"
-Description: "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese"
-Usage: #example
-* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
-* code.coding[SKS-D].code = #DC43
-* code.coding[SKS-D].display = "Modermærkekræft i huden"
-* subject = Reference(john)
-* asserter = Reference(AbrahamLaege)
-* recorder = Reference(AbrahamLaege)
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-* category.coding.code = #encounter-diagnosis
-* recordedDate = 2021-05-01
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
-
-Instance: HenvisningFraLageTilSygehus
-InstanceOf: ServiceRequest
-Title: "Henvisning vedr. modermærkekræft"
-Description: "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft"
-Usage: #example
-* requester = Reference(LaegerneHasserisBymidte)
-* reasonCode.text = "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft"
-* reasonReference = Reference(JohnMelanoma)
-* subject = Reference(john)
-* authoredOn = 2021-05-01
-* status = http://hl7.org/fhir/request-status#active
-* intent = http://hl7.org/fhir/request-intent#proposal
-* priority = http://hl7.org/fhir/request-priority#asap
-
-Instance: JohnPacemaker
-InstanceOf: DkCoreCondition
-Title: "John pacemaker"
-Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
-Usage: #example
-* code.coding[SCTConditionCode].system = "http://snomed.info/sct"
-* code.coding[SCTConditionCode].code = #441509002
-* code.coding[SCTConditionCode].display = "Cardiac pacemaker in situ"
-* subject = Reference(john)
-* recorder = Reference(AbrahamLaege)
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-* category.coding.code = #problem-list-item
-* recordedDate = 2021-05-01
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* extension.url = "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate"
+* extension.valueDateTime = "2020-12-12"
+* clinicalStatus = $condition-clinical#active
+* category = $condition-category#problem-list-item
+* subject.reference = "Patient/john"
+* recordedDate = "2020-06-05"
 
 Instance: ElseGraviditet
 InstanceOf: DkCoreCondition
 Title: "Else Graviditet"
 Description: "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten"
 Usage: #example
-* code.coding[SKS-D].system = "urn:oid:1.2.208.176.2.4.12"
-* code.coding[SKS-D].code = #DZ340
-* code.coding[SKS-D].display = "Graviditet, førstegangsfødende"
-* subject = Reference(else)
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
-* category.coding.code = #encounter-diagnosis
-* recordedDate = 2021-07-03
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* code = urn:oid:1.2.208.176.2.4.12#DZ340 "Graviditet, førstegangsfødende"
+* subject.reference = "Patient/else"
+* category = $condition-category#encounter-diagnosis
+* recordedDate = "2021-07-03"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+
+Instance: JohnDiabetes
+InstanceOf: DkCoreCondition
+Title: "John diabetes"
+Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"
+Usage: #example
+* code = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
+* subject.reference = "Patient/john"
+* asserter.reference = "Practitioner/AbrahamLaege"
+* recorder.reference = "Practitioner/AbrahamLaege"
+* category = $condition-category#encounter-diagnosis
+* onsetDateTime = "2020-02-20"
+* recordedDate = "2020-03-15"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+
+Instance: JohnMelanoma
+InstanceOf: DkCoreCondition
+Title: "John mistanke om Modermærkekræft"
+Description: "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese"
+Usage: #example
+* code = urn:oid:1.2.208.176.2.4.12#DC43 "Modermærkekræft i huden"
+* subject.reference = "Patient/john"
+* asserter.reference = "Practitioner/AbrahamLaege"
+* recorder.reference = "Practitioner/AbrahamLaege"
+* category = $condition-category#encounter-diagnosis
+* recordedDate = "2021-05-01"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#unconfirmed
+
+Instance: JohnPacemaker
+InstanceOf: DkCoreCondition
+Title: "John pacemaker"
+Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
+Usage: #example
+* code = $sct#441509002 "Cardiac pacemaker in situ"
+* subject.reference = "Patient/john"
+* recorder.reference = "Practitioner/AbrahamLaege"
+* category = $condition-category#problem-list-item
+* recordedDate = "2021-05-01"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed

@@ -8,4 +8,9 @@ Description: "Identifier holding the organization code issued by KOMBIT"
 * system 1..
 * system = "https://kombit.dk/sts/organisation" (exactly)
 * value 1..
-* value obeys uuid
+  * obeys uuid
+
+Invariant: uuid
+Description: "General UUID expression"
+Severity: #error
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
