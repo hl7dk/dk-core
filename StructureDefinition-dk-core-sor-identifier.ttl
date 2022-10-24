@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SORIdentifier"];
   fhir:StructureDefinition.title [ fhir:value "SOR Identifier"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-14T16:56:07+01:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-24T22:55:30+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Denmark"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -42,7 +42,6 @@
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
   ];
-  fhir:StructureDefinition.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -418,7 +417,6 @@
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "min-digits-sor" ];
-         fhir:ElementDefinition.constraint.requirements [ fhir:value "SOR Identifiers are at minimum 11 digits long" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "SOR Identifiers are at minimum 11 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^([0-9]){11,}$')" ];
@@ -561,8 +559,19 @@
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "min-digits-sor" ];
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
          fhir:ElementDefinition.constraint.requirements [ fhir:value "SOR Identifiers are at minimum 11 digits long" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "min-digits-sor" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "SOR Identifiers are at minimum 11 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^([0-9]){11,}$')" ];

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DKCore"];
   fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-24T14:23:47+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-24T22:55:30+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -794,6 +794,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/lpr3-Identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LPR3 Identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier holding a LPR3 identifier for an organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/dk-core-sor-identifier" ]
        ];
@@ -801,7 +815,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier holding the official SOR identifier for a danish healthcare organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,7 +829,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -829,7 +843,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier holding the official identifier for a danish municipality" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -843,7 +857,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension for the date where a condition lost focus in a specific clinical context" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -857,7 +871,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier holding the official organization identifier for a danish region" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -867,22 +881,8 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/DkCoreProfessionGroupValueSet" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-profession-group-valueset" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Profession Group" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DK Profession Group codes" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system>;
-         fhir:Reference.reference [ fhir:value "ValueSet/dk-core-cpr-identifier-system" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CPR Identifier" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines the set of codes that can be used to identify the danish CPR system." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -895,7 +895,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes>;
          fhir:Reference.reference [ fhir:value "ValueSet/dk-core-MunicipalityCodes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MunicipalityCodes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Municipality Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Municipality codes used in Denmark" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -909,7 +909,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes>;
          fhir:Reference.reference [ fhir:value "ValueSet/dk-core-RegionalSubDivisionCodes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RegionalSubdivisionCodes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Regional Subdivision Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subdivision codes (Regional codes) used in Denmark" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -920,11 +920,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-cpr-identifier-system" ]
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/address-type-dk-supplement" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DkCoreCprIdentifierSystem" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Official CPR CodeSystem" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Address Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of an address (physical / postal)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -934,14 +934,182 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/DkCoreProfessionGroupCodes" ]
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/address-use-dk-supplement" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-profession-groups-codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Address Use" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The use of an address" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/administrative-gender-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Administrative Gender Supplement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem supplement with danish translations for administrative gender" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/care-team-status-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK CareTeam Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the status of the care team." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/consent-state-codes-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Consent State" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the state of the consent" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-regional-subdivision-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Regional Subdivision Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/days-of-week-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Days Of Week" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The days of the week." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DkCoreProfessionGroupCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Profession Group Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-marital-status>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/dk-marital-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Marital Statuses" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DK marital statuses" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/episode-of-care-status-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Episode Of Care Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The status of the episode of care." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-municipality-codes-greenland" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Greenland Municipality Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-municipality-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Municipality Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/publication-status-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Publication Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The lifecycle status of a Value Set or Concept Map." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/request-status-dk-supplement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK Request Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes identifying the stage lifecycle stage of a request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -958,7 +1126,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -975,7 +1143,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -992,7 +1160,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1009,7 +1177,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1026,7 +1194,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1043,7 +1211,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1060,7 +1228,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1077,7 +1245,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1094,7 +1262,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1111,7 +1279,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1125,7 +1293,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1142,7 +1310,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1159,7 +1327,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1176,7 +1344,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1193,21 +1361,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/administrative-gender-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "administrative-gender-supplement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem supplement with danish translations for administrative gender" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 36;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1224,7 +1378,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1238,63 +1392,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-municipality-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-core-municipality-codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 39;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-municipality-codes-greenland" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-core-municipality-codes-greenland" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dk-core-regional-subdivision-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-core-regional-subdivision-codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-marital-status>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/dk-marital-status" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-marital-status-of-CodeSystem" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DK marital statuses" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 42;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1304,11 +1402,11 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-marital-status>;
          fhir:Reference.reference [ fhir:value "ValueSet/dk-marital-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK MaritalStatus" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-marital-status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1325,7 +1423,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ], [
-       fhir:index 44;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1342,7 +1440,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1359,7 +1457,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ], [
-       fhir:index 46;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1373,7 +1471,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47;
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/sor-organization-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sor-organization-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "sor-organization-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set used for indicating the organization type for organizations from SOR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1389,132 +1501,6 @@
          fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
-     ], [
-       fhir:index 48;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/address-type-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AddressType" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of an address (physical / postal)" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 49;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/address-use-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AddressUse" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The use of an address" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 50;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/care-team-status-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CareTeamStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the status of the care team." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 51;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/consent-state-codes-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConsentState" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the state of the consent" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 52;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/days-of-week-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DaysOfWeek" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The days of the week." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/episode-of-care-status-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EpisodeOfCareStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The status of the episode of care." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 54;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/publication-status-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PublicationStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The lifecycle status of a Value Set or Concept Map." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 55;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/request-status-dk-supplement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RequestStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes identifying the stage lifecycle stage of a request" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 56;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/sor-organization-type>;
-         fhir:Reference.reference [ fhir:value "ValueSet/sor-organization-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SorOrganizationType" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set used for indicating the organization type for organizations from SOR" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [

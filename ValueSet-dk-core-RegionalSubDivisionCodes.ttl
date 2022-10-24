@@ -15,9 +15,10 @@
   fhir:ValueSet.url [ fhir:value "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"];
   fhir:ValueSet.version [ fhir:value "2.1.0"];
   fhir:ValueSet.name [ fhir:value "RegionalSubdivisionCodes"];
+  fhir:ValueSet.title [ fhir:value "DK Regional Subdivision Codes"];
   fhir:ValueSet.status [ fhir:value "draft"];
   fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ValueSet.date [ fhir:value "2019-02-02"^^xsd:date];
+  fhir:ValueSet.date [ fhir:value "2022-10-24T22:55:30+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Denmark"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -42,7 +43,6 @@
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
   ];
-  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

@@ -8,13 +8,6 @@
 <http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "administrative-gender-supplement"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
-     ]
-  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male\">male</a><a name=\"administrative-gender-supplement-male\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female\">female</a><a name=\"administrative-gender-supplement-female\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-other\">other</a><a name=\"administrative-gender-supplement-other\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-unknown\">unknown</a><a name=\"administrative-gender-supplement-unknown\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>male</td><td>Mand</td></tr><tr><td>female</td><td>Kvinde</td></tr><tr><td>other</td><td>Andet</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>"
@@ -22,9 +15,10 @@
   fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement"];
   fhir:CodeSystem.version [ fhir:value "2.1.0"];
   fhir:CodeSystem.name [ fhir:value "AdministrativeGenderDkSupplement"];
+  fhir:CodeSystem.title [ fhir:value "DK Administrative Gender Supplement"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2020-07-27"^^xsd:date];
+  fhir:CodeSystem.date [ fhir:value "2022-10-24T22:55:30+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -49,7 +43,6 @@
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
   ];
-  fhir:CodeSystem.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:CodeSystem.content [ fhir:value "supplement"];
   fhir:CodeSystem.supplements [
      fhir:value "http://hl7.org/fhir/administrative-gender";

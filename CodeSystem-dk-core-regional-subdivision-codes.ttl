@@ -15,9 +15,10 @@
   fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"];
   fhir:CodeSystem.version [ fhir:value "2.1.0"];
   fhir:CodeSystem.name [ fhir:value "DKCoreRegionalSubdivisionCodes"];
+  fhir:CodeSystem.title [ fhir:value "DK Regional Subdivision Codes"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2019-02-02T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-24T22:55:30+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -42,9 +43,9 @@
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
   ];
-  fhir:CodeSystem.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "DK-84" ];

@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2022-10-24T14:23:47+00:00"/>
+  <date value="2022-10-24T22:55:30+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -545,6 +545,17 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lpr3-Identifier"/>
+      </reference>
+      <name value="LPR3 Identifier"/>
+      <description value="Identifier holding a LPR3 identifier for an organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/dk-core-sor-identifier"/>
       </reference>
       <name value="SOR Identifier"/>
@@ -602,19 +613,8 @@
       <reference>
         <reference value="ValueSet/DkCoreProfessionGroupValueSet"/>
       </reference>
-      <name value="dk-profession-group-valueset"/>
+      <name value="DK Profession Group"/>
       <description value="DK Profession Group codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-cpr-identifier-system"/>
-      </reference>
-      <name value="CPR Identifier"/>
-      <description value="This value set defines the set of codes that can be used to identify the danish CPR system."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -624,7 +624,7 @@
       <reference>
         <reference value="ValueSet/dk-core-MunicipalityCodes"/>
       </reference>
-      <name value="MunicipalityCodes"/>
+      <name value="DK Municipality Codes"/>
       <description value="Municipality codes used in Denmark"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -635,7 +635,7 @@
       <reference>
         <reference value="ValueSet/dk-core-RegionalSubDivisionCodes"/>
       </reference>
-      <name value="RegionalSubdivisionCodes"/>
+      <name value="DK Regional Subdivision Codes"/>
       <description value="Subdivision codes (Regional codes) used in Denmark"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -644,10 +644,76 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/dk-core-cpr-identifier-system"/>
+        <reference value="CodeSystem/address-type-dk-supplement"/>
       </reference>
-      <name value="DkCoreCprIdentifierSystem"/>
-      <description value="Official CPR CodeSystem"/>
+      <name value="DK Address Type"/>
+      <description value="The type of an address (physical / postal)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/address-use-dk-supplement"/>
+      </reference>
+      <name value="DK Address Use"/>
+      <description value="The use of an address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/administrative-gender-supplement"/>
+      </reference>
+      <name value="DK Administrative Gender Supplement"/>
+      <description value="CodeSystem supplement with danish translations for administrative gender"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/care-team-status-dk-supplement"/>
+      </reference>
+      <name value="DK CareTeam Status"/>
+      <description value="Indicates the status of the care team."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/consent-state-codes-dk-supplement"/>
+      </reference>
+      <name value="DK Consent State"/>
+      <description value="Indicates the state of the consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-regional-subdivision-codes"/>
+      </reference>
+      <name value="DK Regional Subdivision Codes"/>
+      <description value="Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/days-of-week-dk-supplement"/>
+      </reference>
+      <name value="DK Days Of Week"/>
+      <description value="The days of the week."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -657,8 +723,74 @@
       <reference>
         <reference value="CodeSystem/DkCoreProfessionGroupCodes"/>
       </reference>
-      <name value="dk-profession-groups-codes"/>
+      <name value="DK Profession Group Codes"/>
       <description value="DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-marital-status"/>
+      </reference>
+      <name value="DK Marital Statuses"/>
+      <description value="DK marital statuses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/episode-of-care-status-dk-supplement"/>
+      </reference>
+      <name value="DK Episode Of Care Status"/>
+      <description value="The status of the episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-municipality-codes-greenland"/>
+      </reference>
+      <name value="DK Greenland Municipality Codes"/>
+      <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-municipality-codes"/>
+      </reference>
+      <name value="DK Municipality Codes"/>
+      <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/publication-status-dk-supplement"/>
+      </reference>
+      <name value="DK Publication Status"/>
+      <description value="The lifecycle status of a Value Set or Concept Map."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/request-status-dk-supplement"/>
+      </reference>
+      <name value="DK Request Status"/>
+      <description value="Codes identifying the stage lifecycle stage of a request"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -828,17 +960,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/administrative-gender-supplement"/>
-      </reference>
-      <name value="administrative-gender-supplement"/>
-      <description value="CodeSystem supplement with danish translations for administrative gender"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -861,56 +982,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-municipality-codes"/>
-      </reference>
-      <name value="dk-core-municipality-codes"/>
-      <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-municipality-codes-greenland"/>
-      </reference>
-      <name value="dk-core-municipality-codes-greenland"/>
-      <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-regional-subdivision-codes"/>
-      </reference>
-      <name value="dk-core-regional-subdivision-codes"/>
-      <description value="Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-marital-status"/>
-      </reference>
-      <name value="dk-marital-status-of-CodeSystem"/>
-      <description value="DK marital statuses"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/dk-marital-status"/>
       </reference>
-      <name value="DK MaritalStatus"/>
+      <name value="dk-marital-status"/>
       <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -960,6 +1037,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sor-organization-type"/>
+      </reference>
+      <name value="sor-organization-type"/>
+      <description value="Value set used for indicating the organization type for organizations from SOR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -968,105 +1056,6 @@
       <name value="Example of valid patient unknown identifier registry"/>
       <description value="Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/address-type-dk-supplement"/>
-      </reference>
-      <name value="AddressType"/>
-      <description value="The type of an address (physical / postal)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/address-use-dk-supplement"/>
-      </reference>
-      <name value="AddressUse"/>
-      <description value="The use of an address"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/care-team-status-dk-supplement"/>
-      </reference>
-      <name value="CareTeamStatus"/>
-      <description value="Indicates the status of the care team."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/consent-state-codes-dk-supplement"/>
-      </reference>
-      <name value="ConsentState"/>
-      <description value="Indicates the state of the consent"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/days-of-week-dk-supplement"/>
-      </reference>
-      <name value="DaysOfWeek"/>
-      <description value="The days of the week."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/episode-of-care-status-dk-supplement"/>
-      </reference>
-      <name value="EpisodeOfCareStatus"/>
-      <description value="The status of the episode of care."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/publication-status-dk-supplement"/>
-      </reference>
-      <name value="PublicationStatus"/>
-      <description value="The lifecycle status of a Value Set or Concept Map."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/request-status-dk-supplement"/>
-      </reference>
-      <name value="RequestStatus"/>
-      <description value="Codes identifying the stage lifecycle stage of a request"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/sor-organization-type"/>
-      </reference>
-      <name value="SorOrganizationType"/>
-      <description value="Value set used for indicating the organization type for organizations from SOR"/>
-      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

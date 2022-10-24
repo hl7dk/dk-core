@@ -13,12 +13,6 @@
        fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
        fhir:index 0;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-Confidentiality" ];
-       fhir:Coding.code [ fhir:value "R" ];
-       fhir:Coding.display [ fhir:value "restricted" ]
      ]
   ];
   fhir:DomainResource.text [

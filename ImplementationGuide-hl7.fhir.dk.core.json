@@ -10,7 +10,7 @@
   "name": "DKCore",
   "title": "HL7 FHIR Implementation Guide: DK Core",
   "status": "draft",
-  "date": "2022-10-24T14:23:47+00:00",
+  "date": "2022-10-24T22:55:30+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -840,6 +840,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/lpr3-Identifier"
+        },
+        "name": "LPR3 Identifier",
+        "description": "Identifier holding a LPR3 identifier for an organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/dk-core-sor-identifier"
         },
         "name": "SOR Identifier",
@@ -912,22 +926,8 @@
         "reference": {
           "reference": "ValueSet/DkCoreProfessionGroupValueSet"
         },
-        "name": "dk-profession-group-valueset",
+        "name": "DK Profession Group",
         "description": "DK Profession Group codes",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/dk-core-cpr-identifier-system"
-        },
-        "name": "CPR Identifier",
-        "description": "This value set defines the set of codes that can be used to identify the danish CPR system.",
         "exampleBoolean": false
       },
       {
@@ -940,7 +940,7 @@
         "reference": {
           "reference": "ValueSet/dk-core-MunicipalityCodes"
         },
-        "name": "MunicipalityCodes",
+        "name": "DK Municipality Codes",
         "description": "Municipality codes used in Denmark",
         "exampleBoolean": false
       },
@@ -954,7 +954,7 @@
         "reference": {
           "reference": "ValueSet/dk-core-RegionalSubDivisionCodes"
         },
-        "name": "RegionalSubdivisionCodes",
+        "name": "DK Regional Subdivision Codes",
         "description": "Subdivision codes (Regional codes) used in Denmark",
         "exampleBoolean": false
       },
@@ -966,10 +966,94 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/dk-core-cpr-identifier-system"
+          "reference": "CodeSystem/address-type-dk-supplement"
         },
-        "name": "DkCoreCprIdentifierSystem",
-        "description": "Official CPR CodeSystem",
+        "name": "DK Address Type",
+        "description": "The type of an address (physical / postal)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/address-use-dk-supplement"
+        },
+        "name": "DK Address Use",
+        "description": "The use of an address",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/administrative-gender-supplement"
+        },
+        "name": "DK Administrative Gender Supplement",
+        "description": "CodeSystem supplement with danish translations for administrative gender",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/care-team-status-dk-supplement"
+        },
+        "name": "DK CareTeam Status",
+        "description": "Indicates the status of the care team.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/consent-state-codes-dk-supplement"
+        },
+        "name": "DK Consent State",
+        "description": "Indicates the state of the consent",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/dk-core-regional-subdivision-codes"
+        },
+        "name": "DK Regional Subdivision Codes",
+        "description": "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/days-of-week-dk-supplement"
+        },
+        "name": "DK Days Of Week",
+        "description": "The days of the week.",
         "exampleBoolean": false
       },
       {
@@ -982,8 +1066,92 @@
         "reference": {
           "reference": "CodeSystem/DkCoreProfessionGroupCodes"
         },
-        "name": "dk-profession-groups-codes",
+        "name": "DK Profession Group Codes",
         "description": "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/dk-marital-status"
+        },
+        "name": "DK Marital Statuses",
+        "description": "DK marital statuses",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/episode-of-care-status-dk-supplement"
+        },
+        "name": "DK Episode Of Care Status",
+        "description": "The status of the episode of care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/dk-core-municipality-codes-greenland"
+        },
+        "name": "DK Greenland Municipality Codes",
+        "description": "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/dk-core-municipality-codes"
+        },
+        "name": "DK Municipality Codes",
+        "description": "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/publication-status-dk-supplement"
+        },
+        "name": "DK Publication Status",
+        "description": "The lifecycle status of a Value Set or Concept Map.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/request-status-dk-supplement"
+        },
+        "name": "DK Request Status",
+        "description": "Codes identifying the stage lifecycle stage of a request",
         "exampleBoolean": false
       },
       {
@@ -1200,20 +1368,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/administrative-gender-supplement"
-        },
-        "name": "administrative-gender-supplement",
-        "description": "CodeSystem supplement with danish translations for administrative gender",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1242,69 +1396,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/dk-core-municipality-codes"
-        },
-        "name": "dk-core-municipality-codes",
-        "description": "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/dk-core-municipality-codes-greenland"
-        },
-        "name": "dk-core-municipality-codes-greenland",
-        "description": "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/dk-core-regional-subdivision-codes"
-        },
-        "name": "dk-core-regional-subdivision-codes",
-        "description": "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/dk-marital-status"
-        },
-        "name": "dk-marital-status-of-CodeSystem",
-        "description": "DK marital statuses",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
           "reference": "ValueSet/dk-marital-status"
         },
-        "name": "DK MaritalStatus",
+        "name": "dk-marital-status",
         "description": "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
         "exampleBoolean": false
       },
@@ -1368,6 +1466,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/sor-organization-type"
+        },
+        "name": "sor-organization-type",
+        "description": "Value set used for indicating the organization type for organizations from SOR",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -1377,132 +1489,6 @@
         "name": "Example of valid patient unknown identifier registry",
         "description": "Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register",
         "exampleCanonical": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/address-type-dk-supplement"
-        },
-        "name": "AddressType",
-        "description": "The type of an address (physical / postal)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/address-use-dk-supplement"
-        },
-        "name": "AddressUse",
-        "description": "The use of an address",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/care-team-status-dk-supplement"
-        },
-        "name": "CareTeamStatus",
-        "description": "Indicates the status of the care team.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/consent-state-codes-dk-supplement"
-        },
-        "name": "ConsentState",
-        "description": "Indicates the state of the consent",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/days-of-week-dk-supplement"
-        },
-        "name": "DaysOfWeek",
-        "description": "The days of the week.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/episode-of-care-status-dk-supplement"
-        },
-        "name": "EpisodeOfCareStatus",
-        "description": "The status of the episode of care.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/publication-status-dk-supplement"
-        },
-        "name": "PublicationStatus",
-        "description": "The lifecycle status of a Value Set or Concept Map.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/request-status-dk-supplement"
-        },
-        "name": "RequestStatus",
-        "description": "Codes identifying the stage lifecycle stage of a request",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/sor-organization-type"
-        },
-        "name": "SorOrganizationType",
-        "description": "Value set used for indicating the organization type for organizations from SOR",
-        "exampleBoolean": false
       }
     ],
     "page": {

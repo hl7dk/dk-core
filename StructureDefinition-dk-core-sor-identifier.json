@@ -10,7 +10,7 @@
   "name": "SORIdentifier",
   "title": "SOR Identifier",
   "status": "draft",
-  "date": "2021-03-14T16:56:07+01:00",
+  "date": "2022-10-24T22:55:30+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -39,7 +39,6 @@
       ]
     }
   ],
-  "copyright": "CC-BY-SA-4.0",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -404,7 +403,6 @@
           },
           {
             "key": "min-digits-sor",
-            "requirements": "SOR Identifiers are at minimum 11 digits long",
             "severity": "error",
             "human": "SOR Identifiers are at minimum 11 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf",
             "expression": "matches('^([0-9]){11,}$')",
@@ -545,8 +543,16 @@
         "min": 1,
         "constraint": [
           {
-            "key": "min-digits-sor",
+            "key": "ele-1",
             "requirements": "SOR Identifiers are at minimum 11 digits long",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "min-digits-sor",
             "severity": "error",
             "human": "SOR Identifiers are at minimum 11 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf",
             "expression": "matches('^([0-9]){11,}$')",
