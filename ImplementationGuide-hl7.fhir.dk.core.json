@@ -10,7 +10,7 @@
   "name": "DKCore",
   "title": "HL7 FHIR Implementation Guide: DK Core",
   "status": "draft",
-  "date": "2022-10-24T22:55:30+00:00",
+  "date": "2022-11-07T08:18:22+00:00",
   "publisher": "HL7 Denmark",
   "contact": [
     {
@@ -47,6 +47,12 @@
   "dependsOn": [
     {
       "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
       "version": "4.0.0"
