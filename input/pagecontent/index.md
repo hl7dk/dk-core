@@ -8,7 +8,7 @@ This document is a working specification that is expected to be implemented and 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
 
 ### Scope
-The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specific profiles on top. As such, dk-core does not provide profiles for specific use use cases out-of-the-box. 
+The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specific profiles on top. As such, dk-core does not provide profiles for specific use use cases out-of-the-box.
 
 This document presents Danish use concepts defined via FHIR processable artefacts:
 
@@ -16,7 +16,7 @@ This document presents Danish use concepts defined via FHIR processable artefact
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed Danish concepts
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for Danish context
 
-dk-core is regularily approved by HL7 Denmark, and from version 2.0.0 added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur).
+dk-core is regularily approved by HL7 Denmark and added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.
 
 ### Governance
 FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group:
