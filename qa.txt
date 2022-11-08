@@ -1,10 +1,10 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 0, warn = 7, info = 8
-IG Publisher Version: 1.2.13
-Generated Mon Nov 07 15:13:11 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 4 / 0
+err = 8, warn = 7, info = 8
+IG Publisher Version: 1.2.14
+Generated Tue Nov 08 22:23:55 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.1.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 11 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 0 / 1
@@ -64,6 +64,17 @@ Generated Mon Nov 07 15:13:11 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/redirect.asp.template: Unable to read attribute on <> at line 1 column 2
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/redirect.php.template: Unable to read attribute on <> at line 1 column 2
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/redirect.cgi.template: Unable to read attribute on <> at line 1 column 2
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/index.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-CapabilityStatement.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-CodeSystem.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-Profile.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-ValueSet.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-index.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison-set.html: The html source does not contain the publish box
+ERROR: /github/workspace/output/ipa-comparison-v{latest}/template-comparison.html: The html source does not contain the publish box
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
