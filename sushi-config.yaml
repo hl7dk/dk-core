@@ -7,12 +7,12 @@ canonical: http://hl7.dk/fhir/core
 name: DKCore
 title: "HL7 FHIR Implementation Guide: DK Core"
 description: A FHIR Implementation Guide for the Danish common needs across healthcare sectors
-status: draft
+status: active # draft
 version: 2.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 license: CC0-1.0
-releaseLabel: ci-build
+releaseLabel: release # ci-build
 publisher:
   name: HL7 Denmark
   url: http://www.hl7.dk
@@ -35,3 +35,4 @@ menu:
 
 parameters:
   show-inherited-invariants: false
+  ipa-comparison: "{latest}"
