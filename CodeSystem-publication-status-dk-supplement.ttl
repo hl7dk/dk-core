@@ -8,19 +8,19 @@
 
 <http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "publication-status-dk-supplement"];
+  fhir:Resource.id [ fhir:value "publication-status-dk-supplement"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-draft\">draft</a><a name=\"publication-status-dk-supplement-draft\"> </a></td><td>Draft</td><td>This resource is still under development and is not yet considered to be ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-active\">active</a><a name=\"publication-status-dk-supplement-active\"> </a></td><td>Active</td><td>This resource is ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-retired\">retired</a><a name=\"publication-status-dk-supplement-retired\"> </a></td><td>Retired</td><td>This resource has been withdrawn or superseded and should no longer be used.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-unknown\">unknown</a><a name=\"publication-status-dk-supplement-unknown\"> </a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, it's just not known which one.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td></td><td></td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"];
-  fhir:CodeSystem.version [ fhir:value "2.2.0"];
-  fhir:CodeSystem.name [ fhir:value "PublicationStatus"];
-  fhir:CodeSystem.title [ fhir:value "DK Publication Status"];
-  fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-12-01T00:22:19+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"]; # 
+  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "PublicationStatus"]; # 
+  fhir:CodeSystem.title [ fhir:value "DK Publication Status"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-12-01T21:15:09+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
@@ -33,8 +33,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "The lifecycle status of a Value Set or Concept Map."];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "The lifecycle status of a Value Set or Concept Map."]; # 
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -43,12 +43,12 @@
        fhir:Coding.code [ fhir:value "DK" ];
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "supplement"];
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
   fhir:CodeSystem.supplements [
      fhir:value "http://hl7.org/fhir/publication-status";
      fhir:link <http://hl7.org/fhir/publication-status>
-  ];
+  ]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "draft" ];
@@ -133,7 +133,7 @@
        ];
        fhir:CodeSystem.concept.designation.value [ fhir:value "Ukendt" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

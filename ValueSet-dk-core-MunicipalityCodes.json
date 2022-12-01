@@ -1,53 +1,43 @@
 {
-  "resourceType": "ValueSet",
-  "id": "dk-core-MunicipalityCodes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes-greenland.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "dk-core-MunicipalityCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes-greenland.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</code></a></li></ul></div>"
   },
-  "url": "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-  "version": "2.2.0",
-  "name": "MunicipalityCodes",
-  "title": "DK Municipality Codes",
-  "status": "draft",
-  "experimental": true,
-  "date": "2022-12-01T00:22:19+00:00",
-  "publisher": "HL7 Denmark",
-  "contact": [
+  "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+  "version" : "2.2.0",
+  "name" : "MunicipalityCodes",
+  "title" : "DK Municipality Codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2022-12-01T21:15:09+00:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name": "HL7 Denmark",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.dk"
-        },
-        {
-          "system": "email",
-          "value": "jenskristianvilladsen@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "Municipality codes used in Denmark",
-  "jurisdiction": [
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "Municipality codes used in Denmark",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"
+    },
     {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DK",
-          "display": "Denmark"
-        }
-      ]
-    }
-  ],
-  "compose": {
-    "include": [
-      {
-        "system": "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"
-      },
-      {
-        "system": "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"
-      }
-    ]
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"
+    }]
   }
 }

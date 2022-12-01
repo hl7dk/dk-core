@@ -1,92 +1,76 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "address-type-dk-supplement",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-postal\">postal</a><a name=\"address-type-dk-supplement-postal\"> </a></td><td>Postal</td><td>Mailing addresses - PO Boxes and care-of addresses.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-physical\">physical</a><a name=\"address-type-dk-supplement-physical\"> </a></td><td>Physical</td><td>A physical address that can be visited.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-both\">both</a><a name=\"address-type-dk-supplement-both\"> </a></td><td>Postal &amp; Physical</td><td>An address that is both physical and postal.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>postal</td><td>Post</td></tr><tr><td>physical</td><td>Fysisk</td></tr><tr><td>both</td><td>Post &amp; fysisk</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "address-type-dk-supplement",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-postal\">postal</a><a name=\"address-type-dk-supplement-postal\"> </a></td><td>Postal</td><td>Mailing addresses - PO Boxes and care-of addresses.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-physical\">physical</a><a name=\"address-type-dk-supplement-physical\"> </a></td><td>Physical</td><td>A physical address that can be visited.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-both\">both</a><a name=\"address-type-dk-supplement-both\"> </a></td><td>Postal &amp; Physical</td><td>An address that is both physical and postal.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>postal</td><td>Post</td></tr><tr><td>physical</td><td>Fysisk</td></tr><tr><td>both</td><td>Post &amp; fysisk</td></tr></table></div>"
   },
-  "url": "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement",
-  "version": "2.2.0",
-  "name": "AddressType",
-  "title": "DK Address Type",
-  "status": "draft",
-  "experimental": false,
-  "date": "2022-12-01T00:22:19+00:00",
-  "publisher": "HL7 Denmark",
-  "contact": [
-    {
-      "name": "HL7 Denmark",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.dk"
-        },
-        {
-          "system": "email",
-          "value": "jenskristianvilladsen@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "The type of an address (physical / postal)",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DK",
-          "display": "Denmark"
-        }
-      ]
-    }
-  ],
-  "content": "supplement",
-  "supplements": "http://hl7.org/fhir/address-type",
-  "concept": [
-    {
-      "code": "postal",
-      "display": "Postal",
-      "definition": "Mailing addresses - PO Boxes and care-of addresses.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Post"
-        }
-      ]
+  "url" : "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement",
+  "version" : "2.2.0",
+  "name" : "AddressType",
+  "title" : "DK Address Type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2022-12-01T21:15:09+00:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
     },
     {
-      "code": "physical",
-      "display": "Physical",
-      "definition": "A physical address that can be visited.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Fysisk"
-        }
-      ]
-    },
-    {
-      "code": "both",
-      "display": "Postal & Physical",
-      "definition": "An address that is both physical and postal.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Post & fysisk"
-        }
-      ]
-    }
-  ]
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "The type of an address (physical / postal)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "content" : "supplement",
+  "supplements" : "http://hl7.org/fhir/address-type",
+  "concept" : [{
+    "code" : "postal",
+    "display" : "Postal",
+    "definition" : "Mailing addresses - PO Boxes and care-of addresses.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post"
+    }]
+  },
+  {
+    "code" : "physical",
+    "display" : "Physical",
+    "definition" : "A physical address that can be visited.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fysisk"
+    }]
+  },
+  {
+    "code" : "both",
+    "display" : "Postal & Physical",
+    "definition" : "An address that is both physical and postal.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post & fysisk"
+    }]
+  }]
 }

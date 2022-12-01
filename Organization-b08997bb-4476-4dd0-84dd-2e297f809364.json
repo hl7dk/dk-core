@@ -1,41 +1,33 @@
 {
-  "resourceType": "Organization",
-  "id": "b08997bb-4476-4dd0-84dd-2e297f809364",
-  "meta": {
-    "profile": [
-      "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-    ]
+  "resourceType" : "Organization",
+  "id" : "b08997bb-4476-4dd0-84dd-2e297f809364",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"b08997bb-4476-4dd0-84dd-2e297f809364\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;b08997bb-4476-4dd0-84dd-2e297f809364&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 12345678901, id: 26919991, id: 5798002472264, id: urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6</p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264372000)</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"b08997bb-4476-4dd0-84dd-2e297f809364\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;b08997bb-4476-4dd0-84dd-2e297f809364&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 12345678901, id: 26919991, id: 5798002472264, id: urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6</p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264372000)</span></p></div>"
   },
-  "identifier": [
-    {
-      "system": "urn:oid:1.2.208.176.1.1",
-      "value": "12345678901"
-    },
-    {
-      "system": "http://cvr.dk",
-      "value": "26919991"
-    },
-    {
-      "system": "https://www.gs1.org/gln",
-      "value": "5798002472264"
-    },
-    {
-      "system": "https://kombit.dk/sts/organisation",
-      "value": "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6"
-    }
-  ],
-  "type": [
-    {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "264372000"
-        }
-      ]
-    }
-  ]
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.1",
+    "value" : "12345678901"
+  },
+  {
+    "system" : "http://cvr.dk",
+    "value" : "26919991"
+  },
+  {
+    "system" : "https://www.gs1.org/gln",
+    "value" : "5798002472264"
+  },
+  {
+    "system" : "https://kombit.dk/sts/organisation",
+    "value" : "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "264372000"
+    }]
+  }]
 }

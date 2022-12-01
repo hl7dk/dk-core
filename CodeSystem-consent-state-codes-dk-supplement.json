@@ -1,137 +1,115 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "consent-state-codes-dk-supplement",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-draft\">draft</a><a name=\"consent-state-codes-dk-supplement-draft\"> </a></td><td>Pending</td><td>The consent is in development or awaiting use but is not yet intended to be acted upon.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-proposed\">proposed</a><a name=\"consent-state-codes-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The consent has been proposed but not yet agreed to by all parties. The negotiation stage.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-active\">active</a><a name=\"consent-state-codes-dk-supplement-active\"> </a></td><td>Active</td><td>The consent is to be followed and enforced.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-rejected\">rejected</a><a name=\"consent-state-codes-dk-supplement-rejected\"> </a></td><td>Rejected</td><td>The consent has been rejected by one or more of the parties.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-inactive\">inactive</a><a name=\"consent-state-codes-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The consent is terminated or replaced.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-entered-in-error\">entered-in-error</a><a name=\"consent-state-codes-dk-supplement-entered-in-error\"> </a></td><td>Entered in Error</td><td>The consent was created wrongly (e.g. wrong patient) and should be ignored</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>draft</td><td>Under udarbejdelse</td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>rejected</td><td>Afvist</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "consent-state-codes-dk-supplement",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-draft\">draft</a><a name=\"consent-state-codes-dk-supplement-draft\"> </a></td><td>Pending</td><td>The consent is in development or awaiting use but is not yet intended to be acted upon.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-proposed\">proposed</a><a name=\"consent-state-codes-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The consent has been proposed but not yet agreed to by all parties. The negotiation stage.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-active\">active</a><a name=\"consent-state-codes-dk-supplement-active\"> </a></td><td>Active</td><td>The consent is to be followed and enforced.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-rejected\">rejected</a><a name=\"consent-state-codes-dk-supplement-rejected\"> </a></td><td>Rejected</td><td>The consent has been rejected by one or more of the parties.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-inactive\">inactive</a><a name=\"consent-state-codes-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The consent is terminated or replaced.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-entered-in-error\">entered-in-error</a><a name=\"consent-state-codes-dk-supplement-entered-in-error\"> </a></td><td>Entered in Error</td><td>The consent was created wrongly (e.g. wrong patient) and should be ignored</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>draft</td><td>Under udarbejdelse</td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>rejected</td><td>Afvist</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
   },
-  "url": "http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement",
-  "version": "2.2.0",
-  "name": "ConsentState",
-  "title": "DK Consent State",
-  "status": "draft",
-  "experimental": false,
-  "date": "2022-12-01T00:22:19+00:00",
-  "publisher": "HL7 Denmark",
-  "contact": [
-    {
-      "name": "HL7 Denmark",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.dk"
-        },
-        {
-          "system": "email",
-          "value": "jenskristianvilladsen@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "Indicates the state of the consent",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DK",
-          "display": "Denmark"
-        }
-      ]
-    }
-  ],
-  "content": "supplement",
-  "supplements": "http://hl7.org/fhir/consent-state-codes",
-  "concept": [
-    {
-      "code": "draft",
-      "display": "Pending",
-      "definition": "The consent is in development or awaiting use but is not yet intended to be acted upon.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Under udarbejdelse"
-        }
-      ]
+  "url" : "http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement",
+  "version" : "2.2.0",
+  "name" : "ConsentState",
+  "title" : "DK Consent State",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2022-12-01T21:15:09+00:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
     },
     {
-      "code": "proposed",
-      "display": "Proposed",
-      "definition": "The consent has been proposed but not yet agreed to by all parties. The negotiation stage.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Forslag"
-        }
-      ]
-    },
-    {
-      "code": "active",
-      "display": "Active",
-      "definition": "The consent is to be followed and enforced.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Aktiv"
-        }
-      ]
-    },
-    {
-      "code": "rejected",
-      "display": "Rejected",
-      "definition": "The consent has been rejected by one or more of the parties.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Afvist"
-        }
-      ]
-    },
-    {
-      "code": "inactive",
-      "display": "Inactive",
-      "definition": "The consent is terminated or replaced.",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Inaktiv"
-        }
-      ]
-    },
-    {
-      "code": "entered-in-error",
-      "display": "Entered in Error",
-      "definition": "The consent was created wrongly (e.g. wrong patient) and should be ignored",
-      "designation": [
-        {
-          "language": "da",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009"
-          },
-          "value": "Fejlindtastning"
-        }
-      ]
-    }
-  ]
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "Indicates the state of the consent",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "content" : "supplement",
+  "supplements" : "http://hl7.org/fhir/consent-state-codes",
+  "concept" : [{
+    "code" : "draft",
+    "display" : "Pending",
+    "definition" : "The consent is in development or awaiting use but is not yet intended to be acted upon.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Under udarbejdelse"
+    }]
+  },
+  {
+    "code" : "proposed",
+    "display" : "Proposed",
+    "definition" : "The consent has been proposed but not yet agreed to by all parties. The negotiation stage.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Forslag"
+    }]
+  },
+  {
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "The consent is to be followed and enforced.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "rejected",
+    "display" : "Rejected",
+    "definition" : "The consent has been rejected by one or more of the parties.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Afvist"
+    }]
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inactive",
+    "definition" : "The consent is terminated or replaced.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Inaktiv"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "display" : "Entered in Error",
+    "definition" : "The consent was created wrongly (e.g. wrong patient) and should be ignored",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
 }

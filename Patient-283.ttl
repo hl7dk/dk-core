@@ -7,24 +7,24 @@
 
 <http://hl7.dk/fhir/core/Patient/283> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "283"];
+  fhir:Resource.id [ fhir:value "283"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
        fhir:index 0;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Torsteinn Lind (OFFICIAL)</b> male, DoB: 1950-06-04 ( id: 0506504005 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\">unmarried</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Nordre Ringgade 3 Frederiksberg C 8000 DK (HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: Peter Sønderby</span></li></ul></td></tr></table></div>"
-  ];
+  ]; # 
   fhir:Patient.identifier [
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.2" ];
      fhir:Identifier.value [ fhir:value "0506504005" ]
-  ];
+  ]; # 
   fhir:Patient.name [
      fhir:index 0;
      fhir:HumanName.use [ fhir:value "official" ];
@@ -33,9 +33,9 @@
        fhir:value "Torsteinn";
        fhir:index 0
      ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1950-06-04"^^xsd:date];
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"]; # 
+  fhir:Patient.birthDate [ fhir:value "1950-06-04"^^xsd:date]; # 
   fhir:Patient.address [
      fhir:index 0;
      fhir:Element.extension [
@@ -68,7 +68,7 @@
      fhir:Address.city [ fhir:value "Frederiksberg C" ];
      fhir:Address.postalCode [ fhir:value "8000" ];
      fhir:Address.country [ fhir:value "DK" ]
-  ];
+  ]; # 
   fhir:Patient.maritalStatus [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -76,7 +76,7 @@
        fhir:Coding.code [ fhir:value "U" ];
        fhir:Coding.display [ fhir:value "unmarried" ]
      ]
-  ];
+  ]; # 
   fhir:Patient.generalPractitioner [
      fhir:index 0;
      fhir:Reference.identifier [
@@ -84,7 +84,7 @@
        fhir:Identifier.value [ fhir:value "79641000016006" ]
      ];
      fhir:Reference.display [ fhir:value "Peter Sønderby" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

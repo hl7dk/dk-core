@@ -1,68 +1,54 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "dk-marital-status",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"dk-marital-status-P\"> </a></td><td>Registered partnership</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"dk-marital-status-O\"> </a></td><td>Dissolved partnership</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>P</td><td>Registreret partnerskab</td></tr><tr><td>O</td><td>Ophævet partnerskab</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "dk-marital-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"dk-marital-status-P\"> </a></td><td>Registered partnership</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"dk-marital-status-O\"> </a></td><td>Dissolved partnership</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>P</td><td>Registreret partnerskab</td></tr><tr><td>O</td><td>Ophævet partnerskab</td></tr></table></div>"
   },
-  "url": "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
-  "version": "2.2.0",
-  "name": "DkMaritalStatus",
-  "title": "DK Marital Statuses",
-  "status": "active",
-  "experimental": false,
-  "date": "2022-12-01T00:22:19+00:00",
-  "publisher": "HL7 Denmark",
-  "contact": [
-    {
-      "name": "HL7 Denmark",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.dk"
-        },
-        {
-          "system": "email",
-          "value": "jenskristianvilladsen@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "DK marital statuses",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DK",
-          "display": "Denmark"
-        }
-      ]
-    }
-  ],
-  "caseSensitive": false,
-  "content": "complete",
-  "count": 2,
-  "concept": [
-    {
-      "code": "P",
-      "display": "Registered partnership",
-      "designation": [
-        {
-          "language": "da",
-          "value": "Registreret partnerskab"
-        }
-      ]
+  "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+  "version" : "2.2.0",
+  "name" : "DkMaritalStatus",
+  "title" : "DK Marital Statuses",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-12-01T21:15:09+00:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
     },
     {
-      "code": "O",
-      "display": "Dissolved partnership",
-      "designation": [
-        {
-          "language": "da",
-          "value": "Ophævet partnerskab"
-        }
-      ]
-    }
-  ]
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "DK marital statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "P",
+    "display" : "Registered partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Registreret partnerskab"
+    }]
+  },
+  {
+    "code" : "O",
+    "display" : "Dissolved partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ophævet partnerskab"
+    }]
+  }]
 }

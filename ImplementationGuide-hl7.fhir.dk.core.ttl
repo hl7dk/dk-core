@@ -7,18 +7,18 @@
 
 <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "hl7.fhir.dk.core"];
+  fhir:Resource.id [ fhir:value "hl7.fhir.dk.core"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"];
-  fhir:ImplementationGuide.version [ fhir:value "2.2.0"];
-  fhir:ImplementationGuide.name [ fhir:value "DKCore"];
-  fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"];
-  fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-12-01T00:22:19+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "2.2.0"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "DKCore"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-12-01T21:15:09+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
@@ -31,8 +31,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
      ]
-  ];
-  fhir:ImplementationGuide.description [ fhir:value "A FHIR Implementation Guide for the Danish common needs across healthcare sectors"];
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "A FHIR Implementation Guide for the Danish common needs across healthcare sectors"]; # 
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,13 +41,13 @@
        fhir:Coding.code [ fhir:value "DK" ];
        fhir:Coding.display [ fhir:value "Denmark" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.dk.core"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.dk.core"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
@@ -62,7 +62,7 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
-  ];
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -1663,7 +1663,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

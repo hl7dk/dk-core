@@ -1,10 +1,10 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 12, warn = 7, info = 8
-IG Publisher Version: 1.2.19
-Generated Thu Dec 01 00:25:27 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 21 / 4 / 0
+err = 0, warn = 7, info = 8
+IG Publisher Version: 1.2.22
+Generated Thu Dec 01 21:18:29 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 0 / 1
@@ -64,27 +64,6 @@ Generated Thu Dec 01 00:25:27 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/redirect.asp.template: Unable to read attribute on <> at line 1 column 2
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/redirect.cgi.template: Unable to read attribute on <> at line 1 column 2
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/redirect.php.template: Unable to read attribute on <> at line 1 column 2
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/index.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html#/html/body/table/tr/td/a at Line 67, column 1465: The link 'unknown.html' for "IPA-Patient" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html#/html/body/table/tr/td/a at Line 67, column 2376: The link 'StructureDefinition-dk-core-patient.html' for "Danish Core Patient Profile" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html#/html/body/table/tr/td/a at Line 72, column 2505: The link 'StructureDefinition-dk-core-practitioner.html' for "Danish Core Practitioner Profile" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html#/html/body/table/tr/td/a at Line 72, column 2678: The link 'StructureDefinition-dk-core-patient.html' for "Danish Core Patient Profile" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-condition-dk-core-condition.html#/html/body/table/tr/td/a at Line 73, column 2492: The link 'StructureDefinition-dk-core-practitioner.html' for "Danish Core Practitioner Profile" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-patient-dk-core-patient.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-patient-dk-core-patient.html#/html/body/table/tr/td/a at Line 84, column 2893: The link 'ValueSet-dk-marital-status.html' for "DK MaritalStatus" cannot be resolved
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/sd-ipa-practitioner-dk-core-practitioner.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-CapabilityStatement.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-CodeSystem.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-Profile.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-ValueSet.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-index.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison-set.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/template-comparison.html: The html source does not contain the publish box
-ERROR: /github/workspace/output/ipa-comparison-v0.1.0/vs-marital-status-dk-marital-status.html: The html source does not contain the publish box
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide

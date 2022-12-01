@@ -1,33 +1,25 @@
 {
-  "resourceType": "Organization",
-  "id": "CenterForDiabetes",
-  "meta": {
-    "profile": [
-      "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-    ]
+  "resourceType" : "Organization",
+  "id" : "CenterForDiabetes",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"CenterForDiabetes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;CenterForDiabetes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 633271000016006, id: 64942212</p><p><b>type</b>: Health center <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264361005)</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"CenterForDiabetes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;CenterForDiabetes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 633271000016006, id: 64942212</p><p><b>type</b>: Health center <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264361005)</span></p></div>"
   },
-  "identifier": [
-    {
-      "system": "urn:oid:1.2.208.176.1.1",
-      "value": "633271000016006"
-    },
-    {
-      "system": "http://cvr.dk",
-      "value": "64942212"
-    }
-  ],
-  "type": [
-    {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "264361005"
-        }
-      ]
-    }
-  ]
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.1",
+    "value" : "633271000016006"
+  },
+  {
+    "system" : "http://cvr.dk",
+    "value" : "64942212"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "264361005"
+    }]
+  }]
 }
