@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "141a64e4-32be-48a1-a252-76f2f01c6b70-96",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/141a64e4-32be-48a1-a252-76f2f01c6b70-96",
+  "name" : "IntersectionRegionalSubdivisionCodesAndRegionalSubdivisionCodes",
+  "title" : "Intersection of DK Regional Subdivision Codes And DK Regional Subdivision Codes",
+  "status" : "draft",
+  "date" : "2022-12-01T00:22:40+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+      "code" : "DK-84",
+      "display" : "Capital Region of Denmark"
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+      "code" : "DK-82",
+      "display" : "Central Denmark Region"
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+      "code" : "DK-81",
+      "display" : "Nord Denmark Region"
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+      "code" : "DK-85",
+      "display" : "Region Zealand"
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+      "code" : "DK-83",
+      "display" : "Region of Southern Denmark"
+    }]
+  }
+}

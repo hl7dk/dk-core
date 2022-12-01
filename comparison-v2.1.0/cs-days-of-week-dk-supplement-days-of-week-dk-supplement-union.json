@@ -1,0 +1,107 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "141a64e4-32be-48a1-a252-76f2f01c6b70-20",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/141a64e4-32be-48a1-a252-76f2f01c6b70-20",
+  "name" : "UnionDaysOfWeekAndDaysOfWeek",
+  "title" : "Union of DK Days Of Week And DK Days Of Week",
+  "status" : "draft",
+  "date" : "2022-12-01T00:22:40+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "mon",
+    "display" : "Monday",
+    "definition" : "Monday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Mandag"
+    }]
+  },
+  {
+    "code" : "tue",
+    "display" : "Tuesday",
+    "definition" : "Tuesday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Tirsdag"
+    }]
+  },
+  {
+    "code" : "wed",
+    "display" : "Wednesday",
+    "definition" : "Wednesday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Onsdag"
+    }]
+  },
+  {
+    "code" : "thu",
+    "display" : "Thursday",
+    "definition" : "Thursday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Torsdag"
+    }]
+  },
+  {
+    "code" : "fri",
+    "display" : "Friday",
+    "definition" : "Friday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fredag"
+    }]
+  },
+  {
+    "code" : "sat",
+    "display" : "Saturday",
+    "definition" : "Saturday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Lørdag"
+    }]
+  },
+  {
+    "code" : "sun",
+    "display" : "Sunday",
+    "definition" : "Sunday",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Søndag"
+    }]
+  }]
+}
