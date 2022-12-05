@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "5e9c2d4b-d63e-42ea-a931-7a11752c4cf3-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5e9c2d4b-d63e-42ea-a931-7a11752c4cf3-6",
+  "name" : "IntersectionMarital Status CodesAndnull",
+  "title" : "Intersection of MaritalStatus And DK MaritalStatus",
+  "status" : "active",
+  "date" : "2022-12-05T09:16:00+00:00",
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "A",
+      "display" : "Annulled"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "D",
+      "display" : "Divorced"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "I",
+      "display" : "Interlocutory"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "L",
+      "display" : "Legally Separated"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "P",
+      "display" : "Polygamous"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "S",
+      "display" : "Never Married"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "T",
+      "display" : "Domestic partner"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "U",
+      "display" : "unmarried"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "W",
+      "display" : "Widowed"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "code" : "UNK",
+      "display" : "unknown"
+    }]
+  }
+}
