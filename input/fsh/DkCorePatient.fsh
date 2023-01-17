@@ -126,7 +126,7 @@ Title: "Example of valid patient with danish marital status"
 Description: "Example of valid patient with danish marital status"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "1112640001"
+* identifier.value = "2902449283"
 * name.use = #official
 * name.family = "Mogensen"
 * name.given = "Jan"
