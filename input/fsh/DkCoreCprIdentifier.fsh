@@ -3,7 +3,6 @@ Parent: Identifier
 Id: dk-core-cpr-identifier
 Title: "Danish Central Person Register (CPR) Identifier"
 Description: "This structure holds the danish [CPR](https://cpr.dk/) identifier"
-* ^status = #draft
 * use = #official (exactly)
 * system 1..
 * system = "urn:oid:1.2.208.176.1.2" (exactly)

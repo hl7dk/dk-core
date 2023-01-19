@@ -19,7 +19,6 @@ Extension: RegionalSubDivisionCodes
 Id: dk-core-RegionalSubDivisionCodes
 Title: "Danish Core Regional Sub Division Codes Extension"
 Description: "Identifier holding the official organization identifier for a danish region"
-* ^status = #draft
 * ^context[0].type = #element
 * ^context[=].expression = "Address"
 * ^context[+].type = #element
@@ -33,7 +32,6 @@ Extension: MunicipalityCodes
 Id: dk-core-municipalityCodes
 Title: "Danish Core Municipality codes"
 Description: "Identifier holding the official identifier for a danish municipality"
-* ^status = #draft
 * ^context[0].type = #element
 * ^context[=].expression = "Patient.address"
 * ^context[+].type = #element

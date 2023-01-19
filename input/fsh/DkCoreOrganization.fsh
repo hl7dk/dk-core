@@ -3,7 +3,6 @@ Parent: Organization
 Id: dk-core-organization
 Title: "Danish Core Organization Profile"
 Description: "HL7 Denmark core profile for a danish health organization"
-* ^status = #draft
 * obeys dk-core-organization-mandatory-identifier
 * identifier 1..
   * ^slicing.discriminator.type = #value

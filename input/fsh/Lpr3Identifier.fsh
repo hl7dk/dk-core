@@ -3,7 +3,6 @@ Parent: Identifier
 Id: lpr3-Identifier
 Title: "LPR3 Identifier"
 Description: "Identifier holding a LPR3 identifier for an organization"
-* ^status = #draft
 * system 1..
 * system = "https://www.esundhed.dk/Registre/Landspatientsregisteret" (exactly)
 * value 1..

@@ -4,7 +4,6 @@ Title: "DK Profession Group Codes"
 Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"
 * ^status = #active
 * ^content = #complete
-* ^experimental = false
 * ^caseSensitive = false
 * ^count = 21
 * #C511 "Ambulancebehandler"
@@ -33,8 +32,7 @@ CodeSystem: AdministrativeGenderDkSupplement
 Id: administrative-gender-supplement
 Title: "DK Administrative Gender Supplement"
 Description: "CodeSystem supplement with danish translations for administrative gender"
-* ^status = #draft
-* ^experimental = true
+
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/administrative-gender"
 * #male
@@ -55,7 +53,6 @@ Id: dk-core-municipality-codes-greenland
 Title: "DK Greenland Municipality Codes"
 Description: "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"
 * ^status = #active
-* ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
 * #0955 "Kujalleq"
@@ -79,7 +76,6 @@ Id: dk-core-municipality-codes
 Title: "DK Municipality Codes"
 Description: "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"
 * ^status = #active
-* ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
 * #0740 "Silkeborg"
@@ -385,8 +381,6 @@ Title: "DK Regional Subdivision Codes"
 Id: dk-core-regional-subdivision-codes
 Description: "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"
 * ^caseSensitive = false
-* ^status = #draft
-* ^experimental = true
 * ^content = #complete
 * #DK-84 "Capital Region of Denmark"
   * ^designation.language = #da
@@ -412,7 +406,6 @@ Description: "DK marital statuses"
 * ^name = "DkMaritalStatus"
 * ^caseSensitive = false
 * ^status = #active
-* ^experimental = false
 * ^content = #complete
 * #P "Registered partnership"
   * ^designation.language = #da
@@ -425,8 +418,6 @@ CodeSystem: AddressType
 Id: address-type-dk-supplement
 Title: "DK Address Type"
 Description: "The type of an address (physical / postal)"
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-type"
 * #postal "Postal" "Mailing addresses - PO Boxes and care-of addresses."
@@ -448,8 +439,6 @@ CodeSystem: AddressUse
 Id: address-use-dk-supplement
 Title: "DK Address Use"
 Description: "The use of an address"
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-use"
 * #home "Home" "A communication address at a home."
@@ -476,8 +465,6 @@ CodeSystem: CareTeamStatus
 Title: "DK CareTeam Status"
 Id: care-team-status-dk-supplement
 Description: "Indicates the status of the care team."
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/care-team-status"
 * #proposed "Proposed" "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care."
@@ -509,8 +496,6 @@ CodeSystem: ConsentState
 Title: "DK Consent State"
 Id: consent-state-codes-dk-supplement
 Description: "Indicates the state of the consent"
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/consent-state-codes"
 * #draft "Pending" "The consent is in development or awaiting use but is not yet intended to be acted upon."
@@ -547,8 +532,6 @@ CodeSystem: DaysOfWeek
 Title: "DK Days Of Week"
 Id: days-of-week-dk-supplement
 Description: "The days of the week."
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/days-of-week"
 * #mon "Monday" "Monday"
@@ -590,8 +573,6 @@ CodeSystem: EpisodeOfCareStatus
 Title: "DK Episode Of Care Status"
 Id: episode-of-care-status-dk-supplement
 Description: "The status of the episode of care."
-* ^status = #draft
-* ^experimental = false
 * ^publisher = "HL7 DK"
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/episode-of-care-status"
@@ -634,8 +615,6 @@ CodeSystem: PublicationStatus
 Id: publication-status-dk-supplement
 Description: "The lifecycle status of a Value Set or Concept Map."
 Title: "DK Publication Status"
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/publication-status"
 * #draft "Draft" "This resource is still under development and is not yet considered to be ready for normal use."
@@ -673,8 +652,6 @@ CodeSystem: RequestStatus
 Id: request-status-dk-supplement
 Description: "Codes identifying the stage lifecycle stage of a request"
 Title: "DK Request Status"
-* ^status = #draft
-* ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/request-status"
 * #draft "Draft" "The request has been created but is not yet complete or ready for action."

@@ -3,7 +3,6 @@ Parent: Identifier
 Id: dk-core-sor-identifier
 Title: "SOR Identifier"
 Description: "Identifier holding the official SOR identifier for a danish healthcare organization"
-* ^status = #draft
 * use = #official (exactly)
 * system 1..
 * system = "urn:oid:1.2.208.176.1.1" (exactly)
