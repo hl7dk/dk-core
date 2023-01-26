@@ -12,3 +12,5 @@ Alias: $condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueT
 Alias: $condition-code = http://hl7.org/fhir/ValueSet/condition-code
 Alias: $sor-organization-type = http://hl7.dk/fhir/core/ValueSet/sor-organization-type
 Alias: $dk-marital-status_1 = http://hl7.dk/fhir/core/ValueSet/dk-marital-status
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $NPU = urn:oid:1.2.208.176.2.1

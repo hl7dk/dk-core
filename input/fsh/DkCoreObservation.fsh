@@ -34,3 +34,25 @@ Description: "John, blood pressure measurement, LOINC-code derived from NPU-code
 Usage: #example 
 [Add content here]
 */
+
+Instance: ObservationHeightVitalSigns
+InstanceOf: DkCoreObservation
+Title: "John's height measurement, Vital Signs"
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* status = #final
+* code = http://loinc.org#8302-2 "Body height"
+* valueQuantity.value = 180
+* valueQuantity.code = #cm
+* valueQuantity.system = $ucum
+* valueQuantity.unit = "cm"
+
+Instance: ObservationHeightNPU
+InstanceOf: DkCoreObservation
+Title: "John's height measurement"
+* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* status = #final
+* code = $NPU#NPU03794 "Legeme højde;Pt"
+* valueQuantity.value = 1.80
+* valueQuantity.code = #m
+* valueQuantity.system = $ucum
+* valueQuantity.unit = "m"
