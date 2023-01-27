@@ -14,3 +14,4 @@ Alias: $sor-organization-type = http://hl7.dk/fhir/core/ValueSet/sor-organizatio
 Alias: $dk-marital-status_1 = http://hl7.dk/fhir/core/ValueSet/dk-marital-status
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $NPU = urn:oid:1.2.208.176.2.1
+Alias: $LOINC = http://loinc.org

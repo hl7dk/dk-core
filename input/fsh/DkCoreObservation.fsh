@@ -1,22 +1,56 @@
-Profile: DkCoreObservationVitalSignsNPU
-Parent: Observation //??? 
-Id: dk-core-observation-vs
+Profile: DkCoreObservation
+Parent: Observation
+Id: dk-core-observation
+Title: "Danish Core Observation Profiles"
+Description: "HL7 Denmark core profile for observations"
+* code.coding ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+* code.coding contains
+    LOINC 0..1 and
+    SNOMEDCT 0..1 and
+    NPU 0..1 and
+    KiAP 0..1 and
+    MedCom 0..1
+* code.coding[LOINC] 
+  * ^short = "LOINC code for the observation"
+  * system 1..
+  * system = "http://loinc.org" (exactly)
+  * code 1..
+* code.coding[SNOMEDCT]
+  * ^short = "SNOMED CT code for the observation"
+  * system 1..
+  * system = "https://www.snomed.org/" (exactly)
+  * code 1..
+* code.coding[NPU]
+  * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
+  * system 1..
+  * system = "https://labterm.dk/" (exactly)
+  * code 1..
+* code.coding[KiAP] 
+  * ^short = "[DA] Kvalitet i Almen Praksis."
+  * system 1..
+  * system = "https://kiap.dk/" (exactly)
+  * code 1..
+* code.coding[MedCom] 
+  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom). These codes are prefixed with 'MC'."
+  * system 1..
+  * system = "https://www.medcom.dk/" (exactly)
+  * code 1..
+* subject only Reference(DkCorePatient)
+* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or RelatedPerson)
+* device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
+* valueQuantity.system = $ucum
+
+Profile: DkCoreObservationVitalSigns
+Parent: dk-core-observation
+Id: dk-core-observation-vitalsigns
 Title: "Danish Core Observation Profile for Vital Signs"
 Description: "HL7 Denmark core profile for observations of vital signs"
-// * code [ValueSet for NPU-koder]
-// * method (indsnævret valueset?)
-// * Category includeres?
-
-Profile: DkCoreObservationVitalSignsLOINC
-Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns //??? 
-Id: dk-core-observation-vs-loinc
-Title: "Danish Core Observation Profile for Vital Signs"
-Description: "HL7 Denmark core profile for observations of vital signs"
-// * code [Slice 1: ValueSet for LOINC-koder, indsnævret ift. HL7s, slice 2: NPU-koder, slice 3: valgfri kode??]
-// * Category includeres?
-// * method (indsnævret valueset?)
-// * derivedFrom 
-
+* category 1..1
+* category = #vital-signs
+* code.coding[LOINC] 
+  * code from http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns (preferred)
 
 
 /* Instance: ObservationBloodPressureNPU
@@ -36,23 +70,22 @@ Usage: #example
 */
 
 Instance: ObservationHeightVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's height measurement, Vital Signs"
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+InstanceOf: DkCoreObservationVitalSigns
+Title: "John's Respiratory rate measurement, Vital Signs"
+* category = #vital-signs
 * status = #final
-* code = http://loinc.org#8302-2 "Body height"
-* valueQuantity.value = 180
-* valueQuantity.code = #cm
+* code = $LOINC#9279-1 "Respiratory rate"
+* valueQuantity.value = 50
+* valueQuantity.code = #{Breaths}/min
 * valueQuantity.system = $ucum
-* valueQuantity.unit = "cm"
+* valueQuantity.unit = "Breaths / minute"
 
 Instance: ObservationHeightNPU
 InstanceOf: DkCoreObservation
 Title: "John's height measurement"
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * status = #final
 * code = $NPU#NPU03794 "Legeme højde;Pt"
 * valueQuantity.value = 1.80
 * valueQuantity.code = #m
 * valueQuantity.system = $ucum
-* valueQuantity.unit = "m"
+* valueQuantity.unit = "m" 
