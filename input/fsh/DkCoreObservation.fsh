@@ -33,7 +33,7 @@ Description: "HL7 Denmark core profile for observations"
   * system = "https://kiap.dk/" (exactly)
   * code 1..
 * code.coding[MedCom] 
-  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom). These codes are prefixed with 'MC'."
+  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
   * system 1..
   * system = "https://www.medcom.dk/" (exactly)
   * code 1..
