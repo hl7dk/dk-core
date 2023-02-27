@@ -25,17 +25,17 @@ Description: "HL7 Denmark core profile for observations"
 * code.coding[NPU]
   * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.1" (exactly)
+  * system = $NPU (exactly)
   * code 1..
 * code.coding[MedCom] 
   * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
   * system 1..
-  * system = "https://www.medcom.dk/" (exactly)
+  * system = $KiAP (exactly)
   * code 1..
 * code.coding[IEEE] 
   * ^short = "IEEE code for the observation"
   * system 1..
-  * system = "urn:iso:std:iso:11073:10101" (exactly)
+  * system = $IEEEx73 (exactly)
   * code 1..
 * subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
@@ -75,7 +75,7 @@ Description: "HL7 Denmark core profile for observations"
 * component.code.coding[IEEE] 
   * ^short = "IEEE code for the observation"
   * system 1..
-  * system = "urn:iso:std:iso:11073:10101" (exactly)
+  * system = $IEEEx73 (exactly)
   * code 1..
 
 Profile: DkCoreObservationVitalSigns
@@ -143,3 +143,492 @@ Title: "The device that performed the observation"
 * deviceName.name = "Blood Pressure Device"
 * deviceName.type = #user-friendly-name
 * serialNumber = "74E8FFFEFF051C00.001C05FFE874"
+
+
+
+
+
+/* **************
+ *
+ * Examples involving Continua compliant observations and exchanges
+ *
+ * ************** */
+
+
+Alias: $PhdPatient = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient
+Alias: $PhgDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice
+Alias: $PhdDevice = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice
+Alias: $PhdNumericObservation = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation
+Alias: $PhdCompoundNumericObservation = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCompoundNumericObservation
+Alias: $PhdBitsEnumerationObservation = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdBitsEnumerationObservation
+Alias: $PhdCoincidentTimeStampObservation = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation
+Alias: $EUI64 = urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680
+Alias: $BD_ADDR = http://hl7.org/fhir/sid/eui-48/bluetooth
+Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers
+Alias: $ContinuaPHD = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD
+Alias: $ContinuaHFS = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS
+Alias: $observation-gatewayDevice = http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice
+Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
+Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
+
+
+Instance: Poul
+InstanceOf: DkCorePatient
+Usage: #inline
+* meta.profile = $PhdPatient
+* identifier[cpr].value = "0307499998"
+* name
+  * family = "Hansen"
+  * given[+] = "Poul"
+
+
+Instance: WeightScale.606405FFFECFC604
+InstanceOf: Device
+Title: "Poul's A&D weight scale"
+Description: """
+  This device is Poul's personal weighing scale, which he keeps in the bathroom
+  of his home, and uses for daily monitoring due to his CHF condition. 
+"""
+Usage: #example
+* meta.profile = $PhdDevice
+* identifier[+]
+  * system = $EUI64
+  * type.coding[0] = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * value = "60-64-05-FF-FE-CF-C6-04"
+* identifier[+]
+  * system = $BD_ADDR
+  * type.coding[0] = $ContinuaDeviceIdentifiers#BTMAC "System Identifier"
+  * value = "60-64-05-CF-C6-04"
+* manufacturer = "A&D Medical "
+* modelNumber = "UC-352BLE "
+* serialNumber = "5180400664"
+* type
+  * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
+  * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
+* specialization
+  * systemType.coding = $IEEEx73#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
+  * systemType.text = "MDC_DEV_SPEC_PROFILE_SCALE: Weighing scale"
+* version[+]
+  * type[+].coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+  * type[=].text = "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"
+  * value = "4.1"
+* version[+]
+  * type[+].coding = $IEEEx73#531974 "MDC_ID_PROD_SPEC_HW"
+  * type[=].text = "MDC_ID_PROD_SPEC_HW: Hardware version"
+  * value = "0.00"
+* version[+]
+  * type[+].coding = $IEEEx73#531975 "MDC_ID_PROD_SPEC_SW"
+  * type[=].text = "MDC_ID_PROD_SPEC_SW: Software version"
+  * value = "0.00"
+* version[+]
+  * type[+].coding = $IEEEx73#531976 "MDC_ID_PROD_SPEC_FW"
+  * type[=].text = "MDC_ID_PROD_SPEC_FW: Firmware version"
+  * value = "WSP002_208"
+* property[+]
+  * type.coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+  * type.text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
+  * valueCode[+]
+    * coding = $ContinuaPHD#32783
+    * text = "BluetoothLE: Weighing scale"
+* property[+]
+  * type.coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
+  * type.text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
+  * valueCode
+    * coding = $IEEEx73#532224 "MDC_TIME_SYNC_NONE"
+    * text = "MDC_TIME_SYNC_NONE: No time synchronization"
+* property[+]
+  * type.coding = $ASN1ToHL7#532354.0
+  * type.text = "regulation-status"
+  * valueCode
+    * coding = $v2-0136#N
+    * text = "Device is regulated"
+* property[+]
+  * type.coding = $ASN1ToHL7#68219.0
+  * type.text = "mds-time-capab-real-time-clock"
+  * valueCode
+    * coding = $v2-0136#Y
+    * text = "Real time clock is supported"
+* property[+]
+  * type.coding = $ASN1ToHL7#68219.1
+  * type.text = "mds-time-capab-set-clock"
+  * valueCode
+    * coding = $v2-0136#Y
+    * text = "Setting the real time clock is supported"
+
+
+Instance: Weight.Poul.230221
+InstanceOf: DkCoreObservationVitalSigns
+Title: "Poul's daily weighing on Feb. 21st"
+Description: """
+  Poul has been instructed to perform a daily weighing in the morning. This is his
+  daily weighing from Feb. 21st 2023.
+"""
+Usage: #example
+* identifier.value = "606405FFFECFC604-0307499998-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"
+* meta.profile[+] = $PhdNumericObservation
+* meta.profile[+] = $observation-vitalsigns
+* meta.profile[+] = $observation-bodyweight
+* status = #final
+* category.coding = $observation-category#vital-signs "Vital signs"
+* code
+  * coding[+] = $LOINC#29463-7 "Body weight"
+  * coding[+] = $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
+  * coding[+] = $NPU#NPU03804 "Pt—Body; mass = ? kg"
+  * text = "MDC_MASS_BODY_ACTUAL: Body weight"
+* subject = Reference(Poul)
+* performer = Reference(Poul)
+* effectiveDateTime = "2023-02-21T08:36:40+01:00"
+* valueQuantity = 74.0 'kg'
+* device = Reference(WeightScale.606405FFFECFC604)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* derivedFrom = Reference(CoincidentTimeStamp.0123)
+
+
+
+/*
+ * A complex example involving a Continua-compliant observation reporting upload
+ */
+
+
+
+Instance: Telma.FEEDDADADEADBEEF
+InstanceOf: Device
+Usage: #inline
+* meta.profile = $PhgDevice
+* identifier[+]
+  * system = $EUI64
+  * type.coding = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * value = "FE-ED-DA-DA-DE-AD-BE-EF"
+* manufacturer = "Trifork"
+* modelNumber = "Telma (Android)"
+* type
+  * coding = $IEEEx73#531981 "MDC_MOC_VMS_MDS_AHD"
+  * text = "MDC_MOC_VMS_MDS_AHD: Continua compliant gateway"
+* version[+]
+  * type
+    * coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"
+  * value = "7.0"
+* version[+]
+  * type
+    * coding = $IEEEx73#531974 "MDC_ID_PROD_SPEC_HW"
+    * text = "MDC_ID_PROD_SPEC_HW: Hardware version"
+  * value = "Samsung Tab S7+ (SM-T970)"
+* version[+]
+  * type
+    * coding = $IEEEx73#531975 "MDC_ID_PROD_SPEC_SW"
+    * text = "MDC_ID_PROD_SPEC_SW: Software version"
+  * value = "1.2.0 (build 2662)"
+* version[+]
+  * type
+    * coding = $IEEEx73#531976 "MDC_ID_PROD_SPEC_FW"
+    * text = "MDC_ID_PROD_SPEC_FW: Firmware version"
+  * value = "Android 12 (API 31)"
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
+  * valueCode[+]
+    * coding = $ContinuaPHD#32783
+    * text = "BluetoothLE: Weighing scale"
+  * valueCode[+]
+    * coding = $ContinuaPHD#32775
+    * text = "BluetoothLE: Blood pressure monitor"
+  * valueCode[+]
+    * coding = $ContinuaPHD#32772
+    * text = "BluetoothLE: Pulse oximeter"
+* property[+]
+  * type
+    * coding = $IEEEx73#532355 "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&Fitness interfaces list"
+  * valueCode
+    * coding = $ContinuaHFS#7 "observation-upload-fhir"
+    * text = "observation-upload-fhir: FHIR resource upload"
+* property[+]
+  * type
+    * coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
+    * text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
+  * valueCode
+    * coding = $IEEEx73#532226 "MDC_TIME_SYNC_NTPV4"
+    * text = "MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization"
+* property[+]
+  * type
+    * coding = $ASN1ToHL7#532354.0
+    * text = "regulation-status"
+  * valueCode
+    * coding = $v2-0136#Y
+    * text = "Device is NOT regulated"
+
+
+Instance: BPMonitor.C4F312FFFE53F2C9
+InstanceOf: Device
+Usage: #inline
+* meta.profile = $PhdDevice
+* identifier[+]
+  * system = $EUI64
+  * type.coding = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * value = "C4-F3-12-FF-FE-53-F2-C9"
+* identifier[+]
+  * system = $BD_ADDR
+  * type.coding = $ContinuaDeviceIdentifiers#BTMAC "System Identifier"
+  * value = "C4-F3-12-53-F2-C9"
+* manufacturer = "A&D Medical "
+* modelNumber = "UA-651BLE "
+* serialNumber = "5181000124"
+* type
+  * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
+  * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
+* specialization.systemType
+  * coding = $IEEEx73#528391 "MDC_DEV_SPEC_PROFILE_BP"
+  * text = "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"
+* version[+]
+  * type
+    * coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"
+  * value = "4.1"
+* version[+]
+  * type[+].coding = $IEEEx73#531974 "MDC_ID_PROD_SPEC_HW"
+  * type[=].text = "MDC_ID_PROD_SPEC_HW: Hardware version"
+  * value = "0.00"
+* version[+]
+  * type
+    * coding = $IEEEx73#531975 "MDC_ID_PROD_SPEC_SW"
+    * text = "MDC_ID_PROD_SPEC_SW: Software version"
+  * value = "0.00"
+* version[+]
+  * type
+    * coding = $IEEEx73#531976 "MDC_ID_PROD_SPEC_FW"
+    * text = "MDC_ID_PROD_SPEC_FW: Firmware version"
+  * value = "BLP009_02_005 "
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
+  * valueCode
+    * coding = $ContinuaPHD#32775
+    * text = "BluetoothLE: Blood pressure monitor"
+* property[+]
+  * type
+    * coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
+    * text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
+  * valueCode
+    * coding = $IEEEx73#532224 "MDC_TIME_SYNC_NONE"
+    * text = "MDC_TIME_SYNC_NONE: No time synchronization"
+* property[+]
+  * type
+    * coding = $ASN1ToHL7#532354.0
+    * text = "regulation-status"
+  * valueCode
+    * coding = $v2-0136#N
+    * text = "Device is regulated"
+* property[+]
+  * type
+    * coding = $ASN1ToHL7#68219.0
+    * text = "mds-time-capab-real-time-clock"
+  * valueCode
+    * coding = $v2-0136#Y
+    * text = "Real time clock is supported"
+* property[+]
+  * type
+    * coding = $ASN1ToHL7#68219.1
+    * text = "mds-time-capab-set-clock"
+  * valueCode
+    * coding = $v2-0136#Y
+    * text = "Setting the real time clock is supported"
+
+
+Instance: BatteryLevel.0944
+InstanceOf: Observation
+Usage: #inline
+* meta.profile[+] = $PhdNumericObservation
+* status = #final
+* code
+  * coding[+] = $IEEEx73#67996 "MDC_ATTR_VAL_BATT_CHARGE"
+  * text = "MDC_ATTR_VAL_BATT_CHARGE: Battery level"
+* subject = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:34.563+01:00"
+* valueQuantity = 95 '%'
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+
+
+Instance: CoincidentTimeStamp.0222
+InstanceOf: Observation
+Usage: #inline
+* meta.profile[+] = $PhdCoincidentTimeStampObservation
+* status = #final
+* code
+  * coding[+] = $IEEEx73#67975 "MDC_ATTR_TIME_ABS"
+  * text = "MDC_ATTR_TIME_ABS: Uses Absolute time clock"
+* subject = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:34.467+01:00"
+* valueDateTime = "2023-02-23T10:24:25+01:00"
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+
+
+Instance: BloodPressure.Poul.643992
+InstanceOf: DkCoreObservationVitalSigns
+Usage: #inline
+* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
+* meta.profile[+] = $PhdCompoundNumericObservation
+* meta.profile[+] = $observation-vitalsigns
+* meta.profile[+] = $observation-bp
+* status = #final
+* category.coding = $observation-category#vital-signs "Vital signs"
+* code
+  * coding[+] = $LOINC#85354-9 "Blood pressure panel with all children optional"
+  * coding[+] = $IEEEx73#150020 "MDC_PRESS_BLD_NONINV"
+  * coding[+] = $SKS#ZZ3170 "Hjemmeblodtryksmåling udført af patienten"
+  * text = "MDC_PRESS_BLD_NONINV: Blood Pressure"
+* subject = Reference(Poul)
+* performer = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:08+01:00"
+* component[+]
+  * code
+    * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
+    * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
+    * coding[+] = $KiAP#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
+    * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
+  * valueQuantity = 118 'mm[Hg]' "mmHg"
+* component[+]
+  * code
+    * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
+    * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
+    * coding[+] = $KiAP#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
+    * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
+  * valueQuantity = 87 'mm[Hg]' "mmHg"
+* component[+]
+  * code
+    * coding[+] = $IEEEx73#150023 "MDC_PRESS_BLD_NONINV_MEAN"
+    * text = "MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure"
+  * valueQuantity = 99 'mm[Hg]' "mmHg"
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* derivedFrom = Reference(CoincidentTimeStamp.0222)
+
+
+Instance: HeartRate.Poul.1974654
+InstanceOf: DkCoreObservationVitalSigns
+Usage: #inline
+* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
+* meta.profile[+] = $PhdNumericObservation
+* meta.profile[+] = $observation-vitalsigns
+* meta.profile[+] = $observation-heartrate
+* status = #final
+* category.coding = $observation-category#vital-signs "Vital signs"
+* code
+  * coding[+] = $LOINC#8867-4 "Heart rate"
+  * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
+  * coding[+] = $NPU#NPU21692 "Heart—Systole; frequency = ? × 1/min"
+  * text = "MDC_PULS_RATE_NON_INV: Heart rate"
+* subject = Reference(Poul)
+* performer = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:08+01:00"
+* valueQuantity = 93 '{beat}/min' "bpm"
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* derivedFrom = Reference(CoincidentTimeStamp.0222)
+
+
+Instance: BloodPressureStatus.Poul.133527
+InstanceOf: Observation
+Usage: #inline
+* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
+* meta.profile[+] = $PhdBitsEnumerationObservation
+* status = #final
+* code
+  * coding = $IEEEx73#8410608 "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS"
+  * text = "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem"
+* subject = Reference(Poul)
+* performer = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:08+01:00"
+* component
+  * code
+    * coding = $ASN1ToHL7#8410608.2
+    * text = "irregular-pulse"
+  * valueCodeableConcept
+    * coding = $v2-0136#Y
+    * text = "Irregular pulse was detected"
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* derivedFrom[+] = Reference(CoincidentTimeStamp.0222)
+* derivedFrom[+] = Reference(BloodPressure.Poul.643992)
+
+
+Instance: ContinuaBundleWithDevice
+InstanceOf: Bundle
+Title: "Poul's home weight measurement"
+Description: """
+  This example demonstrates a DkCoreObservationVitalSigns _and_ Continua-compliant
+  bundle containing a home weight measurement uploaded to a Continua-compliant
+  _"FHIR Observation Reporting Server"._
+"""
+Usage: #example
+* type = #transaction
+* entry[+]
+  * fullUrl = "Poul"
+  * request
+    * method = #POST
+    * url = "Patient"
+    * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|0307499998"
+  * resource = Poul
+* entry[+]
+  * fullUrl = "Telma.FEEDDADADEADBEEF"
+  * request
+    * method = #POST
+    * url = "Device"
+    * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF"
+  * resource = Telma.FEEDDADADEADBEEF
+* entry[+]
+  * fullUrl = "BPMonitor.C4F312FFFE53F2C9"
+  * request
+    * method = #POST
+    * url = "Device"
+    * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9"
+  * resource = BPMonitor.C4F312FFFE53F2C9
+* entry[+]
+  * fullUrl = "BatteryLevel.0944"
+  * request
+    * method = #POST
+    * url = "Observation"
+  * resource = BatteryLevel.0944
+* entry[+]
+  * fullUrl = "CoincidentTimeStamp.0222"
+  * request
+    * method = #POST
+    * url = "Observation"
+  * resource = CoincidentTimeStamp.0222
+* entry[+]
+  * fullUrl = "BloodPressure.Poul.643992"
+  * request
+    * method = #POST
+    * url = "Observation"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
+  * resource = BloodPressure.Poul.643992
+* entry[+]
+  * fullUrl = "HeartRate.Poul.1974654"
+  * request
+    * method = #POST
+    * url = "Observation"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
+  * resource = HeartRate.Poul.1974654
+* entry[+]
+  * fullUrl = "BloodPressureStatus.Poul.133527"
+  * request
+    * method = #POST
+    * url = "Observation"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
+  * resource = BloodPressureStatus.Poul.133527
