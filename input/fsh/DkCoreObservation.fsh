@@ -30,7 +30,7 @@ Description: "HL7 Denmark core profile for observations"
 * code.coding[MedCom] 
   * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
   * system 1..
-  * system = $KiAP (exactly)
+  * system = $Medcom (exactly)
   * code 1..
 * code.coding[IEEE] 
   * ^short = "IEEE code for the observation"
@@ -440,7 +440,7 @@ Usage: #inline
 
 
 Instance: BatteryLevel.0944
-InstanceOf: Observation
+InstanceOf: DkCoreObservation
 Usage: #inline
 * meta.profile[+] = $PhdNumericObservation
 * status = #final
@@ -448,6 +448,7 @@ Usage: #inline
   * coding[+] = $IEEEx73#67996 "MDC_ATTR_VAL_BATT_CHARGE"
   * text = "MDC_ATTR_VAL_BATT_CHARGE: Battery level"
 * subject = Reference(Poul)
+* performer = Reference(Poul)
 * effectiveDateTime = "2023-02-23T10:24:34.563+01:00"
 * valueQuantity = 95 '%'
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
@@ -457,7 +458,7 @@ Usage: #inline
 
 
 Instance: CoincidentTimeStamp.0222
-InstanceOf: Observation
+InstanceOf: DkCoreObservation
 Usage: #inline
 * meta.profile[+] = $PhdCoincidentTimeStampObservation
 * status = #final
@@ -465,6 +466,7 @@ Usage: #inline
   * coding[+] = $IEEEx73#67975 "MDC_ATTR_TIME_ABS"
   * text = "MDC_ATTR_TIME_ABS: Uses Absolute time clock"
 * subject = Reference(Poul)
+* performer = Reference(Poul)
 * effectiveDateTime = "2023-02-23T10:24:34.467+01:00"
 * valueDateTime = "2023-02-23T10:24:25+01:00"
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
@@ -494,14 +496,14 @@ Usage: #inline
   * code
     * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
     * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
-    * coding[+] = $KiAP#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
+    * coding[+] = $Medcom#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
   * valueQuantity = 118 'mm[Hg]' "mmHg"
 * component[+]
   * code
     * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
     * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
-    * coding[+] = $KiAP#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
+    * coding[+] = $Medcom#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
   * valueQuantity = 87 'mm[Hg]' "mmHg"
 * component[+]
@@ -542,7 +544,7 @@ Usage: #inline
 
 
 Instance: BloodPressureStatus.Poul.133527
-InstanceOf: Observation
+InstanceOf: DkCoreObservation
 Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
 * meta.profile[+] = $PhdBitsEnumerationObservation
@@ -570,10 +572,10 @@ Usage: #inline
 
 Instance: ContinuaBundleWithDevice
 InstanceOf: Bundle
-Title: "Poul's home weight measurement"
+Title: "Poul's home blood pressure measurement"
 Description: """
   This example demonstrates a DkCoreObservationVitalSigns _and_ Continua-compliant
-  bundle containing a home weight measurement uploaded to a Continua-compliant
+  bundle containing a home blood pressure measurement uploaded to a Continua-compliant
   _"FHIR Observation Reporting Server"._
 """
 Usage: #example
