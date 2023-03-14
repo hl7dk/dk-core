@@ -11,7 +11,8 @@ Description: "HL7 Denmark core profile for observations"
     SNOMEDCT 0..1 and
     NPU 0..1 and
     IEEE 0..1 and
-    MedCom 0..1
+    MedCom 0..1 and
+    SKS 0..1
 * code.coding[LOINC] 
   * ^short = "LOINC code for the observation"
   * system 1..
@@ -37,10 +38,14 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
+* code.coding[SKS] 
+  * ^short = "SKS code for the observation"
+  * system 1..
+  * system = "https://medinfo.dk/sks" (exactly)
+  * code 1..
 * subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
 * performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or RelatedPerson)
-* performer 1..
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
@@ -51,7 +56,8 @@ Description: "HL7 Denmark core profile for observations"
     SNOMEDCT 0..1 and
     NPU 0..1 and
     IEEE 0..1 and
-    MedCom 0..1
+    MedCom 0..1 and
+    SKS 0..1
 * component.code.coding[LOINC] 
   * ^short = "LOINC code for the observation"
   * system 1..
@@ -65,7 +71,7 @@ Description: "HL7 Denmark core profile for observations"
 * component.code.coding[NPU]
   * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.1" (exactly)
+  * system = $NPU (exactly)
   * code 1..
 * component.code.coding[MedCom] 
   * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
@@ -77,16 +83,12 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
-
-Profile: DkCoreObservationVitalSigns
-Parent: dk-core-observation
-Id: dk-core-observation-vitalsigns
-Title: "Danish Core Observation Profile for Vital Signs"
-Description: "HL7 Denmark core profile for observations of vital signs"
-* category 1..1
-* category = #vital-signs
-* code.coding[LOINC] 
-  * code from http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns (preferred)
+* component.code.coding[SKS] 
+  * ^short = "SKS code for the observation"
+  * system 1..
+  * system = "https://medinfo.dk/sks" (exactly)
+  * code 1..
+* component.valueQuantity.system = $ucum
 
 
 /* Instance: ObservationBloodPressureNPU
@@ -97,24 +99,9 @@ Usage: #example
 [Add content here]
 */
 
-
-
-Instance: ObservationHeightVitalSigns
-InstanceOf: DkCoreObservationVitalSigns
-Title: "John's Respiratory rate measurement, Vital Signs"
-* category = #vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
-* valueQuantity.value = 50
-* valueQuantity.code = #{Breaths}/min
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "Breaths / minute"
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-
-Instance: ObservationHeightNPU
+/*Instance: ObservationHeightNPU
 InstanceOf: DkCoreObservation
-Title: "John's height measurement"
+ Title: "John's height measurement"
 * status = #final
 * code.coding[NPU] = $NPU#NPU03794 "Legeme højde;Pt"
 * valueQuantity.value = 1.80
@@ -142,8 +129,47 @@ InstanceOf: Device
 Title: "The device that performed the observation"
 * deviceName.name = "Blood Pressure Device"
 * deviceName.type = #user-friendly-name
-* serialNumber = "74E8FFFEFF051C00.001C05FFE874"
+* serialNumber = "74E8FFFEFF051C00.001C05FFE874" */
 
+Instance: ObservationRespiratoryVitalSigns
+InstanceOf: DkCoreObservation
+Title: "John's Respiratory rate measurement, Vital Signs"
+Usage: #example
+* category = #vital-signs
+* status = #final
+* code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
+* valueQuantity.value = 50
+* valueQuantity.code = #{Breaths}/min
+* valueQuantity.system = $ucum
+* valueQuantity.unit = "Breaths / minute"
+* subject = Reference(john)
+* performer = Reference(AbrahamLaege)
+
+Instance: ObservationOxySat
+InstanceOf: DkCoreObservation
+Title: "John's oxygen saturation measurement"
+Usage: #inline
+* status = #final
+* code.coding = $NPU#NPU03011 "Iltmætning"
+* valueQuantity.value = 0.97
+* subject = Reference(john)
+* performer = Reference(AbrahamLaege)
+
+Instance: ObservationOxySatVitalSigns
+InstanceOf: DkCoreObservation
+Title: "John's oxygen saturation measurement, Vital Signs"
+Usage: #example
+* category = #vital-signs
+* status = #final
+* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* valueQuantity.value = 97.0
+* valueQuantity.code = #%
+* valueQuantity.system = $ucum
+* valueQuantity.unit = "%"
+* subject = Reference(john)
+* performer = Reference(AbrahamLaege)
+* contained[0] = ObservationOxySat
+* derivedFrom = Reference(ObservationOxySat)
 
 
 
@@ -257,7 +283,7 @@ Usage: #example
 
 
 Instance: Weight.Poul.230221
-InstanceOf: DkCoreObservationVitalSigns
+InstanceOf: DkCoreObservation
 Title: "Poul's daily weighing on Feb. 21st"
 Description: """
   Poul has been instructed to perform a daily weighing in the morning. This is his
@@ -476,7 +502,7 @@ Usage: #inline
 
 
 Instance: BloodPressure.Poul.643992
-InstanceOf: DkCoreObservationVitalSigns
+InstanceOf: DkCoreObservation
 Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
 * meta.profile[+] = $PhdCompoundNumericObservation
@@ -519,7 +545,7 @@ Usage: #inline
 
 
 Instance: HeartRate.Poul.1974654
-InstanceOf: DkCoreObservationVitalSigns
+InstanceOf: DkCoreObservation
 Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
 * meta.profile[+] = $PhdNumericObservation
@@ -574,7 +600,7 @@ Instance: ContinuaBundleWithDevice
 InstanceOf: Bundle
 Title: "Poul's home blood pressure measurement"
 Description: """
-  This example demonstrates a DkCoreObservationVitalSigns _and_ Continua-compliant
+  This example demonstrates a DkCoreObservation _and_ Continua-compliant
   bundle containing a home blood pressure measurement uploaded to a Continua-compliant
   _"FHIR Observation Reporting Server"._
 """
