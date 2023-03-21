@@ -195,6 +195,7 @@ Alias: $ContinuaPHD = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD
 Alias: $ContinuaHFS = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS
 Alias: $observation-gatewayDevice = http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
 
 
@@ -203,6 +204,7 @@ InstanceOf: DkCorePatient
 Usage: #inline
 * meta.profile = $PhdPatient
 * identifier[cpr].value = "0307499998"
+* identifier[cpr].type = $v2-0203#NI
 * name
   * family = "Hansen"
   * given[+] = "Poul"
@@ -213,17 +215,17 @@ InstanceOf: Device
 Title: "Poul's A&D weight scale"
 Description: """
   This device is Poul's personal weighing scale, which he keeps in the bathroom
-  of his home, and uses for daily monitoring due to his CHF condition. 
+  of his home, and uses for daily monitoring due to his CHF condition.
 """
 Usage: #example
 * meta.profile = $PhdDevice
 * identifier[+]
   * system = $EUI64
-  * type.coding[0] = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * type.coding[0] = $ContinuaDeviceIdentifiers#SYSID "IEEE 11073 System Identifier"
   * value = "60-64-05-FF-FE-CF-C6-04"
 * identifier[+]
   * system = $BD_ADDR
-  * type.coding[0] = $ContinuaDeviceIdentifiers#BTMAC "System Identifier"
+  * type.coding[0] = $ContinuaDeviceIdentifiers#BTMAC "Bluetooth MAC address"
   * value = "60-64-05-CF-C6-04"
 * manufacturer = "A&D Medical "
 * modelNumber = "UC-352BLE "
@@ -232,8 +234,10 @@ Usage: #example
   * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
   * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
 * specialization
-  * systemType.coding = $IEEEx73#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
-  * systemType.text = "MDC_DEV_SPEC_PROFILE_SCALE: Weighing scale"
+  * systemType
+    * coding = $IEEEx73#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
+    * text = "MDC_DEV_SPEC_PROFILE_SCALE: Weighing scale"
+  * version = "1"
 * version[+]
   * type[+].coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
   * type[=].text = "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"
@@ -301,15 +305,15 @@ Usage: #example
   * coding[+] = $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
   * coding[+] = $NPU#NPU03804 "Pt—Body; mass = ? kg"
   * text = "MDC_MASS_BODY_ACTUAL: Body weight"
-* subject = Reference(Poul)
-* performer = Reference(Poul)
+* subject = Reference(http://example.org/fhir/Patient/Poul)
+* performer = Reference(http://example.org/fhir/Patient/Poul)
 * effectiveDateTime = "2023-02-21T08:36:40+01:00"
-* valueQuantity = 74.0 'kg'
+* valueQuantity = 74.0 'kg' "kg"
 * device = Reference(WeightScale.606405FFFECFC604)
 * extension
   * url = $observation-gatewayDevice
-  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
-* derivedFrom = Reference(CoincidentTimeStamp.0123)
+  * valueReference = Reference(http://example.org/fhir/Telma.FEEDDADADEADBEEF)
+* derivedFrom = Reference(http://example.org/fhir/CoincidentTimeStamp.0123)
 
 
 
@@ -325,7 +329,7 @@ Usage: #inline
 * meta.profile = $PhgDevice
 * identifier[+]
   * system = $EUI64
-  * type.coding = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * type.coding = $ContinuaDeviceIdentifiers#SYSID "IEEE 11073 System Identifier"
   * value = "FE-ED-DA-DA-DE-AD-BE-EF"
 * manufacturer = "Trifork"
 * modelNumber = "Telma (Android)"
@@ -394,11 +398,11 @@ Usage: #inline
 * meta.profile = $PhdDevice
 * identifier[+]
   * system = $EUI64
-  * type.coding = $ContinuaDeviceIdentifiers#SYSID "System Identifier"
+  * type.coding = $ContinuaDeviceIdentifiers#SYSID "Ieee 11073 System Identifier"
   * value = "C4-F3-12-FF-FE-53-F2-C9"
 * identifier[+]
   * system = $BD_ADDR
-  * type.coding = $ContinuaDeviceIdentifiers#BTMAC "System Identifier"
+  * type.coding = $ContinuaDeviceIdentifiers#BTMAC "Bluetooth MAC address"
   * value = "C4-F3-12-53-F2-C9"
 * manufacturer = "A&D Medical "
 * modelNumber = "UA-651BLE "
@@ -406,9 +410,11 @@ Usage: #inline
 * type
   * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
   * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
-* specialization.systemType
-  * coding = $IEEEx73#528391 "MDC_DEV_SPEC_PROFILE_BP"
-  * text = "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"
+* specialization
+  * systemType
+    * coding = $IEEEx73#528391 "MDC_DEV_SPEC_PROFILE_BP"
+    * text = "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"
+  * version = "1"
 * version[+]
   * type
     * coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
@@ -561,7 +567,7 @@ Usage: #inline
 * subject = Reference(Poul)
 * performer = Reference(Poul)
 * effectiveDateTime = "2023-02-23T10:24:08+01:00"
-* valueQuantity = 93 '{beat}/min' "bpm"
+* valueQuantity = 93 '/min' "bpm"
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
 * extension
   * url = $observation-gatewayDevice
@@ -607,54 +613,54 @@ Description: """
 Usage: #example
 * type = #transaction
 * entry[+]
-  * fullUrl = "Poul"
+  * fullUrl = "Patient/Poul"
   * request
     * method = #POST
     * url = "Patient"
     * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|0307499998"
   * resource = Poul
 * entry[+]
-  * fullUrl = "Telma.FEEDDADADEADBEEF"
+  * fullUrl = "Device/Telma.FEEDDADADEADBEEF"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF"
   * resource = Telma.FEEDDADADEADBEEF
 * entry[+]
-  * fullUrl = "BPMonitor.C4F312FFFE53F2C9"
+  * fullUrl = "Device/BPMonitor.C4F312FFFE53F2C9"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9"
   * resource = BPMonitor.C4F312FFFE53F2C9
 * entry[+]
-  * fullUrl = "BatteryLevel.0944"
+  * fullUrl = "Observation/BatteryLevel.0944"
   * request
     * method = #POST
     * url = "Observation"
   * resource = BatteryLevel.0944
 * entry[+]
-  * fullUrl = "CoincidentTimeStamp.0222"
+  * fullUrl = "Observation/CoincidentTimeStamp.0222"
   * request
     * method = #POST
     * url = "Observation"
   * resource = CoincidentTimeStamp.0222
 * entry[+]
-  * fullUrl = "BloodPressure.Poul.643992"
+  * fullUrl = "Observation/BloodPressure.Poul.643992"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
   * resource = BloodPressure.Poul.643992
 * entry[+]
-  * fullUrl = "HeartRate.Poul.1974654"
+  * fullUrl = "Observation/HeartRate.Poul.1974654"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
   * resource = HeartRate.Poul.1974654
 * entry[+]
-  * fullUrl = "BloodPressureStatus.Poul.133527"
+  * fullUrl = "Observation/BloodPressureStatus.Poul.133527"
   * request
     * method = #POST
     * url = "Observation"

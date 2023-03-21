@@ -1,1 +1,22 @@
 == Suppressed Messages ==
+
+# The real A&D devices actually produce these strings with an extra space at the end. So to make the examples realistic, we accept this bad behaviour here
+WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[2].resource/*Device/BPMonitor.C4F312FFFE53F2C9*/.manufacturer: value should not start or finish with whitespace%
+WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[2].resource/*Device/BPMonitor.C4F312FFFE53F2C9*/.modelNumber: value should not start or finish with whitespace%
+WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[2].resource/*Device/BPMonitor.C4F312FFFE53F2C9*/.version[3].value: value should not start or finish with whitespace%
+WARNING: Device/WeightScale.606405FFFECFC604: Device.modelNumber: value should not start or finish with whitespace%
+WARNING: Device/WeightScale.606405FFFECFC604: Device.manufacturer: value should not start or finish with whitespace%
+
+# This is the "Conditional Create"-identifier (see http://hl7.org/fhir/uv/phd/ObservationIdentifier.html) used to create a unique hash value of the observation to prevent duplicates - and therefore DOES carry a meaning without a system
+#WARNING: Observation/ObservationHeightVitalSigns: Observation.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+#WARNING: StructureDefinition/dk-core-observation-vitalsigns: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+#WARNING: StructureDefinition/dk-core-observation-vitalsigns: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+
+# This code DOES exist and is published by IEEE. But somehow the code system tooling missed it along the way
+ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Local Error: Resolved system urn:iso:std:iso:11073:10101 (v2.0.1), but the definition is not complete. Server Error: The code "8410608" is not valid in the system urn:iso:std:iso:11073:10101; The code provided (urn:iso:std:iso:11073:10101#8410608) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:11073:10101#8410608'
+
+# These "Slicing Information" are very noisy and do not contribute anything useful in this context
+% This element does not match any known slice defined in the profile %
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
+
