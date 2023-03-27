@@ -235,7 +235,7 @@ Usage: #example
   * system = $BD_ADDR
   * type.coding[0] = $ContinuaDeviceIdentifiers#BTMAC "Bluetooth MAC address"
   * value = "60-64-05-CF-C6-04"
-* manufacturer = "A&D Medical "
+* manufacturer = "A&D Medical"
 * modelNumber = "UC-352BLE "
 * serialNumber = "5180400664"
 * type
@@ -412,7 +412,7 @@ Usage: #inline
   * system = $BD_ADDR
   * type.coding = $ContinuaDeviceIdentifiers#BTMAC "Bluetooth MAC address"
   * value = "C4-F3-12-53-F2-C9"
-* manufacturer = "A&D Medical "
+* manufacturer = "A&D Medical"
 * modelNumber = "UA-651BLE "
 * serialNumber = "5181000124"
 * type
