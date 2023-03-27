@@ -3,6 +3,7 @@ Parent: Observation
 Id: dk-core-observation
 Title: "Danish Core Observation Profiles"
 Description: "HL7 Denmark core profile for observations"
+* obeys dk-core-observation-mandatory-units
 * code.coding ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
@@ -89,6 +90,13 @@ Description: "HL7 Denmark core profile for observations"
   * system = $SKS (exactly)
   * code 1..
 * component.valueQuantity.system = $ucum
+
+Invariant: dk-core-observation-mandatory-units
+Description: "If value is specified then unit and/or code must be specified"
+Severity: #error
+Expression: "Observation.valueQuantity.value implies Observation.valueQuantity.unit.exists() or Observation.valueQuantity.code.exists()"
+
+
 
 
 /* Instance: ObservationBloodPressureNPU
