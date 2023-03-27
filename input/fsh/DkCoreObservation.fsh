@@ -29,7 +29,7 @@ Description: "HL7 Denmark core profile for observations"
   * system = $NPU (exactly)
   * code 1..
 * code.coding[MedCom] 
-  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
+  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom."
   * system 1..
   * system = $Medcom (exactly)
   * code 1..
@@ -41,7 +41,7 @@ Description: "HL7 Denmark core profile for observations"
 * code.coding[SKS] 
   * ^short = "SKS code for the observation"
   * system 1..
-  * system = "https://medinfo.dk/sks" (exactly)
+  * system = $SKS (exactly)
   * code 1..
 * subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
@@ -74,9 +74,9 @@ Description: "HL7 Denmark core profile for observations"
   * system = $NPU (exactly)
   * code 1..
 * component.code.coding[MedCom] 
-  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom. These codes are prefixed with 'MCS'."
+  * ^short = "MedCom code for the observation. MedCom codes are administred by the MedCom."
   * system 1..
-  * system = "https://www.medcom.dk/" (exactly)
+  * system = $Medcom (exactly)
   * code 1..
 * component.code.coding[IEEE] 
   * ^short = "IEEE code for the observation"
@@ -84,9 +84,9 @@ Description: "HL7 Denmark core profile for observations"
   * system = $IEEEx73 (exactly)
   * code 1..
 * component.code.coding[SKS] 
-  * ^short = "SKS code for the observation"
+  * ^short = "SKS code for the observation."
   * system 1..
-  * system = "https://medinfo.dk/sks" (exactly)
+  * system = $SKS (exactly)
   * code 1..
 * component.valueQuantity.system = $ucum
 
