@@ -90,9 +90,6 @@ Description: "HL7 Denmark core profile for observations"
   * system = $SKS (exactly)
   * code 1..
 * component.valueQuantity.system = $ucum
-* method ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "system"
-  * ^slicing.rules = #open
 * method.coding ^slicing.discriminator.type = #value
 * method.coding ^slicing.discriminator.path = "system"
 * method.coding ^slicing.rules = #open
