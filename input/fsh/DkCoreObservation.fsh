@@ -570,7 +570,7 @@ Usage: #inline
 
 Instance: HeartRate.Poul.1974654
 InstanceOf: DkCoreObservation
-Usage: #inline
+Usage: #example
 * identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
 * meta.profile[+] = $PhdNumericObservation
 * meta.profile[+] = $observation-vitalsigns
