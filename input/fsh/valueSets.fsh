@@ -32,3 +32,12 @@ Description: "LOINC codes describing vital signs."
 * $LOINC#8310-5 "Body temperature"
 * $LOINC#8480-6 "Systolic blood pressure"
 * $LOINC#8462-4 "Diastolic blood pressure"
+
+
+ValueSet: TechniqesSCTCodes
+Title: "TechniqesSCTCodes"
+Description: "SNOMED CT Codes for the techniqe used when obtaining an observation"
+* ^experimental = false
+* $sct#761996005 "Estimation technique (qualifier value)"
+* $sct#733985002 "Reported (qualifier value)"
+* $sct#272391002 "Measurement technique (qualifier value)"

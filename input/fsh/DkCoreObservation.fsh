@@ -90,6 +90,17 @@ Description: "HL7 Denmark core profile for observations"
   * system = $SKS (exactly)
   * code 1..
 * component.valueQuantity.system = $ucum
+* method ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+* method.coding ^slicing.discriminator.type = #value
+* method.coding ^slicing.discriminator.path = "system"
+* method.coding ^slicing.rules = #open
+* method.coding contains
+   SCTCode 0..1
+* method.coding[SCTCode] from TechniqesSCTCodes (required)
+* method.coding[SCTCode].system = $sct
+
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
@@ -160,6 +171,8 @@ Usage: #inline
 * status = #final
 * code.coding = $NPU#NPU03011 "Iltmætning"
 * valueQuantity.value = 0.97
+* valueQuantity.code = #{1}
+* valueQuantity.system = $ucum
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
