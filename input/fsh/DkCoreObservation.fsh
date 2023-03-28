@@ -102,7 +102,7 @@ Description: "HL7 Denmark core profile for observations"
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
 Severity: #error
-Expression: "Observation.valueQuantity.value implies Observation.valueQuantity.unit.exists() or Observation.valueQuantity.code.exists()"
+Expression: "Observation.valueQuantity.value.exists() implies Observation.valueQuantity.unit.exists() or Observation.valueQuantity.code.exists()"
 
 
 
