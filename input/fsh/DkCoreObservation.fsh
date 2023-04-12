@@ -147,6 +147,21 @@ Title: "The device that performed the observation"
 * deviceName.type = #user-friendly-name
 * serialNumber = "74E8FFFEFF051C00.001C05FFE874" */
 
+Instance: ElsePainVRS
+InstanceOf: dk-core-observation
+Usage: #example
+Title: "ElsePainVRS"
+Description: "Elses smerte målt med VRS"
+* subject = Reference(else)
+* code.coding = $sct#1144798005 "Verbal Rating Scale pain intensity score"
+* valueCodeableConcept.coding[0].system = "http://localSystem.dk"
+* valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
+* valueCodeableConcept.coding[0].userSelected = true
+* valueCodeableConcept.coding[1] = $sct#76948002 "Severe pain (finding)"
+* status = #final
+* effectiveDateTime = 2020-06-01
+
+
 Instance: ObservationRespiratoryVitalSigns
 InstanceOf: DkCoreObservation
 Title: "John's Respiratory rate measurement, Vital Signs"
@@ -219,9 +234,9 @@ Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
 
 Instance: Poul
 InstanceOf: DkCorePatient
-Usage: #inline
+Usage: #example
 * meta.profile = $PhdPatient
-* identifier[cpr].value = "0307499998"
+* identifier[cpr].value = "3001749995"
 * identifier[cpr].type = $v2-0203#NI
 * name
   * family = "Hansen"
@@ -312,7 +327,7 @@ Description: """
   daily weighing from Feb. 21st 2023.
 """
 Usage: #example
-* identifier.value = "606405FFFECFC604-0307499998-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"
+* identifier.value = "606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"
 * meta.profile[+] = $PhdNumericObservation
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-bodyweight
@@ -343,7 +358,7 @@ Usage: #example
 
 Instance: Telma.FEEDDADADEADBEEF
 InstanceOf: Device
-Usage: #inline
+Usage: #example
 * meta.profile = $PhgDevice
 * identifier[+]
   * system = $EUI64
@@ -412,7 +427,7 @@ Usage: #inline
 
 Instance: BPMonitor.C4F312FFFE53F2C9
 InstanceOf: Device
-Usage: #inline
+Usage: #example
 * meta.profile = $PhdDevice
 * identifier[+]
   * system = $EUI64
@@ -509,7 +524,7 @@ Usage: #inline
 
 Instance: CoincidentTimeStamp.0222
 InstanceOf: DkCoreObservation
-Usage: #inline
+Usage: #example
 * meta.profile[+] = $PhdCoincidentTimeStampObservation
 * status = #final
 * code
@@ -528,7 +543,7 @@ Usage: #inline
 Instance: BloodPressure.Poul.643992
 InstanceOf: DkCoreObservation
 Usage: #inline
-* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
+* identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
 * meta.profile[+] = $PhdCompoundNumericObservation
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-bp
@@ -571,7 +586,7 @@ Usage: #inline
 Instance: HeartRate.Poul.1974654
 InstanceOf: DkCoreObservation
 Usage: #example
-* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
+* identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
 * meta.profile[+] = $PhdNumericObservation
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-heartrate
@@ -596,7 +611,7 @@ Usage: #example
 Instance: BloodPressureStatus.Poul.133527
 InstanceOf: DkCoreObservation
 Usage: #inline
-* identifier.value = "C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
+* identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
 * meta.profile[+] = $PhdBitsEnumerationObservation
 * status = #final
 * code
@@ -635,7 +650,7 @@ Usage: #example
   * request
     * method = #POST
     * url = "Patient"
-    * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|0307499998"
+    * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|3001749995"
   * resource = Poul
 * entry[+]
   * fullUrl = "Device/Telma.FEEDDADADEADBEEF"
@@ -668,19 +683,19 @@ Usage: #example
   * request
     * method = #POST
     * url = "Observation"
-    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
   * resource = BloodPressure.Poul.643992
 * entry[+]
   * fullUrl = "Observation/HeartRate.Poul.1974654"
   * request
     * method = #POST
     * url = "Observation"
-    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
   * resource = HeartRate.Poul.1974654
 * entry[+]
   * fullUrl = "Observation/BloodPressureStatus.Poul.133527"
   * request
     * method = #POST
     * url = "Observation"
-    * ifNoneExist = "identifier=C4F312FFFE53F2C9-0307499998-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
+    * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
   * resource = BloodPressureStatus.Poul.133527
