@@ -5,39 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/ServiceRequest/HenvisningFraLageTilSygehus> a fhir:ServiceRequest;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HenvisningFraLageTilSygehus"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvisningFraLageTilSygehus\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvisningFraLageTilSygehus&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>priority</b>: asap</p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>authoredOn</b>: 2021-05-01</p><p><b>requester</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization/LaegerneHasserisBymidte</a> &quot;Lægerne Hasseris Bymidte&quot;</p><p><b>reasonCode</b>: John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>reasonReference</b>: <a href=\"Condition-JohnMelanoma.html\">Condition/JohnMelanoma</a></p></div>"
-  ]; # 
-  fhir:ServiceRequest.status [ fhir:value "active"]; # 
-  fhir:ServiceRequest.intent [ fhir:value "proposal"]; # 
-  fhir:ServiceRequest.priority [ fhir:value "asap"]; # 
-  fhir:ServiceRequest.subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/john>;
-     fhir:Reference.reference [ fhir:value "Patient/john" ]
-  ]; # 
-  fhir:ServiceRequest.authoredOn [ fhir:value "2021-05-01"^^xsd:date]; # 
-  fhir:ServiceRequest.requester [
-     fhir:link <http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte>;
-     fhir:Reference.reference [ fhir:value "Organization/LaegerneHasserisBymidte" ]
-  ]; # 
-  fhir:ServiceRequest.reasonCode [
-     fhir:index 0;
-     fhir:CodeableConcept.text [ fhir:value "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft" ]
-  ]; # 
-  fhir:ServiceRequest.reasonReference [
-     fhir:index 0;
-     fhir:link <http://hl7.dk/fhir/core/Condition/JohnMelanoma>;
-     fhir:Reference.reference [ fhir:value "Condition/JohnMelanoma" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/ServiceRequest/HenvisningFraLageTilSygehus.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.dk/fhir/core/ServiceRequest/HenvisningFraLageTilSygehus> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HenvisningFraLageTilSygehus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvisningFraLageTilSygehus\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvisningFraLageTilSygehus&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>priority</b>: asap</p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>authoredOn</b>: 2021-05-01</p><p><b>requester</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization/LaegerneHasserisBymidte</a> &quot;Lægerne Hasseris Bymidte&quot;</p><p><b>reasonCode</b>: John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>reasonReference</b>: <a href=\"Condition-JohnMelanoma.html\">Condition/JohnMelanoma</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:priority [ fhir:v "asap"] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/john> ;
+     fhir:reference [ fhir:v "Patient/john" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2021-05-01"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte> ;
+     fhir:reference [ fhir:v "Organization/LaegerneHasserisBymidte" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft" ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://hl7.dk/fhir/core/Condition/JohnMelanoma> ;
+     fhir:reference [ fhir:v "Condition/JohnMelanoma" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

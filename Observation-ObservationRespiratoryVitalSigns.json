@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ObservationRespiratoryVitalSigns",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationRespiratoryVitalSigns\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationRespiratoryVitalSigns&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 50 Breaths / minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Breaths}/min = '{Breaths}/min')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9279-1",
+      "display" : "Respiratory rate"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/john"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/AbrahamLaege"
+  }],
+  "valueQuantity" : {
+    "value" : 50,
+    "unit" : "Breaths / minute",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{Breaths}/min"
+  }
+}

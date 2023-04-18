@@ -6,160 +6,136 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "days-of-week-dk-supplement"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-mon\">mon</a><a name=\"days-of-week-dk-supplement-mon\"> </a></td><td>Monday</td><td>Monday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-tue\">tue</a><a name=\"days-of-week-dk-supplement-tue\"> </a></td><td>Tuesday</td><td>Tuesday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-wed\">wed</a><a name=\"days-of-week-dk-supplement-wed\"> </a></td><td>Wednesday</td><td>Wednesday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-thu\">thu</a><a name=\"days-of-week-dk-supplement-thu\"> </a></td><td>Thursday</td><td>Thursday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-fri\">fri</a><a name=\"days-of-week-dk-supplement-fri\"> </a></td><td>Friday</td><td>Friday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sat\">sat</a><a name=\"days-of-week-dk-supplement-sat\"> </a></td><td>Saturday</td><td>Saturday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sun\">sun</a><a name=\"days-of-week-dk-supplement-sun\"> </a></td><td>Sunday</td><td>Sunday</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>mon</td><td>Mandag</td></tr><tr><td>tue</td><td>Tirsdag</td></tr><tr><td>wed</td><td>Onsdag</td></tr><tr><td>thu</td><td>Torsdag</td></tr><tr><td>fri</td><td>Fredag</td></tr><tr><td>sat</td><td>Lørdag</td></tr><tr><td>sun</td><td>Søndag</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "DaysOfWeek"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Days Of Week"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "The days of the week."]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
-  fhir:CodeSystem.supplements [
-     fhir:value "http://hl7.org/fhir/days-of-week";
+<http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "days-of-week-dk-supplement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-mon\">mon</a><a name=\"days-of-week-dk-supplement-mon\"> </a></td><td>Monday</td><td>Monday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-tue\">tue</a><a name=\"days-of-week-dk-supplement-tue\"> </a></td><td>Tuesday</td><td>Tuesday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-wed\">wed</a><a name=\"days-of-week-dk-supplement-wed\"> </a></td><td>Wednesday</td><td>Wednesday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-thu\">thu</a><a name=\"days-of-week-dk-supplement-thu\"> </a></td><td>Thursday</td><td>Thursday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-fri\">fri</a><a name=\"days-of-week-dk-supplement-fri\"> </a></td><td>Friday</td><td>Friday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sat\">sat</a><a name=\"days-of-week-dk-supplement-sat\"> </a></td><td>Saturday</td><td>Saturday</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sun\">sun</a><a name=\"days-of-week-dk-supplement-sun\"> </a></td><td>Sunday</td><td>Sunday</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>mon</td><td>Mandag</td></tr><tr><td>tue</td><td>Tirsdag</td></tr><tr><td>wed</td><td>Onsdag</td></tr><tr><td>thu</td><td>Torsdag</td></tr><tr><td>fri</td><td>Fredag</td></tr><tr><td>sat</td><td>Lørdag</td></tr><tr><td>sun</td><td>Søndag</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "DaysOfWeek"] ; # 
+  fhir:title [ fhir:v "DK Days Of Week"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The days of the week."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://hl7.org/fhir/days-of-week"^^xsd:anyURI ;
      fhir:link <http://hl7.org/fhir/days-of-week>
-  ]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "mon" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Monday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Monday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Mandag" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "tue" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Tuesday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Tuesday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Tirsdag" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "wed" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Wednesday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Wednesday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Onsdag" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "thu" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Thursday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Thursday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Torsdag" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "fri" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Friday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Friday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Fredag" ]
-     ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "sat" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Saturday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Saturday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Lørdag" ]
-     ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "sun" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Sunday" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Sunday" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Søndag" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mon" ] ;
+     fhir:display [ fhir:v "Monday" ] ;
+     fhir:definition [ fhir:v "Monday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Mandag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tue" ] ;
+     fhir:display [ fhir:v "Tuesday" ] ;
+     fhir:definition [ fhir:v "Tuesday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Tirsdag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "wed" ] ;
+     fhir:display [ fhir:v "Wednesday" ] ;
+     fhir:definition [ fhir:v "Wednesday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Onsdag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "thu" ] ;
+     fhir:display [ fhir:v "Thursday" ] ;
+     fhir:definition [ fhir:v "Thursday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Torsdag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "fri" ] ;
+     fhir:display [ fhir:v "Friday" ] ;
+     fhir:definition [ fhir:v "Friday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Fredag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sat" ] ;
+     fhir:display [ fhir:v "Saturday" ] ;
+     fhir:definition [ fhir:v "Saturday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Lørdag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sun" ] ;
+     fhir:display [ fhir:v "Sunday" ] ;
+     fhir:definition [ fhir:v "Sunday" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Søndag" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

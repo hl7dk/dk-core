@@ -6,49 +6,38 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte> a fhir:Organization;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "LaegerneHasserisBymidte"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization";
-       fhir:index 0;
+<http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LaegerneHasserisBymidte"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"LaegerneHasserisBymidte\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;LaegerneHasserisBymidte&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 61741000016007, id: 77410</p><p><b>type</b>: GP practice site <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394761003)</span></p><p><b>name</b>: Lægerne Hasseris Bymidte</p><p><b>telecom</b>: ph: 98182233</p></div>"
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
-     fhir:Identifier.value [ fhir:value "61741000016007" ]
-  ], [
-     fhir:index 1;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.4" ];
-     fhir:Identifier.value [ fhir:value "77410" ]
-  ]; # 
-  fhir:Organization.type [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:394761003;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "394761003" ]
-     ]
-  ]; # 
-  fhir:Organization.name [ fhir:value "Lægerne Hasseris Bymidte"]; # 
-  fhir:Organization.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "98182233" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"LaegerneHasserisBymidte\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;LaegerneHasserisBymidte&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 61741000016007, id: 77410</p><p><b>type</b>: GP practice site <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394761003)</span></p><p><b>name</b>: Lægerne Hasseris Bymidte</p><p><b>telecom</b>: ph: 98182233</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "61741000016007" ]
+  ] [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "77410" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:394761003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "394761003" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Lægerne Hasseris Bymidte"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "98182233" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

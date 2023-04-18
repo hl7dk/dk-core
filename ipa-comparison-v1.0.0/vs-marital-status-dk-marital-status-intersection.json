@@ -1,0 +1,71 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d7d2a322-197c-4dde-9c28-252312e52f06-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d7d2a322-197c-4dde-9c28-252312e52f06-9",
+  "name" : "IntersectionMarital Status CodesAndnull",
+  "title" : "Intersection of MaritalStatus And DK MaritalStatus",
+  "status" : "active",
+  "date" : "2023-04-18T12:03:17+00:00",
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "A",
+      "display" : "Annulled"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "D",
+      "display" : "Divorced"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "I",
+      "display" : "Interlocutory"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "L",
+      "display" : "Legally Separated"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "C",
+      "display" : "Common Law"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "P",
+      "display" : "Polygamous"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "T",
+      "display" : "Domestic partner"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "U",
+      "display" : "unmarried"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "S",
+      "display" : "Never Married"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "W",
+      "display" : "Widowed"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "code" : "UNK",
+      "display" : "unknown"
+    }]
+  }
+}

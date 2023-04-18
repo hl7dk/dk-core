@@ -6,115 +6,97 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "address-use-dk-supplement"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home\">home</a><a name=\"address-use-dk-supplement-home\"> </a></td><td>Home</td><td>A communication address at a home.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work\">work</a><a name=\"address-use-dk-supplement-work\"> </a></td><td>Work</td><td>An office address. First choice for business related contacts during business hours.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp\">temp</a><a name=\"address-use-dk-supplement-temp\"> </a></td><td>Temporary</td><td>A temporary address. The period can provide more detailed information.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old\">old</a><a name=\"address-use-dk-supplement-old\"> </a></td><td>Old / Incorrect</td><td>This address is no longer in use (or was never correct, but retained for records).</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>home</td><td>Hjem</td></tr><tr><td>work</td><td>Arbejde</td></tr><tr><td>temp</td><td>Midlertidig</td></tr><tr><td>old</td><td>Gammel / forkert</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "AddressUse"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Address Use"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "The use of an address"]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
-  fhir:CodeSystem.supplements [
-     fhir:value "http://hl7.org/fhir/address-use";
+<http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "address-use-dk-supplement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home\">home</a><a name=\"address-use-dk-supplement-home\"> </a></td><td>Home</td><td>A communication address at a home.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work\">work</a><a name=\"address-use-dk-supplement-work\"> </a></td><td>Work</td><td>An office address. First choice for business related contacts during business hours.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp\">temp</a><a name=\"address-use-dk-supplement-temp\"> </a></td><td>Temporary</td><td>A temporary address. The period can provide more detailed information.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old\">old</a><a name=\"address-use-dk-supplement-old\"> </a></td><td>Old / Incorrect</td><td>This address is no longer in use (or was never correct, but retained for records).</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>home</td><td>Hjem</td></tr><tr><td>work</td><td>Arbejde</td></tr><tr><td>temp</td><td>Midlertidig</td></tr><tr><td>old</td><td>Gammel / forkert</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "AddressUse"] ; # 
+  fhir:title [ fhir:v "DK Address Use"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The use of an address"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://hl7.org/fhir/address-use"^^xsd:anyURI ;
      fhir:link <http://hl7.org/fhir/address-use>
-  ]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "home" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Home" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "A communication address at a home." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Hjem" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "work" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Work" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "An office address. First choice for business related contacts during business hours." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Arbejde" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "temp" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Temporary" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "A temporary address. The period can provide more detailed information." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Midlertidig" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "old" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Old / Incorrect" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This address is no longer in use (or was never correct, but retained for records)." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Gammel / forkert" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "home" ] ;
+     fhir:display [ fhir:v "Home" ] ;
+     fhir:definition [ fhir:v "A communication address at a home." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Hjem" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "work" ] ;
+     fhir:display [ fhir:v "Work" ] ;
+     fhir:definition [ fhir:v "An office address. First choice for business related contacts during business hours." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Arbejde" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "temp" ] ;
+     fhir:display [ fhir:v "Temporary" ] ;
+     fhir:definition [ fhir:v "A temporary address. The period can provide more detailed information." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Midlertidig" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "old" ] ;
+     fhir:display [ fhir:v "Old / Incorrect" ] ;
+     fhir:definition [ fhir:v "This address is no longer in use (or was never correct, but retained for records)." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Gammel / forkert" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

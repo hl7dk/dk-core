@@ -5,98 +5,78 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "dk-core-regional-subdivision-codes"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DK-84<a name=\"dk-core-regional-subdivision-codes-DK-84\"> </a></td><td>Capital Region of Denmark</td></tr><tr><td style=\"white-space:nowrap\">DK-82<a name=\"dk-core-regional-subdivision-codes-DK-82\"> </a></td><td>Central Denmark Region</td></tr><tr><td style=\"white-space:nowrap\">DK-81<a name=\"dk-core-regional-subdivision-codes-DK-81\"> </a></td><td>Nord Denmark Region</td></tr><tr><td style=\"white-space:nowrap\">DK-85<a name=\"dk-core-regional-subdivision-codes-DK-85\"> </a></td><td>Region Zealand</td></tr><tr><td style=\"white-space:nowrap\">DK-83<a name=\"dk-core-regional-subdivision-codes-DK-83\"> </a></td><td>Region of Southern Denmark</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>DK-84</td><td>Hovedstaden</td></tr><tr><td>DK-82</td><td>Midtjylland</td></tr><tr><td>DK-81</td><td>Nordjylland</td></tr><tr><td>DK-85</td><td>Sjælland</td></tr><tr><td>DK-83</td><td>Syddanmark</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "DKCoreRegionalSubdivisionCodes"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Regional Subdivision Codes"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "DK-84" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Capital Region of Denmark" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Hovedstaden" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "DK-82" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Central Denmark Region" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Midtjylland" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "DK-81" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Nord Denmark Region" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Nordjylland" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "DK-85" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Region Zealand" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Sjælland" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "DK-83" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Region of Southern Denmark" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Syddanmark" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-regional-subdivision-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DK-84<a name=\"dk-core-regional-subdivision-codes-DK-84\"> </a></td><td>Capital Region of Denmark</td></tr><tr><td style=\"white-space:nowrap\">DK-82<a name=\"dk-core-regional-subdivision-codes-DK-82\"> </a></td><td>Central Denmark Region</td></tr><tr><td style=\"white-space:nowrap\">DK-81<a name=\"dk-core-regional-subdivision-codes-DK-81\"> </a></td><td>Nord Denmark Region</td></tr><tr><td style=\"white-space:nowrap\">DK-85<a name=\"dk-core-regional-subdivision-codes-DK-85\"> </a></td><td>Region Zealand</td></tr><tr><td style=\"white-space:nowrap\">DK-83<a name=\"dk-core-regional-subdivision-codes-DK-83\"> </a></td><td>Region of Southern Denmark</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>DK-84</td><td>Hovedstaden</td></tr><tr><td>DK-82</td><td>Midtjylland</td></tr><tr><td>DK-81</td><td>Nordjylland</td></tr><tr><td>DK-85</td><td>Sjælland</td></tr><tr><td>DK-83</td><td>Syddanmark</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "DKCoreRegionalSubdivisionCodes"] ; # 
+  fhir:title [ fhir:v "DK Regional Subdivision Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DK-84" ] ;
+     fhir:display [ fhir:v "Capital Region of Denmark" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hovedstaden" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DK-82" ] ;
+     fhir:display [ fhir:v "Central Denmark Region" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Midtjylland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DK-81" ] ;
+     fhir:display [ fhir:v "Nord Denmark Region" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Nordjylland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DK-85" ] ;
+     fhir:display [ fhir:v "Region Zealand" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Sjælland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DK-83" ] ;
+     fhir:display [ fhir:v "Region of Southern Denmark" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Syddanmark" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

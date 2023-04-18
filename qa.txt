@@ -1,10 +1,11 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 0, warn = 7, info = 8
-IG Publisher Version: 1.2.22
-Generated Mon Dec 05 09:18:51 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 4 / 0
+err = 1, warn = 15, info = 12
+IG Publisher Version: 1.3.4
+Generated Tue Apr 18 12:06:51 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 7 / 0
+ /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 1 / 3 / 60
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 0 / 1
@@ -24,9 +25,18 @@ Generated Mon Dec 05 09:18:51 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Condition-JohnDiabetes : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnMelanoma : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnPacemaker : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9 : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222 : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/Observation-ElsePainVRS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/Observation-HeartRate.Poul.1974654 : 0 / 0 / 23
+ /github/workspace/fsh-generated/resources/Observation-ObservationOxySatVitalSigns : 0 / 1 / 4
+ /github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221 : 0 / 0 / 23
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte : 0 / 0 / 1
@@ -35,6 +45,7 @@ Generated Mon Dec 05 09:18:51 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-Poul : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/Patient-else : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-john : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-mogensen : 0 / 0 / 1
@@ -52,22 +63,34 @@ Generated Mon Dec 05 09:18:51 UTC 2022. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-gln-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-practitioner : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-TechniqesSCTCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/BPMonitor.C4F312FFFE53F2C9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/CoincidentTimeStamp.0222.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HeartRate.Poul.1974654.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationRespiratoryVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.4' is unknown so the code cannot be validated
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[0].code.coding[2]: Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[1].code.coding[2]: Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated
+INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated
+ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Local Error: Resolved system urn:iso:std:iso:11073:10101 (v2.0.0), but the definition is not complete. Server Error: The code "8410608" is not valid in the system urn:iso:std:iso:11073:10101; The code provided (urn:iso:std:iso:11073:10101#8410608) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:11073:10101#8410608'
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
 == fsh-generated/resources/CodeSystem-address-type-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-address-use-dk-supplement.json ==
@@ -91,9 +114,27 @@ INFORMATION: Condition/JohnDiabetes: Condition.code.coding[0]: Code System URI '
 == fsh-generated/resources/Condition-JohnMelanoma.json ==
 INFORMATION: Condition/JohnMelanoma: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-JohnPacemaker.json ==
+== fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9.json ==
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.manufacturer: value should not start or finish with whitespace 'A&D Medical '
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.modelNumber: value should not start or finish with whitespace 'UA-651BLE '
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.version[3].value: value should not start or finish with whitespace 'BLP009_02_005 '
+== fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF.json ==
+== fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
 == fsh-generated/resources/NamingSystem-cpr.json ==
 == fsh-generated/resources/NamingSystem-sor.json ==
+== fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json ==
+== fsh-generated/resources/Observation-ElsePainVRS.json ==
+INFORMATION: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://localSystem.dk' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HeartRate.Poul.1974654.json ==
+INFORMATION: Observation/HeartRate.Poul.1974654: Observation.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json ==
+INFORMATION: Observation/ObservationOxySatVitalSigns: Observation.contained[0]/*Observation/ObservationOxySat*/.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated
+WARNING: Observation/ObservationOxySatVitalSigns: Observation.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns.json ==
+WARNING: Observation/ObservationRespiratoryVitalSigns: Observation.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Observation-Weight.Poul.230221.json ==
+INFORMATION: Observation/Weight.Poul.230221: Observation.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-CenterForDiabetes.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json ==
@@ -102,16 +143,13 @@ INFORMATION: Condition/JohnMelanoma: Condition.code.coding[0]: Code System URI '
 == fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
 == fsh-generated/resources/Patient-283.json ==
 == fsh-generated/resources/Patient-Confidential.json ==
+== fsh-generated/resources/Patient-Poul.json ==
 == fsh-generated/resources/Patient-else.json ==
 == fsh-generated/resources/Patient-john.json ==
-INFORMATION: Patient/john: Patient.name[1]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient|2.2.0
 == fsh-generated/resources/Patient-mogensen.json ==
 == fsh-generated/resources/Patient-ukendt.json ==
-INFORMATION: Patient/ukendt: Patient.identifier[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient|2.2.0
-INFORMATION: Patient/ukendt: Patient.name[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient|2.2.0
 == fsh-generated/resources/Practitioner-AbrahamLaege.json ==
 == fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
-INFORMATION: Practitioner/HanneSocialraadgiver: Practitioner.qualification[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner|2.2.0
 == fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
 == fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
 == fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
@@ -124,6 +162,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 == fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-observation.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-organization.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-practitioner.json ==
@@ -131,6 +170,8 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 == fsh-generated/resources/StructureDefinition-lpr3-Identifier.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet.json ==
+== fsh-generated/resources/ValueSet-TechniqesSCTCodes.json ==
+== fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns.json ==
 == fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==

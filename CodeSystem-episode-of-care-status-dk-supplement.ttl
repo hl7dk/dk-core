@@ -6,160 +6,136 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "episode-of-care-status-dk-supplement"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-planned\">planned</a><a name=\"episode-of-care-status-dk-supplement-planned\"> </a></td><td>Planned</td><td>This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist\">waitlist</a><a name=\"episode-of-care-status-dk-supplement-waitlist\"> </a></td><td>Waitlist</td><td>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active\">active</a><a name=\"episode-of-care-status-dk-supplement-active\"> </a></td><td>Active</td><td>This episode of care is current.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-onhold\">onhold</a><a name=\"episode-of-care-status-dk-supplement-onhold\"> </a></td><td>On Hold</td><td>This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite).</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished\">finished</a><a name=\"episode-of-care-status-dk-supplement-finished\"> </a></td><td>Finished</td><td>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-cancelled\">cancelled</a><a name=\"episode-of-care-status-dk-supplement-cancelled\"> </a></td><td>Cancelled</td><td>The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-entered-in-error\">entered-in-error</a><a name=\"episode-of-care-status-dk-supplement-entered-in-error\"> </a></td><td>Entered in Error</td><td>This instance should not have been part of this patient's medical record.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>planned</td><td>Planlagt</td></tr><tr><td>waitlist</td><td>Venteliste</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>onhold</td><td>Pauseret</td></tr><tr><td>finished</td><td>Færdig</td></tr><tr><td>cancelled</td><td>Annulleret</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "EpisodeOfCareStatus"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Episode Of Care Status"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "The status of the episode of care."]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
-  fhir:CodeSystem.supplements [
-     fhir:value "http://hl7.org/fhir/episode-of-care-status";
+<http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "episode-of-care-status-dk-supplement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-planned\">planned</a><a name=\"episode-of-care-status-dk-supplement-planned\"> </a></td><td>Planned</td><td>This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-waitlist\">waitlist</a><a name=\"episode-of-care-status-dk-supplement-waitlist\"> </a></td><td>Waitlist</td><td>This episode has been placed on a waitlist, pending the episode being made active (or cancelled).</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-active\">active</a><a name=\"episode-of-care-status-dk-supplement-active\"> </a></td><td>Active</td><td>This episode of care is current.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-onhold\">onhold</a><a name=\"episode-of-care-status-dk-supplement-onhold\"> </a></td><td>On Hold</td><td>This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite).</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-finished\">finished</a><a name=\"episode-of-care-status-dk-supplement-finished\"> </a></td><td>Finished</td><td>This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as &quot;closed&quot;, &quot;completed&quot; or other similar terms.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-cancelled\">cancelled</a><a name=\"episode-of-care-status-dk-supplement-cancelled\"> </a></td><td>Cancelled</td><td>The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html#episode-of-care-status-entered-in-error\">entered-in-error</a><a name=\"episode-of-care-status-dk-supplement-entered-in-error\"> </a></td><td>Entered in Error</td><td>This instance should not have been part of this patient's medical record.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>planned</td><td>Planlagt</td></tr><tr><td>waitlist</td><td>Venteliste</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>onhold</td><td>Pauseret</td></tr><tr><td>finished</td><td>Færdig</td></tr><tr><td>cancelled</td><td>Annulleret</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "EpisodeOfCareStatus"] ; # 
+  fhir:title [ fhir:v "DK Episode Of Care Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The status of the episode of care."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://hl7.org/fhir/episode-of-care-status"^^xsd:anyURI ;
      fhir:link <http://hl7.org/fhir/episode-of-care-status>
-  ]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "planned" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Planned" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Planlagt" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "waitlist" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Waitlist" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This episode has been placed on a waitlist, pending the episode being made active (or cancelled)." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Venteliste" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "active" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This episode of care is current." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Aktiv" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "onhold" ];
-     fhir:CodeSystem.concept.display [ fhir:value "On Hold" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite)." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Pauseret" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "finished" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Finished" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as \"closed\", \"completed\" or other similar terms." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Færdig" ]
-     ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "cancelled" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Cancelled" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Annulleret" ]
-     ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "entered-in-error" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Entered in Error" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This instance should not have been part of this patient's medical record." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Fejlindtastning" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "planned" ] ;
+     fhir:display [ fhir:v "Planned" ] ;
+     fhir:definition [ fhir:v "This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Planlagt" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "waitlist" ] ;
+     fhir:display [ fhir:v "Waitlist" ] ;
+     fhir:definition [ fhir:v "This episode has been placed on a waitlist, pending the episode being made active (or cancelled)." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Venteliste" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "This episode of care is current." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Aktiv" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "onhold" ] ;
+     fhir:display [ fhir:v "On Hold" ] ;
+     fhir:definition [ fhir:v "This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite)." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Pauseret" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "finished" ] ;
+     fhir:display [ fhir:v "Finished" ] ;
+     fhir:definition [ fhir:v "This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as \"closed\", \"completed\" or other similar terms." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Færdig" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "cancelled" ] ;
+     fhir:display [ fhir:v "Cancelled" ] ;
+     fhir:definition [ fhir:v "The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Annulleret" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "entered-in-error" ] ;
+     fhir:display [ fhir:v "Entered in Error" ] ;
+     fhir:definition [ fhir:v "This instance should not have been part of this patient's medical record." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Fejlindtastning" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

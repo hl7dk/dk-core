@@ -5,137 +5,106 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DkCoreProfessionGroupCodes"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C511<a name=\"DkCoreProfessionGroupCodes-C511\"> </a></td><td>Ambulancebehandler</td></tr><tr><td style=\"white-space:nowrap\">9495<a name=\"DkCoreProfessionGroupCodes-9495\"> </a></td><td>Bandagist</td></tr><tr><td style=\"white-space:nowrap\">B511<a name=\"DkCoreProfessionGroupCodes-B511\"> </a></td><td>Behandlerfarmaceut</td></tr><tr><td style=\"white-space:nowrap\">5159<a name=\"DkCoreProfessionGroupCodes-5159\"> </a></td><td>Bioanalytiker</td></tr><tr><td style=\"white-space:nowrap\">5153<a name=\"DkCoreProfessionGroupCodes-5153\"> </a></td><td>Ergoterapeut</td></tr><tr><td style=\"white-space:nowrap\">5155<a name=\"DkCoreProfessionGroupCodes-5155\"> </a></td><td>Fodterapeut</td></tr><tr><td style=\"white-space:nowrap\">5151<a name=\"DkCoreProfessionGroupCodes-5151\"> </a></td><td>Fysioterapeut</td></tr><tr><td style=\"white-space:nowrap\">5175<a name=\"DkCoreProfessionGroupCodes-5175\"> </a></td><td>Jordemoder</td></tr><tr><td style=\"white-space:nowrap\">5265<a name=\"DkCoreProfessionGroupCodes-5265\"> </a></td><td>Kiropraktor</td></tr><tr><td style=\"white-space:nowrap\">5451<a name=\"DkCoreProfessionGroupCodes-5451\"> </a></td><td>Klinisk diætist</td></tr><tr><td style=\"white-space:nowrap\">5432<a name=\"DkCoreProfessionGroupCodes-5432\"> </a></td><td>Klinisk tandtekniker</td></tr><tr><td style=\"white-space:nowrap\">5176a<a name=\"DkCoreProfessionGroupCodes-5176a\"> </a></td><td>Kontaktlinseoptiker</td></tr><tr><td style=\"white-space:nowrap\">7170<a name=\"DkCoreProfessionGroupCodes-7170\"> </a></td><td>Læge</td></tr><tr><td style=\"white-space:nowrap\">4498<a name=\"DkCoreProfessionGroupCodes-4498\"> </a></td><td>Optiker</td></tr><tr><td style=\"white-space:nowrap\">5176b<a name=\"DkCoreProfessionGroupCodes-5176b\"> </a></td><td>Optometrist</td></tr><tr><td style=\"white-space:nowrap\">A511<a name=\"DkCoreProfessionGroupCodes-A511\"> </a></td><td>Osteopat</td></tr><tr><td style=\"white-space:nowrap\">5158<a name=\"DkCoreProfessionGroupCodes-5158\"> </a></td><td>Radiograf</td></tr><tr><td style=\"white-space:nowrap\">5152<a name=\"DkCoreProfessionGroupCodes-5152\"> </a></td><td>Social- og sundhedsassistent</td></tr><tr><td style=\"white-space:nowrap\">5166<a name=\"DkCoreProfessionGroupCodes-5166\"> </a></td><td>Sygeplejerske</td></tr><tr><td style=\"white-space:nowrap\">5433<a name=\"DkCoreProfessionGroupCodes-5433\"> </a></td><td>Tandlæge</td></tr><tr><td style=\"white-space:nowrap\">5431<a name=\"DkCoreProfessionGroupCodes-5431\"> </a></td><td>Tandplejer</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "DkCoreProfessionGroupCodes"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Profession Group Codes"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "21"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "C511" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Ambulancebehandler" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "9495" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Bandagist" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "B511" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Behandlerfarmaceut" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "5159" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Bioanalytiker" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "5153" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Ergoterapeut" ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "5155" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Fodterapeut" ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "5151" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Fysioterapeut" ]
-  ], [
-     fhir:index 7;
-     fhir:CodeSystem.concept.code [ fhir:value "5175" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Jordemoder" ]
-  ], [
-     fhir:index 8;
-     fhir:CodeSystem.concept.code [ fhir:value "5265" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Kiropraktor" ]
-  ], [
-     fhir:index 9;
-     fhir:CodeSystem.concept.code [ fhir:value "5451" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Klinisk diætist" ]
-  ], [
-     fhir:index 10;
-     fhir:CodeSystem.concept.code [ fhir:value "5432" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Klinisk tandtekniker" ]
-  ], [
-     fhir:index 11;
-     fhir:CodeSystem.concept.code [ fhir:value "5176a" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Kontaktlinseoptiker" ]
-  ], [
-     fhir:index 12;
-     fhir:CodeSystem.concept.code [ fhir:value "7170" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Læge" ]
-  ], [
-     fhir:index 13;
-     fhir:CodeSystem.concept.code [ fhir:value "4498" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Optiker" ]
-  ], [
-     fhir:index 14;
-     fhir:CodeSystem.concept.code [ fhir:value "5176b" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Optometrist" ]
-  ], [
-     fhir:index 15;
-     fhir:CodeSystem.concept.code [ fhir:value "A511" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Osteopat" ]
-  ], [
-     fhir:index 16;
-     fhir:CodeSystem.concept.code [ fhir:value "5158" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Radiograf" ]
-  ], [
-     fhir:index 17;
-     fhir:CodeSystem.concept.code [ fhir:value "5152" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Social- og sundhedsassistent" ]
-  ], [
-     fhir:index 18;
-     fhir:CodeSystem.concept.code [ fhir:value "5166" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Sygeplejerske" ]
-  ], [
-     fhir:index 19;
-     fhir:CodeSystem.concept.code [ fhir:value "5433" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Tandlæge" ]
-  ], [
-     fhir:index 20;
-     fhir:CodeSystem.concept.code [ fhir:value "5431" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Tandplejer" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DkCoreProfessionGroupCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C511<a name=\"DkCoreProfessionGroupCodes-C511\"> </a></td><td>Ambulancebehandler</td></tr><tr><td style=\"white-space:nowrap\">9495<a name=\"DkCoreProfessionGroupCodes-9495\"> </a></td><td>Bandagist</td></tr><tr><td style=\"white-space:nowrap\">B511<a name=\"DkCoreProfessionGroupCodes-B511\"> </a></td><td>Behandlerfarmaceut</td></tr><tr><td style=\"white-space:nowrap\">5159<a name=\"DkCoreProfessionGroupCodes-5159\"> </a></td><td>Bioanalytiker</td></tr><tr><td style=\"white-space:nowrap\">5153<a name=\"DkCoreProfessionGroupCodes-5153\"> </a></td><td>Ergoterapeut</td></tr><tr><td style=\"white-space:nowrap\">5155<a name=\"DkCoreProfessionGroupCodes-5155\"> </a></td><td>Fodterapeut</td></tr><tr><td style=\"white-space:nowrap\">5151<a name=\"DkCoreProfessionGroupCodes-5151\"> </a></td><td>Fysioterapeut</td></tr><tr><td style=\"white-space:nowrap\">5175<a name=\"DkCoreProfessionGroupCodes-5175\"> </a></td><td>Jordemoder</td></tr><tr><td style=\"white-space:nowrap\">5265<a name=\"DkCoreProfessionGroupCodes-5265\"> </a></td><td>Kiropraktor</td></tr><tr><td style=\"white-space:nowrap\">5451<a name=\"DkCoreProfessionGroupCodes-5451\"> </a></td><td>Klinisk diætist</td></tr><tr><td style=\"white-space:nowrap\">5432<a name=\"DkCoreProfessionGroupCodes-5432\"> </a></td><td>Klinisk tandtekniker</td></tr><tr><td style=\"white-space:nowrap\">5176a<a name=\"DkCoreProfessionGroupCodes-5176a\"> </a></td><td>Kontaktlinseoptiker</td></tr><tr><td style=\"white-space:nowrap\">7170<a name=\"DkCoreProfessionGroupCodes-7170\"> </a></td><td>Læge</td></tr><tr><td style=\"white-space:nowrap\">4498<a name=\"DkCoreProfessionGroupCodes-4498\"> </a></td><td>Optiker</td></tr><tr><td style=\"white-space:nowrap\">5176b<a name=\"DkCoreProfessionGroupCodes-5176b\"> </a></td><td>Optometrist</td></tr><tr><td style=\"white-space:nowrap\">A511<a name=\"DkCoreProfessionGroupCodes-A511\"> </a></td><td>Osteopat</td></tr><tr><td style=\"white-space:nowrap\">5158<a name=\"DkCoreProfessionGroupCodes-5158\"> </a></td><td>Radiograf</td></tr><tr><td style=\"white-space:nowrap\">5152<a name=\"DkCoreProfessionGroupCodes-5152\"> </a></td><td>Social- og sundhedsassistent</td></tr><tr><td style=\"white-space:nowrap\">5166<a name=\"DkCoreProfessionGroupCodes-5166\"> </a></td><td>Sygeplejerske</td></tr><tr><td style=\"white-space:nowrap\">5433<a name=\"DkCoreProfessionGroupCodes-5433\"> </a></td><td>Tandlæge</td></tr><tr><td style=\"white-space:nowrap\">5431<a name=\"DkCoreProfessionGroupCodes-5431\"> </a></td><td>Tandplejer</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "DkCoreProfessionGroupCodes"] ; # 
+  fhir:title [ fhir:v "DK Profession Group Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "C511" ] ;
+     fhir:display [ fhir:v "Ambulancebehandler" ]
+  ] [
+     fhir:code [ fhir:v "9495" ] ;
+     fhir:display [ fhir:v "Bandagist" ]
+  ] [
+     fhir:code [ fhir:v "B511" ] ;
+     fhir:display [ fhir:v "Behandlerfarmaceut" ]
+  ] [
+     fhir:code [ fhir:v "5159" ] ;
+     fhir:display [ fhir:v "Bioanalytiker" ]
+  ] [
+     fhir:code [ fhir:v "5153" ] ;
+     fhir:display [ fhir:v "Ergoterapeut" ]
+  ] [
+     fhir:code [ fhir:v "5155" ] ;
+     fhir:display [ fhir:v "Fodterapeut" ]
+  ] [
+     fhir:code [ fhir:v "5151" ] ;
+     fhir:display [ fhir:v "Fysioterapeut" ]
+  ] [
+     fhir:code [ fhir:v "5175" ] ;
+     fhir:display [ fhir:v "Jordemoder" ]
+  ] [
+     fhir:code [ fhir:v "5265" ] ;
+     fhir:display [ fhir:v "Kiropraktor" ]
+  ] [
+     fhir:code [ fhir:v "5451" ] ;
+     fhir:display [ fhir:v "Klinisk diætist" ]
+  ] [
+     fhir:code [ fhir:v "5432" ] ;
+     fhir:display [ fhir:v "Klinisk tandtekniker" ]
+  ] [
+     fhir:code [ fhir:v "5176a" ] ;
+     fhir:display [ fhir:v "Kontaktlinseoptiker" ]
+  ] [
+     fhir:code [ fhir:v "7170" ] ;
+     fhir:display [ fhir:v "Læge" ]
+  ] [
+     fhir:code [ fhir:v "4498" ] ;
+     fhir:display [ fhir:v "Optiker" ]
+  ] [
+     fhir:code [ fhir:v "5176b" ] ;
+     fhir:display [ fhir:v "Optometrist" ]
+  ] [
+     fhir:code [ fhir:v "A511" ] ;
+     fhir:display [ fhir:v "Osteopat" ]
+  ] [
+     fhir:code [ fhir:v "5158" ] ;
+     fhir:display [ fhir:v "Radiograf" ]
+  ] [
+     fhir:code [ fhir:v "5152" ] ;
+     fhir:display [ fhir:v "Social- og sundhedsassistent" ]
+  ] [
+     fhir:code [ fhir:v "5166" ] ;
+     fhir:display [ fhir:v "Sygeplejerske" ]
+  ] [
+     fhir:code [ fhir:v "5433" ] ;
+     fhir:display [ fhir:v "Tandlæge" ]
+  ] [
+     fhir:code [ fhir:v "5431" ] ;
+     fhir:display [ fhir:v "Tandplejer" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

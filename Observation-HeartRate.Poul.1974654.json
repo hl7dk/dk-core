@@ -1,0 +1,68 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HeartRate.Poul.1974654",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
+    "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation",
+    "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+    "http://hl7.org/fhir/StructureDefinition/heartrate"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeartRate.Poul.1974654\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeartRate.Poul.1974654&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/heartrate.html\">Observation Heart Rate Profile</a></p></div><p><b>Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: id:\u00a0C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PULS_RATE_NON_INV: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4 &quot;Heart rate&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#149546 &quot;MDC_PULS_RATE_NON_INV&quot;; unknown#NPU21692 &quot;Heart—Systole; frequency = ? × 1/min&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>value</b>: 93 bpm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p><p><b>device</b>: <a href=\"Device-BPMonitor.C4F312FFFE53F2C9.html\">Device/BPMonitor.C4F312FFFE53F2C9</a></p><p><b>derivedFrom</b>: <a href=\"Observation-CoincidentTimeStamp.0222.html\">Observation/CoincidentTimeStamp.0222</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+    "valueReference" : {
+      "reference" : "Device/Telma.FEEDDADADEADBEEF"
+    }
+  }],
+  "identifier" : [{
+    "value" : "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8867-4",
+      "display" : "Heart rate"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "149546",
+      "display" : "MDC_PULS_RATE_NON_INV"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.1",
+      "code" : "NPU21692",
+      "display" : "Heart—Systole; frequency = ? × 1/min"
+    }],
+    "text" : "MDC_PULS_RATE_NON_INV: Heart rate"
+  },
+  "subject" : {
+    "reference" : "Patient/Poul"
+  },
+  "effectiveDateTime" : "2023-02-23T10:24:08+01:00",
+  "performer" : [{
+    "reference" : "Patient/Poul"
+  }],
+  "valueQuantity" : {
+    "value" : 93,
+    "unit" : "bpm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "/min"
+  },
+  "device" : {
+    "reference" : "Device/BPMonitor.C4F312FFFE53F2C9"
+  },
+  "derivedFrom" : [{
+    "reference" : "Observation/CoincidentTimeStamp.0222"
+  }]
+}

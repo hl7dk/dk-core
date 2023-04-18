@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HeartRate.Poul.1974654"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/heartrate"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HeartRate.Poul.1974654"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;HeartRate.Poul.1974654&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a>, <a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a></p></div><p><b>Gateway Device</b>: <a href="Device-Telma.FEEDDADADEADBEEF.html">Device/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PULS_RATE_NON_INV: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4 &quot;Heart rate&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#149546 &quot;MDC_PULS_RATE_NON_INV&quot;; unknown#NPU21692 &quot;Heart—Systole; frequency = ? × 1/min&quot;)</span></p><p><b>subject</b>: <a href="Patient-Poul.html">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href="Patient-Poul.html">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>value</b>: 93 bpm<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>device</b>: <a href="Device-BPMonitor.C4F312FFFE53F2C9.html">Device/BPMonitor.C4F312FFFE53F2C9</a></p><p><b>derivedFrom</b>: <a href="Observation-CoincidentTimeStamp.0222.html">Observation/CoincidentTimeStamp.0222</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+    <valueReference>
+      <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <value value="C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8867-4"/>
+      <display value="Heart rate"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="149546"/>
+      <display value="MDC_PULS_RATE_NON_INV"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.1"/>
+      <code value="NPU21692"/>
+      <display value="Heart—Systole; frequency = ? × 1/min"/>
+    </coding>
+    <text value="MDC_PULS_RATE_NON_INV: Heart rate"/>
+  </code>
+  <subject>
+    <reference value="Patient/Poul"/>
+  </subject>
+  <effectiveDateTime value="2023-02-23T10:24:08+01:00"/>
+  <performer>
+    <reference value="Patient/Poul"/>
+  </performer>
+  <valueQuantity>
+    <value value="93"/>
+    <unit value="bpm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+  </device>
+  <derivedFrom>
+    <reference value="Observation/CoincidentTimeStamp.0222"/>
+  </derivedFrom>
+</Observation>

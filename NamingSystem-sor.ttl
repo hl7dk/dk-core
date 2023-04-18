@@ -5,64 +5,51 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/NamingSystem/sor> a fhir:NamingSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "sor"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.dk/fhir/core/NamingSystem/sor</td></tr><tr><td>Version</td><td>2.2.0</td></tr><tr><td>Name</td><td>DkCoreSor</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Denmark</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>OID</td><td>urn:oid:1.2.208.176.1.1</td></tr><tr><td>URI</td><td>https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor</td></tr></table></div>"
-  ]; # 
-  fhir:NamingSystem.name [ fhir:value "DkCoreSor"]; # 
-  fhir:NamingSystem.status [ fhir:value "active"]; # 
-  fhir:NamingSystem.kind [ fhir:value "identifier"]; # 
-  fhir:NamingSystem.date [ fhir:value "2021-03-14T16:56:07+01:00"^^xsd:dateTime]; # 
-  fhir:NamingSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:NamingSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:NamingSystem.responsible [ fhir:value "The Health Service's Organizational Register was developed in the National Board of Health in 2006-2007 in cooperation with the regions and MedCom"]; # 
-  fhir:NamingSystem.type [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-       fhir:Coding.code [ fhir:value "PRN" ];
-       fhir:Coding.display [ fhir:value "Provider number" ]
-     ]
-  ]; # 
-  fhir:NamingSystem.description [ fhir:value "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former."]; # 
-  fhir:NamingSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:NamingSystem.uniqueId [
-     fhir:index 0;
-     fhir:NamingSystem.uniqueId.type [ fhir:value "oid" ];
-     fhir:NamingSystem.uniqueId.value [ fhir:value "urn:oid:1.2.208.176.1.1" ]
-  ], [
-     fhir:index 1;
-     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ];
-     fhir:NamingSystem.uniqueId.value [ fhir:value "https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/NamingSystem/sor.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.dk/fhir/core/NamingSystem/sor> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sor"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://hl7.dk/fhir/core/NamingSystem/sor</td></tr><tr><td>Version</td><td>2.2.0</td></tr><tr><td>Name</td><td>DkCoreSor</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Denmark</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>OID</td><td>urn:oid:1.2.208.176.1.1</td></tr><tr><td>URI</td><td>https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor</td></tr></table></div>"
+  ] ; # 
+  fhir:name [ fhir:v "DkCoreSor"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "identifier"] ; # 
+  fhir:date [ fhir:v "2021-03-14T16:56:07+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:responsible [ fhir:v "The Health Service's Organizational Register was developed in the National Board of Health in 2006-2007 in cooperation with the regions and MedCom"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PRN" ] ;
+       fhir:display [ fhir:v "Provider number" ]
+     ] )
+  ] ; # 
+  fhir:description [ fhir:v "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:uniqueId ( [
+     fhir:type [ fhir:v "oid" ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.208.176.1.1" ]
+  ] [
+     fhir:type [ fhir:v "uri" ] ;
+     fhir:value [ fhir:v "https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

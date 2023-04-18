@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/HeartRate.Poul.1974654> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HeartRate.Poul.1974654"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/heartrate"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/heartrate>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeartRate.Poul.1974654\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeartRate.Poul.1974654&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/heartrate.html\">Observation Heart Rate Profile</a></p></div><p><b>Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PULS_RATE_NON_INV: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4 &quot;Heart rate&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#149546 &quot;MDC_PULS_RATE_NON_INV&quot;; unknown#NPU21692 &quot;Heart—Systole; frequency = ? × 1/min&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>value</b>: 93 bpm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p><p><b>device</b>: <a href=\"Device-BPMonitor.C4F312FFFE53F2C9.html\">Device/BPMonitor.C4F312FFFE53F2C9</a></p><p><b>derivedFrom</b>: <a href=\"Observation-CoincidentTimeStamp.0222.html\">Observation/CoincidentTimeStamp.0222</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8867-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8867-4" ] ;
+       fhir:display [ fhir:v "Heart rate" ]
+     ] [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "149546" ] ;
+       fhir:display [ fhir:v "MDC_PULS_RATE_NON_INV" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NPU21692" ] ;
+       fhir:display [ fhir:v "Heart—Systole; frequency = ? × 1/min" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_PULS_RATE_NON_INV: Heart rate" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:08+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "93"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "bpm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> ;
+     fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

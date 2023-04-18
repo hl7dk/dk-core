@@ -1,0 +1,186 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BPMonitor.C4F312FFFE53F2C9"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"BPMonitor.C4F312FFFE53F2C9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;BPMonitor.C4F312FFFE53F2C9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html\">PhdDevice</a></p></div><p><b>identifier</b>: Ieee 11073 System Identifier: C4-F3-12-FF-FE-53-F2-C9, Bluetooth MAC address: C4-F3-12-53-F2-C9</p><p><b>manufacturer</b>: A&amp;D Medical </p><p><b>serialNumber</b>: 5181000124</p><p><b>modelNumber</b>: UA-651BLE </p><p><b>type</b>: MDC_MOC_VMS_MDS_SIMP: Personal health device <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#65573 &quot;MDC_MOC_VMS_MDS_SIMP&quot;)</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td>-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td>*</td><td>MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#528391 &quot;MDC_DEV_SPEC_PROFILE_BP&quot;)</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 4.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: BLP009_02_005 </p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Blood pressure monitor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html\">ContinuaPHD</a>#32775)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NONE: No time synchronization <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532224 &quot;MDC_TIME_SYNC_NONE&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is regulated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-real-time-clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#68219.0)</span></p><p><b>valueCode</b>: Real time clock is supported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-set-clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#68219.1)</span></p><p><b>valueCode</b>: Setting the real time clock is supported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SYSID" ] ;
+         fhir:display [ fhir:v "Ieee 11073 System Identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C4-F3-12-FF-FE-53-F2-C9" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BTMAC" ] ;
+         fhir:display [ fhir:v "Bluetooth MAC address" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/eui-48/bluetooth"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C4-F3-12-53-F2-C9" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "A&D Medical "] ; # 
+  fhir:serialNumber [ fhir:v "5181000124"] ; # 
+  fhir:modelNumber [ fhir:v "UA-651BLE "] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65573" ] ;
+       fhir:display [ fhir:v "MDC_MOC_VMS_MDS_SIMP" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_MOC_VMS_MDS_SIMP: Personal health device" ]
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "528391" ] ;
+         fhir:display [ fhir:v "MDC_DEV_SPEC_PROFILE_BP" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter" ]
+     ] ;
+     fhir:version [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532352" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
+     ] ;
+     fhir:value [ fhir:v "4.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531974" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_HW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_HW: Hardware version" ]
+     ] ;
+     fhir:value [ fhir:v "0.00" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531975" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_SW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_SW: Software version" ]
+     ] ;
+     fhir:value [ fhir:v "0.00" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531976" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_FW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_FW: Firmware version" ]
+     ] ;
+     fhir:value [ fhir:v "BLP009_02_005 " ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532353" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "32775" ]
+       ] ) ;
+       fhir:text [ fhir:v "BluetoothLE: Blood pressure monitor" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68220" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_PROTOCOL" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532224" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_NONE" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_NONE: No time synchronization" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532354.0" ]
+       ] ) ;
+       fhir:text [ fhir:v "regulation-status" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ]
+       ] ) ;
+       fhir:text [ fhir:v "Device is regulated" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68219.0" ]
+       ] ) ;
+       fhir:text [ fhir:v "mds-time-capab-real-time-clock" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Real time clock is supported" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68219.1" ]
+       ] ) ;
+       fhir:text [ fhir:v "mds-time-capab-set-clock" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Setting the real time clock is supported" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

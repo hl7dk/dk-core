@@ -5,41 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/Patient/ukendt> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ukendt"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
-       fhir:index 0;
+<http://hl7.dk/fhir/core/Patient/ukendt> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ukendt"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anders Ukendt (TEMP)</b> male, DoB: 1983-06-07 ( id: 0706830VJ9)</p><hr/></div>"
-  ]; # 
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://rn.dk" ];
-     fhir:Identifier.value [ fhir:value "0706830VJ9" ]
-  ]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.use [ fhir:value "temp" ];
-     fhir:HumanName.family [ fhir:value "Ukendt" ];
-     fhir:HumanName.given [
-       fhir:value "Anders";
-       fhir:index 0
-     ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "male"]; # 
-  fhir:Patient.birthDate [ fhir:value "1983-06-07"^^xsd:date] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/Patient/ukendt.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anders Ukendt (TEMP)</b> male, DoB: 1983-06-07 ( id: 0706830VJ9)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rn.dk"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0706830VJ9" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:family [ fhir:v "Ukendt" ] ;
+     fhir:given ( [ fhir:v "Anders" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1983-06-07"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 

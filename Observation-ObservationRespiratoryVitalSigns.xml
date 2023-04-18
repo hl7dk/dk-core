@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationRespiratoryVitalSigns"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ObservationRespiratoryVitalSigns"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ObservationRespiratoryVitalSigns&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9279-1)</span></p><p><b>subject</b>: <a href="Patient-john.html">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href="Practitioner-AbrahamLaege.html">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 50 Breaths / minute<span style="background: LightGoldenRodYellow"> (Details: UCUM code {Breaths}/min = '{Breaths}/min')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9279-1"/>
+      <display value="Respiratory rate"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/john"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/AbrahamLaege"/>
+  </performer>
+  <valueQuantity>
+    <value value="50"/>
+    <unit value="Breaths / minute"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{Breaths}/min"/>
+  </valueQuantity>
+</Observation>

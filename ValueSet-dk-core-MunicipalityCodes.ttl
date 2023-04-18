@@ -5,58 +5,46 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "dk-core-MunicipalityCodes"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes-greenland.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</code></a></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"]; # 
-  fhir:ValueSet.version [ fhir:value "2.2.0"]; # 
-  fhir:ValueSet.name [ fhir:value "MunicipalityCodes"]; # 
-  fhir:ValueSet.title [ fhir:value "DK Municipality Codes"]; # 
-  fhir:ValueSet.status [ fhir:value "draft"]; # 
-  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Municipality codes used in Denmark"]; # 
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes" ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland" ]
-     ]
+<http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-MunicipalityCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-dk-core-municipality-codes-greenland.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "MunicipalityCodes"] ; # 
+  fhir:title [ fhir:v "DK Municipality Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Municipality codes used in Denmark"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

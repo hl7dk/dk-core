@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ElsePainVRS",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElsePainVRS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ElsePainVRS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Verbal Rating Scale pain intensity score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1144798005)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: Severe pain (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (localSystem.dk#d253770d-ce0b-4320-9806-b8fbe9e5af8a; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76948002)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1144798005",
+      "display" : "Verbal Rating Scale pain intensity score"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/else"
+  },
+  "effectiveDateTime" : "2020-06-01",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://localSystem.dk",
+      "code" : "d253770d-ce0b-4320-9806-b8fbe9e5af8a",
+      "userSelected" : true
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76948002",
+      "display" : "Severe pain (finding)"
+    }]
+  }
+}

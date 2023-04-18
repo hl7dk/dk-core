@@ -6,51 +6,39 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/Organization/b08997bb-4476-4dd0-84dd-2e297f809364> a fhir:Organization;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "b08997bb-4476-4dd0-84dd-2e297f809364"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization";
-       fhir:index 0;
+<http://hl7.dk/fhir/core/Organization/b08997bb-4476-4dd0-84dd-2e297f809364> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "b08997bb-4476-4dd0-84dd-2e297f809364"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"b08997bb-4476-4dd0-84dd-2e297f809364\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;b08997bb-4476-4dd0-84dd-2e297f809364&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 12345678901, id: 26919991, id: 5798002472264, id: urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6</p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264372000)</span></p></div>"
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
-     fhir:Identifier.value [ fhir:value "12345678901" ]
-  ], [
-     fhir:index 1;
-     fhir:Identifier.system [ fhir:value "http://cvr.dk" ];
-     fhir:Identifier.value [ fhir:value "26919991" ]
-  ], [
-     fhir:index 2;
-     fhir:Identifier.system [ fhir:value "https://www.gs1.org/gln" ];
-     fhir:Identifier.value [ fhir:value "5798002472264" ]
-  ], [
-     fhir:index 3;
-     fhir:Identifier.system [ fhir:value "https://kombit.dk/sts/organisation" ];
-     fhir:Identifier.value [ fhir:value "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6" ]
-  ]; # 
-  fhir:Organization.type [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:264372000;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "264372000" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/Organization/b08997bb-4476-4dd0-84dd-2e297f809364.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"b08997bb-4476-4dd0-84dd-2e297f809364\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;b08997bb-4476-4dd0-84dd-2e297f809364&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: id: 12345678901, id: 26919991, id: 5798002472264, id: urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6</p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264372000)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678901" ]
+  ] [
+     fhir:system [ fhir:v "http://cvr.dk"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "26919991" ]
+  ] [
+     fhir:system [ fhir:v "https://www.gs1.org/gln"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5798002472264" ]
+  ] [
+     fhir:system [ fhir:v "https://kombit.dk/sts/organisation"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:264372000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "264372000" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

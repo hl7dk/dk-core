@@ -1,0 +1,833 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Bundle/ContinuaBundleWithDevice> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ContinuaBundleWithDevice"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Patient/Poul"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/Poul> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Patient"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.208.176.1.2|3001749995" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Device/Telma.FEEDDADADEADBEEF"^^xsd:anyURI ] ;
+     fhir:resource ( <Device/Telma.FEEDDADADEADBEEF> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Device"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9"^^xsd:anyURI ] ;
+     fhir:resource ( <Device/BPMonitor.C4F312FFFE53F2C9> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Device"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/BatteryLevel.0944"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/BatteryLevel.0944> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/CoincidentTimeStamp.0222"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/CoincidentTimeStamp.0222> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/BloodPressure.Poul.643992"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/BloodPressure.Poul.643992> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/HeartRate.Poul.1974654"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/HeartRate.Poul.1974654> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/BloodPressureStatus.Poul.133527"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/BloodPressureStatus.Poul.133527> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:ifNoneExist [ fhir:v "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00" ]
+     ]
+  ] ) . # 
+
+<Patient/Poul> a fhir:Patient ;
+  fhir:id [ fhir:v "Poul"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Poul\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Poul&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html\">PhdPatient</a></p></div><p><b>identifier</b>: National unique individual identifier: 3001749995</p><p><b>name</b>: Poul Hansen </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NI" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3001749995" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Hansen" ] ;
+     fhir:given ( [ fhir:v "Poul" ] )
+  ] ) . # 
+
+<Device/Telma.FEEDDADADEADBEEF> a fhir:Device ;
+  fhir:id [ fhir:v "Telma.FEEDDADADEADBEEF"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"Telma.FEEDDADADEADBEEF\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;Telma.FEEDDADADEADBEEF&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html\">PhgDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF</p><p><b>manufacturer</b>: Trifork</p><p><b>modelNumber</b>: Telma (Android)</p><p><b>type</b>: MDC_MOC_VMS_MDS_AHD: Continua compliant gateway <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531981 &quot;MDC_MOC_VMS_MDS_AHD&quot;)</span></p><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 7.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: Samsung Tab S7+ (SM-T970)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 1.2.0 (build 2662)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: Android 12 (API 31)</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Weighing scale <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html\">ContinuaPHD</a>#32783)</span>, BluetoothLE: Blood pressure monitor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html\">ContinuaPHD</a>#32775)</span>, BluetoothLE: Pulse oximeter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html\">ContinuaPHD</a>#32772)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&amp;Fitness interfaces list <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532355 &quot;MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST&quot;)</span></p><p><b>valueCode</b>: observation-upload-fhir: FHIR resource upload <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaHFS.html\">ContinuaHFS</a>#7 &quot;observation-upload-fhir&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532226 &quot;MDC_TIME_SYNC_NTPV4&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is NOT regulated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SYSID" ] ;
+         fhir:display [ fhir:v "IEEE 11073 System Identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FE-ED-DA-DA-DE-AD-BE-EF" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "Trifork"] ; # 
+  fhir:modelNumber [ fhir:v "Telma (Android)"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "531981" ] ;
+       fhir:display [ fhir:v "MDC_MOC_VMS_MDS_AHD" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_MOC_VMS_MDS_AHD: Continua compliant gateway" ]
+  ] ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532352" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
+     ] ;
+     fhir:value [ fhir:v "7.0" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531974" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_HW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_HW: Hardware version" ]
+     ] ;
+     fhir:value [ fhir:v "Samsung Tab S7+ (SM-T970)" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531975" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_SW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_SW: Software version" ]
+     ] ;
+     fhir:value [ fhir:v "1.2.0 (build 2662)" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531976" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_FW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_FW: Firmware version" ]
+     ] ;
+     fhir:value [ fhir:v "Android 12 (API 31)" ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532353" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "32783" ]
+       ] ) ;
+       fhir:text [ fhir:v "BluetoothLE: Weighing scale" ]
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "32775" ]
+       ] ) ;
+       fhir:text [ fhir:v "BluetoothLE: Blood pressure monitor" ]
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "32772" ]
+       ] ) ;
+       fhir:text [ fhir:v "BluetoothLE: Pulse oximeter" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532355" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&Fitness interfaces list" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "observation-upload-fhir" ]
+       ] ) ;
+       fhir:text [ fhir:v "observation-upload-fhir: FHIR resource upload" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68220" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_PROTOCOL" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532226" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_NTPV4" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532354.0" ]
+       ] ) ;
+       fhir:text [ fhir:v "regulation-status" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Device is NOT regulated" ]
+     ] )
+  ] ) . # 
+
+<Device/BPMonitor.C4F312FFFE53F2C9> a fhir:Device ;
+  fhir:id [ fhir:v "BPMonitor.C4F312FFFE53F2C9"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"BPMonitor.C4F312FFFE53F2C9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;BPMonitor.C4F312FFFE53F2C9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html\">PhdDevice</a></p></div><p><b>identifier</b>: Ieee 11073 System Identifier: C4-F3-12-FF-FE-53-F2-C9, Bluetooth MAC address: C4-F3-12-53-F2-C9</p><p><b>manufacturer</b>: A&amp;D Medical </p><p><b>serialNumber</b>: 5181000124</p><p><b>modelNumber</b>: UA-651BLE </p><p><b>type</b>: MDC_MOC_VMS_MDS_SIMP: Personal health device <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#65573 &quot;MDC_MOC_VMS_MDS_SIMP&quot;)</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td>-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td>*</td><td>MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#528391 &quot;MDC_DEV_SPEC_PROFILE_BP&quot;)</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 4.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: BLP009_02_005 </p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Blood pressure monitor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html\">ContinuaPHD</a>#32775)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NONE: No time synchronization <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#532224 &quot;MDC_TIME_SYNC_NONE&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is regulated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-real-time-clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#68219.0)</span></p><p><b>valueCode</b>: Real time clock is supported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-set-clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#68219.1)</span></p><p><b>valueCode</b>: Setting the real time clock is supported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SYSID" ] ;
+         fhir:display [ fhir:v "Ieee 11073 System Identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C4-F3-12-FF-FE-53-F2-C9" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BTMAC" ] ;
+         fhir:display [ fhir:v "Bluetooth MAC address" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/eui-48/bluetooth"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C4-F3-12-53-F2-C9" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "A&D Medical "] ; # 
+  fhir:serialNumber [ fhir:v "5181000124"] ; # 
+  fhir:modelNumber [ fhir:v "UA-651BLE "] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65573" ] ;
+       fhir:display [ fhir:v "MDC_MOC_VMS_MDS_SIMP" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_MOC_VMS_MDS_SIMP: Personal health device" ]
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "528391" ] ;
+         fhir:display [ fhir:v "MDC_DEV_SPEC_PROFILE_BP" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter" ]
+     ] ;
+     fhir:version [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532352" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
+     ] ;
+     fhir:value [ fhir:v "4.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531974" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_HW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_HW: Hardware version" ]
+     ] ;
+     fhir:value [ fhir:v "0.00" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531975" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_SW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_SW: Software version" ]
+     ] ;
+     fhir:value [ fhir:v "0.00" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "531976" ] ;
+         fhir:display [ fhir:v "MDC_ID_PROD_SPEC_FW" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_ID_PROD_SPEC_FW: Firmware version" ]
+     ] ;
+     fhir:value [ fhir:v "BLP009_02_005 " ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532353" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "32775" ]
+       ] ) ;
+       fhir:text [ fhir:v "BluetoothLE: Blood pressure monitor" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68220" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_PROTOCOL" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532224" ] ;
+         fhir:display [ fhir:v "MDC_TIME_SYNC_NONE" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_TIME_SYNC_NONE: No time synchronization" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "532354.0" ]
+       ] ) ;
+       fhir:text [ fhir:v "regulation-status" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ]
+       ] ) ;
+       fhir:text [ fhir:v "Device is regulated" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68219.0" ]
+       ] ) ;
+       fhir:text [ fhir:v "mds-time-capab-real-time-clock" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Real time clock is supported" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "68219.1" ]
+       ] ) ;
+       fhir:text [ fhir:v "mds-time-capab-set-clock" ]
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Setting the real time clock is supported" ]
+     ] )
+  ] ) . # 
+
+<Observation/BatteryLevel.0944> a fhir:Observation ;
+  fhir:id [ fhir:v "BatteryLevel.0944"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"BatteryLevel.0944\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;BatteryLevel.0944&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a></p></div><p><b>Gateway Device</b>: <a href=\"#Device_Telma.FEEDDADADEADBEEF\">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_VAL_BATT_CHARGE: Battery level <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#67996 &quot;MDC_ATTR_VAL_BATT_CHARGE&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>value</b>: 95 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>device</b>: <a href=\"#Device_BPMonitor.C4F312FFFE53F2C9\">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67996" ] ;
+       fhir:display [ fhir:v "MDC_ATTR_VAL_BATT_CHARGE" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_ATTR_VAL_BATT_CHARGE: Battery level" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:34.563+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "95"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "%" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] . # 
+
+<Observation/CoincidentTimeStamp.0222> a fhir:Observation ;
+  fhir:id [ fhir:v "CoincidentTimeStamp.0222"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CoincidentTimeStamp.0222\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CoincidentTimeStamp.0222&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html\">PhdCoincidentTimeStampObservation</a></p></div><p><b>Gateway Device</b>: <a href=\"#Device_Telma.FEEDDADADEADBEEF\">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_TIME_ABS: Uses Absolute time clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#67975 &quot;MDC_ATTR_TIME_ABS&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href=\"#Device_BPMonitor.C4F312FFFE53F2C9\">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67975" ] ;
+       fhir:display [ fhir:v "MDC_ATTR_TIME_ABS" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_ATTR_TIME_ABS: Uses Absolute time clock" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:34.467+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2023-02-23T10:24:25+01:00"^^xsd:dateTime] ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] . # 
+
+<Observation/BloodPressure.Poul.643992> a fhir:Observation ;
+  fhir:id [ fhir:v "BloodPressure.Poul.643992"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCompoundNumericObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCompoundNumericObservation>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/bp"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/bp>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"BloodPressure.Poul.643992\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;BloodPressure.Poul.643992&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCompoundNumericObservation.html\">PhdCompoundNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/bp.html\">Observation Blood Pressure Profile</a></p></div><p><b>Gateway Device</b>: <a href=\"#Device_Telma.FEEDDADADEADBEEF\">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PRESS_BLD_NONINV: Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9 &quot;Blood pressure panel with all children optional&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#150020 &quot;MDC_PRESS_BLD_NONINV&quot;; unknown#ZZ3170 &quot;Hjemmeblodtryksmåling udført af patienten&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>device</b>: <a href=\"#Device_BPMonitor.C4F312FFFE53F2C9\">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: <a href=\"#Observation_CoincidentTimeStamp.0222\">See above (Observation/CoincidentTimeStamp.0222)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6 &quot;Systolic blood pressure&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#150021 &quot;MDC_PRESS_BLD_NONINV_SYS&quot;; observation-code#MCS88019 &quot;Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg&quot;)</span></p><p><b>value</b>: 118 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4 &quot;Diastolic blood pressure&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#150022 &quot;MDC_PRESS_BLD_NONINV_DIA&quot;; observation-code#MCS88020 &quot;Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg&quot;)</span></p><p><b>value</b>: 87 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#150023 &quot;MDC_PRESS_BLD_NONINV_MEAN&quot;)</span></p><p><b>value</b>: 99 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "150020" ] ;
+       fhir:display [ fhir:v "MDC_PRESS_BLD_NONINV" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ZZ3170" ] ;
+       fhir:display [ fhir:v "Hjemmeblodtryksmåling udført af patienten" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_PRESS_BLD_NONINV: Blood Pressure" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:08+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> ;
+     fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "150021" ] ;
+         fhir:display [ fhir:v "MDC_PRESS_BLD_NONINV_SYS" ]
+       ] [
+         fhir:system [ fhir:v "https://terminology.medcom.dk/fhir/observation-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MCS88019" ] ;
+         fhir:display [ fhir:v "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "118"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "150022" ] ;
+         fhir:display [ fhir:v "MDC_PRESS_BLD_NONINV_DIA" ]
+       ] [
+         fhir:system [ fhir:v "https://terminology.medcom.dk/fhir/observation-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MCS88020" ] ;
+         fhir:display [ fhir:v "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "87"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "150023" ] ;
+         fhir:display [ fhir:v "MDC_PRESS_BLD_NONINV_MEAN" ]
+       ] ) ;
+       fhir:text [ fhir:v "MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "99"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+<Observation/HeartRate.Poul.1974654> a fhir:Observation ;
+  fhir:id [ fhir:v "HeartRate.Poul.1974654"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
+     ] [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/heartrate"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/heartrate>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeartRate.Poul.1974654\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeartRate.Poul.1974654&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/heartrate.html\">Observation Heart Rate Profile</a></p></div><p><b>Gateway Device</b>: <a href=\"#Device_Telma.FEEDDADADEADBEEF\">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PULS_RATE_NON_INV: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4 &quot;Heart rate&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#149546 &quot;MDC_PULS_RATE_NON_INV&quot;; unknown#NPU21692 &quot;Heart—Systole; frequency = ? × 1/min&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>value</b>: 93 bpm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p><p><b>device</b>: <a href=\"#Device_BPMonitor.C4F312FFFE53F2C9\">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: <a href=\"#Observation_CoincidentTimeStamp.0222\">See above (Observation/CoincidentTimeStamp.0222)</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8867-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8867-4" ] ;
+       fhir:display [ fhir:v "Heart rate" ]
+     ] [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "149546" ] ;
+       fhir:display [ fhir:v "MDC_PULS_RATE_NON_INV" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NPU21692" ] ;
+       fhir:display [ fhir:v "Heart—Systole; frequency = ? × 1/min" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_PULS_RATE_NON_INV: Heart rate" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:08+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "93"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "bpm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> ;
+     fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
+  ] ) . # 
+
+<Observation/BloodPressureStatus.Poul.133527> a fhir:Observation ;
+  fhir:id [ fhir:v "BloodPressureStatus.Poul.133527"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdBitsEnumerationObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdBitsEnumerationObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"BloodPressureStatus.Poul.133527\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;BloodPressureStatus.Poul.133527&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdBitsEnumerationObservation.html\">PhdBitsEnumerationObservation</a></p></div><p><b>Gateway Device</b>: <a href=\"#Device_Telma.FEEDDADADEADBEEF\">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00</p><p><b>status</b>: final</p><p><b>code</b>: MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#8410608 &quot;MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href=\"#Patient_Poul\">See above (Patient/Poul)</a></p><p><b>device</b>: <a href=\"#Device_BPMonitor.C4F312FFFE53F2C9\">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"#Observation_CoincidentTimeStamp.0222\">See above (Observation/CoincidentTimeStamp.0222)</a></li><li><a href=\"#Observation_BloodPressure.Poul.643992\">See above (Observation/BloodPressure.Poul.643992)</a></li></ul><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>irregular-pulse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html\">ASN1ToHL7</a>#8410608.2)</span></td><td>Irregular pulse was detected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8410608" ] ;
+       fhir:display [ fhir:v "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:08+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> ;
+     fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
+  ] [
+     fhir:link <http://hl7.dk/fhir/core/Observation/BloodPressure.Poul.643992> ;
+     fhir:reference [ fhir:v "Observation/BloodPressure.Poul.643992" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8410608.2" ]
+       ] ) ;
+       fhir:text [ fhir:v "irregular-pulse" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ]
+       ] ) ;
+       fhir:text [ fhir:v "Irregular pulse was detected" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

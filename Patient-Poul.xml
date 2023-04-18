@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Poul"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Poul Hansen </b> (no stated gender), DoB Unknown ( National unique individual identifier: 3001749995)</p><hr/></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NI"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="3001749995"/>
+  </identifier>
+  <name>
+    <family value="Hansen"/>
+    <given value="Poul"/>
+  </name>
+</Patient>

@@ -5,91 +5,72 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/Patient/283> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "283"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
-       fhir:index 0;
+<http://hl7.dk/fhir/core/Patient/283> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "283"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Torsteinn Lind (OFFICIAL)</b> male, DoB: 1950-06-04 ( id: 0506504005 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\">unmarried</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Nordre Ringgade 3 Frederiksberg C 8000 DK (HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: Peter Sønderby</span></li></ul></td></tr></table></div>"
-  ]; # 
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.use [ fhir:value "official" ];
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.2" ];
-     fhir:Identifier.value [ fhir:value "0506504005" ]
-  ]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.family [ fhir:value "Lind" ];
-     fhir:HumanName.given [
-       fhir:value "Torsteinn";
-       fhir:index 0
-     ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "male"]; # 
-  fhir:Patient.birthDate [ fhir:value "1950-06-04"^^xsd:date]; # 
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes" ];
-           fhir:Coding.code [ fhir:value "0330" ]
-         ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Schwendlund Test Mosebryggersen (OFFICIAL)</b> male, DoB: 1958-08-01 ( id: 0108589995 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\">unmarried</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Nordre Ringgade 3 Frederiksberg C 8000 DK (HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: Peter Sønderby</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0108589995" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Mosebryggersen" ] ;
+     fhir:given ( [ fhir:v "Schwendlund" ] [ fhir:v "Test" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1958-08-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0330" ]
+         ] )
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" ];
-           fhir:Coding.code [ fhir:value "DK-85" ]
-         ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "DK-85" ]
+         ] )
        ]
-     ];
-     fhir:Address.use [ fhir:value "home" ];
-     fhir:Address.type [ fhir:value "postal" ];
-     fhir:Address.line [
-       fhir:value "Nordre Ringgade 3";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "Frederiksberg C" ];
-     fhir:Address.postalCode [ fhir:value "8000" ];
-     fhir:Address.country [ fhir:value "DK" ]
-  ]; # 
-  fhir:Patient.maritalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
-       fhir:Coding.code [ fhir:value "U" ];
-       fhir:Coding.display [ fhir:value "unmarried" ]
-     ]
-  ]; # 
-  fhir:Patient.generalPractitioner [
-     fhir:index 0;
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
-       fhir:Identifier.value [ fhir:value "79641000016006" ]
-     ];
-     fhir:Reference.display [ fhir:value "Peter Sønderby" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/Patient/283.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [ fhir:v "Nordre Ringgade 3" ] ) ;
+     fhir:city [ fhir:v "Frederiksberg C" ] ;
+     fhir:postalCode [ fhir:v "8000" ] ;
+     fhir:country [ fhir:v "DK" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "U" ] ;
+       fhir:display [ fhir:v "unmarried" ]
+     ] )
+  ] ; # 
+  fhir:generalPractitioner ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "79641000016006" ]
+     ] ;
+     fhir:display [ fhir:v "Peter Sønderby" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

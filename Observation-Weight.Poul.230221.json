@@ -1,0 +1,68 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Weight.Poul.230221",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
+    "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation",
+    "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+    "http://hl7.org/fhir/StructureDefinition/bodyweight"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Weight.Poul.230221\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Weight.Poul.230221&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/bodyweight.html\">Observation Body Weight Profile</a></p></div><p><b>Gateway Device</b>: <a href=\"http://example.org/fhir/Telma.FEEDDADADEADBEEF\">http://example.org/fhir/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: id:\u00a0606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_MASS_BODY_ACTUAL: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7 &quot;Body weight&quot;; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#188736 &quot;MDC_MASS_BODY_ACTUAL&quot;; unknown#NPU03804 &quot;Pt—Body; mass = ? kg&quot;)</span></p><p><b>subject</b>: <a href=\"http://example.org/fhir/Patient/Poul\">http://example.org/fhir/Patient/Poul</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href=\"http://example.org/fhir/Patient/Poul\">http://example.org/fhir/Patient/Poul</a></p><p><b>value</b>: 74 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p><p><b>device</b>: <a href=\"Device-WeightScale.606405FFFECFC604.html\">Device/WeightScale.606405FFFECFC604</a></p><p><b>derivedFrom</b>: <a href=\"http://example.org/fhir/CoincidentTimeStamp.0123\">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+    "valueReference" : {
+      "reference" : "http://example.org/fhir/Telma.FEEDDADADEADBEEF"
+    }
+  }],
+  "identifier" : [{
+    "value" : "606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7",
+      "display" : "Body weight"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "188736",
+      "display" : "MDC_MASS_BODY_ACTUAL"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.1",
+      "code" : "NPU03804",
+      "display" : "Pt—Body; mass = ? kg"
+    }],
+    "text" : "MDC_MASS_BODY_ACTUAL: Body weight"
+  },
+  "subject" : {
+    "reference" : "http://example.org/fhir/Patient/Poul"
+  },
+  "effectiveDateTime" : "2023-02-21T08:36:40+01:00",
+  "performer" : [{
+    "reference" : "http://example.org/fhir/Patient/Poul"
+  }],
+  "valueQuantity" : {
+    "value" : 74,
+    "unit" : "kg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  },
+  "device" : {
+    "reference" : "Device/WeightScale.606405FFFECFC604"
+  },
+  "derivedFrom" : [{
+    "reference" : "http://example.org/fhir/CoincidentTimeStamp.0123"
+  }]
+}

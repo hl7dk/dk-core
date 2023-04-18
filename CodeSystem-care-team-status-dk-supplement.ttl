@@ -6,130 +6,110 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "care-team-status-dk-supplement"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td><td>Active</td><td>The care team is currently participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td><td>Suspended</td><td>The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The care team was, but is no longer, participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td><td>Entered In Error</td><td>The care team should have never existed.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>suspended</td><td>Suspenderet</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "CareTeamStatus"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK CareTeam Status"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Indicates the status of the care team."]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
-  fhir:CodeSystem.supplements [
-     fhir:value "http://hl7.org/fhir/care-team-status";
+<http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "care-team-status-dk-supplement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td><td>Active</td><td>The care team is currently participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td><td>Suspended</td><td>The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The care team was, but is no longer, participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td><td>Entered In Error</td><td>The care team should have never existed.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>suspended</td><td>Suspenderet</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "CareTeamStatus"] ; # 
+  fhir:title [ fhir:v "DK CareTeam Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indicates the status of the care team."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://hl7.org/fhir/care-team-status"^^xsd:anyURI ;
      fhir:link <http://hl7.org/fhir/care-team-status>
-  ]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "proposed" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Proposed" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Forslag" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "active" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The care team is currently participating in the coordination and delivery of care." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Aktiv" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "suspended" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Suspended" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Suspenderet" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "inactive" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Inactive" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The care team was, but is no longer, participating in the coordination and delivery of care." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Inaktiv" ]
-     ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "entered-in-error" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Entered In Error" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The care team should have never existed." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Fejlindtastning" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "proposed" ] ;
+     fhir:display [ fhir:v "Proposed" ] ;
+     fhir:definition [ fhir:v "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Forslag" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "The care team is currently participating in the coordination and delivery of care." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Aktiv" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspended" ] ;
+     fhir:definition [ fhir:v "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Suspenderet" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "inactive" ] ;
+     fhir:display [ fhir:v "Inactive" ] ;
+     fhir:definition [ fhir:v "The care team was, but is no longer, participating in the coordination and delivery of care." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Inaktiv" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "entered-in-error" ] ;
+     fhir:display [ fhir:v "Entered In Error" ] ;
+     fhir:definition [ fhir:v "The care team should have never existed." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Fejlindtastning" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

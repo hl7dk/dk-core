@@ -5,49 +5,36 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> a fhir:Practitioner;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "AbrahamLaege"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner";
-       fhir:index 0;
+<http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AbrahamLaege"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"AbrahamLaege\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;AbrahamLaege&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-practitioner.html\">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Abraham Murakami </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: 005ML</td><td>Læge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DkCoreProfessionGroupCodes.html\">DK Profession Group Codes</a>#7170)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Murakami" ] ;
+     fhir:given ( [ fhir:v "Abraham" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://autregweb.sst.dk"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "005ML" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "7170" ] ;
+         fhir:display [ fhir:v "Læge" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"AbrahamLaege\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;AbrahamLaege&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-practitioner.html\">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Abraham Murakami </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: 005ML</td><td>Læge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DkCoreProfessionGroupCodes.html\">DK Profession Group Codes</a>#7170)</span></td></tr></table></div>"
-  ]; # 
-  fhir:Practitioner.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Murakami" ];
-     fhir:HumanName.given [
-       fhir:value "Abraham";
-       fhir:index 0
-     ]
-  ]; # 
-  fhir:Practitioner.qualification [
-     fhir:index 0;
-     fhir:Practitioner.qualification.identifier [
-       fhir:index 0;
-       fhir:Identifier.system [ fhir:value "https://autregweb.sst.dk" ];
-       fhir:Identifier.value [ fhir:value "005ML" ]
-     ];
-     fhir:Practitioner.qualification.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes" ];
-         fhir:Coding.code [ fhir:value "7170" ];
-         fhir:Coding.display [ fhir:value "Læge" ]
-       ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/Practitioner/AbrahamLaege.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

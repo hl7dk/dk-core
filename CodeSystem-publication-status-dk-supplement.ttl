@@ -6,139 +6,115 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "publication-status-dk-supplement"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-draft\">draft</a><a name=\"publication-status-dk-supplement-draft\"> </a></td><td>Draft</td><td>This resource is still under development and is not yet considered to be ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-active\">active</a><a name=\"publication-status-dk-supplement-active\"> </a></td><td>Active</td><td>This resource is ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-retired\">retired</a><a name=\"publication-status-dk-supplement-retired\"> </a></td><td>Retired</td><td>This resource has been withdrawn or superseded and should no longer be used.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://build.fhir.org/codesystem-publication-status.html#publication-status-unknown\">unknown</a><a name=\"publication-status-dk-supplement-unknown\"> </a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, it's just not known which one.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td></td><td></td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"]; # 
-  fhir:CodeSystem.version [ fhir:value "2.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "PublicationStatus"]; # 
-  fhir:CodeSystem.title [ fhir:value "DK Publication Status"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-05T09:15:32+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "The lifecycle status of a Value Set or Concept Map."]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DK" ];
-       fhir:Coding.display [ fhir:value "Denmark" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.content [ fhir:value "supplement"]; # 
-  fhir:CodeSystem.supplements [
-     fhir:value "http://hl7.org/fhir/publication-status";
+<http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "publication-status-dk-supplement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-draft\">draft</a><a name=\"publication-status-dk-supplement-draft\"> </a></td><td>Draft</td><td>This resource is still under development and is not yet considered to be ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">active</a><a name=\"publication-status-dk-supplement-active\"> </a></td><td>Active</td><td>This resource is ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired\">retired</a><a name=\"publication-status-dk-supplement-retired\"> </a></td><td>Retired</td><td>This resource has been withdrawn or superseded and should no longer be used.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-unknown\">unknown</a><a name=\"publication-status-dk-supplement-unknown\"> </a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, it's just not known which one.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td></td><td></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "PublicationStatus"] ; # 
+  fhir:title [ fhir:v "DK Publication Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The lifecycle status of a Value Set or Concept Map."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
      fhir:link <http://hl7.org/fhir/publication-status>
-  ]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "draft" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Draft" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This resource is still under development and is not yet considered to be ready for normal use." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "ru" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "черновик" ]
-     ], [
-       fhir:index 1;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "nl" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "ontwerp" ]
-     ], [
-       fhir:index 2;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Udkast" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "active" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This resource is ready for normal use." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "ru" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "активный" ]
-     ], [
-       fhir:index 1;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "nl" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "actief" ]
-     ], [
-       fhir:index 2;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Aktiv" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "retired" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Retired" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "This resource has been withdrawn or superseded and should no longer be used." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "ru" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "удалён" ]
-     ], [
-       fhir:index 1;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "nl" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "verouderd" ]
-     ], [
-       fhir:index 2;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Udgået" ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one." ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
-       fhir:CodeSystem.concept.designation.use [
-         a sct:900000000000013009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "900000000000013009" ]
-       ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Ukendt" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "draft" ] ;
+     fhir:display [ fhir:v "Draft" ] ;
+     fhir:definition [ fhir:v "This resource is still under development and is not yet considered to be ready for normal use." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "ru" ] ;
+       fhir:value [ fhir:v "черновик" ]
+     ] [
+       fhir:language [ fhir:v "nl" ] ;
+       fhir:value [ fhir:v "ontwerp" ]
+     ] [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Udkast" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "This resource is ready for normal use." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "ru" ] ;
+       fhir:value [ fhir:v "активный" ]
+     ] [
+       fhir:language [ fhir:v "nl" ] ;
+       fhir:value [ fhir:v "actief" ]
+     ] [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Aktiv" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "retired" ] ;
+     fhir:display [ fhir:v "Retired" ] ;
+     fhir:definition [ fhir:v "This resource has been withdrawn or superseded and should no longer be used." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "ru" ] ;
+       fhir:value [ fhir:v "удалён" ]
+     ] [
+       fhir:language [ fhir:v "nl" ] ;
+       fhir:value [ fhir:v "verouderd" ]
+     ] [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Udgået" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Ukendt" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
