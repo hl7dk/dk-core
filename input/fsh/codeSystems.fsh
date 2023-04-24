@@ -426,16 +426,16 @@ Description: "The type of an address (physical / postal)"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-type"
-* #postal "Postal" "Mailing addresses - PO Boxes and care-of addresses."
+* #postal
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Post"
-* #physical "Physical" "A physical address that can be visited."
+* #physical
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Fysisk"
-* #both "Postal & Physical" "An address that is both physical and postal."
+* #both
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -448,21 +448,21 @@ Description: "The use of an address"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-use"
-* #home "Home" "A communication address at a home."
+* #home
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Hjem"
-* #work "Work" "An office address. First choice for business related contacts during business hours."
+* #work
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Arbejde"
-* #temp "Temporary" "A temporary address. The period can provide more detailed information."
+* #temp
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Midlertidig"
-* #old "Old / Incorrect" "This address is no longer in use (or was never correct, but retained for records)."
+* #old
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -475,26 +475,26 @@ Description: "Indicates the status of the care team."
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/care-team-status"
-* #proposed "Proposed" "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care."
+* #proposed
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Forslag"
-* #active "Active" "The care team is currently participating in the coordination and delivery of care."
+* #active
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Aktiv"
-* #suspended "Suspended" "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care."
+* #suspended
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Suspenderet"
-* #inactive "Inactive" "The care team was, but is no longer, participating in the coordination and delivery of care."
+* #inactive
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Inaktiv"
-* #entered-in-error "Entered In Error" "The care team should have never existed."
+* #entered-in-error
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -507,31 +507,31 @@ Description: "Indicates the state of the consent"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/consent-state-codes"
-* #draft "Pending" "The consent is in development or awaiting use but is not yet intended to be acted upon."
+* #draft
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Under udarbejdelse"
-* #proposed "Proposed" "The consent has been proposed but not yet agreed to by all parties. The negotiation stage."
+* #proposed
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Forslag"
-* #active "Active" "The consent is to be followed and enforced."
+* #active
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Aktiv"
-* #rejected "Rejected" "The consent has been rejected by one or more of the parties."
+* #rejected
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Afvist"
-* #inactive "Inactive" "The consent is terminated or replaced."
+* #inactive
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Inaktiv"
-* #entered-in-error "Entered in Error" "The consent was created wrongly (e.g. wrong patient) and should be ignored"
+* #entered-in-error
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -544,36 +544,36 @@ Description: "The days of the week."
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/days-of-week"
-* #mon "Monday" "Monday"
+* #mon
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Mandag"
-* #tue "Tuesday" "Tuesday"
+* #tue
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Tirsdag"
-* #wed "Wednesday" "Wednesday"
+* #wed
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Onsdag"
-* #thu "Thursday" "Thursday"
+* #thu
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Torsdag"
-* #fri "Friday" "Friday"
+* #fri
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Fredag"
-* #sat "Saturday" "Saturday"
+* #sat
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Lørdag"
-* #sun "Sunday" "Sunday"
+* #sun
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -587,36 +587,36 @@ Description: "The status of the episode of care."
 * ^publisher = "HL7 DK"
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/episode-of-care-status"
-* #planned "Planned" "This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services."
+* #planned
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Planlagt"
-* #waitlist "Waitlist" "This episode has been placed on a waitlist, pending the episode being made active (or cancelled)."
+* #waitlist
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Venteliste"
-* #active "Active" "This episode of care is current."
+* #active
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Aktiv"
-* #onhold "On Hold" "This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite)."
+* #onhold
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Pauseret"
-* #finished "Finished" "This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as \"closed\", \"completed\" or other similar terms."
+* #finished
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Færdig"
-* #cancelled "Cancelled" "The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow."
+* #cancelled
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Annulleret"
-* #entered-in-error "Entered in Error" "This instance should not have been part of this patient's medical record."
+* #entered-in-error
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
@@ -629,7 +629,7 @@ Title: "DK Publication Status"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/publication-status"
-* #draft "Draft" "This resource is still under development and is not yet considered to be ready for normal use."
+* #draft
   * ^designation[0].language = #ru
   * ^designation[=].value = "черновик"
   * ^designation[+].language = #nl
@@ -637,7 +637,7 @@ Title: "DK Publication Status"
   * ^designation[+].language = #da
   * ^designation[=].use = $sct#900000000000013009
   * ^designation[=].value = "Udkast"
-* #active "Active" "This resource is ready for normal use."
+* #active
   * ^designation[0].language = #ru
   * ^designation[=].value = "активный"
   * ^designation[+].language = #nl
@@ -646,7 +646,7 @@ Title: "DK Publication Status"
   * ^designation[=].use.system = "http://snomed.info/sct"
   * ^designation[=].use = $sct#900000000000013009
   * ^designation[=].value = "Aktiv"
-* #retired "Retired" "This resource has been withdrawn or superseded and should no longer be used."
+* #retired
   * ^designation[0].language = #ru
   * ^designation[=].value = "удалён"
   * ^designation[+].language = #nl
@@ -655,7 +655,7 @@ Title: "DK Publication Status"
   * ^designation[=].use.system = "http://snomed.info/sct"
   * ^designation[=].use = $sct#900000000000013009
   * ^designation[=].value = "Udgået"
-* #unknown "Unknown" "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one."
+* #unknown
   * ^designation[0].language = #da
   * ^designation[=].use = $sct#900000000000013009
   * ^designation[=].value = "Ukendt"
@@ -667,36 +667,36 @@ Title: "DK Request Status"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/request-status"
-* #draft "Draft" "The request has been created but is not yet complete or ready for action."
+* #draft
   * ^designation.language = #da
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Udkast"
-* #active "Active" "The request is in force and ready to be acted upon."
+* #active
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Aktiv"
-* #on-hold "On Hold" "The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future."
+* #on-hold
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Suspenderet"
-* #revoked "Revoked" "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur."
+* #revoked
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Annulleret"
-* #completed "Completed" "The activity described by the request has been fully performed. No further activity will occur."
+* #completed
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Afsluttet"
-* #entered-in-error "Entered in Error" "This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be \"revoked\" rather than \"entered-in-error\".)."
+* #entered-in-error
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Fejlindtastning"
-* #unknown "Unknown" "The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for \"other\"  - one of the listed statuses is presumed to apply, but the authoring/source system does not know which."
+* #unknown
   * ^designation.language = #da
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
