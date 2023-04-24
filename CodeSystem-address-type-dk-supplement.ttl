@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "address-type-dk-supplement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-postal\">postal</a><a name=\"address-type-dk-supplement-postal\"> </a></td><td>Postal</td><td>Mailing addresses - PO Boxes and care-of addresses.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-physical\">physical</a><a name=\"address-type-dk-supplement-physical\"> </a></td><td>Physical</td><td>A physical address that can be visited.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-both\">both</a><a name=\"address-type-dk-supplement-both\"> </a></td><td>Postal &amp; Physical</td><td>An address that is both physical and postal.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>postal</td><td>Post</td></tr><tr><td>physical</td><td>Fysisk</td></tr><tr><td>both</td><td>Post &amp; fysisk</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-postal\">postal</a><a name=\"address-type-dk-supplement-postal\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-physical\">physical</a><a name=\"address-type-dk-supplement-physical\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-address-type.html#address-type-both\">both</a><a name=\"address-type-dk-supplement-both\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>postal</td><td>Post</td></tr><tr><td>physical</td><td>Fysisk</td></tr><tr><td>both</td><td>Post &amp; fysisk</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.2.0"] ; # 
@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "DK Address Type"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-24T21:40:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -46,8 +46,6 @@
   ] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "postal" ] ;
-     fhir:display [ fhir:v "Postal" ] ;
-     fhir:definition [ fhir:v "Mailing addresses - PO Boxes and care-of addresses." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -59,8 +57,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "physical" ] ;
-     fhir:display [ fhir:v "Physical" ] ;
-     fhir:definition [ fhir:v "A physical address that can be visited." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -72,8 +68,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "both" ] ;
-     fhir:display [ fhir:v "Postal & Physical" ] ;
-     fhir:definition [ fhir:v "An address that is both physical and postal." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [

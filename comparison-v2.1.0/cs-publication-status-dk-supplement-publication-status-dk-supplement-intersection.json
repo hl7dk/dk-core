@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "d6bb4c41-8cc3-4048-8ef5-087ecb714c85-39",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d6bb4c41-8cc3-4048-8ef5-087ecb714c85-39",
+  "id" : "66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-39",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-39",
   "name" : "IntersectionPublicationStatusAndPublicationStatus",
   "title" : "Intersection of DK Publication Status And DK Publication Status",
   "status" : "draft",
-  "date" : "2023-04-18T12:03:16+00:00",
+  "date" : "2023-04-24T21:41:29+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,8 +15,6 @@
   }],
   "concept" : [{
     "code" : "draft",
-    "display" : "Draft",
-    "definition" : "This resource is still under development and is not yet considered to be ready for normal use.",
     "designation" : [{
       "language" : "ru",
       "value" : "черновик"
@@ -36,8 +34,6 @@
   },
   {
     "code" : "active",
-    "display" : "Active",
-    "definition" : "This resource is ready for normal use.",
     "designation" : [{
       "language" : "ru",
       "value" : "активный"
@@ -57,8 +53,6 @@
   },
   {
     "code" : "retired",
-    "display" : "Retired",
-    "definition" : "This resource has been withdrawn or superseded and should no longer be used.",
     "designation" : [{
       "language" : "ru",
       "value" : "удалён"
@@ -78,8 +72,6 @@
   },
   {
     "code" : "unknown",
-    "display" : "Unknown",
-    "definition" : "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one.",
     "designation" : [{
       "language" : "da",
       "use" : {

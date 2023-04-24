@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "d6bb4c41-8cc3-4048-8ef5-087ecb714c85-18",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d6bb4c41-8cc3-4048-8ef5-087ecb714c85-18",
+  "id" : "66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-18",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-18",
   "name" : "IntersectionConsentStateAndConsentState",
   "title" : "Intersection of DK Consent State And DK Consent State",
   "status" : "draft",
-  "date" : "2023-04-18T12:03:16+00:00",
+  "date" : "2023-04-24T21:41:29+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,8 +15,6 @@
   }],
   "concept" : [{
     "code" : "draft",
-    "display" : "Pending",
-    "definition" : "The consent is in development or awaiting use but is not yet intended to be acted upon.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -28,8 +26,6 @@
   },
   {
     "code" : "proposed",
-    "display" : "Proposed",
-    "definition" : "The consent has been proposed but not yet agreed to by all parties. The negotiation stage.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -41,8 +37,6 @@
   },
   {
     "code" : "active",
-    "display" : "Active",
-    "definition" : "The consent is to be followed and enforced.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -54,8 +48,6 @@
   },
   {
     "code" : "rejected",
-    "display" : "Rejected",
-    "definition" : "The consent has been rejected by one or more of the parties.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -67,8 +59,6 @@
   },
   {
     "code" : "inactive",
-    "display" : "Inactive",
-    "definition" : "The consent is terminated or replaced.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -80,8 +70,6 @@
   },
   {
     "code" : "entered-in-error",
-    "display" : "Entered in Error",
-    "definition" : "The consent was created wrongly (e.g. wrong patient) and should be ignored",
     "designation" : [{
       "language" : "da",
       "use" : {

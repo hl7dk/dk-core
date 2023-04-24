@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "request-status-dk-supplement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-draft\">draft</a><a name=\"request-status-dk-supplement-draft\"> </a></td><td>Draft</td><td>The request has been created but is not yet complete or ready for action.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-active\">active</a><a name=\"request-status-dk-supplement-active\"> </a></td><td>Active</td><td>The request is in force and ready to be acted upon.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-on-hold\">on-hold</a><a name=\"request-status-dk-supplement-on-hold\"> </a></td><td>On Hold</td><td>The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-revoked\">revoked</a><a name=\"request-status-dk-supplement-revoked\"> </a></td><td>Revoked</td><td>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-completed\">completed</a><a name=\"request-status-dk-supplement-completed\"> </a></td><td>Completed</td><td>The activity described by the request has been fully performed. No further activity will occur.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-entered-in-error\">entered-in-error</a><a name=\"request-status-dk-supplement-entered-in-error\"> </a></td><td>Entered in Error</td><td>This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be &quot;revoked&quot; rather than &quot;entered-in-error&quot;.).</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-unknown\">unknown</a><a name=\"request-status-dk-supplement-unknown\"> </a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for &quot;other&quot;  - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>draft</td><td>Udkast</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>on-hold</td><td>Suspenderet</td></tr><tr><td>revoked</td><td>Annulleret</td></tr><tr><td>completed</td><td>Afsluttet</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-draft\">draft</a><a name=\"request-status-dk-supplement-draft\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-active\">active</a><a name=\"request-status-dk-supplement-active\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-on-hold\">on-hold</a><a name=\"request-status-dk-supplement-on-hold\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-revoked\">revoked</a><a name=\"request-status-dk-supplement-revoked\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-completed\">completed</a><a name=\"request-status-dk-supplement-completed\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-entered-in-error\">entered-in-error</a><a name=\"request-status-dk-supplement-entered-in-error\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-unknown\">unknown</a><a name=\"request-status-dk-supplement-unknown\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>draft</td><td>Udkast</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>on-hold</td><td>Suspenderet</td></tr><tr><td>revoked</td><td>Annulleret</td></tr><tr><td>completed</td><td>Afsluttet</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.2.0"] ; # 
@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "DK Request Status"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-04-18T12:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-24T21:40:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -46,8 +46,6 @@
   ] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "draft" ] ;
-     fhir:display [ fhir:v "Draft" ] ;
-     fhir:definition [ fhir:v "The request has been created but is not yet complete or ready for action." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -59,8 +57,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "active" ] ;
-     fhir:display [ fhir:v "Active" ] ;
-     fhir:definition [ fhir:v "The request is in force and ready to be acted upon." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -72,8 +68,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "on-hold" ] ;
-     fhir:display [ fhir:v "On Hold" ] ;
-     fhir:definition [ fhir:v "The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -85,8 +79,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "revoked" ] ;
-     fhir:display [ fhir:v "Revoked" ] ;
-     fhir:definition [ fhir:v "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -98,8 +90,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "completed" ] ;
-     fhir:display [ fhir:v "Completed" ] ;
-     fhir:definition [ fhir:v "The activity described by the request has been fully performed. No further activity will occur." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -111,8 +101,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "entered-in-error" ] ;
-     fhir:display [ fhir:v "Entered in Error" ] ;
-     fhir:definition [ fhir:v "This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be \"revoked\" rather than \"entered-in-error\".)." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -124,8 +112,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "unknown" ] ;
-     fhir:display [ fhir:v "Unknown" ] ;
-     fhir:definition [ fhir:v "The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for \"other\"  - one of the listed statuses is presumed to apply, but the authoring/source system does not know which." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
