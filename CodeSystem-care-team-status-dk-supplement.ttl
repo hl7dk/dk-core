@@ -11,15 +11,15 @@
   fhir:id [ fhir:v "care-team-status-dk-supplement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>suspended</td><td>Suspenderet</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td><td>Active</td><td>The care team is currently participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td><td>Suspended</td><td>The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The care team was, but is no longer, participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td><td>Entered In Error</td><td>The care team should have never existed.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>suspended</td><td>Suspenderet</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.2.0"] ; # 
   fhir:name [ fhir:v "CareTeamStatus"] ; # 
   fhir:title [ fhir:v "DK CareTeam Status"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-04-24T21:40:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-25T17:34:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -46,6 +46,8 @@
   ] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "proposed" ] ;
+     fhir:display [ fhir:v "Proposed" ] ;
+     fhir:definition [ fhir:v "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -57,6 +59,8 @@
      ] )
   ] [
      fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "The care team is currently participating in the coordination and delivery of care." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -68,6 +72,8 @@
      ] )
   ] [
      fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspended" ] ;
+     fhir:definition [ fhir:v "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -79,6 +85,8 @@
      ] )
   ] [
      fhir:code [ fhir:v "inactive" ] ;
+     fhir:display [ fhir:v "Inactive" ] ;
+     fhir:definition [ fhir:v "The care team was, but is no longer, participating in the coordination and delivery of care." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [
@@ -90,6 +98,8 @@
      ] )
   ] [
      fhir:code [ fhir:v "entered-in-error" ] ;
+     fhir:display [ fhir:v "Entered In Error" ] ;
+     fhir:definition [ fhir:v "The care team should have never existed." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [

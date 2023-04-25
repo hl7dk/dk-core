@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-24T21:40:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-25T17:34:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -53,12 +53,12 @@
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
   ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_phd" ] ;
+     fhir:id [ fhir:v "hl7_fhir_uv_ipa" ] ;
      fhir:uri [
-       fhir:v "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd>
+       fhir:v "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa>
      ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.phd" ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.ipa" ] ;
      fhir:version [ fhir:v "1.0.0" ]
   ] ) ; # 
   fhir:definition [
@@ -96,51 +96,6 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "{last}" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.1" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:iso:std:iso:11073:10101" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.4" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.21" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.4.12" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -375,51 +330,6 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "{last}" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.1" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:iso:std:iso:11073:10101" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.4" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.21" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "special-url" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "urn:oid:1.2.208.176.2.4.12" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -675,18 +585,6 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/dk-core-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Danish Core Observation Profiles" ] ;
-       fhir:description [ fhir:v "HL7 Denmark core profile for observations" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization> ;
          fhir:reference [ fhir:v "StructureDefinition/dk-core-organization" ]
        ] ;
@@ -831,18 +729,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns> ;
-         fhir:reference [ fhir:v "ValueSet/dk-core-LoincVitalSigns" ]
-       ] ;
-       fhir:name [ fhir:v "DK Core Vital Signs" ] ;
-       fhir:description [ fhir:v "LOINC codes describing vital signs." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-MunicipalityCodes" ]
        ] ;
@@ -860,18 +746,6 @@
        ] ;
        fhir:name [ fhir:v "DK Regional Subdivision Codes" ] ;
        fhir:description [ fhir:v "Subdivision codes (Regional codes) used in Denmark" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes> ;
-         fhir:reference [ fhir:v "ValueSet/TechniqesSCTCodes" ]
-       ] ;
-       fhir:name [ fhir:v "TechniqesSCTCodes" ] ;
-       fhir:description [ fhir:v "SNOMED CT Codes for the techniqe used when obtaining an observation" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1074,17 +948,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Device" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
-         fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
-       ] ;
-       fhir:name [ fhir:v "BPMonitor.C4F312FFFE53F2C9" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
@@ -1145,20 +1008,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> ;
-         fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
-       ] ;
-       fhir:name [ fhir:v "CoincidentTimeStamp.0222" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
@@ -1189,18 +1038,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Bundle" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Bundle/ContinuaBundleWithDevice> ;
-         fhir:reference [ fhir:v "Bundle/ContinuaBundleWithDevice" ]
-       ] ;
-       fhir:name [ fhir:v "Poul's home blood pressure measurement" ] ;
-       fhir:description [ fhir:v "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
@@ -1216,21 +1053,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/ElsePainVRS> ;
-         fhir:reference [ fhir:v "Observation/ElsePainVRS" ]
-       ] ;
-       fhir:name [ fhir:v "ElsePainVRS" ] ;
-       fhir:description [ fhir:v "Elses smerte målt med VRS" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Practitioner" ]
        ] ) ;
        fhir:reference [
@@ -1242,20 +1064,6 @@
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/HeartRate.Poul.1974654> ;
-         fhir:reference [ fhir:v "Observation/HeartRate.Poul.1974654" ]
-       ] ;
-       fhir:name [ fhir:v "HeartRate.Poul.1974654" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1332,86 +1140,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationOxySatVitalSigns> ;
-         fhir:reference [ fhir:v "Observation/ObservationOxySatVitalSigns" ]
-       ] ;
-       fhir:name [ fhir:v "John's oxygen saturation measurement, Vital Signs" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationRespiratoryVitalSigns> ;
-         fhir:reference [ fhir:v "Observation/ObservationRespiratoryVitalSigns" ]
-       ] ;
-       fhir:name [ fhir:v "John's Respiratory rate measurement, Vital Signs" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
-         fhir:reference [ fhir:v "Patient/Poul" ]
-       ] ;
-       fhir:name [ fhir:v "Poul" ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Device" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
-         fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
-       ] ;
-       fhir:name [ fhir:v "Telma.FEEDDADADEADBEEF" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/Weight.Poul.230221> ;
-         fhir:reference [ fhir:v "Observation/Weight.Poul.230221" ]
-       ] ;
-       fhir:name [ fhir:v "Poul's daily weighing on Feb. 21st" ] ;
-       fhir:description [ fhir:v "Poul has been instructed to perform a daily weighing in the morning. This is his\ndaily weighing from Feb. 21st 2023." ] ;
-       fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Device" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Device/WeightScale.606405FFFECFC604> ;
-         fhir:reference [ fhir:v "Device/WeightScale.606405FFFECFC604" ]
-       ] ;
-       fhir:name [ fhir:v "Poul's A&D weight scale" ] ;
-       fhir:description [ fhir:v "This device is Poul's personal weighing scale, which he keeps in the bathroom\nof his home, and uses for daily monitoring due to his CHF condition." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
@@ -1445,7 +1173,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-marital-status> ;
          fhir:reference [ fhir:v "ValueSet/dk-marital-status" ]
        ] ;
-       fhir:name [ fhir:v "DK Core Marital Status" ] ;
+       fhir:name [ fhir:v "dk-marital-status" ] ;
        fhir:description [ fhir:v "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1514,7 +1242,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/sor-organization-type> ;
          fhir:reference [ fhir:v "ValueSet/sor-organization-type" ]
        ] ;
-       fhir:name [ fhir:v "DK Core SOR Organization Type" ] ;
+       fhir:name [ fhir:v "sor-organization-type" ] ;
        fhir:description [ fhir:v "Value set used for indicating the organization type for organizations from SOR" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

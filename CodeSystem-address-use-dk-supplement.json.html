@@ -21,6 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -41,12 +42,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.25"}
-    h3,h4,h5,h6{--heading-prefix:"7.25"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.22"}
+    h3,h4,h5,h6{--heading-prefix:"7.22"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
@@ -178,14 +187,14 @@
 
 
 <h2 id="root">: DK Address Use - JSON Representation</h2>
-  <table class="colsi">
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
-            as of 2023-04-24
+            as of 2023-04-25
           
         
       </td>
@@ -207,15 +216,15 @@
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "address-use-dk-supplement",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home\&quot;&gt;home&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-home\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work\&quot;&gt;work&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-work\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp\&quot;&gt;temp&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-temp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old\&quot;&gt;old&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-old\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;Hjem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;work&lt;/td&gt;&lt;td&gt;Arbejde&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;temp&lt;/td&gt;&lt;td&gt;Midlertidig&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;old&lt;/td&gt;&lt;td&gt;Gammel / forkert&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home\&quot;&gt;home&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-home\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Home&lt;/td&gt;&lt;td&gt;A communication address at a home.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work\&quot;&gt;work&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-work\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Work&lt;/td&gt;&lt;td&gt;An office address. First choice for business related contacts during business hours.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp\&quot;&gt;temp&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-temp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Temporary&lt;/td&gt;&lt;td&gt;A temporary address. The period can provide more detailed information.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old\&quot;&gt;old&lt;/a&gt;&lt;a name=\&quot;address-use-dk-supplement-old\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Old / Incorrect&lt;/td&gt;&lt;td&gt;This address is no longer in use (or was never correct, but retained for records).&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;Hjem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;work&lt;/td&gt;&lt;td&gt;Arbejde&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;temp&lt;/td&gt;&lt;td&gt;Midlertidig&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;old&lt;/td&gt;&lt;td&gt;Gammel / forkert&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.2.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "AddressUse",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "DK Address Use",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2023-04-24T21:40:58+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2023-04-25T17:34:53+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "HL7 Denmark",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -249,6 +258,8 @@
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "home",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Home",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A communication address at a home.",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "da",
@@ -262,6 +273,8 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "work",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Work",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An office address. First choice for business related contacts during business hours.",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "da",
@@ -275,6 +288,8 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "temp",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Temporary",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A temporary address. The period can provide more detailed information.",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "da",
@@ -288,6 +303,8 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "old",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Old / Incorrect",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "This address is no longer in use (or was never correct, but retained for records).",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "da",
@@ -330,7 +347,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 24, 2023 21:40+0000">2023-04-24</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 25, 2023 17:34+0000">2023-04-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

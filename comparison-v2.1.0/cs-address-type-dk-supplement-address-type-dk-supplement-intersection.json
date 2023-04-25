@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-6",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/66b1fb4b-ffdd-4eec-b4cf-9b74857797cb-6",
+  "id" : "1b46395d-c5d2-4114-8e22-9657d40fb8d9-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1b46395d-c5d2-4114-8e22-9657d40fb8d9-6",
   "name" : "IntersectionAddressTypeAndAddressType",
   "title" : "Intersection of DK Address Type And DK Address Type",
   "status" : "draft",
-  "date" : "2023-04-24T21:41:29+00:00",
+  "date" : "2023-04-25T17:35:26+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,6 +15,8 @@
   }],
   "concept" : [{
     "code" : "postal",
+    "display" : "Postal",
+    "definition" : "Mailing addresses - PO Boxes and care-of addresses.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -26,6 +28,8 @@
   },
   {
     "code" : "physical",
+    "display" : "Physical",
+    "definition" : "A physical address that can be visited.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -37,6 +41,8 @@
   },
   {
     "code" : "both",
+    "display" : "Postal & Physical",
+    "definition" : "An address that is both physical and postal.",
     "designation" : [{
       "language" : "da",
       "use" : {

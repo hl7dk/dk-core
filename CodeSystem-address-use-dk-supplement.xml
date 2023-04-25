@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="address-use-dk-supplement"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement</code></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home">home</a><a name="address-use-dk-supplement-home"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work">work</a><a name="address-use-dk-supplement-work"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp">temp</a><a name="address-use-dk-supplement-temp"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old">old</a><a name="address-use-dk-supplement-old"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>home</td><td>Hjem</td></tr><tr><td>work</td><td>Arbejde</td></tr><tr><td>temp</td><td>Midlertidig</td></tr><tr><td>old</td><td>Gammel / forkert</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement</code></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home">home</a><a name="address-use-dk-supplement-home"> </a></td><td>Home</td><td>A communication address at a home.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work">work</a><a name="address-use-dk-supplement-work"> </a></td><td>Work</td><td>An office address. First choice for business related contacts during business hours.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp">temp</a><a name="address-use-dk-supplement-temp"> </a></td><td>Temporary</td><td>A temporary address. The period can provide more detailed information.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old">old</a><a name="address-use-dk-supplement-old"> </a></td><td>Old / Incorrect</td><td>This address is no longer in use (or was never correct, but retained for records).</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>home</td><td>Hjem</td></tr><tr><td>work</td><td>Arbejde</td></tr><tr><td>temp</td><td>Midlertidig</td></tr><tr><td>old</td><td>Gammel / forkert</td></tr></table></div>
   </text>
   <url value="http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"/>
   <version value="2.2.0"/>
   <name value="AddressUse"/>
   <title value="DK Address Use"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-04-24T21:40:58+00:00"/>
+  <date value="2023-04-25T17:34:53+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -36,6 +36,8 @@
   <supplements value="http://hl7.org/fhir/address-use"/>
   <concept>
     <code value="home"/>
+    <display value="Home"/>
+    <definition value="A communication address at a home."/>
     <designation>
       <language value="da"/>
       <use>
@@ -47,6 +49,8 @@
   </concept>
   <concept>
     <code value="work"/>
+    <display value="Work"/>
+    <definition value="An office address. First choice for business related contacts during business hours."/>
     <designation>
       <language value="da"/>
       <use>
@@ -58,6 +62,8 @@
   </concept>
   <concept>
     <code value="temp"/>
+    <display value="Temporary"/>
+    <definition value="A temporary address. The period can provide more detailed information."/>
     <designation>
       <language value="da"/>
       <use>
@@ -69,6 +75,8 @@
   </concept>
   <concept>
     <code value="old"/>
+    <display value="Old / Incorrect"/>
+    <definition value="This address is no longer in use (or was never correct, but retained for records)."/>
     <designation>
       <language value="da"/>
       <use>
