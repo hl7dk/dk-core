@@ -1,5 +1,5 @@
 Profile: DkCorePatient
-Parent: Patient
+Parent: IPAPatient
 Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description: "HL7 Denmark core profile for a patient"
@@ -66,6 +66,7 @@ Usage: #example
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner.identifier.value = "79641000016006"
 * generalPractitioner.display = "Peter Sønderby"
+* active = true
 
 Instance: Confidential
 InstanceOf: DkCorePatient
@@ -84,6 +85,7 @@ Usage: #example
 * address.use = #home
 * address.line = "Julianevej 22"
 * address.city = "6000 Kolding"
+* active = true
 
 Instance: else
 InstanceOf: DkCorePatient
@@ -99,6 +101,7 @@ Usage: #example
 * gender = #female
 * birthDate = "1991-02-02"
 * maritalStatus = $v3-MaritalStatus#M "Married"
+* active = true
 
 Instance: john
 InstanceOf: DkCorePatient
@@ -119,6 +122,7 @@ Usage: #example
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner.identifier.value = "487341000016005"
 * generalPractitioner.display = "Charlottenlund Lægehus"
+* active = true
 
 Instance: mogensen
 InstanceOf: DkCorePatient
@@ -134,6 +138,7 @@ Usage: #example
 * gender = #male
 * birthDate = "1964-12-11"
 * maritalStatus = $dk-marital-status#P "Registreret partnerskab"
+* active = true
 
 Instance: ukendt
 InstanceOf: DkCorePatient
@@ -147,6 +152,7 @@ Usage: #example
 * name.given = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
+* active = true
 
 Invariant: marital-status-unknown-usage
 Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK"
