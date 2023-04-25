@@ -23,4 +23,5 @@ wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -O or
 java -Xms3550m -Xmx3550m -jar org.hl7.fhir.igpublisher.jar -ig ig.ini
 ```
 
+
 Current version of the IG is located at http://build.fhir.org/ig/hl7dk/dk-core (HL7 FHIR infrastructure build) and on https://hl7dk.github.io/dk-core/index.html (Github Action triggered build)
