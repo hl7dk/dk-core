@@ -59,12 +59,11 @@ Instance: dk-marital-status
 InstanceOf: ValueSet
 Description: "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."
 Usage: #definition
+Title: "DK Core Marital Status"
+* experimental = false
 * url = "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
-* version = "0.9.0"
 * title = "DK MaritalStatus"
 * status = #active
-* experimental = false
-* date = "2019-11-01T09:29:23+11:00"
 * publisher = "HL7 Denmark"
 * contact.name = "HL7 Denmark"
 * contact.telecom.system = #url
@@ -86,12 +85,13 @@ Usage: #definition
 Instance: sor-organization-type
 InstanceOf: ValueSet
 Description: "Value set used for indicating the organization type for organizations from SOR"
+Title: "DK Core SOR Organization Type"
 Usage: #definition
+* experimental = false
 * url = "http://hl7.dk/fhir/core/ValueSet/sor-organization-type"
 * name = "SorOrganizationType"
 * status = #active
 * title = "DK SOR Organization Type"
-* experimental = false
 * description = "Value set used for indicating the organization type for organizations from SOR"
 * copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * compose.include[0].system = "http://snomed.info/sct"

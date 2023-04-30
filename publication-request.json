@@ -1,12 +1,14 @@
 {
   "package-id": "hl7.fhir.dk.core",
-  "version": "2.1.0",
-  "path": "http://hl7.dk/fhir/core/2.1.0",
+  "version": "2.2.0",
+  "path": "http://hl7.dk/fhir/core/2.2.0",
   "status": "release",
   "sequence": "Release",
-  "milestone" : true,
+  "mode" : "milestone",
   "title": "HL7 FHIR Implementation Guide: DK Core",
   "category": "National Core",
   "introduction": "A FHIR Implementation Guide for the Danish common needs across healthcare sectors",
-  "descmd": "DK-core version 2.1.0 has been approved by HL7 Denmark, but it is not part of the national catalogue of ICT standards <br/> to be used in the Danish health care system (Sundhedsdatastyrelsens standardkatalog). The spring 2023 version is expected to go through the needed evaluations to be approved for the national catalogue. <br/> <br/>  The changes between 2.0.0 and 2.1.0 is: <br/>  • Addition of Condition profile with associated documentation and examples <br/> • A disclaimer has been added regarding use of dk-core. It can be read on the IG\\\\'s front page in section 1.7 and 1.8 <br/> • Unused LPR3 identifier has been removed <br/> • In the documentation of the patient profile, new details are described regarding NNDNK <br/> • Adding how to represent a GP in the documentation for Organization and Practitioner to avoid SOR vs. ydernummer issues. <br/> • Clarification of primary and secondary sector the in descriptions of the Organization and Practitioner profiles.<br/> • Explanation of the use of Danish/English in the \\\\'Language\\\\' section on the front page of dk-core <br/> • Insertion of specific terms/explanations on all slices and extensions in profiles. <br/> • Target group and inclusion in the standard catalog have been added in the \\\\'Scope\\\\' section on dk-core\\\\'s front page. <br/> • Documentation has been strengthened in Patient and Practitioner profiles in the \\\\'scope and usage\\\\' section. <br/> • The section \\\\'Connection between dk-core and common Danish architectures and standards\\\\' has been added to dk-core\\\\'s front page."
+  "descmd": "@release-notes.md",
+  "first": false,
+  "ci-build": "https://build.fhir.org/ig/hl7dk/dk-core"
 }

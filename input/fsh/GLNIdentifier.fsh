@@ -3,7 +3,6 @@ Parent: Identifier
 Id: dk-core-gln-identifier
 Title: "GLN Identifier"
 Description: "Identifier holding a 13 digit GLN"
-* ^status = #draft
 * use = #official (exactly)
 * system 1..
 * system = "https://www.gs1.org/gln" (exactly)

@@ -3,7 +3,6 @@ Parent: Identifier
 Id: dk-core-cvr-identifier
 Title: "Danish Central Business Register (CVR) Identifier"
 Description: "Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number."
-* ^status = #draft
 * use = #official (exactly)
 * system 1..
 * system = "http://cvr.dk" (exactly)
