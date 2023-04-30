@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1b46395d-c5d2-4114-8e22-9657d40fb8d9-56",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1b46395d-c5d2-4114-8e22-9657d40fb8d9-56",
+  "id" : "77bdaab1-5c3e-4929-8220-d06455eb50bf-56",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/77bdaab1-5c3e-4929-8220-d06455eb50bf-56",
   "name" : "UnionDkCoreConditionAndDkCoreCondition",
   "title" : "Union of Danish Core Condition Profile And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2023-04-25T17:35:26+00:00",
+  "date" : "2023-04-30T20:59:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -436,7 +436,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {
@@ -486,7 +486,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {
@@ -540,7 +540,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -637,7 +637,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -876,7 +876,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{

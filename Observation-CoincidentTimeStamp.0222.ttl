@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoincidentTimeStamp.0222"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CoincidentTimeStamp.0222\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CoincidentTimeStamp.0222&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html\">PhdCoincidentTimeStampObservation</a></p></div><p><b>Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device/Telma.FEEDDADADEADBEEF</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_TIME_ABS: Uses Absolute time clock <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#67975 &quot;MDC_ATTR_TIME_ABS&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href=\"Device-BPMonitor.C4F312FFFE53F2C9.html\">Device/BPMonitor.C4F312FFFE53F2C9</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67975" ] ;
+       fhir:display [ fhir:v "MDC_ATTR_TIME_ABS" ]
+     ] ) ;
+     fhir:text [ fhir:v "MDC_ATTR_TIME_ABS: Uses Absolute time clock" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-02-23T10:24:34.467+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:reference [ fhir:v "Patient/Poul" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2023-02-23T10:24:25+01:00"^^xsd:dateTime] ; # 
+  fhir:device [
+     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

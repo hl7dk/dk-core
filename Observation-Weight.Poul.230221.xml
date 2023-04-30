@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Weight.Poul.230221"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Weight.Poul.230221"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Weight.Poul.230221&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a>, <a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a></p></div><p><b>Gateway Device</b>: <a href="http://example.org/fhir/Telma.FEEDDADADEADBEEF">http://example.org/fhir/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: id: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_MASS_BODY_ACTUAL: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7 &quot;Body weight&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#188736 &quot;MDC_MASS_BODY_ACTUAL&quot;; unknown#NPU03804 &quot;Pt—Body; mass = ? kg&quot;)</span></p><p><b>subject</b>: <a href="http://example.org/fhir/Patient/Poul">http://example.org/fhir/Patient/Poul</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href="http://example.org/fhir/Patient/Poul">http://example.org/fhir/Patient/Poul</a></p><p><b>value</b>: 74 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg = 'kg')</span></p><p><b>device</b>: <a href="Device-WeightScale.606405FFFECFC604.html">Device/WeightScale.606405FFFECFC604</a></p><p><b>derivedFrom</b>: <a href="http://example.org/fhir/CoincidentTimeStamp.0123">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+    <valueReference>
+      <reference value="http://example.org/fhir/Telma.FEEDDADADEADBEEF"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <value value="606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="188736"/>
+      <display value="MDC_MASS_BODY_ACTUAL"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.1"/>
+      <code value="NPU03804"/>
+      <display value="Pt—Body; mass = ? kg"/>
+    </coding>
+    <text value="MDC_MASS_BODY_ACTUAL: Body weight"/>
+  </code>
+  <subject>
+    <reference value="http://example.org/fhir/Patient/Poul"/>
+  </subject>
+  <effectiveDateTime value="2023-02-21T08:36:40+01:00"/>
+  <performer>
+    <reference value="http://example.org/fhir/Patient/Poul"/>
+  </performer>
+  <valueQuantity>
+    <value value="74"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/WeightScale.606405FFFECFC604"/>
+  </device>
+  <derivedFrom>
+    <reference value="http://example.org/fhir/CoincidentTimeStamp.0123"/>
+  </derivedFrom>
+</Observation>

@@ -3,15 +3,15 @@
   "id" : "care-team-status-dk-supplement",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td><td>Proposed</td><td>The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td><td>Active</td><td>The care team is currently participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td><td>Suspended</td><td>The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td><td>Inactive</td><td>The care team was, but is no longer, participating in the coordination and delivery of care.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td><td>Entered In Error</td><td>The care team should have never existed.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>suspended</td><td>Suspenderet</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\">proposed</a><a name=\"care-team-status-dk-supplement-proposed\"> </a></td><td>Forslag</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\">active</a><a name=\"care-team-status-dk-supplement-active\"> </a></td><td>Aktiv</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\">suspended</a><a name=\"care-team-status-dk-supplement-suspended\"> </a></td><td>Suspenderet</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\">inactive</a><a name=\"care-team-status-dk-supplement-inactive\"> </a></td><td>Inaktiv</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\">entered-in-error</a><a name=\"care-team-status-dk-supplement-entered-in-error\"> </a></td><td>Fejlindtastning</td></tr></table></div>"
   },
   "url" : "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement",
   "version" : "2.2.0",
   "name" : "CareTeamStatus",
   "title" : "DK CareTeam Status",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2023-04-25T17:34:53+00:00",
+  "date" : "2023-04-30T20:59:20+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -36,8 +36,6 @@
   "supplements" : "http://hl7.org/fhir/care-team-status",
   "concept" : [{
     "code" : "proposed",
-    "display" : "Proposed",
-    "definition" : "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -49,8 +47,6 @@
   },
   {
     "code" : "active",
-    "display" : "Active",
-    "definition" : "The care team is currently participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -62,8 +58,6 @@
   },
   {
     "code" : "suspended",
-    "display" : "Suspended",
-    "definition" : "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -75,8 +69,6 @@
   },
   {
     "code" : "inactive",
-    "display" : "Inactive",
-    "definition" : "The care team was, but is no longer, participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -88,8 +80,6 @@
   },
   {
     "code" : "entered-in-error",
-    "display" : "Entered In Error",
-    "definition" : "The care team should have never existed.",
     "designation" : [{
       "language" : "da",
       "use" : {

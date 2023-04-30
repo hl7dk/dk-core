@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e3fc5d2c-8960-4285-8de8-021438689789-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e3fc5d2c-8960-4285-8de8-021438689789-5",
+  "id" : "ada3cf5c-a285-40a1-9269-9536966d895c-17",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ada3cf5c-a285-40a1-9269-9536966d895c-17",
   "name" : "UnionIPAPractitionerAndDkCorePractitioner",
   "title" : "Union of IPA-Practitioner And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2023-04-25T17:35:27+00:00",
+  "date" : "2023-04-30T20:59:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -426,9 +426,9 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
+      "comment" : "left: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element; right: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "HumanName"

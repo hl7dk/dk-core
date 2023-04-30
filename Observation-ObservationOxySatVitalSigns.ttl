@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/ObservationOxySatVitalSigns> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ObservationOxySatVitalSigns"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationOxySatVitalSigns\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationOxySatVitalSigns&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2708-6)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 97 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>derivedFrom</b>: <a name=\"ObservationOxySat\"> </a></p><blockquote><p/><p><a name=\"ObservationOxySat\"> </a></p><p><b>status</b>: final</p><p><b>code</b>: Iltmætning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#NPU03011)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 0.97 {1}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {1} = '{1}')</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #ObservationOxySat</b><a name=\"ObservationOxySat\"> </a></p><p><b>status</b>: final</p><p><b>code</b>: Iltmætning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#NPU03011)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 0.97 {1}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {1} = '{1}')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Observation ;
+     fhir:id [ fhir:v "ObservationOxySat" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ] )
+     ] ;
+     fhir:status [ fhir:v "final" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NPU03011" ] ;
+         fhir:display [ fhir:v "Iltmætning" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:link <http://hl7.dk/fhir/core/Patient/john> ;
+       fhir:reference [ fhir:v "Patient/john" ]
+     ] ;
+     fhir:performer ( [
+       fhir:link <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
+       fhir:reference [ fhir:v "Practitioner/AbrahamLaege" ]
+     ] ) ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "0.97"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{1}" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2708-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2708-6" ] ;
+       fhir:display [ fhir:v "Oxygen saturation in Arterial blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/john> ;
+     fhir:reference [ fhir:v "Patient/john" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
+     fhir:reference [ fhir:v "Practitioner/AbrahamLaege" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "97"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "%" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "%" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:reference [ fhir:v "#ObservationOxySat" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

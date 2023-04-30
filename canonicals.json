@@ -189,6 +189,13 @@
     "name" : "MunicipalityCodes"
   },
   {
+    "id" : "dk-core-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
+    "version" : "2.2.0",
+    "name" : "DkCoreObservation"
+  },
+  {
     "id" : "dk-core-organization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
@@ -229,6 +236,20 @@
     "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
     "version" : "2.2.0",
     "name" : "DkCoreProfessionGroupValueSet"
+  },
+  {
+    "id" : "TechniqesSCTCodes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
+    "version" : "2.2.0",
+    "name" : "TechniqesSCTCodes"
+  },
+  {
+    "id" : "dk-core-LoincVitalSigns",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
+    "version" : "2.2.0",
+    "name" : "LoincVitalSigns"
   },
   {
     "id" : "dk-core-MunicipalityCodes",

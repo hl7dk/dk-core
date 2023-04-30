@@ -9,8 +9,8 @@
   "version" : "2.2.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
-  "status" : "draft",
-  "date" : "2023-04-25T17:34:53+00:00",
+  "status" : "active",
+  "date" : "2023-04-30T20:59:20+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -45,9 +45,9 @@
     "version" : "5.0.0"
   },
   {
-    "id" : "hl7_fhir_uv_ipa",
-    "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
-    "packageId" : "hl7.fhir.uv.ipa",
+    "id" : "hl7_fhir_uv_phd",
+    "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
+    "packageId" : "hl7.fhir.uv.phd",
     "version" : "1.0.0"
   }],
   "definition" : {
@@ -69,7 +69,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -92,6 +92,61 @@
       {
         "url" : "value",
         "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:iso:std:iso:11073:10101"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.21"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4.12"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -338,6 +393,10 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    },
+    {
       "extension" : [{
         "url" : "code",
         "valueCode" : "copyrightyear"
@@ -355,7 +414,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -378,6 +437,61 @@
       {
         "url" : "value",
         "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:iso:std:iso:11073:10101"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.21"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4.12"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -677,6 +791,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/dk-core-observation"
+      },
+      "name" : "Danish Core Observation Profiles",
+      "description" : "HL7 Denmark core profile for observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/dk-core-organization"
       },
       "name" : "Danish Core Organization Profile",
@@ -821,6 +947,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/dk-core-LoincVitalSigns"
+      },
+      "name" : "DK Core Vital Signs",
+      "description" : "LOINC codes describing vital signs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/dk-core-MunicipalityCodes"
       },
       "name" : "DK Municipality Codes",
@@ -837,6 +975,18 @@
       },
       "name" : "DK Regional Subdivision Codes",
       "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TechniqesSCTCodes"
+      },
+      "name" : "TechniqesSCTCodes",
+      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
       "exampleBoolean" : false
     },
     {
@@ -1034,6 +1184,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/BPMonitor.C4F312FFFE53F2C9"
+      },
+      "name" : "BPMonitor.C4F312FFFE53F2C9",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -1082,6 +1243,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CoincidentTimeStamp.0222"
+      },
+      "name" : "CoincidentTimeStamp.0222",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -1106,6 +1278,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ContinuaBundleWithDevice"
+      },
+      "name" : "Poul's home blood pressure measurement",
+      "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -1118,6 +1302,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElsePainVRS"
+      },
+      "name" : "ElsePainVRS",
+      "description" : "Elses smerte målt med VRS",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -1126,6 +1322,17 @@
       "name" : "HanneSocialrådgiver",
       "description" : "Eksempel på socialrådgiveren Hanne",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HeartRate.Poul.1974654"
+      },
+      "name" : "HeartRate.Poul.1974654",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
     },
     {
       "extension" : [{
@@ -1190,6 +1397,74 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationOxySatVitalSigns"
+      },
+      "name" : "John's oxygen saturation measurement, Vital Signs",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationRespiratoryVitalSigns"
+      },
+      "name" : "John's Respiratory rate measurement, Vital Signs",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Poul"
+      },
+      "name" : "Poul",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/Telma.FEEDDADADEADBEEF"
+      },
+      "name" : "Telma.FEEDDADADEADBEEF",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Weight.Poul.230221"
+      },
+      "name" : "Poul's daily weighing on Feb. 21st",
+      "description" : "Poul has been instructed to perform a daily weighing in the morning. This is his\ndaily weighing from Feb. 21st 2023.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/WeightScale.606405FFFECFC604"
+      },
+      "name" : "Poul's A&D weight scale",
+      "description" : "This device is Poul's personal weighing scale, which he keeps in the bathroom\nof his home, and uses for daily monitoring due to his CHF condition.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -1219,7 +1494,7 @@
       "reference" : {
         "reference" : "ValueSet/dk-marital-status"
       },
-      "name" : "dk-marital-status",
+      "name" : "DK Core Marital Status",
       "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
       "exampleBoolean" : false
     },
@@ -1279,7 +1554,7 @@
       "reference" : {
         "reference" : "ValueSet/sor-organization-type"
       },
-      "name" : "sor-organization-type",
+      "name" : "DK Core SOR Organization Type",
       "description" : "Value set used for indicating the organization type for organizations from SOR",
       "exampleBoolean" : false
     },

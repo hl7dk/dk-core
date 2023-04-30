@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "1b46395d-c5d2-4114-8e22-9657d40fb8d9-15",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1b46395d-c5d2-4114-8e22-9657d40fb8d9-15",
+  "id" : "77bdaab1-5c3e-4929-8220-d06455eb50bf-15",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/77bdaab1-5c3e-4929-8220-d06455eb50bf-15",
   "name" : "IntersectionCareTeamStatusAndCareTeamStatus",
   "title" : "Intersection of DK CareTeam Status And DK CareTeam Status",
   "status" : "draft",
-  "date" : "2023-04-25T17:35:26+00:00",
+  "date" : "2023-04-30T20:59:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,8 +15,6 @@
   }],
   "concept" : [{
     "code" : "proposed",
-    "display" : "Proposed",
-    "definition" : "The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -28,8 +26,6 @@
   },
   {
     "code" : "active",
-    "display" : "Active",
-    "definition" : "The care team is currently participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -41,8 +37,6 @@
   },
   {
     "code" : "suspended",
-    "display" : "Suspended",
-    "definition" : "The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -54,8 +48,6 @@
   },
   {
     "code" : "inactive",
-    "display" : "Inactive",
-    "definition" : "The care team was, but is no longer, participating in the coordination and delivery of care.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -67,8 +59,6 @@
   },
   {
     "code" : "entered-in-error",
-    "display" : "Entered In Error",
-    "definition" : "The care team should have never existed.",
     "designation" : [{
       "language" : "da",
       "use" : {

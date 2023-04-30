@@ -16,13 +16,12 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jan Mogensen (OFFICIAL)</b> male, DoB: 1964-12-11 ( id: 1112640001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://hl7.dk/fhir/core/CodeSystem/dk-marital-status P}\">Registreret partnerskab</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jan Mogensen (OFFICIAL)</b> male, DoB: 1972-07-01 ( id: 0107729995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://hl7.dk/fhir/core/CodeSystem/dk-marital-status P}\">Registreret partnerskab</span></td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "1112640001" ]
+     fhir:value [ fhir:v "0107729995" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mogensen" ] ;
@@ -30,7 +29,7 @@
      fhir:prefix ( [ fhir:v "Mr" ] )
   ] ) ; # 
   fhir:gender [ fhir:v "male"] ; # 
-  fhir:birthDate [ fhir:v "1964-12-11"^^xsd:date] ; # 
+  fhir:birthDate [ fhir:v "1972-07-01"^^xsd:date] ; # 
   fhir:maritalStatus [
      fhir:coding ( [
        fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"^^xsd:anyURI ] ;

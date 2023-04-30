@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ContinuaBundleWithDevice"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="Patient/Poul"/>
+    <resource>
+      <Patient>
+        <id value="Poul"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Poul"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Poul&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a></p></div><p><b>identifier</b>: National unique individual identifier: 3001749995</p><p><b>name</b>: Poul Hansen </p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NI"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="3001749995"/>
+        </identifier>
+        <name>
+          <family value="Hansen"/>
+          <given value="Poul"/>
+        </name>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+      <ifNoneExist value="identifier=urn:oid:1.2.208.176.1.2|3001749995"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Device/Telma.FEEDDADADEADBEEF"/>
+    <resource>
+      <Device>
+        <id value="Telma.FEEDDADADEADBEEF"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="Telma.FEEDDADADEADBEEF"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;Telma.FEEDDADADEADBEEF&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF</p><p><b>manufacturer</b>: Trifork</p><p><b>modelNumber</b>: Telma (Android)</p><p><b>type</b>: MDC_MOC_VMS_MDS_AHD: Continua compliant gateway <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531981 &quot;MDC_MOC_VMS_MDS_AHD&quot;)</span></p><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 7.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: Samsung Tab S7+ (SM-T970)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 1.2.0 (build 2662)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: Android 12 (API 31)</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Weighing scale <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32783)</span>, BluetoothLE: Blood pressure monitor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32775)</span>, BluetoothLE: Pulse oximeter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32772)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&amp;Fitness interfaces list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532355 &quot;MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST&quot;)</span></p><p><b>valueCode</b>: observation-upload-fhir: FHIR resource upload <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaHFS.html">ContinuaHFS</a>#7 &quot;observation-upload-fhir&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532226 &quot;MDC_TIME_SYNC_NTPV4&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is NOT regulated <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+              <code value="SYSID"/>
+              <display value="IEEE 11073 System Identifier"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"/>
+          <value value="FE-ED-DA-DA-DE-AD-BE-EF"/>
+        </identifier>
+        <manufacturer value="Trifork"/>
+        <modelNumber value="Telma (Android)"/>
+        <type>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="531981"/>
+            <display value="MDC_MOC_VMS_MDS_AHD"/>
+          </coding>
+          <text value="MDC_MOC_VMS_MDS_AHD: Continua compliant gateway"/>
+        </type>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532352"/>
+              <display value="MDC_REG_CERT_DATA_CONTINUA_VERSION"/>
+            </coding>
+            <text value="MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"/>
+          </type>
+          <value value="7.0"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531974"/>
+              <display value="MDC_ID_PROD_SPEC_HW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_HW: Hardware version"/>
+          </type>
+          <value value="Samsung Tab S7+ (SM-T970)"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531975"/>
+              <display value="MDC_ID_PROD_SPEC_SW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_SW: Software version"/>
+          </type>
+          <value value="1.2.0 (build 2662)"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531976"/>
+              <display value="MDC_ID_PROD_SPEC_FW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_FW: Firmware version"/>
+          </type>
+          <value value="Android 12 (API 31)"/>
+        </version>
+        <property>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532353"/>
+              <display value="MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"/>
+            </coding>
+            <text value="MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"/>
+              <code value="32783"/>
+            </coding>
+            <text value="BluetoothLE: Weighing scale"/>
+          </valueCode>
+          <valueCode>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"/>
+              <code value="32775"/>
+            </coding>
+            <text value="BluetoothLE: Blood pressure monitor"/>
+          </valueCode>
+          <valueCode>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"/>
+              <code value="32772"/>
+            </coding>
+            <text value="BluetoothLE: Pulse oximeter"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532355"/>
+              <display value="MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST"/>
+            </coding>
+            <text value="MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&amp;Fitness interfaces list"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS"/>
+              <code value="7"/>
+              <display value="observation-upload-fhir"/>
+            </coding>
+            <text value="observation-upload-fhir: FHIR resource upload"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="68220"/>
+              <display value="MDC_TIME_SYNC_PROTOCOL"/>
+            </coding>
+            <text value="MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532226"/>
+              <display value="MDC_TIME_SYNC_NTPV4"/>
+            </coding>
+            <text value="MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+              <code value="532354.0"/>
+            </coding>
+            <text value="regulation-status"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="Y"/>
+            </coding>
+            <text value="Device is NOT regulated"/>
+          </valueCode>
+        </property>
+      </Device>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Device"/>
+      <ifNoneExist value="identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+    <resource>
+      <Device>
+        <id value="BPMonitor.C4F312FFFE53F2C9"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="BPMonitor.C4F312FFFE53F2C9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;BPMonitor.C4F312FFFE53F2C9&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></p></div><p><b>identifier</b>: Ieee 11073 System Identifier: C4-F3-12-FF-FE-53-F2-C9, Bluetooth MAC address: C4-F3-12-53-F2-C9</p><p><b>manufacturer</b>: A&amp;D Medical </p><p><b>serialNumber</b>: 5181000124</p><p><b>modelNumber</b>: UA-651BLE </p><p><b>type</b>: MDC_MOC_VMS_MDS_SIMP: Personal health device <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#65573 &quot;MDC_MOC_VMS_MDS_SIMP&quot;)</span></p><h3>Specializations</h3><table class="grid"><tr><td>-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td>*</td><td>MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#528391 &quot;MDC_DEV_SPEC_PROFILE_BP&quot;)</span></td><td>1</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 4.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 0.00</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: BLP009_02_005 </p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Blood pressure monitor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32775)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NONE: No time synchronization <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532224 &quot;MDC_TIME_SYNC_NONE&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is regulated <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-real-time-clock <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#68219.0)</span></p><p><b>valueCode</b>: Real time clock is supported <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: mds-time-capab-set-clock <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#68219.1)</span></p><p><b>valueCode</b>: Setting the real time clock is supported <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+              <code value="SYSID"/>
+              <display value="Ieee 11073 System Identifier"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"/>
+          <value value="C4-F3-12-FF-FE-53-F2-C9"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+              <code value="BTMAC"/>
+              <display value="Bluetooth MAC address"/>
+            </coding>
+          </type>
+          <system value="http://hl7.org/fhir/sid/eui-48/bluetooth"/>
+          <value value="C4-F3-12-53-F2-C9"/>
+        </identifier>
+        <manufacturer value="A&amp;D Medical "/>
+        <serialNumber value="5181000124"/>
+        <modelNumber value="UA-651BLE "/>
+        <type>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="65573"/>
+            <display value="MDC_MOC_VMS_MDS_SIMP"/>
+          </coding>
+          <text value="MDC_MOC_VMS_MDS_SIMP: Personal health device"/>
+        </type>
+        <specialization>
+          <systemType>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="528391"/>
+              <display value="MDC_DEV_SPEC_PROFILE_BP"/>
+            </coding>
+            <text value="MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"/>
+          </systemType>
+          <version value="1"/>
+        </specialization>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532352"/>
+              <display value="MDC_REG_CERT_DATA_CONTINUA_VERSION"/>
+            </coding>
+            <text value="MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version"/>
+          </type>
+          <value value="4.1"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531974"/>
+              <display value="MDC_ID_PROD_SPEC_HW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_HW: Hardware version"/>
+          </type>
+          <value value="0.00"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531975"/>
+              <display value="MDC_ID_PROD_SPEC_SW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_SW: Software version"/>
+          </type>
+          <value value="0.00"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="531976"/>
+              <display value="MDC_ID_PROD_SPEC_FW"/>
+            </coding>
+            <text value="MDC_ID_PROD_SPEC_FW: Firmware version"/>
+          </type>
+          <value value="BLP009_02_005 "/>
+        </version>
+        <property>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532353"/>
+              <display value="MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"/>
+            </coding>
+            <text value="MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD"/>
+              <code value="32775"/>
+            </coding>
+            <text value="BluetoothLE: Blood pressure monitor"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="68220"/>
+              <display value="MDC_TIME_SYNC_PROTOCOL"/>
+            </coding>
+            <text value="MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="532224"/>
+              <display value="MDC_TIME_SYNC_NONE"/>
+            </coding>
+            <text value="MDC_TIME_SYNC_NONE: No time synchronization"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+              <code value="532354.0"/>
+            </coding>
+            <text value="regulation-status"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="N"/>
+            </coding>
+            <text value="Device is regulated"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+              <code value="68219.0"/>
+            </coding>
+            <text value="mds-time-capab-real-time-clock"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="Y"/>
+            </coding>
+            <text value="Real time clock is supported"/>
+          </valueCode>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+              <code value="68219.1"/>
+            </coding>
+            <text value="mds-time-capab-set-clock"/>
+          </type>
+          <valueCode>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="Y"/>
+            </coding>
+            <text value="Setting the real time clock is supported"/>
+          </valueCode>
+        </property>
+      </Device>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Device"/>
+      <ifNoneExist value="identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/BatteryLevel.0944"/>
+    <resource>
+      <Observation>
+        <id value="BatteryLevel.0944"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="BatteryLevel.0944"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;BatteryLevel.0944&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a></p></div><p><b>Gateway Device</b>: <a href="#Device_Telma.FEEDDADADEADBEEF">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_VAL_BATT_CHARGE: Battery level <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#67996 &quot;MDC_ATTR_VAL_BATT_CHARGE&quot;)</span></p><p><b>subject</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>value</b>: 95 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p><p><b>device</b>: <a href="#Device_BPMonitor.C4F312FFFE53F2C9">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+          <valueReference>
+            <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+          </valueReference>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="67996"/>
+            <display value="MDC_ATTR_VAL_BATT_CHARGE"/>
+          </coding>
+          <text value="MDC_ATTR_VAL_BATT_CHARGE: Battery level"/>
+        </code>
+        <subject>
+          <reference value="Patient/Poul"/>
+        </subject>
+        <effectiveDateTime value="2023-02-23T10:24:34.563+01:00"/>
+        <performer>
+          <reference value="Patient/Poul"/>
+        </performer>
+        <valueQuantity>
+          <value value="95"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </valueQuantity>
+        <device>
+          <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        </device>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/CoincidentTimeStamp.0222"/>
+    <resource>
+      <Observation>
+        <id value="CoincidentTimeStamp.0222"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="CoincidentTimeStamp.0222"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;CoincidentTimeStamp.0222&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a></p></div><p><b>Gateway Device</b>: <a href="#Device_Telma.FEEDDADADEADBEEF">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_TIME_ABS: Uses Absolute time clock <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#67975 &quot;MDC_ATTR_TIME_ABS&quot;)</span></p><p><b>subject</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href="#Device_BPMonitor.C4F312FFFE53F2C9">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+          <valueReference>
+            <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+          </valueReference>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="67975"/>
+            <display value="MDC_ATTR_TIME_ABS"/>
+          </coding>
+          <text value="MDC_ATTR_TIME_ABS: Uses Absolute time clock"/>
+        </code>
+        <subject>
+          <reference value="Patient/Poul"/>
+        </subject>
+        <effectiveDateTime value="2023-02-23T10:24:34.467+01:00"/>
+        <performer>
+          <reference value="Patient/Poul"/>
+        </performer>
+        <valueDateTime value="2023-02-23T10:24:25+01:00"/>
+        <device>
+          <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        </device>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/BloodPressure.Poul.643992"/>
+    <resource>
+      <Observation>
+        <id value="BloodPressure.Poul.643992"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCompoundNumericObservation"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="BloodPressure.Poul.643992"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;BloodPressure.Poul.643992&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCompoundNumericObservation.html">PhdCompoundNumericObservation</a>, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a>, <a href="http://hl7.org/fhir/R4/bp.html">Observation Blood Pressure Profile</a></p></div><p><b>Gateway Device</b>: <a href="#Device_Telma.FEEDDADADEADBEEF">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PRESS_BLD_NONINV: Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85354-9 &quot;Blood pressure panel with all children optional&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#150020 &quot;MDC_PRESS_BLD_NONINV&quot;; unknown#ZZ3170 &quot;Hjemmeblodtryksmåling udført af patienten&quot;)</span></p><p><b>subject</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>device</b>: <a href="#Device_BPMonitor.C4F312FFFE53F2C9">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: <a href="#Observation_CoincidentTimeStamp.0222">See above (Observation/CoincidentTimeStamp.0222)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6 &quot;Systolic blood pressure&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#150021 &quot;MDC_PRESS_BLD_NONINV_SYS&quot;; observation-code#MCS88019 &quot;Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg&quot;)</span></p><p><b>value</b>: 118 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4 &quot;Diastolic blood pressure&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#150022 &quot;MDC_PRESS_BLD_NONINV_DIA&quot;; observation-code#MCS88020 &quot;Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg&quot;)</span></p><p><b>value</b>: 87 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#150023 &quot;MDC_PRESS_BLD_NONINV_MEAN&quot;)</span></p><p><b>value</b>: 99 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+          <valueReference>
+            <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <value value="C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150020"/>
+            <display value="MDC_PRESS_BLD_NONINV"/>
+          </coding>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.4"/>
+            <code value="ZZ3170"/>
+            <display value="Hjemmeblodtryksmåling udført af patienten"/>
+          </coding>
+          <text value="MDC_PRESS_BLD_NONINV: Blood Pressure"/>
+        </code>
+        <subject>
+          <reference value="Patient/Poul"/>
+        </subject>
+        <effectiveDateTime value="2023-02-23T10:24:08+01:00"/>
+        <performer>
+          <reference value="Patient/Poul"/>
+        </performer>
+        <device>
+          <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        </device>
+        <derivedFrom>
+          <reference value="Observation/CoincidentTimeStamp.0222"/>
+        </derivedFrom>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8480-6"/>
+              <display value="Systolic blood pressure"/>
+            </coding>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="150021"/>
+              <display value="MDC_PRESS_BLD_NONINV_SYS"/>
+            </coding>
+            <coding>
+              <system value="https://terminology.medcom.dk/fhir/observation-code"/>
+              <code value="MCS88019"/>
+              <display value="Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"/>
+            </coding>
+            <text value="MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"/>
+          </code>
+          <valueQuantity>
+            <value value="118"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8462-4"/>
+              <display value="Diastolic blood pressure"/>
+            </coding>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="150022"/>
+              <display value="MDC_PRESS_BLD_NONINV_DIA"/>
+            </coding>
+            <coding>
+              <system value="https://terminology.medcom.dk/fhir/observation-code"/>
+              <code value="MCS88020"/>
+              <display value="Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"/>
+            </coding>
+            <text value="MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"/>
+          </code>
+          <valueQuantity>
+            <value value="87"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="urn:iso:std:iso:11073:10101"/>
+              <code value="150023"/>
+              <display value="MDC_PRESS_BLD_NONINV_MEAN"/>
+            </coding>
+            <text value="MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure"/>
+          </code>
+          <valueQuantity>
+            <value value="99"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+      <ifNoneExist value="identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/HeartRate.Poul.1974654"/>
+    <resource>
+      <Observation>
+        <id value="HeartRate.Poul.1974654"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/heartrate"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HeartRate.Poul.1974654"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;HeartRate.Poul.1974654&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a>, <a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a></p></div><p><b>Gateway Device</b>: <a href="#Device_Telma.FEEDDADADEADBEEF">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00</p><p><b>status</b>: final</p><p><b>category</b>: Vital signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: MDC_PULS_RATE_NON_INV: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4 &quot;Heart rate&quot;; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#149546 &quot;MDC_PULS_RATE_NON_INV&quot;; unknown#NPU21692 &quot;Heart—Systole; frequency = ? × 1/min&quot;)</span></p><p><b>subject</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>value</b>: 93 bpm<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>device</b>: <a href="#Device_BPMonitor.C4F312FFFE53F2C9">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: <a href="#Observation_CoincidentTimeStamp.0222">See above (Observation/CoincidentTimeStamp.0222)</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+          <valueReference>
+            <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <value value="C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"/>
+        </identifier>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8867-4"/>
+            <display value="Heart rate"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149546"/>
+            <display value="MDC_PULS_RATE_NON_INV"/>
+          </coding>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.1"/>
+            <code value="NPU21692"/>
+            <display value="Heart—Systole; frequency = ? × 1/min"/>
+          </coding>
+          <text value="MDC_PULS_RATE_NON_INV: Heart rate"/>
+        </code>
+        <subject>
+          <reference value="Patient/Poul"/>
+        </subject>
+        <effectiveDateTime value="2023-02-23T10:24:08+01:00"/>
+        <performer>
+          <reference value="Patient/Poul"/>
+        </performer>
+        <valueQuantity>
+          <value value="93"/>
+          <unit value="bpm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+        <device>
+          <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        </device>
+        <derivedFrom>
+          <reference value="Observation/CoincidentTimeStamp.0222"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+      <ifNoneExist value="identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/BloodPressureStatus.Poul.133527"/>
+    <resource>
+      <Observation>
+        <id value="BloodPressureStatus.Poul.133527"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+          <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdBitsEnumerationObservation"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="BloodPressureStatus.Poul.133527"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;BloodPressureStatus.Poul.133527&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdBitsEnumerationObservation.html">PhdBitsEnumerationObservation</a></p></div><p><b>Gateway Device</b>: <a href="#Device_Telma.FEEDDADADEADBEEF">See above (Device/Telma.FEEDDADADEADBEEF)</a></p><p><b>identifier</b>: id: C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00</p><p><b>status</b>: final</p><p><b>code</b>: MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#8410608 &quot;MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS&quot;)</span></p><p><b>subject</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>effective</b>: 2023-02-23 10:24:08+0100</p><p><b>performer</b>: <a href="#Patient_Poul">See above (Patient/Poul)</a></p><p><b>device</b>: <a href="#Device_BPMonitor.C4F312FFFE53F2C9">See above (Device/BPMonitor.C4F312FFFE53F2C9)</a></p><p><b>derivedFrom</b>: </p><ul><li><a href="#Observation_CoincidentTimeStamp.0222">See above (Observation/CoincidentTimeStamp.0222)</a></li><li><a href="#Observation_BloodPressure.Poul.643992">See above (Observation/BloodPressure.Poul.643992)</a></li></ul><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>irregular-pulse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#8410608.2)</span></td><td>Irregular pulse was detected <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+          <valueReference>
+            <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <value value="C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="8410608"/>
+            <display value="MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS"/>
+          </coding>
+          <text value="MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem"/>
+        </code>
+        <subject>
+          <reference value="Patient/Poul"/>
+        </subject>
+        <effectiveDateTime value="2023-02-23T10:24:08+01:00"/>
+        <performer>
+          <reference value="Patient/Poul"/>
+        </performer>
+        <device>
+          <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        </device>
+        <derivedFrom>
+          <reference value="Observation/CoincidentTimeStamp.0222"/>
+        </derivedFrom>
+        <derivedFrom>
+          <reference value="Observation/BloodPressure.Poul.643992"/>
+        </derivedFrom>
+        <component>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"/>
+              <code value="8410608.2"/>
+            </coding>
+            <text value="irregular-pulse"/>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="Y"/>
+            </coding>
+            <text value="Irregular pulse was detected"/>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Observation"/>
+      <ifNoneExist value="identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"/>
+    </request>
+  </entry>
+</Bundle>

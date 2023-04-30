@@ -16,8 +16,8 @@
   fhir:version [ fhir:v "2.2.0"] ; # 
   fhir:name [ fhir:v "DkCoreCprIdentifier"] ; # 
   fhir:title [ fhir:v "Danish Central Person Register (CPR) Identifier"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-25T17:34:53+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-04-30T20:59:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -359,7 +359,7 @@
          fhir:key [ fhir:v "cpr" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Requirement of danish civil registration numbers" ] ;
-         fhir:expression [ fhir:v "value.matches('^(?:(?:31(?:0[13578]|1[02])|(?:30|29)(?:0[13-9]|1[0-2])|(?:0[1-9]|1[0-9]|2[0-8])(?:0[1-9]|1[0-2]))[0-9]{2}[0-9]|290200[4-9]|2902(?:(?!00)[02468][048]|[13579][26])[0-3])[0-9]{3}$')" ] ;
+         fhir:expression [ fhir:v "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))[0-9]{6})$')" ] ;
          fhir:source [
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"^^xsd:anyURI ;
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier>
@@ -494,7 +494,7 @@
          fhir:key [ fhir:v "cpr" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Requirement of danish civil registration numbers" ] ;
-         fhir:expression [ fhir:v "value.matches('^(?:(?:31(?:0[13578]|1[02])|(?:30|29)(?:0[13-9]|1[0-2])|(?:0[1-9]|1[0-9]|2[0-8])(?:0[1-9]|1[0-2]))[0-9]{2}[0-9]|290200[4-9]|2902(?:(?!00)[02468][048]|[13579][26])[0-3])[0-9]{3}$')" ] ;
+         fhir:expression [ fhir:v "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))[0-9]{6})$')" ] ;
          fhir:source [
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"^^xsd:anyURI ;
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier>

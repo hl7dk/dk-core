@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e3fc5d2c-8960-4285-8de8-021438689789-8",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e3fc5d2c-8960-4285-8de8-021438689789-8",
+  "id" : "ada3cf5c-a285-40a1-9269-9536966d895c-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ada3cf5c-a285-40a1-9269-9536966d895c-5",
   "name" : "UnionIPAPatientAndDkCorePatient",
   "title" : "Union of IPA-Patient And Danish Core Patient Profile",
   "status" : "active",
-  "date" : "2023-04-25T17:35:27+00:00",
+  "date" : "2023-04-30T20:59:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -580,10 +580,10 @@
     },
     {
       "path" : "Patient.identifier.value",
-      "short" : "The value that is unique within the system.",
+      "short" : "left: The value that is unique within the system.; right: The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
       "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension]. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
@@ -1531,7 +1531,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The domestic partnership status of a person.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e3fc5d2c-8960-4285-8de8-021438689789-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ada3cf5c-a285-40a1-9269-9536966d895c-8"
       },
       "mapping" : [{
         "identity" : "v2",

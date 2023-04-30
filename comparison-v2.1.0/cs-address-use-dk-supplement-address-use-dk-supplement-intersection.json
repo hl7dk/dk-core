@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "1b46395d-c5d2-4114-8e22-9657d40fb8d9-9",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1b46395d-c5d2-4114-8e22-9657d40fb8d9-9",
+  "id" : "77bdaab1-5c3e-4929-8220-d06455eb50bf-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/77bdaab1-5c3e-4929-8220-d06455eb50bf-9",
   "name" : "IntersectionAddressUseAndAddressUse",
   "title" : "Intersection of DK Address Use And DK Address Use",
   "status" : "draft",
-  "date" : "2023-04-25T17:35:26+00:00",
+  "date" : "2023-04-30T20:59:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,8 +15,6 @@
   }],
   "concept" : [{
     "code" : "home",
-    "display" : "Home",
-    "definition" : "A communication address at a home.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -28,8 +26,6 @@
   },
   {
     "code" : "work",
-    "display" : "Work",
-    "definition" : "An office address. First choice for business related contacts during business hours.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -41,8 +37,6 @@
   },
   {
     "code" : "temp",
-    "display" : "Temporary",
-    "definition" : "A temporary address. The period can provide more detailed information.",
     "designation" : [{
       "language" : "da",
       "use" : {
@@ -54,8 +48,6 @@
   },
   {
     "code" : "old",
-    "display" : "Old / Incorrect",
-    "definition" : "This address is no longer in use (or was never correct, but retained for records).",
     "designation" : [{
       "language" : "da",
       "use" : {

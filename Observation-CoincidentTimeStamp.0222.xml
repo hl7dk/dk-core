@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="CoincidentTimeStamp.0222"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="CoincidentTimeStamp.0222"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;CoincidentTimeStamp.0222&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a></p></div><p><b>Gateway Device</b>: <a href="Device-Telma.FEEDDADADEADBEEF.html">Device/Telma.FEEDDADADEADBEEF</a></p><p><b>status</b>: final</p><p><b>code</b>: MDC_ATTR_TIME_ABS: Uses Absolute time clock <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#67975 &quot;MDC_ATTR_TIME_ABS&quot;)</span></p><p><b>subject</b>: <a href="Patient-Poul.html">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href="Patient-Poul.html">Patient/Poul</a> &quot; HANSEN&quot;</p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href="Device-BPMonitor.C4F312FFFE53F2C9.html">Device/BPMonitor.C4F312FFFE53F2C9</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+    <valueReference>
+      <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="67975"/>
+      <display value="MDC_ATTR_TIME_ABS"/>
+    </coding>
+    <text value="MDC_ATTR_TIME_ABS: Uses Absolute time clock"/>
+  </code>
+  <subject>
+    <reference value="Patient/Poul"/>
+  </subject>
+  <effectiveDateTime value="2023-02-23T10:24:34.467+01:00"/>
+  <performer>
+    <reference value="Patient/Poul"/>
+  </performer>
+  <valueDateTime value="2023-02-23T10:24:25+01:00"/>
+  <device>
+    <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+  </device>
+</Observation>

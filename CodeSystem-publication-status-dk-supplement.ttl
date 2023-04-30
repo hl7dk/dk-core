@@ -11,15 +11,15 @@
   fhir:id [ fhir:v "publication-status-dk-supplement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-draft\">draft</a><a name=\"publication-status-dk-supplement-draft\"> </a></td><td>Draft</td><td>This resource is still under development and is not yet considered to be ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">active</a><a name=\"publication-status-dk-supplement-active\"> </a></td><td>Active</td><td>This resource is ready for normal use.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired\">retired</a><a name=\"publication-status-dk-supplement-retired\"> </a></td><td>Retired</td><td>This resource has been withdrawn or superseded and should no longer be used.</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-unknown\">unknown</a><a name=\"publication-status-dk-supplement-unknown\"> </a></td><td>Unknown</td><td>The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, it's just not known which one.</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td></td><td></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-draft\">draft</a><a name=\"publication-status-dk-supplement-draft\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">active</a><a name=\"publication-status-dk-supplement-active\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired\">retired</a><a name=\"publication-status-dk-supplement-retired\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-unknown\">unknown</a><a name=\"publication-status-dk-supplement-unknown\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td></td><td></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.2.0"] ; # 
   fhir:name [ fhir:v "PublicationStatus"] ; # 
   fhir:title [ fhir:v "DK Publication Status"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-04-25T17:34:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-30T20:59:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -46,8 +46,6 @@
   ] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "draft" ] ;
-     fhir:display [ fhir:v "Draft" ] ;
-     fhir:definition [ fhir:v "This resource is still under development and is not yet considered to be ready for normal use." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "ru" ] ;
        fhir:value [ fhir:v "черновик" ]
@@ -65,8 +63,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "active" ] ;
-     fhir:display [ fhir:v "Active" ] ;
-     fhir:definition [ fhir:v "This resource is ready for normal use." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "ru" ] ;
        fhir:value [ fhir:v "активный" ]
@@ -84,8 +80,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "retired" ] ;
-     fhir:display [ fhir:v "Retired" ] ;
-     fhir:definition [ fhir:v "This resource has been withdrawn or superseded and should no longer be used." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "ru" ] ;
        fhir:value [ fhir:v "удалён" ]
@@ -103,8 +97,6 @@
      ] )
   ] [
      fhir:code [ fhir:v "unknown" ] ;
-     fhir:display [ fhir:v "Unknown" ] ;
-     fhir:definition [ fhir:v "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one." ] ;
      fhir:designation ( [
        fhir:language [ fhir:v "da" ] ;
        fhir:use [

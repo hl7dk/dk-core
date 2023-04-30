@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="consent-state-codes-dk-supplement"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement</code></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-draft">draft</a><a name="consent-state-codes-dk-supplement-draft"> </a></td><td>Pending</td><td>The consent is in development or awaiting use but is not yet intended to be acted upon.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-proposed">proposed</a><a name="consent-state-codes-dk-supplement-proposed"> </a></td><td>Proposed</td><td>The consent has been proposed but not yet agreed to by all parties. The negotiation stage.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-active">active</a><a name="consent-state-codes-dk-supplement-active"> </a></td><td>Active</td><td>The consent is to be followed and enforced.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-rejected">rejected</a><a name="consent-state-codes-dk-supplement-rejected"> </a></td><td>Rejected</td><td>The consent has been rejected by one or more of the parties.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-inactive">inactive</a><a name="consent-state-codes-dk-supplement-inactive"> </a></td><td>Inactive</td><td>The consent is terminated or replaced.</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-entered-in-error">entered-in-error</a><a name="consent-state-codes-dk-supplement-entered-in-error"> </a></td><td>Entered in Error</td><td>The consent was created wrongly (e.g. wrong patient) and should be ignored</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>draft</td><td>Under udarbejdelse</td></tr><tr><td>proposed</td><td>Forslag</td></tr><tr><td>active</td><td>Aktiv</td></tr><tr><td>rejected</td><td>Afvist</td></tr><tr><td>inactive</td><td>Inaktiv</td></tr><tr><td>entered-in-error</td><td>Fejlindtastning</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-draft">draft</a><a name="consent-state-codes-dk-supplement-draft"> </a></td><td>Under udarbejdelse</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-proposed">proposed</a><a name="consent-state-codes-dk-supplement-proposed"> </a></td><td>Forslag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-active">active</a><a name="consent-state-codes-dk-supplement-active"> </a></td><td>Aktiv</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-rejected">rejected</a><a name="consent-state-codes-dk-supplement-rejected"> </a></td><td>Afvist</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-inactive">inactive</a><a name="consent-state-codes-dk-supplement-inactive"> </a></td><td>Inaktiv</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html#consent-state-codes-entered-in-error">entered-in-error</a><a name="consent-state-codes-dk-supplement-entered-in-error"> </a></td><td>Fejlindtastning</td></tr></table></div>
   </text>
   <url value="http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement"/>
   <version value="2.2.0"/>
   <name value="ConsentState"/>
   <title value="DK Consent State"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-04-25T17:34:53+00:00"/>
+  <date value="2023-04-30T20:59:20+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -36,8 +36,6 @@
   <supplements value="http://hl7.org/fhir/consent-state-codes"/>
   <concept>
     <code value="draft"/>
-    <display value="Pending"/>
-    <definition value="The consent is in development or awaiting use but is not yet intended to be acted upon."/>
     <designation>
       <language value="da"/>
       <use>
@@ -49,8 +47,6 @@
   </concept>
   <concept>
     <code value="proposed"/>
-    <display value="Proposed"/>
-    <definition value="The consent has been proposed but not yet agreed to by all parties. The negotiation stage."/>
     <designation>
       <language value="da"/>
       <use>
@@ -62,8 +58,6 @@
   </concept>
   <concept>
     <code value="active"/>
-    <display value="Active"/>
-    <definition value="The consent is to be followed and enforced."/>
     <designation>
       <language value="da"/>
       <use>
@@ -75,8 +69,6 @@
   </concept>
   <concept>
     <code value="rejected"/>
-    <display value="Rejected"/>
-    <definition value="The consent has been rejected by one or more of the parties."/>
     <designation>
       <language value="da"/>
       <use>
@@ -88,8 +80,6 @@
   </concept>
   <concept>
     <code value="inactive"/>
-    <display value="Inactive"/>
-    <definition value="The consent is terminated or replaced."/>
     <designation>
       <language value="da"/>
       <use>
@@ -101,8 +91,6 @@
   </concept>
   <concept>
     <code value="entered-in-error"/>
-    <display value="Entered in Error"/>
-    <definition value="The consent was created wrongly (e.g. wrong patient) and should be ignored"/>
     <designation>
       <language value="da"/>
       <use>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationOxySatVitalSigns"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ObservationOxySatVitalSigns"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ObservationOxySatVitalSigns&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#2708-6)</span></p><p><b>subject</b>: <a href="Patient-john.html">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href="Practitioner-AbrahamLaege.html">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 97 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p><p><b>derivedFrom</b>: <a name="ObservationOxySat"> </a></p><blockquote><p/><p><a name="ObservationOxySat"> </a></p><p><b>status</b>: final</p><p><b>code</b>: Iltmætning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#NPU03011)</span></p><p><b>subject</b>: <a href="Patient-john.html">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href="Practitioner-AbrahamLaege.html">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 0.97 {1}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {1} = '{1}')</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #ObservationOxySat</b><a name="ObservationOxySat"> </a></p><p><b>status</b>: final</p><p><b>code</b>: Iltmætning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#NPU03011)</span></p><p><b>subject</b>: <a href="Patient-john.html">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href="Practitioner-AbrahamLaege.html">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 0.97 {1}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {1} = '{1}')</span></p></blockquote></div>
+  </text>
+  <contained>
+    <Observation>
+      <id value="ObservationOxySat"/>
+      <meta>
+        <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+      </meta>
+      <status value="final"/>
+      <code>
+        <coding>
+          <system value="urn:oid:1.2.208.176.2.1"/>
+          <code value="NPU03011"/>
+          <display value="Iltmætning"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/john"/>
+      </subject>
+      <performer>
+        <reference value="Practitioner/AbrahamLaege"/>
+      </performer>
+      <valueQuantity>
+        <value value="0.97"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{1}"/>
+      </valueQuantity>
+    </Observation>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2708-6"/>
+      <display value="Oxygen saturation in Arterial blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/john"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/AbrahamLaege"/>
+  </performer>
+  <valueQuantity>
+    <value value="97"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="#ObservationOxySat"/>
+  </derivedFrom>
+</Observation>
