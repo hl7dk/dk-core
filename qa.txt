@@ -1,9 +1,9 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 5, warn = 18, info = 12
-IG Publisher Version: 1.3.6
-Generated Sun Apr 30 21:28:05 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
+err = 1, warn = 17, info = 12
+IG Publisher Version: 1.3.8
+Generated Fri May 05 00:07:24 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 7 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 1 / 3 / 61
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
@@ -28,7 +28,7 @@ Generated Sun Apr 30 21:28:05 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9 : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604 : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222 : 0 / 0 / 6
@@ -70,12 +70,12 @@ Generated Sun Apr 30 21:28:05 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-TechniqesSCTCodes : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-TechniqesSCTCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/BPMonitor.C4F312FFFE53F2C9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -90,7 +90,7 @@ INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observat
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[0].code.coding[2]: Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[1].code.coding[2]: Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Unknown Code 8410608 in urn:iso:std:iso:11073:10101; The provided code urn:iso:std:iso:11073:10101#8410608 is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'
+ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Unknown Code 8410608 in urn:iso:std:iso:11073:10101; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
 == fsh-generated/resources/CodeSystem-address-type-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-address-use-dk-supplement.json ==
@@ -121,7 +121,6 @@ WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.version[3].value: value shoul
 == fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF.json ==
 == fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
-WARNING: /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core: Unknown Parameters: []
 == fsh-generated/resources/NamingSystem-cpr.json ==
 == fsh-generated/resources/NamingSystem-sor.json ==
 == fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json ==
@@ -174,13 +173,9 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet.json ==
 == fsh-generated/resources/ValueSet-TechniqesSCTCodes.json ==
-ERROR: ValueSet/TechniqesSCTCodes: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 == fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns.json ==
-ERROR: ValueSet/dk-core-LoincVitalSigns: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
 == fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==
 WARNING: ValueSet/dk-marital-status: ValueSet: The ShareableValueSet profile recommends that the name element is populated, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-sor-organization-type.json ==
-ERROR: ValueSet/sor-organization-type: ValueSet.compose[0].include[0].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
-ERROR: ValueSet/sor-organization-type: ValueSet.compose[0].include[1].concept[1]: ConversionFactory received null input. Conversion advisor set to failFastOnNullInput.
