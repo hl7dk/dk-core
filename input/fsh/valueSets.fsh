@@ -21,7 +21,7 @@ Description: "Subdivision codes (Regional codes) used in Denmark"
 * ^experimental = false
 * include codes from system DKCoreRegionalSubdivisionCodes
 
-ValueSet: LoincVitalSigns
+/* ValueSet: LoincVitalSigns
 Id: dk-core-LoincVitalSigns
 Title: "DK Core Vital Signs"
 Description: "LOINC codes describing vital signs."
@@ -31,7 +31,7 @@ Description: "LOINC codes describing vital signs."
 * $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * $LOINC#8310-5 "Body temperature"
 * $LOINC#8480-6 "Systolic blood pressure"
-* $LOINC#8462-4 "Diastolic blood pressure"
+* $LOINC#8462-4 "Diastolic blood pressure" */
 
 
 ValueSet: TechniqesSCTCodes
