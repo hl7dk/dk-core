@@ -23,3 +23,4 @@ Alias: $observation-vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsi
 Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
 Alias: $observation-heartrate = http://hl7.org/fhir/StructureDefinition/heartrate
 Alias: $observation-bp = http://hl7.org/fhir/StructureDefinition/bp
+Alias: $LOINC-vitalsigns = http://hl7.org/fhir/ValueSet/observation-vitalsignresult

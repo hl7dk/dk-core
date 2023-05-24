@@ -1,16 +1,16 @@
-/* Profile: DkCoreObservationVitalSigns
+Profile: DkCoreBasicParameter
 Parent: dk-core-observation
-Id: dk-core-observation-vitalsigns
-Title: "Danish Core Observation Profile for Vital Signs"
-Description: "HL7 Denmark core profile for observations of vital signs"
+Id: dk-core-basic-parameter
+Title: "Danish Core Profile for Basic Parameters"
+Description: "HL7 Denmark core profile for basic parameters, which is a profiling of DkCoreObservation."
 * category 1..1
 * category = #vital-signs
-* code.coding[LOINC] 
-  * code from http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns (preferred)
- */
+* code.coding[LOINC] 1..
+* code.coding[LOINC] from $LOINC-vitalsigns
+
 
 /* Instance: ObservationBloodPressureNPU
-InstanceOf: DkCoreObservationVitalSignsNPU
+InstanceOf: DkCoreBasicParameter
 Title: "John's blood pressure measurement"
 Description: "John, blood pressure measurement, NPU-code"
 Usage: #example 
@@ -20,7 +20,7 @@ Usage: #example
 
 
 /* Instance: ObservationHeightVitalSigns
-InstanceOf: DkCoreObservationVitalSigns
+InstanceOf: DkCoreBasicParameter
 Title: "John's Respiratory rate measurement, Vital Signs"
 * category = #vital-signs
 * status = #final
