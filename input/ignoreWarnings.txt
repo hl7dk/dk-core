@@ -6,6 +6,9 @@ WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[2].resource/*Device/BPMon
 WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[2].resource/*Device/BPMonitor.C4F312FFFE53F2C9*/.version[3].value: value should not start or finish with whitespace%
 WARNING: Device/WeightScale.606405FFFECFC604: Device.modelNumber: value should not start or finish with whitespace%
 WARNING: Device/WeightScale.606405FFFECFC604: Device.manufacturer: value should not start or finish with whitespace%
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.manufacturer: value should not start or finish with whitespace%
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.modelNumber: value should not start or finish with whitespace%
+WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.version[3].value: value should not start or finish with whitespace%
 
 # This is the "Conditional Create"-identifier (see http://hl7.org/fhir/uv/phd/ObservationIdentifier.html) used to create a unique hash value of the observation to prevent duplicates - and therefore DOES carry a meaning without a system
 #WARNING: Observation/ObservationHeightVitalSigns: Observation.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided

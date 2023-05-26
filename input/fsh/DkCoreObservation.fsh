@@ -230,6 +230,7 @@ Alias: $observation-gatewayDevice = http://hl7.org/fhir/StructureDefinition/obse
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
+Alias: $device-specification-category = http://hl7.org/fhir/device-specification-category
 
 
 Instance: Poul
@@ -251,7 +252,6 @@ Description: """
   of his home, and uses for daily monitoring due to his CHF condition.
 """
 Usage: #example
-* meta.profile = $PhdDevice
 * identifier[+]
   * system = $EUI64
   * type.coding[0] = $ContinuaDeviceIdentifiers#SYSID "IEEE 11073 System Identifier"
@@ -263,11 +263,15 @@ Usage: #example
 * manufacturer = "A&D Medical "
 * modelNumber = "UC-352BLE "
 * serialNumber = "5180400664"
-* type
+* type[+]
   * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
   * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
-* specialization
-  * systemType
+* type[+]
+  * coding = $IEEEx73#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
+  * text = "MDC_DEV_SPEC_PROFILE_SCALE: Weighing scale"
+* conformsTo[+]
+  * category = $device-specification-category#communication
+  * specification
     * coding = $IEEEx73#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
     * text = "MDC_DEV_SPEC_PROFILE_SCALE: Weighing scale"
   * version = "1"
@@ -290,31 +294,31 @@ Usage: #example
 * property[+]
   * type.coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
   * type.text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
-  * valueCode[+]
+  * valueCodeableConcept
     * coding = $ContinuaPHD#32783
     * text = "BluetoothLE: Weighing scale"
 * property[+]
   * type.coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
   * type.text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
-  * valueCode
+  * valueCodeableConcept
     * coding = $IEEEx73#532224 "MDC_TIME_SYNC_NONE"
     * text = "MDC_TIME_SYNC_NONE: No time synchronization"
 * property[+]
   * type.coding = $ASN1ToHL7#532354.0
   * type.text = "regulation-status"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#N
     * text = "Device is regulated"
 * property[+]
   * type.coding = $ASN1ToHL7#68219.0
   * type.text = "mds-time-capab-real-time-clock"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#Y
     * text = "Real time clock is supported"
 * property[+]
   * type.coding = $ASN1ToHL7#68219.1
   * type.text = "mds-time-capab-set-clock"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#Y
     * text = "Setting the real time clock is supported"
 
@@ -359,7 +363,6 @@ Usage: #example
 Instance: Telma.FEEDDADADEADBEEF
 InstanceOf: Device
 Usage: #example
-* meta.profile = $PhgDevice
 * identifier[+]
   * system = $EUI64
   * type.coding = $ContinuaDeviceIdentifiers#SYSID "IEEE 11073 System Identifier"
@@ -393,34 +396,42 @@ Usage: #example
   * type
     * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
     * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
-  * valueCode[+]
+  * valueCodeableConcept
     * coding = $ContinuaPHD#32783
     * text = "BluetoothLE: Weighing scale"
-  * valueCode[+]
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
+  * valueCodeableConcept
     * coding = $ContinuaPHD#32775
     * text = "BluetoothLE: Blood pressure monitor"
-  * valueCode[+]
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
+  * valueCodeableConcept
     * coding = $ContinuaPHD#32772
     * text = "BluetoothLE: Pulse oximeter"
 * property[+]
   * type
     * coding = $IEEEx73#532355 "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST"
     * text = "MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&Fitness interfaces list"
-  * valueCode
+  * valueCodeableConcept
     * coding = $ContinuaHFS#7 "observation-upload-fhir"
     * text = "observation-upload-fhir: FHIR resource upload"
 * property[+]
   * type
     * coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
     * text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
-  * valueCode
+  * valueCodeableConcept
     * coding = $IEEEx73#532226 "MDC_TIME_SYNC_NTPV4"
     * text = "MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization"
 * property[+]
   * type
     * coding = $ASN1ToHL7#532354.0
     * text = "regulation-status"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#Y
     * text = "Device is NOT regulated"
 
@@ -428,7 +439,6 @@ Usage: #example
 Instance: BPMonitor.C4F312FFFE53F2C9
 InstanceOf: Device
 Usage: #example
-* meta.profile = $PhdDevice
 * identifier[+]
   * system = $EUI64
   * type.coding = $ContinuaDeviceIdentifiers#SYSID "Ieee 11073 System Identifier"
@@ -440,11 +450,15 @@ Usage: #example
 * manufacturer = "A&D Medical "
 * modelNumber = "UA-651BLE "
 * serialNumber = "5181000124"
-* type
+* type[+]
   * coding = $IEEEx73#65573 "MDC_MOC_VMS_MDS_SIMP"
   * text = "MDC_MOC_VMS_MDS_SIMP: Personal health device"
-* specialization
-  * systemType
+* type[+]
+  * coding = $IEEEx73#528391 "MDC_DEV_SPEC_PROFILE_BP"
+  * text = "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"
+* conformsTo[+]
+  * category = $device-specification-category#communication
+  * specification
     * coding = $IEEEx73#528391 "MDC_DEV_SPEC_PROFILE_BP"
     * text = "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter"
   * version = "1"
@@ -471,35 +485,35 @@ Usage: #example
   * type
     * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
     * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
-  * valueCode
+  * valueCodeableConcept
     * coding = $ContinuaPHD#32775
     * text = "BluetoothLE: Blood pressure monitor"
 * property[+]
   * type
     * coding = $IEEEx73#68220 "MDC_TIME_SYNC_PROTOCOL"
     * text = "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol"
-  * valueCode
+  * valueCodeableConcept
     * coding = $IEEEx73#532224 "MDC_TIME_SYNC_NONE"
     * text = "MDC_TIME_SYNC_NONE: No time synchronization"
 * property[+]
   * type
     * coding = $ASN1ToHL7#532354.0
     * text = "regulation-status"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#N
     * text = "Device is regulated"
 * property[+]
   * type
     * coding = $ASN1ToHL7#68219.0
     * text = "mds-time-capab-real-time-clock"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#Y
     * text = "Real time clock is supported"
 * property[+]
   * type
     * coding = $ASN1ToHL7#68219.1
     * text = "mds-time-capab-set-clock"
-  * valueCode
+  * valueCodeableConcept
     * coding = $v2-0136#Y
     * text = "Setting the real time clock is supported"
 
