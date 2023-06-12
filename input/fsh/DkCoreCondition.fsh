@@ -39,9 +39,19 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
 * subject only Reference(DkCorePatient)
-* recorder only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
-* asserter only Reference(DkCorePractitioner or PractitionerRole)
-
+//* recorder only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
+//* asserter only Reference(DkCorePractitioner or PractitionerRole)
+* participant ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "function.coding.code"
+  * ^slicing.rules = #open
+  * ^slicing.ordered = false
+* participant contains
+    recorder 0..1 and
+    asserter 0..1
+* participant[recorder].function.coding.code = #enterer
+* participant[recorder].actor only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
+* participant[asserter].function.coding.code = #performer
+* participant[recorder].actor only Reference(DkCorePractitioner or PractitionerRole)
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
 Title: "John tryksår"
@@ -76,8 +86,10 @@ Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx ti
 Usage: #example
 * code = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
 * subject.reference = "Patient/john"
-* asserter.reference = "Practitioner/AbrahamLaege"
-* recorder.reference = "Practitioner/AbrahamLaege"
+* participant[asserter].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#performer
+* participant[asserter].actor = Reference(Practitioner/AbrahamLaege)
+* participant[recorder].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer
+* participant[recorder].actor = Reference(Practitioner/AbrahamLaege)
 * category = $condition-category#encounter-diagnosis
 * onsetDateTime = "2020-02-20"
 * recordedDate = "2020-03-15"
@@ -91,8 +103,10 @@ Description: "Johns mistanke om modermærkekræft i huden, kan fx bruges som hen
 Usage: #example
 * code = urn:oid:1.2.208.176.2.4.12#DC43 "Modermærkekræft i huden"
 * subject.reference = "Patient/john"
-* asserter.reference = "Practitioner/AbrahamLaege"
-* recorder.reference = "Practitioner/AbrahamLaege"
+* participant[asserter].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#performer
+* participant[asserter].actor = Reference(Practitioner/AbrahamLaege)
+* participant[recorder].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer
+* participant[recorder].actor = Reference(Practitioner/AbrahamLaege)
 * category = $condition-category#encounter-diagnosis
 * recordedDate = "2021-05-01"
 * clinicalStatus = $condition-clinical#active
@@ -105,7 +119,8 @@ Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt m
 Usage: #example
 * code = $sct#441509002 "Cardiac pacemaker in situ"
 * subject.reference = "Patient/john"
-* recorder.reference = "Practitioner/AbrahamLaege"
+* participant[recorder].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer
+* participant[recorder].actor = Reference(Practitioner/AbrahamLaege)
 * category = $condition-category#problem-list-item
 * recordedDate = "2021-05-01"
 * clinicalStatus = $condition-clinical#active
