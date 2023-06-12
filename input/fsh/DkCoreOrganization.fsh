@@ -96,8 +96,8 @@ Usage: #example
 * identifier[+].system = "urn:oid:1.2.208.176.1.4"
 * identifier[=].value = "77410"
 * name = "Lægerne Hasseris Bymidte"
-* telecom.value = "98182233"
-* telecom.system = #phone
+* contact.telecom.value = "98182233"
+* contact.telecom.system = #phone
 * type = $sct#394761003
 
 Instance: b08997bb-4476-4dd0-84dd-2e297f809364

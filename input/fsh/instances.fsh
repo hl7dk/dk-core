@@ -47,8 +47,8 @@ Title: "Henvisning vedr. modermærkekræft"
 Description: "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft"
 Usage: #example
 * requester = Reference(Organization/LaegerneHasserisBymidte)
-* reasonCode.text = "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft"
-* reasonReference = Reference(Condition/JohnMelanoma)
+* reason.concept.text = "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft"
+* reason.reference = Reference(Condition/JohnMelanoma)
 * subject = Reference(Patient/john)
 * authoredOn = "2021-05-01"
 * status = #active
