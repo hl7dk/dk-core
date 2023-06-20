@@ -1,21 +1,17 @@
 Profile: DkCoreBasicParameter
 Parent: dk-core-observation
 Id: dk-core-basic-parameter
-Title: "Danish Core Profile for Basic Parameters"
+Title: "Danish Core Basic Parameters"
 Description: "HL7 Denmark core profile for basic parameters, which is a profiling of DkCoreObservation."
 * category 1..1
 * category = #vital-signs
 * code.coding[LOINC] 1..
-* code.coding[LOINC] from $LOINC-vitalsigns
-
-
-/* Instance: ObservationBloodPressureNPU
-InstanceOf: DkCoreBasicParameter
-Title: "John's blood pressure measurement"
-Description: "John, blood pressure measurement, NPU-code"
-Usage: #example 
-[Add content here]
-*/
+* code.coding[LOINC] from LoincBasicParameter (extensible)
+* code.coding[SNOMEDCT] from SCTBasicParameter (extensible)
+* code.coding[NPU] from NPUBasicParameter (extensible)
+* code.coding[IEEE] from IEEEBasicParameter (extensible)
+* valueQuantity.system from UCUMBasicUnits (extensible)
+* component.valueQuantity.system from UCUMBasicUnits (extensible)
 
 
 
