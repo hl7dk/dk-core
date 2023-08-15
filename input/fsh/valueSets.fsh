@@ -81,68 +81,126 @@ Description: "SNOMED CT codes for Basic parameters usable in Denmark"
 ValueSet: IEEEBasicParameter
 Id: dk-core-IEEEBasicParameter
 Title: "Dk Core IEEE Basic Parameter"
-Description: "IEEE codes for Basic parameters usable in Denmark"
+Description: "IEEE MDC codes for Basic parameters usable in Denmark"
 * ^experimental = false
+* ^copyright = "IEEE"
+* ^purpose = """
+### Purpose of this ValueSet
+This ValueSet comprises the most common IEEE MDC codes used to represent observations
+that are considered "basic" by this profile. This ValueSet is **not** meant to be exhaustive!
+
+The origin of an MDC code is usually the equipment used to perform the measurement,
+and often the code carries supplemental information about how (or where on the body)
+the observation was performed.
+"""
 * $IEEEx73#151562 "MDC_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method not specified."
 * $IEEEx73#151570 "MDC_AWAY_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: direct airway flow measurement."
 * $IEEEx73#151578 "MDC_TTHOR_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: transthoracic impedance variations."
+* $IEEEx73#151594 "MDC_CO2_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: carbon dioxide measurement."
+* $IEEEx73#151602 "MDC_PRESS_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)."
 * $IEEEx73#151650 "MDC_ACOUSTIC_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: acoustic."
 * $IEEEx73#151658 "MDC_PULS_OXIM_PLETH_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of breathing; method: SpO2 plethysmography."
 * $IEEEx73#8410992 "MDC_SABTE_RESP_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]"
 * $IEEEx73#149514 "MDC_PULS_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of blood pulse in an artery."
+* $IEEEx73#149522 "MDC_BLD_PULS_RATE_INV"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of blood pulse in an artery, measured invasively."
 * $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of blood pulse in an artery, measured non-invasively."
 * $IEEEx73#149530 "MDC_PULS_OXIM_PULS_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of blood pulse as obtained by pulse oximetry."
 * $IEEEx73#147842 "MDC_ECG_HEART_RATE" 
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rate of cardiac beats (ECG)."
 * $IEEEx73#8410590 "MDC_ECG_HEART_RATE_INSTANT"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Instantaneous heart rate."
 * $IEEEx73#149554 "MDC_TTHOR_HEART_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Heart rate obtained from the variation of transthoracic impedance."
 * $IEEEx73#149562 "MDC_PALPATION_HEART_RATE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Heart rate obtained from an artery that is close to the surface and a pulse can be felt."
 * $IEEEx73#8454258 "MDC_HF_HR"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]"
 * $IEEEx73#150324 "MDC_SAT_O2_ART"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Arterial oxygen saturation. [no method]"
 * $IEEEx73#150456 "MDC_PULS_OXIM_SAT_O2"
-* $IEEEx73#150588 "MDC_MODALITY_SPOT "
-* $IEEEx73#150584 "MDC_MODALITY_SLOW"
-* $IEEEx73#150580 "MDC_MODALITY_FAST"
-* $IEEEx73#460500 "MDC_UPEXT_FINGER"
-* $IEEEx73#460501 "MDC_UPEXT_FINGER_L" 
-* $IEEEx73#460502 "MDC_UPEXT_FINGER_R"
-* $IEEEx73#460536 "MDC_UPEXT_WRIST"
-* $IEEEx73#460537 "MDC_UPEXT_WRIST_L"
-* $IEEEx73#460538 "MDC_UPEXT_WRIST_R"
-* $IEEEx73#460272 "MDC_HEAD_EAR"
-* $IEEEx73#460041 "MDC_HEAD_EAR_L"
-* $IEEEx73#460042 "MDC_HEAD_EAR_R"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Oxygen saturation. [using pulse oximetry]"
 * $IEEEx73#150364 "MDC_TEMP_BODY"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Body temperature. [unspecified]"
+* $IEEEx73#150368 "MDC_TEMP_CORE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Core temperature."
+* $IEEEx73#150388 "MDC_TEMP_SKIN"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Skin temperature."
 * $IEEEx73#150392 "MDC_TEMP_TYMP"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Tympanic temperature."
 * $IEEEx73#188420 "MDC_TEMP_RECT" 
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Rectal temperature."
 * $IEEEx73#188424 "MDC_TEMP_ORAL"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Oral temperature."
 * $IEEEx73#188428 "MDC_TEMP_EAR"
-* $IEEEx73#188432 "MDC_TEMP_FINGER"
-* $IEEEx73#188448 "MDC_TEMP_TOE"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Ear temperature."
 * $IEEEx73#188452 "MDC_TEMP_AXILLA" 
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Axillary (armpit) temperature."
 * $IEEEx73#188456 "MDC_TEMP_GIT"
-* $IEEEx73#460292 "MDC_HEAD_MOUTH"
-* $IEEEx73#460492 "MDC_UPEXT_AXILLA"
-* $IEEEx73#460420 "MDC_TRUNK_BUTTOCK"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Gastro-intestinal tract temperature."
 * $IEEEx73#188740 "MDC_LEN_BODY_ACTUAL"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "The actual height of the patient."
 * $IEEEx73#153856 "MDC_CIRCUM_HEAD"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Circumference of the head."
 * $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "The measurement of the mass of patient."
 * $IEEEx73#188752 "MDC_RATIO_MASS_BODY_LEN_SQ"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "The individual's body weight, in kilograms, divided by the square of height, in meters."
 * $IEEEx73#150020 "MDC_PRESS_BLD_NONINV" 
-* $IEEEx73#460336 "MDC_LOEXT_ANKLE"
-* $IEEEx73#460337 "MDC_LOEXT_ANKLE_L"
-* $IEEEx73#460338 "MDC_LOEXT_ANKLE_R"
-* $IEEEx73#460356 "MDC_LOEXT_LEG"
-* $IEEEx73#460357 "MDC_LOEXT_LEG_L"
-* $IEEEx73#460358 "MDC_LOEXT_LEG_R"
-* $IEEEx73#460364 "MDC_LOEXT_THIGH" 
-* $IEEEx73#460365 "MDC_LOEXT_THIGH_L" 
-* $IEEEx73#460366 "MDC_LOEXT_THIGH_R" 
-* $IEEEx73#460532 "MDC_UPEXT_ARM_UPPER"
-* $IEEEx73#460533 "MDC_UPEXT_ARM_UPPER_L"
-* $IEEEx73#460534 "MDC_UPEXT_ARM_UPPER_R"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Pressure of the blood, obtained noninvasively."
 * $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Pressure of the blood, obtained noninvasively, at the systolic phase."
 * $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Pressure of the blood, obtained noninvasively, at the diastolic phase."
 * $IEEEx73#150023 "MDC_PRESS_BLD_NONINV_MEAN"
+  * ^designation.use = $sct#900000000000003001
+  * ^designation.value = "Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle."
 
 ValueSet: NPUBasicParameter
 Id: dk-core-NPUBasicParameter
