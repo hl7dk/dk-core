@@ -15,9 +15,11 @@ Description: "HL7 Denmark core profile for basic parameters, which is a profilin
 
 
 
-/* Instance: ObservationHeightVitalSigns
+Instance: ObservationRespiratoryBasicParameter
 InstanceOf: DkCoreBasicParameter
-Title: "John's Respiratory rate measurement, Vital Signs"
+Title: "John's Respiratory rate measurement (Basic parameter)"
+Description: "A simple basic-parameter observation of a hyperventilating patient"
+Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
@@ -26,5 +28,40 @@ Title: "John's Respiratory rate measurement, Vital Signs"
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "Breaths / minute"
 * subject = Reference(john)
-* performer = Reference(AbrahamLaege) */
+* performer = Reference(AbrahamLaege)
 
+Instance: ObservationOxySatBasicParameterOrg
+InstanceOf: DkCoreBasicParameter
+Title: "John's oxygen saturation measurement (Basic parameter)"
+Usage: #inline
+* category = $observation-category#vital-signs
+* status = #final
+* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* code.coding[IEEE] = $IEEEx73#150456 "MDC_PULS_OXIM_SAT_O2"
+* valueQuantity.value = 97.0
+* valueQuantity.code = #%
+* valueQuantity.system = $ucum
+* valueQuantity.unit = "%"
+* subject = Reference(john)
+* performer = Reference(AbrahamLaege)
+
+Instance: ObservationOxySatBasicParameter
+InstanceOf: DkCoreBasicParameter
+Title: "John's oxygen saturation measurement (Basic parameter)"
+Description: """
+This example suggests a way to handle the oxygen saturation case, where the original measurement
+was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,
+which requires the value to be unitless.
+"""
+Usage: #example
+* category = $observation-category#vital-signs
+* status = #final
+* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* code.coding[NPU] = $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
+* valueQuantity.value = 0.97
+* valueQuantity.code = #1
+* valueQuantity.system = $ucum
+* subject = Reference(john)
+* performer = Reference(AbrahamLaege)
+* contained[0] = ObservationOxySatBasicParameterOrg
+* derivedFrom = Reference(ObservationOxySatBasicParameterOrg)

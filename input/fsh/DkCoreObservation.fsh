@@ -161,21 +161,6 @@ Description: "Elses smerte målt med VRS"
 * status = #final
 * effectiveDateTime = 2020-06-01
 
-
-Instance: ObservationRespiratoryVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's Respiratory rate measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
-* valueQuantity.value = 50
-* valueQuantity.code = #{Breaths}/min
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "Breaths / minute"
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-
 Instance: ObservationOxySat
 InstanceOf: DkCoreObservation
 Title: "John's oxygen saturation measurement"
@@ -183,26 +168,10 @@ Usage: #inline
 * status = #final
 * code.coding = $NPU#NPU03011 "Iltmætning"
 * valueQuantity.value = 0.97
-* valueQuantity.code = #{1}
+* valueQuantity.code = #1
 * valueQuantity.system = $ucum
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
-
-Instance: ObservationOxySatVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's oxygen saturation measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* valueQuantity.value = 97.0
-* valueQuantity.code = #%
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "%"
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-* contained[0] = ObservationOxySat
-* derivedFrom = Reference(ObservationOxySat)
 
 
 
