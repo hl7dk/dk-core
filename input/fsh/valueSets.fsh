@@ -207,8 +207,8 @@ Id: dk-core-NPUBasicParameter
 Title: "Dk Core NPU Basic Parameter"
 Description: "NPU codes for Basic parameters usable in Denmark"
 * ^experimental = false
-* $NPU#NPU03011 "Hb(Fe; O<sub>2</sub>-bind.;aB)—Oxygen(O<sub>2</sub>); sat. = ?"
-* $NPU#NPU27280 "Hb(Fe; O<sub>2</sub>-bind.;aB)—Oxygen(O<sub>2</sub>); sat.(Pulse oximetry) = ?"
+* $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
+* $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
 * $NPU#NPU04034 "Pt(spec.)—Blood; temp. = ? °C"
 * $NPU#NPU08676 "Pt—Body; temp. = ? °C"
 * $NPU#NPU58033 "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
