@@ -102,7 +102,7 @@ Description: "HL7 Denmark core profile for observations"
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
 Severity: #error
-Expression: "Observation.valueQuantity.value.exists() implies Observation.valueQuantity.unit.exists() or Observation.valueQuantity.code.exists()"
+Expression: "Observation.value.ofType(Quantity).exists() implies Observation.value.ofType(Quantity).unit.exists() or Observation.value.ofType(Quantity).code.exists()"
 
 
 
@@ -166,7 +166,7 @@ Instance: ObservationRespiratoryVitalSigns
 InstanceOf: DkCoreObservation
 Title: "John's Respiratory rate measurement, Vital Signs"
 Usage: #example
-* category = #vital-signs
+* category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
 * valueQuantity.value = 50
@@ -192,7 +192,7 @@ Instance: ObservationOxySatVitalSigns
 InstanceOf: DkCoreObservation
 Title: "John's oxygen saturation measurement, Vital Signs"
 Usage: #example
-* category = #vital-signs
+* category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * valueQuantity.value = 97.0
