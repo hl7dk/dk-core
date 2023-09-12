@@ -95,9 +95,8 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding ^slicing.rules = #open
 * method.coding contains
    SCTCode 0..1
-* method.coding[SCTCode] from TechniqesSCTCodes (required)
+* method.coding[SCTCode] from TechniqesSCTCodes (example)
 * method.coding[SCTCode].system = $sct
-
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
@@ -146,6 +145,17 @@ Title: "The device that performed the observation"
 * deviceName.name = "Blood Pressure Device"
 * deviceName.type = #user-friendly-name
 * serialNumber = "74E8FFFEFF051C00.001C05FFE874" */
+
+Instance: ElseUrinStix
+InstanceOf: DkCoreObservation
+Usage: #example
+* status = #final
+* code.coding[0] = $NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* subject = Reference(else)
+* effectiveDateTime = "2023-09-12T17:45:00.000Z"
+* valueString = "Påviselige leukocytter"
+* method = $sct#272391002 "Measurement technique (qualifier value)"
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
