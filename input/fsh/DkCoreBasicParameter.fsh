@@ -1,4 +1,4 @@
-Profile: DkCoreBasicParameter
+Profile: DkCoreBasicObservation
 Parent: dk-core-observation
 Id: dk-core-basic-observation
 Title: "Danish Core Basic Observation Profile"
@@ -6,19 +6,19 @@ Description: "HL7 Denmark core profile for basic observations, which is a profil
 * category 1..1
 * category = $observation-category#vital-signs
 * code.coding[LOINC] 1..
-* code.coding[LOINC] from LoincBasicParameter (extensible)
-* code.coding[SNOMEDCT] from SCTBasicParameter (extensible)
-* code.coding[NPU] from NPUBasicParameter (extensible)
-* code.coding[IEEE] from IEEEBasicParameter (extensible)
+* code.coding[LOINC] from LoincBasicObservation (extensible)
+* code.coding[SNOMEDCT] from SCTBasicObservation (extensible)
+* code.coding[NPU] from NPUBasicObservation (extensible)
+* code.coding[IEEE] from IEEEBasicObservation (extensible)
 * valueQuantity.system from UCUMBasicUnits (extensible)
 * component.valueQuantity.system from UCUMBasicUnits (extensible)
 
 
 
-Instance: ObservationRespiratoryBasicParameter
-InstanceOf: DkCoreBasicParameter
-Title: "John's Respiratory rate measurement (Basic parameter)"
-Description: "A simple basic-parameter observation of a hyperventilating patient"
+Instance: ObservationRespiratoryBasicObservation
+InstanceOf: DkCoreBasicObservation
+Title: "John's Respiratory rate measurement (Basic observation)"
+Description: "A simple basic observation of a hyperventilating patient"
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
@@ -30,10 +30,10 @@ Usage: #example
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
-Instance: ObservationOxySatBasicParameterOrg
-InstanceOf: DkCoreBasicParameter
-Title: "John's oxygen saturation measurement (Basic parameter)"
-Usage: #inline
+Instance: ObservationOxySatBasicObservationOrg
+InstanceOf: DkCoreBasicObservation
+Title: "John's oxygen saturation measurement (Basic observation)"
+Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
@@ -45,9 +45,9 @@ Usage: #inline
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
-Instance: ObservationOxySatBasicParameter
-InstanceOf: DkCoreBasicParameter
-Title: "John's oxygen saturation measurement (Basic parameter)"
+Instance: ObservationOxySatBasicObservation
+InstanceOf: DkCoreBasicObservation
+Title: "John's oxygen saturation measurement (Basic observation)"
 Description: """
 This example suggests a way to handle the oxygen saturation case, where the original measurement
 was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,
@@ -89,14 +89,14 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[SNOMEDCT] = $sct#75367002
+* code.coding[0] = $sct#75367002
 * code.coding[LOINC] = $LOINC#85354-9
 * subject = Reference(else)
 * component[0].code.coding[LOINC] = $LOINC#8480-6
-* component[=].code.coding[SNOMEDCT] = $sct#407554009
+* component[=].code.coding[+] = $sct#407554009
 * component[=].valueQuantity = 128 'mm[Hg]' "mmHg"
 * component[+].code.coding[LOINC] = $LOINC#8462-4
-* component[=].code.coding[SNOMEDCT] = $sct#407555005
+* component[=].code.coding[+] = $sct#407555005
 * component[=].valueQuantity = 80 'mm[Hg]' "mmHg"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
@@ -108,7 +108,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[SNOMEDCT] = $sct#276885007
+* code.coding[0] = $sct#276885007
 * code.coding[LOINC] = $LOINC#8310-5
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -121,7 +121,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[SNOMEDCT] = $sct#364075005
+* code.coding[0] = $sct#364075005
 * code.coding[LOINC] = $LOINC#8867-4
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -134,7 +134,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[SNOMEDCT] = $sct#86290005
+* code.coding[0] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"

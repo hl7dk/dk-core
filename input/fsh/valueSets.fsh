@@ -21,10 +21,10 @@ Description: "Subdivision codes (Regional codes) used in Denmark"
 * ^experimental = false
 * include codes from system DKCoreRegionalSubdivisionCodes
 
-ValueSet: LoincBasicParameter
-Id: dk-core-LoincBasicParameter
-Title: "DK Core LOINC Basic Parameters"
-Description: "LOINC codes describing Basic parameters usable in Denmark."
+ValueSet: LoincBasicObservation
+Id: dk-core-LoincBasicObservation
+Title: "DK Core LOINC Basic Observations"
+Description: "LOINC codes describing Basic Observations usable in Denmark."
 * ^experimental = false
 * $LOINC#9279-1 "Respiratory rate"
 * $LOINC#8867-4 "Heart rate"
@@ -41,10 +41,10 @@ Description: "LOINC codes describing Basic parameters usable in Denmark."
 * $LOINC#8478-0 "Mean blood pressure"
 * $LOINC#21258-6 "Oxygen saturation"
 
-ValueSet: SCTBasicParameter
-Id: dk-core-SCTBasicParameter
-Title: "Dk Core SNOMED CT Basic Parameter"
-Description: "SNOMED CT codes for Basic parameters usable in Denmark"
+ValueSet: SCTBasicObservation
+Id: dk-core-SCTBasicObservation
+Title: "Dk Core SNOMED CT Basic Observation"
+Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * ^experimental = false
 //Vital signs
 * $sct#446226005 //Diastolic blood pressure on admission 
@@ -78,10 +78,10 @@ Description: "SNOMED CT codes for Basic parameters usable in Denmark"
 * $sct#276353004 //|Crown heel length (observable entity)|
 * $sct#248333004 //|Standing height (observable entity)|
 
-ValueSet: IEEEBasicParameter
-Id: dk-core-IEEEBasicParameter
-Title: "Dk Core IEEE Basic Parameter"
-Description: "IEEE MDC codes for Basic parameters usable in Denmark"
+ValueSet: IEEEBasicObservation
+Id: dk-core-IEEEBasicObservation
+Title: "Dk Core IEEE Basic Observation"
+Description: "IEEE MDC codes for Basic Observations usable in Denmark"
 * ^experimental = false
 * ^copyright = "IEEE"
 * ^purpose = """
@@ -202,10 +202,10 @@ the observation was performed.
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle."
 
-ValueSet: NPUBasicParameter
-Id: dk-core-NPUBasicParameter
-Title: "Dk Core NPU Basic Parameter"
-Description: "NPU codes for Basic parameters usable in Denmark"
+ValueSet: NPUBasicObservation
+Id: dk-core-NPUBasicObservation
+Title: "Dk Core NPU Basic Observation"
+Description: "NPU codes for Basic Observations usable in Denmark"
 * ^experimental = false
 * $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
 * $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
@@ -223,7 +223,7 @@ Description: "NPU codes for Basic parameters usable in Denmark"
 ValueSet: UCUMBasicUnits
 Id: dk-core-UCUM-BasicUnits
 Title: "Dk Core UCUM Basic Units"
-Description: "UCUM codes to represent units for basic parameters usable in Denmark"
+Description: "UCUM codes to represent units for basic Observations usable in Denmark"
 * ^experimental = false
 * $ucum#% "percent"
 * $ucum#cm "centimeter"

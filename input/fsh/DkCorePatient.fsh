@@ -138,7 +138,7 @@ Usage: #example
 * name.prefix = "Mr"
 * gender = #male
 * birthDate = "1972-07-01"
-* maritalStatus = $dk-marital-status#P "Registreret partnerskab"
+* maritalStatus = $dk-marital-status#P
 
 Instance: ukendt
 InstanceOf: DkCorePatient
