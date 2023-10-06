@@ -22,7 +22,7 @@ Description: "HL7 Denmark core profile for observations"
 * code.coding[SNOMEDCT]
   * ^short = "SNOMED CT code for the observation"
   * system 1..
-  * system = "https://www.snomed.org/" (exactly)
+  * system = "http://snomed.info/sct" (exactly)
   * code 1..
 * code.coding[NPU]
   * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
