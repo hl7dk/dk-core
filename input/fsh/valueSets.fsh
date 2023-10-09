@@ -39,7 +39,7 @@ Description: "LOINC codes describing Basic Observations usable in Denmark."
 * $LOINC#8480-6 "Systolic blood pressure"
 * $LOINC#8462-4 "Diastolic blood pressure"
 * $LOINC#8478-0 "Mean blood pressure"
-* $LOINC#21258-6 "Oxygen saturation"
+* $LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 
 ValueSet: SCTBasicObservation
 Id: dk-core-SCTBasicObservation
@@ -66,17 +66,18 @@ Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * $sct#78564009  //Pulse rate    
 * $sct#444981005 //Resting heart rate    
 * $sct#364075005 //Heart rate
-* $sct#424927000 //  Body weight with shoes  
+* $sct#424927000 //Body weight with shoes  
 * $sct#445541000 // Dry body weight  
 * $sct#425024002 // Body weight without shoes    
 * $sct#364589006 //Birth weight  
 * $sct#27113001  //Body weight
 * codes from system $sct where concept is-a #86290005 //(Respiratory rate)
 * codes from system $sct where concept is-a #276885007 // Core Body temperature
-* $sct#248334005 //|Length of body (observable entity)|
-* $sct#276351002 // |Infant length (observable entity)|
-* $sct#276353004 //|Crown heel length (observable entity)|
+* $sct#1153637007 //Body height (observable entity)|
 * $sct#248333004 //|Standing height (observable entity)|
+* $sct#1149101003 //|Recumbent body height|
+* $sct#1162392001 //|Pre-amputation measured body height|
+
 
 ValueSet: IEEEBasicObservation
 Id: dk-core-IEEEBasicObservation

@@ -4,7 +4,7 @@ The Danish Core Basic Observation profile is intended to represent observations 
 The profile inherits from DkCoreObservation and complies to [HL7's Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html). However, there is an expansion of one code to the ValueSet of LOINC codes and the UCUM codes, which means that when using these codes compliance is not true.
 
 #### Codes
-It is required to include a LOINC code at Observation.code. The [LOINC ValueSet](http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html) used in the  HL7's Vital Signs profile is expanded with the code `21258-6 "Oxygen saturation"` as it is an often used, measurable parameter in Denmark. 
+It is required to include a LOINC code at Observation.code. The [LOINC ValueSet](http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html) used in the  HL7's Vital Signs profile is expanded with the code `59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"` (SPO2) because it is an often used, measurable parameter in Denmark.
 
 Further, [Dk Core NPU Basic Observation](./valueset-dk-core-NPUBasicObservation.html), [Dk Core IEEE Basic Observation](./valueset-dk-core-IEEEBasicObservation.html), and [Dk Core SNOMED CT Basic Observation](./valueset-dk-core-SCTBasicObservation.html) ValueSets are added to the given slices, and codes from these ValueSets are optional to include. 
 
