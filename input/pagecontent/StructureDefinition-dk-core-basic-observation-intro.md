@@ -28,8 +28,8 @@ The table below includes instances of the DkCoreBasicObservation used to represe
 
 Example | Description
 ----------------- | ------------------------ 
-[Glasgow Coma Scale (GCS)](./Bundle-MogensensGlasgowComaScale.html) | This example includes the relevant observation related to Glasgow Coma Scale. This scale is used to assess the level of consciousness in people with brain damage.
-[TOKS (Danish: Tidlig opsporing af kritisk sygdom)](./Bundle-MogensensTOKS.html) | TOKS is a scoring system used to determine if a patient is in a critical state at a early state. The example includes basic observations, such as heartrate, temperature and more, as well as a Glasgow Coma Scale. 
+[Glasgow Coma Scale (GCS)](./Bundle-MaxGlasgowComaScale.html) | This example includes the relevant observation related to Glasgow Coma Scale. This scale is used to assess the level of consciousness in people with brain damage.
+[TOKS (Danish: Tidlig opsporing af kritisk sygdom)](./Bundle-MaxTOKS.html) | TOKS is a scoring system used to determine if a patient is in a critical state at a early state. The example includes basic observations, such as heartrate, temperature and more, as well as a Glasgow Coma Scale. 
 [TOBS (Danish: Tidlig opsporing af begyndende sygdom)](./Bundle-ElsesTOBS.html) | TOBS is a scoring system used to determine if a citizen is in the early state of illnesses. The example includes basic observations, such as heartrate, temperature and more, as well as a reference to the performer of the observations. 
 [Vital signs panel](./Bundle-VitalSignPanel.html) | ... 
 [John's oxygen saturation measurement (Basic observation)](./Observation-ObservationOxySatBasicObservationOrg.html) | This example suggests a way to handle the oxygen saturation case, where the original measurement was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system, which requires the value to be unitless.

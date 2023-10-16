@@ -1,7 +1,7 @@
 Profile: DkCoreBasicObservation
 Parent: dk-core-observation
 Id: dk-core-basic-observation
-Title: "Danish Core Basic Observations"
+Title: "Danish Core Basic Observation Profile"
 Description: "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation."
 * category 1..1
 * category = $observation-category#vital-signs
@@ -89,14 +89,14 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#75367002
+* code.coding[SNOMEDCT] = $sct#75367002
 * code.coding[LOINC] = $LOINC#85354-9
 * subject = Reference(else)
 * component[0].code.coding[LOINC] = $LOINC#8480-6
-* component[=].code.coding[+] = $sct#407554009
+* component[=].code.coding[SNOMEDCT] = $sct#407554009
 * component[=].valueQuantity = 128 'mm[Hg]' "mmHg"
 * component[+].code.coding[LOINC] = $LOINC#8462-4
-* component[=].code.coding[+] = $sct#407555005
+* component[=].code.coding[SNOMEDCT] = $sct#407555005
 * component[=].valueQuantity = 80 'mm[Hg]' "mmHg"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
@@ -108,7 +108,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#276885007
+* code.coding[SNOMEDCT] = $sct#276885007
 * code.coding[LOINC] = $LOINC#8310-5
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -121,7 +121,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#364075005
+* code.coding[SNOMEDCT] = $sct#364075005
 * code.coding[LOINC] = $LOINC#8867-4
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -134,13 +134,26 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#86290005
+* code.coding[SNOMEDCT] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueQuantity = 13 '/min' "/min"
 * performer = Reference(SidselSygeplejerske)
+
+Instance: ElsesTOBSscore
+InstanceOf: DkCoreObservation
+Usage: #example
+* status = #final
+* code.coding = $Medcom#MCS88125 "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?"
+* subject = Reference(else)
+* effectiveDateTime = "2023-09-12T17:45:00.000Z"
+* valueQuantity.value = 3
+* valueQuantity.code = #1
+* valueQuantity.system = $ucum
+* performer = Reference(SidselSygeplejerske)
+
 
 Instance: ElsesTOBS
 InstanceOf: Bundle
@@ -170,89 +183,89 @@ Usage: #example
 *
 * ************** */
 
-Instance: MogensensConsciousness
+Instance: MaxConsciousness
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
 * code.coding[0] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * valueCodeableConcept.coding[+] = $sct#450847001
 * method = $sct#733985002 "Reported (qualifier value)"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 
-Instance: MogensensRespirationRate
+Instance: MaxRespirationRate
 InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
-* code.coding[0] = $sct#86290005
+* code.coding[SNOMEDCT] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * valueQuantity = 13 '/min' "/min"
 
-Instance: MogensensHeartRate
+Instance: MaxHeartRate
 InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#364075005
+* code.coding[SKS] = $SKS#ZZ3140
 * code.coding[LOINC] = $LOINC#8867-4
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * valueQuantity = 68 '/min' "slag/minut"
 
-Instance: MogensensBodyTemperature
+Instance: MaxBodyTemperature
 InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#276885007
+* code.coding[SKS] = $SKS#ZZ0253
 * code.coding[LOINC] = $LOINC#8310-5
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * valueQuantity = 37 'Cel' "grader celcius"
 
-Instance: MogensensBloodPressure
+Instance: MaxBloodPressure
 InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#75367002
+* code.coding[SKS] = $SKS#ZZ3160
 * code.coding[LOINC] = $LOINC#85354-9
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
-* component[0].code.coding[LOINC] = $LOINC#8480-6
+* component[0].code.coding[0] = $LOINC#8480-6
 * component[=].code.coding[+] = $sct#407554009
 * component[=].valueQuantity = 156 'mm[Hg]' "mmHg"
-* component[+].code.coding[LOINC] = $LOINC#8462-4
+* component[+].code.coding[0] = $LOINC#8462-4
 * component[=].code.coding[+] = $sct#407555005
 * component[=].valueQuantity = 78 'mm[Hg]' "mmHg"
 
-Instance: MogensensSaturation
+Instance: MaxSaturation
 InstanceOf: DkCoreBasicObservation
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * valueQuantity = 99.0 '%' "%"
-* subject = Reference(mogensen)
+* subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 
-Instance: MogensensGlasgowComaScale
+Instance: MaxGlasgowComaScale
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * code.coding[LOINC] = $LOINC#9269-2
 * code.coding[+] = $sct#248241002
-* subject = Reference(mogensen)
-* valueQuantity = 13 '{score}' "{score}"
+* subject = Reference(Max)
+* valueQuantity = 13 '{score}'
 * referenceRange[0].high = 8 '{score}'
 * referenceRange[=].type.text = "Severe TBI"
 * referenceRange[+].low = 9 '{score}'
@@ -269,24 +282,24 @@ Usage: #example
 * component[=].valueCodeableConcept.coding = $LOINC#LA6556-0 "Eyes open spontaneously"
 
 
-Instance: MogensensTOKS
+Instance: MaxTOKS
 InstanceOf: Bundle
-Title: "Mogensens TOKS measurements, including Glasgow Coma Scale assesment"
+Title: "Max TOKS measurements, including Glasgow Coma Scale assesment"
 Description: "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature."
 Usage: #example
 * type = #collection
 * timestamp = "2023-08-08T13:30:00.000Z"
-* entry[+].fullUrl = "Patient/mogensen"
-* entry[=].resource = mogensen
-* entry[+].fullUrl = "Observation/MogensensConsciousness"
-* entry[=].resource = MogensensConsciousness
-* entry[+].fullUrl = "Observation/MogensensBloodPressure"
-* entry[=].resource = MogensensBloodPressure
-* entry[+].fullUrl = "Observation/MogensensBodyTemperature"
-* entry[=].resource = MogensensBodyTemperature
-* entry[+].fullUrl = "Observation/MogensensHeartRate"
-* entry[=].resource = MogensensHeartRate
-* entry[+].fullUrl = "Observation/MogensensRespirationRate"
-* entry[=].resource = MogensensRespirationRate
-* entry[+].fullUrl = "Observation/MogensensGlasgowComaScale"
-* entry[=].resource = MogensensGlasgowComaScale
+* entry[+].fullUrl = "Patient/Max"
+* entry[=].resource = Max
+* entry[+].fullUrl = "Observation/MaxConsciousness"
+* entry[=].resource = MaxConsciousness
+* entry[+].fullUrl = "Observation/MaxBloodPressure"
+* entry[=].resource = MaxBloodPressure
+* entry[+].fullUrl = "Observation/MaxBodyTemperature"
+* entry[=].resource = MaxBodyTemperature
+* entry[+].fullUrl = "Observation/MaxHeartRate"
+* entry[=].resource = MaxHeartRate
+* entry[+].fullUrl = "Observation/MaxRespirationRate"
+* entry[=].resource = MaxRespirationRate
+* entry[+].fullUrl = "Observation/MaxGlasgowComaScale"
+* entry[=].resource = MaxGlasgowComaScale
