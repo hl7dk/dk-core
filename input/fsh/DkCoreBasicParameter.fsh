@@ -94,10 +94,10 @@ Usage: #example
 * subject = Reference(else)
 * component[0].code.coding[LOINC] = $LOINC#8480-6
 * component[=].code.coding[SNOMEDCT] = $sct#407554009
-* component[=].valueQuantity = 128 'mm[Hg]' "mmHg"
+* component[=].valueQuantity = 147 'mm[Hg]' "mmHg"
 * component[+].code.coding[LOINC] = $LOINC#8462-4
 * component[=].code.coding[SNOMEDCT] = $sct#407555005
-* component[=].valueQuantity = 80 'mm[Hg]' "mmHg"
+* component[=].valueQuantity = 95 'mm[Hg]' "mmHg"
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * performer = Reference(SidselSygeplejerske)
@@ -113,7 +113,7 @@ Usage: #example
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
-* valueQuantity = 38 'Cel' "grader celcius"
+* valueQuantity = 38.7 'Cel' "grader celcius"
 * performer = Reference(SidselSygeplejerske)
 
 Instance: ElseHeartRate
@@ -126,7 +126,7 @@ Usage: #example
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
-* valueQuantity = 88 '/min' "slag/minut"
+* valueQuantity = 92 '/min' "slag/minut"
 * performer = Reference(SidselSygeplejerske)
 
 Instance: ElseRespirationRate
@@ -139,7 +139,7 @@ Usage: #example
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
-* valueQuantity = 13 '/min' "/min"
+* valueQuantity = 19 '/min' "/min"
 * performer = Reference(SidselSygeplejerske)
 
 Instance: ElsesTOBSscore
@@ -174,6 +174,8 @@ Usage: #example
 * entry[=].resource = ElseHeartRate
 * entry[+].fullUrl = "Observation/ElseRespirationRate"
 * entry[=].resource = ElseRespirationRate
+* entry[+].fullUrl = "Observation/ElsesTOBSscore"
+* entry[=].resource = ElsesTOBSscore
 * entry[+].fullUrl = "Practitioner/SidselSygeplejerske"
 * entry[=].resource = SidselSygeplejerske
 
