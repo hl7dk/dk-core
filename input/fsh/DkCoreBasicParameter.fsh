@@ -305,3 +305,22 @@ Usage: #example
 * entry[=].resource = MaxRespirationRate
 * entry[+].fullUrl = "Observation/MaxGlasgowComaScale"
 * entry[=].resource = MaxGlasgowComaScale
+
+/* **************
+*
+* Vital signs panel
+*
+* ************** */
+
+Instance: MaxVitalSignsPanel
+InstanceOf: DkCoreBasicObservation
+Usage: #example
+* category = $observation-category#vital-signs
+* status = #final
+* code.coding[LOINC] = $LOINC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+* subject = Reference(Max)
+* effectiveDateTime = "2023-08-08T13:30:00.000Z"
+* hasMember[+] = Reference(MaxBloodPressure)
+* hasMember[+] = Reference(MaxRespirationRate)
+* hasMember[+] = Reference(MaxHeartRate)
+* hasMember[+] = Reference(MaxBodyTemperature)
