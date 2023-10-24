@@ -148,7 +148,8 @@ Usage: #example
 * identifier.system = "http://rn.dk"
 * identifier.value = "0706830VJ9"
 * name.use = #temp
-* name.family = "Ukendt"
+* name.family.extension.url = "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+* name.family.extension.valueCode = #unknown
 * name.given = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
