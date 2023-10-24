@@ -248,3 +248,11 @@ Description: "SNOMED CT Codes for the techniqe used when obtaining an observatio
 * $sct#761996005 "Estimation technique (qualifier value)"
 * $sct#733985002 "Reported (qualifier value)"
 * $sct#272391002 "Measurement technique (qualifier value)"
+
+ValueSet: DkCoreDeCPRValueSet
+Id: DkCoreDeCPRValueSet
+Title: "DK D-eCPR OID values"
+Description: "DK D-eCPR OID values"
+* ^experimental = false
+* ^status = #active
+* include codes from system DkCoreDeCPRCodes

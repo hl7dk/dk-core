@@ -701,3 +701,19 @@ Title: "DK Request Status"
   * ^designation.use.system = "http://snomed.info/sct"
   * ^designation.use = $sct#900000000000013009
   * ^designation.value = "Ukendt"
+
+
+CodeSystem: DkCoreDeCPRCodes
+Id: dk-core-d-ecpr-codes
+Title: "DK Decentralised eCPR Systems"
+Description: "DK "
+* ^experimental = false
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = false
+* #urn:oid:1.2.208.176.1.6.1.3 "D-eCPR"
+* #urn:oid:1.2.208.176.1.6.1.3.177 "D-eCPR fra Region Sjælland"
+* #urn:oid:1.2.208.176.1.6.1.3.179 "D-eCPR fra Region Nordjylland"
+* #urn:oid:1.2.208.176.1.6.1.3.181 "D-eCPR fra Region Midtjylland"
+* #urn:oid:1.2.208.176.1.6.1.3.183 "D-eCPR fra Region Syddanmark"
+* #urn:oid:1.2.208.176.1.6.1.3.187 "D-eCPR fra Region Hovedstaden"

@@ -14,9 +14,16 @@ Description: "HL7 Denmark core profile for a patient"
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
-* identifier contains cpr 0..1
+* identifier contains 
+    cpr 0..1 and
+    x-ecpr 0..1 and 
+    d-ecpr 0..1
 * identifier[cpr] only DkCoreCprIdentifier
   * ^short = "[DA] cpr-nummer, som det fremgår af CPR registeret"
+* identifier[x-ecpr] only DkCoreXeCprIdentifier
+  * ^short = "[DA] X-eCPR, tildelt fra den nationale eCPR service"
+* identifier[d-ecpr] only DkCoreDeCprIdentifier
+  * ^short = "[DA] D-eCPR, decentral eCPR"
 * name ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "use"
   * ^slicing.rules = #open
@@ -153,6 +160,33 @@ Usage: #example
 * name.given = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
+
+
+Instance: ukendt-D-eCPR
+InstanceOf: DkCorePatient
+Title: "Example of valid patient with a D-eCPR as identifier"
+Description: "Example of valid patient with a D-eCPR as identifier."
+Usage: #example
+* identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
+* identifier.value = "1206550VK9"
+* name.use = #temp
+* name.family = "Ukendt"
+* name.given = "Peter"
+* gender = #male
+* birthDate = "1955-06-12"
+
+Instance: ukendt-X-eCPR
+InstanceOf: DkCorePatient
+Title: "Example of valid patient with a X-eCPR as identifier"
+Description: "Example of valid patient with a X-eCPR as identifier."
+Usage: #example
+* identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier.value = "0703921VJ4"
+* name.use = #temp
+* name.family = "Ukendt"
+* name.given = "Mia"
+* gender = #female
+* birthDate = "1992-03-07"
 
 Invariant: marital-status-unknown-usage
 Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK"
