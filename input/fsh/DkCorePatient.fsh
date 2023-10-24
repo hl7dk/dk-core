@@ -170,10 +170,10 @@ Usage: #example
 * identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
 * identifier.value = "1206550VK9"
 * name.use = #temp
-* name.family = "Ukendt"
+* name.family.extension.url = "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+* name.family.extension.valueCode = #unknown
 * name.given = "Peter"
 * gender = #male
-* birthDate = "1955-06-12"
 
 Instance: ukendt-X-eCPR
 InstanceOf: DkCorePatient
@@ -183,8 +183,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
 * identifier.value = "0703921VJ4"
 * name.use = #temp
-* name.family = "Ukendt"
-* name.given = "Mia"
+* name.family = "Madsen"
 * gender = #female
 * birthDate = "1992-03-07"
 
