@@ -2,10 +2,11 @@ Extension: ConditionLastAssertedDate
 Id: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"
 Description: "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"
-
 * . ^short = "ConditionLastAssertedDate"
   * ^definition = "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"
 * value[x] only dateTime
+* ^context.type = http://hl7.org/fhir/extension-context-type#element
+* ^context.expression = "Condition"
 
 Extension: NotFollowedAnymore
 Id: NotFollowedAnymore
@@ -14,6 +15,8 @@ Description: "Extension for the date where a condition lost focus in a specific 
 * . ^short = "NotFollowedAnymore"
   * ^definition = "Extension for the date where a condition lost focus in a specific clinical context"
 * value[x] only dateTime
+* ^context.type = http://hl7.org/fhir/extension-context-type#element
+* ^context.expression = "Condition"
 
 Extension: RegionalSubDivisionCodes
 Id: dk-core-RegionalSubDivisionCodes
