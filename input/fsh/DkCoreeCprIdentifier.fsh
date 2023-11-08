@@ -9,16 +9,10 @@ Description: "This strucure holds the danish [X-eCPR](https://sundhedsdatastyrel
 * value 1..
   * obeys x-ecpr
   * ^maxLength = 10
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.source = "https://wiki.fmk-teknik.dk/doku.php?id=fmk:ecpr:1.0:definition"
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.requirements = "Requirement of danish X-eCPR"
   * ^mustSupport = false
 
 Invariant: x-ecpr
-Description: "Requirement of danish X-eCPR"
+Description: "Requirement of danish X-eCPR. See https://wiki.fmk-teknik.dk/doku.php?id=fmk:ecpr:1.0:definition"
 Severity: #error
 Expression: "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((1|7){1})([A-Z]{2})([0-9]{1}))$')"
 
@@ -33,15 +27,9 @@ Description: "This strucure holds the danish [D-eCPR (see p. 32 in 'Fællesindho
 * value 1..
   * obeys d-ecpr
   * ^maxLength = 10
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.source = "https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-patientregistrering/patientregistrering-feallesindhold"
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.requirements = "Requirement of danish D-eCPR"
   * ^mustSupport = false
 
 Invariant: d-ecpr
-Description: "Requirement of danish D-eCPR"
+Description: "Requirement of danish D-eCPR. See https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-patientregistrering/patientregistrering-feallesindhold"
 Severity: #error
 Expression: "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((0|5|6){1})([A-Z]{2})([0-9]{1}))$')"

@@ -67,7 +67,7 @@ Usage: #example
 * address.use = #home
 * address.type = #postal
 * address.line = "Nordre Ringgade 3"
-* address.city = "Frederiksberg C"
+* address.city = "Aarhus"
 * address.postalCode = "8000"
 * address.country = "DK"
 * maritalStatus = $v3-MaritalStatus#U "unmarried"
@@ -94,7 +94,9 @@ Usage: #example
 * birthDate = "1977-02-15"
 * address.use = #home
 * address.line = "Julianevej 22"
-* address.city = "6000 Kolding"
+* address.city = "Kolding"
+* address.postalCode = "6000"
+
 
 Instance: else
 InstanceOf: DkCorePatient
@@ -155,8 +157,8 @@ Usage: #example
 * identifier.system = "http://rn.dk"
 * identifier.value = "0706830VJ9"
 * name.use = #temp
-* name.family.extension.url = "http://terminology.hl7.org/CodeSystem/data-absent-reason"
-* name.family.extension.valueCode = #unknown
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
@@ -170,8 +172,8 @@ Usage: #example
 * identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
 * identifier.value = "1206550VK9"
 * name.use = #temp
-* name.family.extension.url = "http://terminology.hl7.org/CodeSystem/data-absent-reason"
-* name.family.extension.valueCode = #unknown
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Peter"
 * gender = #male
 

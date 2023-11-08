@@ -2,11 +2,11 @@
 The Danish Core Observation profile is intended to represent observations for a variety of cases including:
 * laboratory data
 * results of using clinical assessment tools such as APGAR
-* device measurements such as Pulse Oximetry data
 * observations obtained in clinical assesments such as abdominal tenderness
 * general health status such as pregnancy
 * social history and anamnesis (Please be aware, an Observation must only include more than one code, if each code is true for the observation that actually happened, and not several observation as a result of an investigation. In this case, the ClinicalImpression resource should be used.)
 
+>Note: The profile [DkCoreBasicObservation](./StructureDefinition-dk-core-basic-observation.html) is made to ensure a common structure of measurable and often used observations, such as vital signs, height and weight. When sharing these basic observations, DkCoreBasicObservation profile is recommended to use.
 
 #### Codes
 In a Observation resource, codes from CodeSystems are used to describe what is observed in the elements Observation.code.coding and Observation.component.code.coding. In these elements, multiple CodeSystems are specified to ensure similar use of relevant CodeSystems in a Danish context. Some observations may need to be grouped together to document critical observations, e.g. systolic and diastolic bloodpressure, which can be supported by the element Observation.component. [Click here for more information about Observation Grouping](http://hl7.org/fhir/observation.html#obsgrouping). 
