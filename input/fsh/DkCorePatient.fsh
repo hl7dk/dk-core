@@ -4,12 +4,6 @@ Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description: "HL7 Denmark core profile for a patient"
 * obeys marital-status-unknown-usage
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-* . ^constraint.source = "https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.requirements = "Marital status is legally unknown in Denmark"
 * identifier 1..
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
@@ -151,6 +145,7 @@ Usage: #example
 * birthDate = "1983-06-07"
 
 Invariant: marital-status-unknown-usage
-Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK"
+Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
 Severity: #warning
 Expression: "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()"
+* requirements = "Marital status is legally unknown in Denmark"
