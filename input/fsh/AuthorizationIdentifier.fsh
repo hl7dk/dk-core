@@ -8,11 +8,8 @@ Description: "Identifier holding the official [authorization identifier](https:/
 * value 1..
   * obeys authorization-id-format
   * ^maxLength = 5
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.source = "https://stps.dk/da/autorisation/om-autorisationer/autorisations-id/"
-
+  
 Invariant: authorization-id-format
-Description: "Authorization ID consists of exactly 5 consonants and Y and or numbers in any order"
+Description: "Authorization ID consists of exactly 5 consonants and Y and or numbers in any order. See https://stps.dk/da/autorisation/om-autorisationer/autorisations-id/"
 Severity: #error
 Expression: "matches('^([b-df-hj-np-tv-zB-DF-HJ-NP-TV-Z0-9]){5}$')"
