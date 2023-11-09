@@ -103,8 +103,10 @@ Description: "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med ti
 Usage: #example
 * code.coding[SKS-D] = urn:oid:1.2.208.176.2.4.12#DS721+TUL1 "Pertrokantær femurfraktur, højresidig"
 * subject.reference = "Patient/john"
-* asserter.reference = "Practitioner/AbrahamLaege"
-* recorder.reference = "Practitioner/AbrahamLaege"
+* participant[asserter].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#performer
+* participant[asserter].actor = Reference(Practitioner/AbrahamLaege)
+* participant[recorder].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer
+* participant[recorder].actor = Reference(Practitioner/AbrahamLaege)
 * category = $condition-category#encounter-diagnosis
 * onsetDateTime = "2022-04-26"
 * recordedDate = "2022-04-27"
