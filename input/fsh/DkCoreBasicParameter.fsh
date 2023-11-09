@@ -24,9 +24,9 @@ Usage: #example
 * status = #final
 * code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
 * valueQuantity.value = 50
-* valueQuantity.code = #{Breaths}/min
+* valueQuantity.code = #/min
 * valueQuantity.system = $ucum
-* valueQuantity.unit = "Breaths / minute"
+* valueQuantity.unit = "/min"
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
@@ -77,7 +77,7 @@ Instance: ElseConsciousness
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
-* code = $sct#444714004
+* code = $sct#6942003
 * subject = Reference(else)
 * valueCodeableConcept.coding[+] = $sct#450847001
 * method = $sct#733985002 "Reported (qualifier value)"
@@ -190,10 +190,10 @@ InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#86290005
-* code.coding[LOINC] = $LOINC#9279-1
+* code.coding[0] = $sct#6942003
+* code.coding[LOINC] = $LOINC#80288-4
 * subject = Reference(Max)
-* valueCodeableConcept.coding[+] = $sct#450847001
+* valueCodeableConcept.coding = $sct#450847001
 * method = $sct#733985002 "Reported (qualifier value)"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 
