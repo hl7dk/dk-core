@@ -27,6 +27,7 @@ Usage: #example
 * valueQuantity.code = #/min
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "/min"
+* effectiveDateTime = 2023-11-20T18:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
@@ -42,12 +43,13 @@ Usage: #example
 * valueQuantity.code = #%
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "%"
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
-Instance: ObservationOxySatBasicObservation
-InstanceOf: DkCoreBasicObservation
-Title: "John's oxygen saturation measurement (Basic observation)"
+Instance: ObservationOxySatObservation
+InstanceOf: DkCoreObservation
+Title: "John's oxygen saturation measurement (Observation)"
 Description: """
 This example suggests a way to handle the oxygen saturation case, where the original measurement
 was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,
@@ -56,13 +58,13 @@ which requires the value to be unitless.
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
-* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * code.coding[NPU] = $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
 * valueQuantity.value = 0.97
 * valueQuantity.code = #1
 * valueQuantity.system = $ucum
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * contained[0] = ObservationOxySatBasicObservationOrg
 * derivedFrom = Reference(ObservationOxySatBasicObservationOrg)
 
