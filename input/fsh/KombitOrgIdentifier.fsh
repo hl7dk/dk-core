@@ -12,4 +12,4 @@ Description: "Identifier holding the organization code issued by KOMBIT"
 Invariant: uuid
 Description: "General UUID expression"
 Severity: #error
-Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
+Expression: "matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
