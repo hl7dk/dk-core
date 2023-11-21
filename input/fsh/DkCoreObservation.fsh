@@ -180,6 +180,7 @@ Usage: #inline
 * valueQuantity.value = 0.97
 * valueQuantity.code = #1
 * valueQuantity.system = $ucum
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
