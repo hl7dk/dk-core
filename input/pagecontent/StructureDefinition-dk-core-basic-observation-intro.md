@@ -28,11 +28,13 @@ The Dk Core UCUM Basic Units ValueSet is added to the elements Observation.value
 #### Examples
 The table below includes instances of the DkCoreBasicObservation used to represent observations used to evaluate the patient based on different procedures used in Denmark. 
 
+> Note: The current FHIR validator (per Nowember 2023) validates Observation instances with LOINC-codes from the [international Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html) against the requirements in this profile. This have influenced instances in DkCore by 1) removal of the LOINC-code `"2708-6 "Oxygen saturation in Arterial blood"` in [John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.html) which means it cannot be an instance of DkCoreBasicObservation but has to obey from DkCoreObservation, and 2) addition of effective timestamps in [ObservationOxySatBasicObservationOrg](./Observation-ObservationOxySatBasicObservationOrg.html) and [ObservationRespiratoryBasicObservation](./Observation-ObservationRespiratoryBasicObservation.html).
+
 Example | Description
 ----------------- | ------------------------ 
 [Glasgow Coma Scale (GCS)](./Observation-MaxGlasgowComaScale.html) | This example includes the relevant observations related to Glasgow Coma Scale. This scale is used to assess the level of consciousness in people with brain damage.
 [TOKS (Danish: Tidlig opsporing af kritisk sygdom)](./Bundle-MaxTOKS.html) | TOKS is a scoring system used to determine if a patient is in a critical state at an early state. The example includes basic observations, such as heartrate, temperature and more, as well as a Glasgow Coma Scale. 
 [TOBS (Danish: Tidlig opsporing af begyndende sygdom)](./Bundle-ElsesTOBS.html) | TOBS is a scoring system used to determine if a citizen is in the early state of illnesses. The example includes basic observations, such as heartrate, temperature, TOBS score and more, as well as a reference to the performer of the observations. 
 [Vital signs panel](./Observation-MaxVitalSignsPanel.html) | An example of observations included in a vital signs panel. From the element Observation.hasMember, the panel observations are referenced.  
-[John's oxygen saturation measurement (Basic observation)](./Observation-ObservationOxySatObservation.html) | This example suggests a way to handle the oxygen saturation case, where the original measurement was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system, which requires the value to be unitless.
+[John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.html) | This example suggests a way to handle the oxygen saturation case, where the original measurement was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system, which requires the value to be unitless.
 
