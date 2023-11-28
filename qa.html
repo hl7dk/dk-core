@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 1, warn = 17, info = 12-->
+<!-- broken links = 0, errors = 9, warn = 13, info = 26-->
 <head>
   <title>DKCore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,50 +36,133 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DKCore</h1>
- <p>Generated Fri May 05 00:07:22 UTC 2023, FHIR version 4.0.1 for hl7.fhir.dk.core#2.2.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Nov 28 12:16:49 UTC 2023, FHIR version 4.0.1 for hl7.fhir.dk.core#3.0.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.8</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.5</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.dk.core, Canonical = http://hl7.dk/fhir/core</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><table class="grid">
- <tr><td>package-id</d><td>hl7.fhir.dk.core</td></tr>
- <tr><td>version</d><td>2.2.0</td></tr>
- <tr><td>path</d><td>http://hl7.dk/fhir/core/2.2.0</td></tr>
- <tr><td>mode</d><td>milestone</td></tr>
- <tr><td>status</d><td>release</td></tr>
- <tr><td>sequence</d><td>Release</td></tr>
- <tr><td>descmd</d><td><p>DK-core version 2.2.0 has been approved by HL7 Denmark. During spring, 2023, this version will go through the needed evaluations to be approved for the national catalogue.</p>
-<p>The changes between 2.1.0 and 2.2.0 is:</p>
-<ul>
-<li>Addition of Observation profile with associated documentation and instances.</li>
-<li>Updated all CPR-identifiers of the Patient instances.</li>
-<li>Added experimental-status = false to all CodeSystems and ValueSets</li>
-<li>Removed draft-status from identifiers.</li>
-</ul>
-</td></tr>
-</table>
-<ul><li>No publication request desc found (it is recommended to provide a shorter desc as well as descmd <img src="icon-warning.png" height="16px" width="16px"/></li>
-<li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li>Publication Request is for v'2.2.0' but package version is v3.0.0 <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication Request is for version v2.2.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">12 Suppressed Issues</a>
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.dk.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.phd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd/STU1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
-</table><para>Templates: fhir.base.template#current</para></div></td></tr>
- <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.dk.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.4.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.phd</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd/STU1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.4.0</td></tr>
+</table><para>Templates: hl7.dk.fhir.template#0.0.1 -&gt; fhir.base.template#current. Tools: current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">9 guides</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>HTA Analysis:</td><td><a href="qa-hta.html"><span style="background-color: #ffcccc">2 issues</span></a></td></tr>
- <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/namingsystem.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version</a></li><li><a href="http://build.fhir.org/namingsystem.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url</a></li></ul></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-observation-gatewaydevice.html">gatewayDevice</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/vitalsigns.html">observation-vitalsigns</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/bp.html">observation-bp</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/heartrate.html">observation-heartrate</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/codesystem-care-team-status.html">CareTeamStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/codesystem-consent-state-codes.html">ConsentState</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/codesystem-episode-of-care-status.html">EpisodeOfCareStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/codesystem-request-status.html">RequestStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/bodyweight.html">observation-bodyweight</a>
+ (1 uses),     <code>fhir-type</code>
+ (61 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
+ (27 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
+ (59 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/extension-condition-dueto.html">dueTo</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-display-hint.html">display-hint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (3 uses)
+  </li>
+  <li>
+hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/ImplementationGuide-hl7.fhir.uv.phd.html">PhdImplementationGuide</a>
+ (1 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a>
+ (2 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a>
+ (2 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaDeviceIdentifiers.html">ContinuaDeviceIdentifiers</a>
+ (8 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>
+ (5 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaHFS.html">ContinuaHFS</a>
+ (2 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>
+ (12 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a>
+ (3 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>
+ (4 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCompoundNumericObservation.html">PhdCompoundNumericObservation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdBitsEnumerationObservation.html">PhdBitsEnumerationObservation</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (70 uses)
+  </li>
+  <li>
+hl7.terminology.r4#3.1.0:     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">ObservationCategoryCodes</a>
+ (6 uses),     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html">ConditionCategoryCodes</a>
+ (6 uses),     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-provenance-participant-type.html">ProvenanceParticipantType</a>
+ (7 uses)
+  </li>
+  <li>
+hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>
+ (5 uses)
+  </li>
+</ul>
+</td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v2.1.0/index.html">Comparison with version 2.1.0</a></td></tr>
- <tr><td>IPA Comparison:</td><td> <a href="ipa-comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 17, info = 12, broken links = 0</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Current Version Comparison failed: Cannot read the array length because "bytes" is null</td></tr>
+ <tr><td>IPA Comparison:</td><td> Unable to compare with previous version: Current Version Comparison failed: Cannot read the array length because "bytes" is null</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 9, warn = 13, info = 26, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -89,7 +172,7 @@
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>7</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-ContinuaBundleWithDevice"><b>/github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>4</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-ContinuaBundleWithDevice"><b>/github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice</b></a></td><td><b>9</b></td><td><b>0</b></td><td><b>9</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-DkCoreProfessionGroupCodes"><b>/github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -143,19 +226,22 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-JohnDiabetes"><b>/github/workspace/fsh-generated/resources/Condition-JohnDiabetes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-JohnFracture"><b>/github/workspace/fsh-generated/resources/Condition-JohnFracture</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-JohnMelanoma"><b>/github/workspace/fsh-generated/resources/Condition-JohnMelanoma</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-JohnPacemaker"><b>/github/workspace/fsh-generated/resources/Condition-JohnPacemaker</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Device-BPMonitor.C4F312FFFE53F2C9"><b>/github/workspace/fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Device-BPMonitor.C4F312FFFE53F2C9"><b>/github/workspace/fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Device-Telma.FEEDDADADEADBEEF"><b>/github/workspace/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Device-Telma.FEEDDADADEADBEEF"><b>/github/workspace/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Device-WeightScale.606405FFFECFC604"><b>/github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Device-WeightScale.606405FFFECFC604"><b>/github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.dk.core"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -170,16 +256,16 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-CoincidentTimeStamp.0222"><b>/github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ElsePainVRS"><b>/github/workspace/fsh-generated/resources/Observation-ElsePainVRS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ElsePainVRS"><b>/github/workspace/fsh-generated/resources/Observation-ElsePainVRS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-HeartRate.Poul.1974654"><b>/github/workspace/fsh-generated/resources/Observation-HeartRate.Poul.1974654</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ObservationOxySatVitalSigns"><b>/github/workspace/fsh-generated/resources/Observation-ObservationOxySatVitalSigns</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ObservationOxySatVitalSigns"><b>/github/workspace/fsh-generated/resources/Observation-ObservationOxySatVitalSigns</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ObservationRespiratoryVitalSigns"><b>/github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ObservationRespiratoryVitalSigns"><b>/github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-Weight.Poul.230221"><b>/github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -233,10 +319,10 @@
      <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-HenvisningFraLageTilSygehus"><b>/github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ConditionLastAssertedDate"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ConditionLastAssertedDate"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-NotFollowedAnymore"><b>/github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-NotFollowedAnymore"><b>/github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-RegionalSubDivisionCodes"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -278,9 +364,6 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-sor-identifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-lpr3-Identifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-DkCoreProfessionGroupValueSet"><b>/github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -317,10 +400,10 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HeartRate.Poul.1974654.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationRespiratoryVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationRespiratoryVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -339,19 +422,58 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.code.coding[2] (l648/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Device&#8203;/Telma&#8203;.FEEDDADADEADBEEF*&#8203;/&#8203;.property[3]&#8203;.type (l233&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[0].code.coding[2] (l679/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Device&#8203;/BPMonitor&#8203;.C4F312FFFE53F2C9*&#8203;/&#8203;.property[2]&#8203;.type (l431&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[1].code.coding[2] (l707/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Device&#8203;/BPMonitor&#8203;.C4F312FFFE53F2C9*&#8203;/&#8203;.property[3]&#8203;.type (l453&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2] (l806/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Device&#8203;/BPMonitor&#8203;.C4F312FFFE53F2C9*&#8203;/&#8203;.property[4]&#8203;.type (l475&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Observation&#8203;/BloodPressure&#8203;.Poul&#8203;.643992*&#8203;/&#8203;.code&#8203;.coding[2] (l648&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Observation&#8203;/BloodPressure&#8203;.Poul&#8203;.643992*&#8203;/&#8203;.component[0]&#8203;.code&#8203;.coding[2] (l679&#8203;/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Observation&#8203;/BloodPressure&#8203;.Poul&#8203;.643992*&#8203;/&#8203;.component[1]&#8203;.code&#8203;.coding[2] (l707&#8203;/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/HeartRate&#8203;.Poul&#8203;.1974654*&#8203;/&#8203;.code&#8203;.coding[2] (l806&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0] (l871/c14)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code 8410608 in urn:iso:std:iso:11073:10101; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'</b></td>
+     <td><b>Bundle&#8203;.entry[7]&#8203;.resource&#8203;/*Observation&#8203;/BloodPressureStatus&#8203;.Poul&#8203;.133527*&#8203;/&#8203;.code&#8203;.coding[0] (l871&#8203;/c14)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code '8410608' in the system 'urn:iso:std:iso:11073:10101|2022-02-04'; The provided code 'urn:iso:std:iso:11073:10101#8410608' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[7]&#8203;.resource&#8203;/*Observation&#8203;/BloodPressureStatus&#8203;.Poul&#8203;.133527*&#8203;/&#8203;.component[0]&#8203;.code (l890&#8203;/c14)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l6/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Patient/Poul')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l46/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Device/Telma.FEEDDADADEADBEEF')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l257/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Device/BPMonitor.C4F312FFFE53F2C9')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l499/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Observation/BatteryLevel.0944')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l552/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Observation/CoincidentTimeStamp.0222')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l601/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Observation/BloodPressure.Poul.643992')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l759/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Observation/HeartRate.Poul.1974654')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l847/c6)</b></td><td><b>error</b></td><td title="BUNDLE_ENTRY_URL_ABSOLUTE"><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> The fullUrl must be an absolute URL (not 'Observation/BloodPressureStatus.Poul.133527')</b></td>
    </tr>
 </table>
 <hr/>
@@ -504,7 +626,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.21' is unknown so the code cannot be validated</b></td>
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.21' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -517,7 +639,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -530,12 +652,12 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Condition-JohnMelanoma"> </a>
-<h2><a href="Condition-JohnMelanoma.html">fsh-generated/resources/Condition-JohnMelanoma.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Condition-JohnFracture"> </a>
+<h2><a href="Condition-JohnFracture.html">fsh-generated/resources/Condition-JohnFracture.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -543,13 +665,26 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-JohnMelanoma"> </a>
+<h2><a href="Condition-JohnMelanoma.html">fsh-generated/resources/Condition-JohnMelanoma.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Condition-JohnPacemaker"> </a>
-<h2><a href="Condition-JohnPacemaker.html">fsh-generated/resources/Condition-JohnPacemaker.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a></li></ul>
+<h2><a href="Condition-JohnPacemaker.html">fsh-generated/resources/Condition-JohnPacemaker.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -558,8 +693,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Device-BPMonitor.C4F312FFFE53F2C9"> </a>
-<h2><a href="Device-BPMonitor.C4F312FFFE53F2C9.html">fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></li></ul>
+<h2><a href="Device-BPMonitor.C4F312FFFE53F2C9.html">fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -574,31 +709,53 @@
    <tr style="background-color: #ffebcc">
      <td><b>Device.version[3].value (l116/c32)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'BLP009_02_005 '</b></td>
    </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[2].type (l168/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[3].type (l190/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[4].type (l212/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Device-Telma.FEEDDADADEADBEEF"> </a>
-<h2><a href="Device-Telma.FEEDDADADEADBEEF.html">fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a></li></ul>
+<h2><a href="Device-Telma.FEEDDADADEADBEEF.html">fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[3].type (l181/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Device-WeightScale.606405FFFECFC604"> </a>
-<h2><a href="Device-WeightScale.606405FFFECFC604.html">fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></li></ul>
+<h2><a href="Device-WeightScale.606405FFFECFC604.html">fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>Device: Validated against <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[2].type (l168/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[3].type (l190/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Device.property[4].type (l212/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.dk.core"> </a>
-<h2><a href="ImplementationGuide-hl7.fhir.dk.core.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi24"></div>
+<h2><a href="ImplementationGuide-hl7.fhir.dk.core.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.dk.core: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -606,17 +763,7 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_NamingSystem-cpr"> </a>
-<h2><a href="NamingSystem-cpr.html">fsh-generated/resources/NamingSystem-cpr.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_NamingSystem-sor"> </a>
-<h2><a href="NamingSystem-sor.html">fsh-generated/resources/NamingSystem-sor.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+<h2><a href="NamingSystem-cpr.html">fsh-generated/resources/NamingSystem-cpr.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
 </div>
  <table class="grid">
@@ -625,9 +772,19 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-sor"> </a>
+<h2><a href="NamingSystem-sor.html">fsh-generated/resources/NamingSystem-sor.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-CoincidentTimeStamp.0222"> </a>
-<h2><a href="Observation-CoincidentTimeStamp.0222.html">fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(4)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li></ul>
+<h2><a href="Observation-CoincidentTimeStamp.0222.html">fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -636,76 +793,53 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-ElsePainVRS"> </a>
-<h2><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
+<h2><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://localSystem.dk' is unknown so the code cannot be validated</b></td>
+     <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l23&#8203;/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://localSystem.dk' could not be found so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-HeartRate.Poul.1974654"> </a>
-<h2><a href="Observation-HeartRate.Poul.1974654.html">fsh-generated/resources/Observation-HeartRate.Poul.1974654.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(8)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a></li></ul>
+<h2><a href="Observation-HeartRate.Poul.1974654.html">fsh-generated/resources/Observation-HeartRate.Poul.1974654.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(8)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code.coding[2] (l41/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><b>Observation.code.coding[2] (l41/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-ObservationOxySatVitalSigns"> </a>
-<h2><a href="Observation-ObservationOxySatVitalSigns.html">fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(3)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li><li>Observation.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li></ul>
+<h2><a href="Observation-ObservationOxySatVitalSigns.html">fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li><li>Observation.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.contained[0]/*Observation/ObservationOxySat*/.code.coding[0] (l54/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><b>Observation&#8203;.contained[0]&#8203;/*Observation&#8203;/ObservationOxySat*&#8203;/&#8203;.code&#8203;.coding[0] (l61&#8203;/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.category[0].coding[0] (l21/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Observation.derivedFrom[0] (l80/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #ObservationOxySat matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1</b> <span id="sl44" class="flip" onclick="flip('l44')">Show Reasoning</span><div id="l44" style="display: none"><p>&nbsp;</p><ul><li>Observation.contained[0]/*Observation/null*/: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1)</li>, <li>Observation.contained[0]/*Observation/null*/: Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-ObservationRespiratoryVitalSigns"> </a>
-<h2><a href="Observation-ObservationRespiratoryVitalSigns.html">fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.category[0].coding[0] (l21/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_Observation-Weight.Poul.230221"> </a>
-<h2><a href="Observation-Weight.Poul.230221.html">fsh-generated/resources/Observation-Weight.Poul.230221.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(8)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.code.coding[2] (l41/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetes"> </a>
-<h2><a href="Organization-CenterForDiabetes.html">fsh-generated/resources/Organization-CenterForDiabetes.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
+<h2><a href="Observation-ObservationRespiratoryVitalSigns.html">fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -713,8 +847,21 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamDiabetes"> </a>
-<h2><a href="Organization-CenterForDiabetesTeamDiabetes.html">fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Observation-Weight.Poul.230221"> </a>
+<h2><a href="Observation-Weight.Poul.230221.html">fsh-generated/resources/Observation-Weight.Poul.230221.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(8)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.code.coding[2] (l41/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetes"> </a>
+<h2><a href="Organization-CenterForDiabetes.html">fsh-generated/resources/Organization-CenterForDiabetes.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -723,8 +870,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamHjerte"> </a>
-<h2><a href="Organization-CenterForDiabetesTeamHjerte.html">fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamDiabetes"> </a>
+<h2><a href="Organization-CenterForDiabetesTeamDiabetes.html">fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi35"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -733,8 +880,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamKvalitet"> </a>
-<h2><a href="Organization-CenterForDiabetesTeamKvalitet.html">fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamHjerte"> </a>
+<h2><a href="Organization-CenterForDiabetesTeamHjerte.html">fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi36"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -743,8 +890,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-LaegerneHasserisBymidte"> </a>
-<h2><a href="Organization-LaegerneHasserisBymidte.html">fsh-generated/resources/Organization-LaegerneHasserisBymidte.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Organization-CenterForDiabetesTeamKvalitet"> </a>
+<h2><a href="Organization-CenterForDiabetesTeamKvalitet.html">fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi37"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -753,8 +900,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Organization-b08997bb-4476-4dd0-84dd-2e297f809364"> </a>
-<h2><a href="Organization-b08997bb-4476-4dd0-84dd-2e297f809364.html">fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Organization-LaegerneHasserisBymidte"> </a>
+<h2><a href="Organization-LaegerneHasserisBymidte.html">fsh-generated/resources/Organization-LaegerneHasserisBymidte.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi38"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -763,9 +910,9 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-283"> </a>
-<h2><a href="Patient-283.html">fsh-generated/resources/Patient-283.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi39"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
+<a name="_github_workspace_fsh-generated_resources_Organization-b08997bb-4476-4dd0-84dd-2e297f809364"> </a>
+<h2><a href="Organization-b08997bb-4476-4dd0-84dd-2e297f809364.html">fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi39"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -773,8 +920,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-Confidential"> </a>
-<h2><a href="Patient-Confidential.html">fsh-generated/resources/Patient-Confidential.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Patient-283"> </a>
+<h2><a href="Patient-283.html">fsh-generated/resources/Patient-283.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi40"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -783,9 +930,19 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-Confidential"> </a>
+<h2><a href="Patient-Confidential.html">fsh-generated/resources/Patient-Confidential.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi41"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-Poul"> </a>
-<h2><a href="Patient-Poul.html">fsh-generated/resources/Patient-Poul.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(4)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi41"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta)</li></ul>
+<h2><a href="Patient-Poul.html">fsh-generated/resources/Patient-Poul.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi42"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>, <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta)</li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -794,17 +951,7 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-else"> </a>
-<h2><a href="Patient-else.html">fsh-generated/resources/Patient-else.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi42"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-john"> </a>
-<h2><a href="Patient-john.html">fsh-generated/resources/Patient-john.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(1)</span></h2>
+<h2><a href="Patient-else.html">fsh-generated/resources/Patient-else.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi43"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -813,8 +960,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-mogensen"> </a>
-<h2><a href="Patient-mogensen.html">fsh-generated/resources/Patient-mogensen.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Patient-john"> </a>
+<h2><a href="Patient-john.html">fsh-generated/resources/Patient-john.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi44"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -823,8 +970,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-ukendt"> </a>
-<h2><a href="Patient-ukendt.html">fsh-generated/resources/Patient-ukendt.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Patient-mogensen"> </a>
+<h2><a href="Patient-mogensen.html">fsh-generated/resources/Patient-mogensen.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi45"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -833,9 +980,9 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Practitioner-AbrahamLaege"> </a>
-<h2><a href="Practitioner-AbrahamLaege.html">fsh-generated/resources/Practitioner-AbrahamLaege.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi46"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></li></ul>
+<a name="_github_workspace_fsh-generated_resources_Patient-ukendt"> </a>
+<h2><a href="Patient-ukendt.html">fsh-generated/resources/Patient-ukendt.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi46"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -843,8 +990,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Practitioner-HanneSocialraadgiver"> </a>
-<h2><a href="Practitioner-HanneSocialraadgiver.html">fsh-generated/resources/Practitioner-HanneSocialraadgiver.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Practitioner-AbrahamLaege"> </a>
+<h2><a href="Practitioner-AbrahamLaege.html">fsh-generated/resources/Practitioner-AbrahamLaege.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi47"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></li></ul>
 </div>
  <table class="grid">
@@ -853,9 +1000,19 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_Practitioner-HanneSocialraadgiver"> </a>
+<h2><a href="Practitioner-HanneSocialraadgiver.html">fsh-generated/resources/Practitioner-HanneSocialraadgiver.json</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi48"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_ServiceRequest-HenvisningFraLageTilSygehus"> </a>
-<h2><a href="ServiceRequest-HenvisningFraLageTilSygehus.html">fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi48"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></li></ul>
+<h2><a href="ServiceRequest-HenvisningFraLageTilSygehus.html">fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -864,37 +1021,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-ConditionLastAssertedDate"> </a>
-<h2><a href="StructureDefinition-ConditionLastAssertedDate.html">fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-NotFollowedAnymore"> </a>
-<h2><a href="StructureDefinition-NotFollowedAnymore.html">fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
+<h2><a href="StructureDefinition-ConditionLastAssertedDate.html">fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi50"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule: "> Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-RegionalSubDivisionCodes"> </a>
-<h2><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html">fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi51"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -902,8 +1030,21 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-authorization-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-authorization-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-NotFollowedAnymore"> </a>
+<h2><a href="StructureDefinition-NotFollowedAnymore.html">fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi51"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.dk&#8203;/fhir&#8203;/core&#8203;/StructureDefinition&#8203;/NotFollowedAnymore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-RegionalSubDivisionCodes"> </a>
+<h2><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html">fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi52"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -912,8 +1053,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-condition"> </a>
-<h2><a href="StructureDefinition-dk-core-condition.html">fsh-generated/resources/StructureDefinition-dk-core-condition.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-authorization-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-authorization-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi53"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -922,8 +1063,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cpr-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-cpr-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-condition"> </a>
+<h2><a href="StructureDefinition-dk-core-condition.html">fsh-generated/resources/StructureDefinition-dk-core-condition.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi54"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -932,8 +1073,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cvr-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-cvr-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cpr-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-cpr-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi55"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -942,8 +1083,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-gln-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-gln-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cvr-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-cvr-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi56"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -952,8 +1093,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-kombit-org-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-kombit-org-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-gln-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-gln-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi57"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -962,8 +1103,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-municipalityCodes"> </a>
-<h2><a href="StructureDefinition-dk-core-municipalityCodes.html">fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-kombit-org-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-kombit-org-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi58"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -972,8 +1113,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-observation"> </a>
-<h2><a href="StructureDefinition-dk-core-observation.html">fsh-generated/resources/StructureDefinition-dk-core-observation.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-municipalityCodes"> </a>
+<h2><a href="StructureDefinition-dk-core-municipalityCodes.html">fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi59"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -982,8 +1123,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-organization"> </a>
-<h2><a href="StructureDefinition-dk-core-organization.html">fsh-generated/resources/StructureDefinition-dk-core-organization.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-observation"> </a>
+<h2><a href="StructureDefinition-dk-core-observation.html">fsh-generated/resources/StructureDefinition-dk-core-observation.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi60"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -992,8 +1133,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-patient"> </a>
-<h2><a href="StructureDefinition-dk-core-patient.html">fsh-generated/resources/StructureDefinition-dk-core-patient.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-organization"> </a>
+<h2><a href="StructureDefinition-dk-core-organization.html">fsh-generated/resources/StructureDefinition-dk-core-organization.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi61"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1002,8 +1143,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-practitioner"> </a>
-<h2><a href="StructureDefinition-dk-core-practitioner.html">fsh-generated/resources/StructureDefinition-dk-core-practitioner.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-patient"> </a>
+<h2><a href="StructureDefinition-dk-core-patient.html">fsh-generated/resources/StructureDefinition-dk-core-patient.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi62"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1012,8 +1153,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-sor-identifier"> </a>
-<h2><a href="StructureDefinition-dk-core-sor-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-practitioner"> </a>
+<h2><a href="StructureDefinition-dk-core-practitioner.html">fsh-generated/resources/StructureDefinition-dk-core-practitioner.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi63"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1022,16 +1163,13 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-lpr3-Identifier"> </a>
-<h2><a href="StructureDefinition-lpr3-Identifier.html">fsh-generated/resources/StructureDefinition-lpr3-Identifier.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-sor-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-sor-identifier.html">fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi64"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -1094,7 +1232,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1950)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_EXTRA_MISSING_HL7"><b>The ShareableValueSet profile recommends that the name element is populated, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+     <td><b>ValueSet (l1/c1950)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_EXTRA_MISSING_HL7"><b>Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not</b></td>
    </tr>
 </table>
 <hr/>
@@ -1117,7 +1255,7 @@
  <li>WARNING: Device/WeightScale.606405FFFECFC604: Device.modelNumber: value should not start or finish with whitespace% <span style="color: navy">(1 uses)<span></li>
 </ul>
 <p><b>These &quot;Slicing Information&quot; are very noisy and do not contribute anything useful in this context</b></p><ul>
- <li>% This element does not match any known slice defined in the profile % <span style="color: navy">(50 uses)<span></li>
+ <li>% This element does not match any known slice defined in the profile % <span style="color: navy">(49 uses)<span></li>
  <li>INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1 <span style="color: navy">(1 uses)<span></li>
  <li>INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1 <span style="color: navy">(1 uses)<span></li>
 </ul>
@@ -1132,14 +1270,40 @@
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
-<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-ObservationOxySatVitalSigns.html">fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Observation-ObservationRespiratoryVitalSigns.html">fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+</table>
+<hr/>
+<a name="BUNDLE_ENTRY_URL_ABSOLUTE"> </a>
+<h2>BUNDLE_ENTRY_URL_ABSOLUTE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Patient/Poul')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Device/Telma.FEEDDADADEADBEEF')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Device/BPMonitor.C4F312FFFE53F2C9')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Observation/BatteryLevel.0944')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Observation/CoincidentTimeStamp.0222')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Observation/BloodPressure.Poul.643992')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Observation/HeartRate.Poul.1974654')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>The fullUrl must be an absolute URL (not 'Observation/BloodPressureStatus.Poul.133527')</b></td>
    </tr>
 </table>
 <hr/>
@@ -1147,7 +1311,7 @@
 <h2>Terminology_PassThrough_TX_Message</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Unknown Code 8410608 in urn:iso:std:iso:11073:10101; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'</b></td>
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Unknown Code '8410608' in the system 'urn:iso:std:iso:11073:10101|2022-02-04'; The provided code 'urn:iso:std:iso:11073:10101#8410608' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1155,40 +1319,43 @@
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4' is unknown so the code cannot be validated</b></td>
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated</b></td>
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'https://terminology.medcom.dk/fhir/observation-code' is unknown so the code cannot be validated</b></td>
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Condition-ConditionPressureUlcer.html">fsh-generated/resources/Condition-ConditionPressureUlcer.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.21' is unknown so the code cannot be validated</b></td>
+     <td><a href="Condition-ConditionPressureUlcer.html">fsh-generated/resources/Condition-ConditionPressureUlcer.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.21' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Condition-ElseGraviditet.html">fsh-generated/resources/Condition-ElseGraviditet.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><a href="Condition-ElseGraviditet.html">fsh-generated/resources/Condition-ElseGraviditet.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Condition-JohnDiabetes.html">fsh-generated/resources/Condition-JohnDiabetes.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><a href="Condition-JohnDiabetes.html">fsh-generated/resources/Condition-JohnDiabetes.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Condition-JohnMelanoma.html">fsh-generated/resources/Condition-JohnMelanoma.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+     <td><a href="Condition-JohnFracture.html">fsh-generated/resources/Condition-JohnFracture.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a></td><td><b>Code System URI 'http://localSystem.dk' is unknown so the code cannot be validated</b></td>
+     <td><a href="Condition-JohnMelanoma.html">fsh-generated/resources/Condition-JohnMelanoma.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Observation-HeartRate.Poul.1974654.html">fsh-generated/resources/Observation-HeartRate.Poul.1974654.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a></td><td><b>Code System URI 'http://localSystem.dk' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Observation-ObservationOxySatVitalSigns.html">fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><a href="Observation-HeartRate.Poul.1974654.html">fsh-generated/resources/Observation-HeartRate.Poul.1974654.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Observation-Weight.Poul.230221.html">fsh-generated/resources/Observation-Weight.Poul.230221.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' is unknown so the code cannot be validated</b></td>
+     <td><a href="Observation-ObservationOxySatVitalSigns.html">fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-Weight.Poul.230221.html">fsh-generated/resources/Observation-Weight.Poul.230221.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -1210,7 +1377,7 @@
 <h2>VALUESET_SHAREABLE_EXTRA_MISSING_HL7</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-dk-marital-status.html">fsh-generated/resources/ValueSet-dk-marital-status.json</a></td><td><b>The ShareableValueSet profile recommends that the name element is populated, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+     <td><a href="ValueSet-dk-marital-status.html">fsh-generated/resources/ValueSet-dk-marital-status.json</a></td><td><b>Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not</b></td>
    </tr>
 </table>
 </body>

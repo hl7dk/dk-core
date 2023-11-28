@@ -1,7 +1,8 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD"
 "Identifier","Identifier","","","",0,*,"","","","null {[]} {[]}
 ","An identifier intended for computation","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","","","","","","","","",,,,,"",,,,"Identifier",0,*,"ele-1
-","","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","Identifier"
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","Identifier"
 "Identifier.id","Identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Identifier.extension","Identifier.extension","","extensions
@@ -20,19 +21,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","CX.4 / EI-2-4","II.root or Role.id.root","./IdentifierType"
 "Identifier.value","Identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-gln-length:GLN must be exactly 13 characters long {value.matches('^[0-9]{13}$')}gln-modulus-10:GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually {((
-(10-((value.substring(0,1).toInteger()*1)+
-(value.substring(1,1).toInteger()*3)+
-(value.substring(2,1).toInteger()*1)+
-(value.substring(3,1).toInteger()*3)+
-(value.substring(4,1).toInteger()*1)
-+(value.substring(5,1).toInteger()*3)
-+(value.substring(6,1).toInteger()*1)
-+(value.substring(7,1).toInteger()*3)
-+(value.substring(8,1).toInteger()*1)
-+(value.substring(9,1).toInteger()*3)
-+(value.substring(10,1).toInteger()*1)
-+(value.substring(11,1).toInteger()*3))mod(10))mod(10))=value.substring(12,1).toInteger())}","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
+gln-length:GLN must be exactly 13 characters long {matches('^[0-9]{13}$')}gln-modulus-10:GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually {((
+(10-((substring(0,1).toInteger()*1)+
+(substring(1,1).toInteger()*3)+
+(substring(2,1).toInteger()*1)+
+(substring(3,1).toInteger()*3)+
+(substring(4,1).toInteger()*1)
++(substring(5,1).toInteger()*3)
++(substring(6,1).toInteger()*1)
++(substring(7,1).toInteger()*3)
++(substring(8,1).toInteger()*1)
++(substring(9,1).toInteger()*3)
++(substring(10,1).toInteger()*1)
++(substring(11,1).toInteger()*3))mod(10))mod(10))=substring(12,1).toInteger())}","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
 "Identifier.period","Identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"

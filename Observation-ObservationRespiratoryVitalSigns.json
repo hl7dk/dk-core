@@ -6,11 +6,12 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationRespiratoryVitalSigns\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationRespiratoryVitalSigns&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 50 Breaths / minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Breaths}/min = '{Breaths}/min')</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationRespiratoryVitalSigns\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationRespiratoryVitalSigns&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>effective</b>: 2023-11-01 12:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 50 Breaths / minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p></div>"
   },
   "status" : "final",
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "vital-signs"
     }]
   }],
@@ -24,6 +25,7 @@
   "subject" : {
     "reference" : "Patient/john"
   },
+  "effectiveDateTime" : "2023-11-01T12:00:00+01:00",
   "performer" : [{
     "reference" : "Practitioner/AbrahamLaege"
   }],
@@ -31,6 +33,6 @@
     "value" : 50,
     "unit" : "Breaths / minute",
     "system" : "http://unitsofmeasure.org",
-    "code" : "{Breaths}/min"
+    "code" : "/min"
   }
 }

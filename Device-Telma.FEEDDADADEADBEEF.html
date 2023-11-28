@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.DK.CORE\Telma.FEEDDADADEADBEEF - FHIR v4.0.1</title>
+    <title>Telma.FEEDDADADEADBEEF - HL7 FHIR Implementation Guide: DK Core v3.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,6 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -29,27 +30,35 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.63"}
-    h3,h4,h5,h6{--heading-prefix:"7.63"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.70"}
+    h3,h4,h5,h6{--heading-prefix:"7.70"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - release
+            <span style="display:inline-block;">3.0.0 - ci-build
 
 
 
@@ -129,7 +138,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: DK Core - Local Development build (v2.2.0). See the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: DK Core - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -178,18 +187,6 @@
 
   <h2 id="root">Example Device: Telma.FEEDDADADEADBEEF</h2>
 
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          
-          
-        
-      </td>
-
-    </tr>
-  </table>
 
 
 
@@ -198,7 +195,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="Telma.FEEDDADADEADBEEF"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;Telma.FEEDDADADEADBEEF&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF</p><p><b>manufacturer</b>: Trifork</p><p><b>modelNumber</b>: Telma (Android)</p><p><b>type</b>: MDC_MOC_VMS_MDS_AHD: Continua compliant gateway <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531981 &quot;MDC_MOC_VMS_MDS_AHD&quot;)</span></p><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 7.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: Samsung Tab S7+ (SM-T970)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 1.2.0 (build 2662)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: Android 12 (API 31)</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Weighing scale <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32783)</span>, BluetoothLE: Blood pressure monitor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32775)</span>, BluetoothLE: Pulse oximeter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32772)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&amp;Fitness interfaces list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532355 &quot;MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST&quot;)</span></p><p><b>valueCode</b>: observation-upload-fhir: FHIR resource upload <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaHFS.html">ContinuaHFS</a>#7 &quot;observation-upload-fhir&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532226 &quot;MDC_TIME_SYNC_NTPV4&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is NOT regulated <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="Telma.FEEDDADADEADBEEF"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;Telma.FEEDDADADEADBEEF&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF</p><p><b>manufacturer</b>: Trifork</p><p><b>modelNumber</b>: Telma (Android)</p><p><b>type</b>: MDC_MOC_VMS_MDS_AHD: Continua compliant gateway <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531981 &quot;MDC_MOC_VMS_MDS_AHD&quot;)</span></p><blockquote><p><b>version</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532352 &quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;)</span></p><p><b>value</b>: 7.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_HW: Hardware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531974 &quot;MDC_ID_PROD_SPEC_HW&quot;)</span></p><p><b>value</b>: Samsung Tab S7+ (SM-T970)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_SW: Software version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531975 &quot;MDC_ID_PROD_SPEC_SW&quot;)</span></p><p><b>value</b>: 1.2.0 (build 2662)</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: MDC_ID_PROD_SPEC_FW: Firmware version <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#531976 &quot;MDC_ID_PROD_SPEC_FW&quot;)</span></p><p><b>value</b>: Android 12 (API 31)</p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532353 &quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;)</span></p><p><b>valueCode</b>: BluetoothLE: Weighing scale <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32783)</span>, BluetoothLE: Blood pressure monitor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32775)</span>, BluetoothLE: Pulse oximeter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaPHD.html">ContinuaPHD</a>#32772)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST: Continua certified Health&amp;Fitness interfaces list <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532355 &quot;MDC_REG_CERT_DATA_CONTINUA_AHD_CERT_LIST&quot;)</span></p><p><b>valueCode</b>: observation-upload-fhir: FHIR resource upload <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ContinuaHFS.html">ContinuaHFS</a>#7 &quot;observation-upload-fhir&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#68220 &quot;MDC_TIME_SYNC_PROTOCOL&quot;)</span></p><p><b>valueCode</b>: MDC_TIME_SYNC_NTPV4: NTPV4 time synchronization <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>#532226 &quot;MDC_TIME_SYNC_NTPV4&quot;)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: regulation-status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/phd/STU1/CodeSystem-ASN1ToHL7.html">ASN1ToHL7</a>#532354.0)</span></p><p><b>valueCode</b>: Device is NOT regulated <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></blockquote></div>
 
   
 
@@ -229,7 +226,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 5, 2023 00:02+0000">2023-05-05</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 28, 2023 12:13+0000">2023-11-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

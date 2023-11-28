@@ -1,0 +1,128 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "DkCoreProfessionGroupValueSet",
+      "title" : "DK Profession Group",
+      "description" : "DK Profession Group codes",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "TechniqesSCTCodes",
+      "title" : "TechniqesSCTCodes",
+      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "LoincVitalSigns",
+      "title" : "DK Core Vital Signs",
+      "description" : "LOINC codes describing vital signs.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "MunicipalityCodes",
+      "title" : "DK Municipality Codes",
+      "description" : "Municipality codes used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "RegionalSubdivisionCodes",
+      "title" : "DK Regional Subdivision Codes",
+      "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : null,
+      "title" : "DK MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SorOrganizationType",
+      "title" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "ValueSet-dk-marital-status.html" : "DK MaritalStatus"
+    }
+  ]
+}

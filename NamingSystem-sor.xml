@@ -3,9 +3,15 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="sor"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://hl7.dk/fhir/core/NamingSystem/sor</td></tr><tr><td>Version</td><td>2.2.0</td></tr><tr><td>Name</td><td>DkCoreSor</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://hl7.dk/fhir/core/NamingSystem/sor</td></tr><tr><td>Version</td><td>3.0.0</td></tr><tr><td>Name</td><td>DkCoreSor</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.</p>
 </div></td></tr><tr><td>Publisher</td><td>HL7 Denmark</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>OID</td><td>urn:oid:1.2.208.176.1.1</td></tr><tr><td>URI</td><td>https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor</td></tr></table></div>
   </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="http://hl7.dk/fhir/core/NamingSystem/sor"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="3.0.0"/>
+  </extension>
   <name value="DkCoreSor"/>
   <status value="active"/>
   <kind value="identifier"/>

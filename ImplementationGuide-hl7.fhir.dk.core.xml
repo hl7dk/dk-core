@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="2.2.0"/>
+  <version value="3.0.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
-  <status value="active"/>
-  <date value="2023-05-05T00:02:52+00:00"/>
+  <status value="draft"/>
+  <date value="2023-11-28T12:13:03+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -41,7 +41,15 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.0.0"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_phd">
     <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
@@ -62,7 +70,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -259,6 +267,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
@@ -313,7 +329,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -510,6 +526,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
@@ -548,402 +572,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-authorization-identifier"/>
-      </reference>
-      <name value="Danish Health Professionals Authorization Identifier"/>
-      <description value="Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-cvr-identifier"/>
-      </reference>
-      <name value="Danish Central Business Register (CVR) Identifier"/>
-      <description value="Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-condition"/>
-      </reference>
-      <name value="Danish Core Condition Profile"/>
-      <description value="HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-cpr-identifier"/>
-      </reference>
-      <name value="Danish Central Person Register (CPR) Identifier"/>
-      <description value="This structure holds the danish [CPR](https://cpr.dk/) identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-observation"/>
-      </reference>
-      <name value="Danish Core Observation Profiles"/>
-      <description value="HL7 Denmark core profile for observations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-organization"/>
-      </reference>
-      <name value="Danish Core Organization Profile"/>
-      <description value="HL7 Denmark core profile for a danish health organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-patient"/>
-      </reference>
-      <name value="Danish Core Patient Profile"/>
-      <description value="HL7 Denmark core profile for a patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-practitioner"/>
-      </reference>
-      <name value="Danish Core Practitioner Profile"/>
-      <description value="HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-gln-identifier"/>
-      </reference>
-      <name value="GLN Identifier"/>
-      <description value="Identifier holding a 13 digit GLN"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-kombit-org-identifier"/>
-      </reference>
-      <name value="Kombit Org Identifier"/>
-      <description value="Identifier holding the organization code issued by KOMBIT"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lpr3-Identifier"/>
-      </reference>
-      <name value="LPR3 Identifier"/>
-      <description value="Identifier holding a LPR3 identifier for an organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-sor-identifier"/>
-      </reference>
-      <name value="SOR Identifier"/>
-      <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionLastAssertedDate"/>
-      </reference>
-      <name value="ConditionLastAssertedDate"/>
-      <description value="Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-municipalityCodes"/>
-      </reference>
-      <name value="Danish Core Municipality codes"/>
-      <description value="Identifier holding the official identifier for a danish municipality"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NotFollowedAnymore"/>
-      </reference>
-      <name value="NotFollowedAnymore"/>
-      <description value="Extension for the date where a condition lost focus in a specific clinical context"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-RegionalSubDivisionCodes"/>
-      </reference>
-      <name value="Danish Core Regional Sub Division Codes Extension"/>
-      <description value="Identifier holding the official organization identifier for a danish region"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DkCoreProfessionGroupValueSet"/>
-      </reference>
-      <name value="DK Profession Group"/>
-      <description value="DK Profession Group codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-LoincVitalSigns"/>
-      </reference>
-      <name value="DK Core Vital Signs"/>
-      <description value="LOINC codes describing vital signs."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-MunicipalityCodes"/>
-      </reference>
-      <name value="DK Municipality Codes"/>
-      <description value="Municipality codes used in Denmark"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-RegionalSubDivisionCodes"/>
-      </reference>
-      <name value="DK Regional Subdivision Codes"/>
-      <description value="Subdivision codes (Regional codes) used in Denmark"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/TechniqesSCTCodes"/>
-      </reference>
-      <name value="TechniqesSCTCodes"/>
-      <description value="SNOMED CT Codes for the techniqe used when obtaining an observation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/address-type-dk-supplement"/>
-      </reference>
-      <name value="DK Address Type"/>
-      <description value="The type of an address (physical / postal)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/address-use-dk-supplement"/>
-      </reference>
-      <name value="DK Address Use"/>
-      <description value="The use of an address"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/administrative-gender-supplement"/>
-      </reference>
-      <name value="DK Administrative Gender Supplement"/>
-      <description value="CodeSystem supplement with danish translations for administrative gender"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/care-team-status-dk-supplement"/>
-      </reference>
-      <name value="DK CareTeam Status"/>
-      <description value="Indicates the status of the care team."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/consent-state-codes-dk-supplement"/>
-      </reference>
-      <name value="DK Consent State"/>
-      <description value="Indicates the state of the consent"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-regional-subdivision-codes"/>
-      </reference>
-      <name value="DK Regional Subdivision Codes"/>
-      <description value="Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/days-of-week-dk-supplement"/>
-      </reference>
-      <name value="DK Days Of Week"/>
-      <description value="The days of the week."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/DkCoreProfessionGroupCodes"/>
-      </reference>
-      <name value="DK Profession Group Codes"/>
-      <description value="DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-marital-status"/>
-      </reference>
-      <name value="DK Marital Statuses"/>
-      <description value="DK marital statuses"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/episode-of-care-status-dk-supplement"/>
-      </reference>
-      <name value="DK Episode Of Care Status"/>
-      <description value="The status of the episode of care."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-municipality-codes-greenland"/>
-      </reference>
-      <name value="DK Greenland Municipality Codes"/>
-      <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-core-municipality-codes"/>
-      </reference>
-      <name value="DK Municipality Codes"/>
-      <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/publication-status-dk-supplement"/>
-      </reference>
-      <name value="DK Publication Status"/>
-      <description value="The lifecycle status of a Value Set or Concept Map."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/request-status-dk-supplement"/>
-      </reference>
-      <name value="DK Request Status"/>
-      <description value="Codes identifying the stage lifecycle stage of a request"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/283"/>
-      </reference>
-      <name value="Example of valid patient with full address"/>
-      <description value="Example of valid patient with full address"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
@@ -1021,36 +649,355 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Condition/ConditionPressureUlcer"/>
+        <reference value="StructureDefinition/ConditionLastAssertedDate"/>
       </reference>
-      <name value="John tryksår"/>
-      <description value="John, tryksår, kommunal tilstand"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+      <name value="ConditionLastAssertedDate"/>
+      <description value="Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="NamingSystem"/>
       </extension>
       <reference>
-        <reference value="Patient/Confidential"/>
+        <reference value="NamingSystem/cpr"/>
       </reference>
-      <name value="Example of a patient with confidential adress and name"/>
-      <description value="Example of a patient with confidential adress and name"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+      <name value="cpr"/>
+      <description value="The Danish civil registration system (&quot;CPR&quot;) encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="Bundle/ContinuaBundleWithDevice"/>
+        <reference value="StructureDefinition/dk-core-cvr-identifier"/>
       </reference>
-      <name value="Poul's home blood pressure measurement"/>
-      <description value="This example demonstrates a DkCoreObservation _and_ Continua-compliant&#xA;bundle containing a home blood pressure measurement uploaded to a Continua-compliant&#xA;_&quot;FHIR Observation Reporting Server&quot;._"/>
-      <exampleBoolean value="true"/>
+      <name value="Danish Central Business Register (CVR) Identifier"/>
+      <description value="Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-cpr-identifier"/>
+      </reference>
+      <name value="Danish Central Person Register (CPR) Identifier"/>
+      <description value="This structure holds the danish [CPR](https://cpr.dk/) identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-condition"/>
+      </reference>
+      <name value="Danish Core Condition Profile"/>
+      <description value="HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-municipalityCodes"/>
+      </reference>
+      <name value="Danish Core Municipality codes"/>
+      <description value="Identifier holding the official identifier for a danish municipality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-observation"/>
+      </reference>
+      <name value="Danish Core Observation Profiles"/>
+      <description value="HL7 Denmark core profile for observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-organization"/>
+      </reference>
+      <name value="Danish Core Organization Profile"/>
+      <description value="HL7 Denmark core profile for a danish health organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-patient"/>
+      </reference>
+      <name value="Danish Core Patient Profile"/>
+      <description value="HL7 Denmark core profile for a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-practitioner"/>
+      </reference>
+      <name value="Danish Core Practitioner Profile"/>
+      <description value="HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-RegionalSubDivisionCodes"/>
+      </reference>
+      <name value="Danish Core Regional Sub Division Codes Extension"/>
+      <description value="Identifier holding the official organization identifier for a danish region"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-authorization-identifier"/>
+      </reference>
+      <name value="Danish Health Professionals Authorization Identifier"/>
+      <description value="Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/address-type-dk-supplement"/>
+      </reference>
+      <name value="DK Address Type"/>
+      <description value="The type of an address (physical / postal)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/address-use-dk-supplement"/>
+      </reference>
+      <name value="DK Address Use"/>
+      <description value="The use of an address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/administrative-gender-supplement"/>
+      </reference>
+      <name value="DK Administrative Gender Supplement"/>
+      <description value="CodeSystem supplement with danish translations for administrative gender"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/care-team-status-dk-supplement"/>
+      </reference>
+      <name value="DK CareTeam Status"/>
+      <description value="Indicates the status of the care team."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/consent-state-codes-dk-supplement"/>
+      </reference>
+      <name value="DK Consent State"/>
+      <description value="Indicates the state of the consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-marital-status"/>
+      </reference>
+      <name value="DK Core Marital Status"/>
+      <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sor-organization-type"/>
+      </reference>
+      <name value="DK Core SOR Organization Type"/>
+      <description value="Value set used for indicating the organization type for organizations from SOR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-LoincVitalSigns"/>
+      </reference>
+      <name value="DK Core Vital Signs"/>
+      <description value="LOINC codes describing vital signs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/days-of-week-dk-supplement"/>
+      </reference>
+      <name value="DK Days Of Week"/>
+      <description value="The days of the week."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/episode-of-care-status-dk-supplement"/>
+      </reference>
+      <name value="DK Episode Of Care Status"/>
+      <description value="The status of the episode of care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-municipality-codes-greenland"/>
+      </reference>
+      <name value="DK Greenland Municipality Codes"/>
+      <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-marital-status"/>
+      </reference>
+      <name value="DK Marital Statuses"/>
+      <description value="DK marital statuses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-MunicipalityCodes"/>
+      </reference>
+      <name value="DK Municipality Codes"/>
+      <description value="Municipality codes used in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-municipality-codes"/>
+      </reference>
+      <name value="DK Municipality Codes"/>
+      <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DkCoreProfessionGroupValueSet"/>
+      </reference>
+      <name value="DK Profession Group"/>
+      <description value="DK Profession Group codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DkCoreProfessionGroupCodes"/>
+      </reference>
+      <name value="DK Profession Group Codes"/>
+      <description value="DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/publication-status-dk-supplement"/>
+      </reference>
+      <name value="DK Publication Status"/>
+      <description value="The lifecycle status of a Value Set or Concept Map."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-RegionalSubDivisionCodes"/>
+      </reference>
+      <name value="DK Regional Subdivision Codes"/>
+      <description value="Subdivision codes (Regional codes) used in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-regional-subdivision-codes"/>
+      </reference>
+      <name value="DK Regional Subdivision Codes"/>
+      <description value="Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/request-status-dk-supplement"/>
+      </reference>
+      <name value="DK Request Status"/>
+      <description value="Codes identifying the stage lifecycle stage of a request"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1073,6 +1020,83 @@
       <name value="ElsePainVRS"/>
       <description value="Elses smerte målt med VRS"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Confidential"/>
+      </reference>
+      <name value="Example of a patient with confidential adress and name"/>
+      <description value="Example of a patient with confidential adress and name"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/else"/>
+      </reference>
+      <name value="Example of a woman of childbearing age"/>
+      <description value="Example of a woman of childbearing age. Else is a MedCom test-patient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ukendt"/>
+      </reference>
+      <name value="Example of valid patient unknown identifier registry"/>
+      <description value="Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mogensen"/>
+      </reference>
+      <name value="Example of valid patient with danish marital status"/>
+      <description value="Example of valid patient with danish marital status"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/283"/>
+      </reference>
+      <name value="Example of valid patient with full address"/>
+      <description value="Example of valid patient with full address"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/john"/>
+      </reference>
+      <name value="Example of valid patient with multiple names"/>
+      <description value="Example of valid patient with multiple names"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-gln-identifier"/>
+      </reference>
+      <name value="GLN Identifier"/>
+      <description value="Identifier holding a 13 digit GLN"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1122,6 +1146,17 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
+        <reference value="Condition/JohnFracture"/>
+      </reference>
+      <name value="John fraktur"/>
+      <description value="Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
         <reference value="Condition/JohnMelanoma"/>
       </reference>
       <name value="John mistanke om Modermærkekræft"/>
@@ -1141,14 +1176,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Organization/LaegerneHasserisBymidte"/>
+        <reference value="Condition/ConditionPressureUlcer"/>
       </reference>
-      <name value="LaegerneHasserisBymidte"/>
-      <description value="Praktisernede læge i Hasseris, som defineret af SOR"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+      <name value="John tryksår"/>
+      <description value="John, tryksår, kommunal tilstand"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1172,6 +1207,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-kombit-org-identifier"/>
+      </reference>
+      <name value="Kombit Org Identifier"/>
+      <description value="Identifier holding the organization code issued by KOMBIT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/LaegerneHasserisBymidte"/>
+      </reference>
+      <name value="LaegerneHasserisBymidte"/>
+      <description value="Praktisernede læge i Hasseris, som defineret af SOR"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/b08997bb-4476-4dd0-84dd-2e297f809364"/>
+      </reference>
+      <name value="MedCom Test Organization"/>
+      <description value="MedCom Test Organization with SOR id"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NotFollowedAnymore"/>
+      </reference>
+      <name value="NotFollowedAnymore"/>
+      <description value="Extension for the date where a condition lost focus in a specific clinical context"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1185,9 +1264,10 @@
         <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+        <reference value="Device/WeightScale.606405FFFECFC604"/>
       </reference>
-      <name value="Telma.FEEDDADADEADBEEF"/>
+      <name value="Poul's A&amp;D weight scale"/>
+      <description value="This device is Poul's personal weighing scale, which he keeps in the bathroom&#xA;of his home, and uses for daily monitoring due to his CHF condition."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1203,80 +1283,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
+        <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Device/WeightScale.606405FFFECFC604"/>
+        <reference value="Bundle/ContinuaBundleWithDevice"/>
       </reference>
-      <name value="Poul's A&amp;D weight scale"/>
-      <description value="This device is Poul's personal weighing scale, which he keeps in the bathroom&#xA;of his home, and uses for daily monitoring due to his CHF condition."/>
+      <name value="Poul's home blood pressure measurement"/>
+      <description value="This example demonstrates a DkCoreObservation _and_ Continua-compliant&#xA;bundle containing a home blood pressure measurement uploaded to a Continua-compliant&#xA;_&quot;FHIR Observation Reporting Server&quot;._"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/b08997bb-4476-4dd0-84dd-2e297f809364"/>
-      </reference>
-      <name value="MedCom Test Organization"/>
-      <description value="MedCom Test Organization with SOR id"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="NamingSystem"/>
-      </extension>
-      <reference>
-        <reference value="NamingSystem/cpr"/>
-      </reference>
-      <name value="cpr"/>
-      <description value="The Danish civil registration system (&quot;CPR&quot;) encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-marital-status"/>
-      </reference>
-      <name value="DK Core Marital Status"/>
-      <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/else"/>
-      </reference>
-      <name value="Example of a woman of childbearing age"/>
-      <description value="Example of a woman of childbearing age. Else is a MedCom test-patient"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/john"/>
-      </reference>
-      <name value="Example of valid patient with multiple names"/>
-      <description value="Example of valid patient with multiple names"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/mogensen"/>
-      </reference>
-      <name value="Example of valid patient with danish marital status"/>
-      <description value="Example of valid patient with danish marital status"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1291,25 +1305,35 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="ValueSet/sor-organization-type"/>
+        <reference value="StructureDefinition/dk-core-sor-identifier"/>
       </reference>
-      <name value="DK Core SOR Organization Type"/>
-      <description value="Value set used for indicating the organization type for organizations from SOR"/>
+      <name value="SOR Identifier"/>
+      <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Patient/ukendt"/>
+        <reference value="ValueSet/TechniqesSCTCodes"/>
       </reference>
-      <name value="Example of valid patient unknown identifier registry"/>
-      <description value="Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+      <name value="TechniqesSCTCodes"/>
+      <description value="SNOMED CT Codes for the techniqe used when obtaining an observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+      </reference>
+      <name value="Telma.FEEDDADADEADBEEF"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

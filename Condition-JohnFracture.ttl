@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Condition/JohnFracture> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "JohnFracture"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"JohnFracture\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;JohnFracture&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-condition.html\">Danish Core Condition Profile</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Pertrokantær femurfraktur, højresidig <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#DS721+TUL1)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>onset</b>: 2022-04-26</p><p><b>recordedDate</b>: 2022-04-27</p><p><b>recorder</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>asserter</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4.12"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DS721+TUL1" ] ;
+       fhir:display [ fhir:v "Pertrokantær femurfraktur, højresidig" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/john> ;
+     fhir:reference [ fhir:v "Patient/john" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2022-04-26"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2022-04-27"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
+     fhir:reference [ fhir:v "Practitioner/AbrahamLaege" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
+     fhir:reference [ fhir:v "Practitioner/AbrahamLaege" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
