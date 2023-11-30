@@ -15,18 +15,6 @@
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
     },
     {
-      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
-      "version" : "3.0.0",
-      "status" : "draft",
-      "name" : "TechniqesSCTCodes",
-      "title" : "TechniqesSCTCodes",
-      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
-    },
-    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
       "version" : "3.0.0",
       "status" : "draft",
@@ -64,6 +52,18 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
@@ -289,13 +289,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier"
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -309,13 +309,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier"
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -329,11 +329,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",

@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2023-11-30T13:40:49+00:00",
+  "date" : "2023-11-30T14:55:40+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -1238,6 +1238,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-TechniquesSCTCodes"
+      },
+      "name" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -1577,18 +1589,6 @@
       },
       "name" : "SOR Identifier",
       "description" : "Identifier holding the official SOR identifier for a danish healthcare organization",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TechniqesSCTCodes"
-      },
-      "name" : "TechniqesSCTCodes",
-      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
       "exampleBoolean" : false
     },
     {

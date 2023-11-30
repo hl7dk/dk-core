@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a34a5425-9bc2-4d52-9476-6a657714c4be"/>
+  <id value="bceb0e68-83f3-41b8-a146-2c3e71b834e9"/>
   <meta>
-    <lastUpdated value="2023-11-30T13:40:49.993+00:00"/>
+    <lastUpdated value="2023-11-30T14:55:40.602+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -206,7 +206,7 @@
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -215,8 +215,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:31df59e9-cd7a-4b89-b5e4-506528455bce"/>
-          <timestamp value="2023-11-30T13:41:52+00:00"/>
+          <identifier value="urn:uuid:352b91ac-d59f-46a3-a59d-137aa4366848"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -336,117 +336,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>SNOMED CT International edition 01-Sep 2023</li>
-                <li>SNOMED CT International edition 01-Sep 2023</li>
-              </ul>
-            </div>
-            <p>This value set contains 3 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-761996005"> </a>  
-                  <a href="http://snomed.info/id/761996005">761996005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Estimation technique (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-733985002"> </a>  
-                  <a href="http://snomed.info/id/733985002">733985002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Reported (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-272391002"> </a>  
-                  <a href="http://snomed.info/id/272391002">272391002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Measurement technique (qualifier value)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
-        <version value="3.0.0"/>
-        <name value="TechniqesSCTCodes"/>
-        <title value="TechniqesSCTCodes"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-            <display value="Denmark"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:d01ffc9b-9ecc-4e03-a467-ef2396665658"/>
-          <timestamp value="2023-11-30T13:41:52+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="761996005"/>
-            <display value="Estimation technique (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="733985002"/>
-            <display value="Reported (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="272391002"/>
-            <display value="Measurement technique (qualifier value)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
     <resource>
       <ValueSet>
@@ -530,7 +419,7 @@
         <title value="DK Core Vital Signs"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -539,8 +428,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae0d2c23-d447-4964-93b5-fa4628672154"/>
-          <timestamp value="2023-11-30T13:41:52+00:00"/>
+          <identifier value="urn:uuid:71e8fad1-83e7-4f82-b776-6855be166ed1"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1468,7 +1357,7 @@
         <title value="DK Municipality Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1477,8 +1366,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f3f4dc37-763f-4251-b80e-ec9dc2590b31"/>
-          <timestamp value="2023-11-30T13:41:53+00:00"/>
+          <identifier value="urn:uuid:14de8273-f8e5-4a0a-9c30-cbb173636829"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2088,7 +1977,7 @@
         <title value="DK Regional Subdivision Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2097,8 +1986,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2c3f9476-3c0b-4183-87a2-4a6e4b835c98"/>
-          <timestamp value="2023-11-30T13:41:53+00:00"/>
+          <identifier value="urn:uuid:481c2d0d-0119-4679-a65b-a72c99c0ae01"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2132,6 +2021,117 @@
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
             <code value="DK-83"/>
             <display value="Region of Southern Denmark"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-761996005"> </a>  
+                  <a href="http://snomed.info/id/761996005">761996005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Estimation technique (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-733985002"> </a>  
+                  <a href="http://snomed.info/id/733985002">733985002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Reported (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-272391002"> </a>  
+                  <a href="http://snomed.info/id/272391002">272391002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measurement technique (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"/>
+        <version value="3.0.0"/>
+        <name value="TechniquesSCTCodes"/>
+        <title value="DK TechniquesSCTCodes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fe5863d2-2e75-45e7-9d97-dc4c6d315965"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="761996005"/>
+            <display value="Estimation technique (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="733985002"/>
+            <display value="Reported (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2386,7 +2386,7 @@
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2395,8 +2395,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8c6c274-7715-463b-80ff-4f7077df303a"/>
-          <timestamp value="2023-11-30T13:41:53+00:00"/>
+          <identifier value="urn:uuid:ab7ee162-78cb-4bba-99ef-df6e88034489"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3145,7 +3145,7 @@
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-11-30T13:40:49+00:00"/>
+        <date value="2023-11-30T14:55:40+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3154,8 +3154,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fa71db04-0ba2-4bf5-9d9d-2091fed45a3b"/>
-          <timestamp value="2023-11-30T13:41:53+00:00"/>
+          <identifier value="urn:uuid:09d7dc74-923b-4b4c-8e09-12f25e0c3627"/>
+          <timestamp value="2023-11-30T14:56:41+00:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>

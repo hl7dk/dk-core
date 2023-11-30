@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2023-11-30T13:40:49+00:00"/>
+  <date value="2023-11-30T14:55:40+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -1001,6 +1001,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-TechniquesSCTCodes"/>
+      </reference>
+      <name value="DK TechniquesSCTCodes"/>
+      <description value="SNOMED CT Codes for the technique used when obtaining an observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1312,17 +1323,6 @@
       </reference>
       <name value="SOR Identifier"/>
       <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/TechniqesSCTCodes"/>
-      </reference>
-      <name value="TechniqesSCTCodes"/>
-      <description value="SNOMED CT Codes for the techniqe used when obtaining an observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

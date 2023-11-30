@@ -12,15 +12,6 @@
       ]
     },
     {
-      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
-      "version" : "3.0.0",
-      "status" : "draft",
-      "name" : "TechniqesSCTCodes",
-      "title" : "TechniqesSCTCodes",
-      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
       "version" : "3.0.0",
       "status" : "draft",
@@ -51,6 +42,15 @@
       "systems" : [
         "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
       ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",

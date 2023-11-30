@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes> a fhir:ValueSet ;
+<http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "TechniqesSCTCodes"] ; # 
+  fhir:id [ fhir:v "dk-core-TechniquesSCTCodes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>Estimation technique (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>Reported (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>Measurement technique (qualifier value)</td></tr></table></li></ul></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
-  fhir:name [ fhir:v "TechniqesSCTCodes"] ; # 
-  fhir:title [ fhir:v "TechniqesSCTCodes"] ; # 
+  fhir:name [ fhir:v "TechniquesSCTCodes"] ; # 
+  fhir:title [ fhir:v "DK TechniquesSCTCodes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-11-30T13:40:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-30T14:55:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -30,7 +30,7 @@
        fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "SNOMED CT Codes for the techniqe used when obtaining an observation"] ; # 
+  fhir:description [ fhir:v "SNOMED CT Codes for the technique used when obtaining an observation"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

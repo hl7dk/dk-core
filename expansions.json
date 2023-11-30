@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a34a5425-9bc2-4d52-9476-6a657714c4be",
+  "id" : "bceb0e68-83f3-41b8-a146-2c3e71b834e9",
   "meta" : {
-    "lastUpdated" : "2023-11-30T13:40:49.993+00:00"
+    "lastUpdated" : "2023-11-30T14:55:40.602+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "DK Profession Group",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:31df59e9-cd7a-4b89-b5e4-506528455bce",
-        "timestamp" : "2023-11-30T13:41:52+00:00",
+        "identifier" : "urn:uuid:352b91ac-d59f-46a3-a59d-137aa4366848",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -148,70 +148,6 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>SNOMED CT International edition 01-Sep 2023</li><li>SNOMED CT International edition 01-Sep 2023</li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-761996005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>http://snomed.info/sct</td><td>Estimation technique (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733985002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>http://snomed.info/sct</td><td>Reported (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-272391002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>http://snomed.info/sct</td><td>Measurement technique (qualifier value)</td></tr></table></div>"
-      },
-      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
-      "version" : "3.0.0",
-      "name" : "TechniqesSCTCodes",
-      "title" : "TechniqesSCTCodes",
-      "status" : "draft",
-      "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:d01ffc9b-9ecc-4e03-a467-ef2396665658",
-        "timestamp" : "2023-11-30T13:41:52+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-valueset",
-          "valueUri" : "null"
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "761996005",
-          "display" : "Estimation technique (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "733985002",
-          "display" : "Reported (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "272391002",
-          "display" : "Measurement technique (qualifier value)"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -225,7 +161,7 @@
       "title" : "DK Core Vital Signs",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -234,8 +170,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ae0d2c23-d447-4964-93b5-fa4628672154",
-        "timestamp" : "2023-11-30T13:41:52+00:00",
+        "identifier" : "urn:uuid:71e8fad1-83e7-4f82-b776-6855be166ed1",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -304,7 +240,7 @@
       "title" : "DK Municipality Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -313,8 +249,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3f4dc37-763f-4251-b80e-ec9dc2590b31",
-        "timestamp" : "2023-11-30T13:41:53+00:00",
+        "identifier" : "urn:uuid:14de8273-f8e5-4a0a-9c30-cbb173636829",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 104,
         "parameter" : [{
           "name" : "excludeNested",
@@ -865,7 +801,7 @@
       "title" : "DK Regional Subdivision Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -874,8 +810,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2c3f9476-3c0b-4183-87a2-4a6e4b835c98",
-        "timestamp" : "2023-11-30T13:41:53+00:00",
+        "identifier" : "urn:uuid:481c2d0d-0119-4679-a65b-a72c99c0ae01",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -914,6 +850,70 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>SNOMED CT International edition 01-Sep 2023</li><li>SNOMED CT International edition 01-Sep 2023</li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-761996005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>http://snomed.info/sct</td><td>Estimation technique (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733985002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>http://snomed.info/sct</td><td>Reported (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-272391002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>http://snomed.info/sct</td><td>Measurement technique (qualifier value)</td></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.0.0",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-11-30T14:55:40+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fe5863d2-2e75-45e7-9d97-dc4c6d315965",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "761996005",
+          "display" : "Estimation technique (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "733985002",
+          "display" : "Reported (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "272391002",
+          "display" : "Measurement technique (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -926,7 +926,7 @@
       "title" : "DK MaritalStatus",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -935,8 +935,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c8c6c274-7715-463b-80ff-4f7077df303a",
-        "timestamp" : "2023-11-30T13:41:53+00:00",
+        "identifier" : "urn:uuid:ab7ee162-78cb-4bba-99ef-df6e88034489",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1045,7 +1045,7 @@
       "title" : "DK SOR Organization Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-11-30T13:40:49+00:00",
+      "date" : "2023-11-30T14:55:40+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1054,8 +1054,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fa71db04-0ba2-4bf5-9d9d-2091fed45a3b",
-        "timestamp" : "2023-11-30T13:41:53+00:00",
+        "identifier" : "urn:uuid:09d7dc74-923b-4b4c-8e09-12f25e0c3627",
+        "timestamp" : "2023-11-30T14:56:41+00:00",
         "total" : 68,
         "parameter" : [{
           "name" : "excludeNested",

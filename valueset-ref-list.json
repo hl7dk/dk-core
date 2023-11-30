@@ -15,18 +15,6 @@
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
     },
     {
-      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
-      "version" : "3.0.0",
-      "status" : "draft",
-      "name" : "TechniqesSCTCodes",
-      "title" : "TechniqesSCTCodes",
-      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
-    },
-    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
       "version" : "3.0.0",
       "status" : "draft",
@@ -64,6 +52,18 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
