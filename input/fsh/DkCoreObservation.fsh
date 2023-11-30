@@ -95,7 +95,7 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding ^slicing.rules = #open
 * method.coding contains
    SCTCode 0..1
-* method.coding[SCTCode] from TechniqesSCTCodes (example)
+* method.coding[SCTCode] from TechniquesSCTCodes (example)
 * method.coding[SCTCode].system = $sct
 
 Invariant: dk-core-observation-mandatory-units

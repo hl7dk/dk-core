@@ -241,9 +241,10 @@ Description: "UCUM codes to represent units for basic Observations usable in Den
 * $ucum#{fraction} "fraction"
 
 
-ValueSet: TechniqesSCTCodes
-Title: "TechniqesSCTCodes"
-Description: "SNOMED CT Codes for the techniqe used when obtaining an observation"
+ValueSet: TechniquesSCTCodes
+Id: dk-core-TechniquesSCTCodes
+Title: "DK TechniquesSCTCodes"
+Description: "SNOMED CT Codes for the technique used when obtaining an observation"
 * ^experimental = false
 * $sct#761996005 "Estimation technique (qualifier value)"
 * $sct#733985002 "Reported (qualifier value)"
