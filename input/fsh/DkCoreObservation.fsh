@@ -22,7 +22,7 @@ Description: "HL7 Denmark core profile for observations"
 * code.coding[SNOMEDCT]
   * ^short = "SNOMED CT code for the observation"
   * system 1..
-  * system = "https://www.snomed.org/" (exactly)
+  * system = "http://snomed.info/sct" (exactly)
   * code 1..
 * code.coding[NPU]
   * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
@@ -67,7 +67,7 @@ Description: "HL7 Denmark core profile for observations"
 * component.code.coding[SNOMEDCT]
   * ^short = "SNOMED CT code for the observation"
   * system 1..
-  * system = "https://www.snomed.org/" (exactly)
+  * system = "http://snomed.info/sct" (exactly)
   * code 1..
 * component.code.coding[NPU]
   * ^short = "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority." 
@@ -102,7 +102,7 @@ Description: "HL7 Denmark core profile for observations"
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
 Severity: #error
-Expression: "Observation.valueQuantity.value.exists() implies Observation.valueQuantity.unit.exists() or Observation.valueQuantity.code.exists()"
+Expression: "value.ofType(Quantity).value.exists() implies value.ofType(Quantity).unit.exists() or value.ofType(Quantity).code.exists()"
 
 
 
@@ -166,13 +166,14 @@ Instance: ObservationRespiratoryVitalSigns
 InstanceOf: DkCoreObservation
 Title: "John's Respiratory rate measurement, Vital Signs"
 Usage: #example
-* category = #vital-signs
+* category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
 * valueQuantity.value = 50
-* valueQuantity.code = #{Breaths}/min
+* valueQuantity.code = #/min
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "Breaths / minute"
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
@@ -183,8 +184,9 @@ Usage: #inline
 * status = #final
 * code.coding = $NPU#NPU03011 "Iltmætning"
 * valueQuantity.value = 0.97
-* valueQuantity.code = #{1}
+* valueQuantity.code = #1
 * valueQuantity.system = $ucum
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 
@@ -192,13 +194,14 @@ Instance: ObservationOxySatVitalSigns
 InstanceOf: DkCoreObservation
 Title: "John's oxygen saturation measurement, Vital Signs"
 Usage: #example
-* category = #vital-signs
+* category = $observation-category#vital-signs
 * status = #final
 * code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * valueQuantity.value = 97.0
 * valueQuantity.code = #%
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "%"
+* effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
 * contained[0] = ObservationOxySat
