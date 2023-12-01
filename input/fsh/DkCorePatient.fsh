@@ -4,12 +4,6 @@ Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description: "HL7 Denmark core profile for a patient"
 * obeys marital-status-unknown-usage
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-* . ^constraint.source = "https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
-// WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
-// Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-  * ^constraint.requirements = "Marital status is legally unknown in Denmark"
 * identifier 1..
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
@@ -46,12 +40,13 @@ Description: "Example of valid patient with full address"
 Usage: #example
 * identifier.use = #official
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "0506504005"
+* identifier.value = "0108589995"
 * name.use = #official
-* name.family = "Lind"
-* name.given = "Torsteinn"
+* name.family = "Mosebryggersen"
+* name.given[0] = "Schwendlund"
+* name.given[1] = "Test"
 * gender = #male
-* birthDate = "1950-06-04"
+* birthDate = "1958-08-01"
 * address.extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
 * address.extension[=].valueCodeableConcept = $dk-core-municipality-codes#0330
 * address.extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
@@ -73,15 +68,16 @@ InstanceOf: DkCorePatient
 Title: "Example of a patient with confidential adress and name"
 Description: "Example of a patient with confidential adress and name"
 Usage: #example
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This instance is an example of a Danish citizen who has requested name and address protection (Navne- og adressebeskyttelse), why the instance is marked with a security label. Only personnel using systems in public/official affairs are allowed to see name and address for the citizen, why these information are included in the profile.<p></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Confidential\"</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-Confidentiality http://terminology.hl7.org/CodeSystem/v3-Confidentiality}\">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span></p></div><p><b>identifier</b>: id: 0908760405</p><p><b>name</b>: Hans Hansen (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1976-08-09</p><p><b>address</b>: Julianevej 22 6000 Kolding (HOME)</p></div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This instance is an example of a Danish citizen who has requested name and address protection (Navne- og adressebeskyttelse), why the instance is marked with a security label. Only personnel using systems in public/official affairs are allowed to see name and address for the citizen, why these information are included in the profile.<p></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Confidential\"</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-Confidentiality http://terminology.hl7.org/CodeSystem/v3-Confidentiality}\">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span></p></div><p><b>identifier</b>: id: 1502779995</p><p><b>name</b>: Hans Hansen (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1976-08-09</p><p><b>address</b>: Julianevej 22 6000 Kolding (HOME)</p></div>"
 * text.status = #additional
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "0908760405"
+* identifier.value = "1502779995"
 * name.use = #official
-* name.family = "Hansen"
-* name.given = "Hans"
+* name.family = "Berggren"
+* name.given[0] = "Ruddi"
+* name.given[1] = "Test"
 * gender = #male
-* birthDate = "1976-08-09"
+* birthDate = "1977-02-15"
 * address.use = #home
 * address.line = "Julianevej 22"
 * address.city = "6000 Kolding"
@@ -109,7 +105,7 @@ Title: "Example of valid patient with multiple names"
 Description: "Example of valid patient with multiple names"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "1112640001"
+* identifier.value = "0201609995"
 * name[0].use = #official
 * name[=].family = "Meyerhofen"
 * name[=].given[0] = "John"
@@ -118,7 +114,7 @@ Usage: #example
 * name[+].use = #usual
 * name[=].given = "Johnny"
 * gender = #male
-* birthDate = "1964-12-11"
+* birthDate = "1960-01-02"
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner.identifier.value = "487341000016005"
 * generalPractitioner.display = "Charlottenlund Lægehus"
@@ -130,13 +126,13 @@ Title: "Example of valid patient with danish marital status"
 Description: "Example of valid patient with danish marital status"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "1112640001"
+* identifier.value = "0107729995"
 * name.use = #official
 * name.family = "Mogensen"
 * name.given = "Jan"
 * name.prefix = "Mr"
 * gender = #male
-* birthDate = "1964-12-11"
+* birthDate = "1972-07-01"
 * maritalStatus = $dk-marital-status#P "Registreret partnerskab"
 * active = true
 
@@ -155,6 +151,7 @@ Usage: #example
 * active = true
 
 Invariant: marital-status-unknown-usage
-Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK"
+Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"
 Severity: #warning
 Expression: "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()"
+* requirements = "Marital status is legally unknown in Denmark"
