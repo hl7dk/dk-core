@@ -9,4 +9,5 @@ The changes between 2.2.0 and 3.0.0 are:
 * Added context on extension ConditionLastAssertedDate and NotFollowedAnymore
 * Bug update of invariants by changing constraint.requirements to requirements and removing of constraint.source where relevant. 
 * Bug update of invariants by removing the ‘value.’ and ‘Observation.’ where relevant
+* Bug update of ValueSet TechniquesSCTCodes due to misspelling
 * Update of DkCoreObservations instances with a LOINC code corresponding to the codes in the international VitalSigns profile, due to update of FHIR validator. Missing effective timestamp were included.
