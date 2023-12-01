@@ -36,13 +36,39 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DKCore</h1>
- <p>Generated Fri Dec 01 12:35:27 UTC 2023, FHIR version 4.0.1 for hl7.fhir.dk.core#3.0.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Dec 01 13:46:26 UTC 2023, FHIR version 4.0.1 for hl7.fhir.dk.core#3.0.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.5</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.dk.core, Canonical = http://hl7.dk/fhir/core</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li>Publication Request is for v'2.2.0' but package version is v3.0.0 <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication Request is for version v2.2.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>hl7.fhir.dk.core</td></tr>
+ <tr><td>version</d><td>3.0.0</td></tr>
+ <tr><td>path</d><td>http://hl7.dk/fhir/core/3.0.0</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>sequence</d><td>Release</td></tr>
+ <tr><td>desc</d><td>DK Core version 3.0.0</td></tr>
+ <tr><td>descmd</d><td><p>Dk-core version 3.0.0 has been approved by HL7 Denmark. This version is the result of external consultation of Dk-core v. 2.2.0.</p>
+<p>The changes between 2.2.0 and 3.0.0 are:</p>
+<ul>
+<li>Update of the introduction of DkCoreCondition</li>
+<li>Addition of the DkCoreCondition instance JohnFracture which illustrates the use of SKS tillægskode.</li>
+<li>Update of the introduction of DkCoreObservation, including information about which CodeSystems are recommended in the standard catalogue from the Danish Health Data Agency.</li>
+<li>Update of the Observation.code.coding:SNOMEDCT and Observation.component.code.coding:SNOMEDCT to http://snomed.info/sct</li>
+<li>Update of the Observation.code.coding:MedCom and Observation.component.code.coding: MedCom to http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes</li>
+<li>Added context on extension ConditionLastAssertedDate and NotFollowedAnymore</li>
+<li>Bug update of invariants by changing constraint.requirements to requirements and removing of constraint.source where relevant.</li>
+<li>Bug update of invariants by removing the ‘value.’ and ‘Observation.’ where relevant</li>
+<li>Bug update of ValueSet TechniquesSCTCodes due to misspelling</li>
+<li>Update of DkCoreObservations instances with a LOINC code corresponding to the codes in the international VitalSigns profile, due to update of FHIR validator. Missing effective timestamp were included.</li>
+</ul>
+</td></tr>
+</table>
+<ul><li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">12 Suppressed Issues</a>
