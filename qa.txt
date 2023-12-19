@@ -1,11 +1,13 @@
 ﻿DKCore : Validation Results
 =========================================
 
-err = 9, warn = 13, info = 26
-IG Publisher Version: 1.5.5
-Generated Fri Dec 01 13:46:27 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#3.0.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 7 / 0
- /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 9 / 3 / 70
+err = 23, warn = 58, info = 34
+IG Publisher Version: 1.5.8
+Generated Tue Dec 19 10:32:31 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#3.1.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 21 / 0
+ /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 8 / 3 / 66
+ /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 8 / 0 / 30
+ /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 7 / 17 / 32
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 0 / 1
@@ -13,6 +15,7 @@ Generated Fri Dec 01 13:46:27 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-care-team-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-consent-state-codes-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-days-of-week-dk-supplement : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-core-d-ecpr-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 0 / 0 / 1
@@ -33,11 +36,27 @@ Generated Fri Dec 01 13:46:27 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222 : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/Observation-ElseBloodPressure : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/Observation-ElseBodyTemperature : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-ElseConsciousness : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-ElseHeartRate : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-ElsePainVRS : 0 / 1 / 3
- /github/workspace/fsh-generated/resources/Observation-HeartRate.Poul.1974654 : 0 / 0 / 16
- /github/workspace/fsh-generated/resources/Observation-ObservationOxySatVitalSigns : 0 / 0 / 6
- /github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221 : 0 / 0 / 16
+ /github/workspace/fsh-generated/resources/Observation-ElseRespirationRate : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-ElseUrinStix : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/Observation-ElsesTOBSscore : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-HeartRate.Poul.1974654 : 0 / 0 / 14
+ /github/workspace/fsh-generated/resources/Observation-MaxBloodPressure : 0 / 1 / 5
+ /github/workspace/fsh-generated/resources/Observation-MaxBodyTemperature : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/Observation-MaxConsciousness : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-MaxGlasgowComaScale : 0 / 6 / 4
+ /github/workspace/fsh-generated/resources/Observation-MaxHeartRate : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/Observation-MaxRespirationRate : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-MaxSaturation : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-MaxVitalSignsPanel : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-ObservationOxySatBasicObservationOrg : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-ObservationOxySatObservation : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryBasicObservation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221 : 0 / 0 / 14
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte : 0 / 0 / 1
@@ -45,22 +64,27 @@ Generated Fri Dec 01 13:46:27 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Organization-LaegerneHasserisBymidte : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-Max : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Poul : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/Patient-else : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-john : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Patient-mogensen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ukendt : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Patient-ukendt-D-eCPR : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-ukendt-X-eCPR : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Practitioner-AbrahamLaege : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Practitioner-SidselSygeplejerske : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-basic-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-condition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-d-ecpr-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-gln-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes : 0 / 0 / 1
@@ -69,20 +93,40 @@ Generated Fri Dec 01 13:46:27 UTC 2023. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-practitioner : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-IEEEBasicObservation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-LoincBasicObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/BPMonitor.C4F312FFFE53F2C9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/CoincidentTimeStamp.0222.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseBloodPressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseBodyTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseConsciousness.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseHeartRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseRespirationRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseUrinStix.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElsesTOBSscore.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HeartRate.Poul.1974654.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationRespiratoryVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatVitalSigns.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatBasicObservationOrg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxBloodPressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxBodyTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxConsciousness.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxGlasgowComaScale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxHeartRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxRespirationRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxSaturation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
@@ -94,7 +138,6 @@ INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observat
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[0].code.coding[2]: Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.component[1].code.coding[2]: Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Unknown Code '8410608' in the system 'urn:iso:std:iso:11073:10101|2022-02-04'; The provided code 'urn:iso:std:iso:11073:10101#8410608' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'urn:iso:std:iso:11073:10101#8410608'
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.component[0].code: Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/Poul')
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Device/Telma.FEEDDADADEADBEEF')
@@ -104,6 +147,44 @@ ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an 
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/BloodPressure.Poul.643992')
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/HeartRate.Poul.1974654')
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/BloodPressureStatus.Poul.133527')
+== fsh-generated/resources/Bundle-ElsesTOBS.json ==
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[6].resource/*Observation/ElsesTOBSscore*/.code.coding[0]: Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/else')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseConsciousness')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseBloodPressure')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseBodyTemperature')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseHeartRate')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseRespirationRate')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElsesTOBSscore')
+ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Practitioner/SidselSygeplejerske')
+== fsh-generated/resources/Bundle-MaxTOKS.json ==
+WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource/*Observation/MaxConsciousness*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[2].resource/*Observation/MaxBloodPressure*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/MaxTOKS: Bundle.entry[2].resource/*Observation/MaxBloodPressure*/.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Bundle/MaxTOKS: Bundle.entry[3].resource/*Observation/MaxBodyTemperature*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/MaxTOKS: Bundle.entry[3].resource/*Observation/MaxBodyTemperature*/.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Bundle/MaxTOKS: Bundle.entry[4].resource/*Observation/MaxHeartRate*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/MaxTOKS: Bundle.entry[4].resource/*Observation/MaxHeartRate*/.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Bundle/MaxTOKS: Bundle.entry[5].resource/*Observation/MaxRespirationRate*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[0].high: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[1].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[1].high: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[2].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/Max')
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxConsciousness')
+WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxBloodPressure')
+WARNING: Bundle/MaxTOKS: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxBodyTemperature')
+WARNING: Bundle/MaxTOKS: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxHeartRate')
+WARNING: Bundle/MaxTOKS: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxRespirationRate')
+WARNING: Bundle/MaxTOKS: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxGlasgowComaScale')
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
 == fsh-generated/resources/CodeSystem-address-type-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-address-use-dk-supplement.json ==
@@ -111,6 +192,7 @@ ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an 
 == fsh-generated/resources/CodeSystem-care-team-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-consent-state-codes-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-days-of-week-dk-supplement.json ==
+== fsh-generated/resources/CodeSystem-dk-core-d-ecpr-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
@@ -130,9 +212,6 @@ INFORMATION: Condition/JohnFracture: Condition.code.coding[0]: Code System URI '
 INFORMATION: Condition/JohnMelanoma: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.4.12' could not be found so the code cannot be validated
 == fsh-generated/resources/Condition-JohnPacemaker.json ==
 == fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9.json ==
-WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.manufacturer: value should not start or finish with whitespace 'A&D Medical '
-WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.modelNumber: value should not start or finish with whitespace 'UA-651BLE '
-WARNING: Device/BPMonitor.C4F312FFFE53F2C9: Device.version[3].value: value should not start or finish with whitespace 'BLP009_02_005 '
 INFORMATION: Device/BPMonitor.C4F312FFFE53F2C9: Device.property[2].type: Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
 INFORMATION: Device/BPMonitor.C4F312FFFE53F2C9: Device.property[3].type: Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
 INFORMATION: Device/BPMonitor.C4F312FFFE53F2C9: Device.property[4].type: Reference to experimental item http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
@@ -146,15 +225,49 @@ INFORMATION: Device/WeightScale.606405FFFECFC604: Device.property[4].type: Refer
 == fsh-generated/resources/NamingSystem-cpr.json ==
 == fsh-generated/resources/NamingSystem-sor.json ==
 == fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json ==
+== fsh-generated/resources/Observation-ElseBloodPressure.json ==
+== fsh-generated/resources/Observation-ElseBodyTemperature.json ==
+== fsh-generated/resources/Observation-ElseConsciousness.json ==
+== fsh-generated/resources/Observation-ElseHeartRate.json ==
 == fsh-generated/resources/Observation-ElsePainVRS.json ==
 INFORMATION: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://localSystem.dk' could not be found so the code cannot be validated
 WARNING: Observation/ElsePainVRS: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElseRespirationRate.json ==
+== fsh-generated/resources/Observation-ElseUrinStix.json ==
+INFORMATION: Observation/ElseUrinStix: Observation.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
+WARNING: Observation/ElseUrinStix: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElsesTOBSscore.json ==
+INFORMATION: Observation/ElsesTOBSscore: Observation.code.coding[0]: Code System URI 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found so the code cannot be validated
 == fsh-generated/resources/Observation-HeartRate.Poul.1974654.json ==
 INFORMATION: Observation/HeartRate.Poul.1974654: Observation.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
-== fsh-generated/resources/Observation-ObservationOxySatVitalSigns.json ==
-INFORMATION: Observation/ObservationOxySatVitalSigns: Observation.contained[0]/*Observation/ObservationOxySat*/.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
-INFORMATION: Observation/ObservationOxySatVitalSigns: Observation.derivedFrom[0]: Details for #ObservationOxySat matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
-== fsh-generated/resources/Observation-ObservationRespiratoryVitalSigns.json ==
+== fsh-generated/resources/Observation-MaxBloodPressure.json ==
+INFORMATION: Observation/MaxBloodPressure: Observation.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Observation/MaxBloodPressure: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxBodyTemperature.json ==
+INFORMATION: Observation/MaxBodyTemperature: Observation.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Observation/MaxBodyTemperature: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxConsciousness.json ==
+WARNING: Observation/MaxConsciousness: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxGlasgowComaScale.json ==
+WARNING: Observation/MaxGlasgowComaScale: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/MaxGlasgowComaScale: Observation.referenceRange[0].high: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/MaxGlasgowComaScale: Observation.referenceRange[1].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/MaxGlasgowComaScale: Observation.referenceRange[1].high: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/MaxGlasgowComaScale: Observation.referenceRange[2].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: Observation/MaxGlasgowComaScale: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxHeartRate.json ==
+INFORMATION: Observation/MaxHeartRate: Observation.code.coding[1]: Code System URI 'urn:oid:1.2.208.176.2.4' could not be found so the code cannot be validated
+WARNING: Observation/MaxHeartRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxRespirationRate.json ==
+WARNING: Observation/MaxRespirationRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxSaturation.json ==
+WARNING: Observation/MaxSaturation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxVitalSignsPanel.json ==
+WARNING: Observation/MaxVitalSignsPanel: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ObservationOxySatBasicObservationOrg.json ==
+== fsh-generated/resources/Observation-ObservationOxySatObservation.json ==
+INFORMATION: Observation/ObservationOxySatObservation: Observation.code.coding[0]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationRespiratoryBasicObservation.json ==
 == fsh-generated/resources/Observation-Weight.Poul.230221.json ==
 INFORMATION: Observation/Weight.Poul.230221: Observation.code.coding[2]: Code System URI 'urn:oid:1.2.208.176.2.1' could not be found so the code cannot be validated
 == fsh-generated/resources/Organization-CenterForDiabetes.json ==
@@ -165,22 +278,28 @@ INFORMATION: Observation/Weight.Poul.230221: Observation.code.coding[2]: Code Sy
 == fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
 == fsh-generated/resources/Patient-283.json ==
 == fsh-generated/resources/Patient-Confidential.json ==
+WARNING: Patient/Confidential: Patient.meta.security[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/Patient-Max.json ==
 == fsh-generated/resources/Patient-Poul.json ==
 == fsh-generated/resources/Patient-else.json ==
 == fsh-generated/resources/Patient-john.json ==
-== fsh-generated/resources/Patient-mogensen.json ==
 == fsh-generated/resources/Patient-ukendt.json ==
+== fsh-generated/resources/Patient-ukendt-D-eCPR.json ==
+== fsh-generated/resources/Patient-ukendt-X-eCPR.json ==
 == fsh-generated/resources/Practitioner-AbrahamLaege.json ==
 == fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
+== fsh-generated/resources/Practitioner-SidselSygeplejerske.json ==
 == fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
 == fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
 == fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-condition.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-d-ecpr-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json ==
@@ -189,11 +308,19 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 == fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-practitioner.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier.json ==
+== fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet.json ==
 == fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet.json ==
-== fsh-generated/resources/ValueSet-dk-core-LoincVitalSigns.json ==
+== fsh-generated/resources/ValueSet-dk-core-IEEEBasicObservation.json ==
+== fsh-generated/resources/ValueSet-dk-core-LoincBasicObservation.json ==
 == fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json ==
+== fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json ==
+WARNING: ValueSet/dk-core-NPUBasicObservation: ValueSet.compose.include[0]: Unknown System 'urn:oid:1.2.208.176.2.1' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:1.2.208.176.2.1 is unknown (from Tx-Server))
+WARNING: ValueSet.where(id = 'dk-core-NPUBasicObservation'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
+== fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json ==
 == fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes.json ==
+== fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits.json ==
 == fsh-generated/resources/ValueSet-dk-marital-status.json ==
 WARNING: ValueSet/dk-marital-status: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
 == fsh-generated/resources/ValueSet-sor-organization-type.json ==

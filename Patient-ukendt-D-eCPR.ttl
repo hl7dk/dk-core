@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Patient/ukendt-D-eCPR> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ukendt-D-eCPR"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Peter null (TEMP)</b> male, DoB Unknown ( id: 1206550VK9)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.177"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1206550VK9" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:family [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "unknown" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Peter" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+# -------------------------------------------------------------------------------------
+

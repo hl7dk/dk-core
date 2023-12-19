@@ -1,0 +1,471 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Bundle/MaxTOKS> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MaxTOKS"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Patient/Max"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/Max> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxConsciousness"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxConsciousness> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxBloodPressure"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxBloodPressure> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxBodyTemperature"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxBodyTemperature> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxHeartRate"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxHeartRate> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxRespirationRate"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxRespirationRate> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/MaxGlasgowComaScale"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/MaxGlasgowComaScale> )
+  ] ) . # 
+
+<Patient/Max> a fhir:Patient ;
+  fhir:id [ fhir:v "Max"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Max\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Max&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p><b>identifier</b>: id: 0107729995</p><p><b>name</b>: Max Test Berggren (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-07-01</p><p><b>maritalStatus</b>: Registered partnership <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-dk-marital-status.html\">DK Marital Statuses</a>#P)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0107729995" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Berggren" ] ;
+     fhir:given ( [ fhir:v "Max" ] [ fhir:v "Test" ] ) ;
+     fhir:prefix ( [ fhir:v "Mr" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1972-07-01"^^xsd:date] ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "P" ]
+     ] )
+  ] . # 
+
+<Observation/MaxConsciousness> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxConsciousness"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxConsciousness\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxConsciousness&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Level of consciousness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80288-4)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: Responds to pain (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#450847001)</span></p><p><b>method</b>: Reported (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#733985002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80288-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80288-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:450847001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "450847001" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:733985002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733985002" ] ;
+       fhir:display [ fhir:v "Reported (qualifier value)" ]
+     ] )
+  ] . # 
+
+<Observation/MaxBloodPressure> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxBloodPressure"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxBloodPressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxBloodPressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel with all children optional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9; unknown#ZZ3160)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#407554009)</span></p><p><b>value</b>: 156 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#407555005)</span></p><p><b>value</b>: 78 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ZZ3160" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ]
+       ] [
+         a sct:407554009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "407554009" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "156"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ]
+       ] [
+         a sct:407555005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "407555005" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "78"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+<Observation/MaxBodyTemperature> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxBodyTemperature"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxBodyTemperature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxBodyTemperature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8310-5; unknown#ZZ0253)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 37 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ZZ0253" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "37"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "grader celcius" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] . # 
+
+<Observation/MaxHeartRate> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxHeartRate"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxHeartRate\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxHeartRate&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8867-4; unknown#ZZ3140)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 68 slag/minut<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8867-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8867-4" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ZZ3140" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "68"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "slag/minut" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] . # 
+
+<Observation/MaxRespirationRate> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxRespirationRate"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxRespirationRate\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxRespirationRate&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86290005)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 13 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:9279-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9279-1" ]
+     ] [
+       a sct:86290005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86290005" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "13"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "/min" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] . # 
+
+<Observation/MaxGlasgowComaScale> a fhir:Observation ;
+  fhir:id [ fhir:v "MaxGlasgowComaScale"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxGlasgowComaScale\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxGlasgowComaScale&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Glasgow coma score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#248241002)</span></p><p><b>subject</b>: <a href=\"#Patient_Max\">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 13 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><blockquote><p><b>referenceRange</b></p><p><b>high</b>: 8 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Severe TBI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 9 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><p><b>high</b>: 12 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Moderate TBI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 13 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Mild TBI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score motor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9268-4)</span></p><p><b>value</b>: Localizing pain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6566-9)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score verbal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9270-0)</span></p><p><b>value</b>: Confused <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6560-2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score eye opening <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9267-6)</span></p><p><b>value</b>: Eyes open spontaneously <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6556-0)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:248241002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "248241002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "13"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "{score}" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:high [
+       fhir:value [ fhir:v "8"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{score}" ]
+     ] ;
+     fhir:type [
+       fhir:text [ fhir:v "Severe TBI" ]
+     ]
+  ] [
+     fhir:low [
+       fhir:value [ fhir:v "9"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{score}" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{score}" ]
+     ] ;
+     fhir:type [
+       fhir:text [ fhir:v "Moderate TBI" ]
+     ]
+  ] [
+     fhir:low [
+       fhir:value [ fhir:v "13"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{score}" ]
+     ] ;
+     fhir:type [
+       fhir:text [ fhir:v "Mild TBI" ]
+     ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:9268-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9268-4" ] ;
+         fhir:display [ fhir:v "Glasgow coma score motor" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6566-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6566-9" ] ;
+         fhir:display [ fhir:v "Localizing pain" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:9270-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9270-0" ] ;
+         fhir:display [ fhir:v "Glasgow coma score verbal" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6560-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6560-2" ] ;
+         fhir:display [ fhir:v "Confused" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:9267-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9267-6" ] ;
+         fhir:display [ fhir:v "Glasgow coma score eye opening" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6556-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6556-0" ] ;
+         fhir:display [ fhir:v "Eyes open spontaneously" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

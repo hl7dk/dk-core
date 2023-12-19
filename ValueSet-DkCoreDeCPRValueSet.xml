@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DkCoreDeCPRValueSet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dk-core-d-ecpr-codes.html"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet"/>
+  <version value="3.1.0"/>
+  <name value="DkCoreDeCPRValueSet"/>
+  <title value="DK D-eCPR OID values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-19T10:28:26+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="DK D-eCPR OID values"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+    </include>
+  </compose>
+</ValueSet>

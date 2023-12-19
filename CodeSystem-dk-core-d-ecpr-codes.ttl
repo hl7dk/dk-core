@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-d-ecpr-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463\"> </a></td><td>D-eCPR</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3.177<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46177\"> </a></td><td>D-eCPR fra Region Sjælland</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3.179<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46179\"> </a></td><td>D-eCPR fra Region Nordjylland</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3.181<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46181\"> </a></td><td>D-eCPR fra Region Midtjylland</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3.183<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46183\"> </a></td><td>D-eCPR fra Region Syddanmark</td></tr><tr><td style=\"white-space:nowrap\">urn:oid:1.2.208.176.1.6.1.3.187<a name=\"dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46187\"> </a></td><td>D-eCPR fra Region Hovedstaden</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.1.0"] ; # 
+  fhir:name [ fhir:v "DkCoreDeCPRCodes"] ; # 
+  fhir:title [ fhir:v "DK Decentralised eCPR Systems"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-19T10:28:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK "] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3" ] ;
+     fhir:display [ fhir:v "D-eCPR" ]
+  ] [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.177" ] ;
+     fhir:display [ fhir:v "D-eCPR fra Region Sjælland" ]
+  ] [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.179" ] ;
+     fhir:display [ fhir:v "D-eCPR fra Region Nordjylland" ]
+  ] [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.181" ] ;
+     fhir:display [ fhir:v "D-eCPR fra Region Midtjylland" ]
+  ] [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.183" ] ;
+     fhir:display [ fhir:v "D-eCPR fra Region Syddanmark" ]
+  ] [
+     fhir:code [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.187" ] ;
+     fhir:display [ fhir:v "D-eCPR fra Region Hovedstaden" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

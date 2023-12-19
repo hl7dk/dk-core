@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "DkCoreProfessionGroupCodes",
       "title" : "DK Profession Group Codes",
@@ -12,8 +12,19 @@
       "ValueSet-DkCoreProfessionGroupValueSet.html" : "DK Profession Group"
     },
     {
+      "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "DkCoreDeCPRCodes",
+      "title" : "DK Decentralised eCPR Systems",
+      "description" : "DK ",
+      "uses" : {
+      },
+      "ValueSet-DkCoreDeCPRValueSet.html" : "DK D-eCPR OID values"
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
@@ -24,7 +35,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "GreenlandMunicipalityCodes",
       "title" : "DK Greenland Municipality Codes",
@@ -35,7 +46,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "DKCoreRegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
@@ -46,7 +57,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "DkMaritalStatus",
       "title" : "DK Marital Statuses",
@@ -174,7 +185,7 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "ValueSet-dk-core-LoincVitalSigns.html" : "DK Core Vital Signs"
+      "ValueSet-dk-core-LoincBasicObservation.html" : "DK Core LOINC Basic Observations"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -186,16 +197,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
+      "ValueSet-dk-core-SCTBasicObservation.html" : "Dk Core SNOMED CT Basic Observation",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -318,6 +330,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-UCUM-BasicUnits.html" : "Dk Core UCUM Basic Units"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.0",
       "status" : "active",
@@ -328,6 +352,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:11073:10101",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Mdc",
+      "title" : "ISO 11073-10101 Health informatics - Point-of-care",
+      "description" : "The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.",
+      "oids" : ["2.16.840.1.113883.6.24"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-IEEEBasicObservation.html" : "Dk Core IEEE Basic Observation"
     }
   ]
 }

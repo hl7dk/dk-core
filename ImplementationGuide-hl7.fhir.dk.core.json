@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.0.0",
+  "version" : "3.1.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2023-12-01T13:42:49+00:00",
+  "date" : "2023-12-19T10:28:26+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -905,6 +905,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/dk-core-basic-observation"
+      },
+      "name" : "Danish Core Basic Observation Profile",
+      "description" : "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/dk-core-condition"
       },
       "name" : "Danish Core Condition Profile",
@@ -998,6 +1010,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-d-ecpr-identifier"
+      },
+      "name" : "Decentralised eCPR, called D-eCPR",
+      "description" : "This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1061,10 +1085,58 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/dk-core-IEEEBasicObservation"
+      },
+      "name" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-LoincBasicObservation"
+      },
+      "name" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/dk-marital-status"
       },
       "name" : "DK Core Marital Status",
       "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-NPUBasicObservation"
+      },
+      "name" : "Dk Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-SCTBasicObservation"
+      },
+      "name" : "Dk Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
       "exampleBoolean" : false
     },
     {
@@ -1085,10 +1157,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/dk-core-LoincVitalSigns"
+        "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
       },
-      "name" : "DK Core Vital Signs",
-      "description" : "LOINC codes describing vital signs.",
+      "name" : "Dk Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DkCoreDeCPRValueSet"
+      },
+      "name" : "DK D-eCPR OID values",
+      "description" : "DK D-eCPR OID values",
       "exampleBoolean" : false
     },
     {
@@ -1101,6 +1185,18 @@
       },
       "name" : "DK Days Of Week",
       "description" : "The days of the week.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-core-d-ecpr-codes"
+      },
+      "name" : "DK Decentralised eCPR Systems",
+      "description" : "DK",
       "exampleBoolean" : false
     },
     {
@@ -1262,6 +1358,62 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ElsesTOBS"
+      },
+      "name" : "Else's TOBS measurements",
+      "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseBloodPressure"
+      },
+      "name" : "ElseBloodPressure",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseBodyTemperature"
+      },
+      "name" : "ElseBodyTemperature",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseConsciousness"
+      },
+      "name" : "ElseConsciousness",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseHeartRate"
+      },
+      "name" : "ElseHeartRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1269,6 +1421,39 @@
       },
       "name" : "ElsePainVRS",
       "description" : "Elses smerte målt med VRS",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseRespirationRate"
+      },
+      "name" : "ElseRespirationRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElsesTOBSscore"
+      },
+      "name" : "ElsesTOBSscore",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseUrinStix"
+      },
+      "name" : "ElseUrinStix",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
     },
     {
@@ -1313,7 +1498,31 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/mogensen"
+        "reference" : "Patient/ukendt-D-eCPR"
+      },
+      "name" : "Example of valid patient with a D-eCPR as identifier",
+      "description" : "Example of valid patient with a D-eCPR as identifier.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ukendt-X-eCPR"
+      },
+      "name" : "Example of valid patient with a X-eCPR as identifier",
+      "description" : "Example of valid patient with a X-eCPR as identifier.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Max"
       },
       "name" : "Example of valid patient with danish marital status",
       "description" : "Example of valid patient with danish marital status",
@@ -1456,9 +1665,21 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationOxySatVitalSigns"
+        "reference" : "Observation/ObservationOxySatBasicObservationOrg"
       },
-      "name" : "John's oxygen saturation measurement, Vital Signs",
+      "name" : "John's oxygen saturation measurement (Basic observation)",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationOxySatObservation"
+      },
+      "name" : "John's oxygen saturation measurement (Observation)",
+      "description" : "This example suggests a way to handle the oxygen saturation case, where the original measurement\nwas reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,\nwhich requires the value to be unitless.",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
     },
     {
@@ -1467,10 +1688,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationRespiratoryVitalSigns"
+        "reference" : "Observation/ObservationRespiratoryBasicObservation"
       },
-      "name" : "John's Respiratory rate measurement, Vital Signs",
-      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+      "name" : "John's Respiratory rate measurement (Basic observation)",
+      "description" : "A simple basic observation of a hyperventilating patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
     },
     {
       "extension" : [{
@@ -1499,6 +1721,106 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/MaxTOKS"
+      },
+      "name" : "Max TOKS measurements, including Glasgow Coma Scale assesment",
+      "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxBloodPressure"
+      },
+      "name" : "MaxBloodPressure",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxBodyTemperature"
+      },
+      "name" : "MaxBodyTemperature",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxConsciousness"
+      },
+      "name" : "MaxConsciousness",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxGlasgowComaScale"
+      },
+      "name" : "MaxGlasgowComaScale",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxHeartRate"
+      },
+      "name" : "MaxHeartRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxRespirationRate"
+      },
+      "name" : "MaxRespirationRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxSaturation"
+      },
+      "name" : "MaxSaturation",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxVitalSignsPanel"
+      },
+      "name" : "MaxVitalSignsPanel",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -1507,6 +1829,18 @@
       "name" : "MedCom Test Organization",
       "description" : "MedCom Test Organization with SOR id",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-x-ecpr-identifier"
+      },
+      "name" : "National eCPR service, called X-eCPR",
+      "description" : "This strucure holds the danish [X-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR) identifier, maintained by the Danish Health Data Authority.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1566,6 +1900,18 @@
       "name" : "Poul's home blood pressure measurement",
       "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/SidselSygeplejerske"
+      },
+      "name" : "SidselSygeplejerske",
+      "description" : "Eksempel på en sygeplejerske",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
     },
     {
       "extension" : [{

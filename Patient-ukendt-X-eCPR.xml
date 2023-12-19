@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ukendt-X-eCPR"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Madsen (TEMP)</b> female, DoB: 1992-03-07 ( id: 0703921VJ4)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.6.1.1"/>
+    <value value="0703921VJ4"/>
+  </identifier>
+  <name>
+    <use value="temp"/>
+    <family value="Madsen"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1992-03-07"/>
+</Patient>

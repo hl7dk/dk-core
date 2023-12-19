@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "3.0.0"] ; # 
+  fhir:version [ fhir:v "3.1.0"] ; # 
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-01T13:42:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-19T10:28:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -808,6 +808,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-basic-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Danish Core Basic Observation Profile" ] ;
+       fhir:description [ fhir:v "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/dk-core-condition" ]
        ] ;
@@ -901,6 +913,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-d-ecpr-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Decentralised eCPR, called D-eCPR" ] ;
+       fhir:description [ fhir:v "This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -964,11 +988,59 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-IEEEBasicObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Dk Core IEEE Basic Observation" ] ;
+       fhir:description [ fhir:v "IEEE MDC codes for Basic Observations usable in Denmark" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-LoincBasicObservation" ]
+       ] ;
+       fhir:name [ fhir:v "DK Core LOINC Basic Observations" ] ;
+       fhir:description [ fhir:v "LOINC codes describing Basic Observations usable in Denmark." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-marital-status> ;
          fhir:reference [ fhir:v "ValueSet/dk-marital-status" ]
        ] ;
        fhir:name [ fhir:v "DK Core Marital Status" ] ;
        fhir:description [ fhir:v "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-NPUBasicObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Dk Core NPU Basic Observation" ] ;
+       fhir:description [ fhir:v "NPU codes for Basic Observations usable in Denmark" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-SCTBasicObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Dk Core SNOMED CT Basic Observation" ] ;
+       fhir:description [ fhir:v "SNOMED CT codes for Basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -988,11 +1060,23 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns> ;
-         fhir:reference [ fhir:v "ValueSet/dk-core-LoincVitalSigns" ]
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-UCUM-BasicUnits" ]
        ] ;
-       fhir:name [ fhir:v "DK Core Vital Signs" ] ;
-       fhir:description [ fhir:v "LOINC codes describing vital signs." ] ;
+       fhir:name [ fhir:v "Dk Core UCUM Basic Units" ] ;
+       fhir:description [ fhir:v "UCUM codes to represent units for basic Observations usable in Denmark" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet> ;
+         fhir:reference [ fhir:v "ValueSet/DkCoreDeCPRValueSet" ]
+       ] ;
+       fhir:name [ fhir:v "DK D-eCPR OID values" ] ;
+       fhir:description [ fhir:v "DK D-eCPR OID values" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1005,6 +1089,18 @@
        ] ;
        fhir:name [ fhir:v "DK Days Of Week" ] ;
        fhir:description [ fhir:v "The days of the week." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes> ;
+         fhir:reference [ fhir:v "CodeSystem/dk-core-d-ecpr-codes" ]
+       ] ;
+       fhir:name [ fhir:v "DK Decentralised eCPR Systems" ] ;
+       fhir:description [ fhir:v "DK" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1168,6 +1264,74 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Bundle/ElsesTOBS> ;
+         fhir:reference [ fhir:v "Bundle/ElsesTOBS" ]
+       ] ;
+       fhir:name [ fhir:v "Else's TOBS measurements" ] ;
+       fhir:description [ fhir:v "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseBloodPressure> ;
+         fhir:reference [ fhir:v "Observation/ElseBloodPressure" ]
+       ] ;
+       fhir:name [ fhir:v "ElseBloodPressure" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> ;
+         fhir:reference [ fhir:v "Observation/ElseBodyTemperature" ]
+       ] ;
+       fhir:name [ fhir:v "ElseBodyTemperature" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseConsciousness> ;
+         fhir:reference [ fhir:v "Observation/ElseConsciousness" ]
+       ] ;
+       fhir:name [ fhir:v "ElseConsciousness" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseHeartRate> ;
+         fhir:reference [ fhir:v "Observation/ElseHeartRate" ]
+       ] ;
+       fhir:name [ fhir:v "ElseHeartRate" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1176,6 +1340,48 @@
        ] ;
        fhir:name [ fhir:v "ElsePainVRS" ] ;
        fhir:description [ fhir:v "Elses smerte målt med VRS" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseRespirationRate> ;
+         fhir:reference [ fhir:v "Observation/ElseRespirationRate" ]
+       ] ;
+       fhir:name [ fhir:v "ElseRespirationRate" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElsesTOBSscore> ;
+         fhir:reference [ fhir:v "Observation/ElsesTOBSscore" ]
+       ] ;
+       fhir:name [ fhir:v "ElsesTOBSscore" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ElseUrinStix> ;
+         fhir:reference [ fhir:v "Observation/ElseUrinStix" ]
+       ] ;
+       fhir:name [ fhir:v "ElseUrinStix" ] ;
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
@@ -1231,8 +1437,38 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Patient/mogensen> ;
-         fhir:reference [ fhir:v "Patient/mogensen" ]
+         fhir:link <http://hl7.dk/fhir/core/Patient/ukendt-D-eCPR> ;
+         fhir:reference [ fhir:v "Patient/ukendt-D-eCPR" ]
+       ] ;
+       fhir:name [ fhir:v "Example of valid patient with a D-eCPR as identifier" ] ;
+       fhir:description [ fhir:v "Example of valid patient with a D-eCPR as identifier." ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Patient/ukendt-X-eCPR> ;
+         fhir:reference [ fhir:v "Patient/ukendt-X-eCPR" ]
+       ] ;
+       fhir:name [ fhir:v "Example of valid patient with a X-eCPR as identifier" ] ;
+       fhir:description [ fhir:v "Example of valid patient with a X-eCPR as identifier." ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+         fhir:reference [ fhir:v "Patient/Max" ]
        ] ;
        fhir:name [ fhir:v "Example of valid patient with danish marital status" ] ;
        fhir:description [ fhir:v "Example of valid patient with danish marital status" ] ;
@@ -1404,10 +1640,25 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationOxySatVitalSigns> ;
-         fhir:reference [ fhir:v "Observation/ObservationOxySatVitalSigns" ]
+         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationOxySatBasicObservationOrg> ;
+         fhir:reference [ fhir:v "Observation/ObservationOxySatBasicObservationOrg" ]
        ] ;
-       fhir:name [ fhir:v "John's oxygen saturation measurement, Vital Signs" ] ;
+       fhir:name [ fhir:v "John's oxygen saturation measurement (Basic observation)" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationOxySatObservation> ;
+         fhir:reference [ fhir:v "Observation/ObservationOxySatObservation" ]
+       ] ;
+       fhir:name [ fhir:v "John's oxygen saturation measurement (Observation)" ] ;
+       fhir:description [ fhir:v "This example suggests a way to handle the oxygen saturation case, where the original measurement\nwas reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,\nwhich requires the value to be unitless." ] ;
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
@@ -1418,13 +1669,14 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationRespiratoryVitalSigns> ;
-         fhir:reference [ fhir:v "Observation/ObservationRespiratoryVitalSigns" ]
+         fhir:link <http://hl7.dk/fhir/core/Observation/ObservationRespiratoryBasicObservation> ;
+         fhir:reference [ fhir:v "Observation/ObservationRespiratoryBasicObservation" ]
        ] ;
-       fhir:name [ fhir:v "John's Respiratory rate measurement, Vital Signs" ] ;
+       fhir:name [ fhir:v "John's Respiratory rate measurement (Basic observation)" ] ;
+       fhir:description [ fhir:v "A simple basic observation of a hyperventilating patient" ] ;
        fhir:example [
-         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1456,6 +1708,130 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Bundle/MaxTOKS> ;
+         fhir:reference [ fhir:v "Bundle/MaxTOKS" ]
+       ] ;
+       fhir:name [ fhir:v "Max TOKS measurements, including Glasgow Coma Scale assesment" ] ;
+       fhir:description [ fhir:v "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxBloodPressure> ;
+         fhir:reference [ fhir:v "Observation/MaxBloodPressure" ]
+       ] ;
+       fhir:name [ fhir:v "MaxBloodPressure" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxBodyTemperature> ;
+         fhir:reference [ fhir:v "Observation/MaxBodyTemperature" ]
+       ] ;
+       fhir:name [ fhir:v "MaxBodyTemperature" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxConsciousness> ;
+         fhir:reference [ fhir:v "Observation/MaxConsciousness" ]
+       ] ;
+       fhir:name [ fhir:v "MaxConsciousness" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale> ;
+         fhir:reference [ fhir:v "Observation/MaxGlasgowComaScale" ]
+       ] ;
+       fhir:name [ fhir:v "MaxGlasgowComaScale" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxHeartRate> ;
+         fhir:reference [ fhir:v "Observation/MaxHeartRate" ]
+       ] ;
+       fhir:name [ fhir:v "MaxHeartRate" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxRespirationRate> ;
+         fhir:reference [ fhir:v "Observation/MaxRespirationRate" ]
+       ] ;
+       fhir:name [ fhir:v "MaxRespirationRate" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxSaturation> ;
+         fhir:reference [ fhir:v "Observation/MaxSaturation" ]
+       ] ;
+       fhir:name [ fhir:v "MaxSaturation" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Observation/MaxVitalSignsPanel> ;
+         fhir:reference [ fhir:v "Observation/MaxVitalSignsPanel" ]
+       ] ;
+       fhir:name [ fhir:v "MaxVitalSignsPanel" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
@@ -1468,6 +1844,18 @@
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-x-ecpr-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "National eCPR service, called X-eCPR" ] ;
+       fhir:description [ fhir:v "This strucure holds the danish [X-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR) identifier, maintained by the Danish Health Data Authority." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1533,6 +1921,21 @@
        fhir:name [ fhir:v "Poul's home blood pressure measurement" ] ;
        fhir:description [ fhir:v "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+         fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
+       ] ;
+       fhir:name [ fhir:v "SidselSygeplejerske" ] ;
+       fhir:description [ fhir:v "Eksempel på en sygeplejerske" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

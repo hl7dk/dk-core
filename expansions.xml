@@ -1,11 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8978592b-673e-4b25-ae8f-ba42a19086c2"/>
+  <id value="88baa46b-1be1-456c-86cb-52ca728b8970"/>
   <meta>
-    <lastUpdated value="2023-12-01T13:42:49.086+00:00"/>
+    <lastUpdated value="2023-12-19T10:28:26.771+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dk-core-d-ecpr-codes.html">codesystem DK Decentralised eCPR Systems v3.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463">urn:oid:1.2.208.176.1.6.1.3</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3.177"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46177">urn:oid:1.2.208.176.1.6.1.3.177</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR fra Region Sjælland</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3.179"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46179">urn:oid:1.2.208.176.1.6.1.3.179</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR fra Region Nordjylland</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3.181"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46181">urn:oid:1.2.208.176.1.6.1.3.181</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR fra Region Midtjylland</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3.183"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46183">urn:oid:1.2.208.176.1.6.1.3.183</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR fra Region Syddanmark</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-d-ecpr-codes-urn-oid-1.2.208.176.1.6.1.3.187"> </a>  
+                  <a href="CodeSystem-dk-core-d-ecpr-codes.html#dk-core-d-ecpr-codes-urn.58oid.581.462.46208.46176.461.466.461.463.46187">urn:oid:1.2.208.176.1.6.1.3.187</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes</td>
+                <td>D-eCPR fra Region Hovedstaden</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet"/>
+        <version value="3.1.0"/>
+        <name value="DkCoreDeCPRValueSet"/>
+        <title value="DK D-eCPR OID values"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9d51b3c5-75c8-48de-a0fa-b0727a41aad0"/>
+          <timestamp value="2023-12-19T10:29:48+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes|3.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3"/>
+            <display value="D-eCPR"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3.177"/>
+            <display value="D-eCPR fra Region Sjælland"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3.179"/>
+            <display value="D-eCPR fra Region Nordjylland"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3.181"/>
+            <display value="D-eCPR fra Region Midtjylland"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3.183"/>
+            <display value="D-eCPR fra Region Syddanmark"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"/>
+            <code value="urn:oid:1.2.208.176.1.6.1.3.187"/>
+            <display value="D-eCPR fra Region Hovedstaden"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
     <resource>
@@ -14,7 +148,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">codesystem DK Profession Group Codes v3.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">codesystem DK Profession Group Codes v3.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 21 concepts</p>
             <table class="codes">
@@ -201,12 +335,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <name value="DkCoreProfessionGroupValueSet"/>
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -215,8 +349,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b5d8d605-13a5-4811-a3c2-435acd25e8f3"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:69136858-25a2-42df-8fb5-ddf142f99e2c"/>
+          <timestamp value="2023-12-19T10:29:48+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -224,7 +358,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|3.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|3.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
@@ -336,7 +470,515 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem urn:iso:std:iso:11073:10101 version 2023-04-26</li>
+                <li>system urn:iso:std:iso:11073:10101 version 2023-04-26</li>
+              </ul>
+            </div>
+            <p>This value set contains 36 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151562"> </a>  151562
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151570"> </a>  151570
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_AWAY_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151578"> </a>  151578
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TTHOR_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151594"> </a>  151594
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_CO2_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151602"> </a>  151602
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PRESS_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151650"> </a>  151650
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_ACOUSTIC_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-151658"> </a>  151658
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PULS_OXIM_PLETH_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-8410992"> </a>  8410992
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_SABTE_RESP_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149514"> </a>  149514
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PULS_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149522"> </a>  149522
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_BLD_PULS_RATE_INV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149546"> </a>  149546
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PULS_RATE_NON_INV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149530"> </a>  149530
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PULS_OXIM_PULS_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-147842"> </a>  147842
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_ECG_HEART_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-8410590"> </a>  8410590
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_ECG_HEART_RATE_INSTANT</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149554"> </a>  149554
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TTHOR_HEART_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-149562"> </a>  149562
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PALPATION_HEART_RATE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-8454258"> </a>  8454258
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_HF_HR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150324"> </a>  150324
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_SAT_O2_ART</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150456"> </a>  150456
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PULS_OXIM_SAT_O2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150364"> </a>  150364
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_BODY</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150368"> </a>  150368
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_CORE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150388"> </a>  150388
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_SKIN</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150392"> </a>  150392
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_TYMP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188420"> </a>  188420
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_RECT</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188424"> </a>  188424
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_ORAL</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188428"> </a>  188428
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_EAR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188452"> </a>  188452
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_AXILLA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188456"> </a>  188456
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_TEMP_GIT</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188740"> </a>  188740
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_LEN_BODY_ACTUAL</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-153856"> </a>  153856
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_CIRCUM_HEAD</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188736"> </a>  188736
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_MASS_BODY_ACTUAL</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-188752"> </a>  188752
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_RATIO_MASS_BODY_LEN_SQ</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150020"> </a>  150020
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PRESS_BLD_NONINV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150021"> </a>  150021
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PRESS_BLD_NONINV_SYS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150022"> </a>  150022
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PRESS_BLD_NONINV_DIA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-iso-std-iso-11073-10101-150023"> </a>  150023
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_PRESS_BLD_NONINV_MEAN</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"/>
+        <version value="3.1.0"/>
+        <name value="IEEEBasicObservation"/>
+        <title value="Dk Core IEEE Basic Observation"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ce558d6d-743b-4136-be0d-46f08ff6a31f"/>
+          <timestamp value="2023-12-19T10:29:48+00:00"/>
+          <total value="36"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+          </parameter>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151562"/>
+            <display value="MDC_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151570"/>
+            <display value="MDC_AWAY_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151578"/>
+            <display value="MDC_TTHOR_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151594"/>
+            <display value="MDC_CO2_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151602"/>
+            <display value="MDC_PRESS_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151650"/>
+            <display value="MDC_ACOUSTIC_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="151658"/>
+            <display value="MDC_PULS_OXIM_PLETH_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="8410992"/>
+            <display value="MDC_SABTE_RESP_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149514"/>
+            <display value="MDC_PULS_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149522"/>
+            <display value="MDC_BLD_PULS_RATE_INV"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149546"/>
+            <display value="MDC_PULS_RATE_NON_INV"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149530"/>
+            <display value="MDC_PULS_OXIM_PULS_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="147842"/>
+            <display value="MDC_ECG_HEART_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="8410590"/>
+            <display value="MDC_ECG_HEART_RATE_INSTANT"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149554"/>
+            <display value="MDC_TTHOR_HEART_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="149562"/>
+            <display value="MDC_PALPATION_HEART_RATE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="8454258"/>
+            <display value="MDC_HF_HR"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150324"/>
+            <display value="MDC_SAT_O2_ART"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150456"/>
+            <display value="MDC_PULS_OXIM_SAT_O2"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150364"/>
+            <display value="MDC_TEMP_BODY"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150368"/>
+            <display value="MDC_TEMP_CORE"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150388"/>
+            <display value="MDC_TEMP_SKIN"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150392"/>
+            <display value="MDC_TEMP_TYMP"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188420"/>
+            <display value="MDC_TEMP_RECT"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188424"/>
+            <display value="MDC_TEMP_ORAL"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188428"/>
+            <display value="MDC_TEMP_EAR"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188452"/>
+            <display value="MDC_TEMP_AXILLA"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188456"/>
+            <display value="MDC_TEMP_GIT"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188740"/>
+            <display value="MDC_LEN_BODY_ACTUAL"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="153856"/>
+            <display value="MDC_CIRCUM_HEAD"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188736"/>
+            <display value="MDC_MASS_BODY_ACTUAL"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="188752"/>
+            <display value="MDC_RATIO_MASS_BODY_LEN_SQ"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150020"/>
+            <display value="MDC_PRESS_BLD_NONINV"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150021"/>
+            <display value="MDC_PRESS_BLD_NONINV_SYS"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150022"/>
+            <display value="MDC_PRESS_BLD_NONINV_DIA"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="150023"/>
+            <display value="MDC_PRESS_BLD_NONINV_MEAN"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation"/>
     <resource>
       <ValueSet>
         <text>
@@ -349,7 +991,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
-            <p>This value set contains 6 concepts</p>
+            <p>This value set contains 14 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -396,6 +1038,54 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---loinc.org-85353-1"> </a>  
+                  <a href="https://loinc.org/85353-1/">85353-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Vital signs, weight, height, head circumference, oxygen saturation &amp; BMI panel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8302-2"> </a>  
+                  <a href="https://loinc.org/8302-2/">8302-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Body height</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-9843-4"> </a>  
+                  <a href="https://loinc.org/9843-4/">9843-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Head Occipital-frontal circumference</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-29463-7"> </a>  
+                  <a href="https://loinc.org/29463-7/">29463-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Body weight</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-39156-5"> </a>  
+                  <a href="https://loinc.org/39156-5/">39156-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Body mass index (BMI) [Ratio]</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-85354-9"> </a>  
+                  <a href="https://loinc.org/85354-9/">85354-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Blood pressure panel with all children optional</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---loinc.org-8480-6"> </a>  
                   <a href="https://loinc.org/8480-6/">8480-6</a>
                 </td>
@@ -410,16 +1100,32 @@
                 <td>http://loinc.org</td>
                 <td>Diastolic blood pressure</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8478-0"> </a>  
+                  <a href="https://loinc.org/8478-0/">8478-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Mean blood pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-59408-5"> </a>  
+                  <a href="https://loinc.org/59408-5/">59408-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Oxygen saturation in Arterial blood by Pulse oximetry</td>
+              </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
-        <version value="3.0.0"/>
-        <name value="LoincVitalSigns"/>
-        <title value="DK Core Vital Signs"/>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation"/>
+        <version value="3.1.0"/>
+        <name value="LoincBasicObservation"/>
+        <title value="DK Core LOINC Basic Observations"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -428,9 +1134,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21e78f32-2913-4dfe-ab6d-e8fc5087b686"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
-          <total value="6"/>
+          <identifier value="urn:uuid:ffd74721-d336-4c83-a897-ee85c8181043"/>
+          <timestamp value="2023-12-19T10:29:51+00:00"/>
+          <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -473,6 +1179,36 @@
           </contains>
           <contains>
             <system value="http://loinc.org"/>
+            <code value="85353-1"/>
+            <display value="Vital signs, weight, height, head circumference, oxygen saturation &amp; BMI panel"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+            <display value="Body height"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9843-4"/>
+            <display value="Head Occipital-frontal circumference"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="39156-5"/>
+            <display value="Body mass index (BMI) [Ratio]"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
             <code value="8480-6"/>
             <display value="Systolic blood pressure"/>
           </contains>
@@ -480,6 +1216,16 @@
             <system value="http://loinc.org"/>
             <code value="8462-4"/>
             <display value="Diastolic blood pressure"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8478-0"/>
+            <display value="Mean blood pressure"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="59408-5"/>
+            <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -496,10 +1242,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes.html">codesystem DK Municipality Codes v3.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes.html">codesystem DK Municipality Codes v3.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">codesystem DK Greenland Municipality Codes v3.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">codesystem DK Greenland Municipality Codes v3.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1352,12 +2098,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <name value="MunicipalityCodes"/>
         <title value="DK Municipality Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1366,8 +2112,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:812b5fd9-38da-4bed-b457-8343ab1ff564"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:89d894da-8a52-4fe3-bae5-a5bd2a2b798c"/>
+          <timestamp value="2023-12-19T10:29:51+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1375,11 +2121,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|3.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|3.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|3.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|3.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
@@ -1913,7 +2659,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">codesystem DK Regional Subdivision Codes v3.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">codesystem DK Regional Subdivision Codes v3.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -1972,12 +2718,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <title value="DK Regional Subdivision Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1986,8 +2732,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6a0e89ed-f776-4c5d-a5be-2af71527382b"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:014ebfef-a006-4ca7-be03-186ee8a8429a"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1995,7 +2741,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|3.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|3.1.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
@@ -2021,6 +2767,618 @@
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
             <code value="DK-83"/>
             <display value="Region of Southern Denmark"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 41 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-446226005"> </a>  
+                  <a href="http://snomed.info/id/446226005">446226005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diastolic blood pressure on admission (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-400975005"> </a>  
+                  <a href="http://snomed.info/id/400975005">400975005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Standing diastolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407557002"> </a>  
+                  <a href="http://snomed.info/id/407557002">407557002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lying diastolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407555005"> </a>  
+                  <a href="http://snomed.info/id/407555005">407555005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sitting diastolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271650006"> </a>  
+                  <a href="http://snomed.info/id/271650006">271650006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diastolic blood pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-72313002"> </a>  
+                  <a href="http://snomed.info/id/72313002">72313002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Systolic arterial pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-400974009"> </a>  
+                  <a href="http://snomed.info/id/400974009">400974009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Standing systolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-399304008"> </a>  
+                  <a href="http://snomed.info/id/399304008">399304008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Systolic blood pressure on admission (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407556006"> </a>  
+                  <a href="http://snomed.info/id/407556006">407556006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lying systolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407554009"> </a>  
+                  <a href="http://snomed.info/id/407554009">407554009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sitting systolic blood pressure (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271649006"> </a>  
+                  <a href="http://snomed.info/id/271649006">271649006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Systolic blood pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422119006"> </a>  
+                  <a href="http://snomed.info/id/422119006">422119006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Brachial pulse rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-429614003"> </a>  
+                  <a href="http://snomed.info/id/429614003">429614003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Posterior tibial pulse rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-429525003"> </a>  
+                  <a href="http://snomed.info/id/429525003">429525003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dorsalis pedis pulse rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-399017001"> </a>  
+                  <a href="http://snomed.info/id/399017001">399017001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heart rate on admission (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-78564009"> </a>  
+                  <a href="http://snomed.info/id/78564009">78564009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pulse rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-444981005"> </a>  
+                  <a href="http://snomed.info/id/444981005">444981005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Resting heart rate (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-364075005"> </a>  
+                  <a href="http://snomed.info/id/364075005">364075005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heart rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-424927000"> </a>  
+                  <a href="http://snomed.info/id/424927000">424927000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Body weight with shoes (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-445541000"> </a>  
+                  <a href="http://snomed.info/id/445541000">445541000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dry body weight (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-425024002"> </a>  
+                  <a href="http://snomed.info/id/425024002">425024002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Body weight without shoes (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-364589006"> </a>  
+                  <a href="http://snomed.info/id/364589006">364589006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Birth weight</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-27113001"> </a>  
+                  <a href="http://snomed.info/id/27113001">27113001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Body weight</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1153637007"> </a>  
+                  <a href="http://snomed.info/id/1153637007">1153637007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Body height (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-248333004"> </a>  
+                  <a href="http://snomed.info/id/248333004">248333004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Standing height</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1149101003"> </a>  
+                  <a href="http://snomed.info/id/1149101003">1149101003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Recumbent body height (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1162392001"> </a>  
+                  <a href="http://snomed.info/id/1162392001">1162392001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-amputation measured body height</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-431314004"> </a>  
+                  <a href="http://snomed.info/id/431314004">431314004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Peripheral oxygen saturation (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-86290005"> </a>  
+                  <a href="http://snomed.info/id/86290005">86290005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Respiratory rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-250810003"> </a>  
+                  <a href="http://snomed.info/id/250810003">250810003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Total breath rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271625008"> </a>  
+                  <a href="http://snomed.info/id/271625008">271625008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rate of spontaneous respiration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-276885007"> </a>  
+                  <a href="http://snomed.info/id/276885007">276885007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Core body temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-300076005"> </a>  
+                  <a href="http://snomed.info/id/300076005">300076005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Basal body temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-307047009"> </a>  
+                  <a href="http://snomed.info/id/307047009">307047009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rectal temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-364246006"> </a>  
+                  <a href="http://snomed.info/id/364246006">364246006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Temperature of vagina</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-415974002"> </a>  
+                  <a href="http://snomed.info/id/415974002">415974002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tympanic temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-431598003"> </a>  
+                  <a href="http://snomed.info/id/431598003">431598003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Temperature of esophagus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-698831002"> </a>  
+                  <a href="http://snomed.info/id/698831002">698831002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nasopharyngeal temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-698832009"> </a>  
+                  <a href="http://snomed.info/id/698832009">698832009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bladder temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-708499008"> </a>  
+                  <a href="http://snomed.info/id/708499008">708499008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Temperature of neonate at birth</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1222808002"> </a>  
+                  <a href="http://snomed.info/id/1222808002">1222808002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Temperature of blood</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation"/>
+        <version value="3.1.0"/>
+        <name value="SCTBasicObservation"/>
+        <title value="Dk Core SNOMED CT Basic Observation"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:1c3ccdbf-97a9-4467-bb80-9854c738825c"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
+          <total value="41"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="446226005"/>
+            <display value="Diastolic blood pressure on admission (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="400975005"/>
+            <display value="Standing diastolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407557002"/>
+            <display value="Lying diastolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407555005"/>
+            <display value="Sitting diastolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271650006"/>
+            <display value="Diastolic blood pressure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72313002"/>
+            <display value="Systolic arterial pressure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="400974009"/>
+            <display value="Standing systolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="399304008"/>
+            <display value="Systolic blood pressure on admission (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407556006"/>
+            <display value="Lying systolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407554009"/>
+            <display value="Sitting systolic blood pressure (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271649006"/>
+            <display value="Systolic blood pressure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422119006"/>
+            <display value="Brachial pulse rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="429614003"/>
+            <display value="Posterior tibial pulse rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="429525003"/>
+            <display value="Dorsalis pedis pulse rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="399017001"/>
+            <display value="Heart rate on admission (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="78564009"/>
+            <display value="Pulse rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444981005"/>
+            <display value="Resting heart rate (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="364075005"/>
+            <display value="Heart rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="424927000"/>
+            <display value="Body weight with shoes (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445541000"/>
+            <display value="Dry body weight (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="425024002"/>
+            <display value="Body weight without shoes (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="364589006"/>
+            <display value="Birth weight"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="27113001"/>
+            <display value="Body weight"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1153637007"/>
+            <display value="Body height (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="248333004"/>
+            <display value="Standing height"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1149101003"/>
+            <display value="Recumbent body height (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1162392001"/>
+            <display value="Pre-amputation measured body height"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="431314004"/>
+            <display value="Peripheral oxygen saturation (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="86290005"/>
+            <display value="Respiratory rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="250810003"/>
+            <display value="Total breath rate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271625008"/>
+            <display value="Rate of spontaneous respiration"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276885007"/>
+            <display value="Core body temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="300076005"/>
+            <display value="Basal body temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307047009"/>
+            <display value="Rectal temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="364246006"/>
+            <display value="Temperature of vagina"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415974002"/>
+            <display value="Tympanic temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="431598003"/>
+            <display value="Temperature of esophagus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="698831002"/>
+            <display value="Nasopharyngeal temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="698832009"/>
+            <display value="Bladder temperature"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="708499008"/>
+            <display value="Temperature of neonate at birth"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1222808002"/>
+            <display value="Temperature of blood"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2081,12 +3439,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <name value="TechniquesSCTCodes"/>
         <title value="DK TechniquesSCTCodes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2095,8 +3453,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4f208e40-e2c6-4ecc-ae9c-16449b9ee16e"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:7af714f1-98d6-432f-94c5-8d154291d208"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2138,6 +3496,234 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
+            <p>This value set contains 13 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--"> </a>  %
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>percent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-cm"> </a>  cm
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>centimeter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--in-i-"> </a>  [in_i]
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>inch (international)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-kg"> </a>  kg
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>kilogram</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-g"> </a>  g
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>gram</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--lb-av-"> </a>  [lb_av]
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>pound (US and British)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-Cel"> </a>  Cel
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>degree Celsius</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--degF-"> </a>  [degF]
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>degree Fahrenheit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-mm-Hg-"> </a>  mm[Hg]
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>millimeter of mercury</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--min"> </a>  /min
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>per minute</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-kg-m2"> </a>  kg/m2
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>kilogram / (meter ^ 2)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-m2"> </a>  m2
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>square meter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--fraction-"> </a>  {fraction}
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>fraction</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"/>
+        <version value="3.1.0"/>
+        <name value="UCUMBasicUnits"/>
+        <title value="Dk Core UCUM Basic Units"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7a4227cb-8f2f-4e05-98f7-4e62c05206c7"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
+          <total value="13"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+            <display value="percent"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="cm"/>
+            <display value="centimeter"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="[in_i]"/>
+            <display value="inch (international)"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+            <display value="kilogram"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="g"/>
+            <display value="gram"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="[lb_av]"/>
+            <display value="pound (US and British)"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="Cel"/>
+            <display value="degree Celsius"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="[degF]"/>
+            <display value="degree Fahrenheit"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+            <display value="millimeter of mercury"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="/min"/>
+            <display value="per minute"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg/m2"/>
+            <display value="kilogram / (meter ^ 2)"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="m2"/>
+            <display value="square meter"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{fraction}"/>
+            <display value="fraction"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
     <resource>
       <ValueSet>
@@ -2148,7 +3734,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-marital-status.html">codesystem DK Marital Statuses v3.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-marital-status.html">codesystem DK Marital Statuses v3.1.0 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html">codesystem MaritalStatus v2.1.0 (CodeSystem)</a>
@@ -2382,11 +3968,11 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2395,8 +3981,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f6e00c41-8eaa-483f-a00f-1c8864411ef9"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:79a9461c-018c-4979-b75d-094de18d6545"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2416,7 +4002,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|3.0.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|3.1.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
@@ -3140,12 +4726,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
-        <version value="3.0.0"/>
+        <version value="3.1.0"/>
         <name value="SorOrganizationType"/>
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-12-01T13:42:49+00:00"/>
+        <date value="2023-12-19T10:28:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3154,8 +4740,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:727fdc87-9b56-4d9a-a7d1-9c0c3decfed8"/>
-          <timestamp value="2023-12-01T13:43:54+00:00"/>
+          <identifier value="urn:uuid:5136d5f1-af85-4e89-9542-dc7ee2aeadf0"/>
+          <timestamp value="2023-12-19T10:29:52+00:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>

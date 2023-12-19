@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/ElseUrinStix> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ElseUrinStix"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElseUrinStix\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ElseUrinStix&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: U—Leukocytter; arb.k.(proc.) = ? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#NPU03987; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#252385000 &quot;Urine dipstick for leukocyte esterase (procedure)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>value</b>: Påviselige leukocytter</p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NPU03987" ] ;
+       fhir:display [ fhir:v "U—Leukocytter; arb.k.(proc.) = ?" ]
+     ] [
+       a sct:252385000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "252385000" ] ;
+       fhir:display [ fhir:v "Urine dipstick for leukocyte esterase (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:reference [ fhir:v "Patient/else" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [ fhir:v "Påviselige leukocytter"] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

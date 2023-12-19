@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anders Ukendt (TEMP)</b> male, DoB: 1983-06-07 ( id:\u00a00706830VJ9)</p><hr/></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anders null (TEMP)</b> male, DoB: 1983-06-07 ( id:\u00a00706830VJ9)</p><hr/></div>"
   },
   "identifier" : [{
     "system" : "http://rn.dk",
@@ -14,7 +14,12 @@
   }],
   "name" : [{
     "use" : "temp",
-    "family" : "Ukendt",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "unknown"
+      }]
+    },
     "given" : ["Anders"]
   }],
   "gender" : "male",

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ElseUrinStix"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseUrinStix"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseUrinStix&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: U—Leukocytter; arb.k.(proc.) = ? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#NPU03987; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#252385000 &quot;Urine dipstick for leukocyte esterase (procedure)&quot;)</span></p><p><b>subject</b>: <a href="Patient-else.html">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>value</b>: Påviselige leukocytter</p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.1"/>
+      <code value="NPU03987"/>
+      <display value="U—Leukocytter; arb.k.(proc.) = ?"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="252385000"/>
+      <display value="Urine dipstick for leukocyte esterase (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/else"/>
+  </subject>
+  <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+  <valueString value="Påviselige leukocytter"/>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="272391002"/>
+      <display value="Measurement technique (qualifier value)"/>
+    </coding>
+  </method>
+</Observation>

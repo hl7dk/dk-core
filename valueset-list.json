@@ -1,8 +1,17 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "DkCoreDeCPRValueSet",
+      "title" : "DK D-eCPR OID values",
+      "description" : "DK D-eCPR OID values",
+      "systems" : ["http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"]
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "DkCoreProfessionGroupValueSet",
       "title" : "DK Profession Group",
@@ -12,17 +21,26 @@
       ]
     },
     {
-      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
-      "version" : "3.0.0",
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
+      "version" : "3.1.0",
       "status" : "active",
-      "name" : "LoincVitalSigns",
-      "title" : "DK Core Vital Signs",
-      "description" : "LOINC codes describing vital signs.",
+      "name" : "IEEEBasicObservation",
+      "title" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:iso:std:iso:11073:10101"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LoincBasicObservation",
+      "title" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
       "systems" : ["http://loinc.org"]
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
@@ -33,8 +51,17 @@
       ]
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "NPUBasicObservation",
+      "title" : "Dk Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:oid:1.2.208.176.2.1"]
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
@@ -44,8 +71,17 @@
       ]
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "SCTBasicObservation",
+      "title" : "Dk Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "TechniquesSCTCodes",
       "title" : "DK TechniquesSCTCodes",
@@ -53,8 +89,17 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "UCUMBasicUnits",
+      "title" : "Dk Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : null,
       "title" : "DK MaritalStatus",
@@ -67,7 +112,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
-      "version" : "3.0.0",
+      "version" : "3.1.0",
       "status" : "active",
       "name" : "SorOrganizationType",
       "title" : "DK SOR Organization Type",

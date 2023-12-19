@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ElseBodyTemperature"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElseBodyTemperature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ElseBodyTemperature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8310-5; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#276885007)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: 38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ]
+     ] [
+       a sct:276885007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276885007" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:reference [ fhir:v "Patient/else" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "38.7"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "grader celcius" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ] ;
+       fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

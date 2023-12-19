@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Max",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Max Test Berggren (OFFICIAL)</b> male, DoB: 1972-07-01 ( id:\u00a00107729995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://hl7.dk/fhir/core/CodeSystem/dk-marital-status P}\">Registered partnership</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.2",
+    "value" : "0107729995"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Berggren",
+    "given" : ["Max",
+    "Test"],
+    "prefix" : ["Mr"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1972-07-01",
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+      "code" : "P"
+    }]
+  }
+}

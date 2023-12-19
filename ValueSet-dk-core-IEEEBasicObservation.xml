@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-core-IEEEBasicObservation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html"><code>urn:iso:std:iso:11073:10101</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Fully specified name</b></td></tr><tr><td>151562</td><td>MDC_RESP_RATE</td><td>Rate of breathing; method not specified.</td></tr><tr><td>151570</td><td>MDC_AWAY_RESP_RATE</td><td>Rate of breathing; method: direct airway flow measurement.</td></tr><tr><td>151578</td><td>MDC_TTHOR_RESP_RATE</td><td>Rate of breathing; method: transthoracic impedance variations.</td></tr><tr><td>151594</td><td>MDC_CO2_RESP_RATE</td><td>Rate of breathing; method: carbon dioxide measurement.</td></tr><tr><td>151602</td><td>MDC_PRESS_RESP_RATE</td><td>Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP).</td></tr><tr><td>151650</td><td>MDC_ACOUSTIC_RESP_RATE</td><td>Rate of breathing; method: acoustic.</td></tr><tr><td>151658</td><td>MDC_PULS_OXIM_PLETH_RESP_RATE</td><td>Rate of breathing; method: SpO2 plethysmography.</td></tr><tr><td>8410992</td><td>MDC_SABTE_RESP_RATE</td><td>Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]</td></tr><tr><td>149514</td><td>MDC_PULS_RATE</td><td>Rate of blood pulse in an artery.</td></tr><tr><td>149522</td><td>MDC_BLD_PULS_RATE_INV</td><td>Rate of blood pulse in an artery, measured invasively.</td></tr><tr><td>149546</td><td>MDC_PULS_RATE_NON_INV</td><td>Rate of blood pulse in an artery, measured non-invasively.</td></tr><tr><td>149530</td><td>MDC_PULS_OXIM_PULS_RATE</td><td>Rate of blood pulse as obtained by pulse oximetry.</td></tr><tr><td>147842</td><td>MDC_ECG_HEART_RATE</td><td>Rate of cardiac beats (ECG).</td></tr><tr><td>8410590</td><td>MDC_ECG_HEART_RATE_INSTANT</td><td>Instantaneous heart rate.</td></tr><tr><td>149554</td><td>MDC_TTHOR_HEART_RATE</td><td>Heart rate obtained from the variation of transthoracic impedance.</td></tr><tr><td>149562</td><td>MDC_PALPATION_HEART_RATE</td><td>Heart rate obtained from an artery that is close to the surface and a pulse can be felt.</td></tr><tr><td>8454258</td><td>MDC_HF_HR</td><td>This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]</td></tr><tr><td>150324</td><td>MDC_SAT_O2_ART</td><td>Arterial oxygen saturation. [no method]</td></tr><tr><td>150456</td><td>MDC_PULS_OXIM_SAT_O2</td><td>Oxygen saturation. [using pulse oximetry]</td></tr><tr><td>150364</td><td>MDC_TEMP_BODY</td><td>Body temperature. [unspecified]</td></tr><tr><td>150368</td><td>MDC_TEMP_CORE</td><td>Core temperature.</td></tr><tr><td>150388</td><td>MDC_TEMP_SKIN</td><td>Skin temperature.</td></tr><tr><td>150392</td><td>MDC_TEMP_TYMP</td><td>Tympanic temperature.</td></tr><tr><td>188420</td><td>MDC_TEMP_RECT</td><td>Rectal temperature.</td></tr><tr><td>188424</td><td>MDC_TEMP_ORAL</td><td>Oral temperature.</td></tr><tr><td>188428</td><td>MDC_TEMP_EAR</td><td>Ear temperature.</td></tr><tr><td>188452</td><td>MDC_TEMP_AXILLA</td><td>Axillary (armpit) temperature.</td></tr><tr><td>188456</td><td>MDC_TEMP_GIT</td><td>Gastro-intestinal tract temperature.</td></tr><tr><td>188740</td><td>MDC_LEN_BODY_ACTUAL</td><td>The actual height of the patient.</td></tr><tr><td>153856</td><td>MDC_CIRCUM_HEAD</td><td>Circumference of the head.</td></tr><tr><td>188736</td><td>MDC_MASS_BODY_ACTUAL</td><td>The measurement of the mass of patient.</td></tr><tr><td>188752</td><td>MDC_RATIO_MASS_BODY_LEN_SQ</td><td>The individual's body weight, in kilograms, divided by the square of height, in meters.</td></tr><tr><td>150020</td><td>MDC_PRESS_BLD_NONINV</td><td>Pressure of the blood, obtained noninvasively.</td></tr><tr><td>150021</td><td>MDC_PRESS_BLD_NONINV_SYS</td><td>Pressure of the blood, obtained noninvasively, at the systolic phase.</td></tr><tr><td>150022</td><td>MDC_PRESS_BLD_NONINV_DIA</td><td>Pressure of the blood, obtained noninvasively, at the diastolic phase.</td></tr><tr><td>150023</td><td>MDC_PRESS_BLD_NONINV_MEAN</td><td>Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"/>
+  <version value="3.1.0"/>
+  <name value="IEEEBasicObservation"/>
+  <title value="Dk Core IEEE Basic Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-19T10:28:26+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="IEEE MDC codes for Basic Observations usable in Denmark"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="### Purpose of this ValueSet&#xA;This ValueSet comprises the most common IEEE MDC codes used to represent observations&#xA;that are considered &quot;basic&quot; by this profile. This ValueSet is **not** meant to be exhaustive!&#xA;&#xA;The origin of an MDC code is usually the equipment used to perform the measurement,&#xA;and often the code carries supplemental information about how (or where on the body)&#xA;the observation was performed."/>
+  <copyright value="IEEE"/>
+  <compose>
+    <include>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <concept>
+        <code value="151562"/>
+        <display value="MDC_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method not specified."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151570"/>
+        <display value="MDC_AWAY_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: direct airway flow measurement."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151578"/>
+        <display value="MDC_TTHOR_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: transthoracic impedance variations."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151594"/>
+        <display value="MDC_CO2_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: carbon dioxide measurement."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151602"/>
+        <display value="MDC_PRESS_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151650"/>
+        <display value="MDC_ACOUSTIC_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: acoustic."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="151658"/>
+        <display value="MDC_PULS_OXIM_PLETH_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of breathing; method: SpO2 plethysmography."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8410992"/>
+        <display value="MDC_SABTE_RESP_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149514"/>
+        <display value="MDC_PULS_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of blood pulse in an artery."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149522"/>
+        <display value="MDC_BLD_PULS_RATE_INV"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of blood pulse in an artery, measured invasively."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149546"/>
+        <display value="MDC_PULS_RATE_NON_INV"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of blood pulse in an artery, measured non-invasively."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149530"/>
+        <display value="MDC_PULS_OXIM_PULS_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of blood pulse as obtained by pulse oximetry."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="147842"/>
+        <display value="MDC_ECG_HEART_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rate of cardiac beats (ECG)."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8410590"/>
+        <display value="MDC_ECG_HEART_RATE_INSTANT"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Instantaneous heart rate."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149554"/>
+        <display value="MDC_TTHOR_HEART_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Heart rate obtained from the variation of transthoracic impedance."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="149562"/>
+        <display value="MDC_PALPATION_HEART_RATE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Heart rate obtained from an artery that is close to the surface and a pulse can be felt."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8454258"/>
+        <display value="MDC_HF_HR"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150324"/>
+        <display value="MDC_SAT_O2_ART"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Arterial oxygen saturation. [no method]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150456"/>
+        <display value="MDC_PULS_OXIM_SAT_O2"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oxygen saturation. [using pulse oximetry]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150364"/>
+        <display value="MDC_TEMP_BODY"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Body temperature. [unspecified]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150368"/>
+        <display value="MDC_TEMP_CORE"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Core temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150388"/>
+        <display value="MDC_TEMP_SKIN"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Skin temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150392"/>
+        <display value="MDC_TEMP_TYMP"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Tympanic temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188420"/>
+        <display value="MDC_TEMP_RECT"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Rectal temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188424"/>
+        <display value="MDC_TEMP_ORAL"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Oral temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188428"/>
+        <display value="MDC_TEMP_EAR"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Ear temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188452"/>
+        <display value="MDC_TEMP_AXILLA"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Axillary (armpit) temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188456"/>
+        <display value="MDC_TEMP_GIT"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Gastro-intestinal tract temperature."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188740"/>
+        <display value="MDC_LEN_BODY_ACTUAL"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="The actual height of the patient."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="153856"/>
+        <display value="MDC_CIRCUM_HEAD"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Circumference of the head."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188736"/>
+        <display value="MDC_MASS_BODY_ACTUAL"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="The measurement of the mass of patient."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="188752"/>
+        <display value="MDC_RATIO_MASS_BODY_LEN_SQ"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="The individual's body weight, in kilograms, divided by the square of height, in meters."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150020"/>
+        <display value="MDC_PRESS_BLD_NONINV"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pressure of the blood, obtained noninvasively."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150021"/>
+        <display value="MDC_PRESS_BLD_NONINV_SYS"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pressure of the blood, obtained noninvasively, at the systolic phase."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150022"/>
+        <display value="MDC_PRESS_BLD_NONINV_DIA"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pressure of the blood, obtained noninvasively, at the diastolic phase."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="150023"/>
+        <display value="MDC_PRESS_BLD_NONINV_MEAN"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+          </use>
+          <value value="Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle."/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

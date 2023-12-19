@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Observation/MaxVitalSignsPanel> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MaxVitalSignsPanel"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MaxVitalSignsPanel\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MaxVitalSignsPanel&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Vital signs, weight, height, head circumference, oxygen saturation and BMI panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85353-1)</span></p><p><b>subject</b>: <a href=\"Patient-Max.html\">Patient/Max</a> &quot; BERGGREN&quot;</p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-MaxBloodPressure.html\">Observation/MaxBloodPressure</a></li><li><a href=\"Observation-MaxRespirationRate.html\">Observation/MaxRespirationRate</a></li><li><a href=\"Observation-MaxHeartRate.html\">Observation/MaxHeartRate</a></li><li><a href=\"Observation-MaxBodyTemperature.html\">Observation/MaxBodyTemperature</a></li></ul></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85353-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85353-1" ] ;
+       fhir:display [ fhir:v "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.dk/fhir/core/Patient/Max> ;
+     fhir:reference [ fhir:v "Patient/Max" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
+  fhir:hasMember ( [
+     fhir:link <http://hl7.dk/fhir/core/Observation/MaxBloodPressure> ;
+     fhir:reference [ fhir:v "Observation/MaxBloodPressure" ]
+  ] [
+     fhir:link <http://hl7.dk/fhir/core/Observation/MaxRespirationRate> ;
+     fhir:reference [ fhir:v "Observation/MaxRespirationRate" ]
+  ] [
+     fhir:link <http://hl7.dk/fhir/core/Observation/MaxHeartRate> ;
+     fhir:reference [ fhir:v "Observation/MaxHeartRate" ]
+  ] [
+     fhir:link <http://hl7.dk/fhir/core/Observation/MaxBodyTemperature> ;
+     fhir:reference [ fhir:v "Observation/MaxBodyTemperature" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

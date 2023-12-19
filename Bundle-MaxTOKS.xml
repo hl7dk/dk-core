@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="MaxTOKS"/>
+  <type value="collection"/>
+  <timestamp value="2023-08-08T13:30:00.000Z"/>
+  <entry>
+    <fullUrl value="Patient/Max"/>
+    <resource>
+      <Patient>
+        <id value="Max"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Max"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Max&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></p></div><p><b>identifier</b>: id: 0107729995</p><p><b>name</b>: Max Test Berggren (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-07-01</p><p><b>maritalStatus</b>: Registered partnership <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-dk-marital-status.html">DK Marital Statuses</a>#P)</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0107729995"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Berggren"/>
+          <given value="Max"/>
+          <given value="Test"/>
+          <prefix value="Mr"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1972-07-01"/>
+        <maritalStatus>
+          <coding>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"/>
+            <code value="P"/>
+          </coding>
+        </maritalStatus>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxConsciousness"/>
+    <resource>
+      <Observation>
+        <id value="MaxConsciousness"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxConsciousness"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxConsciousness&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Level of consciousness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#80288-4)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: Responds to pain (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#450847001)</span></p><p><b>method</b>: Reported (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#733985002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="80288-4"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="450847001"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="733985002"/>
+            <display value="Reported (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxBloodPressure"/>
+    <resource>
+      <Observation>
+        <id value="MaxBloodPressure"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxBloodPressure"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxBloodPressure&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel with all children optional <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85354-9; unknown#ZZ3160)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#407554009)</span></p><p><b>value</b>: 156 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#407555005)</span></p><p><b>value</b>: 78 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+          </coding>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.4"/>
+            <code value="ZZ3160"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8480-6"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="407554009"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="156"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8462-4"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="407555005"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="78"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxBodyTemperature"/>
+    <resource>
+      <Observation>
+        <id value="MaxBodyTemperature"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxBodyTemperature"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxBodyTemperature&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8310-5; unknown#ZZ0253)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 37 grader celcius<span style="background: LightGoldenRodYellow"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8310-5"/>
+          </coding>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.4"/>
+            <code value="ZZ0253"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <valueQuantity>
+          <value value="37"/>
+          <unit value="grader celcius"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="Cel"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxHeartRate"/>
+    <resource>
+      <Observation>
+        <id value="MaxHeartRate"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxHeartRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxHeartRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4; unknown#ZZ3140)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 68 slag/minut<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8867-4"/>
+          </coding>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.4"/>
+            <code value="ZZ3140"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <valueQuantity>
+          <value value="68"/>
+          <unit value="slag/minut"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxRespirationRate"/>
+    <resource>
+      <Observation>
+        <id value="MaxRespirationRate"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxRespirationRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxRespirationRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9279-1; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86290005)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 13 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="9279-1"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="86290005"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <valueQuantity>
+          <value value="13"/>
+          <unit value="/min"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/MaxGlasgowComaScale"/>
+    <resource>
+      <Observation>
+        <id value="MaxGlasgowComaScale"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MaxGlasgowComaScale"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MaxGlasgowComaScale&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Glasgow coma score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#248241002)</span></p><p><b>subject</b>: <a href="#Patient_Max">See above (Patient/Max)</a></p><p><b>effective</b>: 2023-08-08 13:30:00+0000</p><p><b>value</b>: 13 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><blockquote><p><b>referenceRange</b></p><p><b>high</b>: 8 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Severe TBI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 9 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><p><b>high</b>: 12 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Moderate TBI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 13 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><p><b>type</b>: Mild TBI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score motor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9268-4)</span></p><p><b>value</b>: Localizing pain <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA6566-9)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score verbal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9270-0)</span></p><p><b>value</b>: Confused <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA6560-2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glasgow coma score eye opening <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9267-6)</span></p><p><b>value</b>: Eyes open spontaneously <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA6556-0)</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="248241002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Max"/>
+        </subject>
+        <effectiveDateTime value="2023-08-08T13:30:00.000Z"/>
+        <valueQuantity>
+          <value value="13"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
+        <referenceRange>
+          <high>
+            <value value="8"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{score}"/>
+          </high>
+          <type>
+            <text value="Severe TBI"/>
+          </type>
+        </referenceRange>
+        <referenceRange>
+          <low>
+            <value value="9"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{score}"/>
+          </low>
+          <high>
+            <value value="12"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{score}"/>
+          </high>
+          <type>
+            <text value="Moderate TBI"/>
+          </type>
+        </referenceRange>
+        <referenceRange>
+          <low>
+            <value value="13"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{score}"/>
+          </low>
+          <type>
+            <text value="Mild TBI"/>
+          </type>
+        </referenceRange>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="9268-4"/>
+              <display value="Glasgow coma score motor"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6566-9"/>
+              <display value="Localizing pain"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="9270-0"/>
+              <display value="Glasgow coma score verbal"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6560-2"/>
+              <display value="Confused"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="9267-6"/>
+              <display value="Glasgow coma score eye opening"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="LA6556-0"/>
+              <display value="Eyes open spontaneously"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

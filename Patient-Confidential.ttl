@@ -12,6 +12,10 @@
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
        fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] ) ;
+     fhir:security ( [
+       fhir:code [ fhir:v "R" ] ;
+       fhir:display [ fhir:v "Restricted" ]
      ] )
   ] ; # 
   fhir:text [
@@ -32,7 +36,8 @@
   fhir:address ( [
      fhir:use [ fhir:v "home" ] ;
      fhir:line ( [ fhir:v "Julianevej 22" ] ) ;
-     fhir:city [ fhir:v "6000 Kolding" ]
+     fhir:city [ fhir:v "Kolding" ] ;
+     fhir:postalCode [ fhir:v "6000" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ElsesTOBSscore",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElsesTOBSscore\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ElsesTOBSscore&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (medcom-observation-codes#MCS88125)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: 3 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 1 = '1')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes",
+      "code" : "MCS88125",
+      "display" : "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/else"
+  },
+  "effectiveDateTime" : "2023-09-12T17:45:00.000Z",
+  "performer" : [{
+    "reference" : "Practitioner/SidselSygeplejerske"
+  }],
+  "valueQuantity" : {
+    "value" : 3,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "1"
+  }
+}

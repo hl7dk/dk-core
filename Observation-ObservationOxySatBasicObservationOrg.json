@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ObservationOxySatBasicObservationOrg",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationOxySatBasicObservationOrg\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ObservationOxySatBasicObservationOrg&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2708-6; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-mdc.html\">ISO 11073-10101 Health informatics - Point-of-care</a>#150456 &quot;MDC_PULS_OXIM_SAT_O2&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-john.html\">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>effective</b>: 2023-11-01 12:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner/AbrahamLaege</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 97 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2708-6",
+      "display" : "Oxygen saturation in Arterial blood"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "150456",
+      "display" : "MDC_PULS_OXIM_SAT_O2"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/john"
+  },
+  "effectiveDateTime" : "2023-11-01T12:00:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/AbrahamLaege"
+  }],
+  "valueQuantity" : {
+    "value" : 97,
+    "unit" : "%",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ukendt-D-eCPR",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Peter null (TEMP)</b> male, DoB Unknown ( id:\u00a01206550VK9)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.6.1.3.177",
+    "value" : "1206550VK9"
+  }],
+  "name" : [{
+    "use" : "temp",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "unknown"
+      }]
+    },
+    "given" : ["Peter"]
+  }],
+  "gender" : "male"
+}

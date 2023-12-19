@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ElsesTOBS"/>
+  <type value="collection"/>
+  <timestamp value="2023-09-12T17:45:00.000Z"/>
+  <entry>
+    <fullUrl value="Patient/else"/>
+    <resource>
+      <Patient>
+        <id value="else"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="else"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;else&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></p></div><p><b>identifier</b>: id: 0201919990</p><p><b>name</b>: Else Test Lauridsen (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1991-02-02</p><p><b>maritalStatus</b>: Married <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus</a>#M)</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0201919990"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Lauridsen"/>
+          <given value="Else"/>
+          <given value="Test"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1991-02-02"/>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+        </maritalStatus>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElseConsciousness"/>
+    <resource>
+      <Observation>
+        <id value="ElseConsciousness"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseConsciousness"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseConsciousness&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Level of consciousness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#6942003)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>value</b>: Responds to pain (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#450847001)</span></p><p><b>method</b>: Reported (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#733985002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="6942003"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="450847001"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="733985002"/>
+            <display value="Reported (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElseBloodPressure"/>
+    <resource>
+      <Observation>
+        <id value="ElseBloodPressure"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseBloodPressure"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseBloodPressure&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel with all children optional <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85354-9; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#75367002)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#407554009)</span></p><p><b>value</b>: 147 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#407555005)</span></p><p><b>value</b>: 95 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="75367002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8480-6"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="407554009"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="147"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8462-4"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="407555005"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="95"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElseBodyTemperature"/>
+    <resource>
+      <Observation>
+        <id value="ElseBodyTemperature"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseBodyTemperature"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseBodyTemperature&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8310-5; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#276885007)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>value</b>: 38.7 grader celcius<span style="background: LightGoldenRodYellow"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8310-5"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="276885007"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <valueQuantity>
+          <value value="38.7"/>
+          <unit value="grader celcius"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="Cel"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElseHeartRate"/>
+    <resource>
+      <Observation>
+        <id value="ElseHeartRate"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseHeartRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseHeartRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364075005)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>value</b>: 92 slag/minut<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8867-4"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="364075005"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <valueQuantity>
+          <value value="92"/>
+          <unit value="slag/minut"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElseRespirationRate"/>
+    <resource>
+      <Observation>
+        <id value="ElseRespirationRate"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseRespirationRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseRespirationRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9279-1; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86290005)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>value</b>: 19 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="9279-1"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="86290005"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <valueQuantity>
+          <value value="19"/>
+          <unit value="/min"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </valueQuantity>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ElsesTOBSscore"/>
+    <resource>
+      <Observation>
+        <id value="ElsesTOBSscore"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElsesTOBSscore"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElsesTOBSscore&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (medcom-observation-codes#MCS88125)</span></p><p><b>subject</b>: <a href="#Patient_else">See above (Patient/else)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="#Practitioner_SidselSygeplejerske">See above (Practitioner/SidselSygeplejerske)</a></p><p><b>value</b>: 3 1<span style="background: LightGoldenRodYellow"> (Details: UCUM code 1 = '1')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"/>
+            <code value="MCS88125"/>
+            <display value="Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/else"/>
+        </subject>
+        <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+        <performer>
+          <reference value="Practitioner/SidselSygeplejerske"/>
+        </performer>
+        <valueQuantity>
+          <value value="3"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="1"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Practitioner/SidselSygeplejerske"/>
+    <resource>
+      <Practitioner>
+        <id value="SidselSygeplejerske"/>
+        <meta>
+          <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="SidselSygeplejerske"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;SidselSygeplejerske&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Sidsel Andersen </p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Sygeplejerske <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-DkCoreProfessionGroupCodes.html">DK Profession Group Codes</a>#5166)</span></td></tr></table></div>
+        </text>
+        <name>
+          <family value="Andersen"/>
+          <given value="Sidsel"/>
+        </name>
+        <qualification>
+          <code>
+            <coding>
+              <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
+              <code value="5166"/>
+              <display value="Sygeplejerske"/>
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+</Bundle>

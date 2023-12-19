@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "f43eae70-fe32-4362-81dc-3efc64f1f93d-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/f43eae70-fe32-4362-81dc-3efc64f1f93d-6",
+  "name" : "IntersectionAddressTypeAndAddressType",
+  "title" : "Intersection of DK Address Type And DK Address Type",
+  "status" : "active",
+  "date" : "2023-12-19T10:29:07+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "postal",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post"
+    }]
+  },
+  {
+    "code" : "physical",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fysisk"
+    }]
+  },
+  {
+    "code" : "both",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post & fysisk"
+    }]
+  }]
+}

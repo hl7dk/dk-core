@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-core-UCUM-BasicUnits"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>%</td><td>percent</td></tr><tr><td>cm</td><td>centimeter</td></tr><tr><td>[in_i]</td><td>inch (international)</td></tr><tr><td>kg</td><td>kilogram</td></tr><tr><td>g</td><td>gram</td></tr><tr><td>[lb_av]</td><td>pound (US and British)</td></tr><tr><td>Cel</td><td>degree Celsius</td></tr><tr><td>[degF]</td><td>degree Fahrenheit</td></tr><tr><td>mm[Hg]</td><td>millimeter of mercury</td></tr><tr><td>/min</td><td>per minute</td></tr><tr><td>kg/m2</td><td>kilogram / (meter ^ 2)</td></tr><tr><td>m2</td><td>square meter</td></tr><tr><td>{fraction}</td><td>fraction</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"/>
+  <version value="3.1.0"/>
+  <name value="UCUMBasicUnits"/>
+  <title value="Dk Core UCUM Basic Units"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-19T10:28:26+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="UCUM codes to represent units for basic Observations usable in Denmark"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="%"/>
+        <display value="percent"/>
+      </concept>
+      <concept>
+        <code value="cm"/>
+        <display value="centimeter"/>
+      </concept>
+      <concept>
+        <code value="[in_i]"/>
+        <display value="inch (international)"/>
+      </concept>
+      <concept>
+        <code value="kg"/>
+        <display value="kilogram"/>
+      </concept>
+      <concept>
+        <code value="g"/>
+        <display value="gram"/>
+      </concept>
+      <concept>
+        <code value="[lb_av]"/>
+        <display value="pound (US and British)"/>
+      </concept>
+      <concept>
+        <code value="Cel"/>
+        <display value="degree Celsius"/>
+      </concept>
+      <concept>
+        <code value="[degF]"/>
+        <display value="degree Fahrenheit"/>
+      </concept>
+      <concept>
+        <code value="mm[Hg]"/>
+        <display value="millimeter of mercury"/>
+      </concept>
+      <concept>
+        <code value="/min"/>
+        <display value="per minute"/>
+      </concept>
+      <concept>
+        <code value="kg/m2"/>
+        <display value="kilogram / (meter ^ 2)"/>
+      </concept>
+      <concept>
+        <code value="m2"/>
+        <display value="square meter"/>
+      </concept>
+      <concept>
+        <code value="{fraction}"/>
+        <display value="fraction"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

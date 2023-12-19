@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.0.0</title>
+    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - release
+            <span style="display:inline-block;">3.1.0 - release
 
 
 
@@ -145,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: DK Core - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: DK Core - Local Development build (v3.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -189,6 +189,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-basic-observation.html"
+                  title="StructureDefinition/dk-core-basic-observation">Danish Core Basic Observation Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-dk-core-condition.html"
@@ -271,6 +280,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-d-ecpr-identifier.html"
+                  title="StructureDefinition/dk-core-d-ecpr-identifier">Decentralised eCPR, called D-eCPR</a>
+            </td>
+            <td>
+<p>This strucure holds the danish <a href="https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR">D-eCPR</a> identifier, which is often used by the Danish regions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-dk-core-gln-identifier.html"
                   title="StructureDefinition/dk-core-gln-identifier">GLN Identifier</a>
             </td>
@@ -285,6 +303,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Identifier holding the organization code issued by KOMBIT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-x-ecpr-identifier.html"
+                  title="StructureDefinition/dk-core-x-ecpr-identifier">National eCPR service, called X-eCPR</a>
+            </td>
+            <td>
+<p>This strucure holds the danish <a href="https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR">X-eCPR</a> identifier, maintained by the Danish Health Data Authority.</p>
 </td>
          </tr>
          <tr>
@@ -350,6 +377,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-dk-core-LoincBasicObservation.html"
+                  title="ValueSet/dk-core-LoincBasicObservation">DK Core LOINC Basic Observations</a>
+            </td>
+            <td>
+<p>LOINC codes describing Basic Observations usable in Denmark.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-dk-marital-status.html"
                   title="ValueSet/dk-marital-status">DK Core Marital Status</a>
             </td>
@@ -368,11 +404,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-dk-core-LoincVitalSigns.html"
-                  title="ValueSet/dk-core-LoincVitalSigns">DK Core Vital Signs</a>
+               <a href="ValueSet-DkCoreDeCPRValueSet.html"
+                  title="ValueSet/DkCoreDeCPRValueSet">DK D-eCPR OID values</a>
             </td>
             <td>
-<p>LOINC codes describing vital signs.</p>
+<p>DK D-eCPR OID values</p>
 </td>
          </tr>
          <tr>
@@ -409,6 +445,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>SNOMED CT Codes for the technique used when obtaining an observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-IEEEBasicObservation.html"
+                  title="ValueSet/dk-core-IEEEBasicObservation">Dk Core IEEE Basic Observation</a>
+            </td>
+            <td>
+<p>IEEE MDC codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-NPUBasicObservation.html"
+                  title="ValueSet/dk-core-NPUBasicObservation">Dk Core NPU Basic Observation</a>
+            </td>
+            <td>
+<p>NPU codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-SCTBasicObservation.html"
+                  title="ValueSet/dk-core-SCTBasicObservation">Dk Core SNOMED CT Basic Observation</a>
+            </td>
+            <td>
+<p>SNOMED CT codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-UCUM-BasicUnits.html"
+                  title="ValueSet/dk-core-UCUM-BasicUnits">Dk Core UCUM Basic Units</a>
+            </td>
+            <td>
+<p>UCUM codes to represent units for basic Observations usable in Denmark</p>
 </td>
          </tr>
       </tbody>
@@ -471,6 +543,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>The days of the week.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-core-d-ecpr-codes.html"
+                  title="CodeSystem/dk-core-d-ecpr-codes">DK Decentralised eCPR Systems</a>
+            </td>
+            <td>
+<p>DK</p>
 </td>
          </tr>
          <tr>
@@ -649,10 +730,79 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Bundle-ElsesTOBS.html" title="Bundle/ElsesTOBS">Else's TOBS measurements</a>
+            </td>
+            <td>
+<p>An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseBloodPressure.html"
+                  title="Observation/ElseBloodPressure">ElseBloodPressure</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseBodyTemperature.html"
+                  title="Observation/ElseBodyTemperature">ElseBodyTemperature</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseConsciousness.html"
+                  title="Observation/ElseConsciousness">ElseConsciousness</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseHeartRate.html" title="Observation/ElseHeartRate">ElseHeartRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-ElsePainVRS.html" title="Observation/ElsePainVRS">ElsePainVRS</a>
             </td>
             <td>
 <p>Elses smerte målt med VRS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseRespirationRate.html"
+                  title="Observation/ElseRespirationRate">ElseRespirationRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseUrinStix.html" title="Observation/ElseUrinStix">ElseUrinStix</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElsesTOBSscore.html"
+                  title="Observation/ElsesTOBSscore">ElsesTOBSscore</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -681,7 +831,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-mogensen.html" title="Patient/mogensen">Example of valid patient with danish marital status</a>
+               <a href="Patient-ukendt-D-eCPR.html" title="Patient/ukendt-D-eCPR">Example of valid patient with a D-eCPR as identifier</a>
+            </td>
+            <td>
+<p>Example of valid patient with a D-eCPR as identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ukendt-X-eCPR.html" title="Patient/ukendt-X-eCPR">Example of valid patient with a X-eCPR as identifier</a>
+            </td>
+            <td>
+<p>Example of valid patient with a X-eCPR as identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Max.html" title="Patient/Max">Example of valid patient with danish marital status</a>
             </td>
             <td>
 <p>Example of valid patient with danish marital status</p>
@@ -773,8 +939,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-ObservationRespiratoryVitalSigns.html"
-                  title="Observation/ObservationRespiratoryVitalSigns">John's Respiratory rate measurement, Vital Signs</a>
+               <a href="Observation-ObservationRespiratoryBasicObservation.html"
+                  title="Observation/ObservationRespiratoryBasicObservation">John's Respiratory rate measurement (Basic observation)</a>
+            </td>
+            <td>
+<p>A simple basic observation of a hyperventilating patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationOxySatBasicObservationOrg.html"
+                  title="Observation/ObservationOxySatBasicObservationOrg">John's oxygen saturation measurement (Basic observation)</a>
             </td>
             <td>
 
@@ -782,11 +957,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-ObservationOxySatVitalSigns.html"
-                  title="Observation/ObservationOxySatVitalSigns">John's oxygen saturation measurement, Vital Signs</a>
+               <a href="Observation-ObservationOxySatObservation.html"
+                  title="Observation/ObservationOxySatObservation">John's oxygen saturation measurement (Observation)</a>
             </td>
             <td>
-
+<p>This example suggests a way to handle the oxygen saturation case, where the original measurement
+was reported in ‘%’ by a device or typed in manually, and then ‘translated’ to the NPU system,
+which requires the value to be unitless.</p>
 </td>
          </tr>
          <tr>
@@ -796,6 +973,84 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Praktisernede læge i Hasseris, som defineret af SOR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-MaxTOKS.html" title="Bundle/MaxTOKS">Max TOKS measurements, including Glasgow Coma Scale assesment</a>
+            </td>
+            <td>
+<p>An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxBloodPressure.html"
+                  title="Observation/MaxBloodPressure">MaxBloodPressure</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxBodyTemperature.html"
+                  title="Observation/MaxBodyTemperature">MaxBodyTemperature</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxConsciousness.html"
+                  title="Observation/MaxConsciousness">MaxConsciousness</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxGlasgowComaScale.html"
+                  title="Observation/MaxGlasgowComaScale">MaxGlasgowComaScale</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxHeartRate.html" title="Observation/MaxHeartRate">MaxHeartRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxRespirationRate.html"
+                  title="Observation/MaxRespirationRate">MaxRespirationRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxSaturation.html" title="Observation/MaxSaturation">MaxSaturation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxVitalSignsPanel.html"
+                  title="Observation/MaxVitalSignsPanel">MaxVitalSignsPanel</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -848,6 +1103,15 @@ bundle containing a home blood pressure measurement uploaded to a Continua-compl
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Practitioner-SidselSygeplejerske.html"
+                  title="Practitioner/SidselSygeplejerske">SidselSygeplejerske</a>
+            </td>
+            <td>
+<p>Eksempel på en sygeplejerske</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Device-Telma.FEEDDADADEADBEEF.html"
                   title="Device/Telma.FEEDDADADEADBEEF">Telma.FEEDDADADEADBEEF</a>
             </td>
@@ -881,7 +1145,7 @@ bundle containing a home blood pressure measurement uploaded to a Continua-compl
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 1, 2023 13:42+0000">2023-12-01</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 19, 2023 10:28+0000">2023-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

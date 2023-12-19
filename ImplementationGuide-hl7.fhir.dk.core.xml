@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="3.0.0"/>
+  <version value="3.1.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="active"/>
-  <date value="2023-12-01T13:42:49+00:00"/>
+  <date value="2023-12-19T10:28:26+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -696,6 +696,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dk-core-basic-observation"/>
+      </reference>
+      <name value="Danish Core Basic Observation Profile"/>
+      <description value="HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/dk-core-condition"/>
       </reference>
       <name value="Danish Core Condition Profile"/>
@@ -781,6 +792,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-d-ecpr-identifier"/>
+      </reference>
+      <name value="Decentralised eCPR, called D-eCPR"/>
+      <description value="This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -839,10 +861,54 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/dk-core-IEEEBasicObservation"/>
+      </reference>
+      <name value="Dk Core IEEE Basic Observation"/>
+      <description value="IEEE MDC codes for Basic Observations usable in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-LoincBasicObservation"/>
+      </reference>
+      <name value="DK Core LOINC Basic Observations"/>
+      <description value="LOINC codes describing Basic Observations usable in Denmark."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/dk-marital-status"/>
       </reference>
       <name value="DK Core Marital Status"/>
       <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-NPUBasicObservation"/>
+      </reference>
+      <name value="Dk Core NPU Basic Observation"/>
+      <description value="NPU codes for Basic Observations usable in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-SCTBasicObservation"/>
+      </reference>
+      <name value="Dk Core SNOMED CT Basic Observation"/>
+      <description value="SNOMED CT codes for Basic Observations usable in Denmark"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -861,10 +927,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/dk-core-LoincVitalSigns"/>
+        <reference value="ValueSet/dk-core-UCUM-BasicUnits"/>
       </reference>
-      <name value="DK Core Vital Signs"/>
-      <description value="LOINC codes describing vital signs."/>
+      <name value="Dk Core UCUM Basic Units"/>
+      <description value="UCUM codes to represent units for basic Observations usable in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DkCoreDeCPRValueSet"/>
+      </reference>
+      <name value="DK D-eCPR OID values"/>
+      <description value="DK D-eCPR OID values"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -876,6 +953,17 @@
       </reference>
       <name value="DK Days Of Week"/>
       <description value="The days of the week."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-core-d-ecpr-codes"/>
+      </reference>
+      <name value="DK Decentralised eCPR Systems"/>
+      <description value="DK"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1023,6 +1111,57 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ElsesTOBS"/>
+      </reference>
+      <name value="Else's TOBS measurements"/>
+      <description value="An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseBloodPressure"/>
+      </reference>
+      <name value="ElseBloodPressure"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseBodyTemperature"/>
+      </reference>
+      <name value="ElseBodyTemperature"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseConsciousness"/>
+      </reference>
+      <name value="ElseConsciousness"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseHeartRate"/>
+      </reference>
+      <name value="ElseHeartRate"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1030,6 +1169,36 @@
       </reference>
       <name value="ElsePainVRS"/>
       <description value="Elses smerte målt med VRS"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseRespirationRate"/>
+      </reference>
+      <name value="ElseRespirationRate"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElsesTOBSscore"/>
+      </reference>
+      <name value="ElsesTOBSscore"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseUrinStix"/>
+      </reference>
+      <name value="ElseUrinStix"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
     </resource>
     <resource>
@@ -1070,7 +1239,29 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/mogensen"/>
+        <reference value="Patient/ukendt-D-eCPR"/>
+      </reference>
+      <name value="Example of valid patient with a D-eCPR as identifier"/>
+      <description value="Example of valid patient with a D-eCPR as identifier."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ukendt-X-eCPR"/>
+      </reference>
+      <name value="Example of valid patient with a X-eCPR as identifier"/>
+      <description value="Example of valid patient with a X-eCPR as identifier."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Max"/>
       </reference>
       <name value="Example of valid patient with danish marital status"/>
       <description value="Example of valid patient with danish marital status"/>
@@ -1201,9 +1392,20 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationOxySatVitalSigns"/>
+        <reference value="Observation/ObservationOxySatBasicObservationOrg"/>
       </reference>
-      <name value="John's oxygen saturation measurement, Vital Signs"/>
+      <name value="John's oxygen saturation measurement (Basic observation)"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ObservationOxySatObservation"/>
+      </reference>
+      <name value="John's oxygen saturation measurement (Observation)"/>
+      <description value="This example suggests a way to handle the oxygen saturation case, where the original measurement&#xA;was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,&#xA;which requires the value to be unitless."/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
     </resource>
     <resource>
@@ -1211,10 +1413,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationRespiratoryVitalSigns"/>
+        <reference value="Observation/ObservationRespiratoryBasicObservation"/>
       </reference>
-      <name value="John's Respiratory rate measurement, Vital Signs"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+      <name value="John's Respiratory rate measurement (Basic observation)"/>
+      <description value="A simple basic observation of a hyperventilating patient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1240,6 +1443,97 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/MaxTOKS"/>
+      </reference>
+      <name value="Max TOKS measurements, including Glasgow Coma Scale assesment"/>
+      <description value="An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxBloodPressure"/>
+      </reference>
+      <name value="MaxBloodPressure"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxBodyTemperature"/>
+      </reference>
+      <name value="MaxBodyTemperature"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxConsciousness"/>
+      </reference>
+      <name value="MaxConsciousness"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxGlasgowComaScale"/>
+      </reference>
+      <name value="MaxGlasgowComaScale"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxHeartRate"/>
+      </reference>
+      <name value="MaxHeartRate"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxRespirationRate"/>
+      </reference>
+      <name value="MaxRespirationRate"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxSaturation"/>
+      </reference>
+      <name value="MaxSaturation"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaxVitalSignsPanel"/>
+      </reference>
+      <name value="MaxVitalSignsPanel"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -1248,6 +1542,17 @@
       <name value="MedCom Test Organization"/>
       <description value="MedCom Test Organization with SOR id"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-x-ecpr-identifier"/>
+      </reference>
+      <name value="National eCPR service, called X-eCPR"/>
+      <description value="This strucure holds the danish [X-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR) identifier, maintained by the Danish Health Data Authority."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1302,6 +1607,17 @@
       <name value="Poul's home blood pressure measurement"/>
       <description value="This example demonstrates a DkCoreObservation _and_ Continua-compliant&#xA;bundle containing a home blood pressure measurement uploaded to a Continua-compliant&#xA;_&quot;FHIR Observation Reporting Server&quot;._"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/SidselSygeplejerske"/>
+      </reference>
+      <name value="SidselSygeplejerske"/>
+      <description value="Eksempel på en sygeplejerske"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

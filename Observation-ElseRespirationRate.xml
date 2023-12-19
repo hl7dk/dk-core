@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ElseRespirationRate"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseRespirationRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseRespirationRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9279-1; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86290005)</span></p><p><b>subject</b>: <a href="Patient-else.html">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="Practitioner-SidselSygeplejerske.html">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: 19 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9279-1"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="86290005"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/else"/>
+  </subject>
+  <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+  <performer>
+    <reference value="Practitioner/SidselSygeplejerske"/>
+  </performer>
+  <valueQuantity>
+    <value value="19"/>
+    <unit value="/min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="272391002"/>
+      <display value="Measurement technique (qualifier value)"/>
+    </coding>
+  </method>
+</Observation>

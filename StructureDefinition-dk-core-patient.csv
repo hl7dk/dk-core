@@ -39,6 +39,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","[DA] cpr-nummer, som det fremgår af CPR registeret","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","CX / EI (occasionally, more often EI maps to a resource id or a URL)"
+"Patient.identifier:x-ecpr","Patient.identifier","x-ecpr","","",0,1,"","","","Identifier {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier]]} {[]}
+","[DA] X-eCPR, tildelt fra den nationale eCPR service","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","CX / EI (occasionally, more often EI maps to a resource id or a URL)"
+"Patient.identifier:d-ecpr","Patient.identifier","d-ecpr","","",0,1,"","","","Identifier {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier]]} {[]}
+","[DA] D-eCPR, decentral eCPR","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","CX / EI (occasionally, more often EI maps to a resource id or a URL)"
 "Patient.active","Patient.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
 ","Whether this patient's record is in active use","Whether this patient record is in active use. 
 Many systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organization's business rules.

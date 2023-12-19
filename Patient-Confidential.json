@@ -2,7 +2,11 @@
   "resourceType" : "Patient",
   "id" : "Confidential",
   "meta" : {
-    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"],
+    "security" : [{
+      "code" : "R",
+      "display" : "Restricted"
+    }]
   },
   "text" : {
     "status" : "additional",
@@ -23,6 +27,7 @@
   "address" : [{
     "use" : "home",
     "line" : ["Julianevej 22"],
-    "city" : "6000 Kolding"
+    "city" : "Kolding",
+    "postalCode" : "6000"
   }]
 }

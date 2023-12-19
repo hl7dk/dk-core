@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.dk.core",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DK",
   "extensions": [
@@ -42,16 +42,16 @@
     }
   ],
   "profiles": {
-    "Condition": [
-      {
-        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
-        "title": "Danish Core Condition Profile"
-      }
-    ],
     "Observation": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
         "title": "Danish Core Observation Profiles"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
+        "title": "Danish Core Condition Profile"
       }
     ],
     "Organization": [
@@ -94,6 +94,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
       "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

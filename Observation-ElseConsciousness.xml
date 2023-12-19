@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ElseConsciousness"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ElseConsciousness"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ElseConsciousness&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Level of consciousness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#6942003)</span></p><p><b>subject</b>: <a href="Patient-else.html">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href="Practitioner-SidselSygeplejerske.html">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: Responds to pain (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#450847001)</span></p><p><b>method</b>: Reported (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#733985002)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="6942003"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/else"/>
+  </subject>
+  <effectiveDateTime value="2023-09-12T17:45:00.000Z"/>
+  <performer>
+    <reference value="Practitioner/SidselSygeplejerske"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="450847001"/>
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="733985002"/>
+      <display value="Reported (qualifier value)"/>
+    </coding>
+  </method>
+</Observation>
