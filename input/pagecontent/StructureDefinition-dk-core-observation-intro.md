@@ -47,6 +47,4 @@ An Observation can refer to another, possibly contained Observation from which i
 An example is an oxygen saturation measured as a fraction in, say, the NPU code system. Exchanging the measurement as a vital signs Observation with oxygen saturation given as percent, the original NPU-based measurement can be contained and referenced using `Observation.derivedFrom`. The example can be found in [John's oxygen saturation measurement](./Observation-ObservationOxySatBasicObservationOrg.html).
 
 
-#### Calculated values
-[TBD]
 <!-- Include description of: I tilfælde af at et resultat fra en beregning, fx BMI, deles og det ønskes at dele den tilhørende formel for beregningen, vil vi se på, hvordan formlen kan deles. Det foreslås, at vi kigger på Observation.method, da dette element formentlig kan holde de nødvendige informationer. -->
