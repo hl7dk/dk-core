@@ -240,7 +240,6 @@ Description: "UCUM codes to represent units for basic Observations usable in Den
 * $ucum#m2 "square meter"
 * $ucum#{fraction} "fraction"
 
-
 ValueSet: TechniquesSCTCodes
 Id: dk-core-TechniquesSCTCodes
 Title: "DK TechniquesSCTCodes"
