@@ -95,9 +95,8 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding ^slicing.rules = #open
 * method.coding contains
    SCTCode 0..1
-* method.coding[SCTCode] from TechniquesSCTCodes (required)
+* method.coding[SCTCode] from TechniquesSCTCodes (example)
 * method.coding[SCTCode].system = $sct
-
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
@@ -147,6 +146,17 @@ Title: "The device that performed the observation"
 * deviceName.type = #user-friendly-name
 * serialNumber = "74E8FFFEFF051C00.001C05FFE874" */
 
+Instance: ElseUrinStix
+InstanceOf: DkCoreObservation
+Usage: #example
+* status = #final
+* code.coding[0] = $NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* subject = Reference(else)
+* effectiveDateTime = "2023-09-12T17:45:00.000Z"
+* valueString = "Påviselige leukocytter"
+* method = $sct#272391002 "Measurement technique (qualifier value)"
+
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
 Usage: #example
@@ -161,22 +171,6 @@ Description: "Elses smerte målt med VRS"
 * status = #final
 * effectiveDateTime = 2020-06-01
 
-
-Instance: ObservationRespiratoryVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's Respiratory rate measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
-* valueQuantity.value = 50
-* valueQuantity.code = #/min
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "Breaths / minute"
-* effectiveDateTime = 2023-11-01T12:00:00+01:00
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-
 Instance: ObservationOxySat
 InstanceOf: DkCoreObservation
 Title: "John's oxygen saturation measurement"
@@ -189,23 +183,6 @@ Usage: #inline
 * effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
-
-Instance: ObservationOxySatVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's oxygen saturation measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* valueQuantity.value = 97.0
-* valueQuantity.code = #%
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "%"
-* effectiveDateTime = 2023-11-01T12:00:00+01:00
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-* contained[0] = ObservationOxySat
-* derivedFrom = Reference(ObservationOxySat)
 
 
 

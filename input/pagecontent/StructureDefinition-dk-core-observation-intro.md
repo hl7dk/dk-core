@@ -2,10 +2,12 @@
 The Danish Core Observation profile is intended to represent observations for a variety of cases including:
 * laboratory data
 * results of using clinical assessment tools such as APGAR
-* device measurements such as Pulse Oximetry data
 * observations obtained in clinical assesments such as abdominal tenderness
 * general health status such as pregnancy
 * social history and anamnesis (Please be aware, an Observation must only include more than one code, if each code is true for the observation that actually happened, and not several observation as a result of an investigation. In this case, the ClinicalImpression resource should be used.)
+
+
+>Note: The profile [DkCoreBasicObservation](./StructureDefinition-dk-core-basic-observation.html) is made to ensure a common structure of measurable and often used observations, such as vital signs, height and weight. When sharing these basic observations, DkCoreBasicObservation profile is recommended to use.
 
 
 #### Codes
@@ -42,5 +44,7 @@ All NPU-codes include a unit internally in the observation-code. All the other c
 #### Observation derived from other Observation
 An Observation can refer to another, possibly contained Observation from which it is derived. This can be used in cases where the measuring Device provides the measured value in, for instance, another unit or precision than used in a particular exchange context.
 
-An example is an oxygen saturation measured as a fraction in, say, the NPU code system. Exchanging the measurement as a vital signs Observation with oxygen saturation given as percent, the original NPU-based measurement can be contained and referenced using `Observation.derivedFrom`. The example can be found in [John's oxygen saturation measurement](./Observation-ObservationOxySatVitalSigns.html).
+An example is an oxygen saturation measured as a fraction in, say, the NPU code system. Exchanging the measurement as a vital signs Observation with oxygen saturation given as percent, the original NPU-based measurement can be contained and referenced using `Observation.derivedFrom`. The example can be found in [John's oxygen saturation measurement](./Observation-ObservationOxySatBasicObservationOrg.html).
 
+
+<!-- Include description of: I tilfælde af at et resultat fra en beregning, fx BMI, deles og det ønskes at dele den tilhørende formel for beregningen, vil vi se på, hvordan formlen kan deles. Det foreslås, at vi kigger på Observation.method, da dette element formentlig kan holde de nødvendige informationer. -->
