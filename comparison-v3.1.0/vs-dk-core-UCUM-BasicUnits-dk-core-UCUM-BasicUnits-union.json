@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3e2f79cc-10a9-4165-a4d9-e450e147c812-131",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3e2f79cc-10a9-4165-a4d9-e450e147c812-131",
+  "name" : "UnionUCUMBasicUnitsAndUCUMBasicUnits",
+  "title" : "Union of Dk Core UCUM Basic Units And Dk Core UCUM Basic Units",
+  "status" : "active",
+  "date" : "2024-01-08T22:03:48+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "%",
+        "display" : "percent"
+      },
+      {
+        "code" : "cm",
+        "display" : "centimeter"
+      },
+      {
+        "code" : "[in_i]",
+        "display" : "inch (international)"
+      },
+      {
+        "code" : "kg",
+        "display" : "kilogram"
+      },
+      {
+        "code" : "g",
+        "display" : "gram"
+      },
+      {
+        "code" : "[lb_av]",
+        "display" : "pound (US and British)"
+      },
+      {
+        "code" : "Cel",
+        "display" : "degree Celsius"
+      },
+      {
+        "code" : "[degF]",
+        "display" : "degree Fahrenheit"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "millimeter of mercury"
+      },
+      {
+        "code" : "/min",
+        "display" : "per minute"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kilogram / (meter ^ 2)"
+      },
+      {
+        "code" : "m2",
+        "display" : "square meter"
+      },
+      {
+        "code" : "{fraction}",
+        "display" : "fraction"
+      }]
+    }]
+  }
+}

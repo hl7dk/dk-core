@@ -1,0 +1,93 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3e2f79cc-10a9-4165-a4d9-e450e147c812-20",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3e2f79cc-10a9-4165-a4d9-e450e147c812-20",
+  "name" : "UnionDaysOfWeekAndDaysOfWeek",
+  "title" : "Union of DK Days Of Week And DK Days Of Week",
+  "status" : "active",
+  "date" : "2024-01-08T22:03:48+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "mon",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Mandag"
+    }]
+  },
+  {
+    "code" : "tue",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Tirsdag"
+    }]
+  },
+  {
+    "code" : "wed",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Onsdag"
+    }]
+  },
+  {
+    "code" : "thu",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Torsdag"
+    }]
+  },
+  {
+    "code" : "fri",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fredag"
+    }]
+  },
+  {
+    "code" : "sat",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Lørdag"
+    }]
+  },
+  {
+    "code" : "sun",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Søndag"
+    }]
+  }]
+}
