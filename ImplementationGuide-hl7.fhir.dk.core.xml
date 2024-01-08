@@ -10,8 +10,8 @@
   <version value="3.1.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
-  <status value="active"/>
-  <date value="2024-01-06T18:57:36+00:00"/>
+  <status value="draft"/>
+  <date value="2024-01-08T22:02:06+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -70,7 +70,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -329,7 +329,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

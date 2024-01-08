@@ -16,8 +16,8 @@
   fhir:version [ fhir:v "3.1.0"] ; # 
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-01-06T18:57:36+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-01-08T22:02:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -89,7 +89,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "release" ]
+         fhir:value [ fhir:v "ci-build" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -380,7 +380,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "release" ]
+         fhir:value [ fhir:v "ci-build" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [

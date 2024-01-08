@@ -47,7 +47,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
       "version" : "3.1.0",
-      "status" : "active",
+      "status" : "draft",
       "name" : "DKCoreRegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
       "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
@@ -184,8 +184,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-dk-core-LoincBasicObservation.html" : "DK Core LOINC Basic Observations",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-dk-core-LoincBasicObservation.html" : "DK Core LOINC Basic Observations"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -197,17 +197,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "ValueSet-dk-core-SCTBasicObservation.html" : "Dk Core SNOMED CT Basic Observation",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes"
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
