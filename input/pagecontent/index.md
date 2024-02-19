@@ -24,7 +24,6 @@ FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group
 * [Source](https://github.com/hl7dk/dk-core)
 * [Wiki](https://github.com/hl7dk/dk-core)
 
-
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
