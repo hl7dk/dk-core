@@ -11,7 +11,7 @@ Usage: #definition
 * contact.name = "HL7 Denmark"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.hl7.dk/"
-* responsible = "CPR-kontoret, Økonomi- og Indenrigsministeriets departement"
+* responsible = "CPR-kontoret, Indenrigs- og Sundhedsministeriets departement"
 * description = "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."
 * jurisdiction = urn:iso:std:iso:3166#DK
 * uniqueId[0].type = #oid
