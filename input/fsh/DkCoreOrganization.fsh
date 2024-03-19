@@ -15,7 +15,8 @@ Description: "HL7 Denmark core profile for a danish health organization"
     Ydernummer 0..1 and
     CVR-ID 0..1 and
     Kommunekode 0..1 and
-    Regionskode 0..1
+    Regionskode 0..1 and
+    ProducentID 0..1
 * identifier[EAN-ID] only GLNIdentifier
   * ^short = "GLN identifier, [DA] EAN-nummer"
 * identifier[SOR-ID] only SORIdentifier
@@ -37,6 +38,8 @@ Description: "HL7 Denmark core profile for a danish health organization"
   * system 1..
   * system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
   * value 1..
+* identifier[ProducentID] only ProducentId
+  * ^short = "[DA] Producent Id"
 * type from $sor-organization-type (preferred)
 
 Instance: CenterForDiabetes
@@ -114,6 +117,17 @@ Usage: #example
 * identifier[+].system = "https://kombit.dk/sts/organisation"
 * identifier[=].value = "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6"
 * type = $sct#264372000
+
+Instance: 154b8c96-a061-45bf-9ce4-1947c7c3c283
+InstanceOf: DkCoreOrganization
+Title: "Producer Test Organization"
+Description: "Producer of Lab Results Test Organization"
+Usage: #example
+* identifier[0].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "12345678901"
+* identifier[+].system = "http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID"
+* identifier[=].value = "KAF"
+* type = $sct#264361005
 
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
