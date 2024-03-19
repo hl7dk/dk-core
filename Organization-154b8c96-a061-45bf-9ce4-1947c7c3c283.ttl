@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "154b8c96-a061-45bf-9ce4-1947c7c3c283"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"154b8c96-a061-45bf-9ce4-1947c7c3c283\"> </a><a name=\"hc154b8c96-a061-45bf-9ce4-1947c7c3c283\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;154b8c96-a061-45bf-9ce4-1947c7c3c283&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/12345678901, <code>http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID</code>/KAF</p><p><b>type</b>: HC - Health centre <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#264361005)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678901" ]
+  ] [
+     fhir:system [ fhir:v "http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KAF" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:264361005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "264361005" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

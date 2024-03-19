@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-08T22:02:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-19T10:43:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -364,7 +364,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -1921,6 +1921,33 @@
        fhir:name [ fhir:v "Poul's home blood pressure measurement" ] ;
        fhir:description [ fhir:v "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-producent-id> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-producent-id" ]
+       ] ;
+       fhir:name [ fhir:v "Producent Id" ] ;
+       fhir:description [ fhir:v "Offical MedCom code describing the producer of lab results" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283> ;
+         fhir:reference [ fhir:v "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283" ]
+       ] ;
+       fhir:name [ fhir:v "Producer Test Organization" ] ;
+       fhir:description [ fhir:v "Producer of Lab Results Test Organization" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

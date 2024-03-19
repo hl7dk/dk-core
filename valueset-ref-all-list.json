@@ -63,8 +63,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
@@ -197,8 +197,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
+      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -213,8 +213,8 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -340,8 +340,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -355,15 +355,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier"
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -377,15 +378,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier"
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -399,12 +401,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
       "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -477,8 +479,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -492,8 +494,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -509,8 +511,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -524,8 +526,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -539,8 +541,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -568,8 +570,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -586,8 +588,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -603,17 +605,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "5.0.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ResourceType",
-      "title" : "Resource Types",
-      "description" : "Concrete FHIR Resource Types",
-      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
       "oids" : ["2.16.840.1.113883.4.642.3.27"],
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {

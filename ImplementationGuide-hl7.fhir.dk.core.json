@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-01-08T22:02:40+00:00",
+  "date" : "2024-03-19T10:43:29+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -415,7 +415,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -1900,6 +1900,30 @@
       "name" : "Poul's home blood pressure measurement",
       "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-producent-id"
+      },
+      "name" : "Producent Id",
+      "description" : "Offical MedCom code describing the producer of lab results",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"
+      },
+      "name" : "Producer Test Organization",
+      "description" : "Producer of Lab Results Test Organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{
