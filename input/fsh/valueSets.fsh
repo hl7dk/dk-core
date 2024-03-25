@@ -263,28 +263,37 @@ Title: "DK Related Person Relationship values"
 Description: "DK Related Person Relationship values"
 * ^experimental = false
 * ^status = #active
-* $relatedperson-relationshiptype#CHILD "child"
+* $v3-RoleCode#CHILD "child"
   * ^designation.language = #da
   * ^designation.value = "Barn"
-* $relatedperson-relationshiptype#PRN "parent"
+* $v3-RoleCode#PRN "parent"
   * ^designation.language = #da
   * ^designation.value = "Forælder"
-* $relatedperson-relationshiptype#SIB "sibling"
+* $v3-RoleCode#SIB "sibling"
   * ^designation.language = #da
   * ^designation.value = "Søskende"
-* $relatedperson-relationshiptype#DOMPART "domestic partner"
+* $v3-RoleCode#DOMPART "domestic partner"
   * ^designation.language = #da
   * ^designation.value = "Registreret partner"
-* $relatedperson-relationshiptype#SPS "spouse"
+* $v3-RoleCode#SPS "spouse"
   * ^designation.language = #da
   * ^designation.value = "Ægtefælle"
-* $relatedperson-relationshiptype#FRND "unrelated friend"
+* $v3-RoleCode#FRND "unrelated friend"
   * ^designation.language = #da
   * ^designation.value = "Ven (ikke-beslægtet)"
-* $relatedperson-relationshiptype#NBOR "neighbor"
+* $v3-RoleCode#NBOR "neighbor"
   * ^designation.language = #da
   * ^designation.value = "Nabo"
-* $relatedperson-relationshiptype#ROOM "Roommate"
+* $v3-RoleCode#ROOM "Roommate"
   * ^designation.language = #da
   * ^designation.value = "Samboende"
+* $v3-RoleCode#GUARD "guardian"
+  * ^designation.language = #da
+  * ^designation.value = "Værge"
+* $v3-RoleCode#NOK "next-of-kin"
+  * ^designation.language = #da
+  * ^designation.value = "Pårørende"
+* $v3-RoleCode#POWATT "power of attorney"
+  * ^designation.language = #da
+  * ^designation.value = "Fuldmagtshaver"
 * include codes from system DkRelatedPersonRelationshipCodes

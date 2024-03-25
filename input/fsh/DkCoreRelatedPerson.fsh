@@ -46,4 +46,4 @@ Usage: #example
 * gender = #female
 * birthDate = "1998-03-25"
 * patient.reference = "Patient/john"
-* relationship = $relatedperson-relationshiptype#CHILD
+* relationship = $v3-RoleCode#CHILD

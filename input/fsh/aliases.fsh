@@ -25,4 +25,4 @@ Alias: $observation-heartrate = http://hl7.org/fhir/StructureDefinition/heartrat
 Alias: $observation-bp = http://hl7.org/fhir/StructureDefinition/bp
 Alias: $LOINC-vitalsigns = http://hl7.org/fhir/ValueSet/observation-vitalsignresult
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
-Alias: $relatedperson-relationshiptype = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
