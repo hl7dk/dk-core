@@ -33,3 +33,17 @@ Description: "HL7 Denmark core profile for a related person"
 
 * relationship from RelatedPersonRelationshipValues (extensible)
 
+Instance: Barn
+InstanceOf: DkCoreRelatedPerson
+Title: "Example of child as related person"
+Description: "Example of child as related person"
+Usage: #example
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "2503984876"
+* name.use = #official
+* name.family = "Nilson"
+* name.given = "Luna"
+* gender = #female
+* birthDate = "1998-03-25"
+* patient.reference = "Patient/john"
+* relationship = $relatedperson-relationshiptype#CHILD
