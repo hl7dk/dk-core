@@ -256,3 +256,35 @@ Description: "DK D-eCPR OID values"
 * ^experimental = false
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
+
+ValueSet: RelatedPersonRelationshipValues
+Id: dk-core-RelatedPersonRelationshipValues
+Title: "DK Related Person Relationship values"
+Description: "DK Related Person Relationship values"
+* ^experimental = false
+* ^status = #active
+* $relatedperson-relationshiptype#CHILD "child"
+  * ^designation.language = #da
+  * ^designation.value = "Barn"
+* $relatedperson-relationshiptype#PRN "parent"
+  * ^designation.language = #da
+  * ^designation.value = "Forælder"
+* $relatedperson-relationshiptype#SIB "sibling"
+  * ^designation.language = #da
+  * ^designation.value = "Søskende"
+* $relatedperson-relationshiptype#DOMPART "domestic partner"
+  * ^designation.language = #da
+  * ^designation.value = "Registreret partner"
+* $relatedperson-relationshiptype#SPS "spouse"
+  * ^designation.language = #da
+  * ^designation.value = "Ægtefælle"
+* $relatedperson-relationshiptype#FRND "unrelated friend"
+  * ^designation.language = #da
+  * ^designation.value = "Ven (ikke-beslægtet)"
+* $relatedperson-relationshiptype#NBOR "neighbor"
+  * ^designation.language = #da
+  * ^designation.value = "Nabo"
+* $relatedperson-relationshiptype#ROOM "Roommate"
+  * ^designation.language = #da
+  * ^designation.value = "Samboende"
+* include codes from system DkRelatedPersonRelationshipCodes

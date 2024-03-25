@@ -46,7 +46,7 @@ Description: "HL7 Denmark core profile for observations"
   * code 1..
 * subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
-* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or RelatedPerson)
+* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
