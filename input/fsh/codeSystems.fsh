@@ -728,23 +728,11 @@ Description: "DK Related Person Relationship Codes"
 * ^caseSensitive = false
 * ^status = #active
 * ^content = #complete
-* #FOMY "Holder of parental authority"
-  * ^definition = "The player of the role holds parental authority over the scoping person ([DA] forældremyndighedsindehaver)"
+* #PARAUTH "Parental authority"
+  * ^definition = "The player of the role holds parental authority over the scoping person"
   * ^designation.language = #da
   * ^designation.value = "Forældremyndighedsindehaver"
-* #PROM "Primary caretaker"
-  * ^definition = "The player of the role is the primary caretaker of the scoping person ([DA] primær omsorgsperson)"
+* #PRICARE "Primary caretaker"
+  * ^definition = "The player of the role is the primary caretaker of the scoping person"
   * ^designation.language = #da
   * ^designation.value = "Primær omsorgsperson"
-* #PAAR "Next of kin"
-  * ^definition = "The player of the role is a relative of the scoping person ([DA] pårørende)"
-  * ^designation.language = #da
-  * ^designation.value = "Pårørende"
-* #VAER "Guardian"
-  * ^definition = "The player of the role is a guardian of the scoping person ([DA] værge)"
-  * ^designation.language = #da
-  * ^designation.value = "Værge"
-* #FUMH "Holding power of attorney"
-  * ^definition = "The player of the role is holding power of attorney from the scoping person ([DA] fuldmagtshaver)"
-  * ^designation.language = #da
-  * ^designation.value = "Fuldmagtshaver"
