@@ -1,7 +1,7 @@
 ### Scope and usage
 The Danish Core Basic Observation profile is intended to represent basis observations performed on a subject. The purpose of this profile is to ensure a common structure of frequently measured and shared observations. A basic observation is, in a Danish context, a measurable and often used value. This can be observations such as vital signs and basic observations like height and weight.
 
-The profile is a further profiling of DkCoreObservation and in most cases it complies to [HL7's Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html). Since there is an expansion of one code to each of the LOINC ValueSet and the UCUM ValueSet, it means when using these codes, the instance will not be compliant.
+The profile is a further profiling of DkCoreObservation and in most cases it complies to [HL7's Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html). Instances will not be compliant with HL7's Vital Signs profile when using the code `59408-5 (Oxygen saturation in Arterial blood by Pulse oximetry)` from the LOINC ValueSet and the unit `{fraction} (fraction)` from the UCUM ValueSet, as these codes are not included in the ValueSets in the Vital Signs profile.
 
 #### Codes
 It is required to include a LOINC code at Observation.code. The [LOINC ValueSet](http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html) used in the  HL7's Vital Signs profile is expanded with the code `59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"` because it is an often used, measurable parameter in Denmark.
