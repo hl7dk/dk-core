@@ -257,8 +257,8 @@ Description: "DK D-eCPR OID values"
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
 
-ValueSet: RelatedPersonRelationshipType
-Id: dk-core-RelatedPersonRelationshipType
+ValueSet: RelatedPersonRelationshipTypes
+Id: dk-core-RelatedPersonRelationshipTypes
 Title: "DK Related Person Relationship Types"
 Description: "DK Related Person Relationship Types"
 * ^experimental = false
