@@ -257,10 +257,10 @@ Description: "DK D-eCPR OID values"
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
 
-ValueSet: RelatedPersonRelationshipValues
-Id: dk-core-RelatedPersonRelationshipValues
-Title: "DK Related Person Relationship values"
-Description: "DK Related Person Relationship values"
+ValueSet: RelatedPersonRelationshipType
+Id: dk-core-RelatedPersonRelationshipType
+Title: "DK Related Person Relationship Types"
+Description: "DK Related Person Relationship Types"
 * ^experimental = false
 * ^status = #active
 * $v3-RoleCode#CHILD "child"
