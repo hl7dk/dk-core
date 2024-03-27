@@ -50,8 +50,8 @@ Usage: #example
 
 Instance: TwoRelations
 InstanceOf: DkCoreRelatedPerson
-Title: "Example of a person with two relationships"
-Description: "Example of person that both a friend and a primary caretaker"
+Title: "Example of a related person with two relations"
+Description: "Example of a person that has relations as both neighbor and primary caretaker"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2310969861"
@@ -61,5 +61,5 @@ Usage: #example
 * gender = #male
 * birthDate = "1996-10-23"
 * patient.reference = "Patient/283"
-* relationship[0] = $v3-RoleCode#FRND
+* relationship[0] = $v3-RoleCode#NBOR
 * relationship[1] = DkRelatedPersonRelationshipCodes#PRICARE
