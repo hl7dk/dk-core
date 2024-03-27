@@ -33,7 +33,7 @@ Description: "HL7 Denmark core profile for a related person"
 
 * relationship from RelatedPersonRelationshipValues (extensible)
 
-Instance: Barn
+Instance: Child
 InstanceOf: DkCoreRelatedPerson
 Title: "Example of child as related person"
 Description: "Example of child as related person"
@@ -47,3 +47,19 @@ Usage: #example
 * birthDate = "1998-03-25"
 * patient.reference = "Patient/john"
 * relationship = $v3-RoleCode#CHILD
+
+Instance: TwoRelations
+InstanceOf: DkCoreRelatedPerson
+Title: "Example of a person with two relationships"
+Description: "Example of person that both a friend and a primary caretaker"
+Usage: #example
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "2310969861"
+* name.use = #official
+* name.family = "Kristensen"
+* name.given = "Karl"
+* gender = #male
+* birthDate = "1996-10-23"
+* patient.reference = "Patient/283"
+* relationship[0] = $v3-RoleCode#FRND
+* relationship[1] = DkRelatedPersonRelationshipCodes#PRICARE
