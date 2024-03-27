@@ -31,7 +31,7 @@ Description: "HL7 Denmark core profile for a related person"
   * use = #official (exactly)
   * family 1..
 
-* relationship from RelatedPersonRelationshipValues (extensible)
+* relationship from RelatedPersonRelationshipType (extensible)
 
 Instance: Child
 InstanceOf: DkCoreRelatedPerson

@@ -729,10 +729,10 @@ Description: "DK Related Person Relationship Codes"
 * ^status = #active
 * ^content = #complete
 * #PARAUTH "Parental authority"
-  * ^definition = "The player of the role holds parental authority over the scoping person"
+  * ^definition = "The player of the role holds parental authority over the scoping person."
   * ^designation.language = #da
   * ^designation.value = "Forældremyndighedsindehaver"
 * #PRICARE "Primary caretaker"
-  * ^definition = "The player of the role is the primary caretaker of the scoping person"
+  * ^definition = "The player of the role is the primary caretaker of the scoping person."
   * ^designation.language = #da
   * ^designation.value = "Primær omsorgsperson"
