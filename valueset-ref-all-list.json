@@ -63,8 +63,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
@@ -91,22 +91,6 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
-    },
-    {
-      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
-      "version" : "3.2.0",
-      "status" : "active",
-      "name" : "RelatedPersonRelationshipTypes",
-      "title" : "DK Related Person Relationship Types",
-      "description" : "DK Related Person Relationship Types",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
@@ -214,7 +198,6 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
@@ -230,8 +213,8 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -373,15 +356,14 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
       "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier"
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -396,15 +378,14 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
       "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Org Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier"
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -419,12 +400,11 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
       "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -483,7 +463,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
@@ -562,6 +541,20 @@
       },
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",

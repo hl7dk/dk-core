@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-04-03T07:46:18+00:00",
+  "date" : "2024-04-03T10:16:02+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -998,18 +998,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/dk-core-related-person"
-      },
-      "name" : "Danish Core Related Person Profile",
-      "description" : "HL7 Denmark core profile for a related person",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -1337,30 +1325,6 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
-      },
-      "name" : "DK Related Person Relationship Codes",
-      "description" : "DK Related Person Relationship Codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/dk-core-RelatedPersonRelationshipTypes"
-      },
-      "name" : "DK Related Person Relationship Types",
-      "description" : "DK Related Person Relationship Types",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/request-status-dk-supplement"
       },
       "name" : "DK Request Status",
@@ -1500,21 +1464,9 @@
       "reference" : {
         "reference" : "Patient/Confidential"
       },
-      "name" : "Example of a patient with confidential address and name",
-      "description" : "Example of a patient with confidential address and name",
+      "name" : "Example of a patient with confidential adress and name",
+      "description" : "Example of a patient with confidential adress and name",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RelatedPerson"
-      }],
-      "reference" : {
-        "reference" : "RelatedPerson/TwoRelations"
-      },
-      "name" : "Example of a related person with two relations",
-      "description" : "Example of a person that has relations as both neighbor and primary caretaker",
-      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
     },
     {
       "extension" : [{
@@ -1527,18 +1479,6 @@
       "name" : "Example of a woman of childbearing age",
       "description" : "Example of a woman of childbearing age. Else is a MedCom test-patient",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RelatedPerson"
-      }],
-      "reference" : {
-        "reference" : "RelatedPerson/Child"
-      },
-      "name" : "Example of child as related person",
-      "description" : "Example of child as related person",
-      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
     },
     {
       "extension" : [{
@@ -1960,30 +1900,6 @@
       "name" : "Poul's home blood pressure measurement",
       "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/dk-core-producent-id"
-      },
-      "name" : "Producent Id",
-      "description" : "Offical MedCom code describing the producer of lab results",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"
-      },
-      "name" : "Producer Test Organization",
-      "description" : "Producer of Lab Results Test Organization",
-      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{

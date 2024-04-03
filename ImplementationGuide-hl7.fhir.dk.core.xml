@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2024-04-03T07:46:18+00:00"/>
+  <date value="2024-04-03T10:16:02+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -781,17 +781,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-related-person"/>
-      </reference>
-      <name value="Danish Core Related Person Profile"/>
-      <description value="HL7 Denmark core profile for a related person"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -1092,28 +1081,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/dk-relatedperson-relationshipcodes"/>
-      </reference>
-      <name value="DK Related Person Relationship Codes"/>
-      <description value="DK Related Person Relationship Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-RelatedPersonRelationshipTypes"/>
-      </reference>
-      <name value="DK Related Person Relationship Types"/>
-      <description value="DK Related Person Relationship Types"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/request-status-dk-supplement"/>
       </reference>
       <name value="DK Request Status"/>
@@ -1241,20 +1208,9 @@
       <reference>
         <reference value="Patient/Confidential"/>
       </reference>
-      <name value="Example of a patient with confidential address and name"/>
-      <description value="Example of a patient with confidential address and name"/>
+      <name value="Example of a patient with confidential adress and name"/>
+      <description value="Example of a patient with confidential adress and name"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/TwoRelations"/>
-      </reference>
-      <name value="Example of a related person with two relations"/>
-      <description value="Example of a person that has relations as both neighbor and primary caretaker"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1266,17 +1222,6 @@
       <name value="Example of a woman of childbearing age"/>
       <description value="Example of a woman of childbearing age. Else is a MedCom test-patient"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/Child"/>
-      </reference>
-      <name value="Example of child as related person"/>
-      <description value="Example of child as related person"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1662,28 +1607,6 @@
       <name value="Poul's home blood pressure measurement"/>
       <description value="This example demonstrates a DkCoreObservation _and_ Continua-compliant&#xA;bundle containing a home blood pressure measurement uploaded to a Continua-compliant&#xA;_&quot;FHIR Observation Reporting Server&quot;._"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-producent-id"/>
-      </reference>
-      <name value="Producent Id"/>
-      <description value="Offical MedCom code describing the producer of lab results"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"/>
-      </reference>
-      <name value="Producer Test Organization"/>
-      <description value="Producer of Lab Results Test Organization"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
