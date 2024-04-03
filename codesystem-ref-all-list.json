@@ -67,6 +67,17 @@
       "ValueSet-dk-marital-status.html" : "DK MaritalStatus"
     },
     {
+      "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "DkRelatedPersonRelationshipCodes",
+      "title" : "DK Related Person Relationship Codes",
+      "description" : "DK Related Person Relationship Codes",
+      "uses" : {
+      },
+      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
+    },
+    {
       "url" : "http://hl7.org/fhir/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -196,17 +207,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
+      "ValueSet-dk-core-SCTBasicObservation.html" : "Dk Core SNOMED CT Basic Observation",
       "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-dk-core-SCTBasicObservation.html" : "Dk Core SNOMED CT Basic Observation",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -293,18 +304,6 @@
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "ContactRole2",
-      "title" : "contactRole2",
-      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
-      "oids" : ["2.16.840.1.113883.18.58"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "version" : "3.0.0",
       "status" : "active",
@@ -327,6 +326,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
     },
     {
       "url" : "http://unitsofmeasure.org",

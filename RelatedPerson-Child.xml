@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="Child"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="Child"> </a><a name="hcChild"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;Child&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-related-person.html">Danish Core Related Person Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/2503984876</p><p><b>patient</b>: <a href="Patient-john.html">Patient/john</a> &quot; MEYERHOFEN&quot;</p><p><b>relationship</b>: child <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#CHILD)</span></p><p><b>name</b>: Luna Nilson (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1998-03-25</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="2503984876"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/john"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="CHILD"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Nilson"/>
+    <given value="Luna"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1998-03-25"/>
+</RelatedPerson>

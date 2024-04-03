@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DkCoreBasicObservation"] ; # 
   fhir:title [ fhir:v "Danish Core Basic Observation Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-19T10:43:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-03T07:46:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -3202,8 +3202,8 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+           fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
          ] )
        ] ) ;
        fhir:constraint ( [

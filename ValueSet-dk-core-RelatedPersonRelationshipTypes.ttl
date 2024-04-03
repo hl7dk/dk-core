@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-RelatedPersonRelationshipTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHILD\">CHILD</a></td><td>child</td><td>The player of the role is a child of the scoping entity.</td><td>Barn</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN\">PRN</a></td><td>parent</td><td>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</td><td>Forælder</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SIB\">SIB</a></td><td>sibling</td><td>The player of the role shares one or both parents in common with the scoping entity.</td><td>Søskende</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DOMPART\">DOMPART</a></td><td>domestic partner</td><td>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</td><td>Registreret partner</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SPS\">SPS</a></td><td>spouse</td><td>The player of the role is a marriage partner of the scoping person.</td><td>Ægtefælle</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FRND\">FRND</a></td><td>unrelated friend</td><td>The player of the role is a person who is known, liked, and trusted by the scoping person.</td><td>Ven (ikke-beslægtet)</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NBOR\">NBOR</a></td><td>neighbor</td><td>The player of the role lives near or next to the scoping person.</td><td>Nabo</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ROOM\">ROOM</a></td><td>Roommate</td><td>One who shares living quarters with the subject.</td><td>Samboende</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GUARD\">GUARD</a></td><td>guardian</td><td>The role played by a person or institution legally empowered with responsibility for the care of a ward.</td><td>Værge</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NOK\">NOK</a></td><td>next-of-kin</td><td>Played by an individual who is designated as the next of kin for another individual which scopes the role.</td><td>Pårørende</td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-POWATT\">POWATT</a></td><td>power of attorney</td><td>A relationship between two people in which one person authorizes another to act for him in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts.</td><td>Fuldmagtshaver</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-dk-relatedperson-relationshipcodes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.2.0"] ; # 
+  fhir:name [ fhir:v "RelatedPersonRelationshipTypes"] ; # 
+  fhir:title [ fhir:v "DK Related Person Relationship Types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-04-03T07:46:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK Related Person Relationship Types"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "CHILD" ] ;
+         fhir:display [ fhir:v "child" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Barn" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "PRN" ] ;
+         fhir:display [ fhir:v "parent" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Forælder" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "SIB" ] ;
+         fhir:display [ fhir:v "sibling" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Søskende" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "DOMPART" ] ;
+         fhir:display [ fhir:v "domestic partner" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Registreret partner" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "SPS" ] ;
+         fhir:display [ fhir:v "spouse" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Ægtefælle" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "FRND" ] ;
+         fhir:display [ fhir:v "unrelated friend" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Ven (ikke-beslægtet)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "NBOR" ] ;
+         fhir:display [ fhir:v "neighbor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Nabo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "ROOM" ] ;
+         fhir:display [ fhir:v "Roommate" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Samboende" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "GUARD" ] ;
+         fhir:display [ fhir:v "guardian" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Værge" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "NOK" ] ;
+         fhir:display [ fhir:v "next-of-kin" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Pårørende" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "POWATT" ] ;
+         fhir:display [ fhir:v "power of attorney" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "da" ] ;
+           fhir:value [ fhir:v "Fuldmagtshaver" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
