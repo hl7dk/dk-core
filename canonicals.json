@@ -84,6 +84,13 @@
     "name" : "DkMaritalStatus"
   },
   {
+    "id" : "dk-relatedperson-relationshipcodes",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+    "version" : "3.2.0",
+    "name" : "DkRelatedPersonRelationshipCodes"
+  },
+  {
     "id" : "episode-of-care-status-dk-supplement",
     "type" : "CodeSystem",
     "url" : "http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement",
@@ -238,6 +245,20 @@
     "name" : "DkCorePractitioner"
   },
   {
+    "id" : "dk-core-producent-id",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-producent-id",
+    "version" : "3.2.0",
+    "name" : "ProducentId"
+  },
+  {
+    "id" : "dk-core-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person",
+    "version" : "3.2.0",
+    "name" : "DkCoreRelatedPerson"
+  },
+  {
     "id" : "dk-core-sor-identifier",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier",
@@ -299,6 +320,13 @@
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
     "version" : "3.2.0",
     "name" : "RegionalSubdivisionCodes"
+  },
+  {
+    "id" : "dk-core-RelatedPersonRelationshipTypes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+    "version" : "3.2.0",
+    "name" : "RelatedPersonRelationshipTypes"
   },
   {
     "id" : "dk-core-SCTBasicObservation",

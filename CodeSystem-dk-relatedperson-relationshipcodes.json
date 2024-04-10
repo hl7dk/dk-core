@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "dk-relatedperson-relationshipcodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">PARAUTH<a name=\"dk-relatedperson-relationshipcodes-PARAUTH\"> </a></td><td>Parental authority</td><td>The player of the role holds parental authority over the scoping person.</td><td>Forældremyndighedsindehaver</td></tr><tr><td style=\"white-space:nowrap\">PRICARE<a name=\"dk-relatedperson-relationshipcodes-PRICARE\"> </a></td><td>Primary caretaker</td><td>The player of the role is the primary caretaker of the scoping person.</td><td>Primær omsorgsperson</td></tr></table></div>"
+  },
+  "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+  "version" : "3.2.0",
+  "name" : "DkRelatedPersonRelationshipCodes",
+  "title" : "DK Related Person Relationship Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-10T06:34:41+00:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "DK Related Person Relationship Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "PARAUTH",
+    "display" : "Parental authority",
+    "definition" : "The player of the role holds parental authority over the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forældremyndighedsindehaver"
+    }]
+  },
+  {
+    "code" : "PRICARE",
+    "display" : "Primary caretaker",
+    "definition" : "The player of the role is the primary caretaker of the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Primær omsorgsperson"
+    }]
+  }]
+}

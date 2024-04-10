@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="154b8c96-a061-45bf-9ce4-1947c7c3c283"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="154b8c96-a061-45bf-9ce4-1947c7c3c283"> </a><a name="hc154b8c96-a061-45bf-9ce4-1947c7c3c283"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;154b8c96-a061-45bf-9ce4-1947c7c3c283&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-organization.html">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/12345678901, <code>http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID</code>/KAF</p><p><b>type</b>: HC - Health centre <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#264361005)</span></p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.1"/>
+    <value value="12345678901"/>
+  </identifier>
+  <identifier>
+    <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID"/>
+    <value value="KAF"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="264361005"/>
+    </coding>
+  </type>
+</Organization>

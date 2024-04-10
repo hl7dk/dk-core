@@ -2,9 +2,9 @@ DKCore : Validation Results
 =========================================
 
 err = 23, warn = 65, info = 109
-IG Publisher Version: 1.6.3
-Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 21 / 0
+IG Publisher Version: 1.6.4
+Generated Wed Apr 10 06:52:15 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 1 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 8 / 7 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 8 / 0 / 30
  /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 7 / 20 / 29
@@ -20,6 +20,7 @@ Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-publication-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-request-status-dk-supplement : 0 / 0 / 1
@@ -57,6 +58,7 @@ Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Observation-ObservationOxySatObservation : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/Observation-ObservationRespiratoryBasicObservation : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221 : 0 / 0 / 15
+ /github/workspace/fsh-generated/resources/Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte : 0 / 0 / 1
@@ -75,6 +77,8 @@ Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Practitioner-AbrahamLaege : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Practitioner-SidselSygeplejerske : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/RelatedPerson-Child : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RelatedPerson-TwoRelations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 1
@@ -92,6 +96,8 @@ Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-practitioner : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-producent-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-related-person : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet : 0 / 0 / 1
@@ -101,6 +107,7 @@ Generated Wed Apr 03 10:19:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits : 0 / 0 / 1
@@ -129,6 +136,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-dk-core-related-person.html#/html/body/div/div/div/div/div/div/p/a at Line 299, column 26: The link '.ValueSet-dk-core-RelatedPersonRelationshipTypes.html' for "DK Core Related Person Relationship Types" cannot be resolved
 == fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26
@@ -233,6 +241,7 @@ WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation:
 == fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
+== fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes.json ==
 == fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-publication-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-request-status-dk-supplement.json ==
@@ -349,6 +358,7 @@ INFORMATION: Observation/ObservationOxySatObservation: Observation.code.coding[0
 == fsh-generated/resources/Observation-Weight.Poul.230221.json ==
 INFORMATION: Observation/Weight.Poul.230221: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26
 INFORMATION: Observation/Weight.Poul.230221: Observation.code.coding[2]: A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated
+== fsh-generated/resources/Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.json ==
 == fsh-generated/resources/Organization-CenterForDiabetes.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json ==
 == fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json ==
@@ -369,6 +379,8 @@ WARNING: Patient/Confidential: Patient.meta.security[0]: A code with no system h
 == fsh-generated/resources/Practitioner-AbrahamLaege.json ==
 == fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
 == fsh-generated/resources/Practitioner-SidselSygeplejerske.json ==
+== fsh-generated/resources/RelatedPerson-Child.json ==
+== fsh-generated/resources/RelatedPerson-TwoRelations.json ==
 == fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
 == fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
 == fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
@@ -389,6 +401,8 @@ INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.
 == fsh-generated/resources/StructureDefinition-dk-core-organization.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-producent-id.json ==
+== fsh-generated/resources/StructureDefinition-dk-core-related-person.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier.json ==
 == fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet.json ==
@@ -400,6 +414,7 @@ INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.
 WARNING: ValueSet/dk-core-NPUBasicObservation: ValueSet.compose.include[0]: Unknown System 'urn:oid:1.2.208.176.2.1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated)
 WARNING: ValueSet.where(id = 'dk-core-NPUBasicObservation'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
+== fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes.json ==
 == fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json ==
 == fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits.json ==

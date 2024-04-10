@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dk-relatedperson-relationshipcodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style="white-space:nowrap">PARAUTH<a name="dk-relatedperson-relationshipcodes-PARAUTH"> </a></td><td>Parental authority</td><td>The player of the role holds parental authority over the scoping person.</td><td>Forældremyndighedsindehaver</td></tr><tr><td style="white-space:nowrap">PRICARE<a name="dk-relatedperson-relationshipcodes-PRICARE"> </a></td><td>Primary caretaker</td><td>The player of the role is the primary caretaker of the scoping person.</td><td>Primær omsorgsperson</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"/>
+  <version value="3.2.0"/>
+  <name value="DkRelatedPersonRelationshipCodes"/>
+  <title value="DK Related Person Relationship Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-04-10T06:34:41+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="DK Related Person Relationship Codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="PARAUTH"/>
+    <display value="Parental authority"/>
+    <definition value="The player of the role holds parental authority over the scoping person."/>
+    <designation>
+      <language value="da"/>
+      <value value="Forældremyndighedsindehaver"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="PRICARE"/>
+    <display value="Primary caretaker"/>
+    <definition value="The player of the role is the primary caretaker of the scoping person."/>
+    <designation>
+      <language value="da"/>
+      <value value="Primær omsorgsperson"/>
+    </designation>
+  </concept>
+</CodeSystem>
