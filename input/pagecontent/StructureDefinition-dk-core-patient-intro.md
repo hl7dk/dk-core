@@ -19,6 +19,25 @@ The element Patient.identifier includes two slices to represent eCPR. Each slice
 
 In case it is necessary to include an eCPR which is not an X-eCPR or a D-eCPR, it is recommended to add a new slice with the relevant other system and the eCPR identifier from that system. This may be necessary for small practices or due to legacy reasons. An example of this can be seen [here](./Patient-ukendt.html).
 
+### Handling CPR registry civilstand and status values
+In the Danish CPR registry, a civilstand and a status attribute exist. The civilstand attribute contains information about marital status as well as deceased status. The status value contains information about a persons whereabouts e.g. living in Denmark or Greenland with known or unknown address, disappearance, and death. Most of the status values are used to inform about the reason for a CPR identifier being inactive.
+
+  In FHIR, this information is separated into different attributes. As a consequence the following decisions have been made:
+  * CPR status values except for deceased status are not represented. Data in the health sector is typically not communicated, relating to inactive CPR-identifiers. If information about whether people live in Denmark or Greenland is important, this can be represented in the Patient.addresss attribute. Deceased status is represented in Patient.deceased
+  * Civilstand values are represented in Patient.maritalStatus except for the value 'D' død (dead). Death is registered in Patient.deceased. Patient.maritalStatus uses a standard FHIR ValueSet. However a few of the Danish civilstatus values cannot be converted (P and O). Here the FHIR ValueSet is extended with the CPR-registry values. 
+
+The tabel below shows how to convert between CPR-registry civilstand/status and FHIR representation.
+
+{:class="grid"}
+|   CPR-registry civilstand/status      | FHIR representation        |
+| ------------- |-------------| 
+|status = 90 and civilstand = D indicating a dead person |Patient.deceasedBoolean = true|
+|civilstand = U indicating an unmarried person | Patient.maritalStatus = U|
+|civilstand = F indicating a divorced person |Patient.maritalStatus = D|
+|civilstand = E indicating a widow |Patient.maritalStatus = W|
+|civilstand = P indicating 'registreret partner'/registered partner which is a marriage-like status according to Danish law |Patient.maritalStatus = P|
+|civilstand = O indicating 'ophørt registreret partner'/disolved partnership. When the marriage-like partnership is disolved (parallel to a divorce) |Patient.maritalStatus = O|
+|civilstand = L indicating that the registrered partner of the person is dead (parallel to a widow) |Patient.maritalStatus = W|
 
 ### Use of security label on patients
  Danish citizens that have requested name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) should be labeled with the security label as follows:
