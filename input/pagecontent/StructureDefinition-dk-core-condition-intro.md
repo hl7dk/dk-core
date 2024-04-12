@@ -7,6 +7,7 @@ This way of constraining the Condition profile is within the boundaries of what 
 
 We use the Condition profile for describing both conditions that are true for an encounter, and for conditions that are true for a periode of time. "In FHIR, we distinguish between the two using the Condition.category that can take the two values problem-list-item og encounter-diagnosis. In this list, examples of use is compiled:
 * LPR3 conditions are encounter-diagnosis
+* Regional care-pathway diagnosis (Regionale forløbsdiagnoser) are problem-list-items 
 * General practioners can code each encounter with an ICPC code. This is an encounter-diagnosis
 * Municipality conditions i.e. FSIII-conditions and FFB-subthemes are problem-list-items
 * General practitioners, in some cases, follow a patient condition for a longer periode of time (e.g. high blood pressure, high cholesterol, COPD), and some systems support care pathways for these conditions. These conditions may be categorized as problem-list-items.
