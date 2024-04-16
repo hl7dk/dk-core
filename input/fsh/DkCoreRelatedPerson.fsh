@@ -39,13 +39,13 @@ Title: "Example of child as related person"
 Description: "Example of child as related person"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "2503984876"
+* identifier.value = "1502799995"
 * name.use = #official
-* name.family = "Nilson"
-* name.given = "Luna"
-* gender = #female
-* birthDate = "1998-03-25"
-* patient.reference = "Patient/john"
+* name.family = "Mosebryggersen"
+* name.given = "Odd Haugen Test"
+* gender = #male
+* birthDate = "1979-02-15"
+* patient.reference = "Patient/283"
 * relationship = $v3-RoleCode#CHILD
 
 Instance: TwoRelations
@@ -54,12 +54,12 @@ Title: "Example of a related person with two relations"
 Description: "Example of a person that has relations as both neighbor and primary caretaker"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "2310969861"
+* identifier.value = "0201919996"
 * name.use = #official
-* name.family = "Kristensen"
-* name.given = "Karl"
-* gender = #male
-* birthDate = "1996-10-23"
+* name.family = "Lauridsen"
+* name.given = "Ellen Louise Test"
+* gender = #female
+* birthDate = "1991-01-02"
 * patient.reference = "Patient/283"
 * relationship[0] = $v3-RoleCode#NBOR
 * relationship[1] = DkRelatedPersonRelationshipCodes#PRICARE
