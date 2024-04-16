@@ -3,8 +3,8 @@ DKCore : Validation Results
 
 err = 23, warn = 65, info = 109
 IG Publisher Version: 1.6.4
-Generated Fri Apr 12 06:27:01 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
- Build Errors : 1 / 21 / 0
+Generated Tue Apr 16 11:02:15 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 8 / 7 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 8 / 0 / 30
  /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 7 / 20 / 29
@@ -136,7 +136,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/StructureDefinition-dk-core-related-person.html#/html/body/div/div/div/div/div/div/p/a at Line 299, column 26: The link '.ValueSet-dk-core-RelatedPersonRelationshipTypes.html' for "DK Core Related Person Relationship Types" cannot be resolved
 == fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26
