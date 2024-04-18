@@ -312,7 +312,7 @@ If the codings and units does not represent the same meaning, one instance of an
 <h4 id="subjects-and-performers">Subjects and performers</h4>
 <p>The primary use of this profile is to describe an observation performed on a patient. The patient must be represented using the <a href="StructureDefinition-dk-core-patient.html">DkCorePatient</a> profile. However, it is still possible to select Observation.subject to be a Group, Device or Location. This is chosen to enable different uses of the profile e.g. a device calibration result is an observation of the device, not of the person that usually uses the device.</p>
 
-<p>The performer of the observation may be different kinds of actors depending on the use case. The performer may be represented using <a href="StructureDefinition-dk-core-practitioner.html">DkCorePractitioner</a>, <a href="StructureDefinition-dk-core-organization.html">DkCoreOrganization</a>, <a href="StructureDefinition-dk-core-patient.html">DkCorePatient</a>, PractitionerRole, CareTeam or RelatedPerson.</p>
+<p>The performer of the observation may be different kinds of actors depending on the use case. The performer may be represented using <a href="StructureDefinition-dk-core-practitioner.html">DkCorePractitioner</a>, <a href="StructureDefinition-dk-core-organization.html">DkCoreOrganization</a>, <a href="StructureDefinition-dk-core-patient.html">DkCorePatient</a>, PractitionerRole, CareTeam or <a href="StructureDefinition-dk-core-related-person.html">DkCoreRelatedPerson</a>.</p>
 
 <h4 id="quality-of-the-observation">Quality of the Observation</h4>
 <p>If known, information about the method used for the observation can be included, in the element Observation.method, as this might affect the interpretation of the observation. In DkCoreObservation profile, a slice is added which includes an extensible ValueSet of commonly used SNOMED CT methods; <code class="language-plaintext highlighter-rouge">Estimation technique</code>, <code class="language-plaintext highlighter-rouge">Measurement technique</code>, and <code class="language-plaintext highlighter-rouge">Reported</code>. If a different method is used the ValueSet may be extended with SNOMED CT codes, or a new slice may be added.</p>
@@ -4927,7 +4927,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 18, 2024 15:20+0000">2024-04-18</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 18, 2024 15:27+0000">2024-04-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
