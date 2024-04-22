@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="role-code-dk-supplement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHILD">CHILD</a><a name="role-code-dk-supplement-CHILD"> </a></td><td>Barn</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DAUC">DAUC</a><a name="role-code-dk-supplement-DAUC"> </a></td><td>Datter</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SONC">SONC</a><a name="role-code-dk-supplement-SONC"> </a></td><td>Søn</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GRNDCHILD">GRNDCHILD</a><a name="role-code-dk-supplement-GRNDCHILD"> </a></td><td>Barnebarn</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHLDINLAW">CHLDINLAW</a><a name="role-code-dk-supplement-CHLDINLAW"> </a></td><td>Svigerbarn</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN">PRN</a><a name="role-code-dk-supplement-PRN"> </a></td><td>Forælder</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FTH">FTH</a><a name="role-code-dk-supplement-FTH"> </a></td><td>Far</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MTH">MTH</a><a name="role-code-dk-supplement-MTH"> </a></td><td>Mor</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SIB">SIB</a><a name="role-code-dk-supplement-SIB"> </a></td><td>Søskende</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DOMPART">DOMPART</a><a name="role-code-dk-supplement-DOMPART"> </a></td><td>Registreret partner</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SPS">SPS</a><a name="role-code-dk-supplement-SPS"> </a></td><td>Ægtefælle</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FRND">FRND</a><a name="role-code-dk-supplement-FRND"> </a></td><td>Ven (ikke-beslægtet)</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NBOR">NBOR</a><a name="role-code-dk-supplement-NBOR"> </a></td><td>Nabo</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ROOM">ROOM</a><a name="role-code-dk-supplement-ROOM"> </a></td><td>Samboende</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GUARD">GUARD</a><a name="role-code-dk-supplement-GUARD"> </a></td><td>Værge</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NOK">NOK</a><a name="role-code-dk-supplement-NOK"> </a></td><td>Pårørende</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-POWATT">POWATT</a><a name="role-code-dk-supplement-POWATT"> </a></td><td>Fuldmagtshaver</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement"/>
+  <version value="3.2.0"/>
+  <name value="RoleCodeDkSupplement"/>
+  <title value="DK Role Code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-04-22T11:01:11+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem supplement with danish translations for RoleCode"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+  <concept>
+    <code value="CHILD"/>
+    <designation>
+      <language value="da"/>
+      <value value="Barn"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="DAUC"/>
+    <designation>
+      <language value="da"/>
+      <value value="Datter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="SONC"/>
+    <designation>
+      <language value="da"/>
+      <value value="Søn"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="GRNDCHILD"/>
+    <designation>
+      <language value="da"/>
+      <value value="Barnebarn"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="CHLDINLAW"/>
+    <designation>
+      <language value="da"/>
+      <value value="Svigerbarn"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="PRN"/>
+    <designation>
+      <language value="da"/>
+      <value value="Forælder"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="FTH"/>
+    <designation>
+      <language value="da"/>
+      <value value="Far"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="MTH"/>
+    <designation>
+      <language value="da"/>
+      <value value="Mor"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="SIB"/>
+    <designation>
+      <language value="da"/>
+      <value value="Søskende"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="DOMPART"/>
+    <designation>
+      <language value="da"/>
+      <value value="Registreret partner"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="SPS"/>
+    <designation>
+      <language value="da"/>
+      <value value="Ægtefælle"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="FRND"/>
+    <designation>
+      <language value="da"/>
+      <value value="Ven (ikke-beslægtet)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NBOR"/>
+    <designation>
+      <language value="da"/>
+      <value value="Nabo"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ROOM"/>
+    <designation>
+      <language value="da"/>
+      <value value="Samboende"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="GUARD"/>
+    <designation>
+      <language value="da"/>
+      <value value="Værge"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NOK"/>
+    <designation>
+      <language value="da"/>
+      <value value="Pårørende"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="POWATT"/>
+    <designation>
+      <language value="da"/>
+      <value value="Fuldmagtshaver"/>
+    </designation>
+  </concept>
+</CodeSystem>

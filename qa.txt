@@ -1,9 +1,9 @@
 DKCore : Validation Results
 =========================================
 
-err = 23, warn = 65, info = 109
+err = 25, warn = 65, info = 109
 IG Publisher Version: 1.6.5
-Generated Thu Apr 18 15:31:34 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
+Generated Mon Apr 22 11:04:50 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 8 / 7 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 8 / 0 / 30
@@ -24,6 +24,7 @@ Generated Thu Apr 18 15:31:34 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-publication-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-request-status-dk-supplement : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-role-code-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-ElseGraviditet : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-JohnDiabetes : 0 / 0 / 2
@@ -107,7 +108,7 @@ Generated Thu Apr 18 15:31:34 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits : 0 / 0 / 1
@@ -244,6 +245,7 @@ WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation:
 == fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-publication-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-request-status-dk-supplement.json ==
+== fsh-generated/resources/CodeSystem-role-code-dk-supplement.json ==
 == fsh-generated/resources/Condition-ConditionPressureUlcer.json ==
 INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:1.2.208.176.2.21' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-ElseGraviditet.json ==
@@ -387,8 +389,8 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 == fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json ==
-INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 == fsh-generated/resources/StructureDefinition-dk-core-condition.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json ==
 == fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json ==
@@ -414,6 +416,8 @@ WARNING: ValueSet/dk-core-NPUBasicObservation: ValueSet.compose.include[0]: Unkn
 WARNING: ValueSet.where(id = 'dk-core-NPUBasicObservation'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes.json ==
+ERROR: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.extension[0]: The extension http://hl7.org/fhir/structuredefinition/valueset-supplement could not be found so is not allowed here
+ERROR: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.extension[0].url: URL value 'http://hl7.org/fhir/structuredefinition/valueset-supplement' does not resolve
 == fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json ==
 == fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits.json ==

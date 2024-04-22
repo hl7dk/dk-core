@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "5d5ef7d4-53a9-45c7-956b-1191f56d4f6b-65",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/5d5ef7d4-53a9-45c7-956b-1191f56d4f6b-65",
+  "id" : "878ef974-22a3-4e5d-b072-6ea98ce7e58d-65",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/878ef974-22a3-4e5d-b072-6ea98ce7e58d-65",
   "name" : "UnionPatientContactRelationshipAndRelatedPersonRelationshipTypes",
   "title" : "Union of Patient Contact Relationship  And DK Related Person Relationship Types",
   "status" : "active",
-  "date" : "2024-04-18T15:28:23+00:00",
+  "date" : "2024-04-22T11:01:37+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -26,91 +26,71 @@
       "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "concept" : [{
         "code" : "CHILD",
-        "display" : "child",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Barn"
-        }]
+        "display" : "child"
+      },
+      {
+        "code" : "DAUC",
+        "display" : "daughter"
+      },
+      {
+        "code" : "SONC",
+        "display" : "son"
+      },
+      {
+        "code" : "GRNDCHILD",
+        "display" : "grandchild"
+      },
+      {
+        "code" : "CHLDINLAW",
+        "display" : "child-in-law"
       },
       {
         "code" : "PRN",
-        "display" : "parent",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Forælder"
-        }]
+        "display" : "parent"
+      },
+      {
+        "code" : "FTH",
+        "display" : "father"
+      },
+      {
+        "code" : "MTH",
+        "display" : "mother"
       },
       {
         "code" : "SIB",
-        "display" : "sibling",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Søskende"
-        }]
+        "display" : "sibling"
       },
       {
         "code" : "DOMPART",
-        "display" : "domestic partner",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Registreret partner"
-        }]
+        "display" : "domestic partner"
       },
       {
         "code" : "SPS",
-        "display" : "spouse",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Ægtefælle"
-        }]
+        "display" : "spouse"
       },
       {
         "code" : "FRND",
-        "display" : "unrelated friend",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Ven (ikke-beslægtet)"
-        }]
+        "display" : "unrelated friend"
       },
       {
         "code" : "NBOR",
-        "display" : "neighbor",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Nabo"
-        }]
+        "display" : "neighbor"
       },
       {
         "code" : "ROOM",
-        "display" : "Roommate",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Samboende"
-        }]
+        "display" : "Roommate"
       },
       {
         "code" : "GUARD",
-        "display" : "guardian",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Værge"
-        }]
+        "display" : "guardian"
       },
       {
         "code" : "NOK",
-        "display" : "next-of-kin",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Pårørende"
-        }]
+        "display" : "next of kin"
       },
       {
         "code" : "POWATT",
-        "display" : "power of attorney",
-        "designation" : [{
-          "language" : "da",
-          "value" : "Fuldmagtshaver"
-        }]
+        "display" : "power of attorney"
       }]
     },
     {
