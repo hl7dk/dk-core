@@ -725,6 +725,9 @@ Title: "DK Role Code"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* #FAMMEMB
+  * ^designation.language = #da
+  * ^designation.value = "Familiemedlem"
 * #CHILD
   * ^designation.language = #da
   * ^designation.value = "Barn"
