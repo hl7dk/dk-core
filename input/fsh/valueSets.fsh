@@ -263,37 +263,23 @@ Title: "DK Related Person Relationship Types"
 Description: "DK Related Person Relationship Types"
 * ^experimental = false
 * ^status = #active
+* ^extension[+].url = "http://hl7.org/fhir/structuredefinition/valueset-supplement"
+* ^extension[=].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement"
 * $v3-RoleCode#CHILD "child"
-  * ^designation.language = #da
-  * ^designation.value = "Barn"
+* $v3-RoleCode#DAUC "daughter"
+* $v3-RoleCode#SONC "son"
+* $v3-RoleCode#GRNDCHILD "grandchild"
+* $v3-RoleCode#CHLDINLAW "child-in-law"
 * $v3-RoleCode#PRN "parent"
-  * ^designation.language = #da
-  * ^designation.value = "Forælder"
+* $v3-RoleCode#FTH "father"
+* $v3-RoleCode#MTH "mother"
 * $v3-RoleCode#SIB "sibling"
-  * ^designation.language = #da
-  * ^designation.value = "Søskende"
 * $v3-RoleCode#DOMPART "domestic partner"
-  * ^designation.language = #da
-  * ^designation.value = "Registreret partner"
 * $v3-RoleCode#SPS "spouse"
-  * ^designation.language = #da
-  * ^designation.value = "Ægtefælle"
 * $v3-RoleCode#FRND "unrelated friend"
-  * ^designation.language = #da
-  * ^designation.value = "Ven (ikke-beslægtet)"
 * $v3-RoleCode#NBOR "neighbor"
-  * ^designation.language = #da
-  * ^designation.value = "Nabo"
 * $v3-RoleCode#ROOM "Roommate"
-  * ^designation.language = #da
-  * ^designation.value = "Samboende"
 * $v3-RoleCode#GUARD "guardian"
-  * ^designation.language = #da
-  * ^designation.value = "Værge"
-* $v3-RoleCode#NOK "next-of-kin"
-  * ^designation.language = #da
-  * ^designation.value = "Pårørende"
+* $v3-RoleCode#NOK "next of kin"
 * $v3-RoleCode#POWATT "power of attorney"
-  * ^designation.language = #da
-  * ^designation.value = "Fuldmagtshaver"
 * include codes from system DkRelatedPersonRelationshipCodes

@@ -718,6 +718,65 @@ Description: "DK "
 * #urn:oid:1.2.208.176.1.6.1.3.183 "D-eCPR fra Region Syddanmark"
 * #urn:oid:1.2.208.176.1.6.1.3.187 "D-eCPR fra Region Hovedstaden"
 
+CodeSystem: RoleCodeDkSupplement
+Id: role-code-dk-supplement
+Description: "CodeSystem supplement with danish translations for RoleCode"
+Title: "DK Role Code"
+* ^experimental = false
+* ^content = #supplement
+* ^supplements = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* #CHILD
+  * ^designation.language = #da
+  * ^designation.value = "Barn"
+* #DAUC
+  * ^designation.language = #da
+  * ^designation.value = "Datter"
+* #SONC
+  * ^designation.language = #da
+  * ^designation.value = "Søn"
+* #GRNDCHILD
+  * ^designation.language = #da
+  * ^designation.value = "Barnebarn"
+* #CHLDINLAW
+  * ^designation.language = #da
+  * ^designation.value = "Svigerbarn"
+* #PRN
+  * ^designation.language = #da
+  * ^designation.value = "Forælder"
+* #FTH
+  * ^designation.language = #da
+  * ^designation.value = "Far"
+* #MTH
+  * ^designation.language = #da
+  * ^designation.value = "Mor"
+* #SIB
+  * ^designation.language = #da
+  * ^designation.value = "Søskende"
+* #DOMPART
+  * ^designation.language = #da
+  * ^designation.value = "Registreret partner"
+* #SPS
+  * ^designation.language = #da
+  * ^designation.value = "Ægtefælle"
+* #FRND
+  * ^designation.language = #da
+  * ^designation.value = "Ven (ikke-beslægtet)"
+* #NBOR
+  * ^designation.language = #da
+  * ^designation.value = "Nabo"
+* #ROOM
+  * ^designation.language = #da
+  * ^designation.value = "Samboende"
+* #GUARD
+  * ^designation.language = #da
+  * ^designation.value = "Værge"
+* #NOK
+  * ^designation.language = #da
+  * ^designation.value = "Pårørende"
+* #POWATT
+  * ^designation.language = #da
+  * ^designation.value = "Fuldmagtshaver"
+
 CodeSystem: DkRelatedPersonRelationshipCodes
 Id: dk-relatedperson-relationshipcodes
 Title: "DK Related Person Relationship Codes"
