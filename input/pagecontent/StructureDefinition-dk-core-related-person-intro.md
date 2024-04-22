@@ -1,6 +1,8 @@
 ### Scope and usage
 The Danish Core Related Person profile is intended to encapsulate the most common and basic data model of persons related to patients/persons in Danish healthcare systems covering both primary sector, secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Note that the profile is usable for related persons to those that receive health and social care in municipalities, even in contexts where receivers of care are more commonly known as citizens ([DA] borgere).
 
+Note also, that the intended use of Related Person is to describe a relationship in itself and that privileges which might be associated to a relationship (e.g. power of attorney) should be expressed by other means.  
+
 ### Identifiers for related persons
 This related person profile currently reflects the use of the established national Danish citizen identifiers called [CPR](https://cpr.dk/) and (where relevant) the use of replacement CPR numbers ([DA] Erstatnings-CPR-numre eller eCPR).
 
@@ -15,7 +17,7 @@ The element RelatedPerson.identifier includes two slices to represent eCPR. Each
 * For D-eCPR, the [DkCoreDeCprIdentifier](./StructureDefinition-dk-core-d-ecpr-identifier.html) must be used, which includes a ValueSet of OID's that may be used as system. The OIDs represent the D-eCPR in general and D-eCPR for each of the five regions. Further, the identifier includes an invariant describing the requirements for the structure of the identifier, [based on guidelines from Danish Health Data Authority](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR).
 
 ### Relationship codes
-The relationships in [DK Core Related Person Relationship Types](ValueSet-dk-core-RelatedPersonRelationshipTypes.html) are intended to cover the most common use cases within the Danish healthcare sector. In cases when other relationships need to be expressed, codes from the general [Related Person Relationship Type](http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html) should be used when possible.  
+The relationships in [DK Core Related Person Relationship Types](ValueSet-dk-core-RelatedPersonRelationshipTypes.html) are intended to cover the most common use cases within the Danish healthcare sector. For the relationship codes that are included from the general relationship codes [danish translations](CodeSystem-role-code-dk-supplement.html) are provided. In cases when other relationships need to be expressed, codes from the general [Related Person Relationship Type](http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html) should be used when possible.  
 
 ### Use of security label on related persons
 Danish citizens that have requested name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) should be labeled with the security label as follows:
