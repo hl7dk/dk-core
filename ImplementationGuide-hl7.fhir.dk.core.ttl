@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-23T10:50:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T18:15:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -1039,7 +1039,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-NPUBasicObservation" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core NPU Basic Observation" ] ;
+       fhir:name [ fhir:v "DK Core NPU Basic Observation" ] ;
        fhir:description [ fhir:v "NPU codes for Basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1051,7 +1051,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-SCTBasicObservation" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core SNOMED CT Basic Observation" ] ;
+       fhir:name [ fhir:v "DK Core SNOMED CT Basic Observation" ] ;
        fhir:description [ fhir:v "SNOMED CT codes for Basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1075,7 +1075,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-UCUM-BasicUnits" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core UCUM Basic Units" ] ;
+       fhir:name [ fhir:v "DK Core UCUM Basic Units" ] ;
        fhir:description [ fhir:v "UCUM codes to represent units for basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1765,7 +1765,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-kombit-org-identifier> ;
          fhir:reference [ fhir:v "StructureDefinition/dk-core-kombit-org-identifier" ]
        ] ;
-       fhir:name [ fhir:v "Kombit Org Identifier" ] ;
+       fhir:name [ fhir:v "Kombit Organsation Identifier" ] ;
        fhir:description [ fhir:v "Identifier holding the organization code issued by KOMBIT" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

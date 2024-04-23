@@ -1,9 +1,9 @@
 DKCore : Validation Results
 =========================================
 
-err = 0, warn = 65, info = 109
+err = 0, warn = 67, info = 109
 IG Publisher Version: 1.6.6
-Generated Tue Apr 23 10:54:02 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
+Generated Tue Apr 23 18:19:31 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 7 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 0 / 30
@@ -35,8 +35,8 @@ Generated Tue Apr 23 10:54:02 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF : 0 / 0 / 16
  /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604 : 0 / 2 / 16
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-cpr : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-sor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222 : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/Observation-ElseBloodPressure : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Observation-ElseBodyTemperature : 0 / 0 / 2
@@ -284,7 +284,9 @@ INFORMATION: Device/WeightScale.606405FFFECFC604: Device.property[3].type: Refer
 INFORMATION: Device/WeightScale.606405FFFECFC604: Device.property[4].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
 == fsh-generated/resources/NamingSystem-cpr.json ==
+WARNING: NamingSystem/cpr: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/NamingSystem-sor.json ==
+WARNING: NamingSystem/sor: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json ==
 INFORMATION: Observation/CoincidentTimeStamp.0222: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26
 == fsh-generated/resources/Observation-ElseBloodPressure.json ==

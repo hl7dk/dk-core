@@ -138,6 +138,8 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json: line 168, col 8, Info - Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json: line 190, col 8, Info - Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json: line 212, col 8, Info - Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/NamingSystem-cpr.json: line 1, col 2514, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
+/github/workspace/fsh-generated/resources/NamingSystem-sor.json: line 1, col 3281, Warning - Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
 /github/workspace/fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json: line 11, col 4, Info - Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Observation-ElsePainVRS.json: line 21, col 4, Info - A definition for CodeSystem 'http://localSystem.dk' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/Observation-ElsePainVRS.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
@@ -176,5 +178,5 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json: line 1, col 1950, Warning - Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not (REQUIRED)
 
-err = 0, warn = 65, info = 109
+err = 0, warn = 67, info = 109
 IG Publisher Version: 1.6.6
