@@ -263,8 +263,6 @@ Title: "DK Related Person Relationship Types"
 Description: "DK Related Person Relationship Types"
 * ^experimental = false
 * ^status = #active
-* ^extension[+].url = "http://hl7.org/fhir/structuredefinition/valueset-supplement"
-* ^extension[=].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement"
 * $v3-RoleCode#FAMMEMB "family member"
 * $v3-RoleCode#CHILD "child"
 * $v3-RoleCode#DAUC "daughter"
