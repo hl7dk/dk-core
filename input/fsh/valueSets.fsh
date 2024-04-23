@@ -43,7 +43,7 @@ Description: "LOINC codes describing Basic Observations usable in Denmark."
 
 ValueSet: SCTBasicObservation
 Id: dk-core-SCTBasicObservation
-Title: "Dk Core SNOMED CT Basic Observation"
+Title: "DK Core SNOMED CT Basic Observation"
 Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * ^experimental = false
 //Vital signs
@@ -205,7 +205,7 @@ the observation was performed.
 
 ValueSet: NPUBasicObservation
 Id: dk-core-NPUBasicObservation
-Title: "Dk Core NPU Basic Observation"
+Title: "DK Core NPU Basic Observation"
 Description: "NPU codes for Basic Observations usable in Denmark"
 * ^experimental = false
 * $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
@@ -223,7 +223,7 @@ Description: "NPU codes for Basic Observations usable in Denmark"
 
 ValueSet: UCUMBasicUnits
 Id: dk-core-UCUM-BasicUnits
-Title: "Dk Core UCUM Basic Units"
+Title: "DK Core UCUM Basic Units"
 Description: "UCUM codes to represent units for basic Observations usable in Denmark"
 * ^experimental = false
 * $ucum#% "percent"

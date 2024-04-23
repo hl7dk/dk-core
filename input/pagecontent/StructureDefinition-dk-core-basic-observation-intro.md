@@ -6,7 +6,7 @@ The profile is a further profiling of DkCoreObservation and in most cases it com
 #### Codes
 It is required to include a LOINC code at Observation.code. The [LOINC ValueSet](http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html) used in the  HL7's Vital Signs profile is expanded with the code `59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"` because it is an often used, measurable parameter in Denmark.
 
-Further, [Dk Core NPU Basic Observation](./ValueSet-dk-core-NPUBasicObservation.html), [Dk Core IEEE Basic Observation](./ValueSet-dk-core-IEEEBasicObservation.html), and [Dk Core SNOMED CT Basic Observation](./ValueSet-dk-core-SCTBasicObservation.html) ValueSets are added to the given slices, and codes from these ValueSets are optional to include. 
+Further, [DK Core NPU Basic Observation](./ValueSet-dk-core-NPUBasicObservation.html), [DK Core IEEE Basic Observation](./ValueSet-dk-core-IEEEBasicObservation.html), and [DK Core SNOMED CT Basic Observation](./ValueSet-dk-core-SCTBasicObservation.html) ValueSets are added to the given slices, and codes from these ValueSets are optional to include. 
 
 An overall guidance of using the ValueSets follows the guidance of DkCoreObservation and is further specified here:
 * NPU codes can be used when communicating observations from the laboratory area. NPU also covers codes concerning basic observations. For this reason, NPU is included.
@@ -21,9 +21,9 @@ The codes in the three ValueSets are selected to best represent the codes includ
 If a measurement is documented in a system or device e.g. with a SNOMED CT or IEEE code, but no LOINC code. The system must map the SNOMED CT or IEEE code to the LOINC code before exchanging it. Otherwise, it will not accommodate the requirements of the DkCoreBasicObservation profile, since a LOINC code is required.
 
 #### Units
-The [UCUM ValueSet](http://hl7.org/fhir/ValueSet/ucum-vitals-common) used in HL7's Vital Signs profile is extended in the [Dk Core UCUM Basic Units ValueSet](./ValueSet-dk-core-UCUM-BasicUnits.html) to include a code for fraction `{fraction} fraction`. In the NPU ValueSet, this unit is used for the code `NPU27280 Hb(Fe; O2-bind.;aB)—Oxygen(O2); sat.(Pulse oximetry) = ?`, why it is included. However, using the fraction unit is not compliant with [HL7's Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html), here the unit `% percent` is used for the LOINC code `"2708-6 "Oxygen saturation in Arterial blood"`. The example [John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.html) illustrates how this can be handled by deriving the instance with the NPU code from an instance with a LOINC and IEEE code.
+The [UCUM ValueSet](http://hl7.org/fhir/ValueSet/ucum-vitals-common) used in HL7's Vital Signs profile is extended in the [DK Core UCUM Basic Units ValueSet](./ValueSet-dk-core-UCUM-BasicUnits.html) to include a code for fraction `{fraction} fraction`. In the NPU ValueSet, this unit is used for the code `NPU27280 Hb(Fe; O2-bind.;aB)—Oxygen(O2); sat.(Pulse oximetry) = ?`, why it is included. However, using the fraction unit is not compliant with [HL7's Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html), here the unit `% percent` is used for the LOINC code `"2708-6 "Oxygen saturation in Arterial blood"`. The example [John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.html) illustrates how this can be handled by deriving the instance with the NPU code from an instance with a LOINC and IEEE code.
 
-The Dk Core UCUM Basic Units ValueSet is added to the elements Observation.valueQuantity and Observation.component.valueQuantity. 
+The DK Core UCUM Basic Units ValueSet is added to the elements Observation.valueQuantity and Observation.component.valueQuantity. 
 
 #### Examples
 The table below includes instances of the DkCoreBasicObservation used to represent observations used to evaluate the patient based on different procedures used in Denmark. 
