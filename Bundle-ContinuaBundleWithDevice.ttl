@@ -11,62 +11,62 @@
   fhir:id [ fhir:v "ContinuaBundleWithDevice"] ; # 
   fhir:type [ fhir:v "transaction"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "Patient/Poul"^^xsd:anyURI ] ;
-     fhir:resource ( <Patient/Poul> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Patient/Poul"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Patient/Poul> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Patient"^^xsd:anyURI ] ;
        fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.208.176.1.2|3001749995" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Device/Telma.FEEDDADADEADBEEF"^^xsd:anyURI ] ;
-     fhir:resource ( <Device/Telma.FEEDDADADEADBEEF> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Device/Telma.FEEDDADADEADBEEF"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Device/Telma.FEEDDADADEADBEEF> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Device"^^xsd:anyURI ] ;
        fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9"^^xsd:anyURI ] ;
-     fhir:resource ( <Device/BPMonitor.C4F312FFFE53F2C9> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Device/BPMonitor.C4F312FFFE53F2C9"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Device/BPMonitor.C4F312FFFE53F2C9> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Device"^^xsd:anyURI ] ;
        fhir:ifNoneExist [ fhir:v "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Observation/BatteryLevel.0944"^^xsd:anyURI ] ;
-     fhir:resource ( <Observation/BatteryLevel.0944> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/BatteryLevel.0944"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/BatteryLevel.0944> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Observation"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Observation/CoincidentTimeStamp.0222"^^xsd:anyURI ] ;
-     fhir:resource ( <Observation/CoincidentTimeStamp.0222> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/CoincidentTimeStamp.0222"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/CoincidentTimeStamp.0222> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Observation"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Observation/BloodPressure.Poul.643992"^^xsd:anyURI ] ;
-     fhir:resource ( <Observation/BloodPressure.Poul.643992> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressure.Poul.643992"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressure.Poul.643992> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
        fhir:ifNoneExist [ fhir:v "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Observation/HeartRate.Poul.1974654"^^xsd:anyURI ] ;
-     fhir:resource ( <Observation/HeartRate.Poul.1974654> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/HeartRate.Poul.1974654"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/HeartRate.Poul.1974654> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
        fhir:ifNoneExist [ fhir:v "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Observation/BloodPressureStatus.Poul.133527"^^xsd:anyURI ] ;
-     fhir:resource ( <Observation/BloodPressureStatus.Poul.133527> ) ;
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressureStatus.Poul.133527"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressureStatus.Poul.133527> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Observation"^^xsd:anyURI ] ;
@@ -74,7 +74,7 @@
      ]
   ] ) . # 
 
-<Patient/Poul> a fhir:Patient ;
+<http://hl7.dk/fhir/core/StructureDefinition/Patient/Poul> a fhir:Patient ;
   fhir:id [ fhir:v "Poul"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -104,7 +104,7 @@
      fhir:given ( [ fhir:v "Poul" ] )
   ] ) . # 
 
-<Device/Telma.FEEDDADADEADBEEF> a fhir:Device ;
+<http://hl7.dk/fhir/core/StructureDefinition/Device/Telma.FEEDDADADEADBEEF> a fhir:Device ;
   fhir:id [ fhir:v "Telma.FEEDDADADEADBEEF"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -257,7 +257,7 @@
      ] )
   ] ) . # 
 
-<Device/BPMonitor.C4F312FFFE53F2C9> a fhir:Device ;
+<http://hl7.dk/fhir/core/StructureDefinition/Device/BPMonitor.C4F312FFFE53F2C9> a fhir:Device ;
   fhir:id [ fhir:v "BPMonitor.C4F312FFFE53F2C9"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -433,7 +433,7 @@
      ] )
   ] ) . # 
 
-<Observation/BatteryLevel.0944> a fhir:Observation ;
+<http://hl7.dk/fhir/core/StructureDefinition/Observation/BatteryLevel.0944> a fhir:Observation ;
   fhir:id [ fhir:v "BatteryLevel.0944"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -485,7 +485,7 @@
      fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
   ] . # 
 
-<Observation/CoincidentTimeStamp.0222> a fhir:Observation ;
+<http://hl7.dk/fhir/core/StructureDefinition/Observation/CoincidentTimeStamp.0222> a fhir:Observation ;
   fhir:id [ fhir:v "CoincidentTimeStamp.0222"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -532,7 +532,7 @@
      fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
   ] . # 
 
-<Observation/BloodPressure.Poul.643992> a fhir:Observation ;
+<http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressure.Poul.643992> a fhir:Observation ;
   fhir:id [ fhir:v "BloodPressure.Poul.643992"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -674,7 +674,7 @@
      ]
   ] ) . # 
 
-<Observation/HeartRate.Poul.1974654> a fhir:Observation ;
+<http://hl7.dk/fhir/core/StructureDefinition/Observation/HeartRate.Poul.1974654> a fhir:Observation ;
   fhir:id [ fhir:v "HeartRate.Poul.1974654"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -756,7 +756,7 @@
      fhir:reference [ fhir:v "Observation/CoincidentTimeStamp.0222" ]
   ] ) . # 
 
-<Observation/BloodPressureStatus.Poul.133527> a fhir:Observation ;
+<http://hl7.dk/fhir/core/StructureDefinition/Observation/BloodPressureStatus.Poul.133527> a fhir:Observation ;
   fhir:id [ fhir:v "BloodPressureStatus.Poul.133527"] ; # 
   fhir:meta [
      fhir:profile ( [

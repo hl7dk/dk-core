@@ -1,13 +1,13 @@
 DKCore : Validation Results
 =========================================
 
-err = 25, warn = 65, info = 109
-IG Publisher Version: 1.6.5
-Generated Tue Apr 23 08:28:16 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
+err = 0, warn = 65, info = 109
+IG Publisher Version: 1.6.6
+Generated Tue Apr 23 10:54:02 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.2.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
- /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 8 / 7 / 98
- /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 8 / 0 / 30
- /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 7 / 20 / 29
+ /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 7 / 98
+ /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 0 / 30
+ /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 0 / 20 / 29
  /github/workspace/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 0 / 1
@@ -108,7 +108,7 @@ Generated Tue Apr 23 08:28:16 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits : 0 / 0 / 1
@@ -183,24 +183,8 @@ INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observat
 WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2]: A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.component[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7|1.0.0
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/Poul')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Device/Telma.FEEDDADADEADBEEF')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Device/BPMonitor.C4F312FFFE53F2C9')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/BatteryLevel.0944')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/CoincidentTimeStamp.0222')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/BloodPressure.Poul.643992')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/HeartRate.Poul.1974654')
-ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/BloodPressureStatus.Poul.133527')
 == fsh-generated/resources/Bundle-ElsesTOBS.json ==
 INFORMATION: Bundle/ElsesTOBS: Bundle.entry[6].resource/*Observation/ElsesTOBSscore*/.code.coding[0]: A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/else')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseConsciousness')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseBloodPressure')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseBodyTemperature')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseHeartRate')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElseRespirationRate')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/ElsesTOBSscore')
-ERROR: Bundle/ElsesTOBS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Practitioner/SidselSygeplejerske')
 == fsh-generated/resources/Bundle-MaxTOKS.json ==
 WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource/*Observation/MaxConsciousness*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/MaxTOKS: Bundle.entry[2].resource/*Observation/MaxBloodPressure*/: Best Practice Recommendation: In general, all observations should have a performer
@@ -216,18 +200,11 @@ WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaSca
 WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[1].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
 WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[1].high: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
 WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/.referenceRange[2].low: UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/Max')
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxConsciousness')
 WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxBloodPressure')
 WARNING: Bundle/MaxTOKS: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxBodyTemperature')
 WARNING: Bundle/MaxTOKS: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxHeartRate')
 WARNING: Bundle/MaxTOKS: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxRespirationRate')
 WARNING: Bundle/MaxTOKS: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/MaxTOKS: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Observation/MaxGlasgowComaScale')
 WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
 == fsh-generated/resources/CodeSystem-address-type-dk-supplement.json ==
@@ -416,8 +393,6 @@ WARNING: ValueSet/dk-core-NPUBasicObservation: ValueSet.compose.include[0]: Unkn
 WARNING: ValueSet.where(id = 'dk-core-NPUBasicObservation'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1
 == fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes.json ==
-ERROR: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.extension[0]: The extension http://hl7.org/fhir/structuredefinition/valueset-supplement could not be found so is not allowed here
-ERROR: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.extension[0].url: URL value 'http://hl7.org/fhir/structuredefinition/valueset-supplement' does not resolve
 == fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json ==
 == fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes.json ==
 == fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits.json ==
