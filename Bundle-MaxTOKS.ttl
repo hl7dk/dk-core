@@ -13,29 +13,29 @@
   fhir:type [ fhir:v "collection"] ; # 
   fhir:timestamp [ fhir:v "2023-08-08T13:30:00.000Z"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Patient/Max"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Patient/Max> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Patient/Max"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Patient/Max> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxConsciousness"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxConsciousness> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxConsciousness"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxConsciousness> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBloodPressure"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBloodPressure> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxBloodPressure"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxBloodPressure> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBodyTemperature"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBodyTemperature> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxBodyTemperature"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxBodyTemperature> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxHeartRate"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxHeartRate> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxHeartRate"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxHeartRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxRespirationRate"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxRespirationRate> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxRespirationRate"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxRespirationRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxGlasgowComaScale"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxGlasgowComaScale> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale> )
   ] ) . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Patient/Max> a fhir:Patient ;
+<http://hl7.dk/fhir/core/Patient/Max> a fhir:Patient ;
   fhir:id [ fhir:v "Max"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -66,7 +66,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxConsciousness> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxConsciousness> a fhir:Observation ;
   fhir:id [ fhir:v "MaxConsciousness"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -114,7 +114,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBloodPressure> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxBloodPressure> a fhir:Observation ;
   fhir:id [ fhir:v "MaxBloodPressure"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -196,7 +196,7 @@
      ]
   ] ) . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxBodyTemperature> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxBodyTemperature> a fhir:Observation ;
   fhir:id [ fhir:v "MaxBodyTemperature"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -246,7 +246,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxHeartRate> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxHeartRate> a fhir:Observation ;
   fhir:id [ fhir:v "MaxHeartRate"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -296,7 +296,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxRespirationRate> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxRespirationRate> a fhir:Observation ;
   fhir:id [ fhir:v "MaxRespirationRate"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -347,7 +347,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/MaxGlasgowComaScale> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale> a fhir:Observation ;
   fhir:id [ fhir:v "MaxGlasgowComaScale"] ; # 
   fhir:meta [
      fhir:profile ( [

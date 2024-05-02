@@ -13,32 +13,32 @@
   fhir:type [ fhir:v "collection"] ; # 
   fhir:timestamp [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Patient/else"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Patient/else> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Patient/else"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Patient/else> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseConsciousness"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseConsciousness> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseConsciousness"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseConsciousness> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBloodPressure"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBloodPressure> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseBloodPressure"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseBloodPressure> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBodyTemperature"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBodyTemperature> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseBodyTemperature"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseHeartRate"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseHeartRate> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseHeartRate"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseHeartRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseRespirationRate"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseRespirationRate> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseRespirationRate"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseRespirationRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Observation/ElsesTOBSscore"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Observation/ElsesTOBSscore> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElsesTOBSscore"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElsesTOBSscore> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/StructureDefinition/Practitioner/SidselSygeplejerske"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.dk/fhir/core/StructureDefinition/Practitioner/SidselSygeplejerske> )
+     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> )
   ] ) . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Patient/else> a fhir:Patient ;
+<http://hl7.dk/fhir/core/Patient/else> a fhir:Patient ;
   fhir:id [ fhir:v "else"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -69,7 +69,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseConsciousness> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElseConsciousness> a fhir:Observation ;
   fhir:id [ fhir:v "ElseConsciousness"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -115,7 +115,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBloodPressure> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElseBloodPressure> a fhir:Observation ;
   fhir:id [ fhir:v "ElseBloodPressure"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -202,7 +202,7 @@
      ]
   ] ) . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseBodyTemperature> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> a fhir:Observation ;
   fhir:id [ fhir:v "ElseBodyTemperature"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -257,7 +257,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseHeartRate> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElseHeartRate> a fhir:Observation ;
   fhir:id [ fhir:v "ElseHeartRate"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -312,7 +312,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElseRespirationRate> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElseRespirationRate> a fhir:Observation ;
   fhir:id [ fhir:v "ElseRespirationRate"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -367,7 +367,7 @@
      ] )
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Observation/ElsesTOBSscore> a fhir:Observation ;
+<http://hl7.dk/fhir/core/Observation/ElsesTOBSscore> a fhir:Observation ;
   fhir:id [ fhir:v "ElsesTOBSscore"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -403,7 +403,7 @@
      fhir:code [ fhir:v "1" ]
   ] . # 
 
-<http://hl7.dk/fhir/core/StructureDefinition/Practitioner/SidselSygeplejerske> a fhir:Practitioner ;
+<http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> a fhir:Practitioner ;
   fhir:id [ fhir:v "SidselSygeplejerske"] ; # 
   fhir:meta [
      fhir:profile ( [
