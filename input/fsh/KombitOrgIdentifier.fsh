@@ -1,7 +1,7 @@
 Profile: KombitOrgIdentifier
 Parent: Identifier
 Id: dk-core-kombit-org-identifier
-Title: "Kombit Org Identifier"
+Title: "Kombit Organsation Identifier"
 Description: "Identifier holding the organization code issued by KOMBIT"
 * use = #official (exactly)
 * system 1..

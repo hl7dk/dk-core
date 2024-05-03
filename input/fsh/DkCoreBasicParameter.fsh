@@ -164,21 +164,21 @@ Description: "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom)
 Usage: #example
 * type = #collection
 * timestamp = "2023-09-12T17:45:00.000Z"
-* entry[+].fullUrl = "Patient/else"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Patient/else"
 * entry[=].resource = else
-* entry[+].fullUrl = "Observation/ElseConsciousness"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElseConsciousness"
 * entry[=].resource = ElseConsciousness
-* entry[+].fullUrl = "Observation/ElseBloodPressure"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElseBloodPressure"
 * entry[=].resource = ElseBloodPressure
-* entry[+].fullUrl = "Observation/ElseBodyTemperature"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElseBodyTemperature"
 * entry[=].resource = ElseBodyTemperature
-* entry[+].fullUrl = "Observation/ElseHeartRate"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElseHeartRate"
 * entry[=].resource = ElseHeartRate
-* entry[+].fullUrl = "Observation/ElseRespirationRate"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElseRespirationRate"
 * entry[=].resource = ElseRespirationRate
-* entry[+].fullUrl = "Observation/ElsesTOBSscore"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/ElsesTOBSscore"
 * entry[=].resource = ElsesTOBSscore
-* entry[+].fullUrl = "Practitioner/SidselSygeplejerske"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske"
 * entry[=].resource = SidselSygeplejerske
 
 /* **************
@@ -293,19 +293,19 @@ Description: "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom)
 Usage: #example
 * type = #collection
 * timestamp = "2023-08-08T13:30:00.000Z"
-* entry[+].fullUrl = "Patient/Max"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Patient/Max"
 * entry[=].resource = Max
-* entry[+].fullUrl = "Observation/MaxConsciousness"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxConsciousness"
 * entry[=].resource = MaxConsciousness
-* entry[+].fullUrl = "Observation/MaxBloodPressure"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxBloodPressure"
 * entry[=].resource = MaxBloodPressure
-* entry[+].fullUrl = "Observation/MaxBodyTemperature"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxBodyTemperature"
 * entry[=].resource = MaxBodyTemperature
-* entry[+].fullUrl = "Observation/MaxHeartRate"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxHeartRate"
 * entry[=].resource = MaxHeartRate
-* entry[+].fullUrl = "Observation/MaxRespirationRate"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxRespirationRate"
 * entry[=].resource = MaxRespirationRate
-* entry[+].fullUrl = "Observation/MaxGlasgowComaScale"
+* entry[+].fullUrl = "http://hl7.dk/fhir/core/Observation/MaxGlasgowComaScale"
 * entry[=].resource = MaxGlasgowComaScale
 
 /* **************

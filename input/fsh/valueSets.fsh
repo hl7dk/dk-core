@@ -43,7 +43,7 @@ Description: "LOINC codes describing Basic Observations usable in Denmark."
 
 ValueSet: SCTBasicObservation
 Id: dk-core-SCTBasicObservation
-Title: "Dk Core SNOMED CT Basic Observation"
+Title: "DK Core SNOMED CT Basic Observation"
 Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * ^experimental = false
 //Vital signs
@@ -205,7 +205,7 @@ the observation was performed.
 
 ValueSet: NPUBasicObservation
 Id: dk-core-NPUBasicObservation
-Title: "Dk Core NPU Basic Observation"
+Title: "DK Core NPU Basic Observation"
 Description: "NPU codes for Basic Observations usable in Denmark"
 * ^experimental = false
 * $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
@@ -223,7 +223,7 @@ Description: "NPU codes for Basic Observations usable in Denmark"
 
 ValueSet: UCUMBasicUnits
 Id: dk-core-UCUM-BasicUnits
-Title: "Dk Core UCUM Basic Units"
+Title: "DK Core UCUM Basic Units"
 Description: "UCUM codes to represent units for basic Observations usable in Denmark"
 * ^experimental = false
 * $ucum#% "percent"
@@ -256,3 +256,29 @@ Description: "DK D-eCPR OID values"
 * ^experimental = false
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
+
+ValueSet: RelatedPersonRelationshipTypes
+Id: dk-core-RelatedPersonRelationshipTypes
+Title: "DK Related Person Relationship Types"
+Description: "DK Related Person Relationship Types"
+* ^experimental = false
+* ^status = #active
+* $v3-RoleCode#FAMMEMB // "family member"
+* $v3-RoleCode#CHILD // "child"
+* $v3-RoleCode#DAUC // "daughter"
+* $v3-RoleCode#SONC // "son"
+* $v3-RoleCode#GRNDCHILD // "grandchild"
+* $v3-RoleCode#CHLDINLAW // "child-in-law"
+* $v3-RoleCode#PRN // "parent"
+* $v3-RoleCode#FTH // "father"
+* $v3-RoleCode#MTH // "mother"
+* $v3-RoleCode#SIB // "sibling"
+* $v3-RoleCode#DOMPART // "domestic partner"
+* $v3-RoleCode#SPS // "spouse"
+* $v3-RoleCode#FRND // "unrelated friend"
+* $v3-RoleCode#NBOR // "neighbor"
+* $v3-RoleCode#ROOM // "Roommate"
+* $v3-RoleCode#GUARD // "guardian"
+* $v3-RoleCode#NOK // "next of kin"
+* $v3-RoleCode#POWATT // "power of attorney"
+* include codes from system DkRelatedPersonRelationshipCodes

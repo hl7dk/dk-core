@@ -46,7 +46,7 @@ Description: "HL7 Denmark core profile for observations"
   * code 1..
 * subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
-* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or RelatedPerson)
+* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
@@ -626,54 +626,54 @@ Description: """
 Usage: #example
 * type = #transaction
 * entry[+]
-  * fullUrl = "Patient/Poul"
+  * fullUrl = "http://hl7.dk/fhir/core/Patient/Poul"
   * request
     * method = #POST
     * url = "Patient"
     * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|3001749995"
   * resource = Poul
 * entry[+]
-  * fullUrl = "Device/Telma.FEEDDADADEADBEEF"
+  * fullUrl = "http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF"
   * resource = Telma.FEEDDADADEADBEEF
 * entry[+]
-  * fullUrl = "Device/BPMonitor.C4F312FFFE53F2C9"
+  * fullUrl = "http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9"
   * resource = BPMonitor.C4F312FFFE53F2C9
 * entry[+]
-  * fullUrl = "Observation/BatteryLevel.0944"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BatteryLevel.0944"
   * request
     * method = #POST
     * url = "Observation"
   * resource = BatteryLevel.0944
 * entry[+]
-  * fullUrl = "Observation/CoincidentTimeStamp.0222"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222"
   * request
     * method = #POST
     * url = "Observation"
   * resource = CoincidentTimeStamp.0222
 * entry[+]
-  * fullUrl = "Observation/BloodPressure.Poul.643992"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BloodPressure.Poul.643992"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
   * resource = BloodPressure.Poul.643992
 * entry[+]
-  * fullUrl = "Observation/HeartRate.Poul.1974654"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/HeartRate.Poul.1974654"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
   * resource = HeartRate.Poul.1974654
 * entry[+]
-  * fullUrl = "Observation/BloodPressureStatus.Poul.133527"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BloodPressureStatus.Poul.133527"
   * request
     * method = #POST
     * url = "Observation"

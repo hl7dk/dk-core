@@ -7,6 +7,7 @@ This way of constraining the Condition profile is within the boundaries of what 
 
 We use the Condition profile for describing both conditions that are true for an encounter, and for conditions that are true for a periode of time. "In FHIR, we distinguish between the two using the Condition.category that can take the two values problem-list-item og encounter-diagnosis. In this list, examples of use is compiled:
 * LPR3 conditions are encounter-diagnosis
+* Regional care-pathway diagnosis (Regionale forløbsdiagnoser) are problem-list-items 
 * General practioners can code each encounter with an ICPC code. This is an encounter-diagnosis
 * Municipality conditions i.e. FSIII-conditions and FFB-subthemes are problem-list-items
 * General practitioners, in some cases, follow a patient condition for a longer periode of time (e.g. high blood pressure, high cholesterol, COPD), and some systems support care pathways for these conditions. These conditions may be categorized as problem-list-items.
@@ -17,7 +18,7 @@ Given that we have a condition, which is a problem-list-item, ending the conditi
   * The Condition.category looses its "problem-list-item" flag. The idea is to state that from a patient viewpoint the condition has not changed, but in this professional context it is no longer in focus.
   * The Condition.extension.NotFollowedAnymore is populated with the date that it lost focus in a specific professional context.
 
-The status attributes controls the context of a condition. clinicalStatus should be populated with the value “active” if the patient has the condition, and inactive if the patient no longer have the condition. Condition.verificationStatus should be set to “confirmed” if the condition have been established as true by someone with authority (e.g. a diagnosis is confirmed by a doctor). A condition is “unconfirmed”, if the patient is suspected of having a condition, and "refuted" if it has been confirmed that the condition is not present. An example of an unconfirmed condition can be found here [John Melanoma](Condition-JohnMelanoma.html)https://hl7.dk/fhir/core/.
+The status attributes controls the context of a condition. clinicalStatus should be populated with the value “active” if the patient has the condition, and inactive if the patient no longer have the condition. Condition.verificationStatus should be set to “confirmed” if the condition have been established as true by someone with authority (e.g. a diagnosis is confirmed by a doctor). A condition is “unconfirmed”, if the patient is suspected of having a condition, and "refuted" if it has been confirmed that the condition is not present. An example of an unconfirmed condition can be found here [John Melanoma](Condition-JohnMelanoma.html).
 
 Note that "unconfirmed" is not the same as a risk of developing a condition. The risk of developing a certain condition may be recorded in (at least) two ways in FHIR i.e. as a familyMemberHistory or by populating Condition.code with a code that expresses a risk e.g. the SNOMED CT code ´395112001 At increased risk for cardiovascular event (finding)´. The first would typically be used if recording a family history, the second, if you want to use an increased risk as the reason for starting a prophylactic treatment.
 
