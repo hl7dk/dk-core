@@ -1,0 +1,34 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8d7219ce-3b3b-4616-a0b1-4220be7a819f-39",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8d7219ce-3b3b-4616-a0b1-4220be7a819f-39",
+  "name" : "IntersectionDkRelatedPersonRelationshipCodesAndDkRelatedPersonRelationshipCodes",
+  "title" : "Intersection of DK Related Person Relationship Codes And DK Related Person Relationship Codes",
+  "status" : "active",
+  "date" : "2024-05-06T14:15:15+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "PARAUTH",
+    "display" : "Parental authority",
+    "definition" : "The player of the role holds parental authority over the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forældremyndighedsindehaver"
+    }]
+  },
+  {
+    "code" : "PRICARE",
+    "display" : "Primary caretaker",
+    "definition" : "The player of the role is the primary caretaker of the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Primær omsorgsperson"
+    }]
+  }]
+}

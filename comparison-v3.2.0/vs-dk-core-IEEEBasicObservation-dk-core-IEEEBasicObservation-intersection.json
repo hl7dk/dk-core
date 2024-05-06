@@ -1,0 +1,164 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8d7219ce-3b3b-4616-a0b1-4220be7a819f-123",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8d7219ce-3b3b-4616-a0b1-4220be7a819f-123",
+  "name" : "IntersectionIEEEBasicObservationAndIEEEBasicObservation",
+  "title" : "Intersection of Dk Core IEEE Basic Observation And Dk Core IEEE Basic Observation",
+  "status" : "active",
+  "date" : "2024-05-06T14:15:15+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "151562",
+        "display" : "MDC_RESP_RATE"
+      },
+      {
+        "code" : "151570",
+        "display" : "MDC_AWAY_RESP_RATE"
+      },
+      {
+        "code" : "151578",
+        "display" : "MDC_TTHOR_RESP_RATE"
+      },
+      {
+        "code" : "151594",
+        "display" : "MDC_CO2_RESP_RATE"
+      },
+      {
+        "code" : "151602",
+        "display" : "MDC_PRESS_RESP_RATE"
+      },
+      {
+        "code" : "151650",
+        "display" : "MDC_ACOUSTIC_RESP_RATE"
+      },
+      {
+        "code" : "151658",
+        "display" : "MDC_PULS_OXIM_PLETH_RESP_RATE"
+      },
+      {
+        "code" : "8410992",
+        "display" : "MDC_SABTE_RESP_RATE"
+      },
+      {
+        "code" : "149514",
+        "display" : "MDC_PULS_RATE"
+      },
+      {
+        "code" : "149522",
+        "display" : "MDC_BLD_PULS_RATE_INV"
+      },
+      {
+        "code" : "149546",
+        "display" : "MDC_PULS_RATE_NON_INV"
+      },
+      {
+        "code" : "149530",
+        "display" : "MDC_PULS_OXIM_PULS_RATE"
+      },
+      {
+        "code" : "147842",
+        "display" : "MDC_ECG_HEART_RATE"
+      },
+      {
+        "code" : "8410590",
+        "display" : "MDC_ECG_HEART_RATE_INSTANT"
+      },
+      {
+        "code" : "149554",
+        "display" : "MDC_TTHOR_HEART_RATE"
+      },
+      {
+        "code" : "149562",
+        "display" : "MDC_PALPATION_HEART_RATE"
+      },
+      {
+        "code" : "8454258",
+        "display" : "MDC_HF_HR"
+      },
+      {
+        "code" : "150324",
+        "display" : "MDC_SAT_O2_ART"
+      },
+      {
+        "code" : "150456",
+        "display" : "MDC_PULS_OXIM_SAT_O2"
+      },
+      {
+        "code" : "150364",
+        "display" : "MDC_TEMP_BODY"
+      },
+      {
+        "code" : "150368",
+        "display" : "MDC_TEMP_CORE"
+      },
+      {
+        "code" : "150388",
+        "display" : "MDC_TEMP_SKIN"
+      },
+      {
+        "code" : "150392",
+        "display" : "MDC_TEMP_TYMP"
+      },
+      {
+        "code" : "188420",
+        "display" : "MDC_TEMP_RECT"
+      },
+      {
+        "code" : "188424",
+        "display" : "MDC_TEMP_ORAL"
+      },
+      {
+        "code" : "188428",
+        "display" : "MDC_TEMP_EAR"
+      },
+      {
+        "code" : "188452",
+        "display" : "MDC_TEMP_AXILLA"
+      },
+      {
+        "code" : "188456",
+        "display" : "MDC_TEMP_GIT"
+      },
+      {
+        "code" : "188740",
+        "display" : "MDC_LEN_BODY_ACTUAL"
+      },
+      {
+        "code" : "153856",
+        "display" : "MDC_CIRCUM_HEAD"
+      },
+      {
+        "code" : "188736",
+        "display" : "MDC_MASS_BODY_ACTUAL"
+      },
+      {
+        "code" : "188752",
+        "display" : "MDC_RATIO_MASS_BODY_LEN_SQ"
+      },
+      {
+        "code" : "150020",
+        "display" : "MDC_PRESS_BLD_NONINV"
+      },
+      {
+        "code" : "150021",
+        "display" : "MDC_PRESS_BLD_NONINV_SYS"
+      },
+      {
+        "code" : "150022",
+        "display" : "MDC_PRESS_BLD_NONINV_DIA"
+      },
+      {
+        "code" : "150023",
+        "display" : "MDC_PRESS_BLD_NONINV_MEAN"
+      }]
+    }]
+  }
+}

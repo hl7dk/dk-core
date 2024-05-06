@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8d7219ce-3b3b-4616-a0b1-4220be7a819f-131",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8d7219ce-3b3b-4616-a0b1-4220be7a819f-131",
+  "name" : "UnionNPUBasicObservationAndNPUBasicObservation",
+  "title" : "Union of DK Core NPU Basic Observation And DK Core NPU Basic Observation",
+  "status" : "active",
+  "date" : "2024-05-06T14:15:15+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "NPU03011",
+        "display" : "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
+      },
+      {
+        "code" : "NPU27280",
+        "display" : "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
+      },
+      {
+        "code" : "NPU04034",
+        "display" : "Pt(spec.)—Blood; temp. = ? °C"
+      },
+      {
+        "code" : "NPU08676",
+        "display" : "Pt—Body; temp. = ? °C"
+      },
+      {
+        "code" : "NPU58033",
+        "display" : "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
+      },
+      {
+        "code" : "NPU57947",
+        "display" : "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"
+      },
+      {
+        "code" : "NPU58034",
+        "display" : "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
+      },
+      {
+        "code" : "NPU57948",
+        "display" : "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"
+      },
+      {
+        "code" : "NPU21692",
+        "display" : "Heart—Systole; freq. = ? * 1/min"
+      },
+      {
+        "code" : "NPU03794",
+        "display" : "Pt—Body; height = ? m"
+      },
+      {
+        "code" : "NPU03804",
+        "display" : "Pt—Body; mass = ? kg"
+      },
+      {
+        "code" : "NPU27281",
+        "display" : "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
+      }]
+    }]
+  }
+}

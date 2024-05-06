@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "DkCoreProfessionGroupCodes",
       "title" : "DK Profession Group Codes",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "DkCoreDeCPRCodes",
       "title" : "DK Decentralised eCPR Systems",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "GreenlandMunicipalityCodes",
       "title" : "DK Greenland Municipality Codes",
@@ -46,8 +46,8 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
-      "version" : "3.2.0",
-      "status" : "active",
+      "version" : "3.3.0",
+      "status" : "draft",
       "name" : "DKCoreRegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
       "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
@@ -57,7 +57,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "DkMaritalStatus",
       "title" : "DK Marital Statuses",
@@ -68,7 +68,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
-      "version" : "3.2.0",
+      "version" : "3.3.0",
       "status" : "active",
       "name" : "DkRelatedPersonRelationshipCodes",
       "title" : "DK Related Person Relationship Codes",
@@ -99,10 +99,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
+      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
-      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation"
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

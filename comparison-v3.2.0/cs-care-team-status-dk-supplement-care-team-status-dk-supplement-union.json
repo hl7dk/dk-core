@@ -1,0 +1,71 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8d7219ce-3b3b-4616-a0b1-4220be7a819f-14",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8d7219ce-3b3b-4616-a0b1-4220be7a819f-14",
+  "name" : "UnionCareTeamStatusAndCareTeamStatus",
+  "title" : "Union of DK CareTeam Status And DK CareTeam Status",
+  "status" : "active",
+  "date" : "2024-05-06T14:15:15+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "proposed",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Forslag"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "suspended",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Suspenderet"
+    }]
+  },
+  {
+    "code" : "inactive",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Inaktiv"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
+}

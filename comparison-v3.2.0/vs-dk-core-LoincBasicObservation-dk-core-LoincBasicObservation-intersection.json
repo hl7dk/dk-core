@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8d7219ce-3b3b-4616-a0b1-4220be7a819f-126",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8d7219ce-3b3b-4616-a0b1-4220be7a819f-126",
+  "name" : "IntersectionLoincBasicObservationAndLoincBasicObservation",
+  "title" : "Intersection of DK Core LOINC Basic Observations And DK Core LOINC Basic Observations",
+  "status" : "active",
+  "date" : "2024-05-06T14:15:15+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "9279-1",
+        "display" : "Respiratory rate"
+      },
+      {
+        "code" : "8867-4",
+        "display" : "Heart rate"
+      },
+      {
+        "code" : "2708-6",
+        "display" : "Oxygen saturation in Arterial blood"
+      },
+      {
+        "code" : "8310-5",
+        "display" : "Body temperature"
+      },
+      {
+        "code" : "85353-1",
+        "display" : "Vital signs, weight, height, head circumference, oxygen saturation & BMI panel"
+      },
+      {
+        "code" : "8302-2",
+        "display" : "Body height"
+      },
+      {
+        "code" : "9843-4",
+        "display" : "Head Occipital-frontal circumference"
+      },
+      {
+        "code" : "29463-7",
+        "display" : "Body weight"
+      },
+      {
+        "code" : "39156-5",
+        "display" : "Body mass index (BMI) [Ratio]"
+      },
+      {
+        "code" : "85354-9",
+        "display" : "Blood pressure panel with all children optional"
+      },
+      {
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      },
+      {
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      },
+      {
+        "code" : "8478-0",
+        "display" : "Mean blood pressure"
+      },
+      {
+        "code" : "59408-5",
+        "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+      }]
+    }]
+  }
+}
