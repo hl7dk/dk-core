@@ -208,18 +208,18 @@ Id: dk-core-NPUBasicObservation
 Title: "DK Core NPU Basic Observation"
 Description: "NPU codes for Basic Observations usable in Denmark"
 * ^experimental = false
-* $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
-* $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
-* $NPU#NPU04034 "Pt(spec.)—Blood; temp. = ? °C"
-* $NPU#NPU08676 "Pt—Body; temp. = ? °C"
-* $NPU#NPU58033 "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
-* $NPU#NPU57947 "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"
-* $NPU#NPU58034 "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
-* $NPU#NPU57948 "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"
-* $NPU#NPU21692 "Heart—Systole; freq. = ? * 1/min"
-* $NPU#NPU03794 "Pt—Body; height = ? m"
-* $NPU#NPU03804 "Pt—Body; mass = ? kg"
-* $NPU#NPU27281 "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
+* $NPU#NPU03011
+* $NPU#NPU27280
+* $NPU#NPU04034
+* $NPU#NPU08676
+* $NPU#NPU58033
+* $NPU#NPU57947
+* $NPU#NPU58034
+* $NPU#NPU57948
+* $NPU#NPU21692
+* $NPU#NPU03794
+* $NPU#NPU03804
+* $NPU#NPU27281
 
 ValueSet: UCUMBasicUnits
 Id: dk-core-UCUM-BasicUnits

@@ -798,3 +798,28 @@ Description: "DK Related Person Relationship Codes"
   * ^definition = "The player of the role is the primary caretaker of the scoping person."
   * ^designation.language = #da
   * ^designation.value = "Primær omsorgsperson"
+
+
+CodeSystem: NPUSubset
+Id: dk-npu-subset
+Title: "DK NPU Subset"
+Description: "DK NPU Subsetted code system used in DK Core"
+* ^url = $NPU
+* ^experimental = false
+* ^caseSensitive = false
+* ^status = #active
+* ^content = #fragment
+* #NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
+  * ^designation.language = #da
+  * ^designation.value = "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?"
+* #NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
+* #NPU04034 "Pt(spec.)—Blood; temp. = ? °C"
+* #NPU08676 "Pt—Body; temp. = ? °C"
+* #NPU58033 "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
+* #NPU57947 "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"
+* #NPU58034 "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
+* #NPU57948 "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"
+* #NPU21692 "Heart—Systole; freq. = ? * 1/min"
+* #NPU03794 "Pt—Body; height = ? m"
+* #NPU03804 "Pt—Body; mass = ? kg"
+* #NPU27281 "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
