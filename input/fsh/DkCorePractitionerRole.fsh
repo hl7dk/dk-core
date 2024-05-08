@@ -5,8 +5,7 @@ Title: "Danish Core PractitionerRole Profile"
 Description: "HL7 Denmark core profile for health professional roles"
 * organization only Reference(DkCoreOrganization)
 * practitioner only Reference(DkCorePractitioner)
-* location only Reference(DkCoreLocation)
-* 
+* location only Reference(DkCoreLocation) 
 
 
 Instance: AbrahamPractitionerRole
