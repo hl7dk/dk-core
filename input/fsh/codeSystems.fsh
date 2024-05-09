@@ -823,3 +823,304 @@ Description: "DK NPU Subsetted code system used in DK Core"
 * #NPU03794 "Pt—Body; height = ? m"
 * #NPU03804 "Pt—Body; mass = ? kg"
 * #NPU27281 "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
+
+CodeSystem: Npu
+Id: npu
+* ^content = #fragment
+* ^url = "https://www.npu-terminology.org/"
+* ^version = "EN211028"
+* ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
+* #NPU03011 """Hb(Fe; O<sub>2</sub>-bind.; aB)\u2014Oxygen(O<sub>2</sub>); sat. = ?"""
+* #NPU03011 ^designation.language = #da
+* #NPU03011 ^designation.value = """Hb(Fe; O<sub>2</sub>-bind.;aB)\u2014Oxygen(O<sub>2</sub>); mætn. = ?"""
+* #NPU03011 ^property[0].code = #ChangeDate
+* #NPU03011 ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
+* #NPU03011 ^property[+].code = #ChangeComment
+* #NPU03011 ^property[=].valueString = "Name changed"
+* #NPU03011 ^property[+].code = #CreatedDate
+* #NPU03011 ^property[=].valueDateTime = "1996-12-24T00:00:00+01:00"
+* #NPU03011 ^property[+].code = #System
+* #NPU03011 ^property[=].valueString = "Hb"
+* #NPU03011 ^property[+].code = #SysSpec
+* #NPU03011 ^property[=].valueString = "Fe; O<sub>2</sub>-bind.;aB"
+* #NPU03011 ^property[+].code = #Component
+* #NPU03011 ^property[=].valueString = "Oxygen"
+* #NPU03011 ^property[+].code = #CompSpec
+* #NPU03011 ^property[=].valueString = "O<sub>2</sub>"
+* #NPU03011 ^property[+].code = #Kind-of-property
+* #NPU03011 ^property[=].valueString = "sat."
+* #NPU03011 ^property[+].code = #Speciality
+* #NPU03011 ^property[=].valueString = "CLC"
+* #NPU03011 ^property[+].code = #"Code value"
+* #NPU03011 ^property[=].valueString = "3011"
+* #NPU03011 ^property[+].code = #"Scale type"
+* #NPU03011 ^property[=].valueString = "Ratio"
+* #NPU03011 ^property[+].code = #STATUS
+* #NPU03011 ^property[=].valueString = "ACTIVE"
+* #NPU27280 """Hb(Fe; O<sub>2</sub>-bind.; aB)\u2014Oxygen(O<sub>2</sub>); sat.(Pulse oximetry) = ?"""
+* #NPU27280 ^designation.language = #da
+* #NPU27280 ^designation.value = """Hb(Fe; O<sub>2</sub>-bind.;aB)—Oxygen(O<sub>2</sub>); mætn.(pulsoximetri) = ?"""
+* #NPU27280 ^property[0].code = #CreatedDate
+* #NPU27280 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
+* #NPU27280 ^property[+].code = #System
+* #NPU27280 ^property[=].valueString = "Hb"
+* #NPU27280 ^property[+].code = #SysSpec
+* #NPU27280 ^property[=].valueString = "Fe; O<sub>2</sub>-bind.;aB"
+* #NPU27280 ^property[+].code = #Component
+* #NPU27280 ^property[=].valueString = "Oxygen"
+* #NPU27280 ^property[+].code = #CompSpec
+* #NPU27280 ^property[=].valueString = "O<sub>2</sub>"
+* #NPU27280 ^property[+].code = #Kind-of-property
+* #NPU27280 ^property[=].valueString = "sat."
+* #NPU27280 ^property[+].code = #Proc
+* #NPU27280 ^property[=].valueString = "Pulse oximetry"
+* #NPU27280 ^property[+].code = #Speciality
+* #NPU27280 ^property[=].valueString = "CLC"
+* #NPU27280 ^property[+].code = #"Code value"
+* #NPU27280 ^property[=].valueString = "27280"
+* #NPU27280 ^property[+].code = #"Scale type"
+* #NPU27280 ^property[=].valueString = "Ratio"
+* #NPU27280 ^property[+].code = #STATUS
+* #NPU27280 ^property[=].valueString = "ACTIVE"
+* #NPU04034 """Pt(spec.)\u2014Blood; temp. = ? \u00b0C"""
+* #NPU04034 ^designation.language = #da
+* #NPU04034 ^designation.value = """Pt(spec.)—Blod; temp. = ? °C"""
+* #NPU04034 ^property[0].code = #CreatedDate
+* #NPU04034 ^property[=].valueDateTime = "1996-05-08T00:00:00+02:00"
+* #NPU04034 ^property[+].code = #System
+* #NPU04034 ^property[=].valueString = "Pt"
+* #NPU04034 ^property[+].code = #SysSpec
+* #NPU04034 ^property[=].valueString = "spec."
+* #NPU04034 ^property[+].code = #Component
+* #NPU04034 ^property[=].valueString = "Blood"
+* #NPU04034 ^property[+].code = #Kind-of-property
+* #NPU04034 ^property[=].valueString = "temp."
+* #NPU04034 ^property[+].code = #Unit
+* #NPU04034 ^property[=].valueString = "°C"
+* #NPU04034 ^property[+].code = #Speciality
+* #NPU04034 ^property[=].valueString = "CLC"
+* #NPU04034 ^property[+].code = #"Code value"
+* #NPU04034 ^property[=].valueString = "4034"
+* #NPU04034 ^property[+].code = #"Scale type"
+* #NPU04034 ^property[=].valueString = "Differential"
+* #NPU04034 ^property[+].code = #STATUS
+* #NPU04034 ^property[=].valueString = "ACTIVE"
+* #NPU08676 """Pt\u2014Body; temp. = ? \u00b0C"""
+* #NPU08676 ^designation.language = #da
+* #NPU08676 ^designation.value = """Pt—Legeme; temp. = ? °C"""
+* #NPU08676 ^property[0].code = #CreatedDate
+* #NPU08676 ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
+* #NPU08676 ^property[+].code = #System
+* #NPU08676 ^property[=].valueString = "Pt"
+* #NPU08676 ^property[+].code = #Component
+* #NPU08676 ^property[=].valueString = "Body"
+* #NPU08676 ^property[+].code = #Kind-of-property
+* #NPU08676 ^property[=].valueString = "temp."
+* #NPU08676 ^property[+].code = #Unit
+* #NPU08676 ^property[=].valueString = "°C"
+* #NPU08676 ^property[+].code = #Speciality
+* #NPU08676 ^property[=].valueString = "CLC"
+* #NPU08676 ^property[+].code = #"Code value"
+* #NPU08676 ^property[=].valueString = "8676"
+* #NPU08676 ^property[+].code = #"Scale type"
+* #NPU08676 ^property[=].valueString = "Differential"
+* #NPU08676 ^property[+].code = #STATUS
+* #NPU08676 ^property[=].valueString = "ACTIVE"
+* #NPU58033 """Artery(spec.)\u2014Blood pressure(systolic); pr.(proc.) = ? mmHg"""
+* #NPU58033 ^designation.language = #da
+* #NPU58033 ^designation.value = """Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"""
+* #NPU58033 ^property[0].code = #ChangeDate
+* #NPU58033 ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
+* #NPU58033 ^property[+].code = #ChangeComment
+* #NPU58033 ^property[=].valueString = "Specification changed"
+* #NPU58033 ^property[+].code = #CreatedDate
+* #NPU58033 ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
+* #NPU58033 ^property[+].code = #System
+* #NPU58033 ^property[=].valueString = "Artery"
+* #NPU58033 ^property[+].code = #SysSpec
+* #NPU58033 ^property[=].valueString = "spec."
+* #NPU58033 ^property[+].code = #Component
+* #NPU58033 ^property[=].valueString = "Blood pressure"
+* #NPU58033 ^property[+].code = #CompSpec
+* #NPU58033 ^property[=].valueString = "systolic"
+* #NPU58033 ^property[+].code = #Kind-of-property
+* #NPU58033 ^property[=].valueString = "pr."
+* #NPU58033 ^property[+].code = #Proc
+* #NPU58033 ^property[=].valueString = "proc."
+* #NPU58033 ^property[+].code = #Unit
+* #NPU58033 ^property[=].valueString = "mmHg"
+* #NPU58033 ^property[+].code = #Speciality
+* #NPU58033 ^property[=].valueString = "CLC"
+* #NPU58033 ^property[+].code = #"Code value"
+* #NPU58033 ^property[=].valueString = "58033"
+* #NPU58033 ^property[+].code = #"Scale type"
+* #NPU58033 ^property[=].valueString = "Ratio"
+* #NPU58033 ^property[+].code = #STATUS
+* #NPU58033 ^property[=].valueString = "ACTIVE"
+* #NPU57947 """Artery(spec.)\u2014Blood; pr.(systolic; proc.) = ? mmHg"""
+* #NPU57947 ^designation.language = #da
+* #NPU57947 ^designation.value = """Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg"""
+* #NPU57947 ^property[0].code = #CreatedDate
+* #NPU57947 ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
+* #NPU57947 ^property[+].code = #System
+* #NPU57947 ^property[=].valueString = "Artery"
+* #NPU57947 ^property[+].code = #SysSpec
+* #NPU57947 ^property[=].valueString = "spec."
+* #NPU57947 ^property[+].code = #Component
+* #NPU57947 ^property[=].valueString = "Blood"
+* #NPU57947 ^property[+].code = #Kind-of-property
+* #NPU57947 ^property[=].valueString = "pr."
+* #NPU57947 ^property[+].code = #Proc
+* #NPU57947 ^property[=].valueString = "systolic;proc."
+* #NPU57947 ^property[+].code = #Unit
+* #NPU57947 ^property[=].valueString = "mmHg"
+* #NPU57947 ^property[+].code = #Speciality
+* #NPU57947 ^property[=].valueString = "CLC"
+* #NPU57947 ^property[+].code = #"Code value"
+* #NPU57947 ^property[=].valueString = "57947"
+* #NPU57947 ^property[+].code = #"Scale type"
+* #NPU57947 ^property[=].valueString = "Ratio"
+* #NPU57947 ^property[+].code = #STATUS
+* #NPU57947 ^property[=].valueString = "ACTIVE"
+* #NPU58034 """Artery(spec.)\u2014Blood pressure(diastolic); pr.(proc.) = ? mmHg"""
+* #NPU58034 ^designation.language = #da
+* #NPU58034 ^designation.value = """Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg"""
+* #NPU58034 ^property[0].code = #CreatedDate
+* #NPU58034 ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
+* #NPU58034 ^property[+].code = #System
+* #NPU58034 ^property[=].valueString = "Artery"
+* #NPU58034 ^property[+].code = #SysSpec
+* #NPU58034 ^property[=].valueString = "spec."
+* #NPU58034 ^property[+].code = #Component
+* #NPU58034 ^property[=].valueString = "Blood pressure"
+* #NPU58034 ^property[+].code = #CompSpec
+* #NPU58034 ^property[=].valueString = "diastolic"
+* #NPU58034 ^property[+].code = #Kind-of-property
+* #NPU58034 ^property[=].valueString = "pr."
+* #NPU58034 ^property[+].code = #Proc
+* #NPU58034 ^property[=].valueString = "proc."
+* #NPU58034 ^property[+].code = #Unit
+* #NPU58034 ^property[=].valueString = "mmHg"
+* #NPU58034 ^property[+].code = #Speciality
+* #NPU58034 ^property[=].valueString = "CLC"
+* #NPU58034 ^property[+].code = #"Code value"
+* #NPU58034 ^property[=].valueString = "58034"
+* #NPU58034 ^property[+].code = #"Scale type"
+* #NPU58034 ^property[=].valueString = "Ratio"
+* #NPU58034 ^property[+].code = #STATUS
+* #NPU58034 ^property[=].valueString = "ACTIVE"
+* #NPU57948 """Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"""
+* #NPU58034 ^designation.language = #da
+* #NPU58034 ^designation.value = """Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"""
+* #NPU57948 ^property[0].code = #CreatedDate
+* #NPU57948 ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
+* #NPU57948 ^property[+].code = #System
+* #NPU57948 ^property[=].valueString = "Artery"
+* #NPU57948 ^property[+].code = #SysSpec
+* #NPU57948 ^property[=].valueString = "spec."
+* #NPU57948 ^property[+].code = #Component
+* #NPU57948 ^property[=].valueString = "Blood"
+* #NPU57948 ^property[+].code = #Kind-of-property
+* #NPU57948 ^property[=].valueString = "pr."
+* #NPU57948 ^property[+].code = #Proc
+* #NPU57948 ^property[=].valueString = "diastolic;proc."
+* #NPU57948 ^property[+].code = #Unit
+* #NPU57948 ^property[=].valueString = "mmHg"
+* #NPU57948 ^property[+].code = #Speciality
+* #NPU57948 ^property[=].valueString = "CLC"
+* #NPU57948 ^property[+].code = #"Code value"
+* #NPU57948 ^property[=].valueString = "57948"
+* #NPU57948 ^property[+].code = #"Scale type"
+* #NPU57948 ^property[=].valueString = "Ratio"
+* #NPU57948 ^property[+].code = #STATUS
+* #NPU57948 ^property[=].valueString = "ACTIVE"
+* #NPU21692 """Heart\u2014Systole; frequency = ? \u00d7 1/min"""
+* #NPU21692 ^designation.language = #da
+* #NPU21692 ^designation.value = """Hjerte—Systole; frekv. = ? × 1/min"""
+* #NPU21692 ^property[0].code = #CreatedDate
+* #NPU21692 ^property[=].valueDateTime = "2004-09-29T00:00:00+02:00"
+* #NPU21692 ^property[+].code = #System
+* #NPU21692 ^property[=].valueString = "Heart"
+* #NPU21692 ^property[+].code = #Component
+* #NPU21692 ^property[=].valueString = "Systole"
+* #NPU21692 ^property[+].code = #Kind-of-property
+* #NPU21692 ^property[=].valueString = "frequency"
+* #NPU21692 ^property[+].code = #Unit
+* #NPU21692 ^property[=].valueString = "× 1/min"
+* #NPU21692 ^property[+].code = #Speciality
+* #NPU21692 ^property[=].valueString = "FUN"
+* #NPU21692 ^property[+].code = #"Code value"
+* #NPU21692 ^property[=].valueString = "21692"
+* #NPU21692 ^property[+].code = #"Scale type"
+* #NPU21692 ^property[=].valueString = "Ratio"
+* #NPU21692 ^property[+].code = #STATUS
+* #NPU21692 ^property[=].valueString = "ACTIVE"
+* #NPU03794 """Pt\u2014Body; height = ? m"""
+* #NPU03794 ^designation.language = #da
+* #NPU03794 ^designation.value = """Pt—Legeme; højde = ? m"""
+* #NPU03794 ^property[0].code = #CreatedDate
+* #NPU03794 ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
+* #NPU03794 ^property[+].code = #System
+* #NPU03794 ^property[=].valueString = "Pt"
+* #NPU03794 ^property[+].code = #Component
+* #NPU03794 ^property[=].valueString = "Body"
+* #NPU03794 ^property[+].code = #Kind-of-property
+* #NPU03794 ^property[=].valueString = "height"
+* #NPU03794 ^property[+].code = #Unit
+* #NPU03794 ^property[=].valueString = "m"
+* #NPU03794 ^property[+].code = #Speciality
+* #NPU03794 ^property[=].valueString = "CLC"
+* #NPU03794 ^property[+].code = #"Code value"
+* #NPU03794 ^property[=].valueString = "3794"
+* #NPU03794 ^property[+].code = #"Scale type"
+* #NPU03794 ^property[=].valueString = "Ratio"
+* #NPU03794 ^property[+].code = #STATUS
+* #NPU03794 ^property[=].valueString = "ACTIVE"
+* #NPU03804 """Pt\u2014Body; mass = ? kg"""
+* #NPU03804 ^designation.language = #da
+* #NPU03804 ^designation.value = """Pt—Legeme; masse = ? kg"""
+* #NPU03804 ^property[0].code = #CreatedDate
+* #NPU03804 ^property[=].valueDateTime = "1996-01-01T00:00:00+01:00"
+* #NPU03804 ^property[+].code = #System
+* #NPU03804 ^property[=].valueString = "Pt"
+* #NPU03804 ^property[+].code = #Component
+* #NPU03804 ^property[=].valueString = "Body"
+* #NPU03804 ^property[+].code = #Kind-of-property
+* #NPU03804 ^property[=].valueString = "mass"
+* #NPU03804 ^property[+].code = #Unit
+* #NPU03804 ^property[=].valueString = "kg"
+* #NPU03804 ^property[+].code = #Speciality
+* #NPU03804 ^property[=].valueString = "CLC"
+* #NPU03804 ^property[+].code = #"Code value"
+* #NPU03804 ^property[=].valueString = "3804"
+* #NPU03804 ^property[+].code = #"Scale type"
+* #NPU03804 ^property[=].valueString = "Ratio"
+* #NPU03804 ^property[+].code = #STATUS
+* #NPU03804 ^property[=].valueString = "ACTIVE"
+* #NPU27281 """Pt\u2014Body; mass coefficient(mass/squared height) = ? kg/m\u00b2"""
+* #NPU27281 ^designation.language = #da
+* #NPU27281 ^designation.value = """Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"""
+* #NPU27281 ^property[0].code = #ChangeDate
+* #NPU27281 ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
+* #NPU27281 ^property[+].code = #ChangeComment
+* #NPU27281 ^property[=].valueString = "Unit defined"
+* #NPU27281 ^property[+].code = #CreatedDate
+* #NPU27281 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
+* #NPU27281 ^property[+].code = #System
+* #NPU27281 ^property[=].valueString = "Pt"
+* #NPU27281 ^property[+].code = #Component
+* #NPU27281 ^property[=].valueString = "Body"
+* #NPU27281 ^property[+].code = #Kind-of-property
+* #NPU27281 ^property[=].valueString = "mass coefficient"
+* #NPU27281 ^property[+].code = #Proc
+* #NPU27281 ^property[=].valueString = "mass/squared height"
+* #NPU27281 ^property[+].code = #Unit
+* #NPU27281 ^property[=].valueString = "kg/m²"
+* #NPU27281 ^property[+].code = #Speciality
+* #NPU27281 ^property[=].valueString = "CLC"
+* #NPU27281 ^property[+].code = #"Code value"
+* #NPU27281 ^property[=].valueString = "27281"
+* #NPU27281 ^property[+].code = #"Scale type"
+* #NPU27281 ^property[=].valueString = "Ratio"
+* #NPU27281 ^property[+].code = #STATUS
+* #NPU27281 ^property[=].valueString = "ACTIVE"
