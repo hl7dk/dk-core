@@ -816,7 +816,7 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU03011 ^designation.value = "Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"
 * #NPU03011 ^property[0].code = #ChangeDate
 * #NPU03011 ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
-* #NPU03011 ^property[+].code = #ChangeComment
+* #NPU03011 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
 * #NPU03011 ^property[=].valueString = "Name changed"
 * #NPU03011 ^property[+].code = #CreatedDate
 * #NPU03011 ^property[=].valueDateTime = "1996-12-24T00:00:00+01:00"
@@ -912,7 +912,7 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU58033 ^designation.value = "Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"
 * #NPU58033 ^property[0].code = #ChangeDate
 * #NPU58033 ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
-* #NPU58033 ^property[+].code = #ChangeComment
+* #NPU58033 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
 * #NPU58033 ^property[=].valueString = "Specification changed"
 * #NPU58033 ^property[+].code = #CreatedDate
 * #NPU58033 ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
@@ -1083,7 +1083,7 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU27281 ^designation.value = "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
 * #NPU27281 ^property[0].code = #ChangeDate
 * #NPU27281 ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
-* #NPU27281 ^property[+].code = #ChangeComment
+* #NPU27281 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
 * #NPU27281 ^property[=].valueString = "Unit defined"
 * #NPU27281 ^property[+].code = #CreatedDate
 * #NPU27281 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
