@@ -800,39 +800,20 @@ Description: "DK Related Person Relationship Codes"
   * ^designation.value = "Primær omsorgsperson"
 
 
-CodeSystem: NPUSubset
-Id: dk-npu-subset
+CodeSystem: NPU
+Id: dk-npu-fragment
 Title: "DK NPU Subset"
-Description: "DK NPU Subsetted code system used in DK Core"
-* ^url = $NPU
+Description: "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"
+* ^content = #fragment
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = false
-* ^status = #active
-* ^content = #fragment
-* #NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
-  * ^designation.language = #da
-  * ^designation.value = "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?"
-* #NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
-* #NPU04034 "Pt(spec.)—Blood; temp. = ? °C"
-* #NPU08676 "Pt—Body; temp. = ? °C"
-* #NPU58033 "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
-* #NPU57947 "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"
-* #NPU58034 "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
-* #NPU57948 "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"
-* #NPU21692 "Heart—Systole; freq. = ? * 1/min"
-* #NPU03794 "Pt—Body; height = ? m"
-* #NPU03804 "Pt—Body; mass = ? kg"
-* #NPU27281 "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
-
-CodeSystem: Npu
-Id: npu
-* ^content = #fragment
-* ^url = "https://www.npu-terminology.org/"
+* ^url = $NPU
 * ^version = "EN211028"
 * ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
-* #NPU03011 """Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"""
+* #NPU03011 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"
 * #NPU03011 ^designation.language = #da
-* #NPU03011 ^designation.value = """Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"""
+* #NPU03011 ^designation.value = "Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"
 * #NPU03011 ^property[0].code = #ChangeDate
 * #NPU03011 ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
 * #NPU03011 ^property[+].code = #ChangeComment
@@ -857,9 +838,9 @@ Id: npu
 * #NPU03011 ^property[=].valueString = "Ratio"
 * #NPU03011 ^property[+].code = #STATUS
 * #NPU03011 ^property[=].valueString = "ACTIVE"
-* #NPU27280 """Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat.(Pulse oximetry) = ?"""
+* #NPU27280 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat.(Pulse oximetry) = ?"
 * #NPU27280 ^designation.language = #da
-* #NPU27280 ^designation.value = """Hb(Fe; O\u2082-bind.;aB)—Oxygen(O\u2082); mætn.(pulsoximetri) = ?"""
+* #NPU27280 ^designation.value = "Hb(Fe; O\u2082-bind.;aB)—Oxygen(O\u2082); mætn.(pulsoximetri) = ?"
 * #NPU27280 ^property[0].code = #CreatedDate
 * #NPU27280 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
 * #NPU27280 ^property[+].code = #System
@@ -882,9 +863,9 @@ Id: npu
 * #NPU27280 ^property[=].valueString = "Ratio"
 * #NPU27280 ^property[+].code = #STATUS
 * #NPU27280 ^property[=].valueString = "ACTIVE"
-* #NPU04034 """Pt(spec.)\u2014Blood; temp. = ? \u00b0C"""
+* #NPU04034 "Pt(spec.)\u2014Blood; temp. = ? \u00b0C"
 * #NPU04034 ^designation.language = #da
-* #NPU04034 ^designation.value = """Pt(spec.)—Blod; temp. = ? °C"""
+* #NPU04034 ^designation.value = "Pt(spec.)—Blod; temp. = ? °C"
 * #NPU04034 ^property[0].code = #CreatedDate
 * #NPU04034 ^property[=].valueDateTime = "1996-05-08T00:00:00+02:00"
 * #NPU04034 ^property[+].code = #System
@@ -905,9 +886,9 @@ Id: npu
 * #NPU04034 ^property[=].valueString = "Differential"
 * #NPU04034 ^property[+].code = #STATUS
 * #NPU04034 ^property[=].valueString = "ACTIVE"
-* #NPU08676 """Pt\u2014Body; temp. = ? \u00b0C"""
+* #NPU08676 "Pt\u2014Body; temp. = ? \u00b0C"
 * #NPU08676 ^designation.language = #da
-* #NPU08676 ^designation.value = """Pt—Legeme; temp. = ? °C"""
+* #NPU08676 ^designation.value = "Pt—Legeme; temp. = ? °C"
 * #NPU08676 ^property[0].code = #CreatedDate
 * #NPU08676 ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
 * #NPU08676 ^property[+].code = #System
@@ -926,9 +907,9 @@ Id: npu
 * #NPU08676 ^property[=].valueString = "Differential"
 * #NPU08676 ^property[+].code = #STATUS
 * #NPU08676 ^property[=].valueString = "ACTIVE"
-* #NPU58033 """Artery(spec.)\u2014Blood pressure(systolic); pr.(proc.) = ? mmHg"""
+* #NPU58033 "Artery(spec.)\u2014Blood pressure(systolic); pr.(proc.) = ? mmHg"
 * #NPU58033 ^designation.language = #da
-* #NPU58033 ^designation.value = """Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"""
+* #NPU58033 ^designation.value = "Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"
 * #NPU58033 ^property[0].code = #ChangeDate
 * #NPU58033 ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
 * #NPU58033 ^property[+].code = #ChangeComment
@@ -957,9 +938,9 @@ Id: npu
 * #NPU58033 ^property[=].valueString = "Ratio"
 * #NPU58033 ^property[+].code = #STATUS
 * #NPU58033 ^property[=].valueString = "ACTIVE"
-* #NPU57947 """Artery(spec.)\u2014Blood; pr.(systolic; proc.) = ? mmHg"""
+* #NPU57947 "Artery(spec.)\u2014Blood; pr.(systolic; proc.) = ? mmHg"
 * #NPU57947 ^designation.language = #da
-* #NPU57947 ^designation.value = """Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg"""
+* #NPU57947 ^designation.value = "Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg"
 * #NPU57947 ^property[0].code = #CreatedDate
 * #NPU57947 ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
 * #NPU57947 ^property[+].code = #System
@@ -982,9 +963,9 @@ Id: npu
 * #NPU57947 ^property[=].valueString = "Ratio"
 * #NPU57947 ^property[+].code = #STATUS
 * #NPU57947 ^property[=].valueString = "ACTIVE"
-* #NPU58034 """Artery(spec.)\u2014Blood pressure(diastolic); pr.(proc.) = ? mmHg"""
+* #NPU58034 "Artery(spec.)\u2014Blood pressure(diastolic); pr.(proc.) = ? mmHg"
 * #NPU58034 ^designation.language = #da
-* #NPU58034 ^designation.value = """Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg"""
+* #NPU58034 ^designation.value = "Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg"
 * #NPU58034 ^property[0].code = #CreatedDate
 * #NPU58034 ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
 * #NPU58034 ^property[+].code = #System
@@ -1009,9 +990,9 @@ Id: npu
 * #NPU58034 ^property[=].valueString = "Ratio"
 * #NPU58034 ^property[+].code = #STATUS
 * #NPU58034 ^property[=].valueString = "ACTIVE"
-* #NPU57948 """Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"""
+* #NPU57948 "Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"
 * #NPU57948 ^designation.language = #da
-* #NPU57948 ^designation.value = """Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"""
+* #NPU57948 ^designation.value = "Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"
 * #NPU57948 ^property[0].code = #CreatedDate
 * #NPU57948 ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
 * #NPU57948 ^property[+].code = #System
@@ -1034,9 +1015,9 @@ Id: npu
 * #NPU57948 ^property[=].valueString = "Ratio"
 * #NPU57948 ^property[+].code = #STATUS
 * #NPU57948 ^property[=].valueString = "ACTIVE"
-* #NPU21692 """Heart\u2014Systole; frequency = ? \u00d7 1/min"""
+* #NPU21692 "Heart\u2014Systole; frequency = ? \u00d7 1/min"
 * #NPU21692 ^designation.language = #da
-* #NPU21692 ^designation.value = """Hjerte—Systole; frekv. = ? × 1/min"""
+* #NPU21692 ^designation.value = "Hjerte—Systole; frekv. = ? × 1/min"
 * #NPU21692 ^property[0].code = #CreatedDate
 * #NPU21692 ^property[=].valueDateTime = "2004-09-29T00:00:00+02:00"
 * #NPU21692 ^property[+].code = #System
@@ -1055,9 +1036,9 @@ Id: npu
 * #NPU21692 ^property[=].valueString = "Ratio"
 * #NPU21692 ^property[+].code = #STATUS
 * #NPU21692 ^property[=].valueString = "ACTIVE"
-* #NPU03794 """Pt\u2014Body; height = ? m"""
+* #NPU03794 "Pt\u2014Body; height = ? m"
 * #NPU03794 ^designation.language = #da
-* #NPU03794 ^designation.value = """Pt—Legeme; højde = ? m"""
+* #NPU03794 ^designation.value = "Pt—Legeme; højde = ? m"
 * #NPU03794 ^property[0].code = #CreatedDate
 * #NPU03794 ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
 * #NPU03794 ^property[+].code = #System
@@ -1076,9 +1057,9 @@ Id: npu
 * #NPU03794 ^property[=].valueString = "Ratio"
 * #NPU03794 ^property[+].code = #STATUS
 * #NPU03794 ^property[=].valueString = "ACTIVE"
-* #NPU03804 """Pt\u2014Body; mass = ? kg"""
+* #NPU03804 "Pt\u2014Body; mass = ? kg"
 * #NPU03804 ^designation.language = #da
-* #NPU03804 ^designation.value = """Pt—Legeme; masse = ? kg"""
+* #NPU03804 ^designation.value = "Pt—Legeme; masse = ? kg"
 * #NPU03804 ^property[0].code = #CreatedDate
 * #NPU03804 ^property[=].valueDateTime = "1996-01-01T00:00:00+01:00"
 * #NPU03804 ^property[+].code = #System
@@ -1097,9 +1078,9 @@ Id: npu
 * #NPU03804 ^property[=].valueString = "Ratio"
 * #NPU03804 ^property[+].code = #STATUS
 * #NPU03804 ^property[=].valueString = "ACTIVE"
-* #NPU27281 """Pt\u2014Body; mass coefficient(mass/squared height) = ? kg/m\u00b2"""
+* #NPU27281 "Pt\u2014Body; mass coefficient(mass/squared height) = ? kg/m\u00b2"
 * #NPU27281 ^designation.language = #da
-* #NPU27281 ^designation.value = """Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"""
+* #NPU27281 ^designation.value = "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
 * #NPU27281 ^property[0].code = #ChangeDate
 * #NPU27281 ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
 * #NPU27281 ^property[+].code = #ChangeComment
