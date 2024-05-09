@@ -830,9 +830,9 @@ Id: npu
 * ^url = "https://www.npu-terminology.org/"
 * ^version = "EN211028"
 * ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
-* #NPU03011 """Hb(Fe; O<sub>2</sub>-bind.; aB)\u2014Oxygen(O<sub>2</sub>); sat. = ?"""
+* #NPU03011 """Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"""
 * #NPU03011 ^designation.language = #da
-* #NPU03011 ^designation.value = """Hb(Fe; O<sub>2</sub>-bind.;aB)\u2014Oxygen(O<sub>2</sub>); mætn. = ?"""
+* #NPU03011 ^designation.value = """Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"""
 * #NPU03011 ^property[0].code = #ChangeDate
 * #NPU03011 ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
 * #NPU03011 ^property[+].code = #ChangeComment
@@ -842,11 +842,11 @@ Id: npu
 * #NPU03011 ^property[+].code = #System
 * #NPU03011 ^property[=].valueString = "Hb"
 * #NPU03011 ^property[+].code = #SysSpec
-* #NPU03011 ^property[=].valueString = "Fe; O<sub>2</sub>-bind.;aB"
+* #NPU03011 ^property[=].valueString = "Fe; O\u2082-bind.;aB"
 * #NPU03011 ^property[+].code = #Component
 * #NPU03011 ^property[=].valueString = "Oxygen"
 * #NPU03011 ^property[+].code = #CompSpec
-* #NPU03011 ^property[=].valueString = "O<sub>2</sub>"
+* #NPU03011 ^property[=].valueString = "O\u2082"
 * #NPU03011 ^property[+].code = #Kind-of-property
 * #NPU03011 ^property[=].valueString = "sat."
 * #NPU03011 ^property[+].code = #Speciality
@@ -857,19 +857,19 @@ Id: npu
 * #NPU03011 ^property[=].valueString = "Ratio"
 * #NPU03011 ^property[+].code = #STATUS
 * #NPU03011 ^property[=].valueString = "ACTIVE"
-* #NPU27280 """Hb(Fe; O<sub>2</sub>-bind.; aB)\u2014Oxygen(O<sub>2</sub>); sat.(Pulse oximetry) = ?"""
+* #NPU27280 """Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat.(Pulse oximetry) = ?"""
 * #NPU27280 ^designation.language = #da
-* #NPU27280 ^designation.value = """Hb(Fe; O<sub>2</sub>-bind.;aB)—Oxygen(O<sub>2</sub>); mætn.(pulsoximetri) = ?"""
+* #NPU27280 ^designation.value = """Hb(Fe; O\u2082-bind.;aB)—Oxygen(O\u2082); mætn.(pulsoximetri) = ?"""
 * #NPU27280 ^property[0].code = #CreatedDate
 * #NPU27280 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
 * #NPU27280 ^property[+].code = #System
 * #NPU27280 ^property[=].valueString = "Hb"
 * #NPU27280 ^property[+].code = #SysSpec
-* #NPU27280 ^property[=].valueString = "Fe; O<sub>2</sub>-bind.;aB"
+* #NPU27280 ^property[=].valueString = "Fe; O\u2082-bind.;aB"
 * #NPU27280 ^property[+].code = #Component
 * #NPU27280 ^property[=].valueString = "Oxygen"
 * #NPU27280 ^property[+].code = #CompSpec
-* #NPU27280 ^property[=].valueString = "O<sub>2</sub>"
+* #NPU27280 ^property[=].valueString = "O\u2082"
 * #NPU27280 ^property[+].code = #Kind-of-property
 * #NPU27280 ^property[=].valueString = "sat."
 * #NPU27280 ^property[+].code = #Proc
@@ -1010,8 +1010,8 @@ Id: npu
 * #NPU58034 ^property[+].code = #STATUS
 * #NPU58034 ^property[=].valueString = "ACTIVE"
 * #NPU57948 """Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"""
-* #NPU58034 ^designation.language = #da
-* #NPU58034 ^designation.value = """Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"""
+* #NPU57948 ^designation.language = #da
+* #NPU57948 ^designation.value = """Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"""
 * #NPU57948 ^property[0].code = #CreatedDate
 * #NPU57948 ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
 * #NPU57948 ^property[+].code = #System
