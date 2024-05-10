@@ -1,4 +1,4 @@
-Alias: $sct = http://snomed.info/sct
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/554471000005108 // Danish version - append e.g. /version/20240331 to get a more specific version 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
