@@ -799,7 +799,6 @@ Description: "DK Related Person Relationship Codes"
   * ^designation.language = #da
   * ^designation.value = "Primær omsorgsperson"
 
-
 CodeSystem: NPU
 Id: dk-npu-fragment
 Title: "DK NPU Subset"
@@ -811,13 +810,33 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * ^url = $NPU
 * ^version = "EN211028"
 * ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
+
+* ^property[0].uri = "http://hl7.org/fhir/concept-properties#comment"
+* ^property[=].type = #string
+* ^property[=].description = "A string that provides additional detail pertinent to the use or understanding of the concept"
+* ^property[=].code = #comment
+
+* ^property[+].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
+* ^property[=].type = #dateTime
+* ^property[=].description = "The date at which the concept status was last changed"
+* ^property[=].code = #effectiveDate
+
+* ^property[+].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[=].type = #code
+* ^property[=].description = "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"
+* ^property[=].code = #status
+
+* ^property[+].uri = "http://hl7.org/fhir/concept-properties#inactive"
+* ^property[=].type = #boolean
+* ^property[=].description = "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"
+* ^property[=].code = #inactive
+
+
 * #NPU03011 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"
 * #NPU03011 ^designation.language = #da
 * #NPU03011 ^designation.value = "Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"
 * #NPU03011 ^property[0].code = #ChangeDate
 * #NPU03011 ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
-* #NPU03011 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
-* #NPU03011 ^property[=].valueString = "Name changed"
 * #NPU03011 ^property[+].code = #CreatedDate
 * #NPU03011 ^property[=].valueDateTime = "1996-12-24T00:00:00+01:00"
 * #NPU03011 ^property[+].code = #System
@@ -838,6 +857,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU03011 ^property[=].valueString = "Ratio"
 * #NPU03011 ^property[+].code = #STATUS
 * #NPU03011 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU27280 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat.(Pulse oximetry) = ?"
 * #NPU27280 ^designation.language = #da
 * #NPU27280 ^designation.value = "Hb(Fe; O\u2082-bind.;aB)—Oxygen(O\u2082); mætn.(pulsoximetri) = ?"
@@ -863,6 +888,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU27280 ^property[=].valueString = "Ratio"
 * #NPU27280 ^property[+].code = #STATUS
 * #NPU27280 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU04034 "Pt(spec.)\u2014Blood; temp. = ? \u00b0C"
 * #NPU04034 ^designation.language = #da
 * #NPU04034 ^designation.value = "Pt(spec.)—Blod; temp. = ? °C"
@@ -886,6 +917,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU04034 ^property[=].valueString = "Differential"
 * #NPU04034 ^property[+].code = #STATUS
 * #NPU04034 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "1996-05-08T00:00:00+02:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU08676 "Pt\u2014Body; temp. = ? \u00b0C"
 * #NPU08676 ^designation.language = #da
 * #NPU08676 ^designation.value = "Pt—Legeme; temp. = ? °C"
@@ -907,13 +944,17 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU08676 ^property[=].valueString = "Differential"
 * #NPU08676 ^property[+].code = #STATUS
 * #NPU08676 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU58033 "Artery(spec.)\u2014Blood pressure(systolic); pr.(proc.) = ? mmHg"
 * #NPU58033 ^designation.language = #da
 * #NPU58033 ^designation.value = "Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"
 * #NPU58033 ^property[0].code = #ChangeDate
 * #NPU58033 ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
-* #NPU58033 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
-* #NPU58033 ^property[=].valueString = "Specification changed"
 * #NPU58033 ^property[+].code = #CreatedDate
 * #NPU58033 ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
 * #NPU58033 ^property[+].code = #System
@@ -938,6 +979,14 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU58033 ^property[=].valueString = "Ratio"
 * #NPU58033 ^property[+].code = #STATUS
 * #NPU58033 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueCoding = #deprecated
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Specification changed"
+  * ^property[+].code = #inactive
+  * ^property[=].valueBoolean = true
 * #NPU57947 "Artery(spec.)\u2014Blood; pr.(systolic; proc.) = ? mmHg"
 * #NPU57947 ^designation.language = #da
 * #NPU57947 ^designation.value = "Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg"
@@ -963,6 +1012,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU57947 ^property[=].valueString = "Ratio"
 * #NPU57947 ^property[+].code = #STATUS
 * #NPU57947 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU58034 "Artery(spec.)\u2014Blood pressure(diastolic); pr.(proc.) = ? mmHg"
 * #NPU58034 ^designation.language = #da
 * #NPU58034 ^designation.value = "Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg"
@@ -990,6 +1045,14 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU58034 ^property[=].valueString = "Ratio"
 * #NPU58034 ^property[+].code = #STATUS
 * #NPU58034 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueCoding = #deprecated
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Specification changed"
+  * ^property[+].code = #inactive
+  * ^property[=].valueBoolean = true
 * #NPU57948 "Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"
 * #NPU57948 ^designation.language = #da
 * #NPU57948 ^designation.value = "Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"
@@ -1015,6 +1078,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU57948 ^property[=].valueString = "Ratio"
 * #NPU57948 ^property[+].code = #STATUS
 * #NPU57948 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU21692 "Heart\u2014Systole; frequency = ? \u00d7 1/min"
 * #NPU21692 ^designation.language = #da
 * #NPU21692 ^designation.value = "Hjerte—Systole; frekv. = ? × 1/min"
@@ -1036,6 +1105,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU21692 ^property[=].valueString = "Ratio"
 * #NPU21692 ^property[+].code = #STATUS
 * #NPU21692 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2004-09-29T00:00:00+02:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU03794 "Pt\u2014Body; height = ? m"
 * #NPU03794 ^designation.language = #da
 * #NPU03794 ^designation.value = "Pt—Legeme; højde = ? m"
@@ -1057,6 +1132,12 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU03794 ^property[=].valueString = "Ratio"
 * #NPU03794 ^property[+].code = #STATUS
 * #NPU03794 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU03804 "Pt\u2014Body; mass = ? kg"
 * #NPU03804 ^designation.language = #da
 * #NPU03804 ^designation.value = "Pt—Legeme; masse = ? kg"
@@ -1078,13 +1159,17 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU03804 ^property[=].valueString = "Ratio"
 * #NPU03804 ^property[+].code = #STATUS
 * #NPU03804 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "1996-01-01T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
 * #NPU27281 "Pt\u2014Body; mass coefficient(mass/squared height) = ? kg/m\u00b2"
 * #NPU27281 ^designation.language = #da
 * #NPU27281 ^designation.value = "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
 * #NPU27281 ^property[0].code = #ChangeDate
 * #NPU27281 ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
-* #NPU27281 ^property[+].code = http://hl7.org/fhir/concept-properties#comment
-* #NPU27281 ^property[=].valueString = "Unit defined"
 * #NPU27281 ^property[+].code = #CreatedDate
 * #NPU27281 ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
 * #NPU27281 ^property[+].code = #System
@@ -1105,3 +1190,9 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * #NPU27281 ^property[=].valueString = "Ratio"
 * #NPU27281 ^property[+].code = #STATUS
 * #NPU27281 ^property[=].valueString = "ACTIVE"
+  * ^property[+].code = #effectiveDate
+  * ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
+  * ^property[+].code = #status
+  * ^property[=].valueBoolean = true
+  * ^property[+].code = #comment
+  * ^property[=].valueString = "Unit defined"
