@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2024-05-06T14:14:33+00:00"/>
+  <date value="2024-05-10T08:40:47+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -87,14 +87,6 @@
       </extension>
       <extension url="value">
         <valueString value="{last}"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="urn:oid:1.2.208.176.2.1"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -346,14 +338,6 @@
       </extension>
       <extension url="value">
         <valueString value="{last}"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="urn:oid:1.2.208.176.2.1"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -715,6 +699,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-location"/>
+      </reference>
+      <name value="Danish Core Location Profile"/>
+      <description value="HL7 Denmark core profile for locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -766,6 +761,17 @@
       </reference>
       <name value="Danish Core Practitioner Profile"/>
       <description value="HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-practitioner-role"/>
+      </reference>
+      <name value="Danish Core PractitionerRole Profile"/>
+      <description value="HL7 Denmark core profile for health professional roles"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1030,6 +1036,17 @@
       </reference>
       <name value="DK Municipality Codes"/>
       <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-npu-fragment"/>
+      </reference>
+      <name value="DK NPU Subset"/>
+      <description value="DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1506,6 +1523,17 @@
       <name value="LaegerneHasserisBymidte"/>
       <description value="Praktisernede læge i Hasseris, som defineret af SOR"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/AbrahamPractitionerRole"/>
+      </reference>
+      <name value="Licensed physician in primary care"/>
+      <description value="This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
