@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElseBodyTemperature\"> </a><a name=\"hcElseBodyTemperature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;ElseBodyTemperature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8310-5; <a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#276885007)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: 38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#272391002)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ElseBodyTemperature\"> </a><a name=\"hcElseBodyTemperature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;ElseBodyTemperature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8310-5; <a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT[DK]</a>#276885007)</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Patient/else</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner/SidselSygeplejerske</a> &quot; ANDERSEN&quot;</p><p><b>value</b>: 38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>method</b>: Measurement technique (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT[DK]</a>#272391002)</span></p></div>"
   },
   "status" : "final",
   "category" : [{
@@ -22,6 +22,7 @@
     },
     {
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/554471000005108",
       "code" : "276885007"
     }]
   },
@@ -41,6 +42,7 @@
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/554471000005108",
       "code" : "272391002",
       "display" : "Measurement technique (qualifier value)"
     }]

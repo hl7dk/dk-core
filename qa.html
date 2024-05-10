@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 140, warn = 68, info = 111-->
+<!-- broken links = 0, errors = 142, warn = 69, info = 111-->
 <head>
   <title>DKCore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DKCore</h1>
- <p>Generated Fri May 10 08:44:38 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri May 10 19:16:32 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.7</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.dk.core, Canonical = http://hl7.dk/fhir/core</td></tr>
@@ -156,7 +156,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v3.2.0/index.html">Comparison with version 3.2.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> <a href="ipa-comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 140, warn = 68, info = 111, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 142, warn = 69, info = 111, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -228,8 +228,8 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-role-code-dk-supplement"><b>/github/workspace/fsh-generated/resources/CodeSystem-role-code-dk-supplement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Condition-ConditionPressureUlcer"><b>/github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-ConditionPressureUlcer"><b>/github/workspace/fsh-generated/resources/Condition-ConditionPressureUlcer</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-ElseGraviditet"><b>/github/workspace/fsh-generated/resources/Condition-ElseGraviditet</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -490,7 +490,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-RelatedPersonRelationshipTypes"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-SCTBasicObservation"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-SCTBasicObservation"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-TechniquesSCTCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -729,7 +729,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/ElsesTOBSscore*&#8203;/&#8203;.code&#8203;.coding[0] (l381&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/ElsesTOBSscore*&#8203;/&#8203;.code&#8203;.coding[0] (l394&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -745,61 +745,61 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Observation&#8203;/MaxConsciousness*&#8203;/ (l50&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Observation&#8203;/MaxBloodPressure*&#8203;/ (l102&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Observation&#8203;/MaxBloodPressure*&#8203;/ (l105&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Observation&#8203;/MaxBloodPressure*&#8203;/&#8203;.code&#8203;.coding[1] (l120&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Observation&#8203;/MaxBloodPressure*&#8203;/&#8203;.code&#8203;.coding[1] (l123&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/MaxBodyTemperature*&#8203;/ (l192&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/MaxBodyTemperature*&#8203;/ (l198&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/MaxBodyTemperature*&#8203;/&#8203;.code&#8203;.coding[1] (l210&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/MaxBodyTemperature*&#8203;/&#8203;.code&#8203;.coding[1] (l216&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/MaxHeartRate*&#8203;/ (l246&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/MaxHeartRate*&#8203;/ (l253&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/MaxHeartRate*&#8203;/&#8203;.code&#8203;.coding[1] (l264&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/MaxHeartRate*&#8203;/&#8203;.code&#8203;.coding[1] (l271&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Observation&#8203;/MaxRespirationRate*&#8203;/ (l300&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Observation&#8203;/MaxRespirationRate*&#8203;/ (l308&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/ (l354&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/ (l364&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.value&#8203;.ofType(Quantity) (l374&#8203;/c10)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.value&#8203;.ofType(Quantity) (l385&#8203;/c10)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[0]&#8203;.high (l381&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[0]&#8203;.high (l392&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[1]&#8203;.low (l391&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[1]&#8203;.low (l402&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[1]&#8203;.high (l396&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[1]&#8203;.high (l407&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[2]&#8203;.low (l406&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Observation&#8203;/MaxGlasgowComaScale*&#8203;/&#8203;.referenceRange[2]&#8203;.low (l417&#8203;/c14)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[1].resource (l50/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource (l102/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[2].resource (l105/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource (l192/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[3].resource (l198/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource (l246/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[4].resource (l253/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource (l300/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[5].resource (l308/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource (l354/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[6].resource (l364/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
    </tr>
 </table>
 <hr/>
@@ -1420,6 +1420,12 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr style="background-color: #ffffe6">
      <td><b>Condition.code.coding[0].system (l9/c4)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'urn:oid:1.2.208.176.2.21' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code.coding[1].code (l9/c4)</b></td><td><b>error</b></td><td><b>Unknown code '1163220007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/554471000005108/version/20210930'</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code.coding[1] (l16/c8)</b></td><td><b>error</b></td><td><b>The code provided (http://snomed.info/sct#1163220007) was not found in the value set 'Condition/Problem/Diagnosis Codes' (http://hl7.org/fhir/ValueSet/condition-code|4.0.1), and a code from this value set is required: The provided code 'http://snomed.info/sct|http://snomed.info/sct/554471000005108#1163220007 ('Pressure injury stage II')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-code|4.0.1'; Unknown code '1163220007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/554471000005108/version/20210930'</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l173">log</a>)</td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Condition-ElseGraviditet"> </a>
@@ -1747,7 +1753,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l21&#8203;/c4)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'http://localSystem.dk' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+     <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l22&#8203;/c4)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'http://localSystem.dk' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
@@ -1863,19 +1869,19 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity) (l21&#8203;/c4)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity) (l22&#8203;/c4)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation&#8203;.referenceRange[0]&#8203;.high (l28&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Observation&#8203;.referenceRange[0]&#8203;.high (l29&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation&#8203;.referenceRange[1]&#8203;.low (l38&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Observation&#8203;.referenceRange[1]&#8203;.low (l39&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation&#8203;.referenceRange[1]&#8203;.high (l43&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Observation&#8203;.referenceRange[1]&#8203;.high (l44&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation&#8203;.referenceRange[2]&#8203;.low (l53&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+     <td><b>Observation&#8203;.referenceRange[2]&#8203;.low (l54&#8203;/c8)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NO_UNIT"><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
@@ -2286,7 +2292,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c64775)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c285672)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c285711)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -2552,7 +2558,10 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[26]</b></td><td><b>warning</b></td><td title=""><b>The code '1162392001' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108 (1162392001)</b></td>
    </tr>
 </table>
 <hr/>
@@ -2611,7 +2620,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <li>%Device/WeightScale.606405FFFECFC604: Device.modelNumber: value should not start or finish with whitespace% <span style="color: navy">(1 uses)<span></li>
 </ul>
 <p><b>These &quot;Slicing Information&quot; are very noisy and do not contribute anything useful in this context</b></p><ul>
- <li>% This element does not match any known slice defined in the profile % <span style="color: navy">(64 uses)<span></li>
+ <li>% This element does not match any known slice defined in the profile % <span style="color: navy">(86 uses)<span></li>
  <li>INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1 <span style="color: navy">(1 uses)<span></li>
  <li>INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1 <span style="color: navy">(1 uses)<span></li>
 </ul>
@@ -3456,6 +3465,14 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-MaxGlasgowComaScale.html">fsh-generated/resources/Observation-MaxGlasgowComaScale.json</a></td><td><b>UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_Confirm_4a"> </a>
+<h2>Terminology_TX_Confirm_4a</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-ConditionPressureUlcer.html">fsh-generated/resources/Condition-ConditionPressureUlcer.json</a></td><td><b>The code provided (http://snomed.info/sct#1163220007) was not found in the value set 'Condition/Problem/Diagnosis Codes' (http://hl7.org/fhir/ValueSet/condition-code|4.0.1), and a code from this value set is required: The provided code 'http://snomed.info/sct|http://snomed.info/sct/554471000005108#1163220007 ('Pressure injury stage II')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-code|4.0.1'; Unknown code '1163220007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/554471000005108/version/20210930'</b></td>
    </tr>
 </table>
 <hr/>

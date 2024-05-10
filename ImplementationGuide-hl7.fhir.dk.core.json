@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-05-10T08:40:47+00:00",
+  "date" : "2024-05-10T19:12:38+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -1159,18 +1159,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/sor-organization-type"
-      },
-      "name" : "DK Core SOR Organization Type",
-      "description" : "Value set used for indicating the organization type for organizations from SOR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
       },
       "name" : "DK Core UCUM Basic Units",
@@ -1391,6 +1379,18 @@
       },
       "name" : "DK Role Code",
       "description" : "CodeSystem supplement with danish translations for RoleCode",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sor-organization-type"
+      },
+      "name" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
       "exampleBoolean" : false
     },
     {

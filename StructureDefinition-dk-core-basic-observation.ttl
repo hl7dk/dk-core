@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DkCoreBasicObservation"] ; # 
   fhir:title [ fhir:v "Danish Core Basic Observation Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-10T08:40:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-10T19:12:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -4150,7 +4150,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:pattern [ fhir:v "http://snomed.info/sct|http://snomed.info/sct/554471000005108"^^xsd:anyURI ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;

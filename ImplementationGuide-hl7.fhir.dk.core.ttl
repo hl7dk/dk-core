@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-10T08:40:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-10T19:12:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -1066,18 +1066,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.dk/fhir/core/ValueSet/sor-organization-type> ;
-         fhir:reference [ fhir:v "ValueSet/sor-organization-type" ]
-       ] ;
-       fhir:name [ fhir:v "DK Core SOR Organization Type" ] ;
-       fhir:description [ fhir:v "Value set used for indicating the organization type for organizations from SOR" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-UCUM-BasicUnits" ]
        ] ;
@@ -1299,6 +1287,18 @@
        ] ;
        fhir:name [ fhir:v "DK Role Code" ] ;
        fhir:description [ fhir:v "CodeSystem supplement with danish translations for RoleCode" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/sor-organization-type> ;
+         fhir:reference [ fhir:v "ValueSet/sor-organization-type" ]
+       ] ;
+       fhir:name [ fhir:v "DK SOR Organization Type" ] ;
+       fhir:description [ fhir:v "Value set used for indicating the organization type for organizations from SOR" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
