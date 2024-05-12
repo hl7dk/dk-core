@@ -9,6 +9,7 @@ Please notice, that an organization shall always have at least one identifier. S
 - *CVR identifier*: an official company identifier for Danish companies.
 - *Kommunal identifier*: the official identifier for a Danish municipality.
 - *Regional identifier*: the official organization identifier for a Danish region.
+- *Producent identifier*: the identifier used for the producer of laboratory result, maintained by MedCom. 
 
 #### Representing a general practitioner
 

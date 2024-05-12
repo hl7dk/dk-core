@@ -7,6 +7,8 @@ This document is a working specification that is expected to be implemented and 
 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
 
+For more information about the Danish HL7 affiliate (HL7-Denmark), please go to [hl7.dk](https://www.hl7.dk). Here can you also find procurement recommendation in regards to FHIR, and an overview of some FHIR implementations in Denmark.
+
 ### Scope
 The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specific profiles on top. As such, dk-core does not provide profiles for specific use use cases out-of-the-box.
 

@@ -1,5 +1,5 @@
 Profile: DkCoreObservation
-Parent: Observation
+Parent: IPAObservation
 Id: dk-core-observation
 Title: "Danish Core Observation Profiles"
 Description: "HL7 Denmark core profile for observations"
@@ -44,9 +44,9 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $SKS (exactly)
   * code 1..
-* subject only Reference(DkCorePatient or Group or Location or Device)
+* subject only Reference(DkCorePatient)
 * subject 1..
-* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or RelatedPerson)
+* performer only Reference(DkCorePractitioner or Organization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
@@ -95,9 +95,8 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding ^slicing.rules = #open
 * method.coding contains
    SCTCode 0..1
-* method.coding[SCTCode] from TechniquesSCTCodes (required)
+* method.coding[SCTCode] from TechniquesSCTCodes (example)
 * method.coding[SCTCode].system = $sct
-
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
@@ -147,6 +146,17 @@ Title: "The device that performed the observation"
 * deviceName.type = #user-friendly-name
 * serialNumber = "74E8FFFEFF051C00.001C05FFE874" */
 
+Instance: ElseUrinStix
+InstanceOf: DkCoreObservation
+Usage: #example
+* status = #final
+* code.coding[0] = $NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* subject = Reference(else)
+* effectiveDateTime = "2023-09-12T17:45:00.000Z"
+* valueString = "Påviselige leukocytter"
+* method = $sct#272391002 "Measurement technique (qualifier value)"
+
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
 Usage: #example
@@ -161,22 +171,6 @@ Description: "Elses smerte målt med VRS"
 * status = #final
 * effectiveDateTime = 2020-06-01
 
-
-Instance: ObservationRespiratoryVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's Respiratory rate measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#9279-1 "Respiratory rate"
-* valueQuantity.value = 50
-* valueQuantity.code = #/min
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "Breaths / minute"
-* effectiveDateTime = 2023-11-01T12:00:00+01:00
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-
 Instance: ObservationOxySat
 InstanceOf: DkCoreObservation
 Title: "John's oxygen saturation measurement"
@@ -189,23 +183,6 @@ Usage: #inline
 * effectiveDateTime = 2023-11-01T12:00:00+01:00
 * subject = Reference(john)
 * performer = Reference(AbrahamLaege)
-
-Instance: ObservationOxySatVitalSigns
-InstanceOf: DkCoreObservation
-Title: "John's oxygen saturation measurement, Vital Signs"
-Usage: #example
-* category = $observation-category#vital-signs
-* status = #final
-* code.coding[LOINC] = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* valueQuantity.value = 97.0
-* valueQuantity.code = #%
-* valueQuantity.system = $ucum
-* valueQuantity.unit = "%"
-* effectiveDateTime = 2023-11-01T12:00:00+01:00
-* subject = Reference(john)
-* performer = Reference(AbrahamLaege)
-* contained[0] = ObservationOxySat
-* derivedFrom = Reference(ObservationOxySat)
 
 
 
@@ -649,54 +626,54 @@ Description: """
 Usage: #example
 * type = #transaction
 * entry[+]
-  * fullUrl = "Patient/Poul"
+  * fullUrl = "http://hl7.dk/fhir/core/Patient/Poul"
   * request
     * method = #POST
     * url = "Patient"
     * ifNoneExist = "identifier=urn:oid:1.2.208.176.1.2|3001749995"
   * resource = Poul
 * entry[+]
-  * fullUrl = "Device/Telma.FEEDDADADEADBEEF"
+  * fullUrl = "http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|FE-ED-DA-DA-DE-AD-BE-EF"
   * resource = Telma.FEEDDADADEADBEEF
 * entry[+]
-  * fullUrl = "Device/BPMonitor.C4F312FFFE53F2C9"
+  * fullUrl = "http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9"
   * request
     * method = #POST
     * url = "Device"
     * ifNoneExist = "identifier=urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680|C4-F3-12-FF-FE-53-F2-C9"
   * resource = BPMonitor.C4F312FFFE53F2C9
 * entry[+]
-  * fullUrl = "Observation/BatteryLevel.0944"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BatteryLevel.0944"
   * request
     * method = #POST
     * url = "Observation"
   * resource = BatteryLevel.0944
 * entry[+]
-  * fullUrl = "Observation/CoincidentTimeStamp.0222"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/CoincidentTimeStamp.0222"
   * request
     * method = #POST
     * url = "Observation"
   * resource = CoincidentTimeStamp.0222
 * entry[+]
-  * fullUrl = "Observation/BloodPressure.Poul.643992"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BloodPressure.Poul.643992"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
   * resource = BloodPressure.Poul.643992
 * entry[+]
-  * fullUrl = "Observation/HeartRate.Poul.1974654"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/HeartRate.Poul.1974654"
   * request
     * method = #POST
     * url = "Observation"
     * ifNoneExist = "identifier=C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
   * resource = HeartRate.Poul.1974654
 * entry[+]
-  * fullUrl = "Observation/BloodPressureStatus.Poul.133527"
+  * fullUrl = "http://hl7.dk/fhir/core/Observation/BloodPressureStatus.Poul.133527"
   * request
     * method = #POST
     * url = "Observation"

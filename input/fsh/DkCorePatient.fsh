@@ -8,9 +8,16 @@ Description: "HL7 Denmark core profile for a patient"
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
-* identifier contains cpr 0..1
+* identifier contains 
+    cpr 0..1 and
+    x-ecpr 0..1 and 
+    d-ecpr 0..1
 * identifier[cpr] only DkCoreCprIdentifier
   * ^short = "[DA] cpr-nummer, som det fremgår af CPR registeret"
+* identifier[x-ecpr] only DkCoreXeCprIdentifier
+  * ^short = "[DA] X-eCPR, tildelt fra den nationale eCPR service"
+* identifier[d-ecpr] only DkCoreDeCprIdentifier
+  * ^short = "[DA] D-eCPR, decentral eCPR"
 * name ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "use"
   * ^slicing.rules = #open
@@ -32,6 +39,8 @@ Description: "HL7 Denmark core profile for a patient"
 * generalPractitioner contains referencedSORUnit 0..*
 * generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
   * identifier only SORIdentifier
+* contact.relationship from RelatedPersonRelationshipTypes (extensible)
+* link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
 
 Instance: 283
 InstanceOf: DkCorePatient
@@ -54,22 +63,23 @@ Usage: #example
 * address.use = #home
 * address.type = #postal
 * address.line = "Nordre Ringgade 3"
-* address.city = "Frederiksberg C"
+* address.city = "Aarhus"
 * address.postalCode = "8000"
 * address.country = "DK"
 * maritalStatus = $v3-MaritalStatus#U "unmarried"
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner.identifier.value = "79641000016006"
 * generalPractitioner.display = "Peter Sønderby"
-* active = true
 
 Instance: Confidential
 InstanceOf: DkCorePatient
-Title: "Example of a patient with confidential adress and name"
-Description: "Example of a patient with confidential adress and name"
+Title: "Example of a patient with confidential address and name"
+Description: "Example of a patient with confidential address and name"
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This instance is an example of a Danish citizen who has requested name and address protection (Navne- og adressebeskyttelse), why the instance is marked with a security label. Only personnel using systems in public/official affairs are allowed to see name and address for the citizen, why these information are included in the profile.<p></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Confidential\"</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-Confidentiality http://terminology.hl7.org/CodeSystem/v3-Confidentiality}\">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span></p></div><p><b>identifier</b>: id: 1502779995</p><p><b>name</b>: Hans Hansen (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1976-08-09</p><p><b>address</b>: Julianevej 22 6000 Kolding (HOME)</p></div>"
 * text.status = #additional
+* meta.security.code = $v3-Confidentiality#R
+* meta.security.display = "Restricted"
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "1502779995"
 * name.use = #official
@@ -80,8 +90,9 @@ Usage: #example
 * birthDate = "1977-02-15"
 * address.use = #home
 * address.line = "Julianevej 22"
-* address.city = "6000 Kolding"
-* active = true
+* address.city = "Kolding"
+* address.postalCode = "6000"
+
 
 Instance: else
 InstanceOf: DkCorePatient
@@ -97,7 +108,6 @@ Usage: #example
 * gender = #female
 * birthDate = "1991-02-02"
 * maritalStatus = $v3-MaritalStatus#M "Married"
-* active = true
 
 Instance: john
 InstanceOf: DkCorePatient
@@ -118,9 +128,8 @@ Usage: #example
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner.identifier.value = "487341000016005"
 * generalPractitioner.display = "Charlottenlund Lægehus"
-* active = true
 
-Instance: mogensen
+Instance: Max
 InstanceOf: DkCorePatient
 Title: "Example of valid patient with danish marital status"
 Description: "Example of valid patient with danish marital status"
@@ -128,13 +137,13 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0107729995"
 * name.use = #official
-* name.family = "Mogensen"
-* name.given = "Jan"
+* name.family = "Berggren"
+* name.given[0] = "Max"
+* name.given[1] = "Test"
 * name.prefix = "Mr"
 * gender = #male
 * birthDate = "1972-07-01"
-* maritalStatus = $dk-marital-status#P "Registreret partnerskab"
-* active = true
+* maritalStatus = $dk-marital-status#P
 
 Instance: ukendt
 InstanceOf: DkCorePatient
@@ -144,11 +153,37 @@ Usage: #example
 * identifier.system = "http://rn.dk"
 * identifier.value = "0706830VJ9"
 * name.use = #temp
-* name.family = "Ukendt"
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
-* active = true
+
+
+Instance: ukendt-D-eCPR
+InstanceOf: DkCorePatient
+Title: "Example of valid patient with a D-eCPR as identifier"
+Description: "Example of valid patient with a D-eCPR as identifier."
+Usage: #example
+* identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
+* identifier.value = "1206550VK9"
+* name.use = #temp
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
+* name.given = "Peter"
+* gender = #male
+
+Instance: ukendt-X-eCPR
+InstanceOf: DkCorePatient
+Title: "Example of valid patient with a X-eCPR as identifier"
+Description: "Example of valid patient with a X-eCPR as identifier."
+Usage: #example
+* identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier.value = "0703921VJ4"
+* name.use = #temp
+* name.family = "Madsen"
+* gender = #female
+* birthDate = "1992-03-07"
 
 Invariant: marital-status-unknown-usage
 Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/"

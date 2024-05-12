@@ -25,6 +25,15 @@ Usage: #example
 * name.given = "Abraham"
 * name.family = "Murakami"
 
+Instance: SidselSygeplejerske
+InstanceOf: DkCorePractitioner
+Title: "SidselSygeplejerske"
+Description: "Eksempel på en sygeplejerske"
+Usage: #example
+* qualification.code = $DkCoreProfessionGroupCodes#5166 "Sygeplejerske"
+* name.given = "Sidsel"
+* name.family = "Andersen"
+
 Instance: HanneSocialraadgiver
 InstanceOf: DkCorePractitioner
 Title: "HanneSocialrådgiver"
