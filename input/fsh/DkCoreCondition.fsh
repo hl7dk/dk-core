@@ -39,8 +39,8 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
 * subject only Reference(DkCorePatient)
-* recorder only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or DkCoreRelatedPerson)
-* asserter only Reference(DkCorePractitioner or PractitionerRole)
+* recorder only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCorePatient or DkCoreRelatedPerson)
+* asserter only Reference(DkCorePractitioner or DkCorePractitionerRole)
 
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition

@@ -36,9 +36,11 @@ Description: "HL7 Denmark core profile for a patient"
 * generalPractitioner ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "identifier.system"
   * ^slicing.rules = #open
+* generalPractitioner only Reference(DkCoreOrganization or DkCorePractitioner or DkCorePractitionerRole)
 * generalPractitioner contains referencedSORUnit 0..*
 * generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
   * identifier only SORIdentifier
+* managingOrganization only Reference(DkCoreOrganization)
 * contact.relationship from RelatedPersonRelationshipTypes (extensible)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
 
