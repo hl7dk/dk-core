@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"CenterForDiabetesTeamDiabetes\"> </a><a name=\"hcCenterForDiabetesTeamDiabetes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;CenterForDiabetesTeamDiabetes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/1133181000016000, <code>http://cvr.dk</code>/64942212</p><p><b>type</b>: HC - Health centre <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT[DK]</a>#264361005)</span></p><p><b>partOf</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization/CenterForDiabetes</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"CenterForDiabetesTeamDiabetes\"> </a><a name=\"hcCenterForDiabetesTeamDiabetes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;CenterForDiabetesTeamDiabetes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/1133181000016000, <code>http://cvr.dk</code>/64942212</p><p><b>type</b>: HC - Health centre <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#264361005)</span></p><p><b>partOf</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization/CenterForDiabetes</a></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
@@ -30,7 +30,6 @@
      fhir:coding ( [
        a sct:264361005 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "264361005" ]
      ] )
   ] ) ; # 

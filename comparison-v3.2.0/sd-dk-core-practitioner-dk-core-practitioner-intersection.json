@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "db2e5abd-acfc-425f-9b7a-5f504adb7a32-72",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/db2e5abd-acfc-425f-9b7a-5f504adb7a32-72",
+  "id" : "859a4f2c-13ae-4f19-be96-146a801d53b0-72",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/859a4f2c-13ae-4f19-be96-146a801d53b0-72",
   "name" : "IntersectionDkCorePractitionerAndDkCorePractitioner",
   "title" : "Intersection of Danish Core Practitioner Profile And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2024-05-12T08:42:28+00:00",
+  "date" : "2024-05-12T09:46:17+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -427,9 +427,9 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
+      "comment" : "left: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.; right: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "HumanName"
@@ -445,7 +445,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{

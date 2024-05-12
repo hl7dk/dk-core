@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "dk-core-NPUBasicObservation"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-dk-npu-fragment.html\"><code>urn:oid:1.2.208.176.2.1</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03011\">NPU03011</a></td><td style=\"color: #cccccc\">Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27280\">NPU27280</a></td><td style=\"color: #cccccc\">Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU04034\">NPU04034</a></td><td style=\"color: #cccccc\">Pt(spec.)—Blood; temp. = ? °C</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU08676\">NPU08676</a></td><td style=\"color: #cccccc\">Pt—Body; temp. = ? °C</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58033\">NPU58033</a></td><td style=\"color: #cccccc\">Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57947\">NPU57947</a></td><td style=\"color: #cccccc\">Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58034\">NPU58034</a></td><td style=\"color: #cccccc\">Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57948\">NPU57948</a></td><td style=\"color: #cccccc\">Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU21692\">NPU21692</a></td><td style=\"color: #cccccc\">Heart—Systole; frequency = ? × 1/min</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03794\">NPU03794</a></td><td style=\"color: #cccccc\">Pt—Body; height = ? m</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03804\">NPU03804</a></td><td style=\"color: #cccccc\">Pt—Body; mass = ? kg</td></tr><tr><td><a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27281\">NPU27281</a></td><td style=\"color: #cccccc\">Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:1.2.208.176.2.1</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>NPU03011</td><td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?</td></tr><tr><td>NPU27280</td><td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td></tr><tr><td>NPU04034</td><td>Pt(spec.)—Blood; temp. = ? °C</td></tr><tr><td>NPU08676</td><td>Pt—Body; temp. = ? °C</td></tr><tr><td>NPU58033</td><td>Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td></tr><tr><td>NPU57947</td><td>Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg</td></tr><tr><td>NPU58034</td><td>Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td></tr><tr><td>NPU57948</td><td>Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg</td></tr><tr><td>NPU21692</td><td>Heart—Systole; freq. = ? * 1/min</td></tr><tr><td>NPU03794</td><td>Pt—Body; height = ? m</td></tr><tr><td>NPU03804</td><td>Pt—Body; mass = ? kg</td></tr><tr><td>NPU27281</td><td>Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.3.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "DK Core NPU Basic Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-05-12T08:41:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-12T09:45:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -42,29 +42,41 @@
      fhir:include ( [
        fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "NPU03011" ]
+         fhir:code [ fhir:v "NPU03011" ] ;
+         fhir:display [ fhir:v "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?" ]
        ] [
-         fhir:code [ fhir:v "NPU27280" ]
+         fhir:code [ fhir:v "NPU27280" ] ;
+         fhir:display [ fhir:v "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?" ]
        ] [
-         fhir:code [ fhir:v "NPU04034" ]
+         fhir:code [ fhir:v "NPU04034" ] ;
+         fhir:display [ fhir:v "Pt(spec.)—Blood; temp. = ? °C" ]
        ] [
-         fhir:code [ fhir:v "NPU08676" ]
+         fhir:code [ fhir:v "NPU08676" ] ;
+         fhir:display [ fhir:v "Pt—Body; temp. = ? °C" ]
        ] [
-         fhir:code [ fhir:v "NPU58033" ]
+         fhir:code [ fhir:v "NPU58033" ] ;
+         fhir:display [ fhir:v "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg" ]
        ] [
-         fhir:code [ fhir:v "NPU57947" ]
+         fhir:code [ fhir:v "NPU57947" ] ;
+         fhir:display [ fhir:v "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg" ]
        ] [
-         fhir:code [ fhir:v "NPU58034" ]
+         fhir:code [ fhir:v "NPU58034" ] ;
+         fhir:display [ fhir:v "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg" ]
        ] [
-         fhir:code [ fhir:v "NPU57948" ]
+         fhir:code [ fhir:v "NPU57948" ] ;
+         fhir:display [ fhir:v "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg" ]
        ] [
-         fhir:code [ fhir:v "NPU21692" ]
+         fhir:code [ fhir:v "NPU21692" ] ;
+         fhir:display [ fhir:v "Heart—Systole; freq. = ? * 1/min" ]
        ] [
-         fhir:code [ fhir:v "NPU03794" ]
+         fhir:code [ fhir:v "NPU03794" ] ;
+         fhir:display [ fhir:v "Pt—Body; height = ? m" ]
        ] [
-         fhir:code [ fhir:v "NPU03804" ]
+         fhir:code [ fhir:v "NPU03804" ] ;
+         fhir:display [ fhir:v "Pt—Body; mass = ? kg" ]
        ] [
-         fhir:code [ fhir:v "NPU27281" ]
+         fhir:code [ fhir:v "NPU27281" ] ;
+         fhir:display [ fhir:v "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²" ]
        ] )
      ] )
   ] . # 

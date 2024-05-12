@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b0a56cfa-8b7c-4d67-b29f-b77b6e2f57b4-27",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b0a56cfa-8b7c-4d67-b29f-b77b6e2f57b4-27",
+  "id" : "b757ce95-af45-4463-962d-30813633fbd9-24",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b757ce95-af45-4463-962d-30813633fbd9-24",
   "name" : "IntersectionIPAPractitionerAndDkCorePractitioner",
   "title" : "Intersection of IPA-Practitioner And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2024-05-12T08:42:29+00:00",
+  "date" : "2024-05-12T09:46:18+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Practitioner",
@@ -424,7 +424,7 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "left: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element; right: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
+      "comment" : "In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
       "min" : 1,
       "max" : "*",

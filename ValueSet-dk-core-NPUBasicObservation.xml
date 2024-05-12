@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="dk-core-NPUBasicObservation"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-dk-npu-fragment.html"><code>urn:oid:1.2.208.176.2.1</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03011">NPU03011</a></td><td style="color: #cccccc">Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27280">NPU27280</a></td><td style="color: #cccccc">Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU04034">NPU04034</a></td><td style="color: #cccccc">Pt(spec.)—Blood; temp. = ? °C</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU08676">NPU08676</a></td><td style="color: #cccccc">Pt—Body; temp. = ? °C</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58033">NPU58033</a></td><td style="color: #cccccc">Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57947">NPU57947</a></td><td style="color: #cccccc">Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58034">NPU58034</a></td><td style="color: #cccccc">Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57948">NPU57948</a></td><td style="color: #cccccc">Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU21692">NPU21692</a></td><td style="color: #cccccc">Heart—Systole; frequency = ? × 1/min</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03794">NPU03794</a></td><td style="color: #cccccc">Pt—Body; height = ? m</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03804">NPU03804</a></td><td style="color: #cccccc">Pt—Body; mass = ? kg</td></tr><tr><td><a href="CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27281">NPU27281</a></td><td style="color: #cccccc">Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:1.2.208.176.2.1</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>NPU03011</td><td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?</td></tr><tr><td>NPU27280</td><td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td></tr><tr><td>NPU04034</td><td>Pt(spec.)—Blood; temp. = ? °C</td></tr><tr><td>NPU08676</td><td>Pt—Body; temp. = ? °C</td></tr><tr><td>NPU58033</td><td>Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td></tr><tr><td>NPU57947</td><td>Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg</td></tr><tr><td>NPU58034</td><td>Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td></tr><tr><td>NPU57948</td><td>Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg</td></tr><tr><td>NPU21692</td><td>Heart—Systole; freq. = ? * 1/min</td></tr><tr><td>NPU03794</td><td>Pt—Body; height = ? m</td></tr><tr><td>NPU03804</td><td>Pt—Body; mass = ? kg</td></tr><tr><td>NPU27281</td><td>Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td></tr></table></li></ul></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation"/>
   <version value="3.3.0"/>
@@ -11,7 +11,7 @@
   <title value="DK Core NPU Basic Observation"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-05-12T08:41:58+00:00"/>
+  <date value="2024-05-12T09:45:49+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -37,39 +37,51 @@
       <system value="urn:oid:1.2.208.176.2.1"/>
       <concept>
         <code value="NPU03011"/>
+        <display value="Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"/>
       </concept>
       <concept>
         <code value="NPU27280"/>
+        <display value="Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"/>
       </concept>
       <concept>
         <code value="NPU04034"/>
+        <display value="Pt(spec.)—Blood; temp. = ? °C"/>
       </concept>
       <concept>
         <code value="NPU08676"/>
+        <display value="Pt—Body; temp. = ? °C"/>
       </concept>
       <concept>
         <code value="NPU58033"/>
+        <display value="Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"/>
       </concept>
       <concept>
         <code value="NPU57947"/>
+        <display value="Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"/>
       </concept>
       <concept>
         <code value="NPU58034"/>
+        <display value="Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"/>
       </concept>
       <concept>
         <code value="NPU57948"/>
+        <display value="Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"/>
       </concept>
       <concept>
         <code value="NPU21692"/>
+        <display value="Heart—Systole; freq. = ? * 1/min"/>
       </concept>
       <concept>
         <code value="NPU03794"/>
+        <display value="Pt—Body; height = ? m"/>
       </concept>
       <concept>
         <code value="NPU03804"/>
+        <display value="Pt—Body; mass = ? kg"/>
       </concept>
       <concept>
         <code value="NPU27281"/>
+        <display value="Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"/>
       </concept>
     </include>
   </compose>

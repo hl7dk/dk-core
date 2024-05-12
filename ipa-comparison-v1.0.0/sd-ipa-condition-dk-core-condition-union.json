@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b0a56cfa-8b7c-4d67-b29f-b77b6e2f57b4-17",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b0a56cfa-8b7c-4d67-b29f-b77b6e2f57b4-17",
+  "id" : "b757ce95-af45-4463-962d-30813633fbd9-8",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b757ce95-af45-4463-962d-30813633fbd9-8",
   "name" : "UnionIPAConditionAndDkCoreCondition",
   "title" : "Union of IPA-Condition And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2024-05-12T08:42:29+00:00",
+  "date" : "2024-05-12T09:46:18+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -635,7 +635,7 @@
       "definition" : "Identification of the condition, problem or diagnosis.",
       "requirements" : "0..1 to account for primarily narrative only resources.",
       "alias" : ["type"],
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -917,8 +917,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
-        "#sd-ipa-patient-dk-core-patient"]
+        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"]
       }],
       "constraint" : [{
         "extension" : [{

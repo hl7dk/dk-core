@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "DK Consent State"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-05-12T08:41:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-12T09:45:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -51,7 +51,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Under udarbejdelse" ]
@@ -63,7 +62,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Forslag" ]
@@ -75,7 +73,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Aktiv" ]
@@ -87,7 +84,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Afvist" ]
@@ -99,7 +95,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Inaktiv" ]
@@ -111,7 +106,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Fejlindtastning" ]
