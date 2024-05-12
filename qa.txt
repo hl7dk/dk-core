@@ -1,9 +1,9 @@
 DKCore : Validation Results
 =========================================
 
-err = 142, warn = 69, info = 111
+err = 128, warn = 67, info = 111
 IG Publisher Version: 1.6.7
-Generated Sun May 12 08:44:32 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
+Generated Sun May 12 08:45:42 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 7 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 0 / 35
@@ -20,7 +20,7 @@ Generated Sun May 12 08:44:32 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment : 140 / 2 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment : 126 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-publication-status-dk-supplement : 0 / 0 / 1
@@ -223,9 +223,6 @@ WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation:
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
 == fsh-generated/resources/CodeSystem-dk-npu-fragment.json ==
-ERROR: CodeSystem.where(url = 'urn:oid:1.2.208.176.2.1'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment.json - the canonical URL (http://hl7.dk/fhir/core/CodeSystem/dk-npu-fragment) does not match the URL (urn:oid:1.2.208.176.2.1)
-WARNING: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[14].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[13].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -237,7 +234,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[7]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[12]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -249,7 +245,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[7]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[12]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -260,7 +255,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[6]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[7]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[8]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[9]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[11]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -270,7 +264,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[5]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[10]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -284,7 +277,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[9]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[10]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[11]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[12]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[14]: The property 'status' has the invalid type 'Coding', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -296,7 +288,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[7]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[12]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -309,7 +300,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[8]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[9]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[10]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[11]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[13]: The property 'status' has the invalid type 'Coding', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -321,7 +311,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[7]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[12]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -331,7 +320,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[5]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[10]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -341,7 +329,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[5]: The proper
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[10]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -351,7 +338,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[5]: The prope
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[10]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -363,8 +349,6 @@ ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[7]: The prope
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[12]: The property 'status' has the invalid type 'boolean', when it is defined to have the type 'code'
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment: URL Mismatch http://hl7.dk/fhir/core/CodeSystem/dk-npu-fragment vs urn:oid:1.2.208.176.2.1
 == fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes.json ==
 == fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-publication-status-dk-supplement.json ==
