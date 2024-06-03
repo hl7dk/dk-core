@@ -1,5 +1,14 @@
+Profile: IPADkCoreObservation
+Parent: DkCoreObservation
+Title: "Danish Core IPA Observation Profiles"
+Description: "HL7 Denmark core profile for IPA compliant observations"
+* subject only Reference(DkCorePatient)
+* extension
+  * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+  * valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
+
 Profile: DkCoreObservation
-Parent: IPAObservation
+Parent: Observation
 Id: dk-core-observation
 Title: "Danish Core Observation Profiles"
 Description: "HL7 Denmark core profile for observations"
@@ -44,7 +53,7 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $SKS (exactly)
   * code 1..
-* subject only Reference(DkCorePatient)
+* subject only Reference(DkCorePatient or Group or Location or Device)
 * subject 1..
 * performer only Reference(DkCorePractitioner or Organization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
@@ -102,7 +111,6 @@ Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
 Severity: #error
 Expression: "value.ofType(Quantity).value.exists() implies value.ofType(Quantity).unit.exists() or value.ofType(Quantity).code.exists()"
-
 
 
 
