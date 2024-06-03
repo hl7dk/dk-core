@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-12T11:37:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-03T20:51:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -833,6 +833,18 @@
        ] ;
        fhir:name [ fhir:v "Danish Core Condition Profile" ] ;
        fhir:description [ fhir:v "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/IPADkCoreObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/IPADkCoreObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Danish Core IPA Observation Profiles" ] ;
+       fhir:description [ fhir:v "HL7 Denmark core profile for IPA compliant observations" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

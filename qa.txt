@@ -1,9 +1,9 @@
 DKCore : Validation Results
 =========================================
 
-err = 0, warn = 84, info = 109
-IG Publisher Version: 1.6.7
-Generated Sun May 12 11:41:00 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
+err = 0, warn = 85, info = 109
+IG Publisher Version: 1.6.10
+Generated Mon Jun 03 20:55:54 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 8 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 2 / 30
@@ -82,6 +82,7 @@ Generated Sun May 12 11:41:00 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/RelatedPerson-TwoRelations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IPADkCoreObservation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier : 0 / 0 / 1
@@ -380,6 +381,8 @@ WARNING: Practitioner/SidselSygeplejerske: Practitioner.name[0]: Constraint fail
 == fsh-generated/resources/RelatedPerson-TwoRelations.json ==
 == fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
 == fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
+== fsh-generated/resources/StructureDefinition-IPADkCoreObservation.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/IPADkCoreObservation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==

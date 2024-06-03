@@ -188,12 +188,13 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 /github/workspace/fsh-generated/resources/Practitioner-AbrahamLaege.json: line 29, col 6, Warning - Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation) (INVARIANT)
 /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver.json: line 10, col 6, Warning - Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation) (INVARIANT)
 /github/workspace/fsh-generated/resources/Practitioner-SidselSygeplejerske.json: line 23, col 6, Warning - Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation) (INVARIANT)
+/github/workspace/fsh-generated/resources/StructureDefinition-IPADkCoreObservation.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json: line 1, col 65253, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 (BUSINESSRULE)
-/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json: line 1, col 286182, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json: line 1, col 64775, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json: line 1, col 285660, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json: line 0, col 0, Warning - Unknown System 'urn:oid:1.2.208.176.2.1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json: line 1, col 1950, Warning - Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not (REQUIRED)
 
-err = 0, warn = 84, info = 109
-IG Publisher Version: 1.6.7
+err = 0, warn = 85, info = 109
+IG Publisher Version: 1.6.10

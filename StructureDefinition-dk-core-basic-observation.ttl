@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DkCoreBasicObservation"] ; # 
   fhir:title [ fhir:v "Danish Core Basic Observation Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-12T11:37:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-03T20:51:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -162,16 +162,6 @@
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
-         ]
-       ] [
-         fhir:key [ fhir:v "ipa-obs-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If there is no component or hasMember element then either a value[x] or a data absent reason must be present" ] ;
-         fhir:expression [ fhir:v "(component.empty() and hasMember.empty()) implies (dataAbsentReason or value)" ] ;
-         fhir:xpath [ fhir:v "exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value)]) or exists(f:dataAbsentReason)" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation>
          ]
        ] [
          fhir:key [ fhir:v "dk-core-observation-mandatory-units" ] ;
@@ -667,7 +657,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -734,7 +723,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
@@ -785,7 +773,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:binding [
@@ -2961,6 +2948,15 @@
          fhir:targetProfile ( [
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Location"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
+         ] [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2974,7 +2970,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -3122,7 +3117,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -3283,7 +3277,7 @@
        ] [
          fhir:code [ fhir:v "Period"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "obs-7" ] [ fhir:v "ipa-obs-1" ] ) ;
+       fhir:condition ( [ fhir:v "obs-7" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -3295,7 +3289,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -3329,7 +3322,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "obs-7" ] [ fhir:v "ipa-obs-1" ] ) ;
+       fhir:condition ( [ fhir:v "obs-7" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -3341,7 +3334,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
@@ -3661,7 +3653,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "obs-6" ] [ fhir:v "ipa-obs-1" ] ) ;
+       fhir:condition ( [ fhir:v "obs-6" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -3673,7 +3665,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:binding [
@@ -4903,7 +4894,7 @@
        fhir:path [ fhir:v "Observation.hasMember" ] ;
        fhir:short [ fhir:v "Related resource that belongs to the Observation group" ] ;
        fhir:definition [ fhir:v "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [

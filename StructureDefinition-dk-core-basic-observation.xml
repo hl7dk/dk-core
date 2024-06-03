@@ -29,7 +29,7 @@
   <name value="DkCoreBasicObservation"/>
   <title value="Danish Core Basic Observation Profile"/>
   <status value="draft"/>
-  <date value="2024-05-12T11:37:02+00:00"/>
+  <date value="2024-06-03T20:51:53+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -164,14 +164,6 @@
         <expression value="value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()"/>
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-      </constraint>
-      <constraint>
-        <key value="ipa-obs-1"/>
-        <severity value="error"/>
-        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
-        <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason or value)"/>
-        <xpath value="exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value)]) or exists(f:dataAbsentReason)"/>
-        <source value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"/>
       </constraint>
       <constraint>
         <key value="dk-core-observation-mandatory-units"/>
@@ -613,7 +605,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"/>
       <isSummary value="true"/>
@@ -676,7 +667,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -721,7 +711,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -2804,6 +2793,9 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2813,7 +2805,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -2959,7 +2950,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -3120,7 +3110,6 @@
         <code value="Period"/>
       </type>
       <condition value="obs-7"/>
-      <condition value="ipa-obs-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3129,7 +3118,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -3167,7 +3155,6 @@
         <code value="Quantity"/>
       </type>
       <condition value="obs-7"/>
-      <condition value="ipa-obs-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3176,7 +3163,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -3477,7 +3463,6 @@
         <code value="CodeableConcept"/>
       </type>
       <condition value="obs-6"/>
-      <condition value="ipa-obs-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3486,7 +3471,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -4629,7 +4613,7 @@
       <path value="Observation.hasMember"/>
       <short value="Related resource that belongs to the Observation group"/>
       <definition value="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group."/>
-      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
+      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
       <min value="0"/>
       <max value="*"/>
       <base>

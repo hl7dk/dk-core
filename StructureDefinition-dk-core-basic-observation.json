@@ -10,7 +10,7 @@
   "name" : "DkCoreBasicObservation",
   "title" : "Danish Core Basic Observation Profile",
   "status" : "draft",
-  "date" : "2024-05-12T11:37:02+00:00",
+  "date" : "2024-06-03T20:51:53+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -148,14 +148,6 @@
         "expression" : "value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()",
         "xpath" : "not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))",
         "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
-      },
-      {
-        "key" : "ipa-obs-1",
-        "severity" : "error",
-        "human" : "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
-        "expression" : "(component.empty() and hasMember.empty()) implies (dataAbsentReason or value)",
-        "xpath" : "exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value)]) or exists(f:dataAbsentReason)",
-        "source" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
       },
       {
         "key" : "dk-core-observation-mandatory-units",
@@ -613,7 +605,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : true,
       "isModifierReason" : "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
       "isSummary" : true,
@@ -678,7 +669,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -725,7 +715,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -2875,7 +2864,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.org/fhir/StructureDefinition/Group",
+        "http://hl7.org/fhir/StructureDefinition/Location",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2885,7 +2877,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3034,7 +3025,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3197,8 +3187,7 @@
       {
         "code" : "Period"
       }],
-      "condition" : ["obs-7",
-      "ipa-obs-1"],
+      "condition" : ["obs-7"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -3207,7 +3196,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3245,8 +3233,7 @@
       "type" : [{
         "code" : "Quantity"
       }],
-      "condition" : ["obs-7",
-      "ipa-obs-1"],
+      "condition" : ["obs-7"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -3255,7 +3242,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3566,8 +3552,7 @@
       "type" : [{
         "code" : "CodeableConcept"
       }],
-      "condition" : ["obs-6",
-      "ipa-obs-1"],
+      "condition" : ["obs-6"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -3576,7 +3561,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -4759,7 +4743,7 @@
       "path" : "Observation.hasMember",
       "short" : "Related resource that belongs to the Observation group",
       "definition" : "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.",
-      "comment" : "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation.",
+      "comment" : "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation.",
       "min" : 0,
       "max" : "*",
       "base" : {

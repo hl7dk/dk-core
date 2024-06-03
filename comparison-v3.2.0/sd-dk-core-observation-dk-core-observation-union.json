@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6b4fd062-333c-47f1-af28-3f921a855c37-98",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6b4fd062-333c-47f1-af28-3f921a855c37-98",
+  "id" : "1385c9c7-14eb-45ea-a1fa-84079821128e-98",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1385c9c7-14eb-45ea-a1fa-84079821128e-98",
   "name" : "UnionDkCoreObservationAndDkCoreObservation",
   "title" : "Union of Danish Core Observation Profiles And Danish Core Observation Profiles",
   "status" : "active",
-  "date" : "2024-05-12T11:37:32+00:00",
+  "date" : "2024-06-03T20:52:24+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -528,7 +528,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {
@@ -579,7 +579,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -619,7 +619,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -819,7 +819,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -961,7 +961,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1118,7 +1118,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1160,7 +1160,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {

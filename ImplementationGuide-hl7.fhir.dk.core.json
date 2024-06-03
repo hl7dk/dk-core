@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-05-12T11:37:02+00:00",
+  "date" : "2024-06-03T20:51:53+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -927,6 +927,18 @@
       },
       "name" : "Danish Core Condition Profile",
       "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IPADkCoreObservation"
+      },
+      "name" : "Danish Core IPA Observation Profiles",
+      "description" : "HL7 Denmark core profile for IPA compliant observations",
       "exampleBoolean" : false
     },
     {
