@@ -1,3 +1,12 @@
+Profile: IPADkCoreObservation
+Parent: DkCoreObservation
+Title: "Danish Core IPA Observation Profiles"
+Description: "HL7 Denmark core profile for IPA compliant observations"
+* subject only Reference(DkCorePatient)
+* extension
+  * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+  * valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
+
 Profile: DkCoreObservation
 Parent: Observation
 Id: dk-core-observation
