@@ -53,9 +53,9 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $SKS (exactly)
   * code 1..
-* subject only Reference(DkCorePatient or Group or Location or Device)
+* subject only Reference(DkCorePatient or Group or DkCoreLocation or Device)
 * subject 1..
-* performer only Reference(DkCorePractitioner or Organization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
+* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or DkCorePractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
@@ -111,6 +111,7 @@ Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
 Severity: #error
 Expression: "value.ofType(Quantity).value.exists() implies value.ofType(Quantity).unit.exists() or value.ofType(Quantity).code.exists()"
+
 
 
 

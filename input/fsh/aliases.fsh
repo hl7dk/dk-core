@@ -1,4 +1,4 @@
-Alias: $sct = http://snomed.info/sct
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/554471000005108 // Danish version - append e.g. /version/20240331 to get a more specific version 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
@@ -13,7 +13,7 @@ Alias: $condition-code = http://hl7.org/fhir/ValueSet/condition-code
 Alias: $sor-organization-type = http://hl7.dk/fhir/core/ValueSet/sor-organization-type
 Alias: $dk-marital-status_1 = http://hl7.dk/fhir/core/ValueSet/dk-marital-status
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $NPU = urn:oid:1.2.208.176.2.1
+Alias: $NPU = urn:oid:1.2.208.176.2.1 // This OID is wrong. It should be using the url stated on https://jira.hl7.org/browse/HTA-130 - being http://npu-terminology.org/
 Alias: $Medcom = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes
 Alias: $SKS = urn:oid:1.2.208.176.2.4
 Alias: $LOINC = http://loinc.org
