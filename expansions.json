@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "33ca11cc-dd80-4911-a411-b6a049ab918c",
+  "id" : "0d33a30b-0769-4365-8aaf-e5c725c40e7e",
   "meta" : {
-    "lastUpdated" : "2024-06-03T20:51:53.478+00:00"
+    "lastUpdated" : "2024-06-25T21:12:53.116+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "DK D-eCPR OID values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7877cc65-ab05-49b3-8c2b-2930ec0d2a75",
-        "timestamp" : "2024-06-03T20:53:08+00:00",
+        "identifier" : "urn:uuid:87c2f70a-52ac-4044-b89f-92cbc330e5f3",
+        "timestamp" : "2024-06-25T21:14:01+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -95,7 +95,7 @@
       "title" : "DK Profession Group",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -104,8 +104,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4a3862ca-d669-447b-ab20-63eb15c96943",
-        "timestamp" : "2024-06-03T20:53:08+00:00",
+        "identifier" : "urn:uuid:b9e01ad0-5649-4d3d-bce0-0a0cd390b680",
+        "timestamp" : "2024-06-25T21:14:01+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -246,7 +246,7 @@
       "title" : "Dk Core IEEE Basic Observation",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -255,8 +255,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:99e41d72-47d5-447d-96ea-a399d8ac9521",
-        "timestamp" : "2024-06-03T20:53:08+00:00",
+        "identifier" : "urn:uuid:47d7f25a-cfce-4eb4-a8bd-61ebc05f021e",
+        "timestamp" : "2024-06-25T21:14:01+00:00",
         "total" : 36,
         "offset" : 0,
         "parameter" : [{
@@ -484,7 +484,7 @@
       "title" : "DK Core LOINC Basic Observations",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -493,8 +493,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9656231d-fd21-4191-9f13-a877fcaa4fde",
-        "timestamp" : "2024-06-03T20:53:08+00:00",
+        "identifier" : "urn:uuid:cf64ac5f-31d8-4bf7-95b7-94c27c7833a2",
+        "timestamp" : "2024-06-25T21:14:01+00:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -608,7 +608,7 @@
       "title" : "DK Municipality Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -617,8 +617,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ca844ca2-67b6-4a74-ae4f-2b44fa4e2640",
-        "timestamp" : "2024-06-03T20:53:08+00:00",
+        "identifier" : "urn:uuid:07c1a0b3-952d-40a5-8ae7-559699f4c6c8",
+        "timestamp" : "2024-06-25T21:14:01+00:00",
         "total" : 104,
         "offset" : 0,
         "parameter" : [{
@@ -1165,6 +1165,114 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-dk-npu-fragment.html\">codesystem DK NPU Subset v3.3.0 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU03011\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03011\">NPU03011</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU27280\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27280\">NPU27280</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU04034\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU04034\">NPU04034</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Pt(spec.)—Blood; temp. = ? °C</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU08676\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU08676\">NPU08676</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Pt—Body; temp. = ? °C</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU58033\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58033\">NPU58033</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU57947\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57947\">NPU57947</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU58034\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU58034\">NPU58034</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU57948\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU57948\">NPU57948</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU21692\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU21692\">NPU21692</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Heart—Systole; frequency = ? × 1/min</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU03794\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03794\">NPU03794</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Pt—Body; height = ? m</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU03804\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU03804\">NPU03804</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Pt—Body; mass = ? kg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.208.176.2.1-NPU27281\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-npu-fragment.html#dk-npu-fragment-NPU27281\">NPU27281</a></td><td>urn:oid:1.2.208.176.2.1</td><td>Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+      "version" : "3.3.0",
+      "name" : "NPUBasicObservation",
+      "title" : "DK Core NPU Basic Observation",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-25T21:12:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:32c5da4d-8f34-4ebb-a0de-b5eab28d4715",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:oid:1.2.208.176.2.1|3.3.0"
+        }],
+        "contains" : [{
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU03011",
+          "display" : "Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU27280",
+          "display" : "Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU04034",
+          "display" : "Pt(spec.)—Blood; temp. = ? °C"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU08676",
+          "display" : "Pt—Body; temp. = ? °C"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "inactive" : true,
+          "code" : "NPU58033",
+          "display" : "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU57947",
+          "display" : "Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "inactive" : true,
+          "code" : "NPU58034",
+          "display" : "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU57948",
+          "display" : "Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU21692",
+          "display" : "Heart—Systole; frequency = ? × 1/min"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU03794",
+          "display" : "Pt—Body; height = ? m"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU03804",
+          "display" : "Pt—Body; mass = ? kg"
+        },
+        {
+          "system" : "urn:oid:1.2.208.176.2.1",
+          "code" : "NPU27281",
+          "display" : "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1178,7 +1286,7 @@
       "title" : "DK Regional Subdivision Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1187,8 +1295,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1223664e-efa8-41c6-ac89-27655de2e107",
-        "timestamp" : "2024-06-03T20:53:09+00:00",
+        "identifier" : "urn:uuid:c7d7b71b-d488-43b5-b63c-7f6ad1d41505",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1249,7 +1357,7 @@
       "title" : "DK Related Person Relationship Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1258,8 +1366,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:51b8ff02-157c-4ed0-8de2-2cf9309d8f5d",
-        "timestamp" : "2024-06-03T20:53:09+00:00",
+        "identifier" : "urn:uuid:7701df35-1220-43d8-9b58-7a77f2f55afa",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
@@ -1395,7 +1503,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set expansion contains 41 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-446226005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/446226005\">446226005</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-400975005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/400975005\">400975005</a></td><td>http://snomed.info/sct</td><td>Standing diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407557002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407557002\">407557002</a></td><td>http://snomed.info/sct</td><td>Lying diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407555005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407555005\">407555005</a></td><td>http://snomed.info/sct</td><td>Sitting diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271650006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271650006\">271650006</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-72313002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72313002\">72313002</a></td><td>http://snomed.info/sct</td><td>Systolic arterial pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-400974009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/400974009\">400974009</a></td><td>http://snomed.info/sct</td><td>Standing systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-399304008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/399304008\">399304008</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407556006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407556006\">407556006</a></td><td>http://snomed.info/sct</td><td>Lying systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407554009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407554009\">407554009</a></td><td>http://snomed.info/sct</td><td>Sitting systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271649006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271649006\">271649006</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422119006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422119006\">422119006</a></td><td>http://snomed.info/sct</td><td>Brachial pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429614003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429614003\">429614003</a></td><td>http://snomed.info/sct</td><td>Posterior tibial pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429525003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429525003\">429525003</a></td><td>http://snomed.info/sct</td><td>Dorsalis pedis pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-399017001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/399017001\">399017001</a></td><td>http://snomed.info/sct</td><td>Heart rate on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78564009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/78564009\">78564009</a></td><td>http://snomed.info/sct</td><td>Pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-444981005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/444981005\">444981005</a></td><td>http://snomed.info/sct</td><td>Resting heart rate (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364075005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364075005\">364075005</a></td><td>http://snomed.info/sct</td><td>Heart rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-424927000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/424927000\">424927000</a></td><td>http://snomed.info/sct</td><td>Body weight with shoes (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-445541000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/445541000\">445541000</a></td><td>http://snomed.info/sct</td><td>Dry body weight (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425024002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425024002\">425024002</a></td><td>http://snomed.info/sct</td><td>Body weight without shoes (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364589006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364589006\">364589006</a></td><td>http://snomed.info/sct</td><td>Birth weight</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-27113001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/27113001\">27113001</a></td><td>http://snomed.info/sct</td><td>Body weight</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1153637007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1153637007\">1153637007</a></td><td>http://snomed.info/sct</td><td>Body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-248333004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/248333004\">248333004</a></td><td>http://snomed.info/sct</td><td>Standing height</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1149101003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1149101003\">1149101003</a></td><td>http://snomed.info/sct</td><td>Recumbent body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1162392001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1162392001\">1162392001</a></td><td>http://snomed.info/sct</td><td>Pre-amputation measured body height</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-431314004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/431314004\">431314004</a></td><td>http://snomed.info/sct</td><td>Peripheral oxygen saturation (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86290005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/86290005\">86290005</a></td><td>http://snomed.info/sct</td><td>Respiratory rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-250810003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/250810003\">250810003</a></td><td>http://snomed.info/sct</td><td>Total breath rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271625008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271625008\">271625008</a></td><td>http://snomed.info/sct</td><td>Rate of spontaneous respiration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276885007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276885007\">276885007</a></td><td>http://snomed.info/sct</td><td>Core body temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300076005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/300076005\">300076005</a></td><td>http://snomed.info/sct</td><td>Basal body temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-307047009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/307047009\">307047009</a></td><td>http://snomed.info/sct</td><td>Rectal temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364246006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364246006\">364246006</a></td><td>http://snomed.info/sct</td><td>Temperature of vagina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-415974002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415974002\">415974002</a></td><td>http://snomed.info/sct</td><td>Tympanic temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-431598003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/431598003\">431598003</a></td><td>http://snomed.info/sct</td><td>Temperature of esophagus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698831002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698831002\">698831002</a></td><td>http://snomed.info/sct</td><td>Nasopharyngeal temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698832009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698832009\">698832009</a></td><td>http://snomed.info/sct</td><td>Bladder temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708499008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/708499008\">708499008</a></td><td>http://snomed.info/sct</td><td>Temperature of neonate at birth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1222808002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1222808002\">1222808002</a></td><td>http://snomed.info/sct</td><td>Temperature of blood</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT Danish edition 30-Sep 2021</p><p>This value set expansion contains 40 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-446226005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/446226005\">446226005</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-400975005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/400975005\">400975005</a></td><td>http://snomed.info/sct</td><td>Standing diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407557002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407557002\">407557002</a></td><td>http://snomed.info/sct</td><td>Lying diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407555005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407555005\">407555005</a></td><td>http://snomed.info/sct</td><td>Sitting diastolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271650006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271650006\">271650006</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-72313002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72313002\">72313002</a></td><td>http://snomed.info/sct</td><td>Systolic arterial pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-400974009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/400974009\">400974009</a></td><td>http://snomed.info/sct</td><td>Standing systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-399304008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/399304008\">399304008</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407556006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407556006\">407556006</a></td><td>http://snomed.info/sct</td><td>Lying systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407554009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/407554009\">407554009</a></td><td>http://snomed.info/sct</td><td>Sitting systolic blood pressure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271649006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271649006\">271649006</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422119006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422119006\">422119006</a></td><td>http://snomed.info/sct</td><td>Brachial pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429614003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429614003\">429614003</a></td><td>http://snomed.info/sct</td><td>Posterior tibial pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429525003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429525003\">429525003</a></td><td>http://snomed.info/sct</td><td>Dorsalis pedis pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-399017001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/399017001\">399017001</a></td><td>http://snomed.info/sct</td><td>Heart rate on admission (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78564009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/78564009\">78564009</a></td><td>http://snomed.info/sct</td><td>Pulse rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-444981005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/444981005\">444981005</a></td><td>http://snomed.info/sct</td><td>Resting heart rate (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364075005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364075005\">364075005</a></td><td>http://snomed.info/sct</td><td>Heart rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-424927000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/424927000\">424927000</a></td><td>http://snomed.info/sct</td><td>Body weight with shoes (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-445541000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/445541000\">445541000</a></td><td>http://snomed.info/sct</td><td>Dry body weight (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425024002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425024002\">425024002</a></td><td>http://snomed.info/sct</td><td>Body weight without shoes (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364589006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364589006\">364589006</a></td><td>http://snomed.info/sct</td><td>Birth weight</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-27113001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/27113001\">27113001</a></td><td>http://snomed.info/sct</td><td>Body weight</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1153637007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1153637007\">1153637007</a></td><td>http://snomed.info/sct</td><td>Body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-248333004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/248333004\">248333004</a></td><td>http://snomed.info/sct</td><td>Standing height</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1149101003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1149101003\">1149101003</a></td><td>http://snomed.info/sct</td><td>Recumbent body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-431314004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/431314004\">431314004</a></td><td>http://snomed.info/sct</td><td>Peripheral oxygen saturation (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86290005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/86290005\">86290005</a></td><td>http://snomed.info/sct</td><td>Respiratory rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-250810003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/250810003\">250810003</a></td><td>http://snomed.info/sct</td><td>Total breath rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271625008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271625008\">271625008</a></td><td>http://snomed.info/sct</td><td>Rate of spontaneous respiration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276885007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276885007\">276885007</a></td><td>http://snomed.info/sct</td><td>Core body temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300076005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/300076005\">300076005</a></td><td>http://snomed.info/sct</td><td>Basal body temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-307047009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/307047009\">307047009</a></td><td>http://snomed.info/sct</td><td>Rectal temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-364246006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364246006\">364246006</a></td><td>http://snomed.info/sct</td><td>Temperature of vagina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-415945006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415945006\">415945006</a></td><td>http://snomed.info/sct</td><td>Oral temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-415974002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415974002\">415974002</a></td><td>http://snomed.info/sct</td><td>Tympanic temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-431598003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/431598003\">431598003</a></td><td>http://snomed.info/sct</td><td>Temperature of esophagus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698831002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698831002\">698831002</a></td><td>http://snomed.info/sct</td><td>Nasopharyngeal temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698832009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698832009\">698832009</a></td><td>http://snomed.info/sct</td><td>Bladder temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708499008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/708499008\">708499008</a></td><td>http://snomed.info/sct</td><td>Temperature of neonate at birth</td></tr></table></div>"
       },
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
       "version" : "3.3.0",
@@ -1403,7 +1511,7 @@
       "title" : "DK Core SNOMED CT Basic Observation",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1416,8 +1524,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:9a3868d1-06cc-4a1c-8483-1ec97e2b3464",
-        "timestamp" : "2024-06-03T20:53:09+00:00",
+        "identifier" : "urn:uuid:07d54cc3-06b3-4e3b-9eea-fc19e7a9e67d",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -1437,11 +1545,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"
         },
         {
           "name" : "excludeNested",
@@ -1579,11 +1687,6 @@
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "1162392001",
-          "display" : "Pre-amputation measured body height"
-        },
-        {
-          "system" : "http://snomed.info/sct",
           "code" : "431314004",
           "display" : "Peripheral oxygen saturation (observable entity)"
         },
@@ -1624,6 +1727,11 @@
         },
         {
           "system" : "http://snomed.info/sct",
+          "code" : "415945006",
+          "display" : "Oral temperature"
+        },
+        {
+          "system" : "http://snomed.info/sct",
           "code" : "415974002",
           "display" : "Tympanic temperature"
         },
@@ -1646,11 +1754,6 @@
           "system" : "http://snomed.info/sct",
           "code" : "708499008",
           "display" : "Temperature of neonate at birth"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "1222808002",
-          "display" : "Temperature of blood"
         }]
       }
     }
@@ -1661,7 +1764,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-761996005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>http://snomed.info/sct</td><td>Estimation technique</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733985002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>http://snomed.info/sct</td><td>Reported (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-272391002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>http://snomed.info/sct</td><td>Measurement</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT Danish edition 30-Sep 2021</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-761996005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>http://snomed.info/sct</td><td>Estimation technique</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733985002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>http://snomed.info/sct</td><td>Reported (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-272391002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>http://snomed.info/sct</td><td>Measurement</td></tr></table></div>"
       },
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
       "version" : "3.3.0",
@@ -1669,7 +1772,7 @@
       "title" : "DK TechniquesSCTCodes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1678,8 +1781,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b20a3bc3-b7db-407a-bd6d-240c0245eab2",
-        "timestamp" : "2024-06-03T20:53:10+00:00",
+        "identifier" : "urn:uuid:b4dbae50-2ef4-4733-96bc-33bcd46a265d",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1700,11 +1803,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1738,7 +1841,7 @@
       "title" : "DK Core UCUM Basic Units",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1747,8 +1850,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:22e563ce-5a31-44cf-afee-5067526cb8cc",
-        "timestamp" : "2024-06-03T20:53:10+00:00",
+        "identifier" : "urn:uuid:e02fb9dc-9a96-44e2-b336-fdf6a0025a58",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -1856,7 +1959,7 @@
       "title" : "DK MaritalStatus",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1865,8 +1968,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6b161308-78d6-41e6-97c7-c33b5991e314",
-        "timestamp" : "2024-06-03T20:53:10+00:00",
+        "identifier" : "urn:uuid:ec121007-74f5-47c4-aed6-88fc3afd1cdc",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -1976,7 +2079,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li>SNOMED CT Danish edition 30-Sep 2021</li><li>SNOMED CT International edition 01-Feb 2024</li></ul></div><p>This value set contains 68 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554221000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554221000005108\">554221000005108</a></td><td>http://snomed.info/sct</td><td>bosted</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-546821000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/546821000005103\">546821000005103</a></td><td>http://snomed.info/sct</td><td>ergoterapiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-547011000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/547011000005103\">547011000005103</a></td><td>http://snomed.info/sct</td><td>fysioterapiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-546811000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/546811000005109\">546811000005109</a></td><td>http://snomed.info/sct</td><td>Rehabilitation center</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550621000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550621000005101\">550621000005101</a></td><td>http://snomed.info/sct</td><td>District nursing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550631000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550631000005103\">550631000005103</a></td><td>http://snomed.info/sct</td><td>jordemoderklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550641000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550641000005106\">550641000005106</a></td><td>http://snomed.info/sct</td><td>Chiropractic clinic</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550651000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550651000005108\">550651000005108</a></td><td>http://snomed.info/sct</td><td>lægelaboratorium</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550661000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550661000005105\">550661000005105</a></td><td>http://snomed.info/sct</td><td>lægevagt</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554211000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554211000005102\">554211000005102</a></td><td>http://snomed.info/sct</td><td>Prehospital unit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550711000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550711000005101\">550711000005101</a></td><td>http://snomed.info/sct</td><td>psykologisk rådgivningsklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550671000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550671000005100\">550671000005100</a></td><td>http://snomed.info/sct</td><td>speciallægepraksis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554061000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554061000005105\">554061000005105</a></td><td>http://snomed.info/sct</td><td>fodterapeutklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554041000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554041000005106\">554041000005106</a></td><td>http://snomed.info/sct</td><td>sundhedsforvaltning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554021000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554021000005101\">554021000005101</a></td><td>http://snomed.info/sct</td><td>Health visitors</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550681000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550681000005102\">550681000005102</a></td><td>http://snomed.info/sct</td><td>tandlægepraksis</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550691000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550691000005104\">550691000005104</a></td><td>http://snomed.info/sct</td><td>Dental care clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550701000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550701000005104\">550701000005104</a></td><td>http://snomed.info/sct</td><td>tandteknisk klinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554231000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554231000005106\">554231000005106</a></td><td>http://snomed.info/sct</td><td>vaccinationsklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554051000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554051000005108\">554051000005108</a></td><td>http://snomed.info/sct</td><td>zoneterapiklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550811000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550811000005108\">550811000005108</a></td><td>http://snomed.info/sct</td><td>administrativ enhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-547211000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/547211000005108\">547211000005108</a></td><td>http://snomed.info/sct</td><td>kommune</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550891000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550891000005100\">550891000005100</a></td><td>http://snomed.info/sct</td><td>Private</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550881000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550881000005103\">550881000005103</a></td><td>http://snomed.info/sct</td><td>region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550411000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550411000005105\">550411000005105</a></td><td>http://snomed.info/sct</td><td>Other health institution</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554851000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554851000005102\">554851000005102</a></td><td>http://snomed.info/sct</td><td>asylcenter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550861000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550861000005106\">550861000005106</a></td><td>http://snomed.info/sct</td><td>fysioterapi- og ergoterapiklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554881000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554881000005108\">554881000005108</a></td><td>http://snomed.info/sct</td><td>Handicap and psychiatry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554861000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554861000005100\">554861000005100</a></td><td>http://snomed.info/sct</td><td>handikap</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554821000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554821000005109\">554821000005109</a></td><td>http://snomed.info/sct</td><td>hjemmepleje</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554411000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554411000005101\">554411000005101</a></td><td>http://snomed.info/sct</td><td>Employment agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554871000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554871000005105\">554871000005105</a></td><td>http://snomed.info/sct</td><td>psykiatri</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550821000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550821000005102\">550821000005102</a></td><td>http://snomed.info/sct</td><td>Service unit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550871000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550871000005101\">550871000005101</a></td><td>http://snomed.info/sct</td><td>Emergency admission unit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554241000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554241000005103\">554241000005103</a></td><td>http://snomed.info/sct</td><td>teknisk lokationsnummer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550841000005107\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550841000005107\">550841000005107</a></td><td>http://snomed.info/sct</td><td>forskningsenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550851000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550851000005109\">550851000005109</a></td><td>http://snomed.info/sct</td><td>klinisk enhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-551611000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/551611000005102\">551611000005102</a></td><td>http://snomed.info/sct</td><td>operationsgang</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554071000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554071000005100\">554071000005100</a></td><td>http://snomed.info/sct</td><td>sygehusapotek</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550831000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550831000005104\">550831000005104</a></td><td>http://snomed.info/sct</td><td>uddannelsesenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554031000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554031000005103\">554031000005103</a></td><td>http://snomed.info/sct</td><td>diætistklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557511000005107\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557511000005107\">557511000005107</a></td><td>http://snomed.info/sct</td><td>akupunkturklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557501000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557501000005109\">557501000005109</a></td><td>http://snomed.info/sct</td><td>apoteksfilial</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557531000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557531000005103\">557531000005103</a></td><td>http://snomed.info/sct</td><td>bandagistklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557591000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557591000005104\">557591000005104</a></td><td>http://snomed.info/sct</td><td>internetbaseret sundhedsydelse</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557521000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557521000005101\">557521000005101</a></td><td>http://snomed.info/sct</td><td>klinik for alternativ behandling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557561000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557561000005105\">557561000005105</a></td><td>http://snomed.info/sct</td><td>konsulentvirksomhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557541000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557541000005106\">557541000005106</a></td><td>http://snomed.info/sct</td><td>kosmetisk klinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557581000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557581000005102\">557581000005102</a></td><td>http://snomed.info/sct</td><td>optikervirksomhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-556841000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/556841000005105\">556841000005105</a></td><td>http://snomed.info/sct</td><td>pædagogisk psykologisk rådgivning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557671000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557671000005101\">557671000005101</a></td><td>http://snomed.info/sct</td><td>osteopatiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398070004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/398070004\">398070004</a></td><td>http://snomed.info/sct</td><td>State (environment)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-394761003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/394761003\">394761003</a></td><td>http://snomed.info/sct</td><td>General practitioner practice site</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-20078004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/20078004\">20078004</a></td><td>http://snomed.info/sct</td><td>Substance abuse treatment center</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722173008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/722173008\">722173008</a></td><td>http://snomed.info/sct</td><td>Prison based care site (environment)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702871004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/702871004\">702871004</a></td><td>http://snomed.info/sct</td><td>Infertility clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276037005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276037005\">276037005</a></td><td>http://snomed.info/sct</td><td>Volunteer helper</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22232009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/22232009\">22232009</a></td><td>http://snomed.info/sct</td><td>Hospital</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702824005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/702824005\">702824005</a></td><td>http://snomed.info/sct</td><td>Audiology clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-42665001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/42665001\">42665001</a></td><td>http://snomed.info/sct</td><td>Nursing home</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264361005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/264361005\">264361005</a></td><td>http://snomed.info/sct</td><td>HC - Health centre</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-703069008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/703069008\">703069008</a></td><td>http://snomed.info/sct</td><td>Nurse practitioner clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309964003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309964003\">309964003</a></td><td>http://snomed.info/sct</td><td>Radiology department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309904001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309904001\">309904001</a></td><td>http://snomed.info/sct</td><td>Intensive care unit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309939001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309939001\">309939001</a></td><td>http://snomed.info/sct</td><td>Palliative care department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-225728007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/225728007\">225728007</a></td><td>http://snomed.info/sct</td><td>Accident and Emergency department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255203001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255203001\">255203001</a></td><td>http://snomed.info/sct</td><td>Additional values</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264372000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/264372000\">264372000</a></td><td>http://snomed.info/sct</td><td>Pharmacy</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT Danish edition 30-Sep 2021</p><p>This value set contains 68 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554221000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554221000005108\">554221000005108</a></td><td>http://snomed.info/sct</td><td>bosted</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-546821000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/546821000005103\">546821000005103</a></td><td>http://snomed.info/sct</td><td>ergoterapiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-547011000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/547011000005103\">547011000005103</a></td><td>http://snomed.info/sct</td><td>fysioterapiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-546811000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/546811000005109\">546811000005109</a></td><td>http://snomed.info/sct</td><td>rehabiliteringscenter</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550621000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550621000005101\">550621000005101</a></td><td>http://snomed.info/sct</td><td>hjemmesygeplejeenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550631000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550631000005103\">550631000005103</a></td><td>http://snomed.info/sct</td><td>jordemoderklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550641000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550641000005106\">550641000005106</a></td><td>http://snomed.info/sct</td><td>kiropraktorklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550651000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550651000005108\">550651000005108</a></td><td>http://snomed.info/sct</td><td>lægelaboratorium</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550661000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550661000005105\">550661000005105</a></td><td>http://snomed.info/sct</td><td>lægevagt</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554211000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554211000005102\">554211000005102</a></td><td>http://snomed.info/sct</td><td>præhospitalsenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550711000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550711000005101\">550711000005101</a></td><td>http://snomed.info/sct</td><td>psykologisk rådgivningsklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550671000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550671000005100\">550671000005100</a></td><td>http://snomed.info/sct</td><td>speciallægepraksis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554061000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554061000005105\">554061000005105</a></td><td>http://snomed.info/sct</td><td>fodterapeutklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554041000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554041000005106\">554041000005106</a></td><td>http://snomed.info/sct</td><td>sundhedsforvaltning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554021000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554021000005101\">554021000005101</a></td><td>http://snomed.info/sct</td><td>sundhedsplejen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550681000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550681000005102\">550681000005102</a></td><td>http://snomed.info/sct</td><td>tandlægepraksis</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550691000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550691000005104\">550691000005104</a></td><td>http://snomed.info/sct</td><td>tandplejeklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550701000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550701000005104\">550701000005104</a></td><td>http://snomed.info/sct</td><td>tandteknisk klinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554231000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554231000005106\">554231000005106</a></td><td>http://snomed.info/sct</td><td>vaccinationsklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554051000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554051000005108\">554051000005108</a></td><td>http://snomed.info/sct</td><td>zoneterapiklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550811000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550811000005108\">550811000005108</a></td><td>http://snomed.info/sct</td><td>administrativ enhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-547211000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/547211000005108\">547211000005108</a></td><td>http://snomed.info/sct</td><td>kommune</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550891000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550891000005100\">550891000005100</a></td><td>http://snomed.info/sct</td><td>privat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550881000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550881000005103\">550881000005103</a></td><td>http://snomed.info/sct</td><td>region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550411000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550411000005105\">550411000005105</a></td><td>http://snomed.info/sct</td><td>anden sundhedsinstitution</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554851000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554851000005102\">554851000005102</a></td><td>http://snomed.info/sct</td><td>asylcenter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550861000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550861000005106\">550861000005106</a></td><td>http://snomed.info/sct</td><td>fysioterapi- og ergoterapiklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554881000005108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554881000005108\">554881000005108</a></td><td>http://snomed.info/sct</td><td>handicap- og psykiatrienhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554861000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554861000005100\">554861000005100</a></td><td>http://snomed.info/sct</td><td>handikap</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554821000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554821000005109\">554821000005109</a></td><td>http://snomed.info/sct</td><td>hjemmepleje</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554411000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554411000005101\">554411000005101</a></td><td>http://snomed.info/sct</td><td>jobcenter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554871000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554871000005105\">554871000005105</a></td><td>http://snomed.info/sct</td><td>psykiatri</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550821000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550821000005102\">550821000005102</a></td><td>http://snomed.info/sct</td><td>serviceenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550871000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550871000005101\">550871000005101</a></td><td>http://snomed.info/sct</td><td>AMA</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554241000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554241000005103\">554241000005103</a></td><td>http://snomed.info/sct</td><td>teknisk lokationsnummer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550841000005107\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550841000005107\">550841000005107</a></td><td>http://snomed.info/sct</td><td>forskningsenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550851000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550851000005109\">550851000005109</a></td><td>http://snomed.info/sct</td><td>klinisk enhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-551611000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/551611000005102\">551611000005102</a></td><td>http://snomed.info/sct</td><td>operationsgang</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554071000005100\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554071000005100\">554071000005100</a></td><td>http://snomed.info/sct</td><td>sygehusapotek</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-550831000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/550831000005104\">550831000005104</a></td><td>http://snomed.info/sct</td><td>uddannelsesenhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-554031000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/554031000005103\">554031000005103</a></td><td>http://snomed.info/sct</td><td>diætistklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557511000005107\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557511000005107\">557511000005107</a></td><td>http://snomed.info/sct</td><td>akupunkturklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557501000005109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557501000005109\">557501000005109</a></td><td>http://snomed.info/sct</td><td>apoteksfilial</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557531000005103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557531000005103\">557531000005103</a></td><td>http://snomed.info/sct</td><td>bandagistklinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557591000005104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557591000005104\">557591000005104</a></td><td>http://snomed.info/sct</td><td>internetbaseret sundhedsydelse</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557521000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557521000005101\">557521000005101</a></td><td>http://snomed.info/sct</td><td>klinik for alternativ behandling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557561000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557561000005105\">557561000005105</a></td><td>http://snomed.info/sct</td><td>konsulentvirksomhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557541000005106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557541000005106\">557541000005106</a></td><td>http://snomed.info/sct</td><td>kosmetisk klinik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557581000005102\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557581000005102\">557581000005102</a></td><td>http://snomed.info/sct</td><td>optikervirksomhed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-556841000005105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/556841000005105\">556841000005105</a></td><td>http://snomed.info/sct</td><td>pædagogisk psykologisk rådgivning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-557671000005101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/557671000005101\">557671000005101</a></td><td>http://snomed.info/sct</td><td>osteopatiklinik</td><td>inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398070004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/398070004\">398070004</a></td><td>http://snomed.info/sct</td><td>State (environment)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-394761003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/394761003\">394761003</a></td><td>http://snomed.info/sct</td><td>GP practice site</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-20078004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/20078004\">20078004</a></td><td>http://snomed.info/sct</td><td>Substance abuse treatment center</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722173008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/722173008\">722173008</a></td><td>http://snomed.info/sct</td><td>Prison based care site (environment)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702871004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/702871004\">702871004</a></td><td>http://snomed.info/sct</td><td>Infertility clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276037005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276037005\">276037005</a></td><td>http://snomed.info/sct</td><td>Volunteer helper</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22232009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/22232009\">22232009</a></td><td>http://snomed.info/sct</td><td>Hospital</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702824005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/702824005\">702824005</a></td><td>http://snomed.info/sct</td><td>Audiology clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-42665001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/42665001\">42665001</a></td><td>http://snomed.info/sct</td><td>Nursing home</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264361005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/264361005\">264361005</a></td><td>http://snomed.info/sct</td><td>HC - Health centre</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-703069008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/703069008\">703069008</a></td><td>http://snomed.info/sct</td><td>Nurse practitioner clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309964003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309964003\">309964003</a></td><td>http://snomed.info/sct</td><td>Radiology department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309904001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309904001\">309904001</a></td><td>http://snomed.info/sct</td><td>Intensive care unit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309939001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309939001\">309939001</a></td><td>http://snomed.info/sct</td><td>Palliative care department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-225728007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/225728007\">225728007</a></td><td>http://snomed.info/sct</td><td>Accident and Emergency department</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255203001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255203001\">255203001</a></td><td>http://snomed.info/sct</td><td>Additional values</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264372000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/264372000\">264372000</a></td><td>http://snomed.info/sct</td><td>Pharmacy</td><td/></tr></table></div>"
       },
       "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
       "version" : "3.3.0",
@@ -1984,7 +2087,7 @@
       "title" : "DK SOR Organization Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-03T20:51:53+00:00",
+      "date" : "2024-06-25T21:12:53+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1993,8 +2096,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:294d6a86-d2f6-4451-9a6d-29a41af6a3be",
-        "timestamp" : "2024-06-03T20:53:10+00:00",
+        "identifier" : "urn:uuid:4f50f8d4-9101-4de0-a11a-4b9e4df2e33c",
+        "timestamp" : "2024-06-25T21:14:02+00:00",
         "total" : 68,
         "offset" : 0,
         "parameter" : [{
@@ -2020,18 +2123,6 @@
         {
           "name" : "version",
           "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -2055,12 +2146,12 @@
           "system" : "http://snomed.info/sct",
           "inactive" : true,
           "code" : "546811000005109",
-          "display" : "Rehabilitation center"
+          "display" : "rehabiliteringscenter"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "550621000005101",
-          "display" : "District nursing"
+          "display" : "hjemmesygeplejeenhed"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2071,7 +2162,7 @@
           "system" : "http://snomed.info/sct",
           "inactive" : true,
           "code" : "550641000005106",
-          "display" : "Chiropractic clinic"
+          "display" : "kiropraktorklinik"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2086,7 +2177,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "554211000005102",
-          "display" : "Prehospital unit"
+          "display" : "præhospitalsenhed"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2111,7 +2202,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "554021000005101",
-          "display" : "Health visitors"
+          "display" : "sundhedsplejen"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2122,7 +2213,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "550691000005104",
-          "display" : "Dental care clinic"
+          "display" : "tandplejeklinik"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2153,7 +2244,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "550891000005100",
-          "display" : "Private"
+          "display" : "privat"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2163,7 +2254,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "550411000005105",
-          "display" : "Other health institution"
+          "display" : "anden sundhedsinstitution"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2178,7 +2269,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "554881000005108",
-          "display" : "Handicap and psychiatry"
+          "display" : "handicap- og psykiatrienhed"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2193,7 +2284,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "554411000005101",
-          "display" : "Employment agency"
+          "display" : "jobcenter"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2203,12 +2294,12 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "550821000005102",
-          "display" : "Service unit"
+          "display" : "serviceenhed"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "550871000005101",
-          "display" : "Emergency admission unit"
+          "display" : "AMA"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2304,7 +2395,7 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "394761003",
-          "display" : "General practitioner practice site"
+          "display" : "GP practice site"
         },
         {
           "system" : "http://snomed.info/sct",

@@ -105,8 +105,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
@@ -130,8 +130,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -214,9 +214,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -230,10 +230,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -359,9 +373,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile",
+      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -375,16 +404,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
       "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-producent-id.html" : "Producent Id"
     },
     {
@@ -399,16 +428,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
       "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
       "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
       "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
       "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
       "StructureDefinition-dk-core-producent-id.html" : "Producent Id"
     },
     {
@@ -423,14 +452,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile",
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
       "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
+      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -445,6 +476,50 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -489,8 +564,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -504,8 +579,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -520,8 +595,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -538,8 +613,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -554,8 +629,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -570,9 +645,26 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -586,8 +678,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -605,8 +697,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -623,8 +715,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
@@ -642,6 +734,20 @@
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
       "version" : "0360",
       "status" : "active",
@@ -652,6 +758,20 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
     }
   ]
 }

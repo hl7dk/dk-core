@@ -10,7 +10,7 @@
   "name" : "DkCoreBasicObservation",
   "title" : "Danish Core Basic Observation Profile",
   "status" : "draft",
-  "date" : "2024-06-03T20:51:53+00:00",
+  "date" : "2024-06-25T21:12:53+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -2866,7 +2866,7 @@
         "code" : "Reference",
         "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
         "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/Location",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
         "http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
@@ -3099,9 +3099,9 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
         "http://hl7.org/fhir/StructureDefinition/CareTeam",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
       }],
@@ -4029,7 +4029,7 @@
       "type" : [{
         "code" : "uri"
       }],
-      "patternUri" : "http://snomed.info/sct",
+      "patternUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

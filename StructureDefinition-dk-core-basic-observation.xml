@@ -29,7 +29,7 @@
   <name value="DkCoreBasicObservation"/>
   <title value="Danish Core Basic Observation Profile"/>
   <status value="draft"/>
-  <date value="2024-06-03T20:51:53+00:00"/>
+  <date value="2024-06-25T21:12:53+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -2794,7 +2794,7 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
       <constraint>
@@ -3022,9 +3022,9 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
         <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
         <targetProfile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
       </type>
@@ -3922,7 +3922,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <patternUri value="http://snomed.info/sct"/>
+      <patternUri value="http://snomed.info/sct|http://snomed.info/sct/554471000005108"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>

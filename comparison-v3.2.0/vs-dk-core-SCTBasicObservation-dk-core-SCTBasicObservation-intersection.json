@@ -1,122 +1,16 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "1385c9c7-14eb-45ea-a1fa-84079821128e-141",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/1385c9c7-14eb-45ea-a1fa-84079821128e-141",
+  "id" : "3ea979c6-3e04-4d5a-8c62-09db473a2f02-141",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3ea979c6-3e04-4d5a-8c62-09db473a2f02-141",
   "name" : "IntersectionSCTBasicObservationAndSCTBasicObservation",
   "title" : "Intersection of DK Core SNOMED CT Basic Observation And DK Core SNOMED CT Basic Observation",
   "status" : "active",
-  "date" : "2024-06-03T20:52:24+00:00",
+  "date" : "2024-06-25T21:13:23+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "DK",
       "display" : "Denmark"
     }]
-  }],
-  "compose" : {
-    "include" : [{
-      "concept" : [{
-        "code" : "446226005"
-      },
-      {
-        "code" : "400975005"
-      },
-      {
-        "code" : "407557002"
-      },
-      {
-        "code" : "407555005"
-      },
-      {
-        "code" : "271650006"
-      },
-      {
-        "code" : "72313002"
-      },
-      {
-        "code" : "400974009"
-      },
-      {
-        "code" : "399304008"
-      },
-      {
-        "code" : "407556006"
-      },
-      {
-        "code" : "407554009"
-      },
-      {
-        "code" : "271649006"
-      },
-      {
-        "code" : "422119006"
-      },
-      {
-        "code" : "429614003"
-      },
-      {
-        "code" : "429525003"
-      },
-      {
-        "code" : "399017001"
-      },
-      {
-        "code" : "78564009"
-      },
-      {
-        "code" : "444981005"
-      },
-      {
-        "code" : "364075005"
-      },
-      {
-        "code" : "424927000"
-      },
-      {
-        "code" : "445541000"
-      },
-      {
-        "code" : "425024002"
-      },
-      {
-        "code" : "364589006"
-      },
-      {
-        "code" : "27113001"
-      },
-      {
-        "code" : "1153637007"
-      },
-      {
-        "code" : "248333004"
-      },
-      {
-        "code" : "1149101003"
-      },
-      {
-        "code" : "1162392001"
-      }]
-    },
-    {
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "431314004"
-      }]
-    },
-    {
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "86290005"
-      }]
-    },
-    {
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "276885007"
-      }]
-    }]
-  }
+  }]
 }

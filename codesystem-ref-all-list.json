@@ -114,6 +114,18 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -136,6 +148,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "oids" : ["2.16.840.1.113883.4.642.4.331"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "oids" : ["2.16.840.1.113883.4.642.4.333"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
     },
     {
       "url" : "http://hl7.org/fhir/name-use",
@@ -207,17 +243,19 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation"
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -280,6 +318,18 @@
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "1.0.0",
       "status" : "draft",
@@ -292,6 +342,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
       "version" : "1.0.0",
       "status" : "draft",
@@ -302,6 +364,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "BedStatus",
+      "title" : "bedStatus",
+      "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
+      "oids" : ["2.16.840.1.113883.18.47"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -337,7 +411,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
+      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -374,6 +449,18 @@
       "uses" : {
       },
       "ValueSet-dk-core-IEEEBasicObservation.html" : "Dk Core IEEE Basic Observation"
+    },
+    {
+      "url" : "urn:oid:1.2.208.176.2.1",
+      "version" : "3.3.0",
+      "status" : "active",
+      "name" : "NPU",
+      "title" : "DK NPU Subset",
+      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
+      "oids" : ["1.2.208.176.2.1"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-NPUBasicObservation.html" : "DK Core NPU Basic Observation"
     }
   ]
 }

@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-06-03T20:51:53+00:00",
+  "date" : "2024-06-25T21:12:53+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -944,6 +944,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-location"
+      },
+      "name" : "Danish Core Location Profile",
+      "description" : "HL7 Denmark core profile for locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -999,6 +1011,18 @@
       },
       "name" : "Danish Core Practitioner Profile",
       "description" : "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-practitioner-role"
+      },
+      "name" : "Danish Core PractitionerRole Profile",
+      "description" : "HL7 Denmark core profile for health professional roles",
       "exampleBoolean" : false
     },
     {
@@ -1175,18 +1199,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/sor-organization-type"
-      },
-      "name" : "DK Core SOR Organization Type",
-      "description" : "Value set used for indicating the organization type for organizations from SOR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
       },
       "name" : "DK Core UCUM Basic Units",
@@ -1287,6 +1299,18 @@
       },
       "name" : "DK Municipality Codes",
       "description" : "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-npu-fragment"
+      },
+      "name" : "DK NPU Subset",
+      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
       "exampleBoolean" : false
     },
     {
@@ -1395,6 +1419,18 @@
       },
       "name" : "DK Role Code",
       "description" : "CodeSystem supplement with danish translations for RoleCode",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sor-organization-type"
+      },
+      "name" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
       "exampleBoolean" : false
     },
     {
@@ -1807,6 +1843,18 @@
       "name" : "LaegerneHasserisBymidte",
       "description" : "Praktisernede læge i Hasseris, som defineret af SOR",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/AbrahamPractitionerRole"
+      },
+      "name" : "Licensed physician in primary care",
+      "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
     },
     {
       "extension" : [{
