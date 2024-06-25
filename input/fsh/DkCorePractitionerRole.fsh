@@ -1,5 +1,5 @@
 Profile: DkCorePractitionerRole
-Parent: PractitionerRole
+Parent: IPAPractitionerRole
 Id: dk-core-practitioner-role
 Title: "Danish Core PractitionerRole Profile"
 Description: "HL7 Denmark core profile for health professional roles"
