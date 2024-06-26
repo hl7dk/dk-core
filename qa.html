@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 128, warn = 85, info = 111-->
+<!-- broken links = 0, errors = 129, warn = 86, info = 111-->
 <head>
   <title>DKCore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DKCore</h1>
- <p>Generated Tue Jun 25 21:45:28 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jun 26 14:37:56 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.dk.core, Canonical = http://hl7.dk/fhir/core</td></tr>
@@ -129,7 +129,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
   </li>
   <li>
 hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-imposeProfile.html">SDImposeProfile</a>
- (2 uses)
+ (1 uses)
   </li>
   <li>
 hl7.fhir.uv.phd#1.0.0:     <a href="http://hl7.org/fhir/uv/phd/STU1/ImplementationGuide-hl7.fhir.uv.phd.html">PhdImplementationGuide</a>
@@ -163,14 +163,14 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v3.2.0/index.html">Comparison with version 3.2.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> <a href="ipa-comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 128, warn = 85, info = 111, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 129, warn = 86, info = 111, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>21</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>22</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-ContinuaBundleWithDevice"><b>/github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>41</b></td>
@@ -582,6 +582,12 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>output/assets/images/dnk.svg</b></td><td><b>error</b></td><td title=""><b>The html source does not contain the publish box &lt;!--ReleaseHeader--&gt;&lt;p id=&quot;publish-box&quot;&gt;Publish Box goes here&lt;/p&gt;&lt;!--EndReleaseHeader--&gt; (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/assets&#8203;/images&#8203;/dnk&#8203;.svg&#8203;#&#8203;/html&#8203;/head&#8203;/script at Line 1, column 29</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
    </tr>
 </table>
 <hr/>

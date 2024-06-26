@@ -22,6 +22,8 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Error - The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations) (NOTFOUND)
+Generic: line 0, col 0, Warning - The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (INVALID)
 /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json: line 37, col 12, Warning - Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation) (INVARIANT)
 /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json: line 64, col 14, Info - Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json: line 78, col 10, Info - Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2023-04-26 (BUSINESSRULE)
@@ -326,5 +328,5 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json: line 0, col 0, Warning - The code '1162392001' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108 (1162392001) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json: line 1, col 1950, Warning - Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not (REQUIRED)
 
-err = 128, warn = 85, info = 111
+err = 129, warn = 86, info = 111
 IG Publisher Version: 1.6.11

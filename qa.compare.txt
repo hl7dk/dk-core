@@ -1,10 +1,10 @@
 DKCore : Validation Results
 =========================================
 
-err = 128, warn = 85, info = 111
+err = 129, warn = 86, info = 111
 $--
 Generated $--. FHIR version $-- for hl7.fhir.dk.core#$-- (canonical = http://hl7.dk/fhir/core)
- Build Errors : 0 / 21 / 0
+ Build Errors : 1 / 22 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 8 / 98
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 2 / 35
  /github/workspace/fsh-generated/resources/Bundle-MaxTOKS : 0 / 21 / 34
@@ -142,6 +142,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/assets/images/dnk.svg: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
+WARNING: /github/workspace/output/assets/images/dnk.svg#/html/head/script at Line 1, column 29: The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
 == fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
 WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[0].resource/*Patient/Poul*/.name[0]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
