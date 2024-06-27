@@ -1,7 +1,15 @@
+Profile: IPADkCoreObservation
+Parent: DkCoreObservation
+Title: "Danish Core IPA Observation Profiles"
+Description: "HL7 Denmark core profile for IPA compliant observations"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
+* subject only Reference(DkCorePatient)
+
 Profile: DkCoreObservation
 Parent: Observation
 Id: dk-core-observation
-Title: "Danish Core Observation Profiles"
+Title: "Danish Core Observation Profile"
 Description: "HL7 Denmark core profile for observations"
 * obeys dk-core-observation-mandatory-units
 * code.coding ^slicing.discriminator.type = #value
@@ -44,9 +52,9 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $SKS (exactly)
   * code 1..
-* subject only Reference(DkCorePatient or Group or Location or Device)
+* subject only Reference(DkCorePatient or Group or DkCoreLocation or Device)
 * subject 1..
-* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or PractitionerRole or CareTeam or DkCoreRelatedPerson)
+* performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePatient or DkCorePractitionerRole or CareTeam or DkCoreRelatedPerson)
 * device ^short = "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
 * valueQuantity.system = $ucum
 * component.code.coding ^slicing.discriminator.type = #value
