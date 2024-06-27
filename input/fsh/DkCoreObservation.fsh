@@ -9,7 +9,7 @@ Description: "HL7 Denmark core profile for IPA compliant observations"
 Profile: DkCoreObservation
 Parent: Observation
 Id: dk-core-observation
-Title: "Danish Core Observation Profiles"
+Title: "Danish Core Observation Profile"
 Description: "HL7 Denmark core profile for observations"
 * obeys dk-core-observation-mandatory-units
 * code.coding ^slicing.discriminator.type = #value
