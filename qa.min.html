@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 129, warn = 86, info = 111-->
+<!-- broken links = 0, errors = 128, warn = 108, info = 111-->
 <head>
   <title>DKCore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DKCore</h1>
- <p>Generated Wed Jun 26 14:37:56 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jun 27 10:48:51 UTC 2024, FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.12</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.dk.core, Canonical = http://hl7.dk/fhir/core</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><ul><li>Publication Request is for v'3.2.0' but package version is v3.3.0 <img src="icon-error.gif" height="16px" width="16px"/></li>
@@ -163,14 +163,14 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v3.2.0/index.html">Comparison with version 3.2.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> <a href="ipa-comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 129, warn = 86, info = 111, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 128, warn = 108, info = 111, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>22</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>44</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-ContinuaBundleWithDevice"><b>/github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>41</b></td>
@@ -343,17 +343,80 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>output/assets/images/dnk.svg</b></td><td><b>error</b></td><td title=""><b>The html source does not contain the publish box &lt;!--ReleaseHeader--&gt;&lt;p id=&quot;publish-box&quot;&gt;Publish Box goes here&lt;/p&gt;&lt;!--EndReleaseHeader--&gt; (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-ConditionLastAssertedDate&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/assets&#8203;/images&#8203;/dnk&#8203;.svg&#8203;#&#8203;/html&#8203;/head&#8203;/script at Line 1, column 29</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
+     <td><b>output&#8203;/StructureDefinition-IPADkCoreObservation&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Observation.value_x_.value,Observation.method.coding.system,Observation.encounter,Observation.code.coding.userSelected,Observation.component.code.coding.extension,Observation.component.code.coding.version,Observation.referenceRange.modifierExtension,Observation.language,Observation.issued,Observation.implicitRules,Observation.component,Observation.interpretation,Observation.focus,Observation.component.value_x_.comparator,Observation.value_x_,Observation.basedOn,Observation.component.code.coding.system,Observation.method.coding.code,Observation.component.modifierExtension,Observation.method.text,Observation.referenceRange,Observation.modifierExtension,Observation.code.text,Observation.method.coding,Observation.id,Observation.component.value_x_.unit,Observation.bodySite,Observation.method.coding.extension,Observation.code.extension,Observation.referenceRange.age,Observation.component.code.coding.code,Observation.method.coding.id,Observation.code.coding.id,Observation.component.interpretation,Observation.code.coding.display,Observation.code.coding.system,Observation.specimen,Observation.value_x_.code,Observation.effective_x_,Observation.component.extension,Observation.component.code.coding.id,Observation.component.value_x_.system,Observation.component.id,Observation.contained,Observation.value_x_.id,Observation.component.code,Observation.component.code.text,Observation.dataAbsentReason,Observation.referenceRange.low,Observation.referenceRange.id,Observation.text,Observation.partOf,Observation.method.coding.display,Observation.extension,Observation.method.coding.userSelected,Observation.code.coding.extension,Observation.component.dataAbsentReason,Observation.value_x_.extension,Observation.referenceRange.type,Observation.component.code.extension,Observation,Observation.component.value_x_.extension,Observation.identifier,Observation.category,Observation.referenceRange.text,Observation.method.extension,Observation.subject,Observation.value_x_.comparator,Observation.performer,Observation.hasMember,Observation.derivedFrom,Observation.component.referenceRange,Observation.code,Observation.note,Observation.referenceRange.appliesTo,Observation.referenceRange.high,Observation.code.coding,Observation.component.code.coding.display,Observation.component.code.coding.userSelected,Observation.code.id,Observation.code.coding.code,Observation.component.value_x_,Observation.component.code.id,Observation.component.value_x_.code,summary,Observation.status,Observation.code.coding.version,Observation.method.coding.version,Observation.method.id,Observation.component.value_x_.value,Observation.component.code.coding,Observation.device,Observation.method,Observation.referenceRange.extension,Observation.value_x_.unit,Observation.meta,Observation.value_x_.system,Observation.component.value_x_.id</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-NotFollowedAnymore&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_,Extension.extension,Extension.url,Extension.id</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-RegionalSubDivisionCodes&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_.extension,Extension.value_x_,Extension.extension,Extension.value_x_.id,Extension.url,Extension.id,Extension.value_x_.text,Extension.value_x_.coding</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-authorization-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-basic-observation&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Observation.value_x_.value,Observation.method.coding.system,Observation.encounter,Observation.code.coding.userSelected,Observation.component.code.coding.extension,Observation.component.code.coding.version,Observation.referenceRange.modifierExtension,Observation.language,Observation.issued,Observation.implicitRules,Observation.component,Observation.interpretation,Observation.focus,Observation.component.value_x_.comparator,Observation.value_x_,Observation.basedOn,Observation.component.code.coding.system,Observation.method.coding.code,Observation.component.modifierExtension,Observation.method.text,Observation.referenceRange,Observation.modifierExtension,Observation.code.text,Observation.method.coding,Observation.id,Observation.component.value_x_.unit,Observation.bodySite,Observation.method.coding.extension,Observation.code.extension,Observation.referenceRange.age,Observation.component.code.coding.code,Observation.method.coding.id,Observation.code.coding.id,Observation.component.interpretation,Observation.code.coding.display,Observation.code.coding.system,Observation.specimen,Observation.value_x_.code,Observation.effective_x_,Observation.component.extension,Observation.component.code.coding.id,Observation.component.value_x_.system,Observation.component.id,Observation.contained,Observation.value_x_.id,Observation.component.code,Observation.component.code.text,Observation.dataAbsentReason,Observation.referenceRange.low,Observation.referenceRange.id,Observation.text,Observation.partOf,Observation.method.coding.display,Observation.extension,Observation.method.coding.userSelected,Observation.code.coding.extension,Observation.component.dataAbsentReason,Observation.value_x_.extension,Observation.referenceRange.type,Observation.component.code.extension,Observation,Observation.component.value_x_.extension,Observation.category,Observation.identifier,Observation.referenceRange.text,Observation.method.extension,Observation.subject,Observation.value_x_.comparator,Observation.performer,Observation.hasMember,Observation.derivedFrom,Observation.component.referenceRange,Observation.code,Observation.note,Observation.referenceRange.appliesTo,Observation.referenceRange.high,Observation.code.coding,Observation.component.code.coding.display,Observation.component.code.coding.userSelected,Observation.code.id,Observation.code.coding.code,Observation.component.value_x_,Observation.component.code.id,Observation.component.value_x_.code,summary,Observation.status,Observation.code.coding.version,Observation.method.coding.version,Observation.method.id,Observation.component.value_x_.value,Observation.component.code.coding,Observation.device,Observation.method,Observation.referenceRange.extension,Observation.value_x_.unit,Observation.meta,Observation.value_x_.system,Observation.component.value_x_.id</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-condition&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Condition.stage.extension,Condition.text,Condition.extension,Condition.code.coding.code,Condition.clinicalStatus,Condition.verificationStatus,Condition.code.coding.id,Condition.onset_x_,Condition.code.coding,Condition.severity,Condition.recorder,Condition.language,Condition.stage.modifierExtension,Condition.evidence,Condition.evidence.code,Condition.code.coding.version,Condition.recordedDate,Condition.subject,Condition.modifierExtension,Condition.code.coding.display,Condition.asserter,Condition.stage.type,Condition.identifier,Condition.stage.summary,Condition.abatement_x_,Condition.implicitRules,Condition.code,Condition.stage,Condition.evidence.detail,Condition.code.id,Condition.contained,Condition.evidence.id,Condition.note,Condition.code.coding.extension,Condition.stage.id,Condition.meta,Condition,summary,Condition.evidence.extension,Condition.evidence.modifierExtension,Condition.encounter,Condition.code.coding.system,Condition.category,Condition.code.text,Condition.stage.assessment,Condition.id,Condition.bodySite,Condition.code.coding.userSelected,Condition.code.extension</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-cpr-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-cvr-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-d-ecpr-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-gln-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-kombit-org-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-location&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Location.id,Location.description,Location.position,Location.availabilityExceptions,Location.hoursOfOperation.modifierExtension,Location.alias,Location.implicitRules,Location.status,Location.hoursOfOperation.openingTime,Location.physicalType,Location.position.modifierExtension,Location.mode,Location.hoursOfOperation.id,Location.telecom,Location.hoursOfOperation,Location.identifier,Location.name,Location.endpoint,Location.extension,Location.position.id,summary,Location.managingOrganization,Location.partOf,Location.hoursOfOperation.closingTime,Location.contained,Location.type,Location.operationalStatus,Location.position.extension,Location.hoursOfOperation.extension,Location.hoursOfOperation.daysOfWeek,Location.position.longitude,Location.position.altitude,Location.hoursOfOperation.allDay,Location.meta,Location.address,Location.text,Location.language,Location.position.latitude,Location.modifierExtension,Location</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-municipalityCodes&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: summary,Extension,Extension.value_x_.extension,Extension.value_x_,Extension.extension,Extension.value_x_.id,Extension.url,Extension.id,Extension.value_x_.text,Extension.value_x_.coding</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-observation&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Observation.method.coding.system,Observation.value_x_.value,Observation.encounter,Observation.code.coding.userSelected,Observation.component.code.coding.extension,Observation.component.code.coding.version,Observation.referenceRange.modifierExtension,Observation.language,Observation.issued,Observation.implicitRules,Observation.component,Observation.interpretation,Observation.focus,Observation.component.value_x_.comparator,Observation.value_x_,Observation.basedOn,Observation.component.code.coding.system,Observation.method.coding.code,Observation.component.modifierExtension,Observation.method.text,Observation.referenceRange,Observation.modifierExtension,Observation.code.text,Observation.method.coding,Observation.id,Observation.component.value_x_.unit,Observation.bodySite,Observation.method.coding.extension,Observation.code.extension,Observation.referenceRange.age,Observation.component.code.coding.code,Observation.method.coding.id,Observation.code.coding.id,Observation.component.interpretation,Observation.code.coding.display,Observation.code.coding.system,Observation.specimen,Observation.value_x_.code,Observation.effective_x_,Observation.component.extension,Observation.component.code.coding.id,Observation.component.value_x_.system,Observation.component.id,Observation.contained,Observation.value_x_.id,Observation.component.code,Observation.component.code.text,Observation.dataAbsentReason,Observation.referenceRange.low,Observation.referenceRange.id,Observation.text,Observation.partOf,Observation.method.coding.display,Observation.extension,Observation.method.coding.userSelected,Observation.code.coding.extension,Observation.component.dataAbsentReason,Observation.value_x_.extension,Observation.referenceRange.type,Observation.component.code.extension,Observation,Observation.component.value_x_.extension,Observation.identifier,Observation.category,Observation.referenceRange.text,Observation.method.extension,Observation.subject,Observation.performer,Observation.value_x_.comparator,Observation.hasMember,Observation.derivedFrom,Observation.component.referenceRange,Observation.code,Observation.note,Observation.referenceRange.appliesTo,Observation.referenceRange.high,Observation.code.coding,Observation.component.code.coding.display,Observation.component.code.coding.userSelected,Observation.code.id,Observation.code.coding.code,Observation.component.value_x_,Observation.component.code.id,Observation.component.value_x_.code,summary,Observation.status,Observation.code.coding.version,Observation.method.coding.version,Observation.method.id,Observation.component.value_x_.value,Observation.component.code.coding,Observation.device,Observation.method,inv,Observation.referenceRange.extension,Observation.value_x_.unit,Observation.meta,Observation.value_x_.system,Observation.component.value_x_.id</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-organization&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Organization.identifier.extension,Organization.identifier,Organization,Organization.implicitRules,Organization.language,Organization.partOf,Organization.modifierExtension,Organization.name,Organization.identifier.use,Organization.identifier.value,Organization.meta,Organization.telecom,Organization.contained,Organization.identifier.period,Organization.contact.id,Organization.identifier.id,Organization.contact,Organization.endpoint,Organization.identifier.type,Organization.contact.purpose,Organization.contact.name,Organization.identifier.assigner,summary,Organization.contact.extension,Organization.type,Organization.active,Organization.address,Organization.identifier.system,Organization.extension,Organization.contact.address,inv,Organization.contact.modifierExtension,Organization.id,Organization.contact.telecom,Organization.text,Organization.alias</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-patient&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Patient.name,Patient.managingOrganization,Patient.implicitRules,Patient.address.text,Patient.link.extension,Patient.address.type,Patient.name.use,Patient.identifier.period,Patient.generalPractitioner.type,Patient.link.other,Patient.generalPractitioner.reference,Patient.link,Patient.name.text,Patient.address.country,Patient.contact.id,Patient.contact.modifierExtension,Patient.active,Patient.identifier.value,Patient.contact.extension,Patient.photo,Patient.meta,Patient.address.state,Patient.name.family,Patient.address.postalCode,Patient.multipleBirth_x_,Patient.modifierExtension,Patient.identifier.id,Patient.communication.id,Patient.address.id,Patient.link.id,Patient.identifier,Patient.address.district,Patient.generalPractitioner.identifier,Patient.identifier.assigner,Patient.contact.relationship,Patient.id,Patient.contact.gender,Patient.contained,Patient.name.period,Patient.address.period,Patient.identifier.extension,Patient.birthDate,Patient.generalPractitioner.id,Patient.contact.name,Patient.identifier.type,Patient.name.extension,Patient.name.suffix,Patient.link.modifierExtension,Patient.address.city,Patient.address,Patient.identifier.system,Patient.deceased_x_,Patient.address.line,Patient.contact.organization,Patient.generalPractitioner,Patient.name.prefix,Patient.communication.extension,Patient.communication.modifierExtension,Patient.identifier.use,Patient.address.use,Patient.communication.preferred,Patient.contact.telecom,Patient.contact,Patient.communication.language,Patient.generalPractitioner.display,Patient.contact.period,summary,Patient.communication,Patient.extension,Patient.maritalStatus,Patient.gender,Patient,Patient.telecom,Patient.generalPractitioner.extension,Patient.text,Patient.name.id,inv,Patient.link.type,Patient.address.extension,Patient.language,Patient.contact.address,Patient.name.given</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-practitioner-role&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: PractitionerRole.practitioner,PractitionerRole.availableTime.availableEndTime,PractitionerRole.endpoint,PractitionerRole.identifier,PractitionerRole.notAvailable.extension,PractitionerRole.modifierExtension,PractitionerRole.notAvailable.id,PractitionerRole.notAvailable.description,PractitionerRole.availableTime,PractitionerRole.code,PractitionerRole.specialty,PractitionerRole.extension,PractitionerRole.healthcareService,PractitionerRole.availableTime.modifierExtension,PractitionerRole.id,PractitionerRole.availabilityExceptions,PractitionerRole.availableTime.allDay,summary,PractitionerRole.period,PractitionerRole.notAvailable.modifierExtension,PractitionerRole.availableTime.extension,PractitionerRole.notAvailable,PractitionerRole.availableTime.availableStartTime,PractitionerRole.implicitRules,PractitionerRole.text,PractitionerRole.telecom,PractitionerRole,PractitionerRole.active,PractitionerRole.location,PractitionerRole.contained,PractitionerRole.organization,PractitionerRole.language,PractitionerRole.availableTime.daysOfWeek,PractitionerRole.notAvailable.during,PractitionerRole.meta,PractitionerRole.availableTime.id</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-practitioner&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Practitioner.communication,Practitioner.extension,Practitioner.qualification.id,Practitioner.gender,Practitioner.name,Practitioner.address,Practitioner.qualification.extension,Practitioner.qualification,Practitioner.meta,Practitioner.qualification.issuer,Practitioner.identifier,Practitioner.qualification.modifierExtension,Practitioner.id,Practitioner.text,Practitioner.implicitRules,Practitioner.qualification.period,Practitioner.active,summary,Practitioner.telecom,Practitioner.photo,Practitioner.birthDate,Practitioner.qualification.code,Practitioner.contained,Practitioner,Practitioner.qualification.identifier,Practitioner.modifierExtension,Practitioner.language</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-producent-id&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-related-person&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: RelatedPerson.text,RelatedPerson.photo,RelatedPerson.name.prefix,RelatedPerson.patient,RelatedPerson.name.family,RelatedPerson.extension,RelatedPerson.communication.preferred,RelatedPerson.communication,RelatedPerson.communication.id,RelatedPerson.name.id,RelatedPerson.gender,RelatedPerson.name.suffix,RelatedPerson.birthDate,summary,RelatedPerson.implicitRules,RelatedPerson.meta,RelatedPerson.contained,RelatedPerson.address,RelatedPerson.active,RelatedPerson.language,RelatedPerson.name.period,RelatedPerson.communication.extension,RelatedPerson.identifier,RelatedPerson.name,RelatedPerson,RelatedPerson.communication.language,RelatedPerson.name.use,RelatedPerson.modifierExtension,RelatedPerson.name.extension,RelatedPerson.name.given,RelatedPerson.communication.modifierExtension,RelatedPerson.relationship,RelatedPerson.name.text,RelatedPerson.period,RelatedPerson.id,RelatedPerson.telecom</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-sor-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-dk-core-x-ecpr-identifier&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: inv,summary,Identifier,Identifier.id,Identifier.system,Identifier.value,Identifier.type,Identifier.assigner,Identifier.extension,Identifier.period,Identifier.use</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-ContinuaBundleWithDevice"> </a>
 <h2><a href="Bundle-ContinuaBundleWithDevice.html">fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(29)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/device.html">Device</a> and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/device.html">Device</a> and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta) and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCompoundNumericObservation.html">PhdCompoundNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bp.html">Observation Blood Pressure Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta) and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdBitsEnumerationObservation.html">PhdBitsEnumerationObservation</a> (per meta)</li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdPatient.html">PhdPatient</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/device.html">Device</a> and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhgDevice.html">PhgDevice</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/device.html">Device</a> and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdDevice.html">PhdDevice</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta) and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCoincidentTimeStampObservation.html">PhdCoincidentTimeStampObservation</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdCompoundNumericObservation.html">PhdCompoundNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bp.html">Observation Blood Pressure Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta), <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a> (per meta), <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/heartrate.html">Observation Heart Rate Profile</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta) and <a href="http://hl7.org/fhir/uv/phd/STU1">hl7.fhir.uv.phd</a>.<a href="http://hl7.org/fhir/uv/phd/STU1/StructureDefinition-PhdBitsEnumerationObservation.html">PhdBitsEnumerationObservation</a> (per meta)</li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -501,7 +564,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-ElsesTOBS"> </a>
 <h2><a href="Bundle-ElsesTOBS.html">fsh-generated/resources/Bundle-ElsesTOBS.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(19)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>, <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>, <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -520,7 +583,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-MaxTOKS"> </a>
 <h2><a href="Bundle-MaxTOKS.html">fsh-generated/resources/Bundle-MaxTOKS.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(16)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> (per meta)</li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> (per meta) and <i>this.</i><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a> (per meta)</li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -600,382 +663,382 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[0]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[1]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[2]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[3]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[11] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[11] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[12] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[4]&#8203;.property[12] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[5]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[11] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[6]&#8203;.property[11] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[7]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[8]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[9]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[10]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[0] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[0] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[1] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[1] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[2] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[2] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[3] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[3] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[4] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[4] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[5] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[5] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[6] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[6] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[7] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[7] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[8] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[8] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[9] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[9] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[10] (l1&#8203;/c16716)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
+     <td><b>CodeSystem&#8203;.concept[11]&#8203;.property[10] (l1&#8203;/c16910)</b></td><td><b>error</b></td><td title="CODESYSTEM_PROPERTY_UNDEFINED"><b>The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it</b></td>
    </tr>
 </table>
 <hr/>
@@ -1007,7 +1070,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>NamingSystem (l1/c2514)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>NamingSystem (l1/c2662)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1020,13 +1083,13 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>NamingSystem (l1/c3281)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>NamingSystem (l1/c3429)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-ElsePainVRS"> </a>
 <h2><a href="Observation-ElsePainVRS.html">fsh-generated/resources/Observation-ElsePainVRS.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1042,7 +1105,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-ElseUrinStix"> </a>
 <h2><a href="Observation-ElseUrinStix.html">fsh-generated/resources/Observation-ElseUrinStix.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1090,7 +1153,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-MaxConsciousness"> </a>
 <h2><a href="Observation-MaxConsciousness.html">fsh-generated/resources/Observation-MaxConsciousness.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1103,7 +1166,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-MaxGlasgowComaScale"> </a>
 <h2><a href="Observation-MaxGlasgowComaScale.html">fsh-generated/resources/Observation-MaxGlasgowComaScale.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1410,7 +1473,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1950)</b></td><td><b>warning</b></td><td title=""><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not</b></td>
+     <td><b>ValueSet (l1/c2150)</b></td><td><b>warning</b></td><td title=""><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
