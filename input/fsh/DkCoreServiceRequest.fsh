@@ -7,7 +7,7 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
 * requester only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or Device)
 * performer only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or HealthcareService or Device or CareTeam)
 * category from DkCoreServiceRequestCategoryValues (extensible)
-* code from DkCoreServiceRequestCodes (preferred)
+* code from DkCoreServiceRequestCategoryValues (preferred)
 
 
 CodeSystem: DkCoreServiceRequestCategory
