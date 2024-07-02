@@ -15,7 +15,7 @@ Title: "DK codes for ServiceRequest"
 Description: "DK Codes"
 * ^experimental = false
 * ^status = #active
-* codes from system $sct where concept is-a 224891009
+* codes from system $sct where concept is-a #224891009
 
 
 Instance: JohnsServiceRequest
