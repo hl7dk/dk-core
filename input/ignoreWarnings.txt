@@ -13,8 +13,21 @@
 # This code DOES exist and is published by IEEE. But somehow the code system tooling missed it along the way
 ERROR: Bundle/ContinuaBundleWithDevice: Bundle.entry[7].resource/*Observation/BloodPressureStatus.Poul.133527*/.code.coding[0]: Local Error: Resolved system urn:iso:std:iso:11073:10101 (v2.0.1), but the definition is not complete. Server Error: The code "8410608" is not valid in the system urn:iso:std:iso:11073:10101; The code provided (urn:iso:std:iso:11073:10101#8410608) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'urn:iso:std:iso:11073:10101#8410608'
 
+# These info's are caused by the properties used in the NPU Subset.
+%The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+%The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+
 # These "Slicing Information" are very noisy and do not contribute anything useful in this context
 % This element does not match any known slice defined in the profile %
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
-
