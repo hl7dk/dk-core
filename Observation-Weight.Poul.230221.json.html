@@ -41,7 +41,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"7.109"}
     h3,h4,h5,h6{--heading-prefix:"7.109"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -210,7 +211,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation Weight.Poul.230221&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Weight.Poul.230221\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcWeight.Poul.230221\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcWeight.Poul.230221-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {urn:oid:1.2.208.176.2.1 NPU03804}\&quot;&gt;MDC_MASS_BODY_ACTUAL: Body weight&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/Patient/Poul\&quot;&gt;http://example.org/fhir/Patient/Poul&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-02-21 08:36:40+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/Patient/Poul\&quot;&gt;http://example.org/fhir/Patient/Poul&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 74 kg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codekg = 'kg')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=\&quot;Device-WeightScale.606405FFFECFC604.html\&quot;&gt;Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth_Address_Identifier#60-64-05-CF-C6-04; manufacturer = A&amp;amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/CoincidentTimeStamp.0123\&quot;&gt;http://example.org/fhir/CoincidentTimeStamp.0123&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation Weight.Poul.230221&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Weight.Poul.230221\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcWeight.Poul.230221\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Weight.Poul.230221-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {urn:oid:1.2.208.176.2.1 NPU03804}\&quot;&gt;MDC_MASS_BODY_ACTUAL: Body weight&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/Patient/Poul\&quot;&gt;http://example.org/fhir/Patient/Poul&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-02-21 08:36:40+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/Patient/Poul\&quot;&gt;http://example.org/fhir/Patient/Poul&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 74 kg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codekg = 'kg')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=\&quot;Device-WeightScale.606405FFFECFC604.html\&quot;&gt;Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth_Address_Identifier#60-64-05-CF-C6-04; manufacturer = A&amp;amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/CoincidentTimeStamp.0123\&quot;&gt;http://example.org/fhir/CoincidentTimeStamp.0123&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">extension</a>" : [
     {
@@ -304,7 +305,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 10:47+0000">2024-06-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 11, 2024 15:57+0000">2024-08-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -321,7 +322,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -332,7 +333,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

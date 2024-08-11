@@ -41,7 +41,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"7.40"}
     h3,h4,h5,h6{--heading-prefix:"7.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -195,7 +196,7 @@
         
           Draft
           
-            as of 2024-06-27
+            as of 2024-08-11
           
         
       </td>
@@ -217,7 +218,7 @@
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "care-team-status-dk-supplement",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem care-team-status-dk-supplement&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;care-team-status-dk-supplement\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccare-team-status-dk-supplement\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccare-team-status-dk-supplement-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;This code system &lt;code&gt;http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement&lt;/code&gt; defines displays on the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\&quot;&gt;proposed&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-proposed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forslag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\&quot;&gt;active&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-active\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aktiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\&quot;&gt;suspended&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-suspended\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspenderet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\&quot;&gt;inactive&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-inactive\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inaktiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\&quot;&gt;entered-in-error&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-entered-in-error\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fejlindtastning&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem care-team-status-dk-supplement&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;care-team-status-dk-supplement\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccare-team-status-dk-supplement\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;This code system &lt;code&gt;http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement&lt;/code&gt; defines displays on the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-proposed\&quot;&gt;proposed&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-proposed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forslag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-active\&quot;&gt;active&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-active\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aktiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-suspended\&quot;&gt;suspended&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-suspended\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspenderet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-inactive\&quot;&gt;inactive&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-inactive\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inaktiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a style=\&quot;white-space:nowrap\&quot; href=\&quot;http://hl7.org/fhir/R4/codesystem-care-team-status.html#care-team-status-entered-in-error\&quot;&gt;entered-in-error&lt;/a&gt;&lt;a name=\&quot;care-team-status-dk-supplement-entered-in-error\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fejlindtastning&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "3.3.0",
@@ -225,7 +226,7 @@
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "DK CareTeam Status",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-06-27T10:47:07+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-08-11T15:57:41+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "HL7 Denmark",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -352,7 +353,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 10:47+0000">2024-06-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 11, 2024 15:57+0000">2024-08-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -369,7 +370,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -380,7 +381,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
