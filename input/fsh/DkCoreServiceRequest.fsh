@@ -1,21 +1,13 @@
-Profile: DkCoreServiceRequest
+Profile: DkCorePersonServiceRequest
 Parent: ServiceRequest
-Id: dk-core-servicerequest
-Title: "Danish Core ServiceRequest Profile"
-Description: "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more."
-* subject only Reference(DkCorePatient or Group)
+Id: dk-core-person-servicerequest
+Title: "Danish Core Person ServiceRequest Profile"
+Description: "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient."
+* subject only Reference(DkCorePatient)
 * requester only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or Device)
 * performer only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or HealthcareService or Device or CareTeam)
 * code from DkCoreServiceRequestCodes (preferred)
 
-
-ValueSet: DkCoreServiceRequestCodes
-Id: dk-core-servicerequest-codes
-Title: "DK codes for ServiceRequest"
-Description: "DK Codes"
-* ^experimental = false
-* ^status = #active
-* codes from system $sct where concept is-a #224891009
 
 
 Instance: JohnsServiceRequest
