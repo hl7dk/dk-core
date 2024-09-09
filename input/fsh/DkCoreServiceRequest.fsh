@@ -19,7 +19,7 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
     FSIIIConditionCode 0..1 and
     SCTCode 0..1 and
     FFBConditionCode 0..1 and
-    SKS-D 0..1 and
+    SKS 0..1 and
     ICPC2code 0..1
 * reasonCode.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
   * system 1..
