@@ -18,3 +18,4 @@ Since the ValueSet has the binding 'preferred', it is allowed to include other c
 **OrderDetail:**
 The most detailed level is at ServiceRequest.orderDetail, which included additional detail or instruction concerning how the service should be delivered. This can be specific to each organization and does not nessecary have to be included when sending a ServiceRequest, but can be enriched by the performer of the service.
 
+
