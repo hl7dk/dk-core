@@ -634,6 +634,7 @@ ValueSet: DkCorePriorityCodes
 Id: dk-core-priority-codes
 Title: "DK priority codes"
 Description: "DK Codes for priority"
+* ^experimental = false
 * include codes from valueset http://hl7.org/fhir/ValueSet/request-priority
 * exclude http://hl7.org/fhir/request-priority#urgent
 * exclude http://hl7.org/fhir/request-priority#stat
