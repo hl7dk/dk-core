@@ -6,7 +6,7 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
 * subject only Reference(DkCorePatient)
 * requester only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or Device)
 * performer only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or HealthcareService or Device or CareTeam)
-* category from DkCoreServiceRequestCodes (preferred)
+* category from DkCoreServiceRequestCodes (example)
 * priority from DkCorePriorityCodes (required)
 * reasonReference only Reference(DkCoreCondition or DkCoreObservation or DiagnosticReport or DocumentReference)
 * reasonCode.coding ^slicing.discriminator.type = #value
@@ -48,4 +48,4 @@ Usage: #example
 * intent = #plan
 * priority = http://hl7.org/fhir/request-priority#routine
 * subject.reference = "Patient/john"
-* code.coding = $sct#658161000005107 "hjemmesygepleje"
+* category = $sct#658161000005107 "hjemmesygepleje"
