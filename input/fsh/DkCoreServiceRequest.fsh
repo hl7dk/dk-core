@@ -6,7 +6,7 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
 * subject only Reference(DkCorePatient)
 * requester only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or Device)
 * performer only Reference(DkCorePractitioner or PractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson or HealthcareService or Device or CareTeam)
-* code from DkCoreServiceRequestCodes (preferred)
+* category from DkCoreServiceRequestCodes (preferred)
 * priority from DkCorePriorityCodes (required)
 * reasonReference only Reference(DkCoreCondition or DkCoreObservation or DiagnosticReport or DocumentReference)
 * reasonCode.coding ^slicing.discriminator.type = #value
