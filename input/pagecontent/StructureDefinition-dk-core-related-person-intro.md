@@ -1,7 +1,9 @@
 ### Scope and usage
 The Danish Core Related Person profile is intended to encapsulate the most common and basic data model of persons related to patients/persons in Danish healthcare systems covering both primary sector, secondary sector (specialty doctors and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Note that the profile is usable for related persons to those that receive health and social care in municipalities, even in contexts where receivers of care are more commonly known as citizens ([DA] borgere).
 
-Note also, that the intended use of Related Person is to describe a relationship in itself and that privileges which might be associated to a relationship (e.g. power of attorney) should be expressed by other means.  
+Note, that professional relationships between a patient and a healthcare professional are expressed by other means e.g. through `Patient.generalPractitioner`.   
+
+Note also, that the intended use of Related Person is to describe a relationship, where privileges which might be associated to the relationship should be expressed by other means, e.g.the actual rights associated with being power of attorney, should be described in a legally binding document, and that document can be represented with the Consent resource.
 
 ### Identifiers for related persons
 This related person profile currently reflects the use of the established national Danish citizen identifiers called [CPR](https://cpr.dk/) and (where relevant) the use of replacement CPR numbers ([DA] Erstatnings-CPR-numre eller eCPR).
