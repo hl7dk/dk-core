@@ -281,6 +281,7 @@ Description: "DK Related Person Relationship Types"
 * $v3-RoleCode#GUARD // "guardian"
 * $v3-RoleCode#NOK // "next of kin"
 * $v3-RoleCode#POWATT // "power of attorney"
+* $v3-RoleCode#ECON // "emergency contact"
 * include codes from system DkRelatedPersonRelationshipCodes
 
 // ValueSet: DkCoreProfessionGroupValueSet
