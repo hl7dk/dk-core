@@ -5,6 +5,8 @@ Note, that professional relationships between a patient and a healthcare profess
 
 Note also, that the intended use of Related Person is to describe a relationship, where privileges which might be associated to the relationship should be expressed by other means, e.g.the actual rights associated with being power of attorney, should be described in a legally binding document, and that document can be represented with the Consent resource.
 
+Note furthermore, that a patients primary contact when possible should be expressed through `Patient.contact`. However, when this is not feasible Related Person may be used.
+
 ### Identifiers for related persons
 This related person profile currently reflects the use of the established national Danish citizen identifiers called [CPR](https://cpr.dk/) and (where relevant) the use of replacement CPR numbers ([DA] Erstatnings-CPR-numre eller eCPR).
 
