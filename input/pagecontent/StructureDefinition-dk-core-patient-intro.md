@@ -9,7 +9,7 @@ This patient profile currently only reflects the use of the established national
 
 #### CPR-identifier
 
-The element identifier.type describes the specific purpose of an identifier. It is desired to use the code 'NNDNK' from the CodeSystem [IdentifierType](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html) as the type for [DkCoreCprIdentifier](https://hl7.dk/fhir/core/StructureDefinition-dk-core-cpr-identifier.html). However, it is currently not recommended to use this code, due to known problems with the validation tool when validating the code 'NNDNK'.
+The element identifier.type describes the specific purpose of an identifier. It is desired to use the code 'NNDNK' from the CodeSystem [IdentifierType](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html) as the type for [DkCoreCprIdentifier](https://hl7.dk/fhir/core/StructureDefinition-dk-core-cpr-identifier.html). Due to known problems with the validation tool when validating the code 'NNDNK', including this type will cause an error. Therefore, it is currently not recommended to use this code.
 
 #### eCPR-identifier
 
@@ -40,7 +40,7 @@ The tabel below shows how to convert between CPR-registry civilstand/status and 
 |civilstand = L indicating that the registrered partner of the person is dead (parallel to a widow) |Patient.maritalStatus = W|
 
 ### Use of security label on patients
- Danish citizens that have requested name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) should be labeled with the security label as follows:
+In case an implementation project needs to support name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) of a danish citizen, it is recommended to support this with the security label as follows:
  
  ```
  <Patient xmlns="http://hl7.org/fhir">
