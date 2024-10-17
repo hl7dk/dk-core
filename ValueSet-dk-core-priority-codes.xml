@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-core-priority-codes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet dk-core-priority-codes</b></p><a name="dk-core-priority-codes"> </a><a name="hcdk-core-priority-codes"> </a><a name="dk-core-priority-codes-da-DK"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">Request priority</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-request-priority.html"><code>http://hl7.org/fhir/request-priority</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-request-priority.html#request-priority-urgent">urgent</a></td><td style="color: #cccccc">Urgent</td><td>The request should be actioned promptly - higher priority than routine.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-request-priority.html#request-priority-stat">stat</a></td><td style="color: #cccccc">STAT</td><td>The request should be actioned immediately - highest possible priority.  E.g. an emergency.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes"/>
+  <version value="3.3.0"/>
+  <name value="DkCorePriorityCodes"/>
+  <title value="DK priority codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-10-17T12:12:58+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="DK Codes for priority"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/request-priority"/>
+    </include>
+    <exclude>
+      <system value="http://hl7.org/fhir/request-priority"/>
+      <concept>
+        <code value="urgent"/>
+      </concept>
+      <concept>
+        <code value="stat"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

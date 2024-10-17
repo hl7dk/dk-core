@@ -72,6 +72,12 @@
         "title": "Danish Core Patient Profile"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest",
+        "title": "Danish Core Person ServiceRequest Profile"
+      }
+    ],
     "Practitioner": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
@@ -109,6 +115,9 @@
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
       "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/address-official": [
+      "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
       "Condition"

@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-08-11T15:57:41+00:00",
+  "date" : "2024-10-17T12:12:58+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -421,7 +421,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -1007,6 +1007,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/dk-core-person-servicerequest"
+      },
+      "name" : "Danish Core Person ServiceRequest Profile",
+      "description" : "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/dk-core-practitioner"
       },
       "name" : "Danish Core Practitioner Profile",
@@ -1119,6 +1131,18 @@
       },
       "name" : "DK CareTeam Status",
       "description" : "Indicates the status of the care team.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-servicerequest-codes"
+      },
+      "name" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
       "exampleBoolean" : false
     },
     {
@@ -1311,6 +1335,18 @@
       },
       "name" : "DK NPU Subset",
       "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-priority-codes"
+      },
+      "name" : "DK priority codes",
+      "description" : "DK Codes for priority",
       "exampleBoolean" : false
     },
     {
@@ -2062,6 +2098,18 @@
       "name" : "Producer Test Organization",
       "description" : "Producer of Lab Results Test Organization",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/JohnsServiceRequest"
+      },
+      "name" : "Request for nursing care of John.",
+      "description" : "Request for nursing care of John.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
     },
     {
       "extension" : [{

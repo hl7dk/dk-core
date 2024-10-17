@@ -210,6 +210,30 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
+      "url" : "http://hl7.org/fhir/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/resource-types",
       "version" : "4.0.1",
       "status" : "active",
@@ -243,19 +267,25 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "ValueSet-dk-core-servicerequest-codes.html" : "DK codes for ServiceRequest",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -411,8 +441,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types",
-      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -449,6 +479,30 @@
       "uses" : {
       },
       "ValueSet-dk-core-IEEEBasicObservation.html" : "Dk Core IEEE Basic Observation"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-jurisdiction.html" : "Jurisdiction ValueSet"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-jurisdiction.html" : "Jurisdiction ValueSet"
     },
     {
       "url" : "urn:oid:1.2.208.176.2.1",

@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "IPADkCoreObservation"] ; # 
   fhir:title [ fhir:v "Danish Core IPA Observation Profiles"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-08-11T15:57:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T12:12:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -4850,7 +4850,7 @@
        fhir:path [ fhir:v "Observation.hasMember" ] ;
        fhir:short [ fhir:v "Related resource that belongs to the Observation group" ] ;
        fhir:definition [ fhir:v "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [

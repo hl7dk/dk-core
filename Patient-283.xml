@@ -38,6 +38,9 @@
         </coding>
       </valueCodeableConcept>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/address-official">
+      <valueBoolean value="true"/>
+    </extension>
     <use value="home"/>
     <type value="postal"/>
     <line value="Nordre Ringgade 3"/>

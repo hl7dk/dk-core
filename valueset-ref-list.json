@@ -145,6 +145,30 @@
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+      "version" : "3.3.0",
+      "status" : "draft",
+      "name" : "DkCorePriorityCodes",
+      "title" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+      "version" : "3.3.0",
+      "status" : "active",
+      "name" : "DkCoreServiceRequestCodes",
+      "title" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
       "version" : "3.3.0",
       "status" : "active",
@@ -202,6 +226,20 @@
       "uses" : {
       },
       "ValueSet-dk-marital-status.html" : "DK MaritalStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-priority-codes.html" : "DK priority codes"
     }
   ]
 }

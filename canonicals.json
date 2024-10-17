@@ -259,6 +259,13 @@
     "name" : "DkCorePatient"
   },
   {
+    "id" : "dk-core-person-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest",
+    "version" : "3.3.0",
+    "name" : "DkCorePersonServiceRequest"
+  },
+  {
     "id" : "dk-core-practitioner",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
@@ -376,6 +383,20 @@
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
     "version" : "3.3.0",
     "name" : "UCUMBasicUnits"
+  },
+  {
+    "id" : "dk-core-priority-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+    "version" : "3.3.0",
+    "name" : "DkCorePriorityCodes"
+  },
+  {
+    "id" : "dk-core-servicerequest-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+    "version" : "3.3.0",
+    "name" : "DkCoreServiceRequestCodes"
   },
   {
     "id" : "dk-marital-status",

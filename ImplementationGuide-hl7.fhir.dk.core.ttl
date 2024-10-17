@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-08-11T15:57:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T12:12:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -372,7 +372,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -912,6 +912,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-person-servicerequest" ]
+       ] ;
+       fhir:name [ fhir:v "Danish Core Person ServiceRequest Profile" ] ;
+       fhir:description [ fhir:v "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/dk-core-practitioner" ]
        ] ;
@@ -1025,6 +1037,18 @@
        ] ;
        fhir:name [ fhir:v "DK CareTeam Status" ] ;
        fhir:description [ fhir:v "Indicates the status of the care team." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-servicerequest-codes" ]
+       ] ;
+       fhir:name [ fhir:v "DK codes for ServiceRequest" ] ;
+       fhir:description [ fhir:v "Value set used to describe Danish healthcare services" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1217,6 +1241,18 @@
        ] ;
        fhir:name [ fhir:v "DK NPU Subset" ] ;
        fhir:description [ fhir:v "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-priority-codes" ]
+       ] ;
+       fhir:name [ fhir:v "DK priority codes" ] ;
+       fhir:description [ fhir:v "DK Codes for priority" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2096,6 +2132,21 @@
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ServiceRequest/JohnsServiceRequest> ;
+         fhir:reference [ fhir:v "ServiceRequest/JohnsServiceRequest" ]
+       ] ;
+       fhir:name [ fhir:v "Request for nursing care of John." ] ;
+       fhir:description [ fhir:v "Request for nursing care of John." ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest>
        ]
      ] [
        fhir:extension ( [

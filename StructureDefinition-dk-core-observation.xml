@@ -65,7 +65,7 @@
   <name value="DkCoreObservation"/>
   <title value="Danish Core Observation Profile"/>
   <status value="draft"/>
-  <date value="2024-08-11T15:57:41+00:00"/>
+  <date value="2024-10-17T12:12:58+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -4623,7 +4623,7 @@
       <path value="Observation.hasMember"/>
       <short value="Related resource that belongs to the Observation group"/>
       <definition value="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group."/>
-      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
+      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
       <min value="0"/>
       <max value="*"/>
       <base>

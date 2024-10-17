@@ -205,7 +205,8 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
 "Patient.address","Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
-","An address for the individual","An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","An address for the individual","An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"","value:use}
+","",,"open","Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","addr",".addr","PID-11"
 "Patient.address.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -224,7 +225,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","unique(./use)","XAD.7"
 "Patient.address.type","Patient.address.type","","","",0,1,"","","Y","code {[]} {[]}
-","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","unique(./use)","XAD.18"
 "Patient.address.text","Patient.address.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -252,6 +253,88 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 ","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = CNT]","XAD.6"
 "Patient.address.period","Patient.address.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
+</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XAD.12 / XAD.13 + XAD.14"
+"Patient.address:official","Patient.address","official","","",0,1,"","","Y","Address {[]} {[]}
+","An official address","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","addr",".addr","PID-11"
+"Patient.address:official.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.address:official.extension","Patient.address.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.address:official.extension:municipalityCode","Patient.address.extension","municipalityCode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes]]} {[]}
+","[DA] Kommunekode","Identifier holding the official identifier for a danish municipality","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.address:official.extension:regionalSubDivisionCodes","Patient.address.extension","regionalSubDivisionCodes","","",0,1,"","","","Extension {[CanonicalType[http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes]]} {[]}
+","[DA] Regionskode","Identifier holding the official organization identifier for a danish region","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.address:official.extension:address-official","Patient.address.extension","address-official","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/address-official]]} {[]}
+","Indicate that this address is meant to be the 'official' address for that person. In Denmark this is the [address registered in the CPR-register](https://www.retsinformation.dk/eli/lta/2023/1010).","This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country (true assumed).  Note: It does not make sense to repeat this extension without the valueCodeableConcept to specify jurisdictions.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.address:official.extension:address-official.id","Patient.address.extension.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","","n/a"
+"Patient.address:official.extension:address-official.extension","Patient.address.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.address:official.extension:address-official.url","Patient.address.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/address-official""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A,AD/@use[.='OR']"
+"Patient.address:official.extension:address-official.value[x]","Patient.address.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+CodeableConcept {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Patient.address:official.extension:address-official.value[x]:valueBoolean","Patient.address.extension.value[x]","valueBoolean","","",0,1,"","","","boolean {[]} {[]}
+","Official address true/false","It specifies if this address is or it is not the official address.","","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","",,,,,"",,,,"Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Patient.address:official.extension:address-official.value[x]:valueCodeableConcept","Patient.address.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Official address for country X","It specifies that this address is the official address for the indicated country.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <code value=""DK""/>
+  </coding>
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/jurisdiction","",,,,"Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Patient.address:official.use","Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XAD.7"
+"Patient.address:official.type","Patient.address.type","","","",0,1,"","","Y","code {[]} {[]}
+","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XAD.18"
+"Patient.address:official.text","Patient.address.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+"Patient.address:official.line","Patient.address.line","","","",0,*,"","","Y","string {[]} {[]}
+","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = AL]","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+"Patient.address:official.city","Patient.address.city","","Municpality
+","",0,1,"","","Y","string {[]} {[]}
+","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = CTY]","XAD.3"
+"Patient.address:official.district","Patient.address.district","","County
+","",0,1,"","","Y","string {[]} {[]}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = CNT | CPA]","XAD.9"
+"Patient.address:official.state","Patient.address.state","","Province
+Territory","",0,1,"","","Y","string {[]} {[]}
+","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = STA]","XAD.4"
+"Patient.address:official.postalCode","Patient.address.postalCode","","Zip
+","",0,1,"","","Y","string {[]} {[]}
+","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = ZIP]","XAD.5"
+"Patient.address:official.country","Patient.address.country","","","",0,1,"","","Y","string {[]} {[]}
+","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","AD.part[parttype = CNT]","XAD.6"
+"Patient.address:official.period","Patient.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
   <start value=""2010-03-23""/>
   <end value=""2010-07-01""/>

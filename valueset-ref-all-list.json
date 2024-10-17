@@ -147,6 +147,30 @@
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+      "version" : "3.3.0",
+      "status" : "draft",
+      "name" : "DkCorePriorityCodes",
+      "title" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+      "version" : "3.3.0",
+      "status" : "active",
+      "name" : "DkCoreServiceRequestCodes",
+      "title" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
       "version" : "3.3.0",
       "status" : "active",
@@ -215,8 +239,8 @@
       "uses" : {
       },
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
-      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
+      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -230,9 +254,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -373,8 +398,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -404,17 +429,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
-      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
       "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier"
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -428,17 +453,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
-      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
       "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier"
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -452,15 +477,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
       "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile",
-      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile",
-      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile",
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -553,6 +579,20 @@
       "ValueSet-dk-marital-status.html" : "DK MaritalStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -579,8 +619,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -595,8 +635,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -613,8 +653,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -629,8 +669,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -645,9 +685,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -667,6 +721,34 @@
       "StructureDefinition-dk-core-practitioner-role.html" : "Danish Core PractitionerRole Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
       "version" : "4.0.1",
       "status" : "active",
@@ -678,8 +760,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -697,8 +779,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
     },
     {
@@ -715,9 +797,51 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile",
+      "StructureDefinition-IPADkCoreObservation.html" : "Danish Core IPA Observation Profiles",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-priority-codes.html" : "DK priority codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -729,6 +853,38 @@
       "systems" : ["http://hl7.org/fhir/resource-types"],
       "oids" : ["2.16.840.1.113883.4.642.3.27"],
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/jurisdiction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.11.21029"],
+      "sources" : ["2.16.840.1.113883.11.21029"],
       "uses" : {
       },
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
@@ -771,7 +927,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile"
+      "StructureDefinition-dk-core-location.html" : "Danish Core Location Profile",
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
     }
   ]
 }
