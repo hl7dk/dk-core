@@ -13,7 +13,7 @@ The reasonCode has been sliced and refers to different recommended systems. Thes
 In the ServiceRequest resource there are three levels of categorization. 
 
 **Category:**
-The top level is the ServiceRequest.category, which classifies the services on a high level. Category is for finding the kinds of ServiceRequests reliably, and can contain more than one code, and relate to different aspects. In Denmark, it is recommended to include one of the NSP/SOR Practice setting codes, as one of the category-codes. The codes are included in this implementation guide as an example binding. The official source of the codes is [here](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DKIHE_Metadata-Common_Code_systems-Value_sets.xlsx)
+The top level is the ServiceRequest.category, which classifies the services on a high level. Category is for finding the kinds of ServiceRequests reliably, and can contain more than one code, and relate to different aspects. In Denmark, it is recommended to include one of the NSP/SOR Practice setting codes, as one of the category-codes. The codes are included in this implementation guide as an example binding. The official source of the codes is [here](https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx).
 
 Another example of the use of category, related to a different aspect, could be to categorize the ServiceRequest into `virtual` or `in-person`.
 

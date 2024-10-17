@@ -571,64 +571,176 @@ Description: "DK Related Person Relationship Types"
 ValueSet: DkCoreServiceRequestCodes
 Id: dk-core-servicerequest-codes
 Title: "DK codes for ServiceRequest"
-Description: "DK Codes for Danish healthcare services"
+Description: "Value set used to describe Danish healthcare services"
 * ^experimental = false
 * ^status = #active
-* $sct#773568002 "akutmedicin"
-* $sct#408443003 "almen medicin"
-* $sct#394577000 "anæstesiologi"
-* $sct#394821009 "arbejdsmedicin"
-* $sct#394588006 "børne- og ungdomspsykiatri"
-* $sct#394582007 "dermato-venerologi"
-* $sct#394914008 "diagnostisk radiologi"
-* $sct#394583002 "endokrinologi"
-* $sct#394811001 "geriatri"
-* $sct#394585009 "gynækologi og obstetrik"
-* $sct#408472002 "hepatologi"
-* $sct#394803006 "hæmatologi"
-* $sct#394807007 "infektionsmedicin"
-* $sct#419192003 "intern medicin"
-* $sct#394579002 "kardiologi"
-* $sct#408463005 "karkirurgi"
-* $sct#394609007 "kirurgi"
-* $sct#551411000005104 "kirurgisk gastroenterologi"
-* $sct#394596001 "klinisk biokemi"
-* $sct#394600006 "klinisk farmakologi"
-* $sct#394601005 "klinisk fysiologi og nuklearmedicin (snomed:  klinisk fysiologi)"
-* $sct#394580004 "klinisk genetik"
-* $sct#421661004 "klinisk immunologi"
-* $sct#408454008 "klinisk mikrobiologi"
-* $sct#394809005 "klinisk neurofysiologi"
-* $sct#394592004 "klinisk onkologi"
-* $sct#418112009 "lungesygdomme"
-* $sct#394805004 "medicinsk allergologi"
-* $sct#394584008 "medicinsk gastroenterologi"
-* $sct#394589003 "nefrologi"
-* $sct#394610002 "neurokirurgi"
-* $sct#394591006 "neurologi"
-* $sct#394812008 "odontologi (snomed: odontologiske specialer)"
-* $sct#394594003 "oftalmologi"
-* $sct#394608004 "ortodonti"
-* $sct#394801008 "ortopædisk kirurgi"
-* $sct#394604002 "oto-rhino-laryngologi"
-* $sct#394915009 "patologisk anatomi og cytologi"
-* $sct#394611003 "plastikkirurgi"
-* $sct#394587001 "psykiatri"
-* $sct#394537008 "pædiatri"
-* $sct#394810000 "reumatologi"
-* $sct#394581000 "samfundsmedicin"
-* $sct#394605001 "tand-, mund- og kæbekirurgi"
-* $sct#394603008 "thoraxkirurgi"
-* $sct#408448007 "tropemedicin"
-* $sct#394612005 "urologi"
-* $sct#658171000005102 "hjemmepleje"
-* $sct#658161000005107 "hjemmesygepleje"
-* $sct#658151000005105 "sundhedsfremme og forebyggelse"
-* $sct#658191000005101 "sundhedspleje"
-* $sct#658201000005103 "kommunal tandpleje"
-* $sct#658141000005108 "genoptræning efter hospitalsophold"
-* $sct#658181000005104 "hjælpemiddelområdet"
-* $sct#2903041000005106	"det kommunale omsorgs-, social- og sundhedsområde"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^compose.include[0].system = "http://snomed.info/sct"
+* ^compose.include[=].version = "http://snomed.info/sct/554471000005108/version/20240331"
+* ^compose.include[=].concept[0].code = #773568002
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "akutmedicin"
+* ^compose.include[=].concept[+].code = #408443003
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "almen medicin"
+* ^compose.include[=].concept[+].code = #394577000 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "anæstesiologi"
+* ^compose.include[=].concept[+].code = #394821009 
+* ^compose.include[=].concept[=].designation.value = "arbejdsmedicin"
+* ^compose.include[=].concept[+].code = #394588006 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "børne- og ungdomspsykiatri"
+* ^compose.include[=].concept[+].code = #394582007 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "dermato-venerologi"
+* ^compose.include[=].concept[+].code = #394914008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "diagnostisk radiologi"
+* ^compose.include[=].concept[+].code = #394583002 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "endokrinologi"
+* ^compose.include[=].concept[+].code = #394811001 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "geriatri"
+* ^compose.include[=].concept[+].code = #394585009 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "gynækologi og obstetrik"
+* ^compose.include[=].concept[+].code = #408472002 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "hepatologi"
+* ^compose.include[=].concept[+].code = #394803006 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "hæmatologi"
+* ^compose.include[=].concept[+].code = #394807007 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "infektionsmedicin"
+* ^compose.include[=].concept[+].code = #419192003
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "intern medicin"
+* ^compose.include[=].concept[+].code = #394579002
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "kardiologi"
+* ^compose.include[=].concept[+].code = #408463005 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "karkirurgi"
+* ^compose.include[=].concept[+].code = #394609007 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "kirurgi"
+* ^compose.include[=].concept[+].code = #551411000005104 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "kirurgisk gastroenterologi"
+* ^compose.include[=].concept[+].code = #394596001 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk biokemi"
+* ^compose.include[=].concept[+].code = #394600006 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk farmakologi"
+* ^compose.include[=].concept[+].code = #394601005 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk fysiologi og nuklearmedicin (snomed:  klinisk fysiologi)"
+* ^compose.include[=].concept[+].code = #394580004 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk genetik"
+* ^compose.include[=].concept[+].code = #421661004 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk immunologi"
+* ^compose.include[=].concept[+].code = #408454008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk mikrobiologi"
+* ^compose.include[=].concept[+].code = #394809005 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk neurofysiologi"
+* ^compose.include[=].concept[+].code = #394592004 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "klinisk onkologi"
+* ^compose.include[=].concept[+].code = #418112009 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "lungesygdomme"
+* ^compose.include[=].concept[+].code = #394805004 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "medicinsk allergologi"
+* ^compose.include[=].concept[+].code = #394584008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "medicinsk gastroenterologi"
+* ^compose.include[=].concept[+].code = #394589003 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "nefrologi"
+* ^compose.include[=].concept[+].code = #394610002 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "neurokirurgi"
+* ^compose.include[=].concept[+].code = #394591006 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "neurologi"
+* ^compose.include[=].concept[+].code = #394812008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "odontologi (snomed: odontologiske specialer)"
+* ^compose.include[=].concept[+].code = #394594003 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "oftalmologi"
+* ^compose.include[=].concept[+].code = #394608004 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "ortodonti"
+* ^compose.include[=].concept[+].code = #394801008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "ortopædisk kirurgi"
+* ^compose.include[=].concept[+].code = #394604002 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "oto-rhino-laryngologi"
+* ^compose.include[=].concept[+].code = #394915009 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "patologisk anatomi og cytologi"
+* ^compose.include[=].concept[+].code = #394611003 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "plastikkirurgi"
+* ^compose.include[=].concept[+].code = #394587001 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "psykiatri"
+* ^compose.include[=].concept[+].code = #394537008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "pædiatri"
+* ^compose.include[=].concept[+].code = #394810000 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "reumatologi"
+* ^compose.include[=].concept[+].code = #394581000 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "samfundsmedicin"
+* ^compose.include[=].concept[+].code = #394605001 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "tand-, mund- og kæbekirurgi"
+* ^compose.include[=].concept[+].code = #394603008 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "thoraxkirurgi"
+* ^compose.include[=].concept[+].code = #408448007 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "tropemedicin"
+* ^compose.include[=].concept[+].code = #394612005 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "urologi"
+* ^compose.include[=].concept[+].code = #658171000005102 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "hjemmepleje"
+* ^compose.include[=].concept[+].code = #658161000005107 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "hjemmesygepleje"
+* ^compose.include[=].concept[+].code = #658151000005105 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "sundhedsfremme og forebyggelse"
+* ^compose.include[=].concept[+].code = #658191000005101 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "sundhedspleje"
+* ^compose.include[=].concept[+].code = #658201000005103 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "kommunal tandpleje"
+* ^compose.include[=].concept[+].code = #658141000005108 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "genoptræning efter hospitalsophold"
+* ^compose.include[=].concept[+].code = #658181000005104 
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "hjælpemiddelområdet"
+* ^compose.include[=].concept[+].code = #2903041000005106	
+* ^compose.include[=].concept[=].designation.language = #da
+* ^compose.include[=].concept[=].designation.value = "det kommunale omsorgs-, social- og sundhedsområde"
 
 ValueSet: DkCorePriorityCodes
 Id: dk-core-priority-codes
