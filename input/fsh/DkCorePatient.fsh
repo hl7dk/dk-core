@@ -32,6 +32,16 @@ Description: "HL7 Denmark core profile for a patient"
       RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1
   * extension[municipalityCode] ^short = "[DA] Kommunekode"
   * extension[regionalSubDivisionCodes] ^short = "[DA] Regionskode"
+* address ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "use"
+  * ^slicing.rules = #open
+* address contains 
+    official 0..1 
+* address[official] ^short = "An official address"
+  * use 1..
+  * use = #official (exactly)
+  * extension contains http://hl7.org/fhir/StructureDefinition/address-official named address-official 0..1
+  * extension[address-official] ^short = "Indicate that this address is meant to be the 'official' address for that person. In Denmark this is the [address registered in the CPR-register](https://www.retsinformation.dk/eli/lta/2023/1010)."
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "identifier.system"
@@ -60,6 +70,8 @@ Usage: #example
 * address.extension[=].valueCodeableConcept = $dk-core-municipality-codes#0330
 * address.extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
 * address.extension[=].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[+].url = "http://hl7.org/fhir/StructureDefinition/address-official"
+* address.extension[=].valueBoolean = true
 * address.use = #home
 * address.type = #postal
 * address.line = "Nordre Ringgade 3"
