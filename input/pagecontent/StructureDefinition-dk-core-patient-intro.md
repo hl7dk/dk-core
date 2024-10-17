@@ -39,6 +39,10 @@ The tabel below shows how to convert between CPR-registry civilstand/status and 
 |civilstand = O indicating 'ophørt registreret partner'/disolved partnership. When the marriage-like partnership is disolved (parallel to a divorce) |Patient.maritalStatus = O|
 |civilstand = L indicating that the registrered partner of the person is dead (parallel to a widow) |Patient.maritalStatus = W|
 
+### Linking records
+In Denmark it is possible to get a new CPR-number when a person e.g. changes his or her legal gender. Linking of the old and new patient records can handled using the Patient.link element, which asserts that patient resources refer to the same patient. In this case the old record should have the link type 'replaced-by' where the new record may have the link type 'replaces', both with a reference to the other record. This way of linking record can be considered in the case of legal gender. Other types of linking is described on [the page for the patient resource](https://hl7.org/fhir/r4/patient.html#links).
+
+
 ### Use of security label on patients
 In case an implementation project needs to support name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) of a danish citizen, it is recommended to support this with the security label as follows:
  
@@ -59,3 +63,4 @@ Use of this label should be interpreted according to the law, roughly meaning th
 
 ### Unknown values or Absent values
 There may be scenarios where it is not possible to supply all values as required by this profile. For such cases it is possible to specify a Data Absent Reason ([DAR](https://hl7.org/fhir/R4/extension-data-absent-reason.html)) extension which enables data fields to be supplied where data is not available. An example of this can be seen [here](./Patient-ukendt.html). The use of DAR is not restricted to the patient profile.
+
