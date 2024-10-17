@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DkCoreBasicObservation"] ; # 
   fhir:title [ fhir:v "Danish Core Basic Observation Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-17T12:12:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T12:15:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -2952,8 +2952,8 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
          ] [
-           fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"^^xsd:anyURI ;
-           fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-location>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Location"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
@@ -3196,8 +3196,8 @@
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
            fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
          ] [
-           fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"^^xsd:anyURI ;
-           fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
@@ -4150,7 +4150,7 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [ fhir:v "http://snomed.info/sct|http://snomed.info/sct/554471000005108"^^xsd:anyURI ] ;
+       fhir:pattern [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;

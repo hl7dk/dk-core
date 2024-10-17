@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2024-10-17T12:12:58+00:00"/>
+  <date value="2024-10-17T12:15:17+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -54,11 +54,6 @@
   <dependsOn id="hl7_fhir_uv_phd">
     <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
     <packageId value="hl7.fhir.uv.phd"/>
-    <version value="1.0.0"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_uv_ipa">
-    <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
-    <packageId value="hl7.fhir.uv.ipa"/>
     <version value="1.0.0"/>
   </dependsOn>
   <definition>
@@ -720,28 +715,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IPADkCoreObservation"/>
-      </reference>
-      <name value="Danish Core IPA Observation Profiles"/>
-      <description value="HL7 Denmark core profile for IPA compliant observations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-location"/>
-      </reference>
-      <name value="Danish Core Location Profile"/>
-      <description value="HL7 Denmark core profile for locations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -758,7 +731,7 @@
       <reference>
         <reference value="StructureDefinition/dk-core-observation"/>
       </reference>
-      <name value="Danish Core Observation Profile"/>
+      <name value="Danish Core Observation Profiles"/>
       <description value="HL7 Denmark core profile for observations"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -789,32 +762,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dk-core-person-servicerequest"/>
-      </reference>
-      <name value="Danish Core Person ServiceRequest Profile"/>
-      <description value="HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/dk-core-practitioner"/>
       </reference>
       <name value="Danish Core Practitioner Profile"/>
       <description value="HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/dk-core-practitioner-role"/>
-      </reference>
-      <name value="Danish Core PractitionerRole Profile"/>
-      <description value="HL7 Denmark core profile for health professional roles"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -907,17 +858,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-servicerequest-codes"/>
-      </reference>
-      <name value="DK codes for ServiceRequest"/>
-      <description value="Value set used to describe Danish healthcare services"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -980,6 +920,17 @@
       </reference>
       <name value="DK Core SNOMED CT Basic Observation"/>
       <description value="SNOMED CT codes for Basic Observations usable in Denmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sor-organization-type"/>
+      </reference>
+      <name value="DK Core SOR Organization Type"/>
+      <description value="Value set used for indicating the organization type for organizations from SOR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1083,28 +1034,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-npu-fragment"/>
-      </reference>
-      <name value="DK NPU Subset"/>
-      <description value="DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/dk-core-priority-codes"/>
-      </reference>
-      <name value="DK priority codes"/>
-      <description value="DK Codes for priority"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1200,17 +1129,6 @@
       </reference>
       <name value="DK Role Code"/>
       <description value="CodeSystem supplement with danish translations for RoleCode"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/sor-organization-type"/>
-      </reference>
-      <name value="DK SOR Organization Type"/>
-      <description value="Value set used for indicating the organization type for organizations from SOR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1591,17 +1509,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/AbrahamPractitionerRole"/>
-      </reference>
-      <name value="Licensed physician in primary care"/>
-      <description value="This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role."/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1788,17 +1695,6 @@
       <name value="Producer Test Organization"/>
       <description value="Producer of Lab Results Test Organization"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/JohnsServiceRequest"/>
-      </reference>
-      <name value="Request for nursing care of John."/>
-      <description value="Request for nursing care of John."/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -100,10 +100,9 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
+      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
       "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
-      "ValueSet-dk-core-servicerequest-codes.html" : "DK codes for ServiceRequest",
-      "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes"
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -119,7 +118,7 @@
     },
     {
       "url" : "http://unitsofmeasure.org",
-      "version" : "3.0.1",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "UCUM",
       "title" : "Unified Code for Units of Measure (UCUM)",
@@ -131,7 +130,7 @@
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",
-      "version" : "2.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "Mdc",
       "title" : "ISO 11073-10101 Health informatics - Point-of-care",
@@ -140,18 +139,6 @@
       "uses" : {
       },
       "ValueSet-dk-core-IEEEBasicObservation.html" : "Dk Core IEEE Basic Observation"
-    },
-    {
-      "url" : "urn:oid:1.2.208.176.2.1",
-      "version" : "3.3.0",
-      "status" : "active",
-      "name" : "NPU",
-      "title" : "DK NPU Subset",
-      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
-      "oids" : ["1.2.208.176.2.1"],
-      "uses" : {
-      },
-      "ValueSet-dk-core-NPUBasicObservation.html" : "DK Core NPU Basic Observation"
     }
   ]
 }

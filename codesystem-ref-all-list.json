@@ -114,18 +114,6 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
-      "url" : "http://hl7.org/fhir/days-of-week",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "DaysOfWeek",
-      "title" : "DaysOfWeek",
-      "description" : "The days of the week.",
-      "oids" : ["2.16.840.1.113883.4.642.4.513"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
-    },
-    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -148,30 +136,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-    },
-    {
-      "url" : "http://hl7.org/fhir/location-mode",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "LocationMode",
-      "title" : "LocationMode",
-      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
-      "oids" : ["2.16.840.1.113883.4.642.4.331"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
-    },
-    {
-      "url" : "http://hl7.org/fhir/location-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "LocationStatus",
-      "title" : "LocationStatus",
-      "description" : "Indicates whether the location is still in use.",
-      "oids" : ["2.16.840.1.113883.4.642.4.333"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
     },
     {
       "url" : "http://hl7.org/fhir/name-use",
@@ -210,30 +174,6 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
-      "url" : "http://hl7.org/fhir/request-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestIntent",
-      "title" : "RequestIntent",
-      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.114"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
-    },
-    {
-      "url" : "http://hl7.org/fhir/request-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestStatus",
-      "title" : "RequestStatus",
-      "description" : "Codes identifying the lifecycle stage of a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.112"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
-    },
-    {
       "url" : "http://hl7.org/fhir/resource-types",
       "version" : "4.0.1",
       "status" : "active",
@@ -267,25 +207,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type",
       "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "ValueSet-dk-core-servicerequest-codes.html" : "DK codes for ServiceRequest",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
+      "ValueSet-sor-organization-type.html" : "DK SOR Organization Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -348,18 +280,6 @@
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "LocationType",
-      "title" : "Location type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "1.0.1",
       "status" : "active",
@@ -372,18 +292,6 @@
       "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "PractitionerRole",
-      "title" : "Practitioner role",
-      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
       "version" : "1.0.1",
       "status" : "active",
@@ -394,18 +302,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
-      "version" : "2.2.0",
-      "status" : "active",
-      "name" : "BedStatus",
-      "title" : "bedStatus",
-      "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
-      "oids" : ["2.16.840.1.113883.18.47"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -441,12 +337,11 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
       "ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
     },
     {
       "url" : "http://unitsofmeasure.org",
-      "version" : "3.0.1",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "UCUM",
       "title" : "Unified Code for Units of Measure (UCUM)",
@@ -458,7 +353,7 @@
     },
     {
       "url" : "urn:ietf:bcp:47",
-      "version" : "2.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "Ietf3066",
       "title" : "Tags for the Identification of Languages",
@@ -470,7 +365,7 @@
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",
-      "version" : "2.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "Mdc",
       "title" : "ISO 11073-10101 Health informatics - Point-of-care",
@@ -479,42 +374,6 @@
       "uses" : {
       },
       "ValueSet-dk-core-IEEEBasicObservation.html" : "Dk Core IEEE Basic Observation"
-    },
-    {
-      "url" : "urn:iso:std:iso:3166",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ISO3166Part1",
-      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
-      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
-      "oids" : ["1.0.3166.1"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/6.0.2/ValueSet-jurisdiction.html" : "Jurisdiction ValueSet"
-    },
-    {
-      "url" : "urn:iso:std:iso:3166:-2",
-      "version" : "2013-11",
-      "status" : "retired",
-      "name" : "Iso3166_2",
-      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
-      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
-      "oids" : ["1.0.3166.2"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/6.0.2/ValueSet-jurisdiction.html" : "Jurisdiction ValueSet"
-    },
-    {
-      "url" : "urn:oid:1.2.208.176.2.1",
-      "version" : "3.3.0",
-      "status" : "active",
-      "name" : "NPU",
-      "title" : "DK NPU Subset",
-      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
-      "oids" : ["1.2.208.176.2.1"],
-      "uses" : {
-      },
-      "ValueSet-dk-core-NPUBasicObservation.html" : "DK Core NPU Basic Observation"
     }
   ]
 }
