@@ -26,20 +26,20 @@ Id: dk-core-LoincBasicObservation
 Title: "DK Core LOINC Basic Observations"
 Description: "LOINC codes describing Basic Observations usable in Denmark."
 * ^experimental = false
-* $LOINC#9279-1 "Respiratory rate"
-* $LOINC#8867-4 "Heart rate"
-* $LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* $LOINC#8310-5 "Body temperature"
-* $LOINC#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation & BMI panel"
-* $LOINC#8302-2 "Body height"
-* $LOINC#9843-4 "Head Occipital-frontal circumference"
-* $LOINC#29463-7 "Body weight"
-* $LOINC#39156-5 "Body mass index (BMI) [Ratio]"
-* $LOINC#85354-9 "Blood pressure panel with all children optional"
-* $LOINC#8480-6 "Systolic blood pressure"
-* $LOINC#8462-4 "Diastolic blood pressure"
-* $LOINC#8478-0 "Mean blood pressure"
-* $LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* $LOINC#9279-1 //"Respiratory rate"
+* $LOINC#8867-4 //"Heart rate"
+* $LOINC#2708-6 //"Oxygen saturation in Arterial blood"
+* $LOINC#8310-5 //"Body temperature"
+* $LOINC#85353-1 //"Vital signs, weight, height, head circumference, oxygen saturation & BMI panel"
+* $LOINC#8302-2 //"Body height"
+* $LOINC#9843-4 //"Head Occipital-frontal circumference"
+* $LOINC#29463-7 //"Body weight"
+* $LOINC#39156-5 //"Body mass index (BMI) [Ratio]"
+* $LOINC#85354-9 //"Blood pressure panel with all children optional"
+* $LOINC#8480-6 //"Systolic blood pressure"
+* $LOINC#8462-4 //"Diastolic blood pressure"
+* $LOINC#8478-0 //"Mean blood pressure"
+* $LOINC#59408-5 //"Oxygen saturation in Arterial blood by Pulse oximetry"
 
 ValueSet: SCTBasicObservation
 Id: dk-core-SCTBasicObservation
@@ -208,37 +208,37 @@ Id: dk-core-NPUBasicObservation
 Title: "DK Core NPU Basic Observation"
 Description: "NPU codes for Basic Observations usable in Denmark"
 * ^experimental = false
-* $NPU#NPU03011 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat. = ?"
-* $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
-* $NPU#NPU04034 "Pt(spec.)—Blood; temp. = ? °C"
-* $NPU#NPU08676 "Pt—Body; temp. = ? °C"
-* $NPU#NPU58033 "Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg"
-* $NPU#NPU57947 "Artery(spec.)—Blood; pr.(systolic;proc.) = ? mmHg"
-* $NPU#NPU58034 "Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg"
-* $NPU#NPU57948 "Artery(spec.)—Blood; pr.(diastolic;proc.) = ? mmHg"
-* $NPU#NPU21692 "Heart—Systole; freq. = ? * 1/min"
-* $NPU#NPU03794 "Pt—Body; height = ? m"
-* $NPU#NPU03804 "Pt—Body; mass = ? kg"
-* $NPU#NPU27281 "Pt—Body; mass coefficient(mass/squared height) = ? kg/m²"
+* $NPU#NPU03011
+* $NPU#NPU27280
+* $NPU#NPU04034
+* $NPU#NPU08676
+* $NPU#NPU58033
+* $NPU#NPU57947
+* $NPU#NPU58034
+* $NPU#NPU57948
+* $NPU#NPU21692
+* $NPU#NPU03794
+* $NPU#NPU03804
+* $NPU#NPU27281
 
 ValueSet: UCUMBasicUnits
 Id: dk-core-UCUM-BasicUnits
 Title: "DK Core UCUM Basic Units"
 Description: "UCUM codes to represent units for basic Observations usable in Denmark"
 * ^experimental = false
-* $ucum#% "percent"
-* $ucum#cm "centimeter"
-* $ucum#[in_i] "inch (international)"
-* $ucum#kg "kilogram"
-* $ucum#g "gram"
-* $ucum#[lb_av] "pound (US and British)"
-* $ucum#Cel "degree Celsius"
-* $ucum#[degF] "degree Fahrenheit"
-* $ucum#mm[Hg] "millimeter of mercury"
-* $ucum#/min "per minute"
-* $ucum#kg/m2 "kilogram / (meter ^ 2)"
-* $ucum#m2 "square meter"
-* $ucum#{fraction} "fraction"
+* $ucum#%
+* $ucum#cm
+* $ucum#[in_i]
+* $ucum#kg
+* $ucum#g
+* $ucum#[lb_av]
+* $ucum#Cel
+* $ucum#[degF]
+* $ucum#mm[Hg]
+* $ucum#/min
+* $ucum#kg/m2
+* $ucum#m2
+* $ucum#{fraction}
 
 ValueSet: TechniquesSCTCodes
 Id: dk-core-TechniquesSCTCodes
@@ -751,3 +751,81 @@ Description: "DK Codes for priority"
 * include codes from valueset http://hl7.org/fhir/ValueSet/request-priority
 * exclude http://hl7.org/fhir/request-priority#urgent
 * exclude http://hl7.org/fhir/request-priority#stat
+
+
+ValueSet: SorOrganizationType
+Id: sor-organization-type
+Title: "DK SOR Organization Type"
+Description: "Value set used for indicating the organization type for organizations from SOR"
+* ^experimental = false
+* ^status = #active
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+*  $sct#554221000005108  
+*  $sct#546821000005103  
+*  $sct#547011000005103  
+*  $sct#546811000005109  
+*  $sct#550621000005101  
+*  $sct#550631000005103  
+*  $sct#550641000005106  
+*  $sct#550651000005108  
+*  $sct#550661000005105  
+*  $sct#554211000005102  
+*  $sct#550711000005101  
+*  $sct#550671000005100  
+*  $sct#554061000005105  
+*  $sct#554041000005106  
+*  $sct#554021000005101  
+*  $sct#550681000005102  
+*  $sct#550691000005104  
+*  $sct#550701000005104  
+*  $sct#554231000005106  
+*  $sct#554051000005108  
+*  $sct#550811000005108  
+*  $sct#547211000005108  
+*  $sct#550891000005100  
+*  $sct#550881000005103  
+*  $sct#550411000005105  
+*  $sct#554851000005102  
+*  $sct#550861000005106  
+*  $sct#554881000005108  
+*  $sct#554861000005100  
+*  $sct#554821000005109  
+*  $sct#554411000005101  
+*  $sct#554871000005105  
+*  $sct#550821000005102  
+*  $sct#550871000005101  
+*  $sct#554241000005103  
+*  $sct#550841000005107  
+*  $sct#550851000005109  
+*  $sct#551611000005102  
+*  $sct#554071000005100  
+*  $sct#550831000005104  
+*  $sct#554031000005103  
+*  $sct#557511000005107  
+*  $sct#557501000005109  
+*  $sct#557531000005103  
+*  $sct#557591000005104  
+*  $sct#557521000005101  
+*  $sct#557561000005105  
+*  $sct#557541000005106  
+*  $sct#557581000005102  
+*  $sct#556841000005105  
+*  $sct#557671000005101  
+*  $sct#398070004  
+*  $sct#394761003  
+*  $sct#20078004  
+*  $sct#722173008  
+*  $sct#702871004  
+*  $sct#276037005  
+*  $sct#22232009  
+*  $sct#702824005  
+*  $sct#42665001  
+*  $sct#264361005  
+*  $sct#703069008  
+*  $sct#309964003  
+*  $sct#309904001  
+*  $sct#309939001  
+*  $sct#225728007  
+*  $sct#255203001  
+*  $sct#264372000  
+
