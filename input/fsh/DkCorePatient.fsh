@@ -1,5 +1,5 @@
 Profile: DkCorePatient
-Parent: Patient
+Parent: IPAPatient
 Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description: "HL7 Denmark core profile for a patient"
@@ -29,16 +29,20 @@ Description: "HL7 Denmark core profile for a patient"
 * address ^definition = "An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities"
   * extension contains
       MunicipalityCodes named municipalityCode 0..1 and
-      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1
+      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1 and
+      http://hl7.org/fhir/StructureDefinition/address-official named address-official 0..1
   * extension[municipalityCode] ^short = "[DA] Kommunekode"
   * extension[regionalSubDivisionCodes] ^short = "[DA] Regionskode"
+  * extension[address-official] ^short = "Indicate that this address is meant to be the 'official' address for that person. This can be indicated by setting the boolean to 'true' or adding a code for the country, e.g. 'DK'. In Denmark the official is the address registered in the CPR-register, see: https://www.retsinformation.dk/eli/lta/2023/1010."
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "identifier.system"
   * ^slicing.rules = #open
+* generalPractitioner only Reference(DkCoreOrganization or DkCorePractitioner or DkCorePractitionerRole)
 * generalPractitioner contains referencedSORUnit 0..*
 * generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
   * identifier only SORIdentifier
+* managingOrganization only Reference(DkCoreOrganization)
 * contact.relationship from RelatedPersonRelationshipTypes (extensible)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
 
@@ -56,10 +60,12 @@ Usage: #example
 * name.given[1] = "Test"
 * gender = #male
 * birthDate = "1958-08-01"
-* address.extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
-* address.extension[=].valueCodeableConcept = $dk-core-municipality-codes#0330
-* address.extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
-* address.extension[=].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[municipalityCode].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
+* address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0330
+* address.extension[regionalSubDivisionCodes].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[address-official].url = "http://hl7.org/fhir/StructureDefinition/address-official"
+* address.extension[address-official].valueCodeableConcept = urn:iso:std:iso:3166#DK
 * address.use = #home
 * address.type = #postal
 * address.line = "Nordre Ringgade 3"
