@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-10-17T12:15:17+00:00",
+  "date" : "2024-10-18T06:07:37+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -58,6 +58,12 @@
     "id" : "hl7_fhir_uv_phd",
     "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
     "packageId" : "hl7.fhir.uv.phd",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_ipa",
+    "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
+    "packageId" : "hl7.fhir.uv.ipa",
     "version" : "1.0.0"
   }],
   "definition" : {
@@ -926,6 +932,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IPADkCoreObservation"
+      },
+      "name" : "Danish Core IPA Observation Profiles",
+      "description" : "HL7 Denmark core profile for IPA compliant observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-location"
+      },
+      "name" : "Danish Core Location Profile",
+      "description" : "HL7 Denmark core profile for locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -943,7 +973,7 @@
       "reference" : {
         "reference" : "StructureDefinition/dk-core-observation"
       },
-      "name" : "Danish Core Observation Profiles",
+      "name" : "Danish Core Observation Profile",
       "description" : "HL7 Denmark core profile for observations",
       "exampleBoolean" : false
     },
@@ -977,10 +1007,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/dk-core-person-servicerequest"
+      },
+      "name" : "Danish Core Person ServiceRequest Profile",
+      "description" : "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/dk-core-practitioner"
       },
       "name" : "Danish Core Practitioner Profile",
       "description" : "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-practitioner-role"
+      },
+      "name" : "Danish Core PractitionerRole Profile",
+      "description" : "HL7 Denmark core profile for health professional roles",
       "exampleBoolean" : false
     },
     {
@@ -1082,6 +1136,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-servicerequest-codes"
+      },
+      "name" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1149,18 +1215,6 @@
       },
       "name" : "DK Core SNOMED CT Basic Observation",
       "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/sor-organization-type"
-      },
-      "name" : "DK Core SOR Organization Type",
-      "description" : "Value set used for indicating the organization type for organizations from SOR",
       "exampleBoolean" : false
     },
     {
@@ -1274,6 +1328,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-npu-fragment"
+      },
+      "name" : "DK NPU Subset",
+      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-priority-codes"
+      },
+      "name" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1377,6 +1455,18 @@
       },
       "name" : "DK Role Code",
       "description" : "CodeSystem supplement with danish translations for RoleCode",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sor-organization-type"
+      },
+      "name" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
       "exampleBoolean" : false
     },
     {
@@ -1793,6 +1883,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/AbrahamPractitionerRole"
+      },
+      "name" : "Licensed physician in primary care",
+      "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1996,6 +2098,18 @@
       "name" : "Producer Test Organization",
       "description" : "Producer of Lab Results Test Organization",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/JohnsServiceRequest"
+      },
+      "name" : "Request for nursing care of John.",
+      "description" : "Request for nursing care of John.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
     },
     {
       "extension" : [{

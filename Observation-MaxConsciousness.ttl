@@ -31,6 +31,7 @@
      fhir:coding ( [
        a loinc:80288-4 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "80288-4" ]
      ] )
   ] ; # 
@@ -44,6 +45,7 @@
      fhir:coding ( [
        a sct:450847001 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "450847001" ]
      ] )
   ] ; # 
@@ -51,6 +53,7 @@
      fhir:coding ( [
        a sct:733985002 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "733985002" ] ;
        fhir:display [ fhir:v "Reported (qualifier value)" ]
      ] )

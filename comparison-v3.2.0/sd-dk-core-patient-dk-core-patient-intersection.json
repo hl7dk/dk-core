@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7b1c4a38-48a9-41ff-8c00-3a5f587e6adb-69",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7b1c4a38-48a9-41ff-8c00-3a5f587e6adb-69",
+  "id" : "8be58caa-435c-43f7-8fa7-ace74eb4a666-69",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8be58caa-435c-43f7-8fa7-ace74eb4a666-69",
   "name" : "IntersectionDkCorePatientAndDkCorePatient",
   "title" : "Intersection of Danish Core Patient Profile And Danish Core Patient Profile",
   "status" : "active",
-  "date" : "2024-10-17T12:15:55+00:00",
+  "date" : "2024-10-18T06:08:13+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -373,7 +373,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -416,7 +416,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : true,
       "isSummary" : true,
       "mapping" : [{
@@ -454,7 +454,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -530,7 +530,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -573,7 +573,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1949,9 +1949,9 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1990,7 +1990,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -2037,7 +2037,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : true,
       "isSummary" : true,
       "mapping" : [{

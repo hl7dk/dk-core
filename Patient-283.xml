@@ -38,6 +38,14 @@
         </coding>
       </valueCodeableConcept>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/address-official">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="DK"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
     <use value="home"/>
     <type value="postal"/>
     <line value="Nordre Ringgade 3"/>

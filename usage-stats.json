@@ -45,13 +45,19 @@
     "Observation": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
-        "title": "Danish Core Observation Profiles"
+        "title": "Danish Core Observation Profile"
       }
     ],
     "Condition": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
         "title": "Danish Core Condition Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
+        "title": "Danish Core Location Profile"
       }
     ],
     "Organization": [
@@ -66,10 +72,22 @@
         "title": "Danish Core Patient Profile"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest",
+        "title": "Danish Core Person ServiceRequest Profile"
+      }
+    ],
     "Practitioner": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
         "title": "Danish Core Practitioner Profile"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+        "title": "Danish Core PractitionerRole Profile"
       }
     ],
     "RelatedPerson": [
@@ -97,6 +115,9 @@
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
       "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/address-official": [
+      "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
       "Condition"
@@ -132,6 +153,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

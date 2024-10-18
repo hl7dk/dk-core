@@ -147,6 +147,13 @@
     "name" : "ConditionLastAssertedDate"
   },
   {
+    "id" : "IPADkCoreObservation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/IPADkCoreObservation",
+    "version" : "3.3.0",
+    "name" : "IPADkCoreObservation"
+  },
+  {
     "id" : "NotFollowedAnymore",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore",
@@ -217,6 +224,13 @@
     "name" : "KombitOrgIdentifier"
   },
   {
+    "id" : "dk-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
+    "version" : "3.3.0",
+    "name" : "DkCoreLocation"
+  },
+  {
     "id" : "dk-core-municipalityCodes",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
@@ -245,11 +259,25 @@
     "name" : "DkCorePatient"
   },
   {
+    "id" : "dk-core-person-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest",
+    "version" : "3.3.0",
+    "name" : "DkCorePersonServiceRequest"
+  },
+  {
     "id" : "dk-core-practitioner",
     "type" : "StructureDefinition",
     "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
     "version" : "3.3.0",
     "name" : "DkCorePractitioner"
+  },
+  {
+    "id" : "dk-core-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+    "version" : "3.3.0",
+    "name" : "DkCorePractitionerRole"
   },
   {
     "id" : "dk-core-producent-id",
@@ -357,6 +385,20 @@
     "name" : "UCUMBasicUnits"
   },
   {
+    "id" : "dk-core-priority-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+    "version" : "3.3.0",
+    "name" : "DkCorePriorityCodes"
+  },
+  {
+    "id" : "dk-core-servicerequest-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+    "version" : "3.3.0",
+    "name" : "DkCoreServiceRequestCodes"
+  },
+  {
     "id" : "dk-marital-status",
     "type" : "ValueSet",
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
@@ -368,5 +410,12 @@
     "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
     "version" : "3.3.0",
     "name" : "SorOrganizationType"
+  },
+  {
+    "id" : "dk-npu-fragment",
+    "type" : "CodeSystem",
+    "url" : "urn:oid:1.2.208.176.2.1",
+    "version" : "3.3.0",
+    "name" : "NPU"
   }
 ]

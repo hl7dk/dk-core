@@ -3,7 +3,7 @@
   <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
   <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
   <!-- 
-    This file contains just the constraints for the profile Patient
+    This file contains just the constraints for the profile IPAPatient
     It includes the base constraints for the resource as well.
     Because of the way that schematrons and containment work, 
     you may need to use this schematron fragment to build a, 
@@ -27,6 +27,7 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes']) &lt;= 1">extension with URL = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes']) &lt;= 1">extension with URL = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/address-official']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/address-official': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

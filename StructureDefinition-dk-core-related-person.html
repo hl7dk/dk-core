@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.7"}
-    h3,h4,h5,h6{--heading-prefix:"7.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.11"}
+    h3,h4,h5,h6{--heading-prefix:"7.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -239,7 +239,7 @@
         
           Draft
           
-            as of 2024-10-17
+            as of 2024-10-18
           
         
       </td>
@@ -296,7 +296,7 @@
 <p>The relationships in <a href="ValueSet-dk-core-RelatedPersonRelationshipTypes.html">DK Core Related Person Relationship Types</a> are intended to cover the most common use cases within the Danish healthcare sector. For the relationship codes that are included from the general relationship codes <a href="CodeSystem-role-code-dk-supplement.html">danish translations</a> are provided. In cases when other relationships need to be expressed, codes from the general <a href="http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html">Related Person Relationship Type</a> or <a href="http://terminology.hl7.org/CodeSystem/v3-RoleCode">HL7 Role Code System</a> should be used when possible. In the latter system is e.g. the code 'CCO', which is a clinical companion (DA: Servicehund).</p>
 
 <h3 id="use-of-security-label-on-related-persons">Use of security label on related persons</h3>
-<p>In case an implementation project needs to support name and address protection (<a href="https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6">Navne- og adressebeskyttelse</a>) of a danish citizen, it is recommended to support this with the security label as follows:</p>
+<p>Danish citizens that have requested name and address protection (<a href="https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6">Navne- og adressebeskyttelse</a>) should be labeled with the security label as follows:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;RelatedPerson xmlns="http://hl7.org/fhir"&gt;
   &lt;meta&gt;
@@ -320,7 +320,7 @@
 
 <p><b>Usage:</b></p>
 <ul>
- <li>Refer to this Resource Profile: <a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a>, <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profiles</a> and <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li>
+ <li>Refer to this Resource Profile: <a href="StructureDefinition-dk-core-condition.html">Danish Core Condition Profile</a>, <a href="StructureDefinition-dk-core-observation.html">Danish Core Observation Profile</a>, <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> and <a href="StructureDefinition-dk-core-person-servicerequest.html">Danish Core Person ServiceRequest Profile</a></li>
  <li>Examples for this Resource Profile: <a href="RelatedPerson-Child.html">RelatedPerson/Child</a> and <a href="RelatedPerson-TwoRelations.html">RelatedPerson/TwoRelations</a></li>
 </ul>
 
@@ -1618,7 +1618,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 17, 2024 12:15+0000">2024-10-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 18, 2024 06:07+0000">2024-10-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

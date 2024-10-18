@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1b61baf9-dceb-4fa8-b75a-2d8a34a4a0f1-18",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1b61baf9-dceb-4fa8-b75a-2d8a34a4a0f1-18",
+  "id" : "821c2e0c-75ca-40eb-bbe4-b07af360df22-12",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/821c2e0c-75ca-40eb-bbe4-b07af360df22-12",
   "name" : "IntersectionIPAConditionAndDkCoreCondition",
   "title" : "Intersection of IPA-Condition And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2024-10-17T12:15:56+00:00",
+  "date" : "2024-10-18T06:08:14+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",
@@ -746,8 +746,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
-        "#sd-ipa-patient-dk-core-patient"]
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -969,7 +968,7 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
       }],
@@ -1005,7 +1004,7 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"]
       }],
       "constraint" : [{
         "extension" : [{

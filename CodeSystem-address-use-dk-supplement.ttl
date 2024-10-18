@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "DK Address Use"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-10-17T12:15:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-18T06:07:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -51,6 +51,7 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Hjem" ]
@@ -62,6 +63,7 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Arbejde" ]
@@ -73,6 +75,7 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Midlertidig" ]
@@ -84,6 +87,7 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Gammel / forkert" ]
