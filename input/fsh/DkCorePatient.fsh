@@ -29,19 +29,11 @@ Description: "HL7 Denmark core profile for a patient"
 * address ^definition = "An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities"
   * extension contains
       MunicipalityCodes named municipalityCode 0..1 and
-      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1
+      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1 and
+      http://hl7.org/fhir/StructureDefinition/address-official named address-official 0..1
   * extension[municipalityCode] ^short = "[DA] Kommunekode"
   * extension[regionalSubDivisionCodes] ^short = "[DA] Regionskode"
-* address ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "use"
-  * ^slicing.rules = #open
-* address contains 
-    official 0..1 
-* address[official] ^short = "An official address"
-  * extension contains http://hl7.org/fhir/StructureDefinition/address-official named address-official 0..1
-  * extension[address-official] ^short = "Indicate that this address is meant to be the 'official' address for that person. In Denmark this is the [address registered in the CPR-register](https://www.retsinformation.dk/eli/lta/2023/1010)."
-  * extension[address-official].valueBoolean = true
-  * extension[address-official].valueCodeableConcept = #DK
+  * extension[address-official] ^short = "Indicate that this address is meant to be the 'official' address for that person. This can be indicated by setting the boolean to 'true' or adding a code for the country, e.g. 'DK'. In Denmark the official is the address registered in the CPR-register, see: https://www.retsinformation.dk/eli/lta/2023/1010."
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "identifier.system"
@@ -73,7 +65,6 @@ Usage: #example
 * address.extension[regionalSubDivisionCodes].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
 * address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
 * address.extension[address-official].url = "http://hl7.org/fhir/StructureDefinition/address-official"
-* address.extension[address-official].valueBoolean = true
 * address.extension[address-official].valueCodeableConcept = urn:iso:std:iso:3166#DK
 * address.use = #home
 * address.type = #postal
