@@ -1,9 +1,9 @@
 DKCore : Validation Results
 =========================================
 
-err = 126, warn = 103, info = 33
-IG Publisher Version: 1.6.31
-Generated Fri Oct 18 06:09:34 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
+err = 0, warn = 103, info = 33
+IG Publisher Version: 1.7.1
+Generated Sun Oct 27 12:33:37 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#3.3.0 (canonical = http://hl7.dk/fhir/core)
  Build Errors : 3 / 21 / 0
  /github/workspace/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 10 / 70
  /github/workspace/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 3 / 34
@@ -20,7 +20,7 @@ Generated Fri Oct 18 06:09:34 UTC 2024. FHIR version 4.0.1 for hl7.fhir.dk.core#
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment : 126 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-dk-npu-fragment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-publication-status-dk-supplement : 0 / 0 / 1
@@ -146,9 +146,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Poul.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Telma.FEEDDADADEADBEEF.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 434, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 718, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1741, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 444, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 728, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-dk-core-person-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1751, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 == fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
 WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[0].resource/*Patient/Poul*/.name[0]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[1].resource/*Device/Telma.FEEDDADADEADBEEF*/.identifier[0].type: Reference to experimental CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers|1.0.0
@@ -209,132 +209,6 @@ WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource: Best Practice Recommendation:
 == fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json ==
 == fsh-generated/resources/CodeSystem-dk-marital-status.json ==
 == fsh-generated/resources/CodeSystem-dk-npu-fragment.json ==
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[3]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[4]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[5]: The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[6]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[7]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[0].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[4]: The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[5]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[6]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[7]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[1].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[4]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[5]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[6]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[7]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[8]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[2].property[9]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[3]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[4]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[5]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[3].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[3]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[4]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[5]: The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[6]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[7]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[8]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[9]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[10]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[11]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[4].property[12]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[4]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[5]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[6]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[7]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[5].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[4]: The property 'CompSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[5]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[6]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[7]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[8]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[9]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[10]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[6].property[11]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[2]: The property 'SysSpec' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[4]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[5]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[6]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[7]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[7].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[3]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[4]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[5]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[8].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[3]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[4]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[5]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[9].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[0]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[1]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[2]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[3]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[4]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[5]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[6]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[7]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[10].property[8]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[0]: The property 'ChangeDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[1]: The property 'CreatedDate' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[2]: The property 'System' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[3]: The property 'Component' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[4]: The property 'Kind-of-property' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[5]: The property 'Proc' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[6]: The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[7]: The property 'Speciality' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[8]: The property 'Code value' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[9]: The property 'Scale type' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
-ERROR: CodeSystem/dk-npu-fragment: CodeSystem.concept[11].property[10]: The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 == fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes.json ==
 == fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement.json ==
 == fsh-generated/resources/CodeSystem-publication-status-dk-supplement.json ==
