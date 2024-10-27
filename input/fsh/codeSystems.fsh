@@ -818,22 +818,79 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
 * ^caseSensitive = false
 * ^version = "EN211028"
 * ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
+
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#comment"
 * ^property[=].type = #string
 * ^property[=].description = "A string that provides additional detail pertinent to the use or understanding of the concept"
 * ^property[=].code = #comment
+
 * ^property[+].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
 * ^property[=].type = #dateTime
 * ^property[=].description = "The date at which the concept status was last changed"
 * ^property[=].code = #effectiveDate
+
 * ^property[+].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[=].type = #code
 * ^property[=].description = "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"
 * ^property[=].code = #status
+
 * ^property[+].uri = "http://hl7.org/fhir/concept-properties#inactive"
 * ^property[=].type = #boolean
 * ^property[=].description = "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"
 * ^property[=].code = #inactive
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#ChangeDate"
+* ^property[=].type = #dateTime
+* ^property[=].code = #ChangeDate
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#CreatedDate"
+* ^property[=].type = #dateTime
+* ^property[=].code = #CreatedDate
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#System"
+* ^property[=].type = #string
+* ^property[=].code = #System
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#SysSpec"
+* ^property[=].type = #string
+* ^property[=].code = #SysSpec
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Component"
+* ^property[=].type = #string
+* ^property[=].code = #Component
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#CompSpec"
+* ^property[=].type = #string
+* ^property[=].code = #CompSpec
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Kind-of-property"
+* ^property[=].type = #string
+* ^property[=].code = #Kind-of-property
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Speciality"
+* ^property[=].type = #string
+* ^property[=].code = #Speciality
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Code-value"
+* ^property[=].type = #string
+* ^property[=].code = #"Code value"
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Scale-type"
+* ^property[=].type = #string
+* ^property[=].code = #"Scale type"
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Proc"
+* ^property[=].type = #string
+* ^property[=].code = #Proc
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Unit"
+* ^property[=].type = #string
+* ^property[=].code = #"Unit"
+
+* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#STATUS"
+* ^property[=].type = #string
+* ^property[=].code = #STATUS
+
 
 * #NPU03011 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"
   * ^designation.language = #da
