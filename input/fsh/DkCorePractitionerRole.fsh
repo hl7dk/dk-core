@@ -16,7 +16,7 @@ Usage: #example
 * active = true
 * practitioner = Reference(AbrahamLaege)
 * organization = Reference(CenterForDiabetes)
-* code = http://terminology.hl7.org/CodeSystem/v2-0286#RP
+* code = http://terminology.hl7.org/CodeSystem/v2-0286#PP
 * specialty = http://snomed.info/sct/554471000005108/version/20240331#408443003
 //* location = Reference(LocationExample)
 * availableTime[0].daysOfWeek[0] = #mon
@@ -28,3 +28,13 @@ Usage: #example
 * availableTime[=].daysOfWeek[+] = #fri
 * availableTime[=].availableStartTime = "09:00:00"
 * availableTime[=].availableEndTime = "12:00:00"
+
+Instance: PlaceholderPractitionerRole
+InstanceOf: DkCorePractitionerRole
+Title: "Placeholder for a physician"
+Description: "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios."
+Usage: #example
+* active = true
+* organization = Reference(CenterForDiabetes)
+* code = http://terminology.hl7.org/CodeSystem/v2-0286#PP
+* specialty = http://snomed.info/sct/554471000005108/version/20240331#408443003
