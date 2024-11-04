@@ -49,6 +49,31 @@ HL7 Denmark includes common Danish architectures and standards if relevant, when
 * Patient.maritalStatus uses the extendable ValueSet required by the FHIR standard. However, Danish legislation and registries have two additional statuses not covered by the international ValueSet, so these two codes are added in dk-core.
 * Several basic resources such as Patient and Organization has an adress. In dk-core these adresses use the [FHIR datatype](http://hl7.org/fhir/R4/datatypes.html#Address), which is very basic compared to the [Danish Adress standard](https://arkitektur.digst.dk/adresse). However, adresses can be refered faithfully using the international standard e.g. Adress.text can be mapped directly to the Danish Adresse.adressebetegnelse. If more details are needed than FHIR instanses provide, the [Danish adress registry](https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar) can be used for look-up. 
 
+#### International Aspects
+<style>
+  @counter-style nosefi {
+    system: cyclic;
+    symbols: 🇳🇴 🇸🇪 🇫🇮;
+    suffix: " ";
+  }
+  
+</style>
+
+Our main intent is to limit profiling specific to Denmark. During the process, we actively monitor other national (base) profiles. We attempt to harmonize our base profiles with already published base profiles from other Nordic countries:
+<ul style="list-style: nosefi">
+    <li style="list-style-type='🇳🇴'">the Norwegian core profiles for R4<a href="https://simplifier.net/HL7Norwayno-basis/">HL7 Norway no-basis</a></li>
+    <li style="list-style-type='🇸🇪'">the <a href="https://hl7.se/fhir/ig/base/">Swedish Base Profiles</a></li>
+    <li style="list-style-type='🇫🇮'">the Finnish <a href="https://hl7.fi/fhir/finnish-base-profiles/">Base Profiles</a></li>
+</ul>
+
+
+Several of the Danish FHIR base profiles derive from the
+[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/), and we do our best to keep the specifications conformant where possible. Should we find any constraints in
+IPA that we can't adhere to, the main resolution should be to affect the IPA specification and search for wider consensus and shared understanding.
+
+Regarding international cooperation, please see also the [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations) page in HL7 International's Confluence.
+
+
 ### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
