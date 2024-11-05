@@ -596,6 +596,31 @@ Usage: #example
 * derivedFrom = Reference(CoincidentTimeStamp.0222)
 
 
+Instance: HeartRate.Poul.9999999
+InstanceOf: IPADkCoreObservation
+Usage: #example
+* identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20240223T102408.00"
+* meta.profile[+] = $PhdNumericObservation
+* meta.profile[+] = $observation-vitalsigns
+* meta.profile[+] = $observation-heartrate
+* status = #final
+* category.coding = $observation-category#vital-signs "Vital signs"
+* code
+  * coding[+] = $LOINC#8867-4 "Heart rate"
+  * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
+  * coding[+] = $NPU#NPU21692 "Heart—Systole; frequency = ? × 1/min"
+  * text = "MDC_PULS_RATE_NON_INV: Heart rate"
+* subject = Reference(Poul)
+* performer = Reference(Poul)
+* effectiveDateTime = "2023-02-23T10:24:08+01:00"
+* valueQuantity = 93 '/min' "bpm"
+* device = Reference(BPMonitor.C4F312FFFE53F2C9)
+* extension
+  * url = $observation-gatewayDevice
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* derivedFrom = Reference(CoincidentTimeStamp.0222)
+
+
 Instance: BloodPressureStatus.Poul.133527
 InstanceOf: DkCoreObservation
 Usage: #inline

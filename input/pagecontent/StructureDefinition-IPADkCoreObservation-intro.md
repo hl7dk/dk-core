@@ -1,1 +1,2 @@
 ### Scope and usage
+This profile extends the [DK Core Observation](StructureDefinition-dk-core-observation.html) profile by adding the base requirements from the [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/) - more specifically the [IPA-Observation](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-observation.html) to the structure. This enables implementers to serve DK Core Observation's that also conforms to IPA through its RESTful IPA interfaces.

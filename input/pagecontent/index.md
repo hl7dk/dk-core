@@ -59,6 +59,7 @@ HL7 Denmark includes common Danish architectures and standards if relevant, when
 
 ### International Aspects
 This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/). IPA aims to "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.
+
 <style>
   @counter-style nosefi {
     system: cyclic;
@@ -70,7 +71,7 @@ This implementation guide is refining the FHIR standard itself as well as using 
 
 Our main intent is to focus and limit profiling specific to Denmark. During the process, we actively monitor other national (base) profiles. We attempt to harmonize our base profiles with already published base profiles from other Nordic countries:
 <ul style="list-style: nosefi">
-    <li style="list-style-type='🇳🇴'"><a href="https://simplifier.net/HL7Norwayno-basis/">The Norwegian core profiles HL7 Norway no-basis</a></li>
+    <li style="list-style-type='🇳🇴'"><a href="https://simplifier.net/HL7Norwayno-basis/">The Norwegian core profiles</a></li>
     <li style="list-style-type='🇸🇪'"><a href="https://hl7.se/fhir/ig/base/">The Swedish Base Profiles</a></li>
     <li style="list-style-type='🇫🇮'"><a href="https://hl7.fi/fhir/finnish-base-profiles/">The Finnish Base Profiles</a></li>
 </ul>

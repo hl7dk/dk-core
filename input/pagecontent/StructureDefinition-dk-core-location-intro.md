@@ -1,2 +1,2 @@
 ### Scope and usage
-Ambulance example
+This profile is primarily created for completeness towards [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/) and is subject to undergo more profiling work in the future.
