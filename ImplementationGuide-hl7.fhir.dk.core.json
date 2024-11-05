@@ -10,7 +10,7 @@
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "draft",
-  "date" : "2024-11-04T15:07:28+00:00",
+  "date" : "2024-11-05T12:45:46+00:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -937,7 +937,7 @@
       "reference" : {
         "reference" : "StructureDefinition/IPADkCoreObservation"
       },
-      "name" : "Danish Core IPA Observation Profiles",
+      "name" : "Danish Core IPA Observation Profile",
       "description" : "HL7 Denmark core profile for IPA compliant observations",
       "exampleBoolean" : false
     },
@@ -2027,6 +2027,18 @@
       "name" : "NotFollowedAnymore",
       "description" : "Extension for the date where a condition lost focus in a specific clinical context",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/PlaceholderPractitionerRole"
+      },
+      "name" : "Placeholder for a physician",
+      "description" : "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
     },
     {
       "extension" : [{

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "PlaceholderPractitionerRole",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PlaceholderPractitionerRole</b></p><a name=\"PlaceholderPractitionerRole\"> </a><a name=\"hcPlaceholderPractitionerRole\"> </a><a name=\"PlaceholderPractitionerRole-da-DK\"> </a><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#633271000016006,http://cvr.dk#64942212; type = HC - Health centre</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 PP}\">Primary Care Provider</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct/554471000005108/version/20240331 408443003}\">408443003</span></p></div>"
+  },
+  "active" : true,
+  "organization" : {
+    "reference" : "Organization/CenterForDiabetes"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0286",
+      "code" : "PP"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct/554471000005108/version/20240331",
+      "code" : "408443003"
+    }]
+  }]
+}

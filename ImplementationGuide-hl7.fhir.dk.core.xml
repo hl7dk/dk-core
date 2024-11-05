@@ -11,7 +11,7 @@
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="draft"/>
-  <date value="2024-11-04T15:07:28+00:00"/>
+  <date value="2024-11-05T12:45:46+00:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -725,7 +725,7 @@
       <reference>
         <reference value="StructureDefinition/IPADkCoreObservation"/>
       </reference>
-      <name value="Danish Core IPA Observation Profiles"/>
+      <name value="Danish Core IPA Observation Profile"/>
       <description value="HL7 Denmark core profile for IPA compliant observations"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1723,6 +1723,17 @@
       <name value="NotFollowedAnymore"/>
       <description value="Extension for the date where a condition lost focus in a specific clinical context"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PlaceholderPractitionerRole"/>
+      </reference>
+      <name value="Placeholder for a physician"/>
+      <description value="This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -134,6 +134,7 @@ Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagno
 /github/workspace/fsh-generated/resources/Practitioner-HanneSocialraadgiver.json: line 10, col 6, Warning - Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation) (INVARIANT)
 /github/workspace/fsh-generated/resources/Practitioner-SidselSygeplejerske.json: line 23, col 6, Warning - Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation) (INVARIANT)
 /github/workspace/fsh-generated/resources/PractitionerRole-AbrahamPractitionerRole.json: line 27, col 6, Warning - A definition for CodeSystem 'http://snomed.info/sct/554471000005108/version/20240331' could not be found, so the code cannot be validated (NOTFOUND)
+/github/workspace/fsh-generated/resources/PractitionerRole-PlaceholderPractitionerRole.json: line 24, col 6, Warning - A definition for CodeSystem 'http://snomed.info/sct/554471000005108/version/20240331' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/StructureDefinition-IPADkCoreObservation.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-location.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
@@ -141,5 +142,5 @@ Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagno
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-servicerequest-codes.json: line 0, col 0, Warning - The code '2903041000005106' is not valid in the system http://snomed.info/sct version http://snomed.info/sct/554471000005108/version/20240331 (2903041000005106) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json: line 1, col 2148, Warning - Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not (REQUIRED)
 
-err = 0, warn = 103, info = 33
+err = 0, warn = 104, info = 33
 IG Publisher Version: 1.7.1

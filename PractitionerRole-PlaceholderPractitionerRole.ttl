@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/PractitionerRole/PlaceholderPractitionerRole> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PlaceholderPractitionerRole"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PlaceholderPractitionerRole</b></p><a name=\"PlaceholderPractitionerRole\"> </a><a name=\"hcPlaceholderPractitionerRole\"> </a><a name=\"PlaceholderPractitionerRole-da-DK\"> </a><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#633271000016006,http://cvr.dk#64942212; type = HC - Health centre</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 PP}\">Primary Care Provider</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct/554471000005108/version/20240331 408443003}\">408443003</span></p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:organization [
+     fhir:link <http://hl7.dk/fhir/core/Organization/CenterForDiabetes> ;
+     fhir:reference [ fhir:v "Organization/CenterForDiabetes" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PP" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://snomed.info/sct/554471000005108/version/20240331"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408443003" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

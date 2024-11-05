@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-04T15:07:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-05T12:45:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -843,7 +843,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/IPADkCoreObservation> ;
          fhir:reference [ fhir:v "StructureDefinition/IPADkCoreObservation" ]
        ] ;
-       fhir:name [ fhir:v "Danish Core IPA Observation Profiles" ] ;
+       fhir:name [ fhir:v "Danish Core IPA Observation Profile" ] ;
        fhir:description [ fhir:v "HL7 Denmark core profile for IPA compliant observations" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -2053,6 +2053,21 @@
        fhir:name [ fhir:v "NotFollowedAnymore" ] ;
        fhir:description [ fhir:v "Extension for the date where a condition lost focus in a specific clinical context" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/PractitionerRole/PlaceholderPractitionerRole> ;
+         fhir:reference [ fhir:v "PractitionerRole/PlaceholderPractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "Placeholder for a physician" ] ;
+       fhir:description [ fhir:v "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios." ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

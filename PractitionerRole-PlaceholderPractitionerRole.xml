@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PlaceholderPractitionerRole"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole PlaceholderPractitionerRole</b></p><a name="PlaceholderPractitionerRole"> </a><a name="hcPlaceholderPractitionerRole"> </a><a name="PlaceholderPractitionerRole-da-DK"> </a><p><b>active</b>: true</p><p><b>organization</b>: <a href="Organization-CenterForDiabetes.html">Organization: identifier = urn:oid:1.2.208.176.1.1#633271000016006,http://cvr.dk#64942212; type = HC - Health centre</a></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 PP}">Primary Care Provider</span></p><p><b>specialty</b>: <span title="Codes:{http://snomed.info/sct/554471000005108/version/20240331 408443003}">408443003</span></p></div>
+  </text>
+  <active value="true"/>
+  <organization>
+    <reference value="Organization/CenterForDiabetes"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0286"/>
+      <code value="PP"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct/554471000005108/version/20240331"/>
+      <code value="408443003"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

@@ -177,7 +177,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-11-04
+            as of 2024-11-05
           
         
       </td>
@@ -209,6 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#collaboration" id="markdown-toc-collaboration">Collaboration</a></li>
   <li><a href="#language" id="markdown-toc-language">Language</a></li>
   <li><a href="#connection-between-dk-core-and-common-danish-architectures-and-standards" id="markdown-toc-connection-between-dk-core-and-common-danish-architectures-and-standards">Connection between dk-core and common Danish architectures and standards</a></li>
+  <li><a href="#international-aspects" id="markdown-toc-international-aspects">International Aspects</a></li>
   <li><a href="#safety-considerations" id="markdown-toc-safety-considerations">Safety Considerations</a></li>
   <li><a href="#license-and-legal-terms" id="markdown-toc-license-and-legal-terms">License and Legal Terms</a></li>
   <li><a href="#ip-statements" id="markdown-toc-ip-statements">IP Statements</a></li>
@@ -234,7 +235,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="scope">Scope</h3>
 <p>The target group of this specification is any party that wants to specify FHIR standards for use in the Danish Health Sector. As a core-specification, a party that wants to use the specification should inherit from dk-core and build use-case specific profiles on top. As such, dk-core does not provide profiles for specific use use cases out-of-the-box.</p>
 
-<p>This document presents Danish use concepts defined via FHIR processable artefacts:</p>
+<p>This document presents Danish use concepts defined via FHIR processable artifacts:</p>
 
 <ul>
   <li><a href="profiles.html">Profiles</a> - are useful constraints of core FHIR resources and datatype for Danish use</li>
@@ -242,7 +243,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="terminology.html">Terminologies</a> - are defined or referenced code systems and value sets for Danish context</li>
 </ul>
 
-<p>dk-core is regularily approved by HL7 Denmark and added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.</p>
+<p>dk-core is regularly approved by HL7 Denmark and added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.</p>
 
 <h3 id="governance">Governance</h3>
 <p>FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group:</p>
@@ -260,27 +261,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://www.hl7.dk">HL7 Denmark</a></li>
 </ul>
 
+<h4 id="open-an-issue-in-github">Open an Issue in GitHub</h4>
+<p>The source code of this implementation guide is maintained in a
+<a href="https://github.com/hl7dk/dk-core">publicly accessible repository</a> in GitHub.
+Issues opened in that GitHub repo are very welcome. They help the affiliate pick up any proposed changes or additions and to discuss them publicly.</p>
+
+<h4 id="open-a-pull-request-in-github">Open a Pull Request in GitHub</h4>
+<p>Pull requests are even better. If you are in a position to suggest how exactly your proposal should be implemented in the specification, do it! It helps the team maintaining the implementation guide a great deal.</p>
+
 <h3 id="language">Language</h3>
-<p>The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are expalined using both Danish and English. Danish terms and explanaitions are prefixed with 'Da'</p>
+<p>The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are explained using both Danish and English. Danish terms and explanations are prefixed with 'Da'</p>
 
 <h3 id="connection-between-dk-core-and-common-danish-architectures-and-standards">Connection between dk-core and common Danish architectures and standards</h3>
-<p>HL7 Denmark includes common Danish architectures and standards if relevant, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explainantion.</p>
+<p>HL7 Denmark includes common Danish architectures and standards if relevant, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explanations.</p>
 
 <h4 id="principle-decisions">Principle decisions</h4>
 <ul>
   <li>HL7 Denmark considers Danish legislation as the first source of truth when designing models, HL7 Denmark seeks to represent known named entities relevant for health data interoperability truthfully.</li>
-  <li>HL7 Denmark upholds the requirements of the FHIR standard whenever it is possible within the bounderies of the Danish legislation.</li>
-  <li>Enitites that are named both in the FHIR standard and Danish legislation, keeps FHIR naming and requirements, but should explain its relation to Danish names/requirements.</li>
-  <li>Danish standards and arhitectures are considered when designing FHIR profiles. HL7 Denmark uses them when they are relevant for interoperability of health data, and when they are compatiple with the FHIR standard. Often public information and data models used as basis of public registries are too detailed, to warrant replication in a FHIR standard. E.g. The Organization profile references organisation registries such as SOR and FK-ORG rather than re-constructing each of their attributes in the FHIR-profile, only attributes relevant for interoperability is provided in the FHIR profiles.</li>
+  <li>HL7 Denmark upholds the requirements of the FHIR standard whenever it is possible within the boundaries of the Danish legislation.</li>
+  <li>Entities that are named both in the FHIR standard and Danish legislation, keeps FHIR naming and requirements, but should explain its relation to Danish names/requirements.</li>
+  <li>Danish standards and architectures are considered when designing FHIR profiles. HL7 Denmark uses them when they are relevant for interoperability of health data, and when they are compatible with the FHIR standard. Often public information and data models used as basis of public registries are too detailed, to warrant replication in a FHIR standard. E.g. The Organization profile references organization registries such as SOR and FK-ORG rather than re-constructing each of their attributes in the FHIR-profile, only attributes relevant for interoperability is provided in the FHIR profiles.</li>
 </ul>
 
 <h4 id="specific-decisions">Specific decisions</h4>
 <ul>
   <li>Patient.maritalStatus uses the extendable ValueSet required by the FHIR standard. However, Danish legislation and registries have two additional statuses not covered by the international ValueSet, so these two codes are added in dk-core.</li>
-  <li>Several basic resources such as Patient and Organization has an adress. In dk-core these adresses use the <a href="http://hl7.org/fhir/R4/datatypes.html#Address">FHIR datatype</a>, which is very basic compared to the <a href="https://arkitektur.digst.dk/adresse">Danish Adress standard</a>. However, adresses can be refered faithfully using the international standard e.g. Adress.text can be mapped directly to the Danish Adresse.adressebetegnelse. If more details are needed than FHIR instanses provide, the <a href="https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar">Danish adress registry</a> can be used for look-up.</li>
+  <li>Several basic resources such as Patient and Organization has an address. In dk-core these addresses use the <a href="http://hl7.org/fhir/R4/datatypes.html#Address">FHIR datatype</a>, which is very basic compared to the <a href="https://arkitektur.digst.dk/adresse">Danish Address standard</a>. However, addresses can be referred faithfully using the international standard e.g. Address.text can be mapped directly to the Danish 'adressebetegnelse'. If more details are needed than FHIR instances provide, the <a href="https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar">Danish address registry</a> can be used for look-up.</li>
 </ul>
 
-<h4 id="international-aspects">International Aspects</h4>
+<h3 id="international-aspects">International Aspects</h3>
+<p>This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard <a href="https://hl7.org/fhir/uv/ipa/">International Patient Access (IPA) specification</a>. IPA aims to "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.</p>
 <style>
   @counter-style nosefi {
     system: cyclic;
@@ -290,16 +300,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 </style>
 
-<p>Our main intent is to limit profiling specific to Denmark. During the process, we actively monitor other national (base) profiles. We attempt to harmonize our base profiles with already published base profiles from other Nordic countries:</p>
+<p>Our main intent is to focus and limit profiling specific to Denmark. During the process, we actively monitor other national (base) profiles. We attempt to harmonize our base profiles with already published base profiles from other Nordic countries:</p>
 <ul style="list-style: nosefi">
-    <li style="list-style-type='🇳🇴'">the Norwegian core profiles for R4<a href="https://simplifier.net/HL7Norwayno-basis/">HL7 Norway no-basis</a></li>
-    <li style="list-style-type='🇸🇪'">the <a href="https://hl7.se/fhir/ig/base/">Swedish Base Profiles</a></li>
-    <li style="list-style-type='🇫🇮'">the Finnish <a href="https://hl7.fi/fhir/finnish-base-profiles/">Base Profiles</a></li>
+    <li style="list-style-type='🇳🇴'"><a href="https://simplifier.net/HL7Norwayno-basis/">The Norwegian core profiles HL7 Norway no-basis</a></li>
+    <li style="list-style-type='🇸🇪'"><a href="https://hl7.se/fhir/ig/base/">The Swedish Base Profiles</a></li>
+    <li style="list-style-type='🇫🇮'"><a href="https://hl7.fi/fhir/finnish-base-profiles/">The Finnish Base Profiles</a></li>
 </ul>
 
 <p>Several of the Danish FHIR base profiles derive from the
 <a href="https://hl7.org/fhir/uv/ipa/">International Patient Access (IPA) specification</a>, and we do our best to keep the specifications conformant where possible. Should we find any constraints in
-IPA that we can't adhere to, the main resolution should be to affect the IPA specification and search for wider consensus and shared understanding.</p>
+IPA that we can't adhere to, the main resolution is to affect the IPA specification and search for wider consensus and shared understanding.</p>
 
 <p>Regarding international cooperation, please see also the <a href="https://confluence.hl7.org/display/IC/National+IG+Implementations">National IG Implementations</a> page in HL7 International's Confluence.</p>
 
@@ -307,7 +317,7 @@ IPA that we can't adhere to, the main resolution should be to affect the IPA spe
 <p>This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: <a href="https://www.hl7.org/FHIR/safety.html">https://www.hl7.org/FHIR/safety.html</a>.</p>
 
 <p>Although the present specification does gives users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 
-In addition, the present specification can only influence compliance with the security regulations in the technical area of standardisation. It cannot influence organisational and contractual matters.</p>
+In addition, the present specification can only influence compliance with the security regulations in the technical area of standardization. It cannot influence organizational and contractual matters.</p>
 
 <h3 id="license-and-legal-terms">License and Legal Terms</h3>
 
@@ -333,7 +343,7 @@ This material contains content from LOINC® (http://loinc.org). The LOINC table,
 <ul>
 <li>Copyright HL7. Licensed under creative commons public domain<div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html">providerRole</a>: <a href="PractitionerRole-AbrahamPractitionerRole.html">PractitionerRole/AbrahamPractitionerRole</a></li>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html">providerRole</a>: <a href="PractitionerRole-AbrahamPractitionerRole.html">PractitionerRole/AbrahamPractitionerRole</a> and <a href="PractitionerRole-PlaceholderPractitionerRole.html">PractitionerRole/PlaceholderPractitionerRole</a></li>
 </ul>
 </div></li>
 <li>ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
@@ -425,7 +435,7 @@ This material contains content from LOINC® (http://loinc.org). The LOINC table,
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 4, 2024 15:07+0000">2024-11-04</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 5, 2024 12:45+0000">2024-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
