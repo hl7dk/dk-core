@@ -24,7 +24,7 @@ The element RelatedPerson.identifier includes two slices to represent eCPR. Each
 The relationships in [DK Core Related Person Relationship Types](ValueSet-dk-core-RelatedPersonRelationshipTypes.html) are intended to cover the most common use cases within the Danish healthcare sector. For the relationship codes that are included from the general relationship codes [danish translations](CodeSystem-role-code-dk-supplement.html) are provided. In cases when other relationships need to be expressed, codes from the general [Related Person Relationship Type](http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html) or [HL7 Role Code System](http://terminology.hl7.org/CodeSystem/v3-RoleCode) should be used when possible. In the latter system is e.g. the code 'CCO', which is a clinical companion (DA: Servicehund).  
 
 ### Use of security label on related persons
-Danish citizens that have requested name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) should be labeled with the security label as follows:
+In case an implementation project needs to support name and address protection ([Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) of a danish citizen, it is recommended to support this with the security label as follows:
 
  ```
  <RelatedPerson xmlns="http://hl7.org/fhir">

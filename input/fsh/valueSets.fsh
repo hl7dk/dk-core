@@ -333,29 +333,29 @@ Description: "DK Related Person Relationship Types"
 // Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 // * ^experimental = false
 // //Vital signs
-// * $sct#446226005 //Diastolic blood pressure on admission 
-// * $sct#400975005 //Standing diastolic blood pressure 
-// * $sct#407557002 //Lying diastolic blood pressure    
-// * $sct#407555005 //Sitting diastolic blood pressure  
+// * $sct#446226005 //Diastolic blood pressure on admission
+// * $sct#400975005 //Standing diastolic blood pressure
+// * $sct#407557002 //Lying diastolic blood pressure
+// * $sct#407555005 //Sitting diastolic blood pressure
 // * $sct#271650006 //Diastolic blood pressure
 // * $sct#72313002  //Systolic arterial pressure
-// * $sct#400974009 //Standing systolic blood pressure  
-// * $sct#399304008 //Systolic blood pressure on admission  
-// * $sct#407556006 //Lying systolic blood pressure 
-// * $sct#407554009 //Sitting systolic blood pressure   
+// * $sct#400974009 //Standing systolic blood pressure
+// * $sct#399304008 //Systolic blood pressure on admission
+// * $sct#407556006 //Lying systolic blood pressure
+// * $sct#407554009 //Sitting systolic blood pressure
 // * $sct#271649006 //Systolic blood pressure
 // * codes from system $sct where concept is-a #431314004 //SpO2
-// * $sct#422119006 //Brachial pulse rate   
-// * $sct#429614003 //Posterior tibial pulse rate   
-// * $sct#429525003 //Dorsalis pedis pulse rate 
-// * $sct#399017001 //Heart rate on admission   
-// * $sct#78564009  //Pulse rate    
-// * $sct#444981005 //Resting heart rate    
+// * $sct#422119006 //Brachial pulse rate
+// * $sct#429614003 //Posterior tibial pulse rate
+// * $sct#429525003 //Dorsalis pedis pulse rate
+// * $sct#399017001 //Heart rate on admission
+// * $sct#78564009  //Pulse rate
+// * $sct#444981005 //Resting heart rate
 // * $sct#364075005 //Heart rate
-// * $sct#424927000 //Body weight with shoes  
-// * $sct#445541000 // Dry body weight  
-// * $sct#425024002 // Body weight without shoes    
-// * $sct#364589006 //Birth weight  
+// * $sct#424927000 //Body weight with shoes
+// * $sct#445541000 // Dry body weight
+// * $sct#425024002 // Body weight without shoes
+// * $sct#364589006 //Birth weight
 // * $sct#27113001  //Body weight
 // * codes from system $sct where concept is-a #86290005 //(Respiratory rate)
 // * codes from system $sct where concept is-a #276885007 // Core Body temperature
@@ -416,7 +416,7 @@ Description: "DK Related Person Relationship Types"
 // * $IEEEx73#149530 "MDC_PULS_OXIM_PULS_RATE"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Rate of blood pulse as obtained by pulse oximetry."
-// * $IEEEx73#147842 "MDC_ECG_HEART_RATE" 
+// * $IEEEx73#147842 "MDC_ECG_HEART_RATE"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Rate of cardiac beats (ECG)."
 // * $IEEEx73#8410590 "MDC_ECG_HEART_RATE_INSTANT"
@@ -449,7 +449,7 @@ Description: "DK Related Person Relationship Types"
 // * $IEEEx73#150392 "MDC_TEMP_TYMP"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Tympanic temperature."
-// * $IEEEx73#188420 "MDC_TEMP_RECT" 
+// * $IEEEx73#188420 "MDC_TEMP_RECT"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Rectal temperature."
 // * $IEEEx73#188424 "MDC_TEMP_ORAL"
@@ -458,7 +458,7 @@ Description: "DK Related Person Relationship Types"
 // * $IEEEx73#188428 "MDC_TEMP_EAR"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Ear temperature."
-// * $IEEEx73#188452 "MDC_TEMP_AXILLA" 
+// * $IEEEx73#188452 "MDC_TEMP_AXILLA"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Axillary (armpit) temperature."
 // * $IEEEx73#188456 "MDC_TEMP_GIT"
@@ -476,7 +476,7 @@ Description: "DK Related Person Relationship Types"
 // * $IEEEx73#188752 "MDC_RATIO_MASS_BODY_LEN_SQ"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "The individual's body weight, in kilograms, divided by the square of height, in meters."
-// * $IEEEx73#150020 "MDC_PRESS_BLD_NONINV" 
+// * $IEEEx73#150020 "MDC_PRESS_BLD_NONINV"
 //   * ^designation.use = $sct#900000000000003001
 //   * ^designation.value = "Pressure of the blood, obtained noninvasively."
 // * $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
@@ -584,36 +584,36 @@ Description: "Value set used to describe Danish healthcare services"
 * ^compose.include[=].concept[+].code = #408443003
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "almen medicin"
-* ^compose.include[=].concept[+].code = #394577000 
+* ^compose.include[=].concept[+].code = #394577000
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "anæstesiologi"
-* ^compose.include[=].concept[+].code = #394821009 
+* ^compose.include[=].concept[+].code = #394821009
 * ^compose.include[=].concept[=].designation.value = "arbejdsmedicin"
-* ^compose.include[=].concept[+].code = #394588006 
+* ^compose.include[=].concept[+].code = #394588006
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "børne- og ungdomspsykiatri"
-* ^compose.include[=].concept[+].code = #394582007 
+* ^compose.include[=].concept[+].code = #394582007
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "dermato-venerologi"
-* ^compose.include[=].concept[+].code = #394914008 
+* ^compose.include[=].concept[+].code = #394914008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "diagnostisk radiologi"
-* ^compose.include[=].concept[+].code = #394583002 
+* ^compose.include[=].concept[+].code = #394583002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "endokrinologi"
-* ^compose.include[=].concept[+].code = #394811001 
+* ^compose.include[=].concept[+].code = #394811001
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "geriatri"
-* ^compose.include[=].concept[+].code = #394585009 
+* ^compose.include[=].concept[+].code = #394585009
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "gynækologi og obstetrik"
-* ^compose.include[=].concept[+].code = #408472002 
+* ^compose.include[=].concept[+].code = #408472002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "hepatologi"
-* ^compose.include[=].concept[+].code = #394803006 
+* ^compose.include[=].concept[+].code = #394803006
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "hæmatologi"
-* ^compose.include[=].concept[+].code = #394807007 
+* ^compose.include[=].concept[+].code = #394807007
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "infektionsmedicin"
 * ^compose.include[=].concept[+].code = #419192003
@@ -622,124 +622,124 @@ Description: "Value set used to describe Danish healthcare services"
 * ^compose.include[=].concept[+].code = #394579002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "kardiologi"
-* ^compose.include[=].concept[+].code = #408463005 
+* ^compose.include[=].concept[+].code = #408463005
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "karkirurgi"
-* ^compose.include[=].concept[+].code = #394609007 
+* ^compose.include[=].concept[+].code = #394609007
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "kirurgi"
-* ^compose.include[=].concept[+].code = #551411000005104 
+* ^compose.include[=].concept[+].code = #551411000005104
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "kirurgisk gastroenterologi"
-* ^compose.include[=].concept[+].code = #394596001 
+* ^compose.include[=].concept[+].code = #394596001
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk biokemi"
-* ^compose.include[=].concept[+].code = #394600006 
+* ^compose.include[=].concept[+].code = #394600006
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk farmakologi"
-* ^compose.include[=].concept[+].code = #394601005 
+* ^compose.include[=].concept[+].code = #394601005
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk fysiologi og nuklearmedicin (snomed:  klinisk fysiologi)"
-* ^compose.include[=].concept[+].code = #394580004 
+* ^compose.include[=].concept[+].code = #394580004
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk genetik"
-* ^compose.include[=].concept[+].code = #421661004 
+* ^compose.include[=].concept[+].code = #421661004
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk immunologi"
-* ^compose.include[=].concept[+].code = #408454008 
+* ^compose.include[=].concept[+].code = #408454008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk mikrobiologi"
-* ^compose.include[=].concept[+].code = #394809005 
+* ^compose.include[=].concept[+].code = #394809005
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk neurofysiologi"
-* ^compose.include[=].concept[+].code = #394592004 
+* ^compose.include[=].concept[+].code = #394592004
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "klinisk onkologi"
-* ^compose.include[=].concept[+].code = #418112009 
+* ^compose.include[=].concept[+].code = #418112009
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "lungesygdomme"
-* ^compose.include[=].concept[+].code = #394805004 
+* ^compose.include[=].concept[+].code = #394805004
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "medicinsk allergologi"
-* ^compose.include[=].concept[+].code = #394584008 
+* ^compose.include[=].concept[+].code = #394584008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "medicinsk gastroenterologi"
-* ^compose.include[=].concept[+].code = #394589003 
+* ^compose.include[=].concept[+].code = #394589003
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "nefrologi"
-* ^compose.include[=].concept[+].code = #394610002 
+* ^compose.include[=].concept[+].code = #394610002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "neurokirurgi"
-* ^compose.include[=].concept[+].code = #394591006 
+* ^compose.include[=].concept[+].code = #394591006
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "neurologi"
-* ^compose.include[=].concept[+].code = #394812008 
+* ^compose.include[=].concept[+].code = #394812008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "odontologi (snomed: odontologiske specialer)"
-* ^compose.include[=].concept[+].code = #394594003 
+* ^compose.include[=].concept[+].code = #394594003
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "oftalmologi"
-* ^compose.include[=].concept[+].code = #394608004 
+* ^compose.include[=].concept[+].code = #394608004
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "ortodonti"
-* ^compose.include[=].concept[+].code = #394801008 
+* ^compose.include[=].concept[+].code = #394801008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "ortopædisk kirurgi"
-* ^compose.include[=].concept[+].code = #394604002 
+* ^compose.include[=].concept[+].code = #394604002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "oto-rhino-laryngologi"
-* ^compose.include[=].concept[+].code = #394915009 
+* ^compose.include[=].concept[+].code = #394915009
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "patologisk anatomi og cytologi"
-* ^compose.include[=].concept[+].code = #394611003 
+* ^compose.include[=].concept[+].code = #394611003
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "plastikkirurgi"
-* ^compose.include[=].concept[+].code = #394587001 
+* ^compose.include[=].concept[+].code = #394587001
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "psykiatri"
-* ^compose.include[=].concept[+].code = #394537008 
+* ^compose.include[=].concept[+].code = #394537008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "pædiatri"
-* ^compose.include[=].concept[+].code = #394810000 
+* ^compose.include[=].concept[+].code = #394810000
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "reumatologi"
-* ^compose.include[=].concept[+].code = #394581000 
+* ^compose.include[=].concept[+].code = #394581000
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "samfundsmedicin"
-* ^compose.include[=].concept[+].code = #394605001 
+* ^compose.include[=].concept[+].code = #394605001
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "tand-, mund- og kæbekirurgi"
-* ^compose.include[=].concept[+].code = #394603008 
+* ^compose.include[=].concept[+].code = #394603008
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "thoraxkirurgi"
-* ^compose.include[=].concept[+].code = #408448007 
+* ^compose.include[=].concept[+].code = #408448007
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "tropemedicin"
-* ^compose.include[=].concept[+].code = #394612005 
+* ^compose.include[=].concept[+].code = #394612005
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "urologi"
-* ^compose.include[=].concept[+].code = #658171000005102 
+* ^compose.include[=].concept[+].code = #658171000005102
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "hjemmepleje"
-* ^compose.include[=].concept[+].code = #658161000005107 
+* ^compose.include[=].concept[+].code = #658161000005107
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "hjemmesygepleje"
-* ^compose.include[=].concept[+].code = #658151000005105 
+* ^compose.include[=].concept[+].code = #658151000005105
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "sundhedsfremme og forebyggelse"
-* ^compose.include[=].concept[+].code = #658191000005101 
+* ^compose.include[=].concept[+].code = #658191000005101
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "sundhedspleje"
-* ^compose.include[=].concept[+].code = #658201000005103 
+* ^compose.include[=].concept[+].code = #658201000005103
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "kommunal tandpleje"
-* ^compose.include[=].concept[+].code = #658141000005108 
+* ^compose.include[=].concept[+].code = #658141000005108
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "genoptræning efter hospitalsophold"
-* ^compose.include[=].concept[+].code = #658181000005104 
+* ^compose.include[=].concept[+].code = #658181000005104
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "hjælpemiddelområdet"
-* ^compose.include[=].concept[+].code = #2903041000005106	
+* ^compose.include[=].concept[+].code = #2903041000005106
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "det kommunale omsorgs-, social- og sundhedsområde"
 
@@ -760,72 +760,72 @@ Description: "Value set used for indicating the organization type for organizati
 * ^experimental = false
 * ^status = #active
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-*  $sct#554221000005108  
-*  $sct#546821000005103  
-*  $sct#547011000005103  
-*  $sct#546811000005109  
-*  $sct#550621000005101  
-*  $sct#550631000005103  
-*  $sct#550641000005106  
-*  $sct#550651000005108  
-*  $sct#550661000005105  
-*  $sct#554211000005102  
-*  $sct#550711000005101  
-*  $sct#550671000005100  
-*  $sct#554061000005105  
-*  $sct#554041000005106  
-*  $sct#554021000005101  
-*  $sct#550681000005102  
-*  $sct#550691000005104  
-*  $sct#550701000005104  
-*  $sct#554231000005106  
-*  $sct#554051000005108  
-*  $sct#550811000005108  
-*  $sct#547211000005108  
-*  $sct#550891000005100  
-*  $sct#550881000005103  
-*  $sct#550411000005105  
-*  $sct#554851000005102  
-*  $sct#550861000005106  
-*  $sct#554881000005108  
-*  $sct#554861000005100  
-*  $sct#554821000005109  
-*  $sct#554411000005101  
-*  $sct#554871000005105  
-*  $sct#550821000005102  
-*  $sct#550871000005101  
-*  $sct#554241000005103  
-*  $sct#550841000005107  
-*  $sct#550851000005109  
-*  $sct#551611000005102  
-*  $sct#554071000005100  
-*  $sct#550831000005104  
-*  $sct#554031000005103  
-*  $sct#557511000005107  
-*  $sct#557501000005109  
-*  $sct#557531000005103  
-*  $sct#557591000005104  
-*  $sct#557521000005101  
-*  $sct#557561000005105  
-*  $sct#557541000005106  
-*  $sct#557581000005102  
-*  $sct#556841000005105  
-*  $sct#557671000005101  
-*  $sct#398070004  
-*  $sct#394761003  
-*  $sct#20078004  
-*  $sct#722173008  
-*  $sct#702871004  
-*  $sct#276037005  
-*  $sct#22232009  
-*  $sct#702824005  
-*  $sct#42665001  
-*  $sct#264361005  
-*  $sct#703069008  
-*  $sct#309964003  
-*  $sct#309904001  
-*  $sct#309939001  
-*  $sct#225728007  
-*  $sct#255203001  
-*  $sct#264372000  
+*  $sct#554221000005108
+*  $sct#546821000005103
+*  $sct#547011000005103
+*  $sct#546811000005109
+*  $sct#550621000005101
+*  $sct#550631000005103
+*  $sct#550641000005106
+*  $sct#550651000005108
+*  $sct#550661000005105
+*  $sct#554211000005102
+*  $sct#550711000005101
+*  $sct#550671000005100
+*  $sct#554061000005105
+*  $sct#554041000005106
+*  $sct#554021000005101
+*  $sct#550681000005102
+*  $sct#550691000005104
+*  $sct#550701000005104
+*  $sct#554231000005106
+*  $sct#554051000005108
+*  $sct#550811000005108
+*  $sct#547211000005108
+*  $sct#550891000005100
+*  $sct#550881000005103
+*  $sct#550411000005105
+*  $sct#554851000005102
+*  $sct#550861000005106
+*  $sct#554881000005108
+*  $sct#554861000005100
+*  $sct#554821000005109
+*  $sct#554411000005101
+*  $sct#554871000005105
+*  $sct#550821000005102
+*  $sct#550871000005101
+*  $sct#554241000005103
+*  $sct#550841000005107
+*  $sct#550851000005109
+*  $sct#551611000005102
+*  $sct#554071000005100
+*  $sct#550831000005104
+*  $sct#554031000005103
+*  $sct#557511000005107
+*  $sct#557501000005109
+*  $sct#557531000005103
+*  $sct#557591000005104
+*  $sct#557521000005101
+*  $sct#557561000005105
+*  $sct#557541000005106
+*  $sct#557581000005102
+*  $sct#556841000005105
+*  $sct#557671000005101
+*  $sct#398070004
+*  $sct#394761003
+*  $sct#20078004
+*  $sct#722173008
+*  $sct#702871004
+*  $sct#276037005
+*  $sct#22232009
+*  $sct#702824005
+*  $sct#42665001
+*  $sct#264361005
+*  $sct#703069008
+*  $sct#309964003
+*  $sct#309904001
+*  $sct#309939001
+*  $sct#225728007
+*  $sct#255203001
+*  $sct#264372000
 

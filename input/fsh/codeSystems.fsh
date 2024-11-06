@@ -801,7 +801,7 @@ Description: "DK Related Person Relationship Codes"
   * ^definition = "The player of the role is the primary caretaker of the scoping person."
   * ^designation.language = #da
   * ^designation.value = "Primær omsorgsperson"
-* #PROCON "Professional contact" 
+* #PROCON "Professional contact"
   * ^definition = "A professional acting as a contact of the scoping person."
   * ^designation.language = #da
   * ^designation.value = "Professionel kontakt"
