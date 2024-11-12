@@ -58,6 +58,7 @@ Usage: #example
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
 * name.given[1] = "Test"
+* name.text = "Schwendlund Test Mosebryggersen"
 * gender = #male
 * birthDate = "1958-08-01"
 * address.extension[municipalityCode].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
@@ -92,6 +93,7 @@ Usage: #example
 * name.family = "Berggren"
 * name.given[0] = "Ruddi"
 * name.given[1] = "Test"
+* name.text = "Ruddi Test Berggren"
 * gender = #male
 * birthDate = "1977-02-15"
 * address.use = #home
@@ -111,6 +113,7 @@ Usage: #example
 * name.family = "Lauridsen"
 * name.given[0] = "Else"
 * name.given[+] = "Test"
+* name.text = "Else Test Lauridsen"
 * gender = #female
 * birthDate = "1991-02-02"
 * maritalStatus = $v3-MaritalStatus#M "Married"
@@ -127,8 +130,10 @@ Usage: #example
 * name[=].given[0] = "John"
 * name[=].given[+] = "Christian"
 * name[=].prefix = "Mr"
+* name[=].text = "Mr. John Christian Meyerhofen"
 * name[+].use = #usual
 * name[=].given = "Johnny"
+* name[=].text = "Johnny"
 * gender = #male
 * birthDate = "1960-01-02"
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
@@ -147,6 +152,7 @@ Usage: #example
 * name.given[0] = "Max"
 * name.given[1] = "Test"
 * name.prefix = "Mr"
+* name.text = "Mr. Max Test Berggren"
 * gender = #male
 * birthDate = "1972-07-01"
 * maritalStatus = $dk-marital-status#P
@@ -162,6 +168,7 @@ Usage: #example
 * name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Anders"
+* name.text = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
 
@@ -177,6 +184,7 @@ Usage: #example
 * name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Peter"
+* name.text = "Peter"
 * gender = #male
 
 Instance: ukendt-X-eCPR
@@ -188,6 +196,7 @@ Usage: #example
 * identifier.value = "0703921VJ4"
 * name.use = #temp
 * name.family = "Madsen"
+* name.text = "Madsen"
 * gender = #female
 * birthDate = "1992-03-07"
 

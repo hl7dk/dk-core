@@ -24,9 +24,10 @@
 %The property 'STATUS' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 %The property 'Unit' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 
-# NPU and SKS codes are not available at the terminology service
+# NPU, MedCom and SKS codes are not available at the terminology service
 %A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated
 %A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated
+%A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated
 
 # Missing Danish translations for LOINC codes
 %There are no valid display names found for the code http://loinc.org%
@@ -36,3 +37,7 @@
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[5].resource/*Observation/BloodPressure.Poul.643992*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
 INFORMATION: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.derivedFrom[0]: Details for Observation/CoincidentTimeStamp.0222 matching against profile http://hl7.org/fhir/StructureDefinition/vitalsigns|4.0.1
 %None of the codings provided are in the value set 'Observation Category Codes'%
+
+# Allow UCUM codes with annotations - but only if they are displayed. DO NOT ADD A WILDCARD AT THE END!
+%Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+

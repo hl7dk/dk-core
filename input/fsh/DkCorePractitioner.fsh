@@ -24,6 +24,7 @@ Usage: #example
 * qualification.code = $DkCoreProfessionGroupCodes#7170 "Læge"
 * name.given = "Abraham"
 * name.family = "Murakami"
+* name.text = "Abraham Murakami"
 
 Instance: SidselSygeplejerske
 InstanceOf: DkCorePractitioner
@@ -33,6 +34,7 @@ Usage: #example
 * qualification.code = $DkCoreProfessionGroupCodes#5166 "Sygeplejerske"
 * name.given = "Sidsel"
 * name.family = "Andersen"
+* name.text = "Sidsel Andersen"
 
 Instance: HanneSocialraadgiver
 InstanceOf: DkCorePractitioner
@@ -41,4 +43,5 @@ Description: "Eksempel på socialrådgiveren Hanne"
 Usage: #example
 * name.given = "Hanne"
 * name.family = "Mortensen"
+* name.text = "Hanne Mortensen"
 * qualification.code.text = "Socialrådgiver"
