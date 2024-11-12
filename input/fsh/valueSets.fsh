@@ -26,6 +26,7 @@ Id: dk-core-LoincBasicObservation
 Title: "DK Core LOINC Basic Observations"
 Description: "LOINC codes describing Basic Observations usable in Denmark."
 * ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * $LOINC#9279-1 //"Respiratory rate"
 * $LOINC#8867-4 //"Heart rate"
 * $LOINC#2708-6 //"Oxygen saturation in Arterial blood"
@@ -46,6 +47,7 @@ Id: dk-core-SCTBasicObservation
 Title: "DK Core SNOMED CT Basic Observation"
 Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 //Vital signs
 * $sct#446226005 //Diastolic blood pressure on admission 
 * $sct#400975005 //Standing diastolic blood pressure 
@@ -84,7 +86,7 @@ Id: dk-core-IEEEBasicObservation
 Title: "Dk Core IEEE Basic Observation"
 Description: "IEEE MDC codes for Basic Observations usable in Denmark"
 * ^experimental = false
-* ^copyright = "IEEE"
+* ^copyright = "This material contains content from IEEE-SA (https://standards.ieee.org/), copyright © the Insitute of Electrical and Electronics Engineers, Inc."
 * ^purpose = """
 ### Purpose of this ValueSet
 This ValueSet comprises the most common IEEE MDC codes used to represent observations
@@ -226,6 +228,7 @@ Id: dk-core-UCUM-BasicUnits
 Title: "DK Core UCUM Basic Units"
 Description: "UCUM codes to represent units for basic Observations usable in Denmark"
 * ^experimental = false
+* ^copyright = "This material contains content from UCUM (http://ucum.org). UCUM is copyright © 1999-2024, Regenstrief Institute, Inc. and is available under the license at http://ucum.org/license."
 * $ucum#%
 * $ucum#cm
 * $ucum#[in_i]
@@ -245,6 +248,7 @@ Id: dk-core-TechniquesSCTCodes
 Title: "DK TechniquesSCTCodes"
 Description: "SNOMED CT Codes for the technique used when obtaining an observation"
 * ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#761996005 "Estimation technique (qualifier value)"
 * $sct#733985002 "Reported (qualifier value)"
 * $sct#272391002 "Measurement technique (qualifier value)"

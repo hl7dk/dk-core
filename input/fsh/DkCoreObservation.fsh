@@ -214,6 +214,7 @@ Alias: $BD_ADDR = http://hl7.org/fhir/sid/eui-48/bluetooth
 Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers
 Alias: $ContinuaPHD = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD
 Alias: $ContinuaHFS = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS
+Alias: $PhdObservationCategory = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories
 Alias: $observation-gatewayDevice = http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -222,13 +223,20 @@ Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
 
 Instance: Poul
 InstanceOf: DkCorePatient
+Title: "Poul Hansen"
+Description: """
+  A patient admitted to a remote monitoring programme, performing measurements
+  at home.
+"""
 Usage: #example
 * meta.profile = $PhdPatient
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "3001749995"
 * identifier[cpr].type = $v2-0203#NI
 * name
   * family = "Hansen"
   * given[+] = "Poul"
+  * text = "Poul Hansen"
 
 
 Instance: WeightScale.606405FFFECFC604
@@ -308,7 +316,7 @@ Usage: #example
 
 
 Instance: Weight.Poul.230221
-InstanceOf: DkCoreObservation
+InstanceOf: IPADkCoreObservation
 Title: "Poul's daily weighing on Feb. 21st"
 Description: """
   Poul has been instructed to perform a daily weighing in the morning. This is his
@@ -320,20 +328,21 @@ Usage: #example
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-bodyweight
 * status = #final
-* category.coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
 * code
   * coding[+] = $LOINC#29463-7 "Body weight"
   * coding[+] = $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
   * coding[+] = $NPU#NPU03804 "Pt—Body; mass = ? kg"
   * text = "MDC_MASS_BODY_ACTUAL: Body weight"
-* subject = Reference(http://example.org/fhir/Patient/Poul)
-* performer = Reference(http://example.org/fhir/Patient/Poul)
+* subject = Reference(Poul)
+* performer = Reference(Poul)
 * effectiveDateTime = "2023-02-21T08:36:40+01:00"
 * valueQuantity = 74.0 'kg' "kg"
 * device = Reference(WeightScale.606405FFFECFC604)
 * extension
   * url = $observation-gatewayDevice
-  * valueReference = Reference(http://example.org/fhir/Telma.FEEDDADADEADBEEF)
+  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
 * derivedFrom = Reference(http://example.org/fhir/CoincidentTimeStamp.0123)
 
 
@@ -346,6 +355,11 @@ Usage: #example
 
 Instance: Telma.FEEDDADADEADBEEF
 InstanceOf: Device
+Title: "Poul's remote patient monitoring app"
+Description: """
+  Poul has been enrolled in a Remote Patient Monitoring programme in order to monitor the
+  state of his CHF condition. This is the app he uses to report the data to his doctor.
+"""
 Usage: #example
 * meta.profile = $PhgDevice
 * identifier[+]
@@ -415,6 +429,11 @@ Usage: #example
 
 Instance: BPMonitor.C4F312FFFE53F2C9
 InstanceOf: Device
+Title: "Poul's A&D blood pressure monitor"
+Description: """
+  This device is Poul's personal blood pressure monitor, which he keeps in the bedroom
+  of his home, and uses for daily monitoring due to his CHF condition.
+"""
 Usage: #example
 * meta.profile = $PhdDevice
 * identifier[+]
@@ -497,6 +516,7 @@ InstanceOf: DkCoreObservation
 Usage: #inline
 * meta.profile[+] = $PhdNumericObservation
 * status = #final
+* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
 * code
   * coding[+] = $IEEEx73#67996 "MDC_ATTR_VAL_BATT_CHARGE"
   * text = "MDC_ATTR_VAL_BATT_CHARGE: Battery level"
@@ -512,6 +532,13 @@ Usage: #inline
 
 Instance: CoincidentTimeStamp.0222
 InstanceOf: DkCoreObservation
+Title: "Coincident time stamp from Poul's home blood pressure measurement"
+Description: """
+  A coincident time stamp observation is used to ensure and inspect the consistency
+  of timelines when using battery-operated health devices having their own clock that may
+  or may not be synchronized to local time - and may even travel with their owner across
+  time zones.
+"""
 Usage: #example
 * meta.profile[+] = $PhdCoincidentTimeStampObservation
 * status = #final
@@ -529,14 +556,15 @@ Usage: #example
 
 
 Instance: BloodPressure.Poul.643992
-InstanceOf: DkCoreObservation
+InstanceOf: IPADkCoreObservation
 Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
 * meta.profile[+] = $PhdCompoundNumericObservation
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-bp
 * status = #final
-* category.coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
 * code
   * coding[+] = $LOINC#85354-9 "Blood pressure panel with all children optional"
   * coding[+] = $IEEEx73#150020 "MDC_PRESS_BLD_NONINV"
@@ -549,14 +577,14 @@ Usage: #inline
   * code
     * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
     * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
-    * coding[+] = $Medcom#MCS88019 "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
+    * coding[+] = $NPU#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
   * valueQuantity = 118 'mm[Hg]' "mmHg"
 * component[+]
   * code
     * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
     * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
-    * coding[+] = $Medcom#MCS88020 "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
+    * coding[+] = $NPU#05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
   * valueQuantity = 87 'mm[Hg]' "mmHg"
 * component[+]
@@ -572,39 +600,20 @@ Usage: #inline
 
 
 Instance: HeartRate.Poul.1974654
-InstanceOf: DkCoreObservation
+InstanceOf: IPADkCoreObservation
+Title: "Poul's heart rate measurement"
+Description: """
+  Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate
+  measurement was produced by his blood pressure monitor during one of these measurements.
+"""
 Usage: #example
 * identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20230223T102408.00"
 * meta.profile[+] = $PhdNumericObservation
 * meta.profile[+] = $observation-vitalsigns
 * meta.profile[+] = $observation-heartrate
 * status = #final
-* category.coding = $observation-category#vital-signs "Vital signs"
-* code
-  * coding[+] = $LOINC#8867-4 "Heart rate"
-  * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
-  * coding[+] = $NPU#NPU21692 "Heart—Systole; frequency = ? × 1/min"
-  * text = "MDC_PULS_RATE_NON_INV: Heart rate"
-* subject = Reference(Poul)
-* performer = Reference(Poul)
-* effectiveDateTime = "2023-02-23T10:24:08+01:00"
-* valueQuantity = 93 '/min' "bpm"
-* device = Reference(BPMonitor.C4F312FFFE53F2C9)
-* extension
-  * url = $observation-gatewayDevice
-  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
-* derivedFrom = Reference(CoincidentTimeStamp.0222)
-
-
-Instance: HeartRate.Poul.9999999
-InstanceOf: IPADkCoreObservation
-Usage: #example
-* identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-149546-93-{beat}/min-20240223T102408.00"
-* meta.profile[+] = $PhdNumericObservation
-* meta.profile[+] = $observation-vitalsigns
-* meta.profile[+] = $observation-heartrate
-* status = #final
-* category.coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $observation-category#vital-signs "Vital signs"
+* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
 * code
   * coding[+] = $LOINC#8867-4 "Heart rate"
   * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
@@ -627,6 +636,7 @@ Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
 * meta.profile[+] = $PhdBitsEnumerationObservation
 * status = #final
+* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
 * code
   * coding = $IEEEx73#8410608 "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS"
   * text = "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem"
