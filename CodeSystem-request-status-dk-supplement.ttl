@@ -14,12 +14,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem request-status-dk-supplement</b></p><a name=\"request-status-dk-supplement\"> </a><a name=\"hcrequest-status-dk-supplement\"> </a><a name=\"request-status-dk-supplement-da-DK\"> </a><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-draft\">draft</a><a name=\"request-status-dk-supplement-draft\"> </a></td><td>Udkast</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-active\">active</a><a name=\"request-status-dk-supplement-active\"> </a></td><td>Aktiv</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-on-hold\">on-hold</a><a name=\"request-status-dk-supplement-on-hold\"> </a></td><td>Suspenderet</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-revoked\">revoked</a><a name=\"request-status-dk-supplement-revoked\"> </a></td><td>Annulleret</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-completed\">completed</a><a name=\"request-status-dk-supplement-completed\"> </a></td><td>Afsluttet</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-entered-in-error\">entered-in-error</a><a name=\"request-status-dk-supplement-entered-in-error\"> </a></td><td>Fejlindtastning</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://hl7.org/fhir/R4/codesystem-request-status.html#request-status-unknown\">unknown</a><a name=\"request-status-dk-supplement-unknown\"> </a></td><td>Ukendt</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "3.4.0"] ; # 
+  fhir:version [ fhir:v "3.3.0"] ; # 
   fhir:name [ fhir:v "RequestStatus"] ; # 
   fhir:title [ fhir:v "DK Request Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-05T12:45:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-15T12:49:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -51,7 +51,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Udkast" ]
@@ -63,7 +62,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Aktiv" ]
@@ -75,7 +73,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Suspenderet" ]
@@ -87,7 +84,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Annulleret" ]
@@ -99,7 +95,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Afsluttet" ]
@@ -111,7 +106,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Fejlindtastning" ]
@@ -123,7 +117,6 @@
        fhir:use [
          a sct:900000000000013009 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Ukendt" ]

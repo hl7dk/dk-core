@@ -49,15 +49,6 @@
            fhir:code [ fhir:v "DK-85" ]
          ] )
        ]
-     ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/address-official"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "DK" ]
-         ] )
-       ]
      ] ) ;
      fhir:use [ fhir:v "home" ] ;
      fhir:type [ fhir:v "postal" ] ;

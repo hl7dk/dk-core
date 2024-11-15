@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa1a0952-b104-45d3-880e-0568ffd2c09a-14",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa1a0952-b104-45d3-880e-0568ffd2c09a-14",
+  "id" : "8e450081-8e4d-4003-96d4-e5eb6d328d12-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8e450081-8e4d-4003-96d4-e5eb6d328d12-20",
   "name" : "UnionIPAObservationAndDkCoreObservation",
-  "title" : "Union of IPA-Observation And Danish Core Observation Profile",
+  "title" : "Union of IPA-Observation And Danish Core Observation Profiles",
   "status" : "active",
-  "date" : "2024-11-05T12:46:18+00:00",
+  "date" : "2024-11-15T12:50:03+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -851,7 +851,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"]
+        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+        "#sd-ipa-patient-dk-core-patient"]
       }],
       "constraint" : [{
         "extension" : [{

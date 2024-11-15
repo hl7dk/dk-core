@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e3803b11-60d1-4005-9abe-72c2707dff9b-78",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e3803b11-60d1-4005-9abe-72c2707dff9b-78",
+  "id" : "14d41dd3-9481-43bf-9cbe-47facc587e0b-78",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/14d41dd3-9481-43bf-9cbe-47facc587e0b-78",
   "name" : "IntersectionDkCoreConditionAndDkCoreCondition",
   "title" : "Intersection of Danish Core Condition Profile And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2024-11-05T12:46:18+00:00",
+  "date" : "2024-11-15T12:50:02+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -444,7 +444,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {
@@ -494,7 +494,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {
@@ -548,7 +548,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -633,7 +633,7 @@
       "definition" : "Identification of the condition, problem or diagnosis.",
       "requirements" : "0..1 to account for primarily narrative only resources.",
       "alias" : ["type"],
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -649,7 +649,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -896,7 +896,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
