@@ -279,9 +279,9 @@
 <div style="display:inline-block" markdown="1">
 
 <h3 id="scope-and-usage">Scope and usage</h3>
-<p>The Danish Core Practitioner profile is intended to encapsulate the most common and basic data model of practitioners in Danish healthcare systems covering both primary sector, secondary sector (medical specialists ([DA] speciallæger) and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Practitioner is broardly defined (just as it is in the original FHIR ressource), and may be used to define all the professionals involvel directly or indirectly in citizen and patient care.</p>
+<p>The Danish Core Practitioner profile is intended to encapsulate the most common and basic data model of practitioners in Danish healthcare systems covering both primary sector, secondary sector (medical specialists ([DA] speciallæger) and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts. Practitioner is broadly defined (just as it is in the original FHIR ressource), and may be used to define all the professionals involvel directly or indirectly in citizen and patient care.</p>
 
-<p>Be especially aware that the Practitioner profile is only used for describing persons and their qualifications, independent of their current or previous professional roles. Use the international PractitionerRole ressource, if roles of a practitioner needs to be described. This also means that Practitioners are not classified as "Chief Physician" or other titles that denotes their prosition. The profile is simple and focuses on personal qualifications.</p>
+<p>Be especially aware that the Practitioner profile is only used for describing persons and their qualifications, independent of their current or previous professional roles. Use the international PractitionerRole ressource, if roles of a practitioner needs to be described. This also means that Practitioners are not classified as "Chief Physician" or other titles that denotes their position. The profile is simple and focuses on personal qualifications.</p>
 
 <p>The qualification.code has an extendable ValueSet that includes all official authorizations as defined by <a href="https://www.retsinformation.dk/eli/lta/2019/731">https://www.retsinformation.dk/eli/lta/2019/731</a>, and derived from <a href="http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups">http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups</a>. In the original set, Code (5176) was not uniqe, and have been converted to 5176a and 5176b respectively. However, the official codes should not limit the use of the practioner profile.
 E.g. if you need to represent another professional group e.g. social worker OR if you need to represent a qualification, important for a local context e.g. that someone has completed advanced pressure ulcer care training you have different options. You may for example extend the valueSet, add the qualification as plain text, slice the qualification attribute or choose not to represent the qualification.</p>
@@ -1401,7 +1401,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 15, 2024 12:49+0000">2024-11-15</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 15, 2024 13:03+0000">2024-11-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
