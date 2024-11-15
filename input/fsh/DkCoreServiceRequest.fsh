@@ -49,3 +49,19 @@ Usage: #example
 * priority = http://hl7.org/fhir/request-priority#routine
 * subject.reference = "Patient/john"
 * category = $sct#658161000005107 "hjemmesygepleje"
+* code = $sct#225358003 "sårbehandling og -pleje"
+* orderDetail = $sct#410379003 "overvågning af forbindingskift/sårpleje"
+
+
+Instance: MaxServiceRequest
+InstanceOf: DkCorePersonServiceRequest
+Title: "Request for nursing care of John."
+Description: "Request for nursing care of John."
+Usage: #example
+* status = #active
+* intent = #plan
+* priority = http://hl7.org/fhir/request-priority#routine
+* subject.reference = "Patient/john"
+* category = $sct#658161000005107 "hjemmesygepleje"
+* code = $sct#225358003 "sårbehandling og -pleje"
+* orderDetail = $sct#410379003 "overvågning af forbindingskift/sårpleje"
