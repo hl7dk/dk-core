@@ -1,7 +1,5 @@
 ### Scope and usage
 
-> Work in progress
-
 The Danish Core ServiceRequest profile is intended to support requests for services within the health sector, e.g. cross sector. In dk-core, the ServiceRequest resource have been constrained to only contain [DkCorePatient](StructureDefinition-dk-core-patient.html) and Group as subject of the request. This is chosen to ensure a focused and relevant ValueSet for the ServiceRequest.code.
 
 Notice that the international ValueSet for priority have been reduced to contain only two values i.e. 'routine' and 'asap' because only these two concepts are of widespread use in Denmark. 'routine' is the same as the Danish 'elektiv'. 'asap' is the same as the danish 'akut'.
