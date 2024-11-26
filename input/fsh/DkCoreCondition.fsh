@@ -1,5 +1,5 @@
 Profile: DkCoreCondition
-Parent: IPACondition
+Parent: Condition
 Id: dk-core-condition
 Title: "Danish Core Condition Profile"
 Description: "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"
@@ -39,7 +39,7 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
 * subject only Reference(DkCorePatient)
-/* * participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "function.coding.code"
   * ^slicing.rules = #open
   * ^slicing.ordered = false
@@ -50,7 +50,7 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
 * participant[recorder].actor only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCorePatient or RelatedPerson)
 * participant[asserter].function.coding.code = #performer
 * participant[asserter].actor only Reference(DkCorePractitioner or DkCorePractitionerRole)
- */
+ 
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
 Title: "John tryksår"

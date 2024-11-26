@@ -1,6 +1,8 @@
 ### Scope and usage
 The Danish Core Condition profile is intended to encapsulate condition information, as used in the Danish health sector. In dk-core, conditions have been constrained to only containing conditions as stated by health or social sector practitioners. This means that conditions, that patients or citizens assert themselves to have, should not be represented using this profile. Patients' own assessments can, in most cases, be represented as Observations or QuestionnaireResponses. However, in some use cases, where the patient asserts the problem, that leads to healthcare interventions or own interventions. It does make sense to represent these as Conditions. In this case, use the international standard [Condition](https://www.hl7.org/fhir/condition.html), not this dk-core Condition profile.
 
+> The DkCoreCondition profile in R5 does currently not inherit from IPACondition, as in R4. 
+
 This way of constraining the Condition profile is within the boundaries of what the Danish Health Data Authority and Local Government Denmark define as a Condition.
 * The Danish Health Data Authority, [Begrebsbasen](https://sundhedsdata.iterm.dk/): Helbredstilstand er en tilstand vedrørende helbred der aktuelt vurderes med henblik på sundhedsintervention
 * Local Government Denmark, [Fælleskommunale rammearkitektur, FKI](http://info.rammearkitektur.dk/SocialOgSundhed/FKI/ClassDiagram/d2ca33a5-a53c-4f83-82e5-0f9f7ce7a325.htm): Fokustilstand er en borgers helbredsmæssige, funktionsmæssige og/eller sociale situation, på et givet tidspunkt, der er anledning til faglig bekymring, og vurderes mhp. indsats

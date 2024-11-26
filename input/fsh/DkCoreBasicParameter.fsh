@@ -91,7 +91,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#75367002
+* code.coding[SNOMEDCT] = $sct#75367002
 * code.coding[LOINC] = $LOINC#85354-9
 * subject = Reference(else)
 * component[0].code.coding[LOINC] = $LOINC#8480-6
@@ -110,7 +110,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#276885007
+* code.coding[SNOMEDCT] = $sct#276885007
 * code.coding[LOINC] = $LOINC#8310-5
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -123,7 +123,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#364075005
+* code.coding[SNOMEDCT] = $sct#364075005
 * code.coding[LOINC] = $LOINC#8867-4
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
@@ -136,7 +136,7 @@ InstanceOf: DkCoreBasicObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#86290005
+* code.coding[SNOMEDCT] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
 * subject = Reference(else)
 * method = $sct#272391002 "Measurement technique (qualifier value)"
