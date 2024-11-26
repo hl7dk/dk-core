@@ -31,11 +31,12 @@ container formats and transports:
  - [IEEE 11073 PHD](http://11073.org/)
  - [HL7 FHIR PHD IG](http://hl7.org/fhir/uv/phd/)
  - [HL7 CDA PHMR](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=33)
- - HL7 v2 Messaging
+ - [IHE PCD-01](https://wiki.ihe.net/index.php/PCD_Technical_Framework) using HL7 v2 Messaging
+ - [IHE POU](https://wiki.ihe.net/index.php/Personal_Health_Device_Observation_Upload)
 
 With transports ranging from [Bluetooth Low
 Energy](https://www.bluetooth.com/bluetooth-resources/personal-health-devices-transcoding/), NFC, USB,
-Internet, to [XDS.b and XDR exchange of PHMR
+ZigBee, Matter, Internet, to [XDS.b and XDR exchange of PHMR
 documents](https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-H.813-201911-I!!PDF-E&type=items)
 
 
@@ -64,8 +65,8 @@ The Bundle contains the following entries:
  - **Coincident Timestamp Observation** The Gateway Device reads the clock of the PHD and creates this
    observation of the *current time* of the PHD timestamped using the Gateway's clock (which is supposed to be
    synchronized with a time service). This is a way to detect (and possibly correct) breaches in the timeline.
- - **Blood Pressure Observation** This is a `DkCoreObservation`
- - **Heart Rate Observation** Also a `DkCoreObservation`
+ - **Blood Pressure Observation** This is a an `IPADkCoreObservation`
+ - **Heart Rate Observation** Also an `IPADkCoreObservation`
  - **Blood Pressure Status Observation** This observation type can be used to report a number of conditions
    during the measurement. In this case, an irregular pulse was detected during the measurement. Some PHDs may
    be able to report different conditions - e.g. that the blood pressure cuff was too loose.

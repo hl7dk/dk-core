@@ -1,5 +1,5 @@
 Profile: DkCoreCondition
-Parent: Condition
+Parent: IPACondition
 Id: dk-core-condition
 Title: "Danish Core Condition Profile"
 Description: "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"
@@ -39,9 +39,7 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
 * subject only Reference(DkCorePatient)
-//* recorder only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
-//* asserter only Reference(DkCorePractitioner or PractitionerRole)
-* participant ^slicing.discriminator.type = #value
+/* * participant ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "function.coding.code"
   * ^slicing.rules = #open
   * ^slicing.ordered = false
@@ -49,9 +47,10 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
     recorder 0..1 and
     asserter 0..1
 * participant[recorder].function.coding.code = #enterer
-* participant[recorder].actor only Reference(DkCorePractitioner or PractitionerRole or DkCorePatient or RelatedPerson)
+* participant[recorder].actor only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCorePatient or RelatedPerson)
 * participant[asserter].function.coding.code = #performer
-* participant[recorder].actor only Reference(DkCorePractitioner or PractitionerRole)
+* participant[asserter].actor only Reference(DkCorePractitioner or DkCorePractitionerRole)
+ */
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
 Title: "John tryksår"
@@ -86,7 +85,7 @@ Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx ti
 Usage: #example
 * code = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
 * subject.reference = "Patient/john"
-* participant[asserter].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#performer
+* participant[asserter].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#performer 
 * participant[asserter].actor = Reference(Practitioner/AbrahamLaege)
 * participant[recorder].function.coding = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer
 * participant[recorder].actor = Reference(Practitioner/AbrahamLaege)
@@ -142,4 +141,4 @@ Usage: #example
 * category = $condition-category#problem-list-item
 * recordedDate = "2021-05-01"
 * clinicalStatus = $condition-clinical#active
-* verificationStatus = $condition-ver-status#confirmed
+* verificationStatus = $condition-ver-status#confirmed 
