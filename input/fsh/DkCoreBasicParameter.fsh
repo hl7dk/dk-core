@@ -269,13 +269,13 @@ Usage: #example
 * code.coding[LOINC] = $LOINC#9269-2
 * code.coding[+] = $sct#248241002
 * subject = Reference(Max)
-* valueQuantity = 13 '{score}'
-* referenceRange[0].high = 8 '{score}'
+* valueQuantity = 13 '{score}' "score"
+* referenceRange[0].high = 8 '{score}' "score"
 * referenceRange[=].type.text = "Severe TBI"
-* referenceRange[+].low = 9 '{score}'
-* referenceRange[=].high = 12 '{score}'
+* referenceRange[+].low = 9 '{score}' "score"
+* referenceRange[=].high = 12 '{score}' "score"
 * referenceRange[=].type.text = "Moderate TBI"
-* referenceRange[+].low = 13 '{score}'
+* referenceRange[+].low = 13 '{score}' "score"
 * referenceRange[=].type.text = "Mild TBI"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * component[0].code = $LOINC#9268-4 "Glasgow coma score motor"

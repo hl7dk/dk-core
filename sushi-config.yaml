@@ -9,7 +9,7 @@ title: "HL7 FHIR Implementation Guide: DK Core"
 description: A FHIR Implementation Guide for the Danish common needs across healthcare sectors
 #Flip status to 'active' for publication. Flip to 'draft' for CI
 status: draft
-version: 3.3.0
+version: 3.4.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 license: CC0-1.0
@@ -24,6 +24,7 @@ jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 
 menu:
    Table of Contents: toc.html
@@ -41,4 +42,5 @@ parameters:
   special-url: [urn:oid:1.2.208.176.2.1, urn:iso:std:iso:11073:10101, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.21, urn:oid:1.2.208.176.2.4.12]
 
 dependencies:
-  hl7.fhir.uv.phd: 1.0.0
+  hl7.fhir.uv.phd: 1.1.0
+  hl7.fhir.uv.ipa: 1.0.0
