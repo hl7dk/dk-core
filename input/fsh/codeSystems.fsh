@@ -1256,3 +1256,8 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
   * ^property[=].valueCode = #active
   * ^property[+].code = #comment
   * ^property[=].valueString = "Unit defined"
+
+* #PROCON "Professional contact"
+  * ^definition = "A professional acting as a contact of the scoping person."
+  * ^designation.language = #da
+  * ^designation.value = "Professionel kontakt"
