@@ -1,7 +1,7 @@
 DKCore : Validation Results
 =========================================
 
-err = 0, warn = 84, info = 32
+err = 0, warn = 84, info = 31
 $--
 Generated $--. FHIR version $-- for hl7.fhir.dk.core#$-- (canonical = http://hl7.dk/fhir/core)
  Build Errors : 0 / 21 / 0
@@ -66,7 +66,7 @@ Generated $--. FHIR version $-- for hl7.fhir.dk.core#$-- (canonical = http://hl7
  /github/workspace/fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-LaegerneHasserisBymidte : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-283 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Confidential : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-Max : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Poul : 0 / 0 / 6
@@ -288,7 +288,6 @@ WARNING: Observation/Weight.Poul.230221: Observation.code.coding[2]: A definitio
 == fsh-generated/resources/Organization-LaegerneHasserisBymidte.json ==
 == fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
 == fsh-generated/resources/Patient-283.json ==
-INFORMATION: Patient/283: Patient.address[0].extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|3.3.0
 == fsh-generated/resources/Patient-Confidential.json ==
 WARNING: Patient/Confidential: Patient.meta.security[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Patient-Max.json ==

@@ -111,12 +111,11 @@ Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.
 /github/workspace/fsh-generated/resources/Observation-MaxVitalSignsPanel.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /github/workspace/fsh-generated/resources/Observation-ObservationOxySatObservation.json: line 9, col 4, Warning - A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/Observation-Weight.Poul.230221.json: line 29, col 4, Warning - A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated (NOTFOUND)
-/github/workspace/fsh-generated/resources/Patient-283.json: line 44, col 12, Info - Reference to draft CodeSystem http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|3.3.0 (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Patient-Confidential.json: line 6, col 8, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
 /github/workspace/fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json: line 0, col 0, Warning - Unknown System 'urn:oid:1.2.208.176.2.1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'urn:oid:1.2.208.176.2.1' could not be found, so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.208.176.2.1 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json: line 1, col 2148, Warning - Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not (REQUIRED)
 
-err = 0, warn = 84, info = 32
+err = 0, warn = 84, info = 31
 IG Publisher Version: 1.8.1

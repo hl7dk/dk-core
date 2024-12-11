@@ -29,7 +29,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "IEEEBasicObservation",
       "title" : "Dk Core IEEE Basic Observation",
       "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
@@ -41,7 +41,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "LoincBasicObservation",
       "title" : "DK Core LOINC Basic Observations",
       "description" : "LOINC codes describing Basic Observations usable in Denmark.",
@@ -53,7 +53,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
       "description" : "Municipality codes used in Denmark",
@@ -69,7 +69,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "NPUBasicObservation",
       "title" : "DK Core NPU Basic Observation",
       "description" : "NPU codes for Basic Observations usable in Denmark",
@@ -81,7 +81,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
       "description" : "Subdivision codes (Regional codes) used in Denmark",
@@ -111,7 +111,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "SCTBasicObservation",
       "title" : "DK Core SNOMED CT Basic Observation",
       "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
@@ -123,7 +123,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TechniquesSCTCodes",
       "title" : "DK TechniquesSCTCodes",
       "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
@@ -136,7 +136,7 @@
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
       "version" : "3.3.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "UCUMBasicUnits",
       "title" : "DK Core UCUM Basic Units",
       "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
@@ -229,9 +229,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
       "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
-      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -372,16 +372,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
-      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
       "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier"
+      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -395,16 +395,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
-      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
-      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
-      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
       "StructureDefinition-dk-core-gln-identifier.html" : "GLN Identifier",
-      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
       "StructureDefinition-dk-core-cvr-identifier.html" : "Danish Central Business Register (CVR) Identifier",
-      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier"
+      "StructureDefinition-dk-core-authorization-identifier.html" : "Danish Health Professionals Authorization Identifier",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR",
+      "StructureDefinition-dk-core-producent-id.html" : "Producent Id",
+      "StructureDefinition-dk-core-sor-identifier.html" : "SOR Identifier",
+      "StructureDefinition-dk-core-x-ecpr-identifier.html" : "National eCPR service, called X-eCPR",
+      "StructureDefinition-dk-core-cpr-identifier.html" : "Danish Central Person Register (CPR) Identifier",
+      "StructureDefinition-dk-core-kombit-org-identifier.html" : "Kombit Organsation Identifier"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -418,12 +418,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
-      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
       "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile",
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile",
       "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile",
       "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profiles",
       "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
     },
     {
