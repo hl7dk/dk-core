@@ -1,0 +1,93 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "a2a836e2-9f94-4490-9960-8ad8c565eefc-42",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a2a836e2-9f94-4490-9960-8ad8c565eefc-42",
+  "name" : "IntersectionEpisodeOfCareStatusAndEpisodeOfCareStatus",
+  "title" : "Intersection of DK Episode Of Care Status And DK Episode Of Care Status",
+  "status" : "active",
+  "date" : "2024-12-16T15:09:48+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "planned",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Planlagt"
+    }]
+  },
+  {
+    "code" : "waitlist",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Venteliste"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "onhold",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Pauseret"
+    }]
+  },
+  {
+    "code" : "finished",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Færdig"
+    }]
+  },
+  {
+    "code" : "cancelled",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Annulleret"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
+}

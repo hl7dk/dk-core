@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "a2a836e2-9f94-4490-9960-8ad8c565eefc-150",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a2a836e2-9f94-4490-9960-8ad8c565eefc-150",
+  "name" : "IntersectionnullAndnull",
+  "title" : "Intersection of DK MaritalStatus And DK MaritalStatus",
+  "status" : "active",
+  "date" : "2024-12-16T15:09:48+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/marital-status"]
+    },
+    {
+      "concept" : [{
+        "code" : "P",
+        "display" : "Registered partnership"
+      },
+      {
+        "code" : "O",
+        "display" : "Dissolved partnership"
+      }]
+    }]
+  }
+}

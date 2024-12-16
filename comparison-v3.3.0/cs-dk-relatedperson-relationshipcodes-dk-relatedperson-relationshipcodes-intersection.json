@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "a2a836e2-9f94-4490-9960-8ad8c565eefc-39",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a2a836e2-9f94-4490-9960-8ad8c565eefc-39",
+  "name" : "IntersectionDkRelatedPersonRelationshipCodesAndDkRelatedPersonRelationshipCodes",
+  "title" : "Intersection of DK Related Person Relationship Codes And DK Related Person Relationship Codes",
+  "status" : "active",
+  "date" : "2024-12-16T15:09:48+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "PARAUTH",
+    "display" : "Parental authority",
+    "definition" : "The player of the role holds parental authority over the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forældremyndighedsindehaver"
+    }]
+  },
+  {
+    "code" : "PRICARE",
+    "display" : "Primary caretaker",
+    "definition" : "The player of the role is the primary caretaker of the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Primær omsorgsperson"
+    }]
+  },
+  {
+    "code" : "PROCON",
+    "display" : "Professional contact",
+    "definition" : "A professional acting as a contact of the scoping person.",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Professionel kontakt"
+    }]
+  }]
+}
