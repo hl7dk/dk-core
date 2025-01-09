@@ -1,5 +1,5 @@
 Profile: DkCorePractitioner
-Parent: IPAPractitioner
+Parent: Practitioner
 Id: dk-core-practitioner
 Title: "Danish Core Practitioner Profile"
 Description: "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"

@@ -1,5 +1,5 @@
 Profile: DkCoreCondition
-Parent: IPACondition
+Parent: Condition
 Id: dk-core-condition
 Title: "Danish Core Condition Profile"
 Description: "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"

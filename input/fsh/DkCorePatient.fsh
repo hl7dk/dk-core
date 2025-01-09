@@ -1,5 +1,5 @@
 Profile: DkCorePatient
-Parent: IPAPatient
+Parent: Patient
 Id: dk-core-patient
 Title: "Danish Core Patient Profile"
 Description: "HL7 Denmark core profile for a patient"
