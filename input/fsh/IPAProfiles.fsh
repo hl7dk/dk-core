@@ -1,5 +1,6 @@
 Profile: IpaDkCorePatient
 Parent: DkCorePatient
+Id: ipa-dk-core-patient
 Title: "Danish IPA Core Patient Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant patients"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
@@ -7,6 +8,7 @@ Description: "HL7 Denmark core profile for IPA and DK Core compliant patients"
 
 Profile: IpaDkCoreCondition
 Parent: DkCoreCondition
+Id: ipa-dk-core-condition
 Title: "Danish IPA Core Condition Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant conditions"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
@@ -15,6 +17,7 @@ Description: "HL7 Denmark core profile for IPA and DK Core compliant conditions"
 
 Profile: IpaDkCoreObservation
 Parent: DkCoreObservation
+Id: ipa-dk-core-observation
 Title: "Danish IPA Core Observation Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant observations"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
@@ -23,6 +26,7 @@ Description: "HL7 Denmark core profile for IPA and DK Core compliant observation
 
 Profile: IpaDkCorePractitioner
 Parent: DkCorePractitioner
+Id: ipa-dk-core-practitioner
 Title: "Danish IPA Core Practitioner Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant practitioners"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
@@ -30,6 +34,7 @@ Description: "HL7 Denmark core profile for IPA and DK Core compliant practitione
 
 Profile: IpaDkCorePractitionerRole
 Parent: DkCorePractitionerRole
+Id: ipa-dk-core-practitionerrole
 Title: "Danish IPA Core PractitionerRole Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant practitionerroles"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
