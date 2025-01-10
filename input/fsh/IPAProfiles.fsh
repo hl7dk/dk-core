@@ -1,11 +1,11 @@
-Profile: IPADkCorePatient
+Profile: IpaDkCorePatient
 Parent: DkCorePatient
 Title: "Danish IPA Core Patient Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant patients"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"
 
-Profile: IPADkCoreCondition
+Profile: IpaDkCoreCondition
 Parent: DkCoreCondition
 Title: "Danish IPA Core Condition Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant conditions"
@@ -13,22 +13,22 @@ Description: "HL7 Denmark core profile for IPA and DK Core compliant conditions"
 * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition"
 
 
-Profile: IPADkCoreObservation
+Profile: IpaDkCoreObservation
 Parent: DkCoreObservation
 Title: "Danish IPA Core Observation Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant observations"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
-* subject only Reference(DkCorePatient)
+* subject only Reference(IpaDkCorePatient)
 
-Profile: IPADkCorePractitioner
+Profile: IpaDkCorePractitioner
 Parent: DkCorePractitioner
 Title: "Danish IPA Core Practitioner Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant practitioners"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner"
 
-Profile: IPADkCorePractitionerRole
+Profile: IpaDkCorePractitionerRole
 Parent: DkCorePractitionerRole
 Title: "Danish IPA Core PractitionerRole Profile"
 Description: "HL7 Denmark core profile for IPA and DK Core compliant practitionerroles"
