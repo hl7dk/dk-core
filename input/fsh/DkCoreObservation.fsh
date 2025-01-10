@@ -308,7 +308,7 @@ Usage: #example
 
 
 Instance: Weight.Poul.230221
-InstanceOf: IPADkCoreObservation
+InstanceOf: IpaDkCoreObservation
 Title: "Poul's daily weighing on Feb. 21st"
 Description: """
   Poul has been instructed to perform a daily weighing in the morning. This is his
@@ -548,7 +548,7 @@ Usage: #example
 
 
 Instance: BloodPressure.Poul.643992
-InstanceOf: IPADkCoreObservation
+InstanceOf: IpaDkCoreObservation
 Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-150020-118-266016-87-266016-99-266016-20230223T102408.00"
 * meta.profile[+] = $PhdCompoundNumericObservation
@@ -592,7 +592,7 @@ Usage: #inline
 
 
 Instance: HeartRate.Poul.1974654
-InstanceOf: IPADkCoreObservation
+InstanceOf: IpaDkCoreObservation
 Title: "Poul's heart rate measurement"
 Description: """
   Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate
