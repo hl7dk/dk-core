@@ -1,0 +1,2 @@
+### Scope and Usage
+The Danish IPA Core Observation profile is intended to encapsulate the combined data model of an observation as used in a Danish context [DKCoreObservation](./StructureDefinition-dk-core-observation.html) and as used in an international context [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-observation.html). The profile does this by extending the definition for dk-core-observation and imposing the IPA-Observation profile.

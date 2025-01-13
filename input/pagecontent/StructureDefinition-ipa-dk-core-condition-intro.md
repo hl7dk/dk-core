@@ -1,0 +1,2 @@
+### Scope and Usage
+The Danish IPA Core Condition profile is intended to encapsulate the combined data model of a condition as used in a Danish context [DKCoreCondition](./StructureDefinition-dk-core-condition.html) and as used in an international context [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-condition.html). The profile does this by extending the definition for dk-core-condition and imposing the IPA-Condition profile.

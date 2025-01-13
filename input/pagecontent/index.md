@@ -77,9 +77,7 @@ Our main intent is to focus and limit profiling specific to Denmark. During the 
 </ul>
 
 
-Several of the Danish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/), and we do our best to keep the specifications conformant where possible. Should we find any constraints in
-IPA that we can't adhere to, the main resolution is to affect the IPA specification and search for wider consensus and shared understanding.
+The implementation guide defines IPA compliance bit differently than the corresponding Nordic imlementation guides where profiles extend the IPA profiles. DkCore instead introduces separate IPA DK versions of selected profiles that extend the dk-core profile and imposes the IPA equivalent. This makes it possible to choose whether to comply with the Danish requirements only, or to comply with both the Dansih profiles and the IPA equivalents. It is recommended to comply with the IPA DK profiles where possible and with the non-IPA versions for contexts where IPA does not apply.
 
 Regarding international cooperation, please see also the [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations) page in HL7 International's Confluence.
 
