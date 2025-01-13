@@ -9,7 +9,7 @@ The Danish Core Observation profile is intended to represent observations for a 
 
 >Note: The profile [DkCoreBasicObservation](./StructureDefinition-dk-core-basic-observation.html) is made to ensure a common structure of measurable and often used observations, such as vital signs, height and weight. When sharing these basic observations, DkCoreBasicObservation profile is recommended to use.
 
->Note: The profile [IPADkCoreObservation](./StructureDefinition-IPADkCoreObservation.html) is enables implementers to serve DkCoreObservation's that also conforms to IPA through its RESTful IPA interfaces.
+>Note: The profile [IPADkCoreObservation](./StructureDefinition-ipa-dk-core-observation.html) is enables implementers to serve DkCoreObservation's that also conforms to IPA through its RESTful IPA interfaces.
 
 
 #### Codes
