@@ -49,6 +49,55 @@ Description: "CodeSystem supplement with danish translations for administrative 
   * ^designation.language = #da
   * ^designation.value = "Ukendt"
 
+
+
+CodeSystem: v2-0131DkSupplement
+Id: v2-0131-supplement
+Title: "DK v2 Contact Role Supplement"
+Description: "CodeSystem supplement with danish translations for Contact Role"
+* ^experimental = false
+* ^content = #supplement
+* ^supplements = "http://terminology.hl7.org/CodeSystem/v2-0131"
+* #BP
+  * ^designation.language = #da
+  * ^designation.value = "Faktureringskontaktperson"
+* #C
+  * ^designation.language = #da
+  * ^designation.value = "Nødkontakt"
+* #CP
+  * ^designation.language = #da
+  * ^designation.value = "Kontaktperson"
+* #E
+  * ^designation.language = #da
+  * ^designation.value = "Arbejdsgiver"
+* #EP
+  * ^designation.language = #da
+  * ^designation.value = "Akut kontaktperson"
+* #F
+  * ^designation.language = #da
+  * ^designation.value = "Føderalt agentur"
+* #I
+  * ^designation.language = #da
+  * ^designation.value = "Forsikringsselskab"
+* #N
+  * ^designation.language = #da
+  * ^designation.value = "Pårørende"
+* #O
+  * ^designation.language = #da
+  * ^designation.value = "Andet"
+* #PR
+  * ^designation.language = #da
+  * ^designation.value = "Person, der forbereder henvisning"
+* #S
+  * ^designation.language = #da
+  * ^designation.value = "Statsagentur"
+* #U
+  * ^designation.language = #da
+  * ^designation.value = "Ukendt"
+
+
+
+
 CodeSystem: GreenlandMunicipalityCodes
 Id: dk-core-municipality-codes-greenland
 Title: "DK Greenland Municipality Codes"

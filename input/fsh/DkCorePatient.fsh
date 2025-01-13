@@ -43,7 +43,6 @@ Description: "HL7 Denmark core profile for a patient"
 * generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
   * identifier only SORIdentifier
 * managingOrganization only Reference(DkCoreOrganization)
-* contact.relationship from RelatedPersonRelationshipTypes (extensible)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
 
 Instance: 283
