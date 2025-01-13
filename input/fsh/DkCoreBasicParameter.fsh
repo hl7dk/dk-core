@@ -58,7 +58,7 @@ which requires the value to be unitless.
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
-* code.coding[NPU] = $NPU#NPU27280 "Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?"
+* code.coding[NPU] = $NPU#NPU27280
 * valueQuantity.value = 0.97
 * valueQuantity.code = #1
 * valueQuantity.system = $ucum
