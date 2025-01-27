@@ -44,6 +44,7 @@ Description: "HL7 Denmark core profile for a patient"
   * identifier only SORIdentifier
 * managingOrganization only Reference(DkCoreOrganization)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
+* contact.relationship from extended-patient-contactrelationship (extensible)
 
 Instance: 283
 InstanceOf: DkCorePatient

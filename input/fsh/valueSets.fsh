@@ -261,6 +261,11 @@ Description: "DK D-eCPR OID values"
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
 
+ValueSet: extended-patient-contactrelationship
+Title: "DK Extended Patient Contact Relationship"
+* include codes from valueset http://hl7.org/fhir/ValueSet/patient-contactrelationship
+* include codes from valueset dk-core-RelatedPersonRelationshipTypes
+
 ValueSet: RelatedPersonRelationshipTypes
 Id: dk-core-RelatedPersonRelationshipTypes
 Title: "DK Related Person Relationship Types"
