@@ -1,0 +1,2 @@
+### Scope and Usage
+The Danish IPA Core Practitioner profile is intended to encapsulate the combined data model of a condition as used in a Danish context [DKCorePractitioner](./StructureDefinition-dk-core-practitioner.html) and as used in an international context [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-practitioner.html). The profile does this by extending the definition for dk-core-practitioner and imposing the IPA-Practitioner profile.

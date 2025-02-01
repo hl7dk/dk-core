@@ -29,18 +29,22 @@ Description: "HL7 Denmark core profile for a patient"
 * address ^definition = "An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities"
   * extension contains
       MunicipalityCodes named municipalityCode 0..1 and
-      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1
+      RegionalSubDivisionCodes named regionalSubDivisionCodes 0..1 and
+      http://hl7.org/fhir/StructureDefinition/address-official named address-official 0..1
   * extension[municipalityCode] ^short = "[DA] Kommunekode"
   * extension[regionalSubDivisionCodes] ^short = "[DA] Regionskode"
+  * extension[address-official] ^short = "Indicate that this address is meant to be the 'official' address for that person. This can be indicated by setting the boolean to 'true' or adding a code for the country, e.g. 'DK'. In Denmark the official is the address registered in the CPR-register, see: https://www.retsinformation.dk/eli/lta/2023/1010."
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "identifier.system"
   * ^slicing.rules = #open
+* generalPractitioner only Reference(DkCoreOrganization or DkCorePractitioner or DkCorePractitionerRole)
 * generalPractitioner contains referencedSORUnit 0..*
 * generalPractitioner[referencedSORUnit] ^short = "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau"
   * identifier only SORIdentifier
-* contact.relationship from RelatedPersonRelationshipTypes (extensible)
+* managingOrganization only Reference(DkCoreOrganization)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
+* contact.relationship from extended-patient-contactrelationship (extensible)
 
 Instance: 283
 InstanceOf: DkCorePatient
@@ -54,12 +58,15 @@ Usage: #example
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
 * name.given[1] = "Test"
+* name.text = "Schwendlund Test Mosebryggersen"
 * gender = #male
 * birthDate = "1958-08-01"
-* address.extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
-* address.extension[=].valueCodeableConcept = $dk-core-municipality-codes#0330
-* address.extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
-* address.extension[=].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[municipalityCode].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
+* address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0330
+* address.extension[regionalSubDivisionCodes].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[address-official].url = "http://hl7.org/fhir/StructureDefinition/address-official"
+* address.extension[address-official].valueCodeableConcept = urn:iso:std:iso:3166#DK
 * address.use = #home
 * address.type = #postal
 * address.line = "Nordre Ringgade 3"
@@ -86,6 +93,7 @@ Usage: #example
 * name.family = "Berggren"
 * name.given[0] = "Ruddi"
 * name.given[1] = "Test"
+* name.text = "Ruddi Test Berggren"
 * gender = #male
 * birthDate = "1977-02-15"
 * address.use = #home
@@ -105,6 +113,7 @@ Usage: #example
 * name.family = "Lauridsen"
 * name.given[0] = "Else"
 * name.given[+] = "Test"
+* name.text = "Else Test Lauridsen"
 * gender = #female
 * birthDate = "1991-02-02"
 * maritalStatus = $v3-MaritalStatus#M "Married"
@@ -121,8 +130,10 @@ Usage: #example
 * name[=].given[0] = "John"
 * name[=].given[+] = "Christian"
 * name[=].prefix = "Mr"
+* name[=].text = "Mr. John Christian Meyerhofen"
 * name[+].use = #usual
 * name[=].given = "Johnny"
+* name[=].text = "Johnny"
 * gender = #male
 * birthDate = "1960-01-02"
 * generalPractitioner.identifier.system = "urn:oid:1.2.208.176.1.1"
@@ -141,6 +152,7 @@ Usage: #example
 * name.given[0] = "Max"
 * name.given[1] = "Test"
 * name.prefix = "Mr"
+* name.text = "Mr. Max Test Berggren"
 * gender = #male
 * birthDate = "1972-07-01"
 * maritalStatus = $dk-marital-status#P
@@ -156,6 +168,7 @@ Usage: #example
 * name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Anders"
+* name.text = "Anders"
 * gender = #male
 * birthDate = "1983-06-07"
 
@@ -171,6 +184,7 @@ Usage: #example
 * name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Peter"
+* name.text = "Peter"
 * gender = #male
 
 Instance: ukendt-X-eCPR
@@ -182,6 +196,7 @@ Usage: #example
 * identifier.value = "0703921VJ4"
 * name.use = #temp
 * name.family = "Madsen"
+* name.text = "Madsen"
 * gender = #female
 * birthDate = "1992-03-07"
 

@@ -7,16 +7,10 @@ canonical: http://hl7.dk/fhir/core
 name: DKCore
 title: "HL7 FHIR Implementation Guide: DK Core"
 description: A FHIR Implementation Guide for the Danish common needs across healthcare sectors
-#Flip status to 'active' for publication. Flip to 'draft' for CI
-status: draft
-#status: active
-version: 3.5.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 license: CC0-1.0
-#Flip releaseLabel to 'release' for publication. Flip to 'ci-build' for CI
-releaseLabel: ci-build
-#releaseLabel: release
+
 publisher:
   name: HL7 Denmark
   url: http://www.hl7.dk
@@ -41,6 +35,16 @@ parameters:
   show-inherited-invariants: false
   ipa-comparison: "{last}"
   special-url: [urn:oid:1.2.208.176.2.1, urn:iso:std:iso:11073:10101, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.21, urn:oid:1.2.208.176.2.4.12]
+  path-expansion-params: Parameters-expParam.json
 
 dependencies:
-  hl7.fhir.uv.phd: 1.0.0
+  hl7.fhir.uv.phd: 1.1.0
+  hl7.fhir.uv.ipa: 1.0.0
+
+#Flip status to 'active' for publication. Flip to 'draft' for CI
+status: draft
+#status: active
+version: 3.4.0
+#Flip releaseLabel to 'release' for publication. Flip to 'ci-build' for CI
+releaseLabel: ci-build
+#releaseLabel: release

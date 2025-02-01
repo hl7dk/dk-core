@@ -1,0 +1,2 @@
+### Scope and Usage
+The Danish IPA Core Practitioner Role profile is intended to encapsulate the combined data model of a practitioner role as used in a Danish context [DKCorePractitionerRole](./StructureDefinition-dk-core-practitioner-role.html) and as used in an international context [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-practitionerrole.html). The profile does this by extending the definition for dk-core-practitioner-role and imposing the IPA-PractitionerRole profile.
