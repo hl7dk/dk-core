@@ -41,10 +41,15 @@ dependencies:
   hl7.fhir.uv.phd: 1.1.0
   hl7.fhir.uv.ipa: 1.0.0
 
-#Flip status to 'active' for publication. Flip to 'draft' for CI
-status: draft
-#status: active
+
+# ╭────────────────────────────────────────────releasing───────────────────────────────────────────╮
+# │  Variables for release control                                                                 │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 version: 3.4.0
+#Flip status to 'active' for publication. Flip to 'draft' for CI
+#status: draft
+status: active
 #Flip releaseLabel to 'release' for publication. Flip to 'ci-build' for CI
-releaseLabel: ci-build
-#releaseLabel: release
+#releaseLabel: ci-build
+releaseLabel: release
