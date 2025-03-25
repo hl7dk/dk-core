@@ -29,10 +29,3 @@ Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidenti
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
 
-Alias: $MedComClassCodeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-classcode-VS
-Alias: $MedComContentTypeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-mimetype-VS
-Alias: $MedComLanguageVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-languagecode-VS
-Alias: $MedComPracticeSettingVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-PracticeSettingCode-VS
-Alias: $MedComFacilityTypeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-HealthcareFacilityTypeCode-VS
-
-
