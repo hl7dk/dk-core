@@ -28,23 +28,4 @@ Alias: $LOINC-vitalsigns = http://hl7.org/fhir/ValueSet/observation-vitalsignres
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
-Alias: $ClassCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-classcode-CS
-Alias: $TypeCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-core-typecode-CS
-Alias: $ContentTypeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-mimeType-CS
-Alias: $LanguageCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-LanguageCode-CS
-Alias: $FormatCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-formatcode-CS
-Alias: $EventCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-episodeOfCare-CS
-Alias: $FacilityTypeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-snomed-CS
-Alias: $PracticeSettingCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-snomed-CS
-Alias: $HomeCommunityIDCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-homeCommunityId-CS
-Alias: $StatusCS = http://hl7.org/fhir/document-reference-status
-
-Alias: $ClassCodeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-classcode-VS
-Alias: $ContentTypeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-mimetype-VS
-Alias: $LanguageVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-languagecode-VS
-Alias: $FormatCodeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-formatcode-VS
-Alias: $HomeCommunityIDVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-homeCommunityId-VS
-Alias: $PracticeSettingVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-PracticeSettingCode-VS
-Alias: $FacilityTypeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-HealthcareFacilityTypeCode-VS
-
 
