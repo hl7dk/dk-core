@@ -18,8 +18,14 @@ values from the FHIR R5 value set [Encounter class](https://terminology.hl7.org/
 FHIR R4 value set [ActEncounterCode](https://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html):
 
 {:class="grid"}
-| Code | Display | Use in Denmark |
+| Code | Display | Typical use in Denmark |
 | ---- | ------- | -------------- |
+| IMP | inpatient encounter | Encounters where patients are admitted typically for more than 12 hours. |
+| AMB | ambulatory | Encounters where patients are not admitted. |
+| OBSENC | observation encounter | Not used. |
+| EMER | emergency | Encounters where patients are admitted to an emergency ward typically for up to 72 hours. |
+| VR | virtual | Virtual encounters with patients typically using televideo, telephone, or other means of telepresence. |
+| HH | home health | Encounters with patients in their own home. |
 
 In order to support the addition of Encounter.plannedStartDate and Encounter.plannedEndDate in FHIR R5, the extensions
 [PlannedStartDate](./StructureDefinition-dk-core-planned-start-date.html) and [PlannedEndDate](./StructureDefinition-dk-core-planned-end-date.html)
