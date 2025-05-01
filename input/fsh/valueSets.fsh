@@ -841,3 +841,11 @@ Description: "Value set used for indicating the organization type for organizati
 *  $sct#255203001
 *  $sct#264372000
 
+ValueSet: DkCoreEncounterPriority
+Id: dk-core-encounter-priority
+Title: "DK priority codes for encounters"
+Description: "Value set used for indicating priority of an encounter"
+* ^experimental = false
+* ^status = #active
+*  $v3-ActPriority#A
+*  $v3-ActPriority#EL
