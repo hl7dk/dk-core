@@ -1,0 +1,45 @@
+{
+  "resourceType": "Patient",
+  "id": "example",
+  "meta": {
+    "profile": [
+      "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Julieth Katherinne Mojica Bejarano (CPR: 0101901234)</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:1.2.208.176.1.2",
+      "value": "0101901234"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Mojica Bejarano",
+      "given": [
+        "Julieth",
+        "Katherinne"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1990-01-01",
+  "address": [
+    {
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "Example Street 123"
+      ],
+      "city": "Copenhagen",
+      "postalCode": "2100",
+      "country": "DK"
+    }
+  ]
+} 
