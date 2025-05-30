@@ -849,3 +849,8 @@ Description: "Value set used for indicating priority of an encounter"
 * ^status = #active
 *  $v3-ActPriority#A
 *  $v3-ActPriority#EL
+
+ValueSet: DkCoreDiagnosisRole
+Id: dk-core-diagnosis-RoleCode
+Description: "Value set defining the roles a condition can have withing an encounter"
+* include codes from system DkCoreDiagnosisRoleCodes

@@ -10,6 +10,10 @@ Description: "HL7 Denmark core profile for an encounter"
 * extension[plannedStartDate] ^short = "The planned start date/time (or admission date) of the encounter"
 * extension[plannedEndDate] ^short = "The planned end date/time (or discharge date) of the encounter"
 * extension[careProvider] ^short = "The organization (facility) reponsible for the care of the patient during this encounter"
-* priority from DkCoreEncounterPriority (required)
+* priority from DkCoreEncounterPriority (extensible)
 * subject only Reference(DkCorePatient)
+* diagnosis
+  * condition 1..1
+  * condition only Reference(DkCoreCondition)
+  * use from DkCoreDiagnosisRole
 * serviceProvider only Reference(DkCoreOrganization)
