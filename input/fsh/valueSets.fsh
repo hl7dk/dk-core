@@ -841,3 +841,64 @@ Description: "Value set used for indicating the organization type for organizati
 *  $sct#255203001
 *  $sct#264372000
 
+
+ValueSet: SorPracticeSettingCode
+Id: dk-core-practice-setting-code
+Title: "DK SOR Practice Setting Code"
+Description: "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes."
+* ^status = #active
+* ^experimental = false
+* $sct#773568002
+* $sct#408443003
+* $sct#394577000
+* $sct#394821009
+* $sct#394588006
+* $sct#394582007
+* $sct#394914008
+* $sct#394583002
+* $sct#394811001
+* $sct#394585009
+* $sct#408472002
+* $sct#394803006
+* $sct#394807007
+* $sct#419192003
+* $sct#394579002
+* $sct#408463005
+* $sct#394609007
+* $sct#551411000005104
+* $sct#394596001
+* $sct#394600006
+* $sct#394601005
+* $sct#394580004
+* $sct#421661004
+* $sct#408454008
+* $sct#394809005
+* $sct#394592004
+* $sct#418112009
+* $sct#394805004
+* $sct#394584008
+* $sct#394589003
+* $sct#394610002
+* $sct#394591006
+* $sct#394812008
+* $sct#394594003
+* $sct#394608004
+* $sct#394801008
+* $sct#394604002
+* $sct#394915009
+* $sct#394611003
+* $sct#394587001
+* $sct#394537008
+* $sct#394810000
+* $sct#394581000
+* $sct#394605001
+* $sct#394603008
+* $sct#408448007
+* $sct#394612005
+* $sct#658171000005102
+* $sct#658161000005107
+* $sct#658151000005105
+* $sct#658191000005101
+* $sct#658201000005103
+* $sct#658141000005108
+* $sct#658181000005104
