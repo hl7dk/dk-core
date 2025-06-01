@@ -10,6 +10,9 @@ has the responsibility for providing care to the patient.
 
 The current care responsibility is represented by the extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
 
+## Specifying primary and secondary diagnosis
+Hospital encounters in Denmark have diagnosis associated that specifies the primary diagnosis beeing treated (Danish: aktionsdiagnose) and  secondary diagnosis (Danish: bidiagnose) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis element in the primary and secondary slices.
+
 ### Handling future versions
 In FHIR R5 and newer, there have been made significant changes to Encounter profile.
 
