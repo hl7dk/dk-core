@@ -12,10 +12,17 @@ Description: "HL7 Denmark core profile for an encounter"
 * extension[careProvider] ^short = "The organization (facility) responsible for the care of the patient during this encounter"
 * priority from DkCoreEncounterPriority (extensible)
 * subject only Reference(DkCorePatient)
-* diagnosis 0..*
-* diagnosis ^short = "The list of diagnosis relevant to this encounter"
-* diagnosis.condition 1..1
-* diagnosis.condition only Reference(DkCoreCondition)
-* diagnosis.use 0..1
-* diagnosis.use from DkCoreDiagnosisRole (preferred)
+* diagnosis ^slicing.discriminator.type = #value
+* diagnosis ^slicing.discriminator.path = "use"
+* diagnosis ^slicing.rules = #open
+* diagnosis ^slicing.description = "Slicing based on diagnosis use"
+* diagnosis contains
+    primary 0..1 and
+    secondary 0..*
+* diagnosis[primary].condition only Reference(DkCoreCondition)
+* diagnosis[primary].use from DkCoreDiagnosisRole (required)
+* diagnosis[primary].use = #PRIMARY
+* diagnosis[secondary].condition only Reference(DkCoreCondition)
+* diagnosis[secondary].use from DkCoreDiagnosisRole (required)
+* diagnosis[secondary].use = #SECONDARY
 * serviceProvider only Reference(DkCoreOrganization)

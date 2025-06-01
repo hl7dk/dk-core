@@ -1314,9 +1314,9 @@ Description: "Codes defining the roles a condition can have withing an encounter
 * ^status = #active
 * ^caseSensitive = true
 * ^content = #complete
-* #AKTION
+* #PD "Primary diagnosis"
   * ^designation.language = #da
   * ^designation.value = "Aktionsdiagnose"
-* #BI
+* #SD "Secondary diagnosis"
   * ^designation.language = #da
   * ^designation.value = "Bidiagnose"
