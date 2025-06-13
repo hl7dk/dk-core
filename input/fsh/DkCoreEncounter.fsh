@@ -16,13 +16,7 @@ Description: "HL7 Denmark core profile for an encounter"
 * diagnosis ^slicing.discriminator.path = "use"
 * diagnosis ^slicing.rules = #open
 * diagnosis ^slicing.description = "Slicing based on diagnosis use"
-* diagnosis contains
-    primary 0..1 and
-    secondary 0..*
-* diagnosis[primary].condition only Reference(DkCoreCondition)
-* diagnosis[primary].use from DkCoreDiagnosisRole (required)
-* diagnosis[primary].use = #PRIMARY
-* diagnosis[secondary].condition only Reference(DkCoreCondition)
-* diagnosis[secondary].use from DkCoreDiagnosisRole (required)
-* diagnosis[secondary].use = #SECONDARY
+* diagnosis contains dk-core-conditions 0..*
+* diagnosis[dk-core-conditions].condition only Reference(DkCoreCondition)
+* diagnosis[dk-core-conditions].rank 1..1
 * serviceProvider only Reference(DkCoreOrganization)

@@ -1305,18 +1305,3 @@ Description: "DK NPU Subsetted code system used in DK Core. The full version of 
   * ^property[=].valueCode = #active
   * ^property[+].code = #comment
   * ^property[=].valueString = "Unit defined"
-
-CodeSystem: DkCoreDiagnosisRoleCodes
-Id: dk-core-diagnosis-role-codes
-Title: "DK Diagnosis Role Codes"
-Description: "Codes defining the roles a condition can have withing an encounter"
-* ^experimental = false
-* ^status = #active
-* ^caseSensitive = true
-* ^content = #complete
-* #PD "Primary diagnosis"
-  * ^designation.language = #da
-  * ^designation.value = "Aktionsdiagnose"
-* #SD "Secondary diagnosis"
-  * ^designation.language = #da
-  * ^designation.value = "Bidiagnose"

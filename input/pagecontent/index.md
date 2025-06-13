@@ -42,7 +42,7 @@ Issues opened in that GitHub repo are very welcome. They help the affiliate pick
 Pull requests are even better. If you are in a position to suggest how exactly your proposal should be implemented in the specification, do it! It helps the team maintaining the implementation guide a great deal.
 
 ### Language
-The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are explained using both Danish and English. Danish terms and explanations are prefixed with 'Da'
+The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are explained using both Danish and English. Danish terms and explanations are prefixed with [DA]
 
 ### Connection between dk-core and common Danish architectures and standards
 HL7 Denmark includes common Danish architectures and standards if relevant, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explanations.
