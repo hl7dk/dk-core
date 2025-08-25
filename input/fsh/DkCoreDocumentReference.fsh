@@ -6,6 +6,6 @@ Title: "Danish Core DocumentReference Profile"
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
 * author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
-
 * authenticator only Reference(DkCorePractitioner)
 * subject only Reference(DkCorePatient)
+* context.sourcePatientInfo only Reference(DkCorePatient)
