@@ -8,4 +8,4 @@ Title: "Danish Core DocumentReference Profile"
 * author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
 * authenticator only Reference(DkCorePractitioner)
 * subject only Reference(DkCorePatient)
-* context.sourcePatientInfo only Reference(DkCorePatient)
+//* context.sourcePatientInfo only Reference(DkCorePatient)
