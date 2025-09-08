@@ -1,8 +1,10 @@
 Profile: DkCoreDocumentReference
-Parent: MinimalDocumentReference
+Parent: DocumentReference
 Id: dk-core-documentreference
 Title: "Danish Core DocumentReference Profile"
 Description: "HL7 Denmark core profile for a DocumentReference"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+* ^extension[=].valueCanonical = "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version named version 1..1
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
