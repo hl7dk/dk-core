@@ -249,9 +249,9 @@ Title: "DK TechniquesSCTCodes"
 Description: "SNOMED CT Codes for the technique used when obtaining an observation"
 * ^experimental = false
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* $sct#761996005 "Estimation technique (qualifier value)"
-* $sct#733985002 "Reported (qualifier value)"
-* $sct#272391002 "Measurement technique (qualifier value)"
+* $sct#761996005
+* $sct#733985002
+* $sct#272391002
 
 ValueSet: DkCoreDeCPRValueSet
 Id: DkCoreDeCPRValueSet
