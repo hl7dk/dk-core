@@ -589,7 +589,7 @@ Description: "Value set used to describe Danish healthcare services"
 * ^status = #active
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * ^compose.include[0].system = "http://snomed.info/sct"
-* ^compose.include[=].version = "http://snomed.info/sct/554471000005108/version/20240331"
+* ^compose.include[=].version = "http://snomed.info/sct/554471000005108"
 * ^compose.include[=].concept[0].code = #773568002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "akutmedicin"
