@@ -8,7 +8,7 @@ Description: "HL7 Denmark core profile for health professionals and other actors
   * ^slicing.rules = #open
   * ^slicing.ordered = false
   * ^slicing.description = "Slice based on the identifier.systemm value which allows for official qualifications to\nDeclaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code"
-* qualification contains officialHealthAuthorization 0..1
+* qualification contains officialHealthAuthorization 0..*
 * qualification[officialHealthAuthorization].identifier only AuthorizationIdentifier
   * ^short = "[DA] Autorisationskode, som specificeret af autorisationsregisteret"
 * qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
