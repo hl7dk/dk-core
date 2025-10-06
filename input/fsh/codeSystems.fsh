@@ -858,15 +858,22 @@ Description: "DK Related Person Relationship Codes"
 
 CodeSystem: NPU
 Id: dk-npu-fragment
-Title: "DK NPU Subset"
-Description: "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"
+Title: "Nomenclature for Properties and Units (NPU) - Fragment for DK Core"
+Description: "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk"
 * ^url = $NPU
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:1.2.208.176.9.1"
 * ^status = #active
 * ^content = #fragment
+* ^contact.name = "Danish National eHealth Authority"
+* ^contact.telecom[0].system = #url
+* ^contact.telecom[=].value = "http://npu-terminology.org"
+* ^contact.telecom[+].system = #email
+* ^contact.telecom[=].value = "labterm@sundhedsdata.dk"
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^version = "EN211028"
-* ^copyright = "The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)"
+* ^copyright = "https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf"
 
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#comment"
 * ^property[=].type = #string
