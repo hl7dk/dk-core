@@ -166,6 +166,9 @@ Description: "International Classification of Primary Care / prepared by the Cla
 * #A99
   * ^designation.language = #da
   * ^designation.value = "Sygdom/tilstand af uspecifik natur/lokalisation"
+* #B02
+  * ^designation.language = #da
+  * ^designation.value = "Forstørret/smertende lymfeknude"
 * #B04
   * ^designation.language = #da
   * ^designation.value = "Symptom/klage vedr blod"
