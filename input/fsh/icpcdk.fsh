@@ -373,6 +373,9 @@ Description: "International Classification of Primary Care / prepared by the Cla
 * #D85
   * ^designation.language = #da
   * ^designation.value = "Sår på tolvfingertarm"
+* #D86
+  * ^designation.language = #da
+  * ^designation.value = "Mavesår IKA"
 * #D87
   * ^designation.language = #da
   * ^designation.value = "Mavekatar"
