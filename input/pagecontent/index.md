@@ -18,7 +18,7 @@ This document presents Danish use concepts defined via FHIR processable artifact
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed Danish concepts
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for Danish context
 
-dk-core is regularly approved by HL7 Denmark and added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.
+dk-core is regularly approved by HL7 Denmark and added to the [catalogue of approved standards](https://sundhedsdatastyrelsen.dk/digitale-loesninger/referencearkitektur-og-standarder/standardkatalog) governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.
 
 ### Governance
 FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group:
