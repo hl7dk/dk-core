@@ -117,7 +117,7 @@ Description: "DocumentReference instance"
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
 * context.facilityType = $SnomedctOID#394761003 "almen lægepraksis"
 * context.practiceSetting = $SnomedctOID#408443003 "almen medicin"
-* context.sourcePatientInfo = Reference(69e475df-20c8-4f54-8cea-9843568205fd)
+* context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
 * extension[=].valueString = "1.0.0"
 /* extension[0].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
