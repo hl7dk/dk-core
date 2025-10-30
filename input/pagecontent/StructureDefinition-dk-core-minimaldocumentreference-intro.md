@@ -4,7 +4,7 @@ The Danish Core MinimalDocumentReference profile is intended to encapsulate the 
 
 **MustSupport**
 
-This profile inherits from an IHE profile, which have MustSupport assigned to quite a few elements. While this is not the behaviour we use to support in the Danish Core-IG, we accept it in this case, as we are not inheriting from a pure FHIR Core ressource, but an already profiled resource. As such we are comforming to the approach of IHE and follows their direction of using a DocumentReference profile in a strict XDS/MDH context and not in any context. As we do this we have also constrained this profile to the Danish XDS environment hosted by Sundhedsdatastyrelsen (soon Digital Sundhed Danmark). This means constraining the cardinality of both Author and subject (Patient) to be required.
+This profile inherits from an IHE profile, which have MustSupport assigned to quite a few elements. While this is not the behaviour we normally support in the Danish Core-IG, we accept it in this case, as we are not inheriting from a pure FHIR Core ressource, but an already profiled resource. Consequently, we comform to the approach of IHE and follow their direction of using a DocumentReference profile in a strict XDS/MHD context rather than in a general context. In doing so, we have also constrained this profile to the Danish XDS environment hosted by Sundhedsdatastyrelsen (soon Digital Sundhed Danmark). This means constraining the cardinality of both Author and Subject (Patient) to be required.
 
 **Inheritance or imposing**
 
