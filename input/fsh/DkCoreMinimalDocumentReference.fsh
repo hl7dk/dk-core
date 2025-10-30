@@ -89,7 +89,7 @@ Usage: #example
 * name[official].given[0] = "Else"
 * name[official].given[+] = "Test"
 * gender = #female
-* birthDate = "1991-02-02"
+* birthDate = "1991-01-02"
 
 // Metadata instance
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a13
