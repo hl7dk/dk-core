@@ -107,5 +107,39 @@ Usage: #example
 * name[official].given[0] = "Else"
 * name[official].given[+] = "Test"
 * gender = #female
-* birthDate = "1991-02-02"
+* birthDate = "1991-01-02"
 
+// Metadata instance
+Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a13
+InstanceOf: DkCoreMinimalDocumentReference
+Title: "DocumentReference instance"
+Description: "DocumentReference instance"
+* contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
+* contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
+* contained[+] = 37628912-7816-47a3-acd8-396b610be142
+* masterIdentifier.system = "urn:ietf:rfc:3986"
+* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* status = #current "Current"
+* identifier.value = "urn:uuid:7c596b9a-112e-4386-ae71-5ecdd3ed7c50"
+* type = $LoincOID#11450-4 "Problem list - Reported"
+* authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* category = $DanishXdsOid#001 "Klinisk rapport"
+* author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
+* subject = Reference(37628912-7816-47a3-acd8-396b610be142)
+* content.attachment.contentType = $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
+* securityLabel = #N
+* content.attachment.language = $IANALanguageOID#da "Danish"
+* content.attachment.creation = "2024-05-01T12:00:00+01:00"
+* content.attachment.url = "DOC001.XML"
+* content.attachment.title = "Oversigt for 0201919990"
+* content.format = $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
+* context.facilityType = $SnomedctOID#394761003 "almen lægepraksis"
+* context.practiceSetting = $SnomedctOID#408443003 "almen medicin"
+* context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
+* extension[=].valueString = "1.0.0"
+/* extension[0].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
+* extension[0].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[1].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-version-id-extension"
+* extension[1].valueString = "1.0.0"
+*/
