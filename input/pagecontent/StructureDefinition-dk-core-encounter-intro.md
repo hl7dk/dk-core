@@ -20,7 +20,7 @@ In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have t
 In FHIR R5 and newer, significant changes have been made to the Encounter profile.
 
 To be compatible with the changes to the value set bound to Encounter.class in FHIR R5 and newer, we recommend to restrict to using only
-the values from the FHIR R5 value set [Encounter class](https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html), which is a subset of the
+the values from the FHIR R5 value set [Encounter class](https://terminology.hl7.org/ValueSet-encounter-class.html), which is a subset of the
 FHIR R4 value set [ActEncounterCode](https://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html):
 
 {:class="grid"}
