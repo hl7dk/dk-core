@@ -10,8 +10,14 @@ In Denmark, there is a distinction between the organization responsible for prov
 The treatment responsibility is represented by Encounter.serviceProvider and the care responsibility is represented by the
 extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
 
-### Specifying primary and secondary diagnosis
-Hospital encounters in Denmark have diagnoses associated with them. Both a primary diagnosis beeing treated ([DA] aktionsdiagnose) and secondary diagnoses ([DA] bidiagnoser) may be added. In this profile, these can be given in the diagnosis element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1 and the secondary a rank > 1.
+### Specifying diagnosis
+It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition-intro.md) is used when referencing diagnosis in a
+Danish context.
+
+Hospital encounters in Denmark have diagnosis associated that specifies the primary diagnosis beeing treated ([DA] aktionsdiagnose) and
+secondary diagnosis ([DA] bidiagnose) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
+element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1
+and the secondary a rank > 1.
 
 ### Priority
 In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'rutine' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as nessesary.
