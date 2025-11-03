@@ -47,6 +47,7 @@ Description: "Identifier holding the official identifier for a danish municipali
 Extension: PlannedStartDate
 Id: dk-core-planned-start-date
 Title: "PlannedStartDate"
+Description: "The planned start date/time (or admission date) of the encounter"
 * . ^short = "PlannedStartDate"
   * ^definition = "The planned start date/time (or admission date) of the encounter"
 * value[x] only dateTime
@@ -56,6 +57,7 @@ Title: "PlannedStartDate"
 Extension: PlannedEndDate
 Id: dk-core-planned-end-date
 Title: "PlannedEndDate"
+Description: "The planned end date/time (or discharge date) of the encounter"
 * . ^short = "PlannedEndDate"
   * ^definition = "The planned end date/time (or discharge date) of the encounter"
 * value[x] only dateTime
@@ -65,6 +67,7 @@ Title: "PlannedEndDate"
 Extension: CareProvider
 Id: dk-core-care-provider
 Title: "CareProvider"
+Description: "The organization (facility) reponsible for the care of the patient during this encounter"
 * . ^short = "CareProvider"
   * ^definition = "The organization (facility) reponsible for the care of the patient during this encounter"
 * value[x] only Reference(DkCoreOrganization)
