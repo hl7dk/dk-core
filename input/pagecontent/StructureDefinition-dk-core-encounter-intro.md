@@ -11,15 +11,21 @@ has the responsibility for providing care to the patient.
 The treatment responsibility is represented by Encounter.serviceProvider and the current care responsibility is represented by the
 extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
 
-## Specifying primary and secondary diagnosis
-Hospital encounters in Denmark have diagnosis associated that specifies the primary diagnosis beeing treated ([DA] aktionsdiagnose) and secondary diagnosis ([DA] bidiagnose) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1 and the secondary a rank > 1.
+### Specifying diagnosis
+It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition-intro.md) is used when referencing diagnosis in a
+Danish context.
+
+Hospital encounters in Denmark have diagnosis associated that specifies the primary diagnosis beeing treated ([DA] aktionsdiagnose) and
+secondary diagnosis ([DA] bidiagnose) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
+element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1
+and the secondary a rank > 1.
 
 ### Handling future versions
 In FHIR R5 and newer, there have been made significant changes to Encounter profile.
 
-In order to be compatible with the changes to the value set bound to Encounter.class in FHIR R5 and newer, we recommend to restrict to using only
-the values from the FHIR R5 value set [Encounter class](https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html), which is a subset of the
-FHIR R4 value set [ActEncounterCode](https://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html):
+In order to be compatible with the changes to the value set bound to Encounter.class in FHIR R5 and newer, we recommend to restrict to using
+only the values from the FHIR R5 value set [Encounter class](https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html), which is a
+subset of the FHIR R4 value set [ActEncounterCode](https://hl7.org/fhir/R4/v3/ActEncounterCode/vs.html):
 
 {:class="grid"}
 | Code | Display | Typical use in Denmark |
