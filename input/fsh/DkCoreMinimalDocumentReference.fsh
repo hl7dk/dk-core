@@ -3,8 +3,7 @@ Parent: MinimalDocumentReference
 Id: dk-core-minimaldocumentreference
 Title: "Danish Core Minimal DocumentReference Profile"
 Description: "HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference"
-//* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version named version 1..1
-* extension contains dk-core-documentreference-version-id-extension named versionid 0..1 MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version named versionid 1..1
 * extension[versionid] ^short = "Specifies the version of the DocumentReference profile for a standard."
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
@@ -51,8 +50,8 @@ Description: "APD-DK DocumentReference instance of DkCoreMinimalDocumentReferenc
 // Metadata instance
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a13
 InstanceOf: DkCoreMinimalDocumentReference
-Title: "DocumentReference instance"
-Description: "DocumentReference instance"
+Title: "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference."
+Description: "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata"
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
