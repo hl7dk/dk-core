@@ -129,6 +129,31 @@ Usage: #example
 * identifier[=].value = "KAF"
 * type = $sct#264361005
 
+Instance: 8510eec9-180b-4e9c-95b6-02fad9f853d3
+InstanceOf: DkCoreOrganization
+Title: "Example hospital department"
+Description: "Example hospital department with the orthopedic surgery specialty"
+Usage: #example
+* identifier[0].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "12345678901"
+* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[=].value = "5798002472264"
+* name = "Ortopædkirurgisk sengeafdeling"
+* type = $sct#551611000005102
+
+Instance: 19f9ee18-7677-4caf-88fe-8f6df2f2906e
+InstanceOf: DkCoreOrganization
+Title: "Example hospital sub-department"
+Description: "Example hospital sub-department with the orthopedic surgery specialty"
+Usage: #example
+* identifier[0].system = "urn:oid:1.2.208.176.1.1"
+* identifier[=].value = "12345678901"
+* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[=].value = "5798002472264"
+* name = "Ortopædkirurgisk sengeafsnit"
+* type = $sct#551611000005102
+* partOf.reference = "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
+
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error
