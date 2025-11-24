@@ -18,7 +18,7 @@ This document presents Danish use concepts defined via FHIR processable artifact
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed Danish concepts
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for Danish context
 
-dk-core is regularly approved by HL7 Denmark and added to the catalogue of approved standards governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.
+dk-core is regularly approved by HL7 Denmark and added to the [catalogue of approved standards](https://sundhedsdatastyrelsen.dk/digitale-loesninger/referencearkitektur-og-standarder/standardkatalog) governed by The Danish Health Data Authority, after consideration by RUSA (Rådgivende Udvalg for Standarder og Arkitektur). See the exact approvals for each version in the history page.
 
 ### Governance
 FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group:
@@ -42,7 +42,7 @@ Issues opened in that GitHub repo are very welcome. They help the affiliate pick
 Pull requests are even better. If you are in a position to suggest how exactly your proposal should be implemented in the specification, do it! It helps the team maintaining the implementation guide a great deal.
 
 ### Language
-The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are explained using both Danish and English. Danish terms and explanations are prefixed with 'Da'
+The main language of this implementation guide, and the profiles in it, is English. Content that does not have an official English term uses a Danish term instead. Sometimes terms are explained using both Danish and English. Danish terms and explanations are prefixed with [DA]
 
 ### Connection between dk-core and common Danish architectures and standards
 HL7 Denmark includes common Danish architectures and standards if relevant, when content is added to dk-core. This section provides information about principle decisions as well as more specific ones that require explanations.
@@ -58,7 +58,7 @@ HL7 Denmark includes common Danish architectures and standards if relevant, when
 * Several basic resources such as Patient and Organization has an address. In dk-core these addresses use the [FHIR datatype](http://hl7.org/fhir/R4/datatypes.html#Address), which is very basic compared to the [Danish Address standard](https://arkitektur.digst.dk/adresse). However, addresses can be referred faithfully using the international standard e.g. Address.text can be mapped directly to the Danish 'adressebetegnelse'. If more details are needed than FHIR instances provide, the [Danish address registry](https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar) can be used for look-up. 
 
 ### International Aspects
-This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/). IPA aims to "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.
+This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/). I PA aims "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.
 
 <style>
   @counter-style nosefi {
@@ -78,6 +78,8 @@ Our main intent is to focus and limit profiling specific to Denmark. During the 
 
 
 The implementation guide defines IPA compliance bit differently than the corresponding Nordic imlementation guides where profiles extend the IPA profiles. DkCore instead introduces separate IPA DK versions of selected profiles that extend the dk-core profile and imposes the IPA equivalent. This makes it possible to choose whether to comply with the Danish requirements only, or to comply with both the Danish profiles and the IPA equivalents. It is recommended to comply with the IPA DK profiles where possible and with the non-IPA versions for contexts where IPA does not apply.
+
+The requirements added in the IPA profiles are very limited and they will fit most use cases. The main constraints to be aware of are the requirements to patient identifiers, where IPA Patient has additional constraints on identifier and name that might not be relevant in message based exchange of information and may not fit legal requirements in reporting to clinical databases. Similarly, IPA Practitioner is required to have a name, which also can conflict in reporting scenarios.
 
 Regarding international cooperation, please see also the [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations) page in HL7 International's Confluence.
 

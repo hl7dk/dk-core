@@ -4,8 +4,8 @@ Description: "SNOMED CT expansion parameter"
 Usage: #definition
 * parameter[+].name = "system-version"
 * parameter[=].valueCanonical = $sct-dk-version
-//* parameter[+].name = "includeDesignations"
-//* parameter[=].valueBoolean = true
+* parameter[+].name = "includeDesignations"
+* parameter[=].valueBoolean = true
 //* parameter[+].name = "displayLanguage"
 //* parameter[=].valueCode = urn:ietf:bcp:47#da
 

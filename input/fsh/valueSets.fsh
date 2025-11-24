@@ -96,112 +96,112 @@ The origin of an MDC code is usually the equipment used to perform the measureme
 and often the code carries supplemental information about how (or where on the body)
 the observation was performed.
 """
-* $IEEEx73#151562 "MDC_RESP_RATE"
+* $IEEEx73#151562
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method not specified."
-* $IEEEx73#151570 "MDC_AWAY_RESP_RATE"
+* $IEEEx73#151570
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: direct airway flow measurement."
-* $IEEEx73#151578 "MDC_TTHOR_RESP_RATE"
+* $IEEEx73#151578
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: transthoracic impedance variations."
-* $IEEEx73#151594 "MDC_CO2_RESP_RATE"
+* $IEEEx73#151594
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: carbon dioxide measurement."
-* $IEEEx73#151602 "MDC_PRESS_RESP_RATE"
+* $IEEEx73#151602
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)."
-* $IEEEx73#151650 "MDC_ACOUSTIC_RESP_RATE"
+* $IEEEx73#151650
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: acoustic."
-* $IEEEx73#151658 "MDC_PULS_OXIM_PLETH_RESP_RATE"
+* $IEEEx73#151658
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of breathing; method: SpO2 plethysmography."
-* $IEEEx73#8410992 "MDC_SABTE_RESP_RATE"
+* $IEEEx73#8410992
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]"
-* $IEEEx73#149514 "MDC_PULS_RATE"
+* $IEEEx73#149514
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of blood pulse in an artery."
-* $IEEEx73#149522 "MDC_BLD_PULS_RATE_INV"
+* $IEEEx73#149522
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of blood pulse in an artery, measured invasively."
-* $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
+* $IEEEx73#149546
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of blood pulse in an artery, measured non-invasively."
-* $IEEEx73#149530 "MDC_PULS_OXIM_PULS_RATE"
+* $IEEEx73#149530
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of blood pulse as obtained by pulse oximetry."
-* $IEEEx73#147842 "MDC_ECG_HEART_RATE" 
+* $IEEEx73#147842 
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rate of cardiac beats (ECG)."
-* $IEEEx73#8410590 "MDC_ECG_HEART_RATE_INSTANT"
+* $IEEEx73#8410590
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Instantaneous heart rate."
-* $IEEEx73#149554 "MDC_TTHOR_HEART_RATE"
+* $IEEEx73#149554
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Heart rate obtained from the variation of transthoracic impedance."
-* $IEEEx73#149562 "MDC_PALPATION_HEART_RATE"
+* $IEEEx73#149562
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Heart rate obtained from an artery that is close to the surface and a pulse can be felt."
-* $IEEEx73#8454258 "MDC_HF_HR"
+* $IEEEx73#8454258
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]"
-* $IEEEx73#150324 "MDC_SAT_O2_ART"
+* $IEEEx73#150324
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Arterial oxygen saturation. [no method]"
-* $IEEEx73#150456 "MDC_PULS_OXIM_SAT_O2"
+* $IEEEx73#150456
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Oxygen saturation. [using pulse oximetry]"
-* $IEEEx73#150364 "MDC_TEMP_BODY"
+* $IEEEx73#150364
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Body temperature. [unspecified]"
-* $IEEEx73#150368 "MDC_TEMP_CORE"
+* $IEEEx73#150368
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Core temperature."
-* $IEEEx73#150388 "MDC_TEMP_SKIN"
+* $IEEEx73#150388
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Skin temperature."
-* $IEEEx73#150392 "MDC_TEMP_TYMP"
+* $IEEEx73#150392
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Tympanic temperature."
-* $IEEEx73#188420 "MDC_TEMP_RECT" 
+* $IEEEx73#188420 
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Rectal temperature."
-* $IEEEx73#188424 "MDC_TEMP_ORAL"
+* $IEEEx73#188424
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Oral temperature."
-* $IEEEx73#188428 "MDC_TEMP_EAR"
+* $IEEEx73#188428
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Ear temperature."
-* $IEEEx73#188452 "MDC_TEMP_AXILLA" 
+* $IEEEx73#188452 
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Axillary (armpit) temperature."
-* $IEEEx73#188456 "MDC_TEMP_GIT"
+* $IEEEx73#188456
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Gastro-intestinal tract temperature."
-* $IEEEx73#188740 "MDC_LEN_BODY_ACTUAL"
+* $IEEEx73#188740
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "The actual height of the patient."
-* $IEEEx73#153856 "MDC_CIRCUM_HEAD"
+* $IEEEx73#153856
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Circumference of the head."
-* $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
+* $IEEEx73#188736
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "The measurement of the mass of patient."
-* $IEEEx73#188752 "MDC_RATIO_MASS_BODY_LEN_SQ"
+* $IEEEx73#188752
   * ^designation.use = $sct#900000000000003001
-  * ^designation.value = "The individual's body weight, in kilograms, divided by the square of height, in meters."
-* $IEEEx73#150020 "MDC_PRESS_BLD_NONINV" 
+  * ^designation.value = "The individual's body weight, in kilograms, divided by the square of height, in meters (BMI)."
+* $IEEEx73#150020 
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Pressure of the blood, obtained noninvasively."
-* $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
+* $IEEEx73#150021
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Pressure of the blood, obtained noninvasively, at the systolic phase."
-* $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
+* $IEEEx73#150022
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Pressure of the blood, obtained noninvasively, at the diastolic phase."
-* $IEEEx73#150023 "MDC_PRESS_BLD_NONINV_MEAN"
+* $IEEEx73#150023
   * ^designation.use = $sct#900000000000003001
   * ^designation.value = "Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle."
 
@@ -249,9 +249,9 @@ Title: "DK TechniquesSCTCodes"
 Description: "SNOMED CT Codes for the technique used when obtaining an observation"
 * ^experimental = false
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* $sct#761996005 "Estimation technique (qualifier value)"
-* $sct#733985002 "Reported (qualifier value)"
-* $sct#272391002 "Measurement technique (qualifier value)"
+* $sct#761996005
+* $sct#733985002
+* $sct#272391002
 
 ValueSet: DkCoreDeCPRValueSet
 Id: DkCoreDeCPRValueSet
@@ -589,7 +589,7 @@ Description: "Value set used to describe Danish healthcare services"
 * ^status = #active
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * ^compose.include[0].system = "http://snomed.info/sct"
-* ^compose.include[=].version = "http://snomed.info/sct/554471000005108/version/20240331"
+* ^compose.include[=].version = "http://snomed.info/sct/554471000005108"
 * ^compose.include[=].concept[0].code = #773568002
 * ^compose.include[=].concept[=].designation.language = #da
 * ^compose.include[=].concept[=].designation.value = "akutmedicin"
@@ -841,3 +841,72 @@ Description: "Value set used for indicating the organization type for organizati
 *  $sct#255203001
 *  $sct#264372000
 
+ValueSet: DkCoreEncounterPriority
+Id: dk-core-encounter-priority
+Title: "DK priority codes for encounters"
+Description: "Value set used for indicating priority of an encounter"
+* ^experimental = false
+* ^status = #active
+*  $v3-ActPriority#A
+*  $v3-ActPriority#EL
+
+ValueSet: SorPracticeSettingCode
+Id: dk-core-practice-setting-code
+Title: "DK SOR Practice Setting Code"
+Description: "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes."
+* ^status = #active
+* ^experimental = false
+* $sct#773568002
+* $sct#408443003
+* $sct#394577000
+* $sct#394821009
+* $sct#394588006
+* $sct#394582007
+* $sct#394914008
+* $sct#394583002
+* $sct#394811001
+* $sct#394585009
+* $sct#408472002
+* $sct#394803006
+* $sct#394807007
+* $sct#419192003
+* $sct#394579002
+* $sct#408463005
+* $sct#394609007
+* $sct#551411000005104
+* $sct#394596001
+* $sct#394600006
+* $sct#394601005
+* $sct#394580004
+* $sct#421661004
+* $sct#408454008
+* $sct#394809005
+* $sct#394592004
+* $sct#418112009
+* $sct#394805004
+* $sct#394584008
+* $sct#394589003
+* $sct#394610002
+* $sct#394591006
+* $sct#394812008
+* $sct#394594003
+* $sct#394608004
+* $sct#394801008
+* $sct#394604002
+* $sct#394915009
+* $sct#394611003
+* $sct#394587001
+* $sct#394537008
+* $sct#394810000
+* $sct#394581000
+* $sct#394605001
+* $sct#394603008
+* $sct#408448007
+* $sct#394612005
+* $sct#658171000005102
+* $sct#658161000005107
+* $sct#658151000005105
+* $sct#658191000005101
+* $sct#658201000005103
+* $sct#658141000005108
+* $sct#658181000005104
