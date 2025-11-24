@@ -10,10 +10,8 @@ Description: "HL7 Denmark core profile for basic observations, which is a profil
 * code.coding[SNOMEDCT] from SCTBasicObservation (extensible)
 * code.coding[NPU] from NPUBasicObservation (extensible)
 * code.coding[IEEE] from IEEEBasicObservation (extensible)
-* valueQuantity.system from UCUMBasicUnits (extensible)
-* component.valueQuantity.system from UCUMBasicUnits (extensible)
-
-
+* valueQuantity.code from UCUMBasicUnits (extensible)
+* component.valueQuantity.code from UCUMBasicUnits (extensible)
 
 Instance: ObservationRespiratoryBasicObservation
 InstanceOf: DkCoreBasicObservation
