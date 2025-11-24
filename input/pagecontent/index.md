@@ -77,7 +77,7 @@ Our main intent is to focus and limit profiling specific to Denmark. During the 
 </ul>
 
 
-The implementation guide defines IPA compliance bit differently than the corresponding Nordic imlementation guides where profiles extend the IPA profiles. DkCore instead introduces separate IPA DK versions of selected profiles that extend the dk-core profile and imposes the IPA equivalent. This makes it possible to choose whether to comply with the Danish requirements only, or to comply with both the Danish profiles and the IPA equivalents. It is recommended to comply with the IPA DK profiles where possible and with the non-IPA versions for contexts where IPA does not apply.
+The implementation guide defines IPA compliance bit differently than the corresponding Nordic implementation guides where profiles extend the IPA profiles. DkCore instead introduces separate IPA DK versions of selected profiles that extend the dk-core profile and imposes the IPA equivalent. This makes it possible to choose whether to comply with the Danish requirements only, or to comply with both the Danish profiles and the IPA equivalents. It is recommended to comply with the IPA DK profiles where possible and with the non-IPA versions for contexts where IPA does not apply.
 
 The requirements added in the IPA profiles are very limited and they will fit most use cases. The main constraints to be aware of are the requirements to patient identifiers, where IPA Patient has additional constraints on identifier and name that might not be relevant in message based exchange of information and may not fit legal requirements in reporting to clinical databases. Similarly, IPA Practitioner is required to have a name, which also can conflict in reporting scenarios.
 
