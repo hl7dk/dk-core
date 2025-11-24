@@ -7,7 +7,7 @@ Description: "HL7 Denmark core profile for a Minimal DocumentReference inherited
 * extension[versionid] ^short = "Specifies the version of the DocumentReference profile for a standard."
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
-* context.event from $v3-ActCode3.0.0 
+* context.event from $v3-ActCode3.0.0 (example)
 * author 1..*
 * author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
 * authenticator only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCoreOrganization)
@@ -42,7 +42,7 @@ Description: "APD-DK DocumentReference instance of DkCoreMinimalDocumentReferenc
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema"
 * context.event = $SKS#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
-* context.facilityType = $sct#554871000005105 "psykiatrienhed"
+* context.facilityType = $sct#554871000005105 "psykiatri"
 * context.practiceSetting = $sct#394588006 "børne- og ungdomspsykiatri"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
 * extension[=].valueString = "1.0.0"
