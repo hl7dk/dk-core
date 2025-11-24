@@ -15,7 +15,7 @@ It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-
 Danish context.
 
 Hospital encounters in Denmark have associated diagnoses that specify the primary diagnosis being treated ([DA] aktionsdiagnose) and
-secondary diagnosis ([DA] bidiagnose) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
+secondary diagnoses ([DA] bidiagnoser) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
 element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1
 and the secondary a rank > 1.
 
