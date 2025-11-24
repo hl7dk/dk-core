@@ -35,7 +35,7 @@ Usage: #example
 Instance: 915a3cfb-2f3e-477b-8a9d-5d86c30e4929
 InstanceOf: DkCoreEncounter
 Title: "A closed inpatient encounter"
-Description: "Encounter has happening on a surgery department on a hospital"
+Description: "Encounter happened on a surgery department on a hospital"
 Usage: #example
 * extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"
 * extension[=].valueReference.reference = "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
