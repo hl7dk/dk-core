@@ -67,9 +67,9 @@ Description: "The planned end date/time (or discharge date) of the encounter"
 Extension: CareProvider
 Id: dk-core-care-provider
 Title: "CareProvider"
-Description: "The organization (facility) reponsible for the care of the patient during this encounter"
+Description: "The organization (facility) responsible for the care of the patient during this encounter"
 * . ^short = "CareProvider"
-  * ^definition = "The organization (facility) reponsible for the care of the patient during this encounter"
+  * ^definition = "The organization (facility) responsible for the care of the patient during this encounter"
 * value[x] only Reference(DkCoreOrganization)
 * ^context.type = http://hl7.org/fhir/extension-context-type#element
 * ^context.expression = "Encounter"
