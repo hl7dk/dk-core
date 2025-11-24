@@ -11,7 +11,7 @@ The treatment responsibility is represented by Encounter.serviceProvider and the
 extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
 
 ### Specifying diagnosis
-It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition-intro.md) is used when referencing diagnosis in a
+It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition.html) is used when referencing diagnosis in a
 Danish context.
 
 Hospital encounters in Denmark have diagnosis associated that specifies the primary diagnosis beeing treated ([DA] aktionsdiagnose) and

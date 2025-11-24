@@ -26,7 +26,7 @@ Usage: #example
 * extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"
 * extension[=].valueReference.reference = "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
 * status = #in-progress
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #IMP
 * subject.reference = "Patient/283"
 * period.start = "2025-11-14T08:50:00.0000+01:00"
@@ -40,13 +40,13 @@ Usage: #example
 * extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"
 * extension[=].valueReference.reference = "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
 * status = #finished
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #IMP
-* subject.reference = "Patient/John"
+* subject.reference = "Patient/john"
 * period.start = "2022-04-27T08:50:00.0000+01:00"
 * period.end = "2022-04-28T14:00:00.0000+01:00"
 * diagnosis[0].condition.reference = "Condition/JohnFracture"
 * diagnosis[=].rank = 1
-* diagnosis[+].condition.reference = "Codition/JohnDiabetes"
+* diagnosis[+].condition.reference = "Condition/JohnDiabetes"
 * diagnosis[=].rank = 2
 * serviceProvider.reference = "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
