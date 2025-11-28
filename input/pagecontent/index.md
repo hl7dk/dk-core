@@ -58,7 +58,7 @@ HL7 Denmark includes common Danish architectures and standards if relevant, when
 * Several basic resources such as Patient and Organization has an address. In dk-core these addresses use the [FHIR datatype](http://hl7.org/fhir/R4/datatypes.html#Address), which is very basic compared to the [Danish Address standard](https://arkitektur.digst.dk/adresse). However, addresses can be referred faithfully using the international standard e.g. Address.text can be mapped directly to the Danish 'adressebetegnelse'. If more details are needed than FHIR instances provide, the [Danish address registry](https://danmarksadresser.dk/om-adresser/danmarks-adresseregister-dar) can be used for look-up. 
 
 ### International Aspects
-This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/). I PA aims "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.
+This implementation guide is refining the FHIR standard itself as well as using and depending on the FHIR Standard [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/). IPA aims "to help patients access their data through patient-facing applications". While this is not the only scope of this implementation guide - it is part of the goal. IPA outlines a few minimum expectations that are required when exchanging data with patient facing apps.
 
 <style>
   @counter-style nosefi {
