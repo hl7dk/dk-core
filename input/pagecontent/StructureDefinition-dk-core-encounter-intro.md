@@ -20,7 +20,7 @@ element and it is recommended to use the rank element to distinguish between pri
 and the secondary a rank > 1.
 
 ### Priority
-In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'rutine' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as necessary.
+In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'elective' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as necessary.
 
 ### Handling future versions
 In FHIR R5 and newer, significant changes have been made to the Encounter profile.
