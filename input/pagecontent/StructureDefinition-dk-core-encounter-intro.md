@@ -17,7 +17,7 @@ to where all hospital encounters must be reported:
 The treatment responsibility is represented by Encounter.serviceProvider and the care
 responsibility is represented by the extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
 
-Use Encounter.serverProvider and the extension for CareProvider, when you need to convey the reponsibilities as defined in LPR3.
+Use Encounter.serverProvider and the extension for CareProvider, when you need to convey the responsibilities as defined in LPR3.
 
 ### Specifying diagnosis
 It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition.html) is used when referencing diagnosis in a
