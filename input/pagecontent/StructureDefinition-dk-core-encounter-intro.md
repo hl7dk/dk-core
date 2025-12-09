@@ -1,14 +1,23 @@
 ### Scope and usage
 This profile is intended to encapsulate information about encounters in the Danish health sectors.
 
-### Responsibilities for treatment and care
-In Denmark, there is a distinction between the organization responsible for providing treatment to the patient and the organization responsible for providing care.
+### Responsibilities for treatment and care in hospitals
+In hospitals in Denmark, there is a distinction between the organization responsible
+for providing treatment to the patient and the organization responsible for providing
+care. This distinction is also adressed by *encounter participants* in
+[LPR3](https://sundhedsdatastyrelsen.dk/indberetning/patientregistrering/indberetning-lpr3/teknisk-information-om-lpr3), the registry
+to where all hospital encounters must be reported:
 
-* Treatment responsibility ([DA] behandlingsansvarlig): this is the organization where the doctor responsible for the patient's medical treatment is employed.
-* Care responsibility ([DA] plejeansvarlig): this is the organization where the patient has an inpatient encounter, and where day-to-day care is provided.
+{:class="grid"}
+| Reponsibility | Responsiblity [DA] | LPR3 Encounter Participant | Description | 
+| ------------- | ------------------ | -------------------------- | ----------- |
+| Treatment responsibility | Behandlingsansvarlig | [Responsible Unit Participant](https://art-decor.org/art-decor/decor-templates--lpr-?id=1.2.208.176.7.1.10.49) | The organization where the doctor responsible for the patient's medical treatment is employed. | 
+| Care responsibility | Plejeansvarlig | [Service Delivery Location Participant](https://art-decor.org/art-decor/decor-templates--lpr-?id=1.2.208.176.7.1.10.50) | The organization where the patient is actually located, and where day-to-day care is provided. |
 
-The treatment responsibility is represented by Encounter.serviceProvider and the care responsibility is represented by the
-extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
+The treatment responsibility is represented by Encounter.serviceProvider and the care
+responsibility is represented by the extension [CareProvider](./StructureDefinition-dk-core-care-provider.html).
+
+Use Encounter.serverProvider and the extension for CareProvider, when you need to convey the reponsibilities as defined in LPR3.
 
 ### Specifying diagnosis
 It is preferred, that the [Danish Core Condition](./StructureDefinition-dk-core-condition.html) is used when referencing diagnosis in a
@@ -17,7 +26,7 @@ Danish context.
 Hospital encounters in Denmark have associated diagnoses that specify the primary diagnosis being treated ([DA] aktionsdiagnose) and
 secondary diagnoses ([DA] bidiagnoser) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
 element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1
-and the secondary a rank > 1.
+and the secondary a rank > 1. Have a look at this [example](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.html).
 
 ### Priority
 In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'elective' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as necessary.
