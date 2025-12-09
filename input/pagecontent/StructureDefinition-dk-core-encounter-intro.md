@@ -9,7 +9,7 @@ care. This distinction is also adressed by *encounter participants* in
 to where all hospital encounters must be reported:
 
 {:class="grid"}
-| Reponsibility | Responsiblity [DA] | LPR3 Encounter Participant | Description | 
+| Responsibility | Responsibility [DA] | LPR3 Encounter Participant | Description | 
 | ------------- | ------------------ | -------------------------- | ----------- |
 | Treatment responsibility | Behandlingsansvarlig | [Responsible Unit Participant](https://art-decor.org/art-decor/decor-templates--lpr-?id=1.2.208.176.7.1.10.49) | The organization where the doctor responsible for the patient's medical treatment is employed. | 
 | Care responsibility | Plejeansvarlig | [Service Delivery Location Participant](https://art-decor.org/art-decor/decor-templates--lpr-?id=1.2.208.176.7.1.10.50) | The organization where the patient is actually located, and where day-to-day care is provided. |
