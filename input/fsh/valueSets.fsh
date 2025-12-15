@@ -214,9 +214,7 @@ Description: "NPU codes for Basic Observations usable in Denmark"
 * $NPU#NPU27280
 * $NPU#NPU04034
 * $NPU#NPU08676
-* $NPU#NPU58033
 * $NPU#NPU57947
-* $NPU#NPU58034
 * $NPU#NPU57948
 * $NPU#NPU21692
 * $NPU#NPU03794
