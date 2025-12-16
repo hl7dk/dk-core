@@ -43,3 +43,33 @@ Description: "Identifier holding the official identifier for a danish municipali
   * ^definition = "Identifier holding the official identifier for a danish municipality"
 * value[x] only CodeableConcept
   * coding from MunicipalityCodes (required)
+  
+Extension: PlannedStartDate
+Id: dk-core-planned-start-date
+Title: "PlannedStartDate"
+Description: "The planned start date/time (or admission date) of the encounter"
+* . ^short = "PlannedStartDate"
+  * ^definition = "The planned start date/time (or admission date) of the encounter"
+* value[x] only dateTime
+* ^context.type = http://hl7.org/fhir/extension-context-type#element
+* ^context.expression = "Encounter"
+
+Extension: PlannedEndDate
+Id: dk-core-planned-end-date
+Title: "PlannedEndDate"
+Description: "The planned end date/time (or discharge date) of the encounter"
+* . ^short = "PlannedEndDate"
+  * ^definition = "The planned end date/time (or discharge date) of the encounter"
+* value[x] only dateTime
+* ^context.type = http://hl7.org/fhir/extension-context-type#element
+* ^context.expression = "Encounter"
+
+Extension: CareProvider
+Id: dk-core-care-provider
+Title: "CareProvider"
+Description: "The organization (facility) responsible for the care of the patient during this encounter"
+* . ^short = "CareProvider"
+  * ^definition = "The organization (facility) responsible for the care of the patient during this encounter"
+* value[x] only Reference(DkCoreOrganization)
+* ^context.type = http://hl7.org/fhir/extension-context-type#element
+* ^context.expression = "Encounter"

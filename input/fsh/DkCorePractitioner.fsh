@@ -7,8 +7,8 @@ Description: "HL7 Denmark core profile for health professionals and other actors
   * ^slicing.discriminator.path = "identifier.system"
   * ^slicing.rules = #open
   * ^slicing.ordered = false
-  * ^slicing.description = "Slice based on the identifier.systemm value which allows for official qualifications to\nDeclaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code"
-* qualification contains officialHealthAuthorization 0..1
+  * ^slicing.description = "Slice based on the identifier.system value which allows for official qualifications to\nDeclaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code"
+* qualification contains officialHealthAuthorization 0..*
 * qualification[officialHealthAuthorization].identifier only AuthorizationIdentifier
   * ^short = "[DA] Autorisationskode, som specificeret af autorisationsregisteret"
 * qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
@@ -19,9 +19,13 @@ InstanceOf: DkCorePractitioner
 Title: "AbrahamLæge"
 Description: "Eksempel på lægen Abraham fra akutsygeplejen"
 Usage: #example
-* qualification.identifier.system = "https://autregweb.sst.dk"
-* qualification.identifier.value = "005ML"
-* qualification.code = $DkCoreProfessionGroupCodes#7170 "Læge"
+* qualification[0].identifier.system = "https://autregweb.sst.dk"
+* qualification[=].identifier.value = "005ML"
+* qualification[=].code = $DkCoreProfessionGroupCodes#7170
+* qualification[+].identifier.system = "https://autregweb.sst.dk"
+* qualification[=].identifier.value = "005M6"
+* qualification[=].code = $DkCoreProfessionGroupCodes#5166
+
 * name.given = "Abraham"
 * name.family = "Murakami"
 * name.text = "Abraham Murakami"

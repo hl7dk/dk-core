@@ -34,12 +34,21 @@ menu:
 parameters:
   show-inherited-invariants: false
   ipa-comparison: "{last}"
-  special-url: [urn:oid:1.2.208.176.2.1, urn:iso:std:iso:11073:10101, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.21, urn:oid:1.2.208.176.2.4.12]
+  special-url:
+    - urn:iso:std:iso:11073:10101
+    - urn:oid:1.2.208.176.2.4
+    - urn:oid:1.2.208.176.2.21
+    - urn:oid:1.2.208.176.2.4.12
+    - http://npu-terminology.org
   path-expansion-params: Parameters-expParam.json
 
 dependencies:
+  hl7.fhir.extensions.r5: 4.0.1 
+  hl7.fhir.uv.extensions.r4: 5.3.0-ballot-tc1
   hl7.fhir.uv.phd: 1.1.0
   hl7.fhir.uv.ipa: 1.0.0
+  ihe.iti.mhd: 4.2.3
+
 
 
 # ╭────────────────────────────────────────────releasing───────────────────────────────────────────╮
