@@ -5,7 +5,7 @@ Title: "GLN Identifier"
 Description: "Identifier holding a 13 digit GLN"
 * use = #official (exactly)
 * system 1..
-* system = "https://www.gs1.org/gln" (exactly)
+* system = "	http://www.gs1.org/gln" (exactly)
 * value 1..
   * obeys gln-length and gln-modulus-10
 
