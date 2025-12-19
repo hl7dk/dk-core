@@ -1,4 +1,4 @@
-* Release Notes 3.5.0 (since 3.4.0)
+Dk-core version 3.5.0 has been approved by HL7 Denmark.
   - Introduced DkCoreEncounter profile with planned start/end and care-provider extensions plus inpatient examples; encounter priority narrowed to new A/EL value set.
   - Added DkCoreMinimalDocumentReference derived from IHE MHD Minimal DocumentReference for Danish XDS use, requiring author/subject, plus version extension and sample instances.
   - New SorPracticeSettingCode value set and ActCode 3.0.0 bindings strengthen document metadata for facility type/practice setting in XDS contexts.
