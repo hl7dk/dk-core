@@ -172,7 +172,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(Einer)
-* relationship = $v3-RoleCode#SPS "spouse"
+* relationship = $v3-RoleCode#SPS
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -188,7 +188,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
 * patient = Reference(Magnus)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Einer"
@@ -204,7 +204,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(Magnus)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -220,7 +220,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
 * patient = Reference(Rasmus)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Einer"
@@ -236,7 +236,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(Rasmus)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -252,7 +252,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
 * patient = Reference(ElseLauridsen)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Einer"
@@ -268,7 +268,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(ElseLauridsen)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -284,7 +284,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
 * patient = Reference(EllenLouise)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Einer"
@@ -300,7 +300,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(EllenLouise)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -316,7 +316,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
 * patient = Reference(EK)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Einer"
@@ -332,7 +332,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609996"
 * patient = Reference(EK)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Lauridsen"
 * name.given[0] = "Lonni"
@@ -497,7 +497,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(Sverre)
-* relationship = $v3-RoleCode#GUARD "guardian"
+* relationship = $v3-RoleCode#GUARD
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -514,7 +514,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(Torre)
-* relationship = $v3-RoleCode#GUARD "guardian"
+* relationship = $v3-RoleCode#GUARD
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -531,7 +531,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(Schwendlund)
-* relationship = $v3-RoleCode#SPS "spouse"
+* relationship = $v3-RoleCode#SPS
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -548,7 +548,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108589995"
 * patient = Reference(Sverre)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
@@ -564,7 +564,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(Sverre)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -581,7 +581,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108589995"
 * patient = Reference(Torre)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
@@ -597,7 +597,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(Torre)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -614,7 +614,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108589995"
 * patient = Reference(OddHaugen)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
@@ -630,7 +630,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(OddHaugen)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -647,7 +647,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108589995"
 * patient = Reference(KnutOdvar)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
@@ -663,7 +663,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(KnutOdvar)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -680,7 +680,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108589995"
 * patient = Reference(SilleJune)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Mosebryggersen"
 * name.given[0] = "Schwendlund"
@@ -696,7 +696,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0108629996"
 * patient = Reference(SilleJune)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Moberg"
 * name.given[0] = "May"
@@ -942,7 +942,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(Aage)
-* relationship = $v3-RoleCode#GUARD "guardian"
+* relationship = $v3-RoleCode#GUARD
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -959,7 +959,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0211223989"
 * patient = Reference(NancyAnn)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Åge"
@@ -975,7 +975,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2509479989"
 * patient = Reference(NancyAnn)
-* relationship = $v3-RoleCode#SIB "sibling"
+* relationship = $v3-RoleCode#SIB
 * name.use = #official
 * name.family = "Elmer"
 * name.given[0] = "Bruno"
@@ -991,7 +991,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(BritaBerggren)
-* relationship = $v3-RoleCode#GUARD "guardian"
+* relationship = $v3-RoleCode#GUARD
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1008,7 +1008,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(MaxBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1025,7 +1025,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(RuddiBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1042,7 +1042,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(KirstenBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1059,7 +1059,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(BritaBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1076,7 +1076,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "1502779995"
 * patient = Reference(RikkeBerggren)
-* relationship = $v3-RoleCode#GUARD "guardian"
+* relationship = $v3-RoleCode#GUARD
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Ruddi"
@@ -1092,7 +1092,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2911829996"
 * patient = Reference(PiaBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Kirsten"
@@ -1108,7 +1108,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2911829996"
 * patient = Reference(GitteNancy)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Kirsten"
@@ -1124,7 +1124,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2911829996"
 * patient = Reference(LarsBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Kirsten"
@@ -1140,7 +1140,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2911829996"
 * patient = Reference(RikkeBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Kirsten"
@@ -1156,7 +1156,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2911829996"
 * patient = Reference(AyaBerggren)
-* relationship = $v3-RoleCode#MTH "mother"
+* relationship = $v3-RoleCode#MTH
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Kirsten"
@@ -1172,7 +1172,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
 * patient = Reference(GitteNancy)
-* relationship = $v3-RoleCode#GRNDCHILD "grandchild"
+* relationship = $v3-RoleCode#GRPRN
 * name.use = #official
 * name.family = "Berggren"
 * name.given[0] = "Nancy"
@@ -1230,7 +1230,7 @@ Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "3103979995"
 * patient = Reference(AliJensen)
-* relationship = $v3-RoleCode#FTH "father"
+* relationship = $v3-RoleCode#FTH
 * name.use = #official
 * name.family = "Jensen"
 * name.given[0] = "Anders"
