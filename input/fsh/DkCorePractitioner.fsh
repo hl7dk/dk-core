@@ -22,9 +22,12 @@ Usage: #example
 * qualification[0].identifier.system = "https://autregweb.sst.dk"
 * qualification[=].identifier.value = "005ML"
 * qualification[=].code = $DkCoreProfessionGroupCodes#7170
+* qualification[=].period.start = "2005-03-15"
+* qualification[=].period.end = "2030-03-14"
 * qualification[+].identifier.system = "https://autregweb.sst.dk"
 * qualification[=].identifier.value = "005M6"
 * qualification[=].code = $DkCoreProfessionGroupCodes#5166
+* qualification[=].period.start = "2002-09-01"
 
 * name.given = "Abraham"
 * name.family = "Murakami"
@@ -35,7 +38,11 @@ InstanceOf: DkCorePractitioner
 Title: "SidselSygeplejerske"
 Description: "Eksempel på en sygeplejerske"
 Usage: #example
+* qualification.identifier.system = "https://autregweb.sst.dk"
+* qualification.identifier.value = "CBDJ6"
 * qualification.code = $DkCoreProfessionGroupCodes#5166 "Sygeplejerske"
+* qualification.period.start = "2010-06-01"
+* qualification.period.end = "2028-12-31"
 * name.given = "Sidsel"
 * name.family = "Andersen"
 * name.text = "Sidsel Andersen"
@@ -49,3 +56,4 @@ Usage: #example
 * name.family = "Mortensen"
 * name.text = "Hanne Mortensen"
 * qualification.code.text = "Socialrådgiver"
+* qualification.period.start = "2015-08-20"
