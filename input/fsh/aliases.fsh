@@ -6,6 +6,7 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $dk-core-municipality-codes = http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes
 Alias: $dk-core-regional-subdivision-codes = http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes
+Alias: $iso3166-2 = urn:iso:std:iso:3166:-2
 Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $dk-marital-status = http://hl7.dk/fhir/core/CodeSystem/dk-marital-status
 Alias: $DkCoreProfessionGroupCodes = http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes

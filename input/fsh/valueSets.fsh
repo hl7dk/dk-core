@@ -19,7 +19,11 @@ Id: dk-core-RegionalSubDivisionCodes
 Title: "DK Regional Subdivision Codes"
 Description: "Subdivision codes (Regional codes) used in Denmark"
 * ^experimental = false
-* include codes from system DKCoreRegionalSubdivisionCodes
+* $iso3166-2#DK-84
+* $iso3166-2#DK-82
+* $iso3166-2#DK-81
+* $iso3166-2#DK-85
+* $iso3166-2#DK-83
 
 ValueSet: LoincBasicObservation
 Id: dk-core-LoincBasicObservation

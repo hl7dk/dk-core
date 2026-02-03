@@ -24,7 +24,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * maritalStatus = $v3-MaritalStatus#M "Married"
 * link[0].other = Reference(Lonni)
 * link[=].type = #seealso
@@ -45,7 +45,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * maritalStatus = $v3-MaritalStatus#M "Married"
 * link[0].other = Reference(Einer)
 * link[=].type = #seealso
@@ -66,7 +66,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 10.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(Rasmus)
 * link[=].type = #seealso
@@ -87,7 +87,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 2.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(Magnus)
 * link[=].type = #seealso
@@ -108,7 +108,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 1.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(EK)
 * link[=].type = #seealso
@@ -132,7 +132,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 5.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(EK)
 * link[=].type = #seealso
@@ -155,7 +155,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 2.th"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(ElseLauridsen)
 * link[=].type = #seealso
@@ -361,7 +361,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * maritalStatus = $v3-MaritalStatus#M "Married"
 * link[0].other = Reference(MayJune)
 * link[=].type = #seealso
@@ -383,7 +383,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * maritalStatus = $v3-MaritalStatus#M "Married"
 * link[0].other = Reference(Schwendlund)
 * link[=].type = #seealso
@@ -404,7 +404,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(Torre)
 * link[=].type = #seealso
@@ -425,7 +425,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 * multipleBirthBoolean = true
 * link[0].other = Reference(Sverre)
 * link[=].type = #seealso
@@ -447,7 +447,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: KnutOdvar
 InstanceOf: DkCorePatient
@@ -466,7 +466,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: SilleJune
 InstanceOf: DkCorePatient
@@ -485,7 +485,7 @@ Usage: #example
 * address.line = "Testgrusgraven 3, 3.tv"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 // RelatedPerson for Mosebryggersen family - guardian relationships
 
@@ -729,7 +729,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: Aage
 InstanceOf: DkCorePatient
@@ -747,7 +747,7 @@ Usage: #example
 * address.line = "Testvænget 1"
 * address.postalCode = "8000"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0751
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-82
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-82
 
 Instance: Bruno
 InstanceOf: DkCorePatient
@@ -765,7 +765,7 @@ Usage: #example
 * address.line = "Testdrømmehaven 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: MaxBerggren
 InstanceOf: DkCorePatient
@@ -783,7 +783,7 @@ Usage: #example
 * address.line = "Testervej 18"
 * address.postalCode = "6200"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0580
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 Instance: RuddiBerggren
 InstanceOf: DkCorePatient
@@ -801,7 +801,7 @@ Usage: #example
 * address.line = "Testjulianevej 3"
 * address.postalCode = "8000"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0751
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-82
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-82
 
 Instance: KirstenBerggren
 InstanceOf: DkCorePatient
@@ -819,7 +819,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: BritaBerggren
 InstanceOf: DkCorePatient
@@ -837,7 +837,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 // Kirstens børn
 
@@ -857,7 +857,7 @@ Usage: #example
 * address.line = "Testgaden 1"
 * address.postalCode = "5230"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0461
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 Instance: GitteNancy
 InstanceOf: DkCorePatient
@@ -876,7 +876,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: LarsBerggren
 InstanceOf: DkCorePatient
@@ -894,7 +894,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 Instance: RikkeBerggren
 InstanceOf: DkCorePatient
@@ -912,7 +912,7 @@ Usage: #example
 * address.line = "Testjulianevej 3"
 * address.postalCode = "8000"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0751
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-82
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-82
 
 Instance: AyaBerggren
 InstanceOf: DkCorePatient
@@ -930,7 +930,7 @@ Usage: #example
 * address.line = "Testpark Allé 48"
 * address.postalCode = "3400"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0219
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-84
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-84
 
 // RelatedPerson for Berggren family relationships
 
@@ -1202,7 +1202,7 @@ Usage: #example
 * address.line = "Testtorvet 7"
 * address.postalCode = "4700"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0370
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-85
 
 Instance: AliJensen
 InstanceOf: DkCorePatient
@@ -1220,7 +1220,7 @@ Usage: #example
 * address.line = "Testtorvet 7"
 * address.postalCode = "4700"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0370
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-85
 
 Instance: AndersRelatedToAli
 InstanceOf: DkCoreRelatedPerson
@@ -1330,7 +1330,7 @@ Usage: #example
 * address.line = "Testvejen 251"
 * address.postalCode = "9970"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0813
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-81
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-81
 
 Instance: MuhammedAbdul
 InstanceOf: DkCorePatient
@@ -1348,7 +1348,7 @@ Usage: #example
 * address.line = "TestHøjen 5"
 * address.postalCode = "5900"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0482
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 Instance: JulianeJoergensen
 InstanceOf: DkCorePatient
@@ -1366,7 +1366,7 @@ Usage: #example
 * address.line = "TestVardevej 350"
 * address.postalCode = "6800"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0573
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 Instance: NielsVendelboe
 InstanceOf: DkCorePatient
@@ -1384,7 +1384,7 @@ Usage: #example
 * address.line = "Testkajen 2"
 * address.postalCode = "9210"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0851
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-81
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-81
 
 Instance: KajaHansen
 InstanceOf: DkCorePatient
@@ -1402,7 +1402,7 @@ Usage: #example
 * address.line = "Testsøjlerne 4"
 * address.postalCode = "6200"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0580
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 Instance: CaesarOestergaard
 InstanceOf: DkCorePatient
@@ -1421,7 +1421,7 @@ Usage: #example
 * address.line = "Testhjemmet 1"
 * address.postalCode = "5230"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0461
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-83
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-83
 
 // =============================================================================
 // FAMILIEGRUPPER - Group resources til at samle familiemedlemmer

@@ -36,7 +36,7 @@ Description: "HL7 Denmark core profile for a danish health organization"
   * value from MunicipalityCodes (required)
 * identifier[Regionskode] ^short = "[DA] Regionskode"
   * system 1..
-  * system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
+  * system = "urn:iso:std:iso:3166:-2" (exactly)
   * value 1..
 * identifier[ProducentID] only ProducentId
   * ^short = "[DA] Producent Id"
