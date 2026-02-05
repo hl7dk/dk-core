@@ -150,7 +150,7 @@ Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
-* code.coding[0] = $NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* code.coding[0] = $NPU#NPU03987
 * code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
@@ -609,7 +609,7 @@ Usage: #example
 * code
   * coding[+] = $LOINC#8867-4 "Heart rate"
   * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
-  * coding[+] = $NPU#NPU21692 "Heart—Systole; frequency = ? × 1/min"
+  * coding[+] = $NPU#NPU21692
   * text = "MDC_PULS_RATE_NON_INV: Heart rate"
 * subject = Reference(Poul)
 * performer = Reference(Poul)
