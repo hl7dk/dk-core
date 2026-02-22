@@ -470,7 +470,7 @@ Description: "DK marital statuses"
 
 CodeSystem: AddressType
 Id: address-type-dk-supplement
-Title: "DK Address Type"
+Title: "DK Address Type Supplement"
 Description: "The type of an address (physical / postal)"
 * ^experimental = false
 * ^content = #supplement
@@ -492,7 +492,7 @@ Description: "The type of an address (physical / postal)"
 
 CodeSystem: AddressUse
 Id: address-use-dk-supplement
-Title: "DK Address Use"
+Title: "DK Address Use Supplement"
 Description: "The use of an address"
 * ^experimental = false
 * ^content = #supplement
@@ -518,7 +518,7 @@ Description: "The use of an address"
   * ^designation.value = "Gammel / forkert"
 
 CodeSystem: CareTeamStatus
-Title: "DK CareTeam Status"
+Title: "DK CareTeam Status Supplement"
 Id: care-team-status-dk-supplement
 Description: "Indicates the status of the care team."
 * ^experimental = false
@@ -550,7 +550,7 @@ Description: "Indicates the status of the care team."
   * ^designation.value = "Fejlindtastning"
 
 CodeSystem: ConsentState
-Title: "DK Consent State"
+Title: "DK Consent State Supplement"
 Id: consent-state-codes-dk-supplement
 Description: "Indicates the state of the consent"
 * ^experimental = false
@@ -587,7 +587,7 @@ Description: "Indicates the state of the consent"
   * ^designation.value = "Fejlindtastning"
 
 CodeSystem: DaysOfWeek
-Title: "DK Days Of Week"
+Title: "DK Days Of Week Supplement"
 Id: days-of-week-dk-supplement
 Description: "The days of the week."
 * ^experimental = false
@@ -629,7 +629,7 @@ Description: "The days of the week."
   * ^designation.value = "Søndag"
 
 CodeSystem: EpisodeOfCareStatus
-Title: "DK Episode Of Care Status"
+Title: "DK Episode Of Care Status Supplement"
 Id: episode-of-care-status-dk-supplement
 Description: "The status of the episode of care."
 * ^experimental = false
@@ -674,7 +674,7 @@ Description: "The status of the episode of care."
 CodeSystem: PublicationStatus
 Id: publication-status-dk-supplement
 Description: "The lifecycle status of a Value Set or Concept Map."
-Title: "DK Publication Status"
+Title: "DK Publication Status Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/publication-status"
@@ -712,7 +712,7 @@ Title: "DK Publication Status"
 CodeSystem: RequestStatus
 Id: request-status-dk-supplement
 Description: "Codes identifying the stage lifecycle stage of a request"
-Title: "DK Request Status"
+Title: "DK Request Status Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/request-status"
@@ -770,7 +770,7 @@ Description: "DK "
 CodeSystem: RoleCodeDkSupplement
 Id: role-code-dk-supplement
 Description: "CodeSystem supplement with danish translations for RoleCode"
-Title: "DK Role Code"
+Title: "DK Role Code Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
