@@ -48,9 +48,9 @@ Usage: #example
 * intent = #plan
 * priority = http://hl7.org/fhir/request-priority#routine
 * subject.reference = "Patient/john"
-* category = $sct#658161000005107 "hjemmesygepleje"
-* code = $sct#225358003 "sårbehandling og -pleje"
-* orderDetail = $sct#410379003 "overvågning af forbindingskift/sårpleje"
+* category = $sct#658161000005107
+* code = $sct#225358003
+* orderDetail = $sct#410379003
 
 
 Instance: MaxServiceRequest
@@ -62,6 +62,6 @@ Usage: #example
 * intent = #plan
 * priority = http://hl7.org/fhir/request-priority#routine
 * subject.reference = "Patient/john"
-* category = $sct#658161000005107 "hjemmesygepleje"
-* code = $sct#225358003 "sårbehandling og -pleje"
-* orderDetail = $sct#410379003 "overvågning af forbindingskift/sårpleje"
+* category = $sct#658161000005107
+* code = $sct#225358003
+* orderDetail = $sct#410379003

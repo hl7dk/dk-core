@@ -151,11 +151,11 @@ InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * code.coding[0] = $NPU#NPU03987
-* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* code.coding[+] = $sct#252385000
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
@@ -163,11 +163,11 @@ Usage: #example
 Title: "ElsePainVRS"
 Description: "Elses smerte målt med VRS"
 * subject = Reference(else)
-* code.coding = $sct#1144798005 "Verbal Rating Scale pain intensity score"
+* code.coding = $sct#1144798005
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
-* valueCodeableConcept.coding[1] = $sct#76948002 "Severe pain (finding)"
+* valueCodeableConcept.coding[1] = $sct#76948002
 * status = #final
 * effectiveDateTime = 2020-06-01
 
@@ -569,14 +569,14 @@ Usage: #inline
   * code
     * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
     * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
-    * coding[+] = $NPU#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
+    * coding[+] = $NPU#NPU05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
   * valueQuantity = 118 'mm[Hg]' "mmHg"
 * component[+]
   * code
     * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
     * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
-    * coding[+] = $NPU#05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
+    * coding[+] = $NPU#NPU05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
   * valueQuantity = 87 'mm[Hg]' "mmHg"
 * component[+]

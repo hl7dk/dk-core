@@ -48,7 +48,7 @@ Title: "John tryksår"
 Description: "John, tryksår, kommunal tilstand"
 Usage: #example
 * code.coding[0] = urn:oid:1.2.208.176.2.21#I4.4 "Problemer med tryksår"
-* code.coding[+] = $sct#1163220007 "Pressure injury stage II"
+* code.coding[+] = $sct#1163220007
 * code.text = "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion."
 * extension.url = "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate"
 * extension.valueDateTime = "2020-12-12"
@@ -119,7 +119,7 @@ InstanceOf: DkCoreCondition
 Title: "John pacemaker"
 Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
 Usage: #example
-* code = $sct#441509002 "Cardiac pacemaker in situ"
+* code = $sct#441509002
 * subject.reference = "Patient/john"
 * recorder.reference = "Practitioner/AbrahamLaege"
 * category = $condition-category#problem-list-item
