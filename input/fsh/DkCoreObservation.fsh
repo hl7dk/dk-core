@@ -569,14 +569,12 @@ Usage: #inline
   * code
     * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
     * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
-    * coding[+] = $NPU#NPU05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
   * valueQuantity = 118 'mm[Hg]' "mmHg"
 * component[+]
   * code
     * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
     * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
-    * coding[+] = $NPU#NPU05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
   * valueQuantity = 87 'mm[Hg]' "mmHg"
 * component[+]
