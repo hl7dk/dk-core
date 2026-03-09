@@ -155,7 +155,7 @@ Usage: #example
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
-* method = $sct#272391002 "Measurement"
+* method = $sct#272391002 "måling"
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation

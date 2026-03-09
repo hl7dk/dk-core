@@ -72,7 +72,7 @@ Description: "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReferenc
 * content.attachment.title = "Diagnoseoversigt for 2509479989"
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
 * context.facilityType = $sct#394761003 "almen lægepraksis"
-* context.practiceSetting = $sct#408443003 "almen medicin"
+* context.practiceSetting = $sct#408443003 "almen lægepraksis"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
 * extension[=].valueString = "1.0.0"
