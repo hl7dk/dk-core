@@ -6,6 +6,8 @@ Dk-core version 3.6.0 includes the following changes from 3.5.0:
   - Fixed X-eCPR and D-eCPR invariant expressions in `DkCoreeCprIdentifier` to ensure regex validation evaluates correctly.
   - Refined terminology handling by separating CodeSystems and CodeSystem Supplements in the terminology page and making supplement naming explicit.
   - Cleaned up SNOMED/NPU usage in examples: removed hardcoded displays, corrected coding references, and removed invalid NPU blood-pressure component codes.
+  - Corrected SNOMED CT display names to use official Danish designations from the Danish SNOMED edition (e.g. "Measurement" → "måling", "almen medicin" → "almen lægepraksis").
+  - Removed version pinning from the Danish SNOMED CT system-version parameter to improve terminology server routing.
   - Removed the local `DkCoreDocumentReferenceVersionID` extension definition in favor of existing backport extension support.
-  - Updated Danish SNOMED references to the 2025-09-30 edition in examples and refreshed practitioner qualification/test data accordingly.
+  - Updated Danish SNOMED references to use the Danish SNOMED CT edition module without explicit version pinning.
   - Updated the Minimal DocumentReference guidance link to IHE MHD 4.2.3.
