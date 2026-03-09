@@ -547,8 +547,8 @@ Description: "DK Related Person Relationship Types"
 // Description: "SNOMED CT Codes for the technique used when obtaining an observation"
 // * ^experimental = false
 // * $sct#761996005 "Estimation technique (qualifier value)"
-// * $sct#733985002 "Reported (qualifier value)"
-// * $sct#272391002 "Measurement technique (qualifier value)"
+// * $sct#733985002 "Reported"
+// * $sct#272391002 "Measurement"
 
 // ValueSet: DkCoreDeCPRValueSet
 // Id: DkCoreDeCPRValueSet

@@ -150,12 +150,12 @@ Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
-* code.coding[0] = $NPU#NPU03987
-* code.coding[+] = $sct#252385000
+* code.coding[0] = $NPU#NPU03987 "U—Leukocytes; arb.c.(proc.) = ?"
+* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
-* method = $sct#272391002
+* method = $sct#272391002 "Measurement"
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
@@ -163,11 +163,11 @@ Usage: #example
 Title: "ElsePainVRS"
 Description: "Elses smerte målt med VRS"
 * subject = Reference(else)
-* code.coding = $sct#1144798005
+* code.coding = $sct#1144798005 "Verbal Rating Scale pain intensity score"
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
-* valueCodeableConcept.coding[1] = $sct#76948002
+* valueCodeableConcept.coding[1] = $sct#76948002 "Severe pain (finding)"
 * status = #final
 * effectiveDateTime = 2020-06-01
 
@@ -607,7 +607,7 @@ Usage: #example
 * code
   * coding[+] = $LOINC#8867-4 "Heart rate"
   * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
-  * coding[+] = $NPU#NPU21692
+  * coding[+] = $NPU#NPU21692 "Heart—Systole; freq. = ? × 1/min"
   * text = "MDC_PULS_RATE_NON_INV: Heart rate"
 * subject = Reference(Poul)
 * performer = Reference(Poul)
