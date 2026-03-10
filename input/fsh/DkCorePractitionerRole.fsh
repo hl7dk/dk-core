@@ -17,7 +17,7 @@ Usage: #example
 * practitioner = Reference(AbrahamLaege)
 * organization = Reference(CenterForDiabetes)
 * code = http://terminology.hl7.org/CodeSystem/v2-0286#PP
-* specialty = http://snomed.info/sct/554471000005108/version/20240331#408443003
+* specialty = http://snomed.info/sct/554471000005108#408443003
 //* location = Reference(LocationExample)
 * availableTime[0].daysOfWeek[0] = #mon
 * availableTime[=].daysOfWeek[+] = #tue
@@ -37,4 +37,4 @@ Usage: #example
 * active = true
 * organization = Reference(CenterForDiabetes)
 * code = http://terminology.hl7.org/CodeSystem/v2-0286#PP
-* specialty = http://snomed.info/sct/554471000005108/version/20240331#408443003
+* specialty = http://snomed.info/sct/554471000005108#408443003

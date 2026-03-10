@@ -20,7 +20,7 @@ you can build the Implementation Guide (IG) with the [ig publisher](https://conf
 
 ```
 wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -O org.hl7.fhir.igpublisher.jar
-java -Xms3550m -Xmx3550m -jar org.hl7.fhir.igpublisher.jar -ig ig.ini
+java -Xms3550m -Xmx3550m -jar org.hl7.fhir.igpublisher.jar -ig ig.ini . -tx https://tx-nordics.fhir.org/fhir/r4
 ```
 
 

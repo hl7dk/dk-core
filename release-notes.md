@@ -1,10 +1,13 @@
-Dk-core version 3.5.0 has been approved by HL7 Denmark.
-  - Introduced DkCoreEncounter profile with planned start/end and care-provider extensions plus inpatient examples; encounter priority narrowed to new A/EL value set.
-  - Added DkCoreMinimalDocumentReference derived from IHE MHD Minimal DocumentReference for Danish XDS use, requiring author/subject, plus version extension and sample instances.
-  - New SorPracticeSettingCode value set and ActCode 3.0.0 bindings strengthen document metadata for facility type/practice setting in XDS contexts.
-  - Added DkCoreDocumentReferenceVersionID extension and expanded guidance explaining LPR3 treatment/care responsibilities, priority use, and MHD alignment.
-  - IPA dependency bumped to 1.1.0 with SNOMED designations enabled; added HL7 R5/UV extension packages and IHE MHD dependency support.
-  - NPU terminology refreshed with correct canonical, identifiers, license, and case sensitivity; UCUM bindings on basic observations now bind on code and the NPU subset was tidied.
-  - GLN identifier canonical fixed to http://www.gs1.org/gln and GLN-tagged organization examples added for serviceProvider/careProvider use.
-  - Practitioner official health authorization slice now allows multiple registrations (e.g., multiple SST authorizations) and example data updated accordingly.
-
+Dk-core version 3.6.0 includes the following changes from 3.5.0:
+  - Regional subdivision coding was aligned to ISO 3166-2 (`urn:iso:std:iso:3166:-2`) across `DkCoreOrganization`, `DkCorePatient`, examples, and the `dk-core-RegionalSubDivisionCodes` value set.
+  - `DkCoreOrganization` mandatory-identifier invariant now also accepts CVR (`http://cvr.dk`), and a CVR-based organization example was added.
+  - Added a comprehensive MedCom test patient package (`TestPatienter.fsh`) with family/group examples and related-person links (84 resources total).
+  - Updated related-person terminology by adding `GRPRN` (grandparent) to the value set and correcting affected examples.
+  - Fixed X-eCPR and D-eCPR invariant expressions in `DkCoreeCprIdentifier` to ensure regex validation evaluates correctly.
+  - Refined terminology handling by separating CodeSystems and CodeSystem Supplements in the terminology page and making supplement naming explicit.
+  - Cleaned up SNOMED/NPU usage in examples: removed hardcoded displays, corrected coding references, and removed invalid NPU blood-pressure component codes.
+  - Corrected SNOMED CT display names to use official Danish designations from the Danish SNOMED edition (e.g. "Measurement" → "måling", "almen medicin" → "almen lægepraksis").
+  - Removed version pinning from the Danish SNOMED CT system-version parameter to improve terminology server routing.
+  - Removed the local `DkCoreDocumentReferenceVersionID` extension definition in favor of existing backport extension support.
+  - Updated Danish SNOMED references to use the Danish SNOMED CT edition module without explicit version pinning.
+  - Updated the Minimal DocumentReference guidance link to IHE MHD 4.2.3.

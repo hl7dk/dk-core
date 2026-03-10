@@ -470,55 +470,50 @@ Description: "DK marital statuses"
 
 CodeSystem: AddressType
 Id: address-type-dk-supplement
-Title: "DK Address Type"
+Title: "DK Address Type Supplement"
 Description: "The type of an address (physical / postal)"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-type"
 * #postal
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Post"
 * #physical
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fysisk"
 * #both
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Post & fysisk"
 
 CodeSystem: AddressUse
 Id: address-use-dk-supplement
-Title: "DK Address Use"
+Title: "DK Address Use Supplement"
 Description: "The use of an address"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/address-use"
 * #home
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Hjem"
 * #work
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Arbejde"
 * #temp
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Midlertidig"
 * #old
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Gammel / forkert"
 
 CodeSystem: CareTeamStatus
-Title: "DK CareTeam Status"
+Title: "DK CareTeam Status Supplement"
 Id: care-team-status-dk-supplement
 Description: "Indicates the status of the care team."
 * ^experimental = false
@@ -526,31 +521,27 @@ Description: "Indicates the status of the care team."
 * ^supplements = "http://hl7.org/fhir/care-team-status"
 * #proposed
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Forslag"
 * #active
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Aktiv"
 * #suspended
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Suspenderet"
 * #inactive
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Inaktiv"
 * #entered-in-error
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fejlindtastning"
 
 CodeSystem: ConsentState
-Title: "DK Consent State"
+Title: "DK Consent State Supplement"
 Id: consent-state-codes-dk-supplement
 Description: "Indicates the state of the consent"
 * ^experimental = false
@@ -558,36 +549,31 @@ Description: "Indicates the state of the consent"
 * ^supplements = "http://hl7.org/fhir/consent-state-codes"
 * #draft
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Under udarbejdelse"
 * #proposed
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Forslag"
 * #active
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Aktiv"
 * #rejected
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Afvist"
 * #inactive
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Inaktiv"
 * #entered-in-error
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fejlindtastning"
 
 CodeSystem: DaysOfWeek
-Title: "DK Days Of Week"
+Title: "DK Days Of Week Supplement"
 Id: days-of-week-dk-supplement
 Description: "The days of the week."
 * ^experimental = false
@@ -595,41 +581,35 @@ Description: "The days of the week."
 * ^supplements = "http://hl7.org/fhir/days-of-week"
 * #mon
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Mandag"
 * #tue
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Tirsdag"
 * #wed
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Onsdag"
 * #thu
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Torsdag"
 * #fri
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fredag"
 * #sat
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Lørdag"
 * #sun
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Søndag"
 
 CodeSystem: EpisodeOfCareStatus
-Title: "DK Episode Of Care Status"
+Title: "DK Episode Of Care Status Supplement"
 Id: episode-of-care-status-dk-supplement
 Description: "The status of the episode of care."
 * ^experimental = false
@@ -638,43 +618,37 @@ Description: "The status of the episode of care."
 * ^supplements = "http://hl7.org/fhir/episode-of-care-status"
 * #planned
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Planlagt"
 * #waitlist
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Venteliste"
 * #active
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Aktiv"
 * #onhold
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Pauseret"
 * #finished
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Færdig"
 * #cancelled
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Annulleret"
 * #entered-in-error
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fejlindtastning"
 
 CodeSystem: PublicationStatus
 Id: publication-status-dk-supplement
 Description: "The lifecycle status of a Value Set or Concept Map."
-Title: "DK Publication Status"
+Title: "DK Publication Status Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/publication-status"
@@ -684,7 +658,7 @@ Title: "DK Publication Status"
   * ^designation[+].language = #nl
   * ^designation[=].value = "ontwerp"
   * ^designation[+].language = #da
-  * ^designation[=].use = $sct#900000000000013009
+  * ^designation[=].use = $sct-int#900000000000013009
   * ^designation[=].value = "Udkast"
 * #active
   * ^designation[0].language = #ru
@@ -693,7 +667,7 @@ Title: "DK Publication Status"
   * ^designation[=].value = "actief"
   * ^designation[+].language = #da
   * ^designation[=].use.system = "http://snomed.info/sct"
-  * ^designation[=].use = $sct#900000000000013009
+  * ^designation[=].use = $sct-int#900000000000013009
   * ^designation[=].value = "Aktiv"
 * #retired
   * ^designation[0].language = #ru
@@ -702,53 +676,47 @@ Title: "DK Publication Status"
   * ^designation[=].value = "verouderd"
   * ^designation[+].language = #da
   * ^designation[=].use.system = "http://snomed.info/sct"
-  * ^designation[=].use = $sct#900000000000013009
+  * ^designation[=].use = $sct-int#900000000000013009
   * ^designation[=].value = "Udgået"
 * #unknown
   * ^designation[0].language = #da
-  * ^designation[=].use = $sct#900000000000013009
+  * ^designation[=].use = $sct-int#900000000000013009
   * ^designation[=].value = "Ukendt"
 
 CodeSystem: RequestStatus
 Id: request-status-dk-supplement
 Description: "Codes identifying the stage lifecycle stage of a request"
-Title: "DK Request Status"
+Title: "DK Request Status Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://hl7.org/fhir/request-status"
 * #draft
   * ^designation.language = #da
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Udkast"
 * #active
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Aktiv"
 * #on-hold
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Suspenderet"
 * #revoked
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Annulleret"
 * #completed
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Afsluttet"
 * #entered-in-error
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Fejlindtastning"
 * #unknown
   * ^designation.language = #da
-  * ^designation.use.system = "http://snomed.info/sct"
-  * ^designation.use = $sct#900000000000013009
+  * ^designation.use = $sct-int#900000000000013009
   * ^designation.value = "Ukendt"
 
 
@@ -770,7 +738,7 @@ Description: "DK "
 CodeSystem: RoleCodeDkSupplement
 Id: role-code-dk-supplement
 Description: "CodeSystem supplement with danish translations for RoleCode"
-Title: "DK Role Code"
+Title: "DK Role Code Supplement"
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
@@ -856,459 +824,3 @@ Description: "DK Related Person Relationship Codes"
   * ^designation.value = "Professionel kontakt"
 
 
-CodeSystem: NPU
-Id: dk-npu-fragment
-Title: "Nomenclature for Properties and Units (NPU) - Fragment for DK Core"
-Description: "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk"
-* ^url = $NPU
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:1.2.208.176.9.1"
-* ^status = #active
-* ^content = #fragment
-* ^contact.name = "Danish National eHealth Authority"
-* ^contact.telecom[0].system = #url
-* ^contact.telecom[=].value = "http://npu-terminology.org"
-* ^contact.telecom[+].system = #email
-* ^contact.telecom[=].value = "labterm@sundhedsdata.dk"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "EN211028"
-* ^copyright = "https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf"
-
-* ^property[0].uri = "http://hl7.org/fhir/concept-properties#comment"
-* ^property[=].type = #string
-* ^property[=].description = "A string that provides additional detail pertinent to the use or understanding of the concept"
-* ^property[=].code = #comment
-
-* ^property[+].uri = "http://hl7.org/fhir/concept-properties#effectiveDate"
-* ^property[=].type = #dateTime
-* ^property[=].description = "The date at which the concept status was last changed"
-* ^property[=].code = #effectiveDate
-
-* ^property[+].uri = "http://hl7.org/fhir/concept-properties#status"
-* ^property[=].type = #code
-* ^property[=].description = "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"
-* ^property[=].code = #status
-
-* ^property[+].uri = "http://hl7.org/fhir/concept-properties#inactive"
-* ^property[=].type = #boolean
-* ^property[=].description = "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"
-* ^property[=].code = #inactive
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#ChangeDate"
-* ^property[=].type = #dateTime
-* ^property[=].code = #ChangeDate
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#CreatedDate"
-* ^property[=].type = #dateTime
-* ^property[=].code = #CreatedDate
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#System"
-* ^property[=].type = #string
-* ^property[=].code = #System
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#SysSpec"
-* ^property[=].type = #string
-* ^property[=].code = #SysSpec
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Component"
-* ^property[=].type = #string
-* ^property[=].code = #Component
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#CompSpec"
-* ^property[=].type = #string
-* ^property[=].code = #CompSpec
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Kind-of-property"
-* ^property[=].type = #string
-* ^property[=].code = #Kind-of-property
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Speciality"
-* ^property[=].type = #string
-* ^property[=].code = #Speciality
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Code-value"
-* ^property[=].type = #string
-* ^property[=].code = #"Code value"
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Scale-type"
-* ^property[=].type = #string
-* ^property[=].code = #"Scale type"
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Proc"
-* ^property[=].type = #string
-* ^property[=].code = #Proc
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#Unit"
-* ^property[=].type = #string
-* ^property[=].code = #"Unit"
-
-* ^property[+].uri = "https://iupac.org/fhir/npu/concept-properties#STATUS"
-* ^property[=].type = #string
-* ^property[=].code = #STATUS
-
-
-* #NPU03011 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat. = ?"
-  * ^designation.language = #da
-  * ^designation.value = "Hb(Fe; O\u2082-bind.;aB)\u2014Oxygen(O\u2082); mætn. = ?"
-  * ^property[0].code = #ChangeDate
-  * ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
-  * ^property[+].code = #CreatedDate
-  * ^property[=].valueDateTime = "1996-12-24T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Hb"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "Fe; O₂-bind.;aB"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Oxygen"
-  * ^property[+].code = #CompSpec
-  * ^property[=].valueString = "O₂"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "sat."
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "3011"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2000-12-20T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU27280 "Hb(Fe; O\u2082-bind.; aB)\u2014Oxygen(O\u2082); sat.(Pulse oximetry) = ?"
-  * ^designation.language = #da
-  * ^designation.value = "Hb(Fe; O\u2082-bind.;aB)—Oxygen(O\u2082); mætn.(pulsoximetri) = ?"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Hb"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "Fe; O₂-bind.;aB"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Oxygen"
-  * ^property[+].code = #CompSpec
-  * ^property[=].valueString = "O₂"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "sat."
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "Pulse oximetry"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "27280"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU04034 "Pt(spec.)\u2014Blood; temp. = ? \u00b0C"
-  * ^designation.language = #da
-  * ^designation.value = "Pt(spec.)—Blod; temp. = ? °C"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "1996-05-08T00:00:00+02:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Pt"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "spec."
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Blood"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "temp."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "°C"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "4034"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Differential"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "1996-05-08T00:00:00+02:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU08676 "Pt\u2014Body; temp. = ? \u00b0C"
-  * ^designation.language = #da
-  * ^designation.value = "Pt—Legeme; temp. = ? °C"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Pt"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Body"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "temp."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "°C"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "8676"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Differential"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU58033 "Artery(spec.)\u2014Blood pressure(systolic); pr.(proc.) = ? mmHg"
-  * ^designation.language = #da
-  * ^designation.value = "Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg"
-  * ^property[0].code = #ChangeDate
-  * ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
-  * ^property[+].code = #CreatedDate
-  * ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Artery"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "spec."
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Blood pressure"
-  * ^property[+].code = #CompSpec
-  * ^property[=].valueString = "systolic"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "pr."
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "proc."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "mmHg"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "58033"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2021-03-19T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #deprecated
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Specification changed"
-  * ^property[+].code = #inactive
-  * ^property[=].valueBoolean = true
-* #NPU57947 "Artery(spec.)\u2014Blood; pr.(systolic; proc.) = ? mmHg"
-  * ^designation.language = #da
-  * ^designation.value = "Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Artery"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "spec."
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Blood"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "pr."
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "systolic;proc."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "mmHg"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "57947"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU58034 "Artery(spec.)\u2014Blood pressure(diastolic); pr.(proc.) = ? mmHg"
-  * ^designation.language = #da
-  * ^designation.value = "Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Artery"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "spec."
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Blood pressure"
-  * ^property[+].code = #CompSpec
-  * ^property[=].valueString = "diastolic"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "pr."
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "proc."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "mmHg"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "58034"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2017-12-18T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #deprecated
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Specification changed"
-  * ^property[+].code = #inactive
-  * ^property[=].valueBoolean = true
-* #NPU57948 "Artery(spec.)\u2014Blood; pr.(diastolic; proc.) = ? mmHg"
-  * ^designation.language = #da
-  * ^designation.value = "Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Artery"
-  * ^property[+].code = #SysSpec
-  * ^property[=].valueString = "spec."
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Blood"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "pr."
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "diastolic;proc."
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "mmHg"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "57948"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2017-12-05T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU21692 "Heart\u2014Systole; frequency = ? \u00d7 1/min"
-  * ^designation.language = #da
-  * ^designation.value = "Hjerte—Systole; frekv. = ? × 1/min"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "2004-09-29T00:00:00+02:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Heart"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Systole"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "frequency"
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "× 1/min"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "FUN"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "21692"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2004-09-29T00:00:00+02:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU03794 "Pt\u2014Body; height = ? m"
-  * ^designation.language = #da
-  * ^designation.value = "Pt—Legeme; højde = ? m"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Pt"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Body"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "height"
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "m"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "3794"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "1997-04-15T00:00:00+02:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU03804 "Pt\u2014Body; mass = ? kg"
-  * ^designation.language = #da
-  * ^designation.value = "Pt—Legeme; masse = ? kg"
-  * ^property[0].code = #CreatedDate
-  * ^property[=].valueDateTime = "1996-01-01T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Pt"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Body"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "mass"
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "kg"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "3804"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "1996-01-01T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"
-* #NPU27281 "Pt\u2014Body; mass coefficient(mass/squared height) = ? kg/m\u00b2"
-  * ^designation.language = #da
-  * ^designation.value = "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
-  * ^property[0].code = #ChangeDate
-  * ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
-  * ^property[+].code = #CreatedDate
-  * ^property[=].valueDateTime = "2007-11-23T00:00:00+01:00"
-  * ^property[+].code = #System
-  * ^property[=].valueString = "Pt"
-  * ^property[+].code = #Component
-  * ^property[=].valueString = "Body"
-  * ^property[+].code = #Kind-of-property
-  * ^property[=].valueString = "mass coefficient"
-  * ^property[+].code = #Proc
-  * ^property[=].valueString = "mass/squared height"
-  * ^property[+].code = #Unit
-  * ^property[=].valueString = "kg/m²"
-  * ^property[+].code = #Speciality
-  * ^property[=].valueString = "CLC"
-  * ^property[+].code = #"Code value"
-  * ^property[=].valueString = "27281"
-  * ^property[+].code = #"Scale type"
-  * ^property[=].valueString = "Ratio"
-  * ^property[+].code = #STATUS
-  * ^property[=].valueString = "ACTIVE"
-  * ^property[+].code = #effectiveDate
-  * ^property[=].valueDateTime = "2007-12-06T00:00:00+01:00"
-  * ^property[+].code = #status
-  * ^property[=].valueCode = #active
-  * ^property[+].code = #comment
-  * ^property[=].valueString = "Unit defined"

@@ -150,12 +150,12 @@ Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
-* code.coding[0] = $NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* code.coding[0] = $NPU#NPU03987 "U—Leukocytes; arb.c.(proc.) = ?"
 * code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
@@ -569,14 +569,12 @@ Usage: #inline
   * code
     * coding[+] = $LOINC#8480-6 "Systolic blood pressure"
     * coding[+] = $IEEEx73#150021 "MDC_PRESS_BLD_NONINV_SYS"
-    * coding[+] = $NPU#DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_SYS: Systolic Blood Pressure"
   * valueQuantity = 118 'mm[Hg]' "mmHg"
 * component[+]
   * code
     * coding[+] = $LOINC#8462-4 "Diastolic blood pressure"
     * coding[+] = $IEEEx73#150022 "MDC_PRESS_BLD_NONINV_DIA"
-    * coding[+] = $NPU#05473 "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
     * text = "MDC_PRESS_BLD_NONINV_DIA: Diastolic Blood Pressure"
   * valueQuantity = 87 'mm[Hg]' "mmHg"
 * component[+]
@@ -609,7 +607,7 @@ Usage: #example
 * code
   * coding[+] = $LOINC#8867-4 "Heart rate"
   * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
-  * coding[+] = $NPU#NPU21692 "Heart—Systole; frequency = ? × 1/min"
+  * coding[+] = $NPU#NPU21692 "Heart—Systole; freq. = ? × 1/min"
   * text = "MDC_PULS_RATE_NON_INV: Heart rate"
 * subject = Reference(Poul)
 * performer = Reference(Poul)
