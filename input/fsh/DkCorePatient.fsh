@@ -64,7 +64,7 @@ Usage: #example
 * address.extension[municipalityCode].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
 * address.extension[municipalityCode].valueCodeableConcept = $dk-core-municipality-codes#0330
 * address.extension[regionalSubDivisionCodes].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
-* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $dk-core-regional-subdivision-codes#DK-85
+* address.extension[regionalSubDivisionCodes].valueCodeableConcept = $iso3166-2#DK-85
 * address.extension[address-official].url = "http://hl7.org/fhir/StructureDefinition/address-official"
 * address.extension[address-official].valueCodeableConcept = urn:iso:std:iso:3166#DK
 * address.use = #home

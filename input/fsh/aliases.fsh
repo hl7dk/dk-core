@@ -1,11 +1,13 @@
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/554471000005108 // Danish version - append e.g. /version/20240331 to get a more specific version 
-Alias: $sct-dk-version = http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20240331
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/554471000005108 // Danish version - append e.g. /version/20250930 to get a more specific version
+Alias: $sct-int = http://snomed.info/sct // International version (no edition/version specified)
+Alias: $sct-dk-version = http://snomed.info/sct|http://snomed.info/sct/554471000005108
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $dk-core-municipality-codes = http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes
 Alias: $dk-core-regional-subdivision-codes = http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes
+Alias: $iso3166-2 = urn:iso:std:iso:3166:-2
 Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $dk-marital-status = http://hl7.dk/fhir/core/CodeSystem/dk-marital-status
 Alias: $DkCoreProfessionGroupCodes = http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes

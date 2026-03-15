@@ -36,7 +36,7 @@ Description: "HL7 Denmark core profile for a danish health organization"
   * value from MunicipalityCodes (required)
 * identifier[Regionskode] ^short = "[DA] Regionskode"
   * system 1..
-  * system = "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" (exactly)
+  * system = "urn:iso:std:iso:3166:-2" (exactly)
   * value 1..
 * identifier[ProducentID] only ProducentId
   * ^short = "[DA] Producent Id"
@@ -154,7 +154,16 @@ Usage: #example
 * type = $sct#551611000005102
 * partOf.reference = "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
 
+
+Instance: dk-core-organization-1
+InstanceOf: DkCoreOrganization
+Title: "DK CVR Organization instance of DkCoreOrganization"
+Description: "Sample of DK organization"
+Usage: #example
+* identifier[0].system = "http://cvr.dk"
+* identifier[=].value = "64942212"
+
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error
-Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://kombit.dk/sts/organisation' or system='urn:oid:2.16.840.1.113883.2.24.1.1').exists()"
+Expression: "identifier.where(system='urn:oid:1.2.208.176.1.1' or system='https://kombit.dk/sts/organisation' or system='urn:oid:1.3.198' or system='http://cvr.dk').exists()"

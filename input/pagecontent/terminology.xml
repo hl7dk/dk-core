@@ -8,7 +8,32 @@
 
   <h3>CodeSystems</h3>
   <div>
-    {% include list-simple-codesystems.xhtml %}
+{% for r in site.data.resources -%}
+  {%- assign key = r[0] -%}
+  {%- assign res = r[1] -%}
+  {%- if key contains "CodeSystem/" -%}
+    {%- if res.content != "supplement" -%}
+        <li>
+            <a href="{{res.path}}">{{res.title}}</a>
+        </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+  </div>
+
+  <h3>CodeSystem Supplements</h3>
+  <div>
+{% for r in site.data.resources -%}
+  {%- assign key = r[0] -%}
+  {%- assign res = r[1] -%}
+  {%- if key contains "CodeSystem/" -%}
+    {%- if res.content == "supplement" -%}
+        <li>
+            <a href="{{res.path}}">{{res.title}}</a>
+        </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
   </div>
 
   <h3>ConceptMaps</h3>

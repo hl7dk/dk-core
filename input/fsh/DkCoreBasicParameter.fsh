@@ -80,7 +80,7 @@ Usage: #example
 * code = $sct#6942003
 * subject = Reference(else)
 * valueCodeableConcept.coding[+] = $sct#450847001
-* method = $sct#733985002 "Reported (qualifier value)"
+* method = $sct#733985002 "Reported"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * performer = Reference(SidselSygeplejerske)
 
@@ -98,7 +98,7 @@ Usage: #example
 * component[+].code.coding[LOINC] = $LOINC#8462-4
 * component[=].code.coding[SNOMEDCT] = $sct#407555005
 * component[=].valueQuantity = 95 'mm[Hg]' "mmHg"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * performer = Reference(SidselSygeplejerske)
 
@@ -111,7 +111,7 @@ Usage: #example
 * code.coding[SNOMEDCT] = $sct#276885007
 * code.coding[LOINC] = $LOINC#8310-5
 * subject = Reference(else)
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueQuantity = 38.7 'Cel' "grader celcius"
 * performer = Reference(SidselSygeplejerske)
@@ -124,7 +124,7 @@ Usage: #example
 * code.coding[SNOMEDCT] = $sct#364075005
 * code.coding[LOINC] = $LOINC#8867-4
 * subject = Reference(else)
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueQuantity = 92 '/min' "slag/minut"
 * performer = Reference(SidselSygeplejerske)
@@ -137,7 +137,7 @@ Usage: #example
 * code.coding[SNOMEDCT] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
 * subject = Reference(else)
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueQuantity = 19 '/min' "/min"
 * performer = Reference(SidselSygeplejerske)
@@ -194,7 +194,7 @@ Usage: #example
 * code.coding[LOINC] = $LOINC#80288-4
 * subject = Reference(Max)
 * valueCodeableConcept.coding = $sct#450847001
-* method = $sct#733985002 "Reported (qualifier value)"
+* method = $sct#733985002 "Reported"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 
 Instance: MaxRespirationRate
@@ -204,7 +204,7 @@ Usage: #example
 * code.coding[SNOMEDCT] = $sct#86290005
 * code.coding[LOINC] = $LOINC#9279-1
 * subject = Reference(Max)
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * valueQuantity = 13 '/min' "/min"
 
@@ -217,7 +217,7 @@ Usage: #example
 * code.coding[LOINC] = $LOINC#8867-4
 * subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * valueQuantity = 68 '/min' "slag/minut"
 
 Instance: MaxBodyTemperature
@@ -229,7 +229,7 @@ Usage: #example
 * code.coding[LOINC] = $LOINC#8310-5
 * subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * valueQuantity = 37 'Cel' "grader celcius"
 
 Instance: MaxBloodPressure
@@ -241,7 +241,7 @@ Usage: #example
 * code.coding[LOINC] = $LOINC#85354-9
 * subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 * component[0].code.coding[0] = $LOINC#8480-6
 * component[=].code.coding[+] = $sct#407554009
 * component[=].valueQuantity = 156 'mm[Hg]' "mmHg"
@@ -258,7 +258,7 @@ Usage: #example
 * valueQuantity = 99.0 '%' "%"
 * subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
-* method = $sct#272391002 "Measurement technique (qualifier value)"
+* method = $sct#272391002 "måling"
 
 Instance: MaxGlasgowComaScale
 InstanceOf: DkCoreObservation
