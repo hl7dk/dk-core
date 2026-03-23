@@ -46,6 +46,31 @@ Description: "LOINC codes describing Basic Observations usable in Denmark."
 * $LOINC#8478-0 //"Mean blood pressure"
 * $LOINC#59408-5 //"Oxygen saturation in Arterial blood by Pulse oximetry"
 
+ValueSet: LoincDiagnosticDocumentTypes
+Id: dk-core-LoincDiagnosticDocumentTypes
+Title: "DK Core LOINC Diagnostic Document Types"
+Description: "LOINC codes describing diagnostic documents that may be used for common Danish use cases."
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* $LOINC#11502-2 //"Laboratory report"
+* $LOINC#53576-5 //"Personal health monitoring report"
+* $LOINC#11506-3 //"Progress note"
+
+ValueSet: LoincLabStudyTypes
+Id: dk-core-LoincLabStudyTypes
+Title: "DK Core Laboratory study types"
+Description: "LOINC codes describing laboratory study types that are consistent with European use in EHDS."
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+* $LOINC#18717-9 // Blood bank studies (set)
+* $LOINC#18719-5 //Chemistry studies (set)
+* $LOINC#18722-9 //	Fertility studies (set)
+* $LOINC#18723-7 //	Hematology studies (set)
+* $LOINC#18725-2 //	Microbiology studies (set)
+* $LOINC#18728-6 //	Toxicology studies (set)
+* $LOINC#26436-6 //	Laboratory studies (set)
+
+
 ValueSet: SCTBasicObservation
 Id: dk-core-SCTBasicObservation
 Title: "DK Core SNOMED CT Basic Observation"
@@ -84,6 +109,20 @@ Description: "SNOMED CT codes for Basic Observations usable in Denmark"
 * $sct#1149101003 //|Recumbent body height|
 * $sct#1162392001 //|Pre-amputation measured body height|
 
+ValueSet: SCTLaboratorySpecialities
+Id: dk-core-SCTLaboratorySpecialities
+Title: "SNOMED CT Laboratory Specialities"
+Description: "SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe"
+* ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $sct#394596001	//Chemical pathology
+* $sct#394916005	//Hematopathology
+* $sct#421661004	//Blood banking and transfusion medicine
+* $sct#394915009	//General pathology
+* $sct#394598000	//Immunopathology
+* $sct#408454008	//Clinical microbiology
+* $sct#1236877003	//Genetic pathology
+* $sct#1236878008	//Histocompatibility and Immunogenetics
 
 ValueSet: IEEEBasicObservation
 Id: dk-core-IEEEBasicObservation
