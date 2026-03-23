@@ -27,6 +27,6 @@ The category is used to classify the report. It is divided into two distinct cat
 The categories are derived directly from the specification of laboratory reports fra European Health Data Space.
 
 #### Other documentation about attributes
-DiagnosticReport.code always holds the value 'laboratory report' in this profile.
+DiagnosticReport.code always holds the value 'laboratory report' in this profile. Other codes may be used e.g. for home monitoring reports.
 
 Note that diffent timestamps are allowed and match them to your use case. MedCom's laboratory report uses 'brevDannetTid' here DiagnosticReport.issued is recommended as equivalent. For MedCom's 'svarTid' using DiagnosticReport.effectiveDateTime is recommended.
