@@ -29,7 +29,7 @@ Title: "Danish Core Diagnostic Report Profile"
   * ^short = "The clinical domain of the laboratory performing the observation (e.g. microbiology, toxicology, chemistry)"
 * category[danishSpecialty] from dk-core-practice-setting-exclude-lab-code (required)
 * code 1..1 
-* code from dk-core-LoincDiagnosticDocumentTypes
+* code from dk-core-LoincDiagnosticDocumentTypes (extensible)
   * ^short = "[DK] rapportkode"
 
 * subject only Reference(DkCorePatient or Group or DkCoreLocation or Device)
