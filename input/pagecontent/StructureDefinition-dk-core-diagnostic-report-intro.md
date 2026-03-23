@@ -37,12 +37,12 @@ The DiagnosticReport progresses through well-defined status values throughout it
 In a MedCom context, there are several ways of showing that a report has corrected results—but only at the result level. In FHIR, these results are Observations that may be referred to in DiagnosticReport.result.
 
 #### Category
-The category is used to classify the report. It is divided into three distinct categories: studyType, specialty, and danishSpecialty. The first two are derived directly from the specification of laboratory reports from the European Health Data Space (EHDS), and they should only be used for laboratory reports: 
+The category is used to classify the report. It is divided into three distinct slices: studyType, specialty, and danishSpecialty. The first two are derived directly from the specification of laboratory reports from the European Health Data Space (EHDS), and they should only be used for laboratory reports: 
 
 * studyType: A classification of the type of tests or services performed, grouped into clinically meaningful categories. It represents a typology of test results rather than the laboratory itself. 
 * specialty: Describes the clinical or professional domain of the laboratory that produced the results. It reflects the specific area of laboratory expertise that executed the tests (e.g., microbiology, chemistry, or hematology).
 
-The third category is Danish Specialties as expressed in Clinical Speciality in SOR (Sygehusets Organisationsregister). These may be used for non-laboratory use cases as needed.
+The third category is Danish Specialties as expressed in Clinical Speciality in SOR (Sundhedsvæsenets Organisationsregister) excluding the Laboratory specialities since they are already expressed in the speciality-slice. These may be used for non-laboratory use cases as needed.
 
 #### Other documentation about attributes
 Note that different timestamps are allowed. Match them to your specific use case. MedCom's laboratory report uses 'brevDannetTid'. In this case, DiagnosticReport.issued is recommended as the equivalent. For MedCom's 'svarTid', using DiagnosticReport.effectiveDateTime is recommended.

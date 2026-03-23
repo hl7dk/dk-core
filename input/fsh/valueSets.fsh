@@ -898,6 +898,7 @@ Title: "DK SOR Practice Setting Code"
 Description: "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes."
 * ^status = #active
 * ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#773568002
 * $sct#408443003
 * $sct#394577000
@@ -952,3 +953,13 @@ Description: "Values used for the document metadata attribute practiceSettingCod
 * $sct#658201000005103
 * $sct#658141000005108
 * $sct#658181000005104
+
+ValueSet: SorPracticeSettingCodeExcludingLab
+Id: dk-core-practice-setting-exclude-lab-code
+Title: "DK SOR Practice Setting Code excluding laboratory codes"
+Description: "Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties ."
+* ^status = #active
+* ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* include codes from valueset SorPracticeSettingCode
+* exclude codes from valueset SCTLaboratorySpecialities
