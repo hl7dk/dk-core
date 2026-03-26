@@ -1,7 +1,7 @@
 Profile: DkCoreDiagnosticReport
 Parent: DiagnosticReport
 Id: dk-core-diagnostic-report
-Description: "dk-core profile for laboratory reports."
+Description: "HL7 Denmark profile for diagnostic reports."
 Title: "Danish Core Diagnostic Report Profile"
 
 * identifier 0..1
