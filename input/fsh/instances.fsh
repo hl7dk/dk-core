@@ -41,6 +41,28 @@ Usage: #definition
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor"
 
+Instance: cvr
+InstanceOf: NamingSystem
+Title: "cvr"
+Description: "The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis."
+Usage: #definition
+* name = "DK Central Business Register (CVR)"
+* status = #active
+* kind = #identifier
+* date = "2023-10-01"
+* publisher = "Erhvervsstyrelsen"
+* contact.name = "Erhvervsstyrelsen"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://erst.dk"
+* responsible = "Erhvervsstyrelsen"
+* description = "Det Centrale Virksomhedsregister (CVR) er statens stamregister for virksomhedsoplysninger."
+* jurisdiction = urn:iso:std:iso:3166#DK "Denmark"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "http://cvr.dk"
+* uniqueId[+].type = #oid
+* uniqueId[=].value = "urn:oid:1.3.184"
+
+
 Instance: HenvisningFraLageTilSygehus
 InstanceOf: ServiceRequest
 Title: "Henvisning vedr. modermærkekræft"
