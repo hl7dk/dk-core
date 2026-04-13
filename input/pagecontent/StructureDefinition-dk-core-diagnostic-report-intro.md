@@ -1,5 +1,5 @@
 ### Scope and Usage 
-The DkCoreDiagnosticReport profile is used for diagnostic reports and notes communicated within the Danish healthcare sector. Several use cases exist:
+The DkCoreDiagnosticReport profile is used for diagnostic reports communicated within the Danish healthcare sector. Several use cases exist:
 
 * Laboratory reports
 * Personal health monitoring reports
@@ -9,25 +9,17 @@ The most typical is the laboratory report used to convey the laboratory’s resp
 
 In this case, a DiagnosticReport serves as the primary structure that links the requested analyses, the underlying specimens, and the resulting observations into a coherent laboratory response.
 
-In other use cases, the DiagnosticReport is still a coherent report of resulting observations. These use cases are typically characterized by more relaxed requirements than within laboratory medicine.
-
-#### Code
-DiagnosticReport.code may hold different values and LOINC document codes are recommended. In the [HL7 Europe laboratory standard](https://hl7.eu/fhir/laboratory/), the code 'laboratory report' is always used. A few other example codes are included in the value set for this profile to make it easier to support common Danish use cases:
-
-* 'personal health monitoring report' for collections of data produced by the patients themselves, typically in telehealth projects.
-* 'progress note' for clinical situations where a collection of observation results originates from an encounter and needs to be communicated to other actors in the health sector. Examples could be acute nursing encounters where measurements are shared with the general practitioner. It could also be a general practitioner visit or hospital encounter where a number of different observations are made and need to be shared afterwards.
-
-Note that if a general practitioner visit originates in a report containing only laboratory results, it is recommended to use the code 'laboratory-report'. To differentiate from laboratory reports made in laboratories, use an appropriate category instead e.g. ´408443003 almen lægepraksis´.
+In other use cases, the DiagnosticReport is still a coherent report of resulting observations. However, these use cases are typically characterized by more relaxed requirements than within laboratory medicine.
 
 #### Identifier
-The identifier may contain an analysis number equivalent to the Danish 'RekvNrLab' from [MedCom's RPT01](https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20laboratoriesvar/). It may correspond to the Danish requisition number (NPN), but could be re-assigned at the laboratory. For correctly referencing the requisition, see DiagnosticReport.basedOn instead.
+In Denmark, traditional laboratory reports such as [MedCom's RPT01](https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20laboratoriesvar/), repeat the requisition number in the laboratory report to ensure traceability. In FHIR, it is more consistent with the standard to use DiagnosticReport.basedOn to reference the actual requisition. As a result, HL7 Denmark recommends not repeating the requisition number as a DiagnosticReport.identifier.
+
+In Danish laboratories, a laboratory report is sometimes assigned a unique identifier that is not the requisition number. This practice is especially useful when more than one report is associated with a single requisition. This is an example of a business identifier associated with the report itself. As such, it could be relevant to express as a DiagnosticReport.identifier.
 
 #### Status Codes
-The DiagnosticReport resource must contain the status of the report and uses the required FHIR ValueSet. 
+The DiagnosticReport resource must contain the status of the report and use the required FHIR ValueSet. For all new use cases this is the only requirement.
 
-All codes in the ValueSet may be used, but if mapping to and from the MedCom standard for laboratory results (RPT01/XRPT01), the following codes should be considered equivalent:
-
-The DiagnosticReport progresses through well-defined status values throughout its lifecycle.
+However, if legacy data requires a mapping to and from the MedCom standard for laboratory results (RPT01/XRPT01), the following codes should be considered equivalent:
 
 * registered: As soon as the specimen is received by the laboratory, a DiagnosticReport is created with the status 'registered'. This reflects that the order has entered the laboratory workflow and initial processing has begun. This corresponds to MedCom's 'modtaget'.
 * partial: The status 'partial' is used when some, but not all, Observations within the DiagnosticReport have been finalized. At least one Observation result must still be pending for the status to remain 'partial'. This corresponds to MedCom's 'delsvar'.
@@ -43,6 +35,16 @@ The category is used to classify the report. It is divided into three distinct s
 * specialty: Describes the clinical or professional domain of the laboratory that produced the results. It reflects the specific area of laboratory expertise that executed the tests (e.g., microbiology, chemistry, or hematology).
 
 The third category is Danish Specialties as expressed in Clinical Speciality in SOR (Sundhedsvæsenets Organisationsregister) excluding the Laboratory specialities since they are already expressed in the speciality-slice. These may be used for non-laboratory use cases as needed.
+
+#### Code
+DiagnosticReport.code may hold different values. In the [HL7 Europe laboratory standard](https://hl7.eu/fhir/laboratory/), the code 'laboratory report' is always used. To support common Danish use cases, the value set includes two more valid values:
+
+* 'personal health monitoring report' for collections of data produced by the patients themselves, typically in telehealth projects.
+* 'progress note' for clinical situations where a collection of observation results originates from an encounter and needs to be communicated to other actors in the health sector. Examples could be acute nursing encounters where measurements are shared with the general practitioner. It could also be a general practitioner visit or hospital encounter where a number of different observations are made and need to be shared afterwards.
+
+The value set is extensible. This means that if a specific use case can make use of either of the three codes already included in the value set, they shall be used. However, if a use case cannot meaningfully use either of the three cades, the value set may be extended. To ensure consistency, HL7 Denmark recommends using LOINC document codes for such additional codes.
+
+Note that if a general practitioner visit originates in a report containing only laboratory results, it is recommended to use the code 'laboratory-report'. To differentiate from laboratory reports made in laboratories, use an appropriate category instead e.g. ´408443003 almen lægepraksis´.
 
 #### Other documentation about attributes
 Note that different timestamps are allowed. Match them to your specific use case. MedCom's laboratory report uses 'brevDannetTid'. In this case, DiagnosticReport.issued is recommended as the equivalent. For MedCom's 'svarTid', using DiagnosticReport.effectiveDateTime is recommended.

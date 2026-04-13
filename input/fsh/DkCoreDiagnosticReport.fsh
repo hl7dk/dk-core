@@ -4,18 +4,7 @@ Id: dk-core-diagnostic-report
 Description: "HL7 Denmark profile for diagnostic reports."
 Title: "Danish Core Diagnostic Report Profile"
 
-* identifier 0..1
-  * ^short = "[DK] undersøgelsesnummer"
-  * system 1..1
-  * system = "http://medcom/undersøgelsesnummer" (exactly)
-//consider slicing
-
-//* basedOn 1..1
-//* basedOn only Reference(DkCoreServiceRequest)
-//  * ^short = "[DK] rapportBaseretPå"
-* status ^short = "[DK] rapportstatus"
 * category 0..*
-  * ^short = "[DK] rapportkategori"
 * category ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
@@ -28,15 +17,17 @@ Title: "Danish Core Diagnostic Report Profile"
 * category[specialty] from dk-core-SCTLaboratorySpecialities (required)
   * ^short = "The clinical domain of the laboratory performing the observation (e.g. microbiology, toxicology, chemistry)"
 * category[danishSpecialty] from dk-core-practice-setting-exclude-lab-code (required)
+  * ^short = "The clinical domain of a Danish practise setting in which a DiagnosticReport is produced" 
 * code 1..1 
 * code from dk-core-LoincDiagnosticDocumentTypes (extensible)
-  * ^short = "[DK] rapportkode"
 
 * subject only Reference(DkCorePatient or Group or DkCoreLocation or Device)
+* subject 1..1
 * performer only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePractitionerRole or CareTeam)
 * resultsInterpreter only Reference(DkCorePractitioner or DkCoreOrganization or DkCorePractitionerRole or CareTeam)
 * basedOn only Reference(CarePlan or ImmunizationRecommendation or MedicationRequest or NutritionOrder or DkCorePersonServiceRequest)
 * encounter only Reference(DkCoreEncounter)
+* result only Reference(DkCoreObservation)
 
 Instance: ElseHomeNursingMeasurements
 InstanceOf: DkCoreDiagnosticReport
