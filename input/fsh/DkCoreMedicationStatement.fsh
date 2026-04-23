@@ -8,24 +8,24 @@ Description: "HL7 Denmark core profile for a statement about medication being ta
 * ^extension[=].valueCanonical = $eu-medicationStatement
 * extension contains
     $ms-adherence named adherence 0..1
-* extension[adherence] ^short = "R5 back-port: whether the medication is being taken / refused / stopped. In FMK: HasNegativeConsent = true should be surfaced here with an appropriate adherence code in addition to (or instead of) status = stopped."
+* extension[adherence] ^short = "R5 back-port: whether the medication is being taken / refused / stopped. In FMK, presence of DrugMedication.Withdrawn (seponering) or DrugMedication.Paused should be surfaced here with an appropriate adherence code in addition to (or instead of) status."
 * identifier ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
   * ^slicing.ordered = false
-  * ^slicing.description = "Slice identifier by system to distinguish FMK OrdinationIdentifier and DrugMedicationIdentifier"
+  * ^slicing.description = "Slice identifier by system to carry the FMK DrugMedicationIdentifier."
 * identifier contains
-    FmkOrdinationId 0..1 and
-    FmkDrugMedicationId 0..1
-* identifier[FmkOrdinationId] ^short = "[DA] FMK OrdinationIdentifier"
-  * system 1..
-  * system = $FmkOrdinationId (exactly)
-  * value 1..
-* identifier[FmkDrugMedicationId] ^short = "[DA] FMK DrugMedicationIdentifier"
+    FmkDrugMedicationId 0..1 and
+    FmkDrugMedicationVersion 0..1
+* identifier[FmkDrugMedicationId] ^short = "[DA] FMK DrugMedicationIdentifier (positiv long)."
   * system 1..
   * system = $FmkDrugMedicationId (exactly)
   * value 1..
-* status ^short = "Status of the medication card entry. active = aktiv på medicinkortet; stopped = seponeret (HasNegativeConsent = true i FMK); completed = afsluttet behandling."
+* identifier[FmkDrugMedicationVersion] ^short = "[DA] FMK DrugMedication.Version - pairs with FmkDrugMedicationId to identify a specific revision of the lægemiddelordination on the medicinkort."
+  * system 1..
+  * system = $FmkDrugMedicationVersion (exactly)
+  * value 1..
+* status ^short = "Status of the medication card entry. `active` = aktiv på medicinkortet; `on-hold` = Paused; `stopped` = seponeret (DrugMedication.Withdrawn er sat); `completed` = afsluttet behandling."
 * medication[x] only CodeableConcept or Reference(DkCoreMedication)
 * medicationCodeableConcept.coding ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
@@ -36,12 +36,12 @@ Description: "HL7 Denmark core profile for a statement about medication being ta
     ATC 0..1 and
     ActiveSubstance 0..1
 * medicationCodeableConcept.coding[ATC]
-  * ^short = "WHO ATC code. In FMK: DrugMedication.AtcCode / AtcText."
+  * ^short = "WHO ATC code. In FMK: DrugMedication.Drug.ATC (Code + Text)."
   * system 1..
   * system = $atc (exactly)
   * code 1..
 * medicationCodeableConcept.coding[ActiveSubstance]
-  * ^short = "[DA] Aktivt stof. In FMK: DrugMedication.ActiveSubstance or MedicationCardEntry.ActiveSubstance."
+  * ^short = "[DA] Aktivt stof. In FMK: DrugMedication.Drug.Substances.ActiveSubstance."
   * system 1..
   * system = $FmkActiveSubstance (exactly)
   * code 1..
@@ -49,41 +49,41 @@ Description: "HL7 Denmark core profile for a statement about medication being ta
 * subject 1..
 * informationSource only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCoreOrganization or DkCorePatient or DkCoreRelatedPerson)
 * reasonReference only Reference(DkCoreCondition or DkCoreObservation)
-* reasonCode ^short = "Indikation / årsag. In FMK: Treatment.Cause."
+* reasonCode ^short = "Indikation / årsag. In FMK: DrugMedication.Indication (Code + Text, or FreeText)."
 * effective[x] only dateTime or Period
-* effective[x] ^short = "When the medication is/was being taken. Prefer effectivePeriod when both start and end (or open-ended start) are known - maps to FMK Treatment.StartDate / Treatment.EndDate. Use effectiveDateTime only for point-in-time statements."
+* effective[x] ^short = "When the medication is/was being taken. Prefer effectivePeriod when both start and end (or open-ended start) are known - maps to FMK DrugMedication.BeginEndDate.TreatmentStartDate / TreatmentEndDate. Use effectiveDateTime only for point-in-time statements."
 * dateAsserted ^short = "Tidspunkt hvor udsagnet om medicineringen blev indført. Typisk hentningstidspunktet for medicinkortet."
-* dosage ^short = "Dosering. In FMK: Dosage.Text; Treatment.Administration (route) kan lægges i dosage.route eller dosage.patientInstruction."
+* dosage ^short = "Dosering. In FMK: DrugMedication.Dosage; DrugMedication.RouteOfAdministration (Code + Text) maps to dosage.route."
 
 
 Mapping: DkCoreMedicationStatementToFmk
 Source: DkCoreMedicationStatement
-Target: "https://wiki.fmk-teknik.dk/start"
+Target: "https://wiki.fmk-teknik.dk/fmk:extensions:e5"
 Title: "Fælles Medicinkort (FMK)"
 Id: dk-core-medicationstatement-fmk
-* -> "MedicationCard entry" "**Snapshot of a drug on the FMK medication card (aktuelt medicinbillede).**"
-* identifier[FmkOrdinationId] -> "DrugMedication.OrdinationIdentifier" "Identifier of an FMK ordination."
-* identifier[FmkDrugMedicationId] -> "DrugMedication.DrugMedicationIdentifier" "Identifier of a specific version of the drug medication."
-* status -> "MedicationCardStatus.EnumStr / HasNegativeConsent" "`active` / `completed` / `stopped` / `entered-in-error` / `unknown`. `HasNegativeConsent = true` maps to `stopped` and SHOULD be supplemented via the adherence extension."
-* medicationCodeableConcept.coding[ATC] -> "DrugMedication.AtcCode / AtcText" "WHO ATC code for the drug."
-* medicationCodeableConcept.coding[ActiveSubstance] -> "DrugMedication.ActiveSubstance" "Active-substance coding."
-* medicationCodeableConcept.text -> "DrugMedication (name/form/strength)" "Free-text rendering of the drug name, form and strength."
-* subject -> "Patient" "FMK patient reference."
-* effective[x] -> "Treatment.StartDate / Treatment.EndDate" "Prefer `effectivePeriod` when start and/or end are known; use `effectiveDateTime` for point-in-time statements."
-* dateAsserted -> "Snapshot timestamp" "Timestamp of the FMK medication-card retrieval (NOT the ordination date)."
-* reasonCode -> "Treatment.Cause" "Indikation / årsag."
-* dosage.text -> "Dosage.Text" "Human-rendered dosage."
-* dosage.route -> "Treatment.Administration" "Administration route (may be free text)."
-* extension[adherence] -> "HasNegativeConsent" "R5 adherence code (e.g. `stopped`, `not-taking`, `on-hold`) for richer semantics than `status = stopped` alone."
+* -> "MedicineCard.DrugMedication" "**Snapshot of a lægemiddelordination on the FMK medicinkort (aktuelt medicinbillede).**"
+* identifier[FmkDrugMedicationId] -> "DrugMedication.Identifier" "DrugMedicationIdentifier - unique id of the lægemiddelordination."
+* identifier[FmkDrugMedicationVersion] -> "DrugMedication.Version" "Revision number, carried alongside the identifier when a specific version of the ordination is being referenced."
+* status -> "DrugMedication.Withdrawn / DrugMedication.Paused" "`active` = neither Withdrawn nor Paused; `on-hold` = Paused element present; `stopped` = Withdrawn element present (seponeret) - SHOULD be supplemented via the adherence extension; `completed` = behandlingsperiode afsluttet; `entered-in-error` / `unknown` as per FHIR."
+* medicationCodeableConcept.coding[ATC] -> "DrugMedication.Drug.ATC.Code / ATC.Text" "WHO ATC code for the drug."
+* medicationCodeableConcept.coding[ActiveSubstance] -> "DrugMedication.Drug.Substances.ActiveSubstance" "Active-substance coding (source: Medicinpriser / Local / Magistrel)."
+* medicationCodeableConcept.text -> "DrugMedication.Drug.Name (+ Form/Strength)" "Free-text rendering of the drug name, form and strength."
+* subject -> "MedicineCard.Patient" "FMK patient reference."
+* effective[x] -> "DrugMedication.BeginEndDate.TreatmentStartDate / TreatmentEndDate" "Prefer `effectivePeriod` when start and/or end are known; use `effectiveDateTime` for point-in-time statements. FMK also supports `TreatmentStartedPreviously` and `TreatmentEndingUndetermined`."
+* dateAsserted -> "MedicineCard retrieval timestamp" "Timestamp of the FMK medicinkort retrieval (NOT the ordination date). In FMK, see GetMedicineCardResponse."
+* reasonCode -> "DrugMedication.Indication" "Indikation / årsag (Code + Text, or FreeText)."
+* dosage.text -> "DrugMedication.Dosage" "Human-rendered dosage."
+* dosage.route -> "DrugMedication.RouteOfAdministration" "Administration route (Code + Text)."
+* extension[adherence] -> "DrugMedication.Withdrawn / Paused" "R5 adherence code (e.g. `stopped`, `not-taking`, `on-hold`) for richer semantics than `status` alone."
 
 
 Instance: JohnMedicationStatementSimvastatin
 InstanceOf: DkCoreMedicationStatement
 Title: "John's aktive Simvastatin på medicinkortet"
-Description: "Example DkCoreMedicationStatement derived from the current FMK medication card for Simvastatin."
+Description: "Example DkCoreMedicationStatement derived from the current FMK medicinkort for Simvastatin."
 Usage: #example
-* identifier[FmkOrdinationId].system = $FmkOrdinationId
-* identifier[FmkOrdinationId].value = "123456789"
+* identifier[FmkDrugMedicationId].system = $FmkDrugMedicationId
+* identifier[FmkDrugMedicationId].value = "987654321"
 * status = #active
 * medicationCodeableConcept.coding[ATC] = $atc#C10AA01 "Simvastatin"
 * medicationCodeableConcept.coding[ActiveSubstance].system = $FmkActiveSubstance
@@ -101,10 +101,10 @@ Usage: #example
 Instance: JohnMedicationStatementStopped
 InstanceOf: DkCoreMedicationStatement
 Title: "John's seponerede Metformin"
-Description: "Example DkCoreMedicationStatement for a medication that has been stopped (seponeret). Note: uses the adherence extension in addition to status = stopped to carry the richer R5 semantics."
+Description: "Example DkCoreMedicationStatement for a medication that has been stopped (seponeret i FMK, dvs. DrugMedication.Withdrawn er sat). Note: uses the adherence extension in addition to status = stopped to carry the richer R5 semantics."
 Usage: #example
-* identifier[FmkOrdinationId].system = $FmkOrdinationId
-* identifier[FmkOrdinationId].value = "987654321"
+* identifier[FmkDrugMedicationId].system = $FmkDrugMedicationId
+* identifier[FmkDrugMedicationId].value = "987654323"
 * status = #stopped
 * extension[adherence].extension[code].valueCodeableConcept.coding.system = "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"
 * extension[adherence].extension[code].valueCodeableConcept.coding.code = #stopped

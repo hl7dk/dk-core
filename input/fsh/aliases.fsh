@@ -32,9 +32,14 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $v3-ActPriority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: $v3-ActCode3.0.0 = http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0
 Alias: $atc = http://www.whocc.no/atc
-Alias: $FmkOrdinationId = https://www.sundhed.dk/medicinkort/ordination
-Alias: $FmkDrugMedicationId = https://www.sundhed.dk/medicinkort/drug-medication
-Alias: $FmkActiveSubstance = https://www.sundhed.dk/medicinkort/active-substance
+// FMK schema namespace (see https://wiki.fmk-teknik.dk/fmk:extensions:e5). FMK's canonical
+// identifier for an ordination is the DrugMedicationIdentifier (a long, paired with Version
+// when a specific revision is meant); there is no separate "ordination" identifier.
+Alias: $FmkDrugMedicationId = http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugMedicationIdentifier
+Alias: $FmkDrugMedicationVersion = http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugMedicationVersion
+// Varenummer from Medicinpriser (LMS01 field 1); 11-digit product identifier.
+Alias: $FmkDrugId = http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugIdentifier
+Alias: $FmkActiveSubstance = http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/ActiveSubstance
 Alias: $mr-effectiveDosePeriod = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.effectiveDosePeriod
 Alias: $mr-renderedDosageInstruction = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction
 Alias: $ms-adherence = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence
@@ -43,7 +48,12 @@ Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinit
 Alias: $eu-medicationRequest = http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
 Alias: $eu-medicationStatement = http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
 Alias: $eu-medication = http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
-Alias: $DdvVaccinationId = https://www.sundhed.dk/vaccination/id
+// DDV (Det Danske Vaccinationsregister) XML schema namespace, base interface 1.4.0 + E1.
+// Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1
+Alias: $DdvVaccinationId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifier
+Alias: $DdvVaccinationVersion = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationVersionIdentifier
+Alias: $DdvVaccineId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifier
+Alias: $DdvCredibility = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationCredibility
 Alias: $DdvPatientId = https://www.sundhed.dk/patient
 Alias: $DanishXdsOid = urn:oid:1.2.208.184.100.9
 Alias: $MedComFormatOID = urn:oid:1.2.208.184.100.10

@@ -11,34 +11,41 @@ Description: "HL7 Denmark core profile for a medicinal product, aligned with the
   * ^slicing.description = "Slice code.coding by system to accommodate the terminologies FMK uses for a drug"
 * code.coding contains
     ATC 0..1 and
-    ActiveSubstance 0..1
+    ActiveSubstance 0..1 and
+    Varenummer 0..1
 * code.coding[ATC]
-  * ^short = "WHO ATC code. In FMK: DrugMedication.AtcCode / AtcText."
+  * ^short = "WHO ATC code. In FMK: DrugMedication.Drug.ATC (Code + Text)."
   * system 1..
   * system = $atc (exactly)
   * code 1..
 * code.coding[ActiveSubstance]
-  * ^short = "[DA] Aktivt stof. In FMK: DrugMedication.ActiveSubstance."
+  * ^short = "[DA] Aktivt stof. In FMK: DrugMedication.Drug.Substances.ActiveSubstance."
   * system 1..
   * system = $FmkActiveSubstance (exactly)
   * code 1..
-* form ^short = "[DA] Lægemiddelform. In FMK: DrugMedication.Form (may be free text)."
-* ingredient.strength ^short = "[DA] Styrke. In FMK: DrugMedication.Strength (may be free text until structured data is available)."
+* code.coding[Varenummer]
+  * ^short = "[DA] Varenummer fra Medicinpriser (LMS01 felt 1, 11-cifret). In FMK: DrugMedication.Drug.Identifier (source = Medicinpriser / Local / Magistrel / Stærke vitaminer m.v. / Tilknyttede behandlinger)."
+  * system 1..
+  * system = $FmkDrugId (exactly)
+  * code 1..
+* form ^short = "[DA] Lægemiddelform. In FMK: DrugMedication.Drug.Form (Code + Text)."
+* ingredient.strength ^short = "[DA] Styrke. In FMK: DrugMedication.Drug.Strength (Value + UnitCode + UnitText, or free text)."
 * manufacturer only Reference(DkCoreOrganization)
 
 
 Mapping: DkCoreMedicationToFmk
 Source: DkCoreMedication
-Target: "https://wiki.fmk-teknik.dk/start"
+Target: "https://wiki.fmk-teknik.dk/fmk:extensions:e5"
 Title: "Fælles Medicinkort (FMK)"
 Id: dk-core-medication-fmk
-* -> "DrugMedication" "**Named medicinal product in FMK.**"
-* code.coding[ATC] -> "DrugMedication.AtcCode / AtcText" "WHO ATC code."
-* code.coding[ActiveSubstance] -> "DrugMedication.ActiveSubstance" "Active-substance coding."
-* code.text -> "DrugMedication (name/form/strength)" "Free-text rendering of the drug name, form and strength."
-* form -> "DrugMedication.Form" "Lægemiddelform. May be free text."
-* ingredient.strength -> "DrugMedication.Strength" "Styrke; may be free text until structured data is available."
-* manufacturer -> "DrugMedication (manufacturer)" "Organisation reference for the drug manufacturer."
+* -> "DrugMedication.Drug" "**Named medicinal product within an FMK DrugMedication (lægemiddelordination).**"
+* code.coding[ATC] -> "DrugMedication.Drug.ATC.Code / ATC.Text" "WHO ATC code."
+* code.coding[ActiveSubstance] -> "DrugMedication.Drug.Substances.ActiveSubstance" "Active-substance coding (source: Medicinpriser / Local / Magistrel)."
+* code.coding[Varenummer] -> "DrugMedication.Drug.Identifier" "Danish drug product number (varenummer, 11-digit, Medicinpriser)."
+* code.text -> "DrugMedication.Drug.Name (+ Form/Strength)" "Free-text rendering of the drug name, form and strength."
+* form -> "DrugMedication.Drug.Form" "Lægemiddelform (Code + Text)."
+* ingredient.strength -> "DrugMedication.Drug.Strength" "Styrke (Value + UnitCode + UnitText, or free text)."
+* manufacturer -> "DrugMedication.Drug (manufacturer)" "Organisation reference for the drug manufacturer."
 
 
 Instance: SimvastatinActavis40mg
