@@ -22,13 +22,13 @@ The profile claims conformance to [MedicationStatement (EU core)](https://build.
 | `Dosage.Text` | `dosage.text` |
 | `Treatment.Administration` | `dosage.route` (free-text allowed) |
 | Snapshot timestamp (the time the card was retrieved) | `dateAsserted` |
-| `HasNegativeConsent = true` | `status = #stopped` plus `extension[adherence]` with an appropriate `no-longer-taking` / `not-taking` code |
+| `HasNegativeConsent = true` | `status = #stopped` plus `extension[adherence]` with an appropriate `stopped` / `not-taking` code |
 | `MedicationCardStatus.EnumStr` | `status` (active / completed / stopped / entered-in-error / unknown) |
 
 Consumers of this profile should be aware that a MedicationStatement derived from an FMK medication card is, by design, a *view* on the current state of one or more ordinations rather than an authoritative clinical assertion. When populating `dateAsserted`, use the timestamp of the FMK retrieval, not the ordination date.
 
 #### Extensions in use
-The profile brings forward the R5 `adherence` extension from the HL7 Europe Base profile. FMK's `HasNegativeConsent` flag and card-level status should be surfaced as adherence codes where possible; the coarse `status = stopped` value remains but loses nuance compared to adherence codes such as `no-longer-taking`, `not-taking`, `on-hold`.
+The profile brings forward the R5 `adherence` extension from the HL7 Europe Base profile. FMK's `HasNegativeConsent` flag and card-level status should be surfaced as adherence codes where possible; the coarse `status = stopped` value remains but loses nuance compared to adherence codes such as `stopped`, `not-taking`, `on-hold`.
 
 #### Effective[x]
 `effective[x]` is restricted to either `effectiveDateTime` (point-in-time) or `effectivePeriod` (typical for FMK). Prefer `effectivePeriod` when an end date is known, or when the start date is known and the medication is ongoing.

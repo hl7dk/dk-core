@@ -81,7 +81,7 @@ Usage: #example
 * reasonCode.text = "Hyperkolesterolæmi"
 * dosageInstruction
   * text = "1 tablet dagligt til aftensmad"
-  * route = http://snomed.info/sct#26643006 "Oral use"
+  * route = http://snomed.info/sct#26643006 "Oral route"
 * extension[effectiveDosePeriod].valuePeriod.start = "2024-03-15"
 * extension[renderedDosageInstruction].valueMarkdown = "1 tablet (40 mg) dagligt til aftensmad, til kontrol"
 

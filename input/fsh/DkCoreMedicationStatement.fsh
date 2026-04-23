@@ -74,7 +74,7 @@ Usage: #example
 * dateAsserted = "2026-04-20"
 * reasonCode.text = "Hyperkolesterolæmi"
 * dosage.text = "1 tablet dagligt til aftensmad"
-* dosage.route = http://snomed.info/sct#26643006 "Oral use"
+* dosage.route = http://snomed.info/sct#26643006 "Oral route"
 
 
 Instance: JohnMedicationStatementStopped
@@ -85,9 +85,9 @@ Usage: #example
 * identifier[FmkOrdinationId].system = $FmkOrdinationId
 * identifier[FmkOrdinationId].value = "987654321"
 * status = #stopped
-* extension[adherence].extension[code].valueCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/medicationstatement-adherence"
-* extension[adherence].extension[code].valueCodeableConcept.coding.code = #no-longer-taking
-* extension[adherence].extension[code].valueCodeableConcept.coding.display = "No longer Taking"
+* extension[adherence].extension[code].valueCodeableConcept.coding.system = "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"
+* extension[adherence].extension[code].valueCodeableConcept.coding.code = #stopped
+* extension[adherence].extension[code].valueCodeableConcept.coding.display = "Stopped"
 * medicationCodeableConcept.coding[ATC] = $atc#A10BA02 "Metformin"
 * medicationCodeableConcept.text = "Metformin 500 mg"
 * subject = Reference(Patient/john)
