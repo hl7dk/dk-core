@@ -14,6 +14,18 @@ Description: "HL7 Denmark core profile for health professionals and other actors
 * qualification[officialHealthAuthorization].code from DkCoreProfessionGroupValueSet (extensible)
   * ^short = "[DA] Kode for kvalifikation, som specificeret af autorisationsregisteret"
 
+Mapping: DkCorePractitionerToAutregweb
+Source: DkCorePractitioner
+Target: "https://autregweb.sst.dk"
+Title: "Autorisationsregisteret (Styrelsen for Patientsikkerhed)"
+Id: dk-core-practitioner-autreg
+* -> "Authorised health professional" "**Danish Authorization Register (Autorisationsregisteret), maintained by Styrelsen for Patientsikkerhed.**"
+* qualification[officialHealthAuthorization] -> "Autorisation" "A formally registered qualification in the national authorization register."
+* qualification[officialHealthAuthorization].identifier -> "Autorisations-id" "Authorization identifier under `https://autregweb.sst.dk`."
+* qualification[officialHealthAuthorization].code -> "Faggruppekode" "Profession-group code from the `DkCoreProfessionGroupCodes` classification (e.g. `7170` = Læge, `5166` = Sygeplejerske)."
+* qualification[officialHealthAuthorization].period -> "Gyldighedsperiode" "Validity period of the authorization (start = authorization granted, end = expiry or revocation)."
+
+
 Instance: AbrahamLaege
 InstanceOf: DkCorePractitioner
 Title: "AbrahamLæge"

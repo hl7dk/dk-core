@@ -43,6 +43,21 @@ Description: "HL7 Denmark core profile for an administered or refused vaccinatio
 * note ^short = "Fri tekst. Anvendes blandt andet til DDV CoverageDuration, SelfCreated, NegativeConsent og historikoplysninger der ikke har et dedikeret Immunization-element."
 
 
+Mapping: DkCoreImmunizationToDdv
+Source: DkCoreImmunization
+Target: "https://www.nspop.dk/pages/releaseview.action?pageId=31798109"
+Title: "Det Danske Vaccinationsregister (DDV)"
+Id: dk-core-immunization-ddv
+* -> "VaccinationRecord" "**DDV vaccination record, as exposed via sundhed.dk's `/app/vaccination/api/v1/effectuatedvaccinations/` endpoint.**"
+* identifier[DdvVaccinationId] -> "VaccinationIdentifier" "Numeric DDV identifier of the vaccination. Serialised as `identifier.value` under system `https://www.sundhed.dk/vaccination/id`."
+* status -> "ActiveStatus / NegativeConsent" "Derived: `NegativeConsent = true` → `not-done`; else `ActiveStatus = true` → `completed`; `ActiveStatus = false` → `not-done`."
+* vaccineCode -> "Vaccine" "DDV `Vaccine` is a free-text product name, carried in `vaccineCode.text`. Optional ATC J07 / SNOMED CT codings MAY be added."
+* occurrence[x] -> "EffectuatedDateTime" "Time the vaccination was administered."
+* recorded -> "EffectuatedDateTime" "Used in lieu of a separate registration timestamp when none is available."
+* performer.actor -> "EffectuatedBy" "Who effectuated the vaccination. DDV often delivers this as free text; use `actor.display` when no structured reference is available."
+* note -> "CoverageDuration / SelfCreated / NegativeConsent / history" "Free-text notes for DDV fields without a dedicated Immunization element (e.g. coverage duration, self-created flag, negative-consent marker, prior history entries)."
+
+
 Instance: JohnImmunizationInfluvac
 InstanceOf: DkCoreImmunization
 Title: "John's Influvac vaccination"

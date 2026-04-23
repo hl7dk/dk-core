@@ -27,6 +27,20 @@ Description: "HL7 Denmark core profile for a medicinal product, aligned with the
 * manufacturer only Reference(DkCoreOrganization)
 
 
+Mapping: DkCoreMedicationToFmk
+Source: DkCoreMedication
+Target: "https://wiki.fmk-teknik.dk/start"
+Title: "Fælles Medicinkort (FMK)"
+Id: dk-core-medication-fmk
+* -> "DrugMedication" "**Named medicinal product in FMK.**"
+* code.coding[ATC] -> "DrugMedication.AtcCode / AtcText" "WHO ATC code."
+* code.coding[ActiveSubstance] -> "DrugMedication.ActiveSubstance" "Active-substance coding."
+* code.text -> "DrugMedication (name/form/strength)" "Free-text rendering of the drug name, form and strength."
+* form -> "DrugMedication.Form" "Lægemiddelform. May be free text."
+* ingredient.strength -> "DrugMedication.Strength" "Styrke; may be free text until structured data is available."
+* manufacturer -> "DrugMedication (manufacturer)" "Organisation reference for the drug manufacturer."
+
+
 Instance: SimvastatinActavis40mg
 InstanceOf: DkCoreMedication
 Title: "Simvastatin \"Actavis\" 40 mg filmovertrukne tabletter"

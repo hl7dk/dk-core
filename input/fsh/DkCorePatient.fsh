@@ -46,6 +46,27 @@ Description: "HL7 Denmark core profile for a patient"
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
 * contact.relationship from extended-patient-contactrelationship (extensible)
 
+Mapping: DkCorePatientToCprAndDawa
+Source: DkCorePatient
+Target: "https://cpr.dk"
+Title: "CPR-registeret (and DAWA for addresses)"
+Id: dk-core-patient-cpr
+* -> "Person" "**Danish person-identity registries. `identifier[cpr]` / `name[official]` / `gender` / `birthDate` / the official address extension derive from the CPR register; address is curated against DAWA.**"
+* identifier[cpr] -> "CPR-nummer" "CPR-nummer under `urn:oid:1.2.208.176.1.2` - the national civil registration number."
+* identifier[x-ecpr] -> "X-eCPR" "Externally assigned eCPR from the national eCPR service for persons without a permanent CPR (e.g. foreign patients, newborns pre-registration)."
+* identifier[d-ecpr] -> "D-eCPR" "Decentralised eCPR assigned locally."
+* name[official] -> "CPR officielt navn" "Official name as recorded in CPR (`use = official`, `family` mandatory)."
+* gender -> "CPR køn" "Gender as recorded in CPR (derived from the 10th digit of CPR-nummer unless corrected)."
+* birthDate -> "CPR fødselsdag" "Birth date as recorded in CPR."
+* address -> "DAWA (Danmarks Adressers Web API)" "Danish addresses curated per https://dawa.aws.dk/."
+* address.extension[municipalityCode] -> "Kommunekode" "Municipality code for the address."
+* address.extension[regionalSubDivisionCodes] -> "ISO 3166-2 regionskode" "Region code for the address."
+* address.extension[address-official] -> "CPR bopælsadresse" "Marks the address as the CPR-registered official address (see https://www.retsinformation.dk/eli/lta/2023/1010)."
+* maritalStatus -> "CPR civilstand" "Civil status from the CPR register."
+* generalPractitioner -> "SOR almen praksis" "The patient's general practitioner, typically referenced via a SOR unit id."
+* managingOrganization -> "Patientens administrerende organisation" "DkCoreOrganization responsible for managing the patient record."
+
+
 Instance: 283
 InstanceOf: DkCorePatient
 Title: "Example of valid patient with full address"

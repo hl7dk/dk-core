@@ -42,6 +42,24 @@ Description: "HL7 Denmark core profile for a danish health organization"
   * ^short = "[DA] Producent Id"
 * type from $sor-organization-type (preferred)
 
+Mapping: DkCoreOrganizationToDanishRegistries
+Source: DkCoreOrganization
+Target: "https://www.nspop.dk/display/public/web/SOR"
+Title: "Danish Organization Registries (SOR, CVR, GLN, Ydernummer, FK-ORG, MedCom)"
+Id: dk-core-organization-registries
+* -> "Organization" "**Danish organizational identity registries. SOR is the primary source of truth for healthcare organizations; other slices carry the organization's cross-references to parallel registries.**"
+* identifier[SOR-ID] -> "SOR (Sundhedsvæsenets Organisationsregister)" "SOR-id under `urn:oid:1.2.208.176.1.1`. Authoritative healthcare-organization registry."
+* identifier[CVR-ID] -> "CVR (Det Centrale Virksomhedsregister)" "CVR-nummer under `http://cvr.dk`. The national business register."
+* identifier[EAN-ID] -> "GLN (GS1)" "GLN / EAN location number under `https://www.gs1.org/gln`."
+* identifier[Ydernummer] -> "Ydernummerregisteret" "Ydernummer under `urn:oid:1.2.208.176.1.4`. Regional register used for primary-care practice settlements."
+* identifier[KOMBIT-ORG-ID] -> "FK-ORG (KOMBIT Organisationsregister)" "FK-ORG organizational-unit id under `https://kombit.dk/sts/organisation`. Municipal organization register."
+* identifier[Kommunekode] -> "Kommunekoder" "Municipality code under `http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes`."
+* identifier[Regionskode] -> "ISO 3166-2 (Danske regioner)" "Region code under `urn:iso:std:iso:3166:-2`."
+* identifier[ProducentID] -> "MedCom ProducentID" "MedCom producer identifier under `http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID`."
+* type -> "SOR enhedstype" "Organization type, preferred from the SOR organization-type value set."
+* partOf -> "SOR parent unit" "Parent SOR unit in the organizational hierarchy."
+
+
 Instance: CenterForDiabetes
 InstanceOf: DkCoreOrganization
 Title: "Center for Diabetes"

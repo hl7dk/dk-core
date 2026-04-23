@@ -59,6 +59,29 @@ Description: "HL7 Denmark core profile for medication orders (ordinationer), ali
 * dispenseRequest.performer only Reference(DkCoreOrganization)
 
 
+Mapping: DkCoreMedicationRequestToFmk
+Source: DkCoreMedicationRequest
+Target: "https://wiki.fmk-teknik.dk/start"
+Title: "Fælles Medicinkort (FMK)"
+Id: dk-core-medicationrequest-fmk
+* -> "Ordination" "**FMK drug order (ordination).**"
+* identifier[FmkOrdinationId] -> "DrugMedication.OrdinationIdentifier" "Identifier of an FMK ordination."
+* identifier[FmkDrugMedicationId] -> "DrugMedication.DrugMedicationIdentifier" "Identifier of a specific version of the drug medication."
+* status -> "MedicationCardStatus.EnumStr / HasNegativeConsent" "`active` / `stopped` / `completed`. `HasNegativeConsent = true` maps to `stopped`."
+* intent -> "Ordination type" "FMK ordinations are typically modelled as `intent = order`."
+* medicationCodeableConcept.coding[ATC] -> "DrugMedication.AtcCode / AtcText" "WHO ATC code."
+* medicationCodeableConcept.coding[ActiveSubstance] -> "DrugMedication.ActiveSubstance" "Active-substance coding."
+* medicationCodeableConcept.text -> "DrugMedication (name/form/strength)" "Free-text rendering of the drug name, form and strength."
+* subject -> "Patient" "FMK patient reference."
+* authoredOn -> "Ordination date" "When the ordination was authored."
+* requester -> "Ordinerende behandler" "Prescriber."
+* reasonCode -> "Treatment.Cause" "Indikation / årsag."
+* dosageInstruction.text -> "Dosage.Text" "Human-rendered dosage."
+* dosageInstruction.route -> "Treatment.Administration" "Administration route."
+* extension[effectiveDosePeriod] -> "Treatment.StartDate / Treatment.EndDate" "R5 back-port: period over which the medication is to be taken."
+* extension[renderedDosageInstruction] -> "Dosage.Text" "R5 back-port: full human-rendered dosage string."
+
+
 Instance: JohnMedicationRequestSimvastatin
 InstanceOf: DkCoreMedicationRequest
 Title: "John's Simvastatin ordination"

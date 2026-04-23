@@ -56,6 +56,27 @@ Description: "HL7 Denmark core profile for a statement about medication being ta
 * dosage ^short = "Dosering. In FMK: Dosage.Text; Treatment.Administration (route) kan lægges i dosage.route eller dosage.patientInstruction."
 
 
+Mapping: DkCoreMedicationStatementToFmk
+Source: DkCoreMedicationStatement
+Target: "https://wiki.fmk-teknik.dk/start"
+Title: "Fælles Medicinkort (FMK)"
+Id: dk-core-medicationstatement-fmk
+* -> "MedicationCard entry" "**Snapshot of a drug on the FMK medication card (aktuelt medicinbillede).**"
+* identifier[FmkOrdinationId] -> "DrugMedication.OrdinationIdentifier" "Identifier of an FMK ordination."
+* identifier[FmkDrugMedicationId] -> "DrugMedication.DrugMedicationIdentifier" "Identifier of a specific version of the drug medication."
+* status -> "MedicationCardStatus.EnumStr / HasNegativeConsent" "`active` / `completed` / `stopped` / `entered-in-error` / `unknown`. `HasNegativeConsent = true` maps to `stopped` and SHOULD be supplemented via the adherence extension."
+* medicationCodeableConcept.coding[ATC] -> "DrugMedication.AtcCode / AtcText" "WHO ATC code for the drug."
+* medicationCodeableConcept.coding[ActiveSubstance] -> "DrugMedication.ActiveSubstance" "Active-substance coding."
+* medicationCodeableConcept.text -> "DrugMedication (name/form/strength)" "Free-text rendering of the drug name, form and strength."
+* subject -> "Patient" "FMK patient reference."
+* effective[x] -> "Treatment.StartDate / Treatment.EndDate" "Prefer `effectivePeriod` when start and/or end are known; use `effectiveDateTime` for point-in-time statements."
+* dateAsserted -> "Snapshot timestamp" "Timestamp of the FMK medication-card retrieval (NOT the ordination date)."
+* reasonCode -> "Treatment.Cause" "Indikation / årsag."
+* dosage.text -> "Dosage.Text" "Human-rendered dosage."
+* dosage.route -> "Treatment.Administration" "Administration route (may be free text)."
+* extension[adherence] -> "HasNegativeConsent" "R5 adherence code (e.g. `stopped`, `not-taking`, `on-hold`) for richer semantics than `status = stopped` alone."
+
+
 Instance: JohnMedicationStatementSimvastatin
 InstanceOf: DkCoreMedicationStatement
 Title: "John's aktive Simvastatin på medicinkortet"
