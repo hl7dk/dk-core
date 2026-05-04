@@ -354,13 +354,6 @@ Description: "DK Related Person Relationship Types"
 // * include codes from system MunicipalityCodes
 // * include codes from system GreenlandMunicipalityCodes
 
-// ValueSet: RegionalSubdivisionCodes
-// Id: dk-core-RegionalSubDivisionCodes
-// Title: "DK Regional Subdivision Codes"
-// Description: "Subdivision codes (Regional codes) used in Denmark"
-// * ^experimental = false
-// * include codes from system DKCoreRegionalSubdivisionCodes
-
 // ValueSet: LoincBasicObservation
 // Id: dk-core-LoincBasicObservation
 // Title: "DK Core LOINC Basic Observations"

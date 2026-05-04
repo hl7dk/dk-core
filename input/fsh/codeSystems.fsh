@@ -428,29 +428,6 @@ Description: "Municipality codes as defined by https://danmarksadresser.dk/adres
   * ^designation.language = #da
   * ^designation.value = "Vejle"
 
-CodeSystem: DKCoreRegionalSubdivisionCodes
-Title: "DK Regional Subdivision Codes"
-Id: dk-core-regional-subdivision-codes
-Description: "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"
-* ^experimental = false
-* ^caseSensitive = false
-* ^content = #complete
-* #DK-84 "Capital Region of Denmark"
-  * ^designation.language = #da
-  * ^designation.value = "Hovedstaden"
-* #DK-82 "Central Denmark Region"
-  * ^designation.language = #da
-  * ^designation.value = "Midtjylland"
-* #DK-81 "Nord Denmark Region"
-  * ^designation.language = #da
-  * ^designation.value = "Nordjylland"
-* #DK-85 "Region Zealand"
-  * ^designation.language = #da
-  * ^designation.value = "Sjælland"
-* #DK-83 "Region of Southern Denmark"
-  * ^designation.language = #da
-  * ^designation.value = "Syddanmark"
-
 CodeSystem: DK_Marital_Status_Codes
 Id: dk-marital-status
 Title: "DK Marital Statuses"
