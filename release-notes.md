@@ -1,13 +1,10 @@
-Dk-core version 3.6.0 includes the following changes from 3.5.0:
-  - Regional subdivision coding was aligned to ISO 3166-2 (`urn:iso:std:iso:3166:-2`) across `DkCoreOrganization`, `DkCorePatient`, examples, and the `dk-core-RegionalSubDivisionCodes` value set.
-  - `DkCoreOrganization` mandatory-identifier invariant now also accepts CVR (`http://cvr.dk`), and a CVR-based organization example was added.
-  - Added a comprehensive MedCom test patient package (`TestPatienter.fsh`) with family/group examples and related-person links (84 resources total).
-  - Updated related-person terminology by adding `GRPRN` (grandparent) to the value set and correcting affected examples.
-  - Fixed X-eCPR and D-eCPR invariant expressions in `DkCoreeCprIdentifier` to ensure regex validation evaluates correctly.
-  - Refined terminology handling by separating CodeSystems and CodeSystem Supplements in the terminology page and making supplement naming explicit.
-  - Cleaned up SNOMED/NPU usage in examples: removed hardcoded displays, corrected coding references, and removed invalid NPU blood-pressure component codes.
-  - Corrected SNOMED CT display names to use official Danish designations from the Danish SNOMED edition (e.g. "Measurement" → "måling", "almen medicin" → "almen lægepraksis").
-  - Removed version pinning from the Danish SNOMED CT system-version parameter to improve terminology server routing.
-  - Removed the local `DkCoreDocumentReferenceVersionID` extension definition in favor of existing backport extension support.
-  - Updated Danish SNOMED references to use the Danish SNOMED CT edition module without explicit version pinning.
-  - Updated the Minimal DocumentReference guidance link to IHE MHD 4.2.3.
+Dk-core version 3.7.0 includes the following changes from 3.6.0:
+  - Added a new `DkCoreDiagnosticReport` profile for diagnostic reports (laboratory reports, personal health monitoring reports, and progress notes), with a `category` sliced into `studyType`, `specialty`, and a Danish-specific `danishSpecialty`, an extensible `code` binding, DK-Core-typed references, and worked examples (`ElseHomeNursingMeasurements`, `ElseLaboratoryReport`).
+  - Added supporting terminology: value sets `dk-core-LoincDiagnosticDocumentTypes`, `dk-core-LoincLabStudyTypes`, `dk-core-SCTLaboratorySpecialities`, and `dk-core-practice-setting-exclude-lab-code`.
+  - Added a `cvr` NamingSystem (Central Business Register, `http://cvr.dk` / OID `1.3.184`) and a laboratory `DkCoreOrganization` example (`KliniskBiokemiHBY`).
+  - Upgraded the Personal Health Device (PHD) dependency to `hl7.fhir.uv.phd` 2.0.0 and migrated the Continua/PHD examples accordingly: `phd-observation` category code changed to `phd`, Continua code-system URLs re-pointed, gateway/coincident-timestamp linkage moved to the `CoincidentTimeStampReference` extension, added device `specialization` and certified-device-list properties, and blood-pressure status now uses `valueBoolean`.
+  - Updated dependencies: `hl7.fhir.uv.extensions.r4` to the released 5.3.0, removed `hl7.fhir.extensions.r5` 4.0.1, and added `hl7.fhir.uv.xver-r5.r4` 0.1.0.
+  - Removed the local `dk-core-regional-subdivision-codes` CodeSystem (and its alias); regional subdivisions now rely solely on ISO 3166-2.
+  - Renamed FSH definitions to PascalCase while preserving canonical Ids (`V2_0131DkSupplement`, `ExtendedPatientContactRelationship`) and updated the `DkCorePatient` contact-relationship binding accordingly.
+  - Added SNOMED CT copyright notices to the laboratory and SOR practice-setting value sets.
+  - Corrected SNOMED CT display names in examples to official Danish designations (e.g. "Cardiac pacemaker in situ" → "kardiel pacemaker in situ").
