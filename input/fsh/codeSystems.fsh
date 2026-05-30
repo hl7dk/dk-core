@@ -51,7 +51,7 @@ Description: "CodeSystem supplement with danish translations for administrative 
 
 
 
-CodeSystem: v2-0131DkSupplement
+CodeSystem: V2_0131DkSupplement
 Id: v2-0131-supplement
 Title: "DK v2 Contact Role Supplement"
 Description: "CodeSystem supplement with danish translations for Contact Role"

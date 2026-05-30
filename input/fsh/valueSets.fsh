@@ -302,7 +302,8 @@ Description: "DK D-eCPR OID values"
 * ^status = #active
 * include codes from system DkCoreDeCPRCodes
 
-ValueSet: extended-patient-contactrelationship
+ValueSet: ExtendedPatientContactRelationship
+Id: extended-patient-contactrelationship
 Title: "DK Extended Patient Contact Relationship"
 Description: "DK Extended Patient Contact Relationship"
 * ^experimental = false
