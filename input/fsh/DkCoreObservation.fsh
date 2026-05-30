@@ -163,7 +163,7 @@ Usage: #example
 Title: "ElsePainVRS"
 Description: "Elses smerte målt med VRS"
 * subject = Reference(else)
-* code.coding = $sct#1144798005 "Verbal Rating Scale pain intensity score"
+* code.coding = $sct#1144798005 "smerteintensitetsscore på verbal smerteskala"
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
