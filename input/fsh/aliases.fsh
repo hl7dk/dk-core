@@ -50,7 +50,6 @@ Alias: $eu-medication = http://hl7.eu/fhir/base/StructureDefinition/medication-e
 // DDV (Det Danske Vaccinationsregister) XML schema namespace, base interface 1.4.0 + E1.
 // Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1
 Alias: $DdvVaccinationId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifier
-Alias: $DdvVaccinationVersion = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationVersionIdentifier
 Alias: $DdvVaccineId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifier
 Alias: $DdvCredibility = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationCredibility
 Alias: $DdvPatientId = https://www.sundhed.dk/patient
