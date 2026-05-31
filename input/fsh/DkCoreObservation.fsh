@@ -163,7 +163,7 @@ Usage: #example
 Title: "ElsePainVRS"
 Description: "Elses smerte målt med VRS"
 * subject = Reference(else)
-* code.coding = $sct#1144798005 "Verbal Rating Scale pain intensity score"
+* code.coding = $sct#1144798005 "smerteintensitetsscore på verbal smerteskala"
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
@@ -203,14 +203,15 @@ Alias: $PhdBitsEnumerationObservation = http://hl7.org/fhir/uv/phd/StructureDefi
 Alias: $PhdCoincidentTimeStampObservation = http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation
 Alias: $EUI64 = urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680
 Alias: $BD_ADDR = http://hl7.org/fhir/sid/eui-48/bluetooth
-Alias: $ContinuaDeviceIdentifiers = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers
-Alias: $ContinuaPHD = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD
+Alias: $ContinuaDeviceIdentifiers = http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers
+Alias: $ContinuaPHD = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHDInterfaceIDs
 Alias: $ContinuaHFS = http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaHFS
 Alias: $PhdObservationCategory = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories
 Alias: $observation-gatewayDevice = http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice
+Alias: $CoincidentTimeStampReference = http://hl7.org/fhir/uv/phd/StructureDefinition/CoincidentTimeStampReference
 Alias: $v2-0136 = http://terminology.hl7.org/CodeSystem/v2-0136
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-Alias: $ASN1ToHL7 = http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7
+Alias: $ASN1ToHL7 = http://terminology.hl7.org/CodeSystem/ASN1ToHL7
 
 
 Instance: Poul
@@ -321,7 +322,7 @@ Usage: #example
 * meta.profile[+] = $observation-bodyweight
 * status = #final
 * category[+].coding = $observation-category#vital-signs "Vital signs"
-* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
+* category[+].coding = $PhdObservationCategory#phd "PHD generated Observation"
 * code
   * coding[+] = $LOINC#29463-7 "Body weight"
   * coding[+] = $IEEEx73#188736 "MDC_MASS_BODY_ACTUAL"
@@ -363,6 +364,11 @@ Usage: #example
 * type
   * coding = $IEEEx73#531981 "MDC_MOC_VMS_MDS_AHD"
   * text = "MDC_MOC_VMS_MDS_AHD: Continua compliant gateway"
+* specialization
+  * systemType
+    * coding = $IEEEx73#528457 "MDC_DEV_SPEC_PROFILE_GENERIC"
+    * text = "MDC_DEV_SPEC_PROFILE_GENERIC: Device following the IEEE 11073-10206 standard but no specific specialization"
+  * version = "2"
 * version[+]
   * type
     * coding = $IEEEx73#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
@@ -390,9 +396,17 @@ Usage: #example
   * valueCode[+]
     * coding = $ContinuaPHD#32783
     * text = "BluetoothLE: Weighing scale"
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
   * valueCode[+]
     * coding = $ContinuaPHD#32775
     * text = "BluetoothLE: Blood pressure monitor"
+* property[+]
+  * type
+    * coding = $IEEEx73#532353 "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST"
+    * text = "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list"
   * valueCode[+]
     * coding = $ContinuaPHD#32772
     * text = "BluetoothLE: Pulse oximeter"
@@ -508,7 +522,7 @@ InstanceOf: DkCoreObservation
 Usage: #inline
 * meta.profile[+] = $PhdNumericObservation
 * status = #final
-* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
+* category[+].coding = $PhdObservationCategory#phd "PHD generated Observation"
 * code
   * coding[+] = $IEEEx73#67996 "MDC_ATTR_VAL_BATT_CHARGE"
   * text = "MDC_ATTR_VAL_BATT_CHARGE: Battery level"
@@ -537,14 +551,11 @@ Usage: #example
 * code
   * coding[+] = $IEEEx73#67975 "MDC_ATTR_TIME_ABS"
   * text = "MDC_ATTR_TIME_ABS: Uses Absolute time clock"
-* subject = Reference(Poul)
+* subject = Reference(BPMonitor.C4F312FFFE53F2C9)
 * performer = Reference(Poul)
 * effectiveDateTime = "2023-02-23T10:24:34.467+01:00"
 * valueDateTime = "2023-02-23T10:24:25+01:00"
-* device = Reference(BPMonitor.C4F312FFFE53F2C9)
-* extension
-  * url = $observation-gatewayDevice
-  * valueReference = Reference(Telma.FEEDDADADEADBEEF)
+* device = Reference(Telma.FEEDDADADEADBEEF)
 
 
 Instance: BloodPressure.Poul.643992
@@ -556,7 +567,7 @@ Usage: #inline
 * meta.profile[+] = $observation-bp
 * status = #final
 * category[+].coding = $observation-category#vital-signs "Vital signs"
-* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
+* category[+].coding = $PhdObservationCategory#phd "PHD generated Observation"
 * code
   * coding[+] = $LOINC#85354-9 "Blood pressure panel with all children optional"
   * coding[+] = $IEEEx73#150020 "MDC_PRESS_BLD_NONINV"
@@ -583,10 +594,12 @@ Usage: #inline
     * text = "MDC_PRESS_BLD_NONINV_MEAN: Mean Blood Pressure"
   * valueQuantity = 99 'mm[Hg]' "mmHg"
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
-* extension
+* extension[+]
   * url = $observation-gatewayDevice
   * valueReference = Reference(Telma.FEEDDADADEADBEEF)
-* derivedFrom = Reference(CoincidentTimeStamp.0222)
+* extension[+]
+  * url = $CoincidentTimeStampReference
+  * valueReference = Reference(CoincidentTimeStamp.0222)
 
 
 Instance: HeartRate.Poul.1974654
@@ -603,7 +616,7 @@ Usage: #example
 * meta.profile[+] = $observation-heartrate
 * status = #final
 * category[+].coding = $observation-category#vital-signs "Vital signs"
-* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
+* category[+].coding = $PhdObservationCategory#phd "PHD generated Observation"
 * code
   * coding[+] = $LOINC#8867-4 "Heart rate"
   * coding[+] = $IEEEx73#149546 "MDC_PULS_RATE_NON_INV"
@@ -614,10 +627,12 @@ Usage: #example
 * effectiveDateTime = "2023-02-23T10:24:08+01:00"
 * valueQuantity = 93 '/min' "bpm"
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
-* extension
+* extension[+]
   * url = $observation-gatewayDevice
   * valueReference = Reference(Telma.FEEDDADADEADBEEF)
-* derivedFrom = Reference(CoincidentTimeStamp.0222)
+* extension[+]
+  * url = $CoincidentTimeStampReference
+  * valueReference = Reference(CoincidentTimeStamp.0222)
 
 
 Instance: BloodPressureStatus.Poul.133527
@@ -626,7 +641,7 @@ Usage: #inline
 * identifier.value = "C4F312FFFE53F2C9-3001749995-urn:oid:1.2.208.176.1.2-8410608-8192-20230223T102408.00"
 * meta.profile[+] = $PhdBitsEnumerationObservation
 * status = #final
-* category[+].coding = $PhdObservationCategory#phd-observation "PHD generated Observation"
+* category[+].coding = $PhdObservationCategory#phd "PHD generated Observation"
 * code
   * coding = $IEEEx73#8410608 "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS"
   * text = "MDC_BLOOD_PRESSURE_MEASUREMENT_STATUS: Blood Pressure measurement problem"
@@ -637,14 +652,14 @@ Usage: #inline
   * code
     * coding = $ASN1ToHL7#8410608.2
     * text = "irregular-pulse"
-  * valueCodeableConcept
-    * coding = $v2-0136#Y
-    * text = "Irregular pulse was detected"
+  * valueBoolean = true
 * device = Reference(BPMonitor.C4F312FFFE53F2C9)
-* extension
+* extension[+]
   * url = $observation-gatewayDevice
   * valueReference = Reference(Telma.FEEDDADADEADBEEF)
-* derivedFrom[+] = Reference(CoincidentTimeStamp.0222)
+* extension[+]
+  * url = $CoincidentTimeStampReference
+  * valueReference = Reference(CoincidentTimeStamp.0222)
 * derivedFrom[+] = Reference(BloodPressure.Poul.643992)
 
 

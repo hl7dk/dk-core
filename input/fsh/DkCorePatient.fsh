@@ -44,7 +44,7 @@ Description: "HL7 Denmark core profile for a patient"
   * identifier only SORIdentifier
 * managingOrganization only Reference(DkCoreOrganization)
 * link.other only Reference(DkCorePatient or DkCoreRelatedPerson)
-* contact.relationship from extended-patient-contactrelationship (extensible)
+* contact.relationship from ExtendedPatientContactRelationship (extensible)
 
 Mapping: DkCorePatientToCprAndDawa
 Source: DkCorePatient
