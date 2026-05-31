@@ -523,7 +523,7 @@ Id: consent-state-codes-dk-supplement
 Description: "Indicates the state of the consent"
 * ^experimental = false
 * ^content = #supplement
-* ^supplements = "http://hl7.org/fhir/consent-state-codes"
+* ^supplements = "http://hl7.org/fhir/consent-state-codes|4.0.1"
 * #draft
   * ^designation.language = #da
   * ^designation.use = $sct-int#900000000000013009

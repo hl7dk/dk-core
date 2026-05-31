@@ -40,6 +40,14 @@ parameters:
     - urn:oid:1.2.208.176.2.21
     - urn:oid:1.2.208.176.2.4.12
   path-expansion-params: Parameters-expParam.json
+  suppress-mappings:
+    - http://hl7.org/fhir/fivews
+    - http://hl7.org/fhir/workflow
+    - http://hl7.org/v3
+    - http://hl7.org/v3/cda
+#    - http://ihe.net/xds
+    - http://hl7.org/v2
+    - http://ncpdp.org/SCRIPT10_6
 
 dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.1.0
@@ -47,6 +55,8 @@ dependencies:
   hl7.fhir.uv.phd: 2.0.0
   hl7.fhir.uv.ipa: 1.1.0
   ihe.iti.mhd: 4.2.3
+  # HL7 Europe base profiles - referenced by the DkCoreMedication* profiles via imposeProfile.
+  hl7.fhir.eu.base: 2.0.0-ballot
 
 
 

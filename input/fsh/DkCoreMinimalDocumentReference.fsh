@@ -15,6 +15,30 @@ Description: "HL7 Denmark core profile for a Minimal DocumentReference inherited
 * subject only Reference(DkCorePatient)
 * context.sourcePatientInfo only Reference(DkCorePatient)
 
+Mapping: DkCoreMinimalDocumentReferenceToXds
+Source: DkCoreMinimalDocumentReference
+Target: "https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html"
+Title: "IHE MHD / MedCom XDS DocumentEntry"
+Id: dk-core-minimaldocref-xds
+* -> "DocumentEntry" "**IHE MHD DocumentReference mapped to an XDS DocumentEntry. Format and category codings follow the Danish XDS OID (`urn:oid:1.2.208.184.100.9`) and the MedCom format OID (`urn:oid:1.2.208.184.100.10`).**"
+* masterIdentifier -> "DocumentEntry.uniqueId" "[DocumentEntry.uniqueId](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.26)"
+* identifier -> "DocumentEntry.entryUUID" "[DocumentEntry.entryUUID](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.7)"
+* status -> "DocumentEntry.availabilityStatus" "[DocumentEntry.availabilityStatus](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.2)"
+* type -> "DocumentEntry.typeCode" "[DocumentEntry.typeCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.28) - LOINC document type."
+* category -> "DocumentEntry.classCode" "[DocumentEntry.classCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.3) - bound to the Danish XDS category OID."
+* subject -> "DocumentEntry.patientId" "[DocumentEntry.patientId](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.16) - CPR-keyed."
+* author -> "DocumentEntry.author" "[DocumentEntry.author](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.1)"
+* authenticator -> "DocumentEntry.legalAuthenticator" "[DocumentEntry.legalAuthenticator](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.14)"
+* securityLabel -> "DocumentEntry.confidentialityCode" "[DocumentEntry.confidentialityCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.4)"
+* content.attachment -> "DocumentEntry.repositoryUniqueId / size / hash / mimeType / language" "Physical document metadata and pointer."
+* content.format -> "DocumentEntry.formatCode" "[DocumentEntry.formatCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.8) - MedCom format OID (e.g. APD, PLR)."
+* context.event -> "DocumentEntry.eventCodeList" "[DocumentEntry.eventCodeList](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.6) - SKS event codes."
+* context.facilityType -> "DocumentEntry.healthcareFacilityTypeCode" "[DocumentEntry.healthcareFacilityTypeCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.10) - SOR organization-type binding."
+* context.practiceSetting -> "DocumentEntry.practiceSettingCode" "[DocumentEntry.practiceSettingCode](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.17) - SOR practice-setting binding."
+* context.sourcePatientInfo -> "DocumentEntry.sourcePatientInfo" "[DocumentEntry.sourcePatientInfo](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3.2.23)"
+* extension[versionid] -> "DocumentEntry.version" "R5 back-port: document version string."
+
+
 // DkCoreDocumentReference instance
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: DkCoreMinimalDocumentReference

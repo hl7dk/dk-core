@@ -42,6 +42,27 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
 * recorder only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCorePatient or DkCoreRelatedPerson)
 * asserter only Reference(DkCorePractitioner or DkCorePractitionerRole)
 
+Mapping: DkCoreConditionToDanishClassifications
+Source: DkCoreCondition
+Target: "https://medinfo.dk/sks/brows.php"
+Title: "Danish Condition Classifications (SKS-D, ICPC-2, FSIII, FFB)"
+Id: dk-core-condition-classifications
+* -> "Condition / Tilstand" "**Danish condition-classification systems used across sectors. A single DkCoreCondition MAY carry multiple codings when the same condition is represented in more than one classification.**"
+* code.coding[SCTConditionCode] -> "SNOMED CT" "International SNOMED CT condition code under `http://snomed.info/sct`; bound to the FHIR R4 condition-code value set."
+* code.coding[SKS-D] -> "SKS (Sundhedsvæsenets Klassifikations System), D-hierarkiet" "Secondary-sector diagnosis code from the SKS D-hierarchy under `urn:oid:1.2.208.176.2.4.12`."
+* code.coding[ICPC2code] -> "ICPC-2" "International Classification of Primary Care, 2nd edition under `urn:oid:1.2.208.176.2.31`. Primary-care / general practice."
+* code.coding[FSIIIConditionCode] -> "FSIII tilstande" "Municipal-care condition code (Fælles Sprog III) under `urn:oid:1.2.208.176.2.21`."
+* code.coding[FFBConditionCode] -> "FFB undertemaer" "Municipal rehabilitation sub-theme code (Fælles Faglige Begreber) under `urn:oid:1.2.208.176.2.22`."
+* clinicalStatus -> "Klinisk status" "active / recurrence / relapse / inactive / remission / resolved."
+* verificationStatus -> "Verifikationsstatus" "unconfirmed / provisional / differential / confirmed / refuted / entered-in-error."
+* subject -> "Patient" "DkCorePatient reference."
+* recorder -> "Registrerer" "Who recorded the condition (Practitioner / PractitionerRole / Patient / RelatedPerson)."
+* asserter -> "Asserter" "Clinician asserting the condition (Practitioner / PractitionerRole)."
+* extension[conditionLastAssertedDate] -> "Sidst bekræftet" "Last date the condition was confirmed valid in its current state (typically last follow-up)."
+* extension[notFollowedAnymore] -> "Ikke længere fulgt" "Date the condition lost focus in a specific clinical context."
+* extension[dueTo] -> "Forårsaget af" "Link to another condition / observation that caused this condition."
+
+
 Instance: ConditionPressureUlcer
 InstanceOf: DkCoreCondition
 Title: "John tryksår"

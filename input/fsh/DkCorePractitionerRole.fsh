@@ -8,6 +8,20 @@ Description: "HL7 Denmark core profile for health professional roles"
 * location only Reference(DkCoreLocation) 
 
 
+Mapping: DkCorePractitionerRoleToSor
+Source: DkCorePractitionerRole
+Target: "https://www.nspop.dk/display/public/web/SOR"
+Title: "SOR (Sundhedsvæsenets Organisationsregister)"
+Id: dk-core-practitionerrole-sor
+* -> "SOR practitioner-at-unit" "**A health professional performing a role at a SOR-registered organizational unit.** Complements the DkCoreOrganization mapping (SOR unit) and the DkCorePractitioner mapping (Autorisationsregisteret)."
+* practitioner -> "Autoriseret sundhedsperson" "Reference to the DkCorePractitioner performing the role."
+* organization -> "SOR enhed" "Reference to the DkCoreOrganization (SOR-unit) where the role is performed."
+* location -> "Fysisk lokation" "Physical site of service delivery."
+* code -> "Rollekode" "Role the practitioner performs at the SOR unit."
+* specialty -> "Speciale" "SNOMED CT speciality (e.g. `408443003` = almen lægepraksis)."
+* availableTime -> "Åbningstider" "Practitioner availability at the SOR unit."
+
+
 Instance: AbrahamPractitionerRole
 InstanceOf: DkCorePractitionerRole
 Title: "Licensed physician in primary care"

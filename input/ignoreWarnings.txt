@@ -29,6 +29,20 @@
 %A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated
 %A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated
 
+# FMK (Fælles Medicinkort) schema-namespace URIs used as identifier systems and coded CodeSystems.
+# Source of truth: https://wiki.fmk-teknik.dk/fmk:extensions:e5 (DKMA XML schemas).
+# Not registered as FHIR NamingSystems/CodeSystems; suppress the unknown-URL noise.
+%A definition for CodeSystem 'http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/ActiveSubstance' could not be found, so the code cannot be validated
+%A definition for CodeSystem 'http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugIdentifier' could not be found, so the code cannot be validated
+%No definition could be found for URL value 'http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugMedicationIdentifier'
+%No definition could be found for URL value 'http://www.dkma.dk/medicinecard/xml.schema/2015/06/01/DrugMedicationVersion'
+
+# DDV (Det Danske Vaccinationsregister) schema-namespace URIs used as identifier systems and coding systems.
+# Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1 (namespace http://vaccinationsregister.dk/schemas/2013/12/01).
+%No definition could be found for URL value 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifier'
+%No definition could be found for URL value 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationVersionIdentifier'
+%A definition for CodeSystem 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifier' could not be found, so the code cannot be validated
+
 # Missing Danish translations for LOINC codes
 %There are no valid display names found for the code http://loinc.org%
 
