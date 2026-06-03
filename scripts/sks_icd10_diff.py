@@ -552,6 +552,7 @@ def build_codesystem(addons: list[dict], icd: Icd10, system: str,
 
     cs = {
         "resourceType": "CodeSystem",
+        "id": canonical.rstrip("/").rsplit("/", 1)[-1],
         "url": canonical,
         "version": version,
         "name": "SksIcd10Deviations",
