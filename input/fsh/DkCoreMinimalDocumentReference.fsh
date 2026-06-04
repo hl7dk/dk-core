@@ -7,7 +7,7 @@ Description: "HL7 Denmark core profile for a Minimal DocumentReference inherited
 * extension[versionid] ^short = "Specifies the version of the DocumentReference profile for a standard."
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
-* context.event from $v3-ActCode3.0.0 (example)
+* context.event from DkCoreDocumentEventCodes (extensible)
 * author 1..*
 * author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
 * authenticator only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCoreOrganization)

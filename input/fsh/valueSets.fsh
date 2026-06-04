@@ -968,3 +968,21 @@ Description: "Diagnosis codes usable in Denmark: international ICD-10 together w
 * exclude codes from system $icd10 where kind = #chapter
 * exclude codes from system $icd10 where kind = #block
 * include codes from system $sks-icd10-deviations
+
+ValueSet: DkCoreSksObservationCodes
+Id: dk-core-sks-observation-codes
+Title: "DK Core SKS Observation Codes"
+Description: "SKS codes usable as observation/investigation codes: the procedure (pro), investigation (und) and result (res) registers of the Danish SKS classification. Diagnosis (dia) and ATC registers are deliberately excluded."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where register = #pro
+* include codes from system $SKS where register = #und
+* include codes from system $SKS where register = #res
+
+ValueSet: DkCoreDocumentEventCodes
+Id: dk-core-document-event-codes
+Title: "DK Core Document Event Codes"
+Description: "SKS 'Forløbselement label' codes (the ALAL hierarchy) identifying the clinical area / care pathway a document relates to, for use in DocumentReference.context.event."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where concept is-a #ALAL

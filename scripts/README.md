@@ -78,5 +78,28 @@ subsequent runs.
   extension — but note a terminology server may reject a supplement that
   introduces codes not present in the base system, which is why `complete` is
   the default.
+- `CodeSystem-sks.json` — a **FHIR CodeSystem** for the rest of the Danish SKS
+  classification: every SKScomplete register **except** diagnoses (`dia`, which
+  are covered by ICD-10 + the deviations CodeSystem) and ATC (`atc`, WHO
+  international). ~38k concepts: surgical procedures (`opr`), treatment/nursing
+  procedures (`pro`, incl. the `ZZ…` measurement codes used in
+  `DkCoreObservation`), supplementary codes (`til`), external causes (`uly`),
+  administrative markers (`adm`), results/investigations (`res`/`und`/`spc`).
+  `content: fragment` under the SKS root OID `urn:oid:1.2.208.176.2.4`, so the
+  existing `$SKS` profile slices resolve to it with no profile edits. Each
+  concept carries `register` (multi-valued — codes shared across registers,
+  e.g. the `KZ…` codes in `opr`+`til`, are merged), `status`, `validFrom` /
+  `validTo`, and `parent`/`child` is-a links derived positionally (the SKS
+  prefix hierarchy, e.g. `K` → `KA` → `KAA` → `KAAA` → `KAAA00`).
 
-Both `.sks-cache/` and `sks-icd10-out/` are git-ignored.
+  Customise with `--sks-canonical`, `--sks-version`, and
+  `--sks-exclude-registers` (default `dia,atc`).
+
+Both `.sks-cache/` and `sks-icd10-out/` are git-ignored. To publish the two
+generated CodeSystems, copy them into `input/resources/` (predefined resources
+the IG Publisher picks up automatically):
+
+```bash
+cp sks-icd10-out/CodeSystem-sks-icd10-deviations.json input/resources/
+cp sks-icd10-out/CodeSystem-sks.json                  input/resources/
+```

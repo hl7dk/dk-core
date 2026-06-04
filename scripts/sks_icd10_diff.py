@@ -30,9 +30,11 @@ between an SKS diagnosis code and the international ICD-10 CodeSystem:
 
 The script writes a per-code mapping (CSV), a Danish-addons-only CSV, a
 summary.json that groups the additions by ICD-10 chapter and category so you
-can see at a glance *where* the Danish additions cluster, and a standalone FHIR
+can see at a glance *where* the Danish additions cluster, a standalone FHIR
 CodeSystem (``CodeSystem-sks-icd10-deviations.json``, ``content: complete`` by
-default) enumerating every deviation and extension as its own concepts.
+default) enumerating every deviation and extension as its own concepts, and a
+FHIR CodeSystem (``CodeSystem-sks.json``) for the rest of SKS — every register
+except diagnoses and ATC, under the SKS root OID ``urn:oid:1.2.208.176.2.4``.
 
 Data sources
 ------------
@@ -75,6 +77,12 @@ ICD10_SYSTEM = "http://hl7.org/fhir/sid/icd-10"
 
 # Canonical base for the generated supplement CodeSystem (DK Core IG).
 SUPPLEMENT_CANONICAL = "http://hl7.dk/fhir/core/CodeSystem/sks-icd10-deviations"
+
+# Identifier for the full Danish SKS CodeSystem (the SKS root OID).
+SKS_CANONICAL = "urn:oid:1.2.208.176.2.4"
+# Registers excluded from the SKS CodeSystem: 'dia' (diagnoses, covered by
+# ICD-10 + the deviations CodeSystem) and 'atc' (WHO international drug codes).
+SKS_EXCLUDE_REGISTERS = "dia,atc"
 
 # SKScomplete.txt fixed-width layout (1-indexed columns):
 #   1-3    register   ("dia", "opr", "atc", ...)
@@ -256,6 +264,162 @@ def parse_sks_diagnoses(path: str) -> dict[str, SksDiag]:
                 entry = out[code] = SksDiag(code)
             entry.observe(line[DATE_FROM], line[DATE_TO], line[TEXT].rstrip())
     return out
+
+
+class SksConcept:
+    """One distinct SKS code from any register, collapsing its history rows."""
+
+    __slots__ = ("code", "text", "_latest_from", "valid_from", "valid_to",
+                 "registers")
+
+    def __init__(self, code: str):
+        self.code = code
+        self.text = ""
+        self._latest_from = ""
+        self.valid_from = ""
+        self.valid_to = ""
+        self.registers: set[str] = set()
+
+    def observe(self, register: str, date_from: str, date_to: str,
+                text: str) -> None:
+        self.registers.add(register)
+        if not self.valid_from or date_from < self.valid_from:
+            self.valid_from = date_from
+        if date_to > self.valid_to:
+            self.valid_to = date_to
+        if date_from >= self._latest_from:
+            self._latest_from = date_from
+            self.text = text
+
+
+def parse_sks_codes(path: str, exclude: set[str]) -> dict[str, SksConcept]:
+    """
+    Read SKScomplete.txt and return distinct codes from every register except
+    those in ``exclude``. Codes that appear in more than one register (e.g.
+    the ``KZ`` codes shared by 'opr' and 'til') are merged into one concept
+    that records all of its registers.
+    """
+    out: dict[str, SksConcept] = {}
+    with open(path, "r", encoding="latin-1") as fh:
+        for line in fh:
+            reg = line[REG]
+            if reg in exclude:
+                continue
+            code = line[CODE].strip()
+            if not code:
+                continue
+            entry = out.get(code)
+            if entry is None:
+                entry = out[code] = SksConcept(code)
+            entry.observe(reg, line[DATE_FROM], line[DATE_TO],
+                          line[TEXT].rstrip())
+    return out
+
+
+def prefix_hierarchy(codes: set[str]) -> tuple[dict, dict]:
+    """
+    Derive the SKS is-a hierarchy positionally, exactly as for ICD-10: a code's
+    parent is its nearest existing shorter prefix (SKS is one prefix-structured
+    code space, e.g. K -> KA -> KAA -> KAAA -> KAAA00). Returns (parent_of,
+    children) keyed by code.
+    """
+    parent_of: dict[str, str] = {}
+    children: dict[str, list[str]] = {}
+    for code in codes:
+        prefix = code[:-1]
+        while prefix:
+            if prefix in codes:
+                parent_of[code] = prefix
+                children.setdefault(prefix, []).append(code)
+                break
+            prefix = prefix[:-1]
+    return parent_of, children
+
+
+def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
+                         canonical: str, version: str, content: str) -> dict:
+    """
+    Build a FHIR CodeSystem for the Danish SKS classification, covering every
+    register except the excluded ones (by default the ICD-10-mapped diagnoses
+    and ATC). Hierarchy is modelled as ICD-10 does it: ``hierarchyMeaning:
+    is-a`` on a flat concept list with ``parent``/``child`` properties.
+    """
+    code_set = set(concepts)
+    parent_of, children = prefix_hierarchy(code_set)
+
+    properties = [
+        {"code": "register",
+         "description": "SKScomplete register the code belongs to "
+                        "(opr, pro, til, uly, adm, res, und, spc, ...).",
+         "type": "code"},
+        {"code": "status",
+         "description": "Whether the SKS code is currently active.",
+         "type": "code"},
+        {"code": "validFrom",
+         "description": "Date the SKS code first became valid.",
+         "type": "dateTime"},
+        {"code": "validTo",
+         "description": "Date the SKS code is valid until "
+                        "(2500-01-01 means open-ended).",
+         "type": "dateTime"},
+        {"code": "parent", "description": "Parent concept (is-a).",
+         "type": "code"},
+        {"code": "child", "description": "Child concept (is-a).",
+         "type": "code"},
+    ]
+
+    concept_list = []
+    for code in sorted(concepts):
+        c = concepts[code]
+        props = [{"code": "register", "valueCode": r}
+                 for r in sorted(c.registers)]
+        props.append({"code": "status",
+                      "valueCode": "active" if c.valid_to >= today
+                      else "retired"})
+        vf, vt = to_fhir_date(c.valid_from), to_fhir_date(c.valid_to)
+        if vf:
+            props.append({"code": "validFrom", "valueDateTime": vf})
+        if vt:
+            props.append({"code": "validTo", "valueDateTime": vt})
+        if code in parent_of:
+            props.append({"code": "parent", "valueCode": parent_of[code]})
+        for child in children.get(code, []):
+            props.append({"code": "child", "valueCode": child})
+        concept = {"code": code, "property": props}
+        if c.text:
+            concept["display"] = c.text
+        concept_list.append(concept)
+
+    return {
+        "resourceType": "CodeSystem",
+        "id": "sks",
+        "url": canonical,
+        "version": version,
+        "name": "SKS",
+        "title": "SKS - Sundhedsvaesenets Klassifikations System (Danish)",
+        "status": "draft",
+        "experimental": True,
+        "date": dt.date.today().isoformat(),
+        "publisher": "HL7 Denmark",
+        "jurisdiction": [{"coding": [{
+            "system": "urn:iso:std:iso:3166", "code": "DK",
+            "display": "Denmark"}]}],
+        "description": (
+            "The Danish SKS classification as published in SKScomplete.txt, "
+            "excluding the diagnosis (ICD-10) and ATC registers: surgical "
+            "procedures, treatment/nursing procedures, supplementary codes "
+            "(tillaegskoder), external causes, administrative markers, results "
+            "and investigations. Diagnoses are covered by ICD-10 and the "
+            "sks-icd10-deviations CodeSystem instead. A fragment of the SKS "
+            "code system (urn:oid:1.2.208.176.2.4), generated by "
+            "scripts/sks_icd10_diff.py."),
+        "caseSensitive": True,
+        "hierarchyMeaning": "is-a",
+        "content": content,
+        "count": len(concept_list),
+        "property": properties,
+        "concept": concept_list,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -639,9 +803,16 @@ def main(argv: list[str]) -> int:
                         "(default: today's date).")
     p.add_argument("--content", default="complete",
                    choices=["complete", "fragment", "supplement"],
-                   help="CodeSystem.content for the generated resource. "
+                   help="CodeSystem.content for the deviations resource. "
                         "'complete'/'fragment' emit a standalone Danish code "
                         "system; 'supplement' links to (supplements) ICD-10.")
+    p.add_argument("--sks-canonical", default=SKS_CANONICAL,
+                   help="Identifier for the full SKS CodeSystem.")
+    p.add_argument("--sks-version", default=None,
+                   help="Version for the SKS CodeSystem (default: today).")
+    p.add_argument("--sks-exclude-registers", default=SKS_EXCLUDE_REGISTERS,
+                   help="Comma-separated SKScomplete registers to leave out of "
+                        "the SKS CodeSystem.")
     args = p.parse_args(argv)
 
     os.makedirs(args.cache_dir, exist_ok=True)
@@ -691,6 +862,21 @@ def main(argv: list[str]) -> int:
     print(f"  wrote {summ_json}")
     print(f"  wrote {cs_json}  (CodeSystem '{args.content}', "
           f"{codesystem['count']:,} concepts)")
+
+    print("[5/5] Building SKS CodeSystem (non-diagnosis registers) ...")
+    exclude = {r.strip() for r in args.sks_exclude_registers.split(",")
+               if r.strip()}
+    sks_concepts = parse_sks_codes(sks_path, exclude)
+    today = dt.date.today().strftime("%Y%m%d")
+    sks_version = args.sks_version or dt.date.today().isoformat()
+    sks_cs = build_sks_codesystem(sks_concepts, today, args.sks_canonical,
+                                  sks_version, "fragment")
+    sks_json = os.path.join(args.out_dir, "CodeSystem-sks.json")
+    with open(sks_json, "w", encoding="utf-8") as fh:
+        json.dump(sks_cs, fh, ensure_ascii=False, indent=2)
+    print(f"  excluded registers: {', '.join(sorted(exclude))}")
+    print(f"  wrote {sks_json}  (CodeSystem 'fragment', "
+          f"{sks_cs['count']:,} concepts)")
 
     print_summary(report["summary"])
     return 0
