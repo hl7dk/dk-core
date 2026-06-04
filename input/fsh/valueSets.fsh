@@ -957,3 +957,14 @@ Description: "Values used for Practice Setting, as described in the SOR registry
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * include codes from valueset SorPracticeSettingCode
 * exclude codes from valueset SCTLaboratorySpecialities
+
+ValueSet: DkCoreDiagnosisCodes
+Id: dk-core-diagnosis-codes
+Title: "DK Core Diagnosis Codes"
+Description: "Diagnosis codes usable in Denmark: international ICD-10 together with the Danish SKS-specific deviations and extensions to ICD-10 (codes that are not part of plain ICD-10). Excludes the non-codable ICD-10 grouping concepts (chapters and blocks)."
+* ^status = #active
+* ^experimental = false
+* include codes from system $icd10
+* exclude codes from system $icd10 where kind = #chapter
+* exclude codes from system $icd10 where kind = #block
+* include codes from system $sks-icd10-deviations
