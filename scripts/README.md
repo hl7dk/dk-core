@@ -115,6 +115,17 @@ subsequent runs.
     positionally (the SKS prefix hierarchy, e.g. `K` → `KA` → `KAA` → `KAAA`
     → `KAAA00`).
 
+  The tree is **rooted under the hovedgrupper**: every branch terminates at a
+  single-letter main-group concept. For `A`/`B`/`F`/`K`/`N`/`R`/`U`/`W` that
+  letter is a real SKS code (with its own Danish display) and already sits at
+  the top of its branch; for `D`/`E`/`Z` — which SKS publishes only as deeper
+  codes — the generator adds a **synthetic** single-letter root concept (display
+  = the official hovedgruppe name, no `register`/validity, `mainGroup` = itself)
+  and reparents that branch's former roots under it. So there are 11 hovedgruppe
+  roots (`A B D E F K N R U W Z`); `M` (ATC) is out of scope, and the three
+  non-hovedgruppe letters `T`/`V`/`Y` remain as their own small roots. This adds
+  3 concepts to the count (the synthetic `D`/`E`/`Z`).
+
   Customise with `--sks-canonical`, `--sks-version`, and
   `--sks-exclude-registers` (default `dia,atc`).
 

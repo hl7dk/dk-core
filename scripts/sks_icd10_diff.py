@@ -398,9 +398,27 @@ def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
     register except the excluded ones (by default the ICD-10-mapped diagnoses
     and ATC). Hierarchy is modelled as ICD-10 does it: ``hierarchyMeaning:
     is-a`` on a flat concept list with ``parent``/``child`` properties.
+
+    The tree is rooted under the SKS *hovedgrupper* (main groups). Where the
+    single-letter code already exists in SKS (A, B, F, K, N, R, U, W) it serves
+    as the root for its branch; for hovedgrupper present only as deeper codes
+    (D, E, Z) a synthetic single-letter root concept is added and that branch's
+    former roots are reparented under it. M (ATC) is out of scope, and the
+    non-hovedgruppe letters T/V/Y stay as their own roots.
     """
     code_set = set(concepts)
     parent_of, children = prefix_hierarchy(code_set)
+
+    # Reparent each branch's roots under a hovedgruppe (main-group) concept,
+    # synthesizing the single-letter root where SKS itself has none (D, E, Z).
+    synthetic_roots: dict[str, list[str]] = {}
+    for code in code_set:
+        if code in parent_of:
+            continue  # not a root
+        letter = code[:1]
+        if letter in SKS_HOVEDGRUPPER and letter not in code_set:
+            parent_of[code] = letter
+            synthetic_roots.setdefault(letter, []).append(code)
 
     legend = "; ".join(f"{k}={v}" for k, v in SKS_HOVEDGRUPPER.items())
     properties = [
@@ -454,6 +472,21 @@ def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
         if c.text:
             concept["display"] = c.text
         concept_list.append(concept)
+
+    # Synthetic hovedgruppe root concepts (only for D/E/Z, which SKS has no
+    # single-letter code for). Real single-letter roots (A/B/F/K/N/R/U/W) are
+    # already in concept_list with their own SKS display.
+    for letter in sorted(synthetic_roots):
+        props = [{"code": "mainGroup", "valueCode": letter},
+                 {"code": "status", "valueCode": "active"}]
+        for child in sorted(synthetic_roots[letter]):
+            props.append({"code": "child", "valueCode": child})
+        concept_list.append({"code": letter,
+                             "display": SKS_HOVEDGRUPPER[letter],
+                             "property": props})
+
+    # Keep the concept list in stable code order (synthetic roots interleaved).
+    concept_list.sort(key=lambda c: c["code"])
 
     return {
         "resourceType": "CodeSystem",
