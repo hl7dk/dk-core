@@ -55,7 +55,7 @@ jobs:
         id: diff
         run: |
           changed=false
-          for f in CodeSystem-sks.json CodeSystem-sks-icd10-deviations.json; do
+          for f in CodeSystem-sks.json CodeSystem-sks-icd10-deviations.json CodeSystem-icd10-da.json; do
             new="sks-icd10-out/$f"
             old="input/resources/$f"
             # Ignore version/date/meta stamps — only concept content matters.
@@ -102,6 +102,7 @@ jobs:
           add-paths: |
             input/resources/CodeSystem-sks.json
             input/resources/CodeSystem-sks-icd10-deviations.json
+            input/resources/CodeSystem-icd10-da.json
 
       - name: Report no change
         if: steps.diff.outputs.changed != 'true'

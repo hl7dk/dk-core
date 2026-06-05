@@ -104,6 +104,9 @@ SKS_HOVEDGRUPPER = {
 # Canonical base for the generated supplement CodeSystem (DK Core IG).
 SUPPLEMENT_CANONICAL = "http://hl7.dk/fhir/core/CodeSystem/sks-icd10-deviations"
 
+# Canonical for the ICD-10 Danish-translation supplement (DK Core IG).
+ICD10_DA_CANONICAL = "http://hl7.dk/fhir/core/CodeSystem/icd10-da"
+
 # Identifier for the full Danish SKS CodeSystem (the SKS root OID).
 SKS_CANONICAL = "urn:oid:1.2.208.176.2.4"
 # Registers excluded from the SKS CodeSystem: 'dia' (diagnoses, covered by
@@ -846,6 +849,78 @@ def build_codesystem(addons: list[dict], icd: Icd10, system: str,
     return cs
 
 
+def build_icd10_da_supplement(rows: list[dict], icd: Icd10, system: str,
+                              canonical: str, version: str) -> dict:
+    """
+    Build a FHIR CodeSystem *supplement* that adds the Danish display to the
+    international ICD-10 codes Denmark actually reuses.
+
+    Only the SKS diagnosis codes classified ``icd10_standard`` are included —
+    i.e. codes that genuinely exist in ``system`` (a supplement must not
+    introduce codes absent from the base system). Each concept carries the
+    Danish text both as ``display`` and as a ``da`` ``designation``, so the
+    supplement is a clean ICD-10 → Danish translation layer.
+    """
+    # One entry per base ICD-10 code; prefer an active SKS row, then the one
+    # whose Danish form matches the ICD-10 code exactly, for a stable display.
+    best: dict[str, dict] = {}
+    for r in rows:
+        if r["status"] != "icd10_standard":
+            continue
+        code = r["icd10_code"]
+        text = r["danish_text"]
+        if not code or not text or not icd.contains(code):
+            continue
+        cur = best.get(code)
+        if cur is None:
+            best[code] = r
+            continue
+        # Tie-break deterministically: active wins, then exact-form, then text.
+        better = ((r["active"], r["danish_code"] == code, r["danish_text"])
+                  > (cur["active"], cur["danish_code"] == code,
+                     cur["danish_text"]))
+        if better:
+            best[code] = r
+
+    concepts = []
+    for code in sorted(best):
+        text = best[code]["danish_text"]
+        concepts.append({
+            "code": code,
+            "display": text,
+            "designation": [{"language": "da", "value": text}],
+        })
+
+    return {
+        "resourceType": "CodeSystem",
+        "id": canonical.rstrip("/").rsplit("/", 1)[-1],
+        "url": canonical,
+        "version": version,
+        "name": "Icd10DanishTranslations",
+        "title": "ICD-10 Danish translations (from SKS)",
+        "status": "draft",
+        "experimental": True,
+        "date": dt.date.today().isoformat(),
+        "publisher": "HL7 Denmark",
+        "jurisdiction": [{"coding": [{
+            "system": "urn:iso:std:iso:3166", "code": "DK",
+            "display": "Denmark"}]}],
+        "description": (
+            "Danish-language display supplement for the international ICD-10 "
+            "code system: the Danish text from the SKS diagnosis register for "
+            "the ICD-10 codes Denmark reuses unchanged. Generated from "
+            f"SKScomplete.txt and {system} version {icd.version} by "
+            "scripts/sks_icd10_diff.py. Danish extensions and Danish-only "
+            "diagnosis blocks are out of scope here (they are not ICD-10 "
+            "codes) and live in the sks-icd10-deviations CodeSystem instead."),
+        "caseSensitive": True,
+        "content": "supplement",
+        "supplements": f"{system}|{icd.version}",
+        "count": len(concepts),
+        "concept": concepts,
+    }
+
+
 def write_csv(path: str, rows: list[dict], fields: list[str]) -> None:
     with open(path, "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
@@ -916,6 +991,12 @@ def main(argv: list[str]) -> int:
     p.add_argument("--sks-exclude-registers", default=SKS_EXCLUDE_REGISTERS,
                    help="Comma-separated SKScomplete registers to leave out of "
                         "the SKS CodeSystem.")
+    p.add_argument("--icd10-da-canonical", default=ICD10_DA_CANONICAL,
+                   help="Canonical url for the ICD-10 Danish-translation "
+                        "supplement CodeSystem.")
+    p.add_argument("--icd10-da-version", default=None,
+                   help="Version for the ICD-10 Danish-translation supplement "
+                        "(default: the SKS source revision date, else today).")
     args = p.parse_args(argv)
 
     os.makedirs(args.cache_dir, exist_ok=True)
@@ -990,6 +1071,18 @@ def main(argv: list[str]) -> int:
     print(f"  excluded registers: {', '.join(sorted(exclude))}")
     print(f"  wrote {sks_json}  (CodeSystem 'fragment', "
           f"{sks_cs['count']:,} concepts)")
+
+    print("[6/6] Building ICD-10 Danish-translation supplement ...")
+    da_version = args.icd10_da_version or default_version
+    da_cs = build_icd10_da_supplement(report["rows"], icd, args.icd_system,
+                                      args.icd10_da_canonical, da_version)
+    if source_rev:
+        da_cs["date"] = source_rev
+    da_json = os.path.join(args.out_dir, "CodeSystem-icd10-da.json")
+    with open(da_json, "w", encoding="utf-8") as fh:
+        json.dump(da_cs, fh, ensure_ascii=False, indent=2)
+    print(f"  wrote {da_json}  (CodeSystem 'supplement', "
+          f"{da_cs['count']:,} Danish ICD-10 displays)")
 
     print_summary(report["summary"])
     return 0

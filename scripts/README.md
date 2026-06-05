@@ -129,19 +129,30 @@ subsequent runs.
   Customise with `--sks-canonical`, `--sks-version`, and
   `--sks-exclude-registers` (default `dia,atc`).
 
-  **Versioning:** by default both CodeSystems stamp `version` *and* `date` with
+  **Versioning:** by default the CodeSystems stamp `version` *and* `date` with
   the SKS source revision date — the `Last-Modified` of `SKScomplete.txt`
   (`YYYY-MM-DD`, e.g. `2026-03-16` for the Q2-2026 release), cached in a
   `.lastmod` sidecar. SKScomplete has no internal version, and this date only
   changes when SKS actually releases, so re-runs are byte-identical (no spurious
   diffs) and `version` tells consumers exactly which SKS edition a snapshot is.
   `--sks-version` / `--supplement-version` override it with a custom label.
+- `CodeSystem-icd10-da.json` — a **FHIR CodeSystem supplement** that adds the
+  **Danish display** to the international ICD-10 codes Denmark reuses unchanged.
+  `content: supplement`, `supplements: http://hl7.org/fhir/sid/icd-10|<version>`.
+  It contains **only** the SKS diagnosis codes classified `icd10_standard`
+  (~10.5k codes that genuinely exist in ICD-10 — a supplement must not introduce
+  codes absent from the base system); each concept carries the Danish text both
+  as `display` and as a `da` `designation`. Danish extensions and Danish-only
+  blocks are *not* here (they are not ICD-10 codes — see
+  `CodeSystem-sks-icd10-deviations.json`). Customise with `--icd10-da-canonical`
+  and `--icd10-da-version`.
 
-Both `.sks-cache/` and `sks-icd10-out/` are git-ignored. To publish the two
+Both `.sks-cache/` and `sks-icd10-out/` are git-ignored. To publish the three
 generated CodeSystems, copy them into `input/resources/` (predefined resources
 the IG Publisher picks up automatically):
 
 ```bash
 cp sks-icd10-out/CodeSystem-sks-icd10-deviations.json input/resources/
 cp sks-icd10-out/CodeSystem-sks.json                  input/resources/
+cp sks-icd10-out/CodeSystem-icd10-da.json             input/resources/
 ```
