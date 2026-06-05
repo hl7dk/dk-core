@@ -1,5 +1,13 @@
 # scripts
 
+> **SKS is updated quarterly.** See [`SKS-UPDATES.md`](SKS-UPDATES.md) for the
+> upstream update cadence (announced ~the 17th of the month before each quarter
+> change; live on the 1st of Jan/Apr/Jul/Oct) and the historical archive. The
+> regeneration is automated by
+> [`.github/workflows/sks-update.yml`](../.github/workflows/sks-update.yml),
+> which runs on that schedule and opens a PR only when the SKS content actually
+> changes.
+
 ## `sks_icd10_diff.py`
 
 Maps out **where the Danish SKS additions sit relative to plain ICD-10**.
@@ -56,8 +64,9 @@ subsequent runs.
   concept carries properties: `deviationType` (`extension`/`deviation`),
   `sksCode`, `baseCategory` (the related ICD-10 category), `icd10Chapter`,
   `status` (`active`/`retired`), and `validFrom` / `validTo` (`dateTime`,
-  spanning the code's full SKS history; `validTo` of `2500-01-01` means
-  open-ended).
+  spanning the code's full SKS history; an **absent** `validTo` means
+  open-ended — the SKScomplete `25000101` sentinel is dropped on emit since
+  `status` already conveys active/retired).
 
   Hierarchy is modelled exactly as ICD-10 models it — `hierarchyMeaning:
   is-a` on a flat concept list with `parent`/`child` code properties (ICD-10
@@ -81,19 +90,41 @@ subsequent runs.
 - `CodeSystem-sks.json` — a **FHIR CodeSystem** for the rest of the Danish SKS
   classification: every SKScomplete register **except** diagnoses (`dia`, which
   are covered by ICD-10 + the deviations CodeSystem) and ATC (`atc`, WHO
-  international). ~38k concepts: surgical procedures (`opr`), treatment/nursing
-  procedures (`pro`, incl. the `ZZ…` measurement codes used in
-  `DkCoreObservation`), supplementary codes (`til`), external causes (`uly`),
-  administrative markers (`adm`), results/investigations (`res`/`und`/`spc`).
-  `content: fragment` under the SKS root OID `urn:oid:1.2.208.176.2.4`, so the
-  existing `$SKS` profile slices resolve to it with no profile edits. Each
-  concept carries `register` (multi-valued — codes shared across registers,
-  e.g. the `KZ…` codes in `opr`+`til`, are merged), `status`, `validFrom` /
-  `validTo`, and `parent`/`child` is-a links derived positionally (the SKS
-  prefix hierarchy, e.g. `K` → `KA` → `KAA` → `KAAA` → `KAAA00`).
+  international). ~38k concepts spanning the SKScomplete registers `opr`, `pro`,
+  `til`, `uly`, `adm`, `res`, `und` and `spc`. `content: fragment` under the SKS
+  root OID `urn:oid:1.2.208.176.2.4`, so the existing `$SKS` profile slices
+  resolve to it with no profile edits. Each concept carries:
+  - `register` (multi-valued — codes shared across registers, e.g. the `KZ…`
+    codes in `opr`+`til`, are merged) — the SKScomplete register.
+  - `mainGroup` — the SKS *hovedgruppe* (the code's leading letter), an
+    **official top-level classification axis** that cross-cuts the register.
+    Its meaning per the [hovedgrupper page](https://sundhedsdatastyrelsen.dk/indberetning/klassifikationer/sks-klassifikationer/hovedgrupper):
+    `A` administrative, `B` treatment/care (*Behandlings- og Plejeklassifikation*),
+    `E` external causes, `F` functioning (ICF), `K` surgical operations (NCSP),
+    `N` anaesthesia/intensive/pre-hospital, `R` result reporting,
+    `U` examinations, `W` clinical physiology/nuclear medicine,
+    `Z` supplementary codes and miscellaneous procedures (`D` diagnoses and
+    `M` ATC live in the other two CodeSystems). The same register can hold
+    several hovedgrupper — e.g. `pro` spans `B`/`F`/`N`/`U`/`W`/`Z` and `til`
+    spans nine — so `mainGroup` is the cleaner semantic classifier. The `ZZ…`
+    measurement codes used in `DkCoreObservation` are hovedgruppe `Z`
+    (supplementary/diverse procedures), filed in the `pro` register. A few
+    leading letters (`T`/`V`/`Y`) are not official hovedgrupper and carry no
+    `mainGroup`.
+  - `status`, `validFrom` / `validTo`, and `parent`/`child` is-a links derived
+    positionally (the SKS prefix hierarchy, e.g. `K` → `KA` → `KAA` → `KAAA`
+    → `KAAA00`).
 
   Customise with `--sks-canonical`, `--sks-version`, and
   `--sks-exclude-registers` (default `dia,atc`).
+
+  **Versioning:** by default both CodeSystems stamp `version` *and* `date` with
+  the SKS source revision date — the `Last-Modified` of `SKScomplete.txt`
+  (`YYYY-MM-DD`, e.g. `2026-03-16` for the Q2-2026 release), cached in a
+  `.lastmod` sidecar. SKScomplete has no internal version, and this date only
+  changes when SKS actually releases, so re-runs are byte-identical (no spurious
+  diffs) and `version` tells consumers exactly which SKS edition a snapshot is.
+  `--sks-version` / `--supplement-version` override it with a custom label.
 
 Both `.sks-cache/` and `sks-icd10-out/` are git-ignored. To publish the two
 generated CodeSystems, copy them into `input/resources/` (predefined resources

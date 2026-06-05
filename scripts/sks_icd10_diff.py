@@ -62,6 +62,7 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
+import email.utils
 import json
 import os
 import sys
@@ -74,6 +75,31 @@ import urllib.request
 SKS_URL = "https://filer.sundhedsdata.dk/sks/data/skscomplete/SKScomplete.txt"
 TX_BASE = "https://tx.fhir.org/r4"
 ICD10_SYSTEM = "http://hl7.org/fhir/sid/icd-10"
+
+# SKScomplete uses 25000101 as the "no end date" sentinel. It is the source
+# format's encoding of absence, not a real date, so open-ended validity is
+# emitted as an *absent* validTo rather than this placeholder far-future date.
+OPEN_ENDED_SKS = "25000101"
+
+# SKS "hovedgrupper" (main groups): the leading letter of every code is an
+# official top-level classification axis, distinct from (and cross-cutting) the
+# SKScomplete register. Source:
+# https://sundhedsdatastyrelsen.dk/indberetning/klassifikationer/sks-klassifikationer/hovedgrupper
+# Codes whose leading letter is not one of these (e.g. T/V/Y) get no mainGroup.
+SKS_HOVEDGRUPPER = {
+    "A": "Administrative forhold",
+    "B": "Behandlings- og Plejeklassifikation",
+    "D": "Klassifikation af sygdomme (dansk ICD-10)",
+    "E": "Klassifikation af ydre årsager",
+    "F": "Klassifikation af funktionsevne (ICF)",
+    "K": "Klassifikation af operationer (NCSP)",
+    "M": "Laegemiddelstofklassifikation ATC",
+    "N": "Anaestesi, intensiv og praehospital",
+    "R": "Resultatindberetning",
+    "U": "Klassifikation af undersoegelser",
+    "W": "Klinisk fysiologi og nuklearmedicin",
+    "Z": "Tillaegskoder og diverse procedurer",
+}
 
 # Canonical base for the generated supplement CodeSystem (DK Core IG).
 SUPPLEMENT_CANONICAL = "http://hl7.dk/fhir/core/CodeSystem/sks-icd10-deviations"
@@ -126,6 +152,7 @@ def download_to(url: str, dest: str, accept: str | None = None,
         req.add_header("Accept", accept)
     tmp = dest + ".part"
     with urllib.request.urlopen(req, timeout=600) as resp, open(tmp, "wb") as fh:
+        last_modified = resp.headers.get("Last-Modified")
         total = 0
         while True:
             chunk = resp.read(1 << 16)
@@ -134,8 +161,36 @@ def download_to(url: str, dest: str, accept: str | None = None,
             fh.write(chunk)
             total += len(chunk)
     os.replace(tmp, dest)
+    # Persist the server's Last-Modified date so the source revision survives
+    # caching (the file itself carries no version; the HTTP header is the
+    # authoritative revision date, bumped on each quarterly SKS release).
+    rev = _parse_http_date(last_modified)
+    if rev:
+        with open(dest + ".lastmod", "w", encoding="utf-8") as fh:
+            fh.write(rev)
+        print(f"  source revision (Last-Modified): {rev}")
     print(f"  saved: {dest} ({total:,} bytes)")
     return dest
+
+
+def _parse_http_date(value: str | None) -> str:
+    """Parse an HTTP Last-Modified header to an ISO date ('' if absent/bad)."""
+    if not value:
+        return ""
+    try:
+        return email.utils.parsedate_to_datetime(value).date().isoformat()
+    except (TypeError, ValueError):
+        return ""
+
+
+def revision_date(dest: str) -> str:
+    """Return the cached source file's revision date (YYYY-MM-DD) from its
+    stored Last-Modified, or '' if unknown."""
+    side = dest + ".lastmod"
+    if os.path.exists(side):
+        with open(side, "r", encoding="utf-8") as fh:
+            return fh.read().strip()
+    return ""
 
 
 def fetch_icd10_codesystem(tx_base: str, system: str, dest: str,
@@ -347,10 +402,18 @@ def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
     code_set = set(concepts)
     parent_of, children = prefix_hierarchy(code_set)
 
+    legend = "; ".join(f"{k}={v}" for k, v in SKS_HOVEDGRUPPER.items())
     properties = [
         {"code": "register",
          "description": "SKScomplete register the code belongs to "
                         "(opr, pro, til, uly, adm, res, und, spc, ...).",
+         "type": "code"},
+        {"code": "mainGroup",
+         "description": "SKS hovedgruppe (main group): the code's leading "
+                        "letter, an official top-level classification axis "
+                        "distinct from the register. " + legend +
+                        ". Absent if the leading letter is not an official "
+                        "hovedgruppe.",
          "type": "code"},
         {"code": "status",
          "description": "Whether the SKS code is currently active.",
@@ -360,7 +423,7 @@ def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
          "type": "dateTime"},
         {"code": "validTo",
          "description": "Date the SKS code is valid until "
-                        "(2500-01-01 means open-ended).",
+                        "(absent means open-ended).",
          "type": "dateTime"},
         {"code": "parent", "description": "Parent concept (is-a).",
          "type": "code"},
@@ -373,17 +436,19 @@ def build_sks_codesystem(concepts: dict[str, SksConcept], today: str,
         c = concepts[code]
         props = [{"code": "register", "valueCode": r}
                  for r in sorted(c.registers)]
+        if code[:1] in SKS_HOVEDGRUPPER:
+            props.append({"code": "mainGroup", "valueCode": code[:1]})
         props.append({"code": "status",
                       "valueCode": "active" if c.valid_to >= today
                       else "retired"})
         vf, vt = to_fhir_date(c.valid_from), to_fhir_date(c.valid_to)
         if vf:
             props.append({"code": "validFrom", "valueDateTime": vf})
-        if vt:
+        if vt and c.valid_to != OPEN_ENDED_SKS:
             props.append({"code": "validTo", "valueDateTime": vt})
         if code in parent_of:
             props.append({"code": "parent", "valueCode": parent_of[code]})
-        for child in children.get(code, []):
+        for child in sorted(children.get(code, [])):
             props.append({"code": "child", "valueCode": child})
         concept = {"code": code, "property": props}
         if c.text:
@@ -508,7 +573,10 @@ def build_report(diags: dict[str, SksDiag], icd: Icd10) -> dict:
         info = classify(code, icd)
         info["active"] = is_active(d.valid_to, today)
         info["valid_from"] = to_fhir_date(d.valid_from)
-        info["valid_to"] = to_fhir_date(d.valid_to)
+        # Open-ended validity is left blank (emitted as an absent validTo),
+        # not the 25000101 sentinel; status already conveys active/retired.
+        info["valid_to"] = ("" if d.valid_to == OPEN_ENDED_SKS
+                            else to_fhir_date(d.valid_to))
         info["danish_text"] = d.text
         rows.append(info)
 
@@ -640,7 +708,7 @@ def build_codesystem(addons: list[dict], icd: Icd10, system: str,
       - icd10Chapter     : owning ICD-10 chapter
       - status           : active | retired (per current SKS validity)
       - validFrom        : earliest valid-from date across the code's history
-      - validTo          : latest valid-to date (2500-01-01 means open-ended)
+      - validTo          : latest valid-to date (absent means open-ended)
       - parent / child   : is-a links to the nearest in-scope ancestor/children
     """
     is_supplement = content == "supplement"
@@ -671,7 +739,7 @@ def build_codesystem(addons: list[dict], icd: Icd10, system: str,
          "type": "dateTime"},
         {"code": "validTo",
          "description": "Date the SKS code is valid until "
-                        "(latest across its history; 2500-01-01 means open).",
+                        "(latest across its history; absent means open).",
          "type": "dateTime"},
         {"code": "parent",
          "description": "Parent concept in the is-a hierarchy "
@@ -707,7 +775,7 @@ def build_codesystem(addons: list[dict], icd: Icd10, system: str,
                           "valueDateTime": r["valid_to"]})
         if code in parent_of:
             props.append({"code": "parent", "valueCode": parent_of[code]})
-        for child in children.get(code, []):
+        for child in sorted(children.get(code, [])):
             props.append({"code": "child", "valueCode": child})
         concept = {"code": code, "property": props}
         if r["danish_text"]:
@@ -799,8 +867,9 @@ def main(argv: list[str]) -> int:
     p.add_argument("--supplement-canonical", default=SUPPLEMENT_CANONICAL,
                    help="Canonical url for the generated CodeSystem.")
     p.add_argument("--supplement-version", default=None,
-                   help="Version for the generated CodeSystem "
-                        "(default: today's date).")
+                   help="Version for the generated CodeSystem (default: the "
+                        "SKS source revision date from Last-Modified, else "
+                        "today).")
     p.add_argument("--content", default="complete",
                    choices=["complete", "fragment", "supplement"],
                    help="CodeSystem.content for the deviations resource. "
@@ -809,7 +878,8 @@ def main(argv: list[str]) -> int:
     p.add_argument("--sks-canonical", default=SKS_CANONICAL,
                    help="Identifier for the full SKS CodeSystem.")
     p.add_argument("--sks-version", default=None,
-                   help="Version for the SKS CodeSystem (default: today).")
+                   help="Version for the SKS CodeSystem (default: the SKS "
+                        "source revision date from Last-Modified, else today).")
     p.add_argument("--sks-exclude-registers", default=SKS_EXCLUDE_REGISTERS,
                    help="Comma-separated SKScomplete registers to leave out of "
                         "the SKS CodeSystem.")
@@ -822,6 +892,12 @@ def main(argv: list[str]) -> int:
     sks_path = download_to(args.sks_url,
                            os.path.join(args.cache_dir, "SKScomplete.txt"),
                            force=args.force_download)
+    # The SKScomplete file carries no internal version; its HTTP Last-Modified
+    # is the authoritative revision date and is the default version/date stamp.
+    source_rev = revision_date(sks_path)
+    default_version = source_rev or dt.date.today().isoformat()
+    if source_rev:
+        print(f"  using SKS revision date as default version: {source_rev}")
 
     print("[2/4] Acquiring ICD-10 CodeSystem ...")
     cs = fetch_icd10_codesystem(args.tx_base, args.icd_system,
@@ -850,10 +926,12 @@ def main(argv: list[str]) -> int:
     with open(summ_json, "w", encoding="utf-8") as fh:
         json.dump(report["summary"], fh, ensure_ascii=False, indent=2)
 
-    version = args.supplement_version or dt.date.today().isoformat()
+    version = args.supplement_version or default_version
     codesystem = build_codesystem(report["addons"], icd, args.icd_system,
                                   args.supplement_canonical, version,
                                   args.content)
+    if source_rev:
+        codesystem["date"] = source_rev
     with open(cs_json, "w", encoding="utf-8") as fh:
         json.dump(codesystem, fh, ensure_ascii=False, indent=2)
 
@@ -868,9 +946,11 @@ def main(argv: list[str]) -> int:
                if r.strip()}
     sks_concepts = parse_sks_codes(sks_path, exclude)
     today = dt.date.today().strftime("%Y%m%d")
-    sks_version = args.sks_version or dt.date.today().isoformat()
+    sks_version = args.sks_version or default_version
     sks_cs = build_sks_codesystem(sks_concepts, today, args.sks_canonical,
                                   sks_version, "fragment")
+    if source_rev:
+        sks_cs["date"] = source_rev
     sks_json = os.path.join(args.out_dir, "CodeSystem-sks.json")
     with open(sks_json, "w", encoding="utf-8") as fh:
         json.dump(sks_cs, fh, ensure_ascii=False, indent=2)
