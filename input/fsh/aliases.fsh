@@ -19,6 +19,7 @@ Alias: $NPU = http://npu-terminology.org
 Alias: $Medcom = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes
 Alias: $SKS = urn:oid:1.2.208.176.2.4
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
+Alias: $icpc2 = http://hl7.org/fhir/sid/icpc-2
 Alias: $sks-icd10-deviations = http://hl7.dk/fhir/core/CodeSystem/sks-icd10-deviations
 Alias: $LOINC = http://loinc.org
 Alias: $IEEEx73 = urn:iso:std:iso:11073:10101
