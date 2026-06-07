@@ -141,8 +141,10 @@ subsequent runs.
   `content: supplement`, `supplements: http://hl7.org/fhir/sid/icd-10|<version>`.
   It contains **only** the SKS diagnosis codes classified `icd10_standard`
   (~10.5k codes that genuinely exist in ICD-10 — a supplement must not introduce
-  codes absent from the base system); each concept carries the Danish text both
-  as `display` and as a `da` `designation`. Danish extensions and Danish-only
+  codes absent from the base system); the Danish text is added as a `da`
+  `designation` (not `concept.display` — a supplement must not override the base
+  ICD-10 English display; clients get Danish via `displayLanguage=da`). Danish
+  extensions and Danish-only
   blocks are *not* here (they are not ICD-10 codes — see
   `CodeSystem-sks-icd10-deviations.json`). Customise with `--icd10-da-canonical`
   and `--icd10-da-version`.

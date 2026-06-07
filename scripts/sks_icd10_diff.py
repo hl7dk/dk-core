@@ -857,9 +857,10 @@ def build_icd10_da_supplement(rows: list[dict], icd: Icd10, system: str,
 
     Only the SKS diagnosis codes classified ``icd10_standard`` are included —
     i.e. codes that genuinely exist in ``system`` (a supplement must not
-    introduce codes absent from the base system). Each concept carries the
-    Danish text both as ``display`` and as a ``da`` ``designation``, so the
-    supplement is a clean ICD-10 → Danish translation layer.
+    introduce codes absent from the base system). The Danish text is added as a
+    ``da``-language ``designation`` (not ``concept.display`` — a supplement must
+    not override the base system's display), so the supplement is a clean
+    ICD-10 → Danish translation layer surfaced via ``displayLanguage=da``.
     """
     # One entry per base ICD-10 code; prefer an active SKS row, then the one
     # whose Danish form matches the ICD-10 code exactly, for a stable display.
@@ -882,12 +883,14 @@ def build_icd10_da_supplement(rows: list[dict], icd: Icd10, system: str,
         if better:
             best[code] = r
 
+    # A supplement must not override the base ICD-10 display (English); the
+    # Danish text is added as a da-language designation, which terminology
+    # servers surface via displayLanguage=da. No concept.display here.
     concepts = []
     for code in sorted(best):
         text = best[code]["danish_text"]
         concepts.append({
             "code": code,
-            "display": text,
             "designation": [{"language": "da", "value": text}],
         })
 
