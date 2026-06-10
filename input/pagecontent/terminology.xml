@@ -1,6 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
+  <h3>SKS terminology</h3>
+  <div>
+    <p>
+      The Danish health classification system SKS (Sundhedsvæsenets Klassifikations System) is now
+      available as FHIR resources, hosted on the Nordic terminology server
+      (<a href="https://tx-nordics.fhir.org/fhir">https://tx-nordics.fhir.org/fhir</a>), which serves
+      the SKS CodeSystem and its associated ValueSets. Resources in this guide that need to reference
+      SKS concepts should bind to and resolve them against the Nordic terminology server.
+    </p>
+  </div>
+
   <h3>ValueSets</h3>
   <div>
     {% include list-simple-valuesets.xhtml %}
