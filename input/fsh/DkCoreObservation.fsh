@@ -39,7 +39,7 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
-* code.coding[SKS] 
+* code.coding[SKS] from DkCoreSksObservationCodes (required)
   * ^short = "SKS code for the observation"
   * system 1..
   * system = $SKS (exactly)
@@ -84,7 +84,7 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
-* component.code.coding[SKS] 
+* component.code.coding[SKS] from DkCoreSksObservationCodes (required)
   * ^short = "SKS code for the observation."
   * system 1..
   * system = $SKS (exactly)

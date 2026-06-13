@@ -20,7 +20,8 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
     FSIIIConditionCode 0..1 and
     SCTConditionCode 0..1 and
     FFBConditionCode 0..1 and
-    SKS-D 0..1 and
+    ICD10Diagnosis 0..1 and
+    SKSDeviationDiagnosis 0..1 and
     ICPC2code 0..1
 * code.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
   * system 1..
@@ -32,9 +33,14 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
 * code.coding[FFBConditionCode] ^short = "[DA] FFB undertemakode"
   * system 1..
   * system = "urn:oid:1.2.208.176.2.22"
-* code.coding[SKS-D] ^short = "[DA] Kode fra D-hierarkiet i SKS"
+* code.coding[ICD10Diagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "ICD-10 diagnosis code"
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.4.12"
+  * system = $icd10
+* code.coding[SKSDeviationDiagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "[DA] Dansk SKS-specifik diagnosekode (afvigelse/tilføjelse ift. ICD-10)"
+  * system 1..
+  * system = $sks-icd10-deviations
 * code.coding[ICPC2code] ^short = "ICPC2 code"
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
@@ -62,7 +68,7 @@ InstanceOf: DkCoreCondition
 Title: "Else Graviditet"
 Description: "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten"
 Usage: #example
-* code = urn:oid:1.2.208.176.2.4.12#DZ340 "Graviditet, førstegangsfødende"
+* code.coding[ICD10Diagnosis] = $icd10#Z34.0 "Graviditet, førstegangsfødende"
 * subject.reference = "Patient/else"
 * category = $condition-category#encounter-diagnosis
 * recordedDate = "2021-07-03"
@@ -74,7 +80,7 @@ InstanceOf: DkCoreCondition
 Title: "John diabetes"
 Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"
 Usage: #example
-* code = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
+* code.coding[ICD10Diagnosis] = $icd10#E11 "Type 2-diabetes"
 * subject.reference = "Patient/john"
 * asserter.reference = "Practitioner/AbrahamLaege"
 * recorder.reference = "Practitioner/AbrahamLaege"
@@ -89,7 +95,8 @@ InstanceOf: DkCoreCondition
 Title: "John fraktur"
 Description: "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode"
 Usage: #example
-* code.coding[SKS-D] = urn:oid:1.2.208.176.2.4.12#DS721+TUL1 "Pertrokantær femurfraktur, højresidig"
+* code.coding[ICD10Diagnosis] = $icd10#S72.1 "Pertrokantær femurfraktur"
+* code.text = "Pertrokantær femurfraktur, højresidig"
 * subject.reference = "Patient/john"
 * asserter.reference = "Practitioner/AbrahamLaege"
 * recorder.reference = "Practitioner/AbrahamLaege"
@@ -105,7 +112,7 @@ InstanceOf: DkCoreCondition
 Title: "John mistanke om Modermærkekræft"
 Description: "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese"
 Usage: #example
-* code = urn:oid:1.2.208.176.2.4.12#DC43 "Modermærkekræft i huden"
+* code.coding[ICD10Diagnosis] = $icd10#C43 "Modermærkekræft i huden"
 * subject.reference = "Patient/john"
 * asserter.reference = "Practitioner/AbrahamLaege"
 * recorder.reference = "Practitioner/AbrahamLaege"

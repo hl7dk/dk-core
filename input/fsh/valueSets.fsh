@@ -957,3 +957,32 @@ Description: "Values used for Practice Setting, as described in the SOR registry
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * include codes from valueset SorPracticeSettingCode
 * exclude codes from valueset SCTLaboratorySpecialities
+
+ValueSet: DkCoreDiagnosisCodes
+Id: dk-core-diagnosis-codes
+Title: "DK Core Diagnosis Codes"
+Description: "Diagnosis codes usable in Denmark: international ICD-10 together with the Danish SKS-specific deviations and extensions to ICD-10 (codes that are not part of plain ICD-10). Excludes the non-codable ICD-10 grouping concepts (chapters and blocks)."
+* ^status = #active
+* ^experimental = false
+* include codes from system $icd10
+* exclude codes from system $icd10 where kind = #chapter
+* exclude codes from system $icd10 where kind = #block
+* include codes from system $sks-icd10-deviations
+
+ValueSet: DkCoreSksObservationCodes
+Id: dk-core-sks-observation-codes
+Title: "DK Core SKS Observation Codes"
+Description: "SKS codes usable as observation/investigation codes: the procedure (pro), investigation (und) and result (res) registers of the Danish SKS classification. Diagnosis (dia) and ATC registers are deliberately excluded."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where register = #pro
+* include codes from system $SKS where register = #und
+* include codes from system $SKS where register = #res
+
+ValueSet: DkCoreDocumentEventCodes
+Id: dk-core-document-event-codes
+Title: "DK Core Document Event Codes"
+Description: "SKS 'Forløbselement label' codes (the ALAL hierarchy) identifying the clinical area / care pathway a document relates to, for use in DocumentReference.context.event."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where concept is-a #ALAL

@@ -19,7 +19,8 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
     FSIIIConditionCode 0..1 and
     SCTCode 0..1 and
     FFBConditionCode 0..1 and
-    SKS 0..1 and
+    ICD10Diagnosis 0..1 and
+    SKSDeviationDiagnosis 0..1 and
     ICPC2code 0..1
 * reasonCode.coding[FSIIIConditionCode] ^short = "[DA] FSIII tilstandskode"
   * system 1..
@@ -31,9 +32,14 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
 * reasonCode.coding[FFBConditionCode] ^short = "[DA] FFB undertemakode"
   * system 1..
   * system = "urn:oid:1.2.208.176.2.22"
-* reasonCode.coding[SKS] ^short = "[DA] Kode fra SKS, typisk diagnose eller procedure"
+* reasonCode.coding[ICD10Diagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "ICD-10 diagnosis code"
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.4.12"
+  * system = $icd10
+* reasonCode.coding[SKSDeviationDiagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "[DA] Dansk SKS-specifik diagnosekode (afvigelse/tilføjelse ift. ICD-10)"
+  * system 1..
+  * system = $sks-icd10-deviations
 * reasonCode.coding[ICPC2code] ^short = "ICPC2 code"
   * system 1..
   * system = "urn:oid:1.2.208.176.2.31"
