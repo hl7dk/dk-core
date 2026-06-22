@@ -7,7 +7,27 @@ Description: "HL7 Denmark core profile for a Minimal DocumentReference inherited
 * extension[versionid] ^short = "Specifies the version of the DocumentReference profile for a standard."
 * context.facilityType from SorOrganizationType (extensible)
 * context.practiceSetting from SorPracticeSettingCode (extensible)
-* context.event from DkCoreDocumentEventCodes (extensible)
+* context.event.coding ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^slicing.ordered = false
+  * ^slicing.description = "Slice based on the coding.system so different code systems can identify the documented event"
+* context.event.coding contains
+    SKS 0..1 and
+    ICD10Diagnosis 0..1 and
+    ICD10DanishExtension 0..1
+* context.event.coding[SKS] from DkCoreDocumentEventCodes (extensible)
+  * ^short = "[DA] SKS forløbselement label (ALAL-hierarki)"
+  * system 1..
+  * system = $SKS (exactly)
+* context.event.coding[ICD10Diagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "ICD-10 diagnosis code"
+  * system 1..
+  * system = $icd10 (exactly)
+* context.event.coding[ICD10DanishExtension] from DkCoreDiagnosisCodes (required)
+  * ^short = "[DA] Dansk SKS-specifik diagnosekode (afvigelse/tilføjelse ift. ICD-10)"
+  * system 1..
+  * system = $icd10-danish-extensions (exactly)
 * author 1..*
 * author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
 * authenticator only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCoreOrganization)
