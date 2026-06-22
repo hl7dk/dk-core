@@ -310,6 +310,9 @@ Description: "DK Extended Patient Contact Relationship"
 * ^status = #active
 * include codes from valueset http://hl7.org/fhir/ValueSet/patient-contactrelationship
 * include codes from valueset dk-core-RelatedPersonRelationshipTypes
+// Declare the Danish v2-0131 (contact role) designation supplement
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement"
 
 ValueSet: RelatedPersonRelationshipTypes
 Id: dk-core-RelatedPersonRelationshipTypes
@@ -338,6 +341,9 @@ Description: "DK Related Person Relationship Types"
 * $v3-RoleCode#POWATT // "power of attorney"
 * $v3-RoleCode#ECON // "emergency contact"
 * include codes from system DkRelatedPersonRelationshipCodes
+// Declare the Danish v3-RoleCode designation supplement for the v3-RoleCode include
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement"
 
 // ValueSet: DkCoreProfessionGroupValueSet
 // Id: DkCoreProfessionGroupValueSet
@@ -957,3 +963,133 @@ Description: "Values used for Practice Setting, as described in the SOR registry
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * include codes from valueset SorPracticeSettingCode
 * exclude codes from valueset SCTLaboratorySpecialities
+
+ValueSet: DkCoreDiagnosisCodes
+Id: dk-core-diagnosis-codes
+Title: "DK Core Diagnosis Codes"
+Description: "Diagnosis codes usable in Denmark: international ICD-10 together with the Danish SKS-specific deviations and extensions to ICD-10 (codes that are not part of plain ICD-10). Excludes the non-codable ICD-10 grouping concepts (chapters and blocks)."
+* ^status = #active
+* ^experimental = false
+* include codes from system $icd10
+* exclude codes from system $icd10 where kind = #chapter
+* exclude codes from system $icd10 where kind = #block
+* include codes from system $icd10-danish-extensions
+// Declare the Danish ICD-10 designation supplement so expansions render Danish text
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = $icd10-da
+
+ValueSet: DkCoreSksObservationCodes
+Id: dk-core-sks-observation-codes
+Title: "DK Core SKS Observation Codes"
+Description: "SKS codes usable as observation/investigation codes: the procedure (pro), investigation (und) and result (res) registers of the Danish SKS classification. Diagnosis (dia) and ATC registers are deliberately excluded."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where register = #pro
+* include codes from system $SKS where register = #und
+* include codes from system $SKS where register = #res
+
+ValueSet: DkCoreDocumentEventCodes
+Id: dk-core-document-event-codes
+Title: "DK Core Document Event Codes"
+Description: "SKS 'Forløbselement label' codes (the ALAL hierarchy) identifying the clinical area / care pathway a document relates to, for use in DocumentReference.context.event."
+* ^status = #active
+* ^experimental = false
+* include codes from system $SKS where concept is-a #ALAL
+
+
+// ---------------------------------------------------------------------------
+// Wrapper ValueSets that carry the Danish CodeSystem supplements.
+// Each wraps a base HL7 code system (identical membership) and declares the
+// matching Danish designation supplement via the valueset-supplement extension
+// so terminology expansions can render Danish display text (displayLanguage=da).
+// ---------------------------------------------------------------------------
+
+ValueSet: DkCoreAdministrativeGender
+Id: dk-core-administrative-gender
+Title: "DK Core Administrative Gender"
+Description: "FHIR administrative-gender value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/administrative-gender
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement"
+
+ValueSet: DkCoreAddressType
+Id: dk-core-address-type
+Title: "DK Core Address Type"
+Description: "FHIR address-type value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/address-type
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement"
+
+ValueSet: DkCoreAddressUse
+Id: dk-core-address-use
+Title: "DK Core Address Use"
+Description: "FHIR address-use value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/address-use
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"
+
+ValueSet: DkCoreCareTeamStatus
+Id: dk-core-care-team-status
+Title: "DK Core Care Team Status"
+Description: "FHIR care-team-status value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/care-team-status
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement"
+
+ValueSet: DkCoreConsentStateCodes
+Id: dk-core-consent-state-codes
+Title: "DK Core Consent State Codes"
+Description: "FHIR consent-state-codes value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/consent-state-codes
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement"
+
+ValueSet: DkCoreDaysOfWeek
+Id: dk-core-days-of-week
+Title: "DK Core Days Of Week"
+Description: "FHIR days-of-week value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/days-of-week
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement"
+
+ValueSet: DkCoreEpisodeOfCareStatus
+Id: dk-core-episode-of-care-status
+Title: "DK Core Episode Of Care Status"
+Description: "FHIR episode-of-care-status value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/episode-of-care-status
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement"
+
+ValueSet: DkCorePublicationStatus
+Id: dk-core-publication-status
+Title: "DK Core Publication Status"
+Description: "FHIR publication-status value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/publication-status
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"
+
+ValueSet: DkCoreRequestStatus
+Id: dk-core-request-status
+Title: "DK Core Request Status"
+Description: "FHIR request-status value set with the Danish designation supplement applied."
+* ^status = #active
+* ^experimental = false
+* include codes from system http://hl7.org/fhir/request-status
+* ^extension[0].url = $vs-supplement
+* ^extension[0].valueCanonical = "http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement"
