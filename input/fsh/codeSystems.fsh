@@ -1,12 +1,12 @@
 CodeSystem: DkCoreProfessionGroupCodes
 Id: DkCoreProfessionGroupCodes
 Title: "DK Profession Group Codes"
-Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b"
+Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from https://autregwebservice.stps.dk/autregservice.asmx/GetAllProfessionGroups"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
-* ^count = 21
+* ^count = 20
 * #C511 "Ambulancebehandler"
 * #9495 "Bandagist"
 * #B511 "Behandlerfarmaceut"
@@ -18,11 +18,10 @@ Description: "DK health ProfessionGroup codes as defined by https://www.retsinfo
 * #5265 "Kiropraktor"
 * #5451 "Klinisk diætist"
 * #5432 "Klinisk tandtekniker"
-* #5176a "Kontaktlinseoptiker"
 * #7170 "Læge"
-* #4498 "Optiker"
-* #5176b "Optometrist"
+* #4498 "Optiker og Optometrist"
 * #A511 "Osteopat"
+* #7150 "Psykolog"
 * #5158 "Radiograf"
 * #5152 "Social- og sundhedsassistent"
 * #5166 "Sygeplejerske"
