@@ -26,10 +26,13 @@ Danish context.
 Hospital encounters in Denmark have associated diagnoses that specify the primary diagnosis being treated ([DA] aktionsdiagnose) and
 secondary diagnoses ([DA] bidiagnoser) that might be relevant to the treatment of the primary diagnosis. These can be given in the diagnosis
 element and it is recommended to use the rank element to distinguish between primary and secondary diagnoses, the primary being given rank 1
-and the secondary a rank > 1. Have a look at this [example](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.html).
+and the secondary a rank = 2. Have a look at this [example](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.html). Rank may also be used for other purposes where relevant. 
 
 ### Priority
 In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'elective' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as necessary.
+
+### Handling contact type 'død'
+The LPR3 contact type "Død" (death) should be represented by setting Patient.deceased[x] to 'true' or a timestamp. In addtion to this, it is recommend to set Encounter.status = 'finished' and an appropriate Encounter.class, such as 'EMER'.
 
 ### Handling future versions
 In FHIR R5 and newer, significant changes have been made to the Encounter profile.
@@ -56,3 +59,5 @@ In order to support the addition of Encounter.plannedStartDate and Encounter.pla
 have been added to DkCore. However, note that in the R4 documentation it is stated that a planned start date could be given by placing
 period.start in the future, and setting the status to ‘planned’. As a consequence, this practice is also acceptable in the dk-core R4 version, 
 but the use of plannedStart and plannedEnd extensions are encouraged to make transition to future FHIR versions easier.
+
+To support migration to future FHIR versions, implementations should avoid using 'arrived' and 'triaged' as Encounter.status where possible, as these concepts are represented in another element, Encounter.subjectStatus, in FHIR R5/R6.
