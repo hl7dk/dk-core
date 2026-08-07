@@ -14,3 +14,6 @@ Please notice, that an organization shall always have at least one identifier. S
 #### Representing a general practitioner
 
 When using the Danish Core Organization profile for representing a general practitioner, it is recommended to use both a [SOR identifier](https://hl7.dk/fhir/core/StructureDefinition-dk-core-organization-definitions.html#Organization.identifier:SOR-ID) and an [ydernummer identifier](https://hl7.dk/fhir/core/StructureDefinition-dk-core-organization-definitions.html#Organization.identifier:Ydernummer.id). It is recommended that the SOR identifier is on the ‘sundhedsinstitution’ level from the SOR hierarchy. The same SOR identifier can be used for multiple Organization instances of different general practitioner’s practices, and therefore the ydernummer identifier will be the unique identifier for a Danish GP. 
+
+#### Cross-boarder exchange
+When exchanging organization data across European borders, be aware that [HL7 EU Core Organization](https://hl7.eu/fhir/base/2.0.0-ballot/StructureDefinition-organization-eu-core.html) requires `Organization.name`.
