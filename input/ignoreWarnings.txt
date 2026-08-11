@@ -29,6 +29,12 @@
 %A definition for CodeSystem 'urn:oid:1.2.208.176.2.4' could not be found, so the code cannot be validated
 %A definition for CodeSystem 'http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes' could not be found, so the code cannot be validated
 
+# DDV (Det Danske Vaccinationsregister) schema-namespace URIs used as identifier systems and coding systems.
+# Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1 (namespace http://vaccinationsregister.dk/schemas/2013/12/01).
+%No definition could be found for URL value 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifier'
+%No definition could be found for URL value 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationVersionIdentifier'
+%A definition for CodeSystem 'http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifier' could not be found, so the code cannot be validated
+
 # Missing Danish translations for LOINC codes
 %There are no valid display names found for the code http://loinc.org%
 
