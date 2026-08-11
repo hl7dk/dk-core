@@ -47,12 +47,6 @@ Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinit
 Alias: $eu-medicationRequest = http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
 Alias: $eu-medicationStatement = http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
 Alias: $eu-medication = http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
-// DDV (Det Danske Vaccinationsregister) XML schema namespace, base interface 1.4.0 + E1.
-// Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1
-Alias: $DdvVaccinationId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifier
-Alias: $DdvVaccineId = http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifier
-Alias: $DdvCredibility = http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationCredibility
-Alias: $DdvPatientId = https://www.sundhed.dk/patient
 Alias: $DanishXdsOid = urn:oid:1.2.208.184.100.9
 Alias: $MedComFormatOID = urn:oid:1.2.208.184.100.10
 Alias: $IANALanguageOID = urn:oid:2.16.840.1.113883.6.121
