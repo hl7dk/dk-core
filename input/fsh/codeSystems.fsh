@@ -1,7 +1,7 @@
 CodeSystem: DkCoreProfessionGroupCodes
 Id: DkCoreProfessionGroupCodes
 Title: "DK Profession Group Codes"
-Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from https://autregwebservice.stps.dk/autregservice.asmx/GetAllProfessionGroups"
+Description: "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2024/1008, and derived from https://autregwebservice.stps.dk/autregservice.asmx/GetAllProfessionGroups"
 * ^experimental = false
 * ^status = #active
 * ^content = #complete
