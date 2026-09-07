@@ -957,3 +957,12 @@ Description: "Values used for Practice Setting, as described in the SOR registry
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * include codes from valueset SorPracticeSettingCode
 * exclude codes from valueset SCTLaboratorySpecialities
+
+ValueSet: VaccineATCCodes
+Id: dk-core-vaccine-atc-codes
+Title: "DK Vaccine ATC Codes"
+Description: "WHO ATC codes for vaccines, being the codes that descend from J07, which is the root supertype concept for vaccines in the ATC classification."
+* ^status = #active
+* ^experimental = false
+* ^copyright = "This value set includes content from the WHO ATC classification, which is copyright © World Health Organization Collaborating Centre for Drug Statistics Methodology. See https://www.who.int/tools/atc-ddd-toolkit/atc-classification"
+* codes from system $atc where concept is-a #J07

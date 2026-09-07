@@ -52,7 +52,7 @@ Private-marking affects what an individual clinician sees, not what the register
 The element is nevertheless **optional** in this profile, and `MustSupport` is deliberately **not** used on it. Two reasons:
 
 - Correct use of `MustSupport` requires a more specific use context than dk-core provides, and it is consequently not used anywhere in dk-core. An implementation guide deriving from dk-core for a concrete use case is the right place to raise expectations on `lotNumber`.
-- Traceability does not rest on the consumer of an individual `Immunization` resource; it rests on the authoritative register that holds the full registration — see [batch numbers and traceability](#batch-numbers-and-traceability) below. Whether the batch number is exposed to a given consumer is a separate question from whether it is recorded.
+- Whether the batch number is exposed to a given consumer is a separate question from whether it is recorded at the source. Where a centrally governed register stands behind the registration, traceability is that register's responsibility rather than the individual resource consumer's — that is the case for DDV, see [batch numbers and traceability](#batch-numbers-and-traceability) below. Sources with no such register behind them should not read this as licence to drop the batch number.
 
 #### Performer
 
@@ -78,7 +78,7 @@ This is an implementation concern rather than a profile concern, and it is docum
 
 The vaccine is carried as free text in `vaccineCode.text` together with up to three codings, sliced on `vaccineCode.coding`:
 
-- **`ATC`** — the WHO ATC code. The ATC code must descend from J07, given that J07 functions as the root supertype concept for vaccines in the [ATC classification](https://www.who.int/tools/atc-ddd-toolkit/atc-classification).
+- **`ATC`** — the WHO ATC code. The ATC code must descend from J07, given that J07 functions as the root supertype concept for vaccines in the [ATC classification](https://www.who.int/tools/atc-ddd-toolkit/atc-classification). This is enforced, not merely stated: the slice carries a *required* binding to [VaccineATCCodes](ValueSet-dk-core-vaccine-atc-codes.html), which is the intensional expansion of everything under J07, so a non-vaccine ATC code fails validation.
 - **`SCTVaccineCode`** — a SNOMED CT code for the vaccine, which MAY be added where known.
 - **`DdvVaccine`** — the numeric vaccine identifier assigned by SSI and used in DDV; see below.
 
@@ -115,9 +115,7 @@ A registered DDV `Vaccination` is **always** an administered/effectuated vaccina
 
 #### Batch numbers and traceability
 
-`Vaccination.BatchNumber` maps to `lotNumber`. The batch number is always recorded in DDV.
-
-Because DDV is the centrally governed system of record for vaccinations, the responsibility for tracing adverse events and product defects — and for notifying and carrying out any resulting investigation — sits with DDV, not with the consumer of an individual `Immunization` resource. All batch numbers and all other registration data reside in DDV regardless of what a given exchange exposes. That is why the profile can safely leave `lotNumber` optional, as described under [Batch number](#batch-number).
+`Vaccination.BatchNumber` maps to `lotNumber`. The batch number is always recorded in DDV, regardless of what a given exchange exposes, and DDV — as the centrally governed system of record — carries the responsibility for tracing adverse events and product defects and for any resulting investigation. This is the register that the general reasoning under [Batch number](#batch-number) refers to.
 
 #### Effectuator
 
@@ -135,7 +133,7 @@ DDV's `IsPrevious` and `VaccinationCredibility` express exactly what `primarySou
 
 - **`IsPrevious = true`** → `primarySource = false`. It indicates that the actual effectuation happened at a different time, place and/or by a different person than the one performing the registration — e.g. vaccinations received abroad or before registration in DDV became legally required. Such previous vaccinations may be created by health professionals as well as by the citizen themselves; which of the two is reflected in `VaccinationCredibility`. A registration made by the party that administered the dose is `primarySource = true`.
 - **`VaccinationCredibility`** → `reportOrigin` when `primarySource = false`. The enum values are `Oprettet af læge / medhjælp`, `Oprettet af borger`, `Udleveret på apotek`, `Udleveret på apotek og godkendt af læge`, `Oprettet af læge eller oprettet af borger og godkendt af læge`, `Oprettet på baggrund af data fra Sygesikringsregisteret` and `Slettet`. Code with an `immunization-origin` concept where one corresponds — `Oprettet af borger` is `recall`, `Oprettet på baggrund af data fra Sygesikringsregisteret` is `jurisdiction` — and carry the DDV wording in `reportOrigin.text`. `Slettet` is a deletion, not an origin, and maps to `status = #entered-in-error` as described above.
-- **`ConfirmedByPrescriptionServer`** → `note`. Has only historical interest and primarily reflects the data quality of the registration. Comparable information can be read from `VaccinationCredibility`.
+- **`ConfirmedByPrescriptionServer`** is deliberately **not** mapped. It has only historical interest, reflects the data quality of the registration, and says nothing that `VaccinationCredibility` does not already say through `reportOrigin` — so it is dropped rather than parked in `note`.
 
 `JohnImmunizationCitizenReported` illustrates a citizen-reported previous vaccination.
 
@@ -151,7 +149,7 @@ the authoritative DDV XML schema namespace. DDV does not publish a separate cano
 
 #### Vaccine element
 
-DDV delivers the vaccine as a structured `Vaccine` element: a free-text `VaccineName` (`vaccineCode.text`), an SSI `VaccineIdentifier` (`vaccineCode.coding[DdvVaccine]`), an `ATC` code (`vaccineCode.coding[ATC]`), a list of target diseases each with its own ATC coding (`protocolApplied.targetDisease`), and optional SSI-defined drugs (`SSIDrug`).
+DDV delivers the vaccine as a structured `Vaccine` element, which is what the three `vaccineCode.coding` slices described under [Vaccine coding](#vaccine-coding) exist to carry. Its `SSIDrug` list — SSI-defined medicinal products — has no home on the R4 `Immunization` resource and is not mapped.
 
 #### Identifier namespaces
 
