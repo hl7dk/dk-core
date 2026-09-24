@@ -43,13 +43,18 @@ parameters:
     - http://hl7.org/fhir/sid/icpc-2
 
   path-expansion-params: Parameters-expParam.json
+  suppress-mappings:
+    - http://hl7.org/fhir/fivews
+    - http://hl7.org/fhir/workflow
+    - http://hl7.org/v3
+    - http://hl7.org/v3/cda
+    - http://ihe.net/xds
+    - http://hl7.org/v2
 
 dependencies:
-  hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.uv.extensions.r4:
-    version: 5.3.0-ballot-tc1
-    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
-  hl7.fhir.uv.phd: 1.1.0
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
+  hl7.fhir.uv.phd: 2.0.0
   hl7.fhir.uv.ipa: 1.1.0
   ihe.iti.mhd: 4.2.3
 
@@ -59,7 +64,7 @@ dependencies:
 # │  Variables for release control                                                                 │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-version: 3.7.0
+version: 3.8.0
 #Flip status to 'active' for publication. Flip to 'draft' for CI
 status: draft
 #status: active

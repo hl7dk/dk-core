@@ -119,7 +119,7 @@ InstanceOf: DkCoreCondition
 Title: "John pacemaker"
 Description: "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode"
 Usage: #example
-* code = $sct#441509002 "Cardiac pacemaker in situ"
+* code = $sct#441509002 "kardiel pacemaker in situ"
 * subject.reference = "Patient/john"
 * recorder.reference = "Practitioner/AbrahamLaege"
 * category = $condition-category#problem-list-item

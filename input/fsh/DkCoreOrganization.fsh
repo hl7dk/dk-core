@@ -163,6 +163,15 @@ Usage: #example
 * identifier[0].system = "http://cvr.dk"
 * identifier[=].value = "64942212"
 
+Instance: KliniskBiokemiHBY
+InstanceOf: DkCoreOrganization
+Title: "Laboratory instance of DkCoreOrganization"
+Description: "Laboratory organization"
+Usage: #example
+* identifier[0].value = "275871000016006"
+* identifier[=].system = "urn:oid:1.2.208.176.1.1"
+
+
 Invariant: dk-core-organization-mandatory-identifier
 Description: "Minimum one identifier shall be of type SOR-ID, KOMBIT-ORG-ID or CVR-ID"
 Severity: #error
