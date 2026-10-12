@@ -64,3 +64,5 @@ Use of this label should be interpreted according to the law, roughly meaning th
 ### Unknown values or Absent values
 There may be scenarios where it is not possible to supply all values as required by this profile. For such cases it is possible to specify a Data Absent Reason ([DAR](https://hl7.org/fhir/R4/extension-data-absent-reason.html)) extension which enables data fields to be supplied where data is not available. An example of this can be seen [here](./Patient-ukendt.html). The use of DAR is not restricted to the patient profile.
 
+### Cross-boarder exchange
+When exchanging patient data across European borders, be aware that [HL7 EU Core Patient](https://hl7.eu/fhir/base/2.0.0-ballot/StructureDefinition-patient-eu-core.html) requires `Patient.name` and `Patient.birthDate`. Each `Patient.name` must contain at least given, family or text, or a Data Absent Reason. This is not a requirement in DkCorePatient.
