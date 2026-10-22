@@ -32,7 +32,7 @@ and the secondary a rank = 2. Have a look at this [example](Encounter-915a3cfb-2
 In Denmark, the only priorities commonly used is 'akut' and 'elektiv'. We have translated these to 'ASAP' and 'elective' in the recommended FHIR value set. To avoid other uses of the priority values, we have narrowed the value set down to only these two values. However, the binding is extensible, so if more priorities are needed they can be added as necessary.
 
 ### Handling contact type 'død'
-The LPR3 contact type "Død" (death) should be represented by setting Patient.deceased[x] to 'true' or a timestamp. In addtion to this, it is recommend to set Encounter.status = 'finished' and an appropriate Encounter.class, such as 'EMER'.
+The LPR3 contact type "Død" (death) should be represented by setting Patient.deceased[x] to 'true' or to a timestamp indicating the date and time of death. This information is independent of the Encounter.status and class. Where appropriate, Encounter.status may be set to 'finished' to indicate that the encounter has ended. Encounter.class should reflect the actual type of the encounter
 
 ### Handling future versions
 In FHIR R5 and newer, significant changes have been made to the Encounter profile.
