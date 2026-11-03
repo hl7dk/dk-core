@@ -167,7 +167,7 @@ Description: "Elses smerte målt med VRS"
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
-* valueCodeableConcept.coding[1] = $sct#76948002 "Severe pain (finding)"
+* valueCodeableConcept.coding[1] = $sct#76948002 "Svære smerter"
 * status = #final
 * effectiveDateTime = 2020-06-01
 
