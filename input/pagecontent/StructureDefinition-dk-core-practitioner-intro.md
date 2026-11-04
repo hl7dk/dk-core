@@ -5,3 +5,6 @@ Be especially aware that the Practitioner profile is only used for describing pe
 
 The qualification.code has an extendable ValueSet that includes all official authorizations as defined by [https://www.retsinformation.dk/eli/lta/2019/731](https://www.retsinformation.dk/eli/lta/2019/731), and derived from [http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups](http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups). In the original set, Code (5176) was not uniqe, and have been converted to 5176a and 5176b respectively. However, the official codes should not limit the use of the practioner profile.
 E.g. if you need to represent another professional group e.g. social worker OR if you need to represent a qualification, important for a local context e.g. that someone has completed advanced pressure ulcer care training you have different options. You may for example extend the valueSet, add the qualification as plain text, slice the qualification attribute or choose not to represent the qualification.
+
+### Cross-boarder exchange
+When exchanging practitioner data across European borders, be aware that [HL7 EU Core Practitioner](https://hl7.eu/fhir/base/2.0.0-ballot/StructureDefinition-practitioner-eu-core.html) requires at least one `Practitioner.name`. This is not a requirement in DkCorePractitioner.
