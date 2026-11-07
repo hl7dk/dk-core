@@ -96,7 +96,7 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding contains
    SCTCode 0..1
 * method.coding[SCTCode] from TechniquesSCTCodes (example)
-* method.coding[SCTCode].system = $sct
+* method.coding[SCTCode].system = $sct-int
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"

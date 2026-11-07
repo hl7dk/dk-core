@@ -190,7 +190,7 @@ InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
-* code.coding[0] = $sct#6942003
+* code.coding[SNOMEDCT] = $sct#6942003
 * code.coding[LOINC] = $LOINC#80288-4
 * subject = Reference(Max)
 * valueCodeableConcept.coding = $sct#450847001
