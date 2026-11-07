@@ -87,9 +87,11 @@ Usage: #example
 Instance: JohnFracture
 InstanceOf: DkCoreCondition
 Title: "John fraktur"
-Description: "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode"
+Description: "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode. Diagnosekoden (DS721) og tillægskoden (TUL1) angives som to separate codings, ikke som den sammensatte SKS-notation DS721+TUL1."
 Usage: #example
-* code.coding[SKS-D] = urn:oid:1.2.208.176.2.4.12#DS721+TUL1 "Pertrokantær femurfraktur, højresidig"
+* code.coding[0] = urn:oid:1.2.208.176.2.4.12#DS721 "Pertrokantær femurfraktur"
+* code.coding[1] = $SKS#TUL1 "højresidig"
+* code.text = "Pertrokantær femurfraktur, højresidig"
 * subject.reference = "Patient/john"
 * asserter.reference = "Practitioner/AbrahamLaege"
 * recorder.reference = "Practitioner/AbrahamLaege"
