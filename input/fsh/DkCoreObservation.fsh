@@ -151,7 +151,7 @@ InstanceOf: DkCoreObservation
 Usage: #example
 * status = #final
 * code.coding[0] = $NPU#NPU03987 "U—Leukocytes; arb.c.(proc.) = ?"
-* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* code.coding[+] = $sct#252385000 "måling af leukocytesterase vha. urinstix"
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
