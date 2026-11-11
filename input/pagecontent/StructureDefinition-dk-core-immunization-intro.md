@@ -23,7 +23,7 @@ This is modelled the same way dk-core marks confidential data on [DkCorePatient]
 meta.security = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R   // "Restricted"
 ```
 
-A private-marked vaccination is a **complete** registration. It carries the same elements — `performer`, `lotNumber`, notes — as any other vaccination; only its visibility differs. Implementers must not treat private-marking as a reason to strip data from the resource.
+A private-marked vaccination is a **complete** registration. It carries the same elements — `performer`, `lotNumber` (aka batch number), notes — as any other vaccination; only its visibility differs. Implementers must not treat private-marking as a reason to strip data from the resource.
 
 Two points are deliberately left to the implementer, because a profile cannot express them:
 

@@ -50,6 +50,7 @@ Description: "HL7 Denmark core profile for an administered vaccination, aligned 
 * protocolApplied ^short = "Vaccination course or series that the administration is part of"
 * note ^short = "Additional information about the vaccination without a dedicated element"
 * note ^comment = "Do not use `note` for information that has a dedicated element. Provenance of the registration belongs in `primarySource` / `reportOrigin`, and a planned next dose belongs in a plan element referenced by this resource - see the profile documentation."
+* lotNumber ^short = "Vaccine lot number. Also known as batch number"
 
 
 Mapping: DkCoreImmunizationToDdv
