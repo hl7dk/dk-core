@@ -13,8 +13,10 @@ Description: "HL7 Denmark core profile for observations"
     NPU 0..1 and
     IEEE 0..1 and
     MedCom 0..1 and
-    SKS 0..1
-* code.coding[LOINC] 
+    SKS 0..1 and
+    ICD10Diagnosis 0..1 and
+    ICD10DanishExtension 0..1
+* code.coding[LOINC]
   * ^short = "LOINC code for the observation"
   * system 1..
   * system = "http://loinc.org" (exactly)
@@ -39,10 +41,20 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
-* code.coding[SKS] 
+* code.coding[SKS] from DkCoreSksObservationCodes (extensible)
   * ^short = "SKS code for the observation"
   * system 1..
   * system = $SKS (exactly)
+  * code 1..
+* code.coding[ICD10Diagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "ICD-10 diagnosis code"
+  * system 1..
+  * system = $icd10 (exactly)
+  * code 1..
+* code.coding[ICD10DanishExtension] from DkCoreDiagnosisCodes (required)
+  * ^short = "[DA] Dansk SKS-specifik diagnosekode (afvigelse/tilføjelse ift. ICD-10)"
+  * system 1..
+  * system = $icd10-danish-extensions (exactly)
   * code 1..
 * subject only Reference(DkCorePatient or Group or DkCoreLocation or Device)
 * subject 1..
@@ -58,8 +70,10 @@ Description: "HL7 Denmark core profile for observations"
     NPU 0..1 and
     IEEE 0..1 and
     MedCom 0..1 and
-    SKS 0..1
-* component.code.coding[LOINC] 
+    SKS 0..1 and
+    ICD10Diagnosis 0..1 and
+    ICD10DanishExtension 0..1
+* component.code.coding[LOINC]
   * ^short = "LOINC code for the observation"
   * system 1..
   * system = "http://loinc.org" (exactly)
@@ -84,10 +98,20 @@ Description: "HL7 Denmark core profile for observations"
   * system 1..
   * system = $IEEEx73 (exactly)
   * code 1..
-* component.code.coding[SKS] 
+* component.code.coding[SKS] from DkCoreSksObservationCodes (extensible)
   * ^short = "SKS code for the observation."
   * system 1..
   * system = $SKS (exactly)
+  * code 1..
+* component.code.coding[ICD10Diagnosis] from DkCoreDiagnosisCodes (required)
+  * ^short = "ICD-10 diagnosis code"
+  * system 1..
+  * system = $icd10 (exactly)
+  * code 1..
+* component.code.coding[ICD10DanishExtension] from DkCoreDiagnosisCodes (required)
+  * ^short = "[DA] Dansk SKS-specifik diagnosekode (afvigelse/tilføjelse ift. ICD-10)"
+  * system 1..
+  * system = $icd10-danish-extensions (exactly)
   * code 1..
 * component.valueQuantity.system = $ucum
 * method.coding ^slicing.discriminator.type = #value
