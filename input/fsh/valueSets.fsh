@@ -24,6 +24,7 @@ Description: "Subdivision codes (Regional codes) used in Denmark"
 * $iso3166-2#DK-81
 * $iso3166-2#DK-85
 * $iso3166-2#DK-83
+* $iso3166-2#DK-86
 
 ValueSet: LoincBasicObservation
 Id: dk-core-LoincBasicObservation
