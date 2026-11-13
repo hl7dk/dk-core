@@ -18,7 +18,7 @@ Description: "HL7 Denmark core profile for an administered vaccination, aligned 
 * meta.source ^short = "Register or system the vaccination was recorded in, where one can be identified"
 * meta.security ^short = "[DA] Privatmarkering"
 * status ^short = "Status of the vaccination - an administered vaccination is completed"
-* statusReason ^short = "Reason the vaccination was not administered - not used by this profile"
+* statusReason ^short = "Reason the vaccination was not administered - not used by this profile as its unsupported by DDV"
 * vaccineCode.coding ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
