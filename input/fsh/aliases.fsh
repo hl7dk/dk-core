@@ -31,6 +31,7 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $v3-ActPriority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: $v3-ActCode3.0.0 = http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0
 Alias: $atc = http://www.whocc.no/atc
+Alias: $icpc-2 = http://hl7.org/fhir/sid/icpc-2
 Alias: $immunization-origin = http://terminology.hl7.org/CodeSystem/immunization-origin
 // DDV (Det Danske Vaccinationsregister) XML schema namespace, base interface 1.4.0 + E1.
 // Source of truth: https://wiki.fmk-teknik.dk/fmk:ddv:extensions:e1

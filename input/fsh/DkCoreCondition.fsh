@@ -37,7 +37,7 @@ Description: "HL7 Denmark core profile for professionally asserted conditions, a
   * system = "urn:oid:1.2.208.176.2.4.12"
 * code.coding[ICPC2code] ^short = "ICPC2 code"
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.31"
+  * system = $icpc-2
 * subject only Reference(DkCorePatient)
 * recorder only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCorePatient or DkCoreRelatedPerson)
 * asserter only Reference(DkCorePractitioner or DkCorePractitionerRole)
@@ -74,7 +74,8 @@ InstanceOf: DkCoreCondition
 Title: "John diabetes"
 Description: "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise"
 Usage: #example
-* code = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
+* code.coding[0] = urn:oid:1.2.208.176.2.4.12#DE11 "Type 2-diabetes"
+* code.coding[+] = $icpc-2#T90 "Diabetes non-insulin dependent"
 * subject.reference = "Patient/john"
 * asserter.reference = "Practitioner/AbrahamLaege"
 * recorder.reference = "Practitioner/AbrahamLaege"
