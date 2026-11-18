@@ -23,3 +23,7 @@ The status attributes controls the context of a condition. clinicalStatus should
 Note that "unconfirmed" is not the same as a risk of developing a condition. The risk of developing a certain condition may be recorded in (at least) two ways in FHIR i.e. as a familyMemberHistory or by populating Condition.code with a code that expresses a risk e.g. the SNOMED CT code ´395112001 At increased risk for cardiovascular event (finding)´. The first would typically be used if recording a family history, the second, if you want to use an increased risk as the reason for starting a prophylactic treatment.
 
 Condition profile cover both primary sector, secondary sector (medical specialists ([DA] speciallæger) and hospitals) and municipality cases. As such the profile should be usable in most Danish contexts.
+
+
+#### Cross-boarder exchange
+When exchanging condition data across European borders, be aware that [HL7 EU Core  Condition](https://hl7.eu/fhir/base/2.0.0-ballot/StructureDefinition-condition-eu-core.html) requires Condition.code, whereas it has the cardinality 0..1 in DK Core. When a condition is expressed in a text, we recommend to included the text in `Condition.code.text` to ensure consistency with HL7 EU Core. 
