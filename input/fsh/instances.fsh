@@ -1,9 +1,9 @@
 Instance: cpr
 InstanceOf: NamingSystem
-Title: "cpr"
+Title: "DK Central Person Registry (CPR)"
 Description: "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."
 Usage: #definition
-* name = "DK Central Person Registry (CPR)"
+* name = "DkCentralPersonRegistryCpr"
 * status = #active
 * kind = #identifier
 * date = "1968-04-02"
@@ -21,10 +21,10 @@ Usage: #definition
 
 Instance: sor
 InstanceOf: NamingSystem
-Title: "sor"
+Title: "DK Central Healthcare Organization Registry (SOR)"
 Description: "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former."
 Usage: #definition
-* name = "DK Central Healthcare Organization Registry (SOR)"
+* name = "DkCentralHealthcareOrganizationRegistrySor"
 * status = #active
 * kind = #identifier
 * date = "2021-03-14T16:56:07+01:00"
@@ -43,10 +43,10 @@ Usage: #definition
 
 Instance: cvr
 InstanceOf: NamingSystem
-Title: "cvr"
+Title: "DK Central Business Register (CVR)"
 Description: "The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis."
 Usage: #definition
-* name = "DK Central Business Register (CVR)"
+* name = "DkCentralBusinessRegisterCvr"
 * status = #active
 * kind = #identifier
 * date = "2023-10-01"
@@ -84,6 +84,7 @@ Usage: #definition
 Title: "DK Core Marital Status"
 * experimental = false
 * url = "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
+* name = "DkMaritalStatus"
 * title = "DK MaritalStatus"
 * status = #active
 * publisher = "HL7 Denmark"

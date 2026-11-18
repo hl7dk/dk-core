@@ -31,7 +31,7 @@ Description: "APD-DK DocumentReference instance of DkCoreMinimalDocumentReferenc
 * category = $DanishXdsOid#001 "Klinisk rapport"
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
-* securityLabel = #N
+* securityLabel = $v3-Confidentiality#N "normal"
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
 * content.attachment.language = $IANALanguageOID#da "Danish"
 * content.attachment.creation = "2023-09-08T13:28:17+01:00"
@@ -65,7 +65,7 @@ Description: "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReferenc
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * content.attachment.contentType = $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"
-* securityLabel = #N
+* securityLabel = $v3-Confidentiality#N "normal"
 * content.attachment.language = $IANALanguageOID#da "Danish"
 * content.attachment.creation = "2024-05-01T12:00:00+01:00"
 * content.attachment.url = "DOC001.XML"

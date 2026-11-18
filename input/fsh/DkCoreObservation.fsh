@@ -148,6 +148,8 @@ Title: "The device that performed the observation"
 
 Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
+Title: "Else's urine dipstick"
+Description: "Example of a urine dipstick result for the patient Else"
 Usage: #example
 * status = #final
 * code.coding[0] = $NPU#NPU03987 "U—Leukocytes; arb.c.(proc.) = ?"
@@ -156,6 +158,7 @@ Usage: #example
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
 * method = $sct#272391002 "måling"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
@@ -170,6 +173,7 @@ Description: "Elses smerte målt med VRS"
 * valueCodeableConcept.coding[1] = $sct#76948002 "Svære smerter"
 * status = #final
 * effectiveDateTime = 2020-06-01
+* performer = Reference(SidselSygeplejerske)
 
 Instance: ObservationOxySat
 InstanceOf: DkCoreObservation
