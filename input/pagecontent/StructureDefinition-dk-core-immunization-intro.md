@@ -15,7 +15,7 @@ The profile represents administered vaccinations, so in practice only two of the
 
 #### Confidentiality and private-marking
 
-In Denmark, a citizen may choose to **private-mark** a specific vaccination. A private-marked vaccination is administered on equal footing with every other registration — private-marking is **not** a refusal and does **not** change `status`. It means only that the record must not be made visible unless the responsible health professional invokes *værdispring* (break-the-glass) or holds the citizen's consent.
+In Denmark, a citizen may choose to **private-mark** a specific vaccination. A private-marked vaccination is administered on equal footing with every other registration — private-marking is **not** a refusal and does **not** change `status`. It means only that the record must not be made visible unless the responsible health professional invokes [*værdispring*](https://www.retsinformation.dk/eli/mt/1998/161) (break-the-glass) or holds the citizen's consent.
 
 This is modelled the same way dk-core marks confidential data on [DkCorePatient](StructureDefinition-dk-core-patient.html): a security label
 
@@ -50,7 +50,7 @@ The vaccine is carried as free text in `vaccineCode.text` together with up to th
 
 - **`ATC`** — the WHO ATC code. The ATC code must descend from J07, given that J07 functions as the root supertype concept for vaccines in the [ATC classification](https://www.who.int/tools/atc-ddd-toolkit/atc-classification). This is enforced, not merely stated: the slice carries a *required* binding to [VaccineATCCodes](ValueSet-dk-core-vaccine-atc-codes.html), which is the intensional expansion of everything under J07, so a non-vaccine ATC code fails validation.
 - **`SCTVaccineCode`** — a SNOMED CT code for the vaccine, which MAY be added where known.
-- **`DdvVaccine`** — the numeric vaccine identifier assigned by SSI and used in DDV; see the [Mappings](StructureDefinition-dk-core-immunization-mappings.html) tab.
+- **`DdvVaccine`** — the numeric vaccine identifier assigned by Statens Serum Institut and used in DDV; see the [Mappings](StructureDefinition-dk-core-immunization-mappings.html) tab.
 
 Target diseases are carried in `protocolApplied.targetDisease`, each with its own coding.
 
