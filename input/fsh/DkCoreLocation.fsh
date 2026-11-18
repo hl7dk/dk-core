@@ -23,6 +23,8 @@ Usage: #example
 
 Instance: neuroradiologyUnit
 InstanceOf: DkCoreLocation
+Title: "Neuroradiology unit"
+Description: "Example of a hospital unit (neuroradiology) represented as a Location"
 Usage: #example
 * status = #active
 * name = "Neuro unit"

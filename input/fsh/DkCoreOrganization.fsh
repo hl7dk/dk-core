@@ -112,7 +112,7 @@ Usage: #example
 * identifier[=].value = "12345678901"
 * identifier[+].system = "http://cvr.dk"
 * identifier[=].value = "26919991"
-* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[+].system = "http://www.gs1.org/gln"
 * identifier[=].value = "5798002472264"
 * identifier[+].system = "https://kombit.dk/sts/organisation"
 * identifier[=].value = "urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6"
@@ -136,7 +136,7 @@ Description: "Example hospital department with the orthopedic surgery specialty"
 Usage: #example
 * identifier[0].system = "urn:oid:1.2.208.176.1.1"
 * identifier[=].value = "12345678901"
-* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[+].system = "http://www.gs1.org/gln"
 * identifier[=].value = "5798002472264"
 * name = "Ortopædkirurgisk sengeafdeling"
 * type = $sct#551611000005102
@@ -148,7 +148,7 @@ Description: "Example hospital sub-department with the orthopedic surgery specia
 Usage: #example
 * identifier[0].system = "urn:oid:1.2.208.176.1.1"
 * identifier[=].value = "12345678901"
-* identifier[+].system = "https://www.gs1.org/gln"
+* identifier[+].system = "http://www.gs1.org/gln"
 * identifier[=].value = "5798002472264"
 * name = "Ortopædkirurgisk sengeafsnit"
 * type = $sct#551611000005102

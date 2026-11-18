@@ -1,7 +1,7 @@
 The following example shows a real-life recording of a home monitoring blood pressure measurement. Due to the
 size and complexity of this example, a bit of background and guidance on the contents will be provided
 
-## Background
+### Background
 
 In many situations citizens may use personal equipment (their own property or borrowed from a healthcare
 provider) to automatically capture and record medical observations. This class of equipment is known by the
@@ -15,7 +15,7 @@ diverse consumer-grade Internet-connected equipment used under no clinical super
  - Accuracy of timestamps, consistency of timelines etc. In particular when the PHD is used by someone
    traveling around the globe.
 
-### Standardization and Interoperability
+#### Standardization and Interoperability
 
 In order to deal with these challenges and coordinate the effort across many different standardization bodies,
 the [Continua Design Guidelines (CDG)](https://www.pchalliance.org/continua-design-guidelines) has been
@@ -41,14 +41,14 @@ documents](https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-H.813-201911-
 
 
 
-## Bundle Overview and Reader's Guide
+### Bundle Overview and Reader's Guide
 
 The example provided here is the data payload transferred from the home of the user over the Internet to a
 central collection server at a tele-monitoring service provider. This bundle is a single self-contained
 message, demonstrating how a blood pressure measurement is encoded using a FHIR Bundle compliant to *both* the
 [HL7 FHIR PHD IG](http://hl7.org/fhir/uv/phd/) *and* the `DkCoreObservation` profiles.
 
-### Bundle Structure and Content
+#### Bundle Structure and Content
 
 The Bundle contains the following entries:
 
@@ -76,5 +76,5 @@ The Bundle contains the following entries:
  function that summarises the resource into a short form (hash), in order to prevent duplicates.
 
 
-## Narrative Content
+### Narrative Content
 

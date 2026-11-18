@@ -96,7 +96,7 @@ Description: "HL7 Denmark core profile for observations"
 * method.coding contains
    SCTCode 0..1
 * method.coding[SCTCode] from TechniquesSCTCodes (example)
-* method.coding[SCTCode].system = $sct
+* method.coding[SCTCode].system = $sct-int
 
 Invariant: dk-core-observation-mandatory-units
 Description: "If value is specified then unit and/or code must be specified"
@@ -148,14 +148,17 @@ Title: "The device that performed the observation"
 
 Instance: ElseUrinStix
 InstanceOf: DkCoreObservation
+Title: "Else's urine dipstick"
+Description: "Example of a urine dipstick result for the patient Else"
 Usage: #example
 * status = #final
 * code.coding[0] = $NPU#NPU03987 "U—Leukocytes; arb.c.(proc.) = ?"
-* code.coding[+] = $sct#252385000 "Urine dipstick for leukocyte esterase (procedure)"
+* code.coding[+] = $sct#252385000 "måling af leukocytesterase vha. urinstix"
 * subject = Reference(else)
 * effectiveDateTime = "2023-09-12T17:45:00.000Z"
 * valueString = "Påviselige leukocytter"
 * method = $sct#272391002 "måling"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: ElsePainVRS
 InstanceOf: dk-core-observation
@@ -167,9 +170,10 @@ Description: "Elses smerte målt med VRS"
 * valueCodeableConcept.coding[0].system = "http://localSystem.dk"
 * valueCodeableConcept.coding[0].code = #d253770d-ce0b-4320-9806-b8fbe9e5af8a "Kraftige/svære smerter (3)"
 * valueCodeableConcept.coding[0].userSelected = true
-* valueCodeableConcept.coding[1] = $sct#76948002 "Severe pain (finding)"
+* valueCodeableConcept.coding[1] = $sct#76948002 "Svære smerter"
 * status = #final
 * effectiveDateTime = 2020-06-01
+* performer = Reference(SidselSygeplejerske)
 
 Instance: ObservationOxySat
 InstanceOf: DkCoreObservation

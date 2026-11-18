@@ -36,7 +36,7 @@ Description: "HL7 Denmark core profile for requesting a service, such as diagnos
   * system = "urn:oid:1.2.208.176.2.4.12"
 * reasonCode.coding[ICPC2code] ^short = "ICPC2 code"
   * system 1..
-  * system = "urn:oid:1.2.208.176.2.31"
+  * system = $icpc-2
 
 
 Instance: JohnsServiceRequest
@@ -51,6 +51,7 @@ Usage: #example
 * category = $sct#658161000005107 "hjemmesygepleje"
 * code = $sct#225358003 "sårbehandling og -pleje"
 * orderDetail = $sct#410379003 "overvågning af forbindingskift/sårpleje"
+* reasonCode.coding[+] = $icpc-2#S97 "Chronic ulcer skin"
 
 
 Instance: MaxServiceRequest

@@ -67,6 +67,8 @@ Usage: #example
 
 Instance: ElseINR
 InstanceOf: DkCoreObservation
+Title: "Else's INR"
+Description: "Example of an INR laboratory result for the patient Else"
 Usage: #example
 * status = #final
 * subject = Reference(else)
@@ -75,9 +77,12 @@ Usage: #example
 * valueQuantity.value = 1.00
 * valueQuantity.code = #1
 * valueQuantity.system = $ucum
+* performer = Reference(KliniskBiokemiHBY)
 
 Instance: ElseKalium
 InstanceOf: DkCoreObservation
+Title: "Else's potassium"
+Description: "Example of a potassium (kalium) laboratory result for the patient Else"
 Usage: #example
 * status = #final
 * subject = Reference(else)
@@ -86,9 +91,12 @@ Usage: #example
 * valueQuantity.value = 3.0
 * valueQuantity.code = #mmol/L
 * valueQuantity.system = $ucum
+* performer = Reference(KliniskBiokemiHBY)
 
 Instance: ElseNatrium
 InstanceOf: DkCoreObservation
+Title: "Else's sodium"
+Description: "Example of a sodium (natrium) laboratory result for the patient Else"
 Usage: #example
 * status = #final
 * subject = Reference(else)
@@ -97,3 +105,4 @@ Usage: #example
 * valueQuantity.value = 150
 * valueQuantity.code = #mmol/L
 * valueQuantity.system = $ucum
+* performer = Reference(KliniskBiokemiHBY)

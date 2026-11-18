@@ -32,6 +32,7 @@ Usage: #example
 Instance: ObservationOxySatBasicObservationOrg
 InstanceOf: DkCoreBasicObservation
 Title: "John's oxygen saturation measurement (Basic observation)"
+Description: "Example of an oxygen saturation measurement for the patient John, using the basic observation profile"
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
@@ -75,6 +76,8 @@ Usage: #example
 
 Instance: ElseConsciousness
 InstanceOf: DkCoreObservation
+Title: "Else's level of consciousness"
+Description: "Example of a level of consciousness (ACVPU) assessment for the patient Else"
 Usage: #example
 * status = #final
 * code = $sct#6942003
@@ -86,6 +89,8 @@ Usage: #example
 
 Instance: ElseBloodPressure
 InstanceOf: DkCoreBasicObservation
+Title: "Else's blood pressure"
+Description: "Example of a blood pressure measurement for the patient Else"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -105,6 +110,8 @@ Usage: #example
 
 Instance: ElseBodyTemperature
 InstanceOf: DkCoreBasicObservation
+Title: "Else's body temperature"
+Description: "Example of a body temperature measurement for the patient Else"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -118,6 +125,8 @@ Usage: #example
 
 Instance: ElseHeartRate
 InstanceOf: DkCoreBasicObservation
+Title: "Else's heart rate"
+Description: "Example of a heart rate measurement for the patient Else"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -131,6 +140,8 @@ Usage: #example
 
 Instance: ElseRespirationRate
 InstanceOf: DkCoreBasicObservation
+Title: "Else's respiration rate"
+Description: "Example of a respiration rate measurement for the patient Else"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -144,6 +155,8 @@ Usage: #example
 
 Instance: ElsesTOBSscore
 InstanceOf: DkCoreObservation
+Title: "Else's TOBS score"
+Description: "Example of a TOBS (early warning) score for the patient Else"
 Usage: #example
 * status = #final
 * code.coding = $Medcom#MCS88125 "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?"
@@ -187,18 +200,23 @@ Usage: #example
 
 Instance: MaxConsciousness
 InstanceOf: DkCoreObservation
+Title: "Max's level of consciousness"
+Description: "Example of a level of consciousness (ACVPU) assessment for the patient Max"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
+* code.coding[SNOMEDCT] = $sct#6942003
 * code.coding[LOINC] = $LOINC#80288-4
-* code.coding[1] = $sct#6942003
 * subject = Reference(Max)
 * valueCodeableConcept.coding = $sct#450847001
 * method = $sct#733985002 "Reported"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxRespirationRate
 InstanceOf: DkCoreBasicObservation
+Title: "Max's respiration rate"
+Description: "Example of a respiration rate measurement for the patient Max"
 Usage: #example
 * status = #final
 * code.coding[SNOMEDCT] = $sct#86290005
@@ -207,9 +225,12 @@ Usage: #example
 * method = $sct#272391002 "måling"
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * valueQuantity = 13 '/min' "/min"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxHeartRate
 InstanceOf: DkCoreBasicObservation
+Title: "Max's heart rate"
+Description: "Example of a heart rate measurement for the patient Max"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -219,9 +240,12 @@ Usage: #example
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "måling"
 * valueQuantity = 68 '/min' "slag/minut"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxBodyTemperature
 InstanceOf: DkCoreBasicObservation
+Title: "Max's body temperature"
+Description: "Example of a body temperature measurement for the patient Max"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -231,9 +255,12 @@ Usage: #example
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "måling"
 * valueQuantity = 37 'Cel' "grader celcius"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxBloodPressure
 InstanceOf: DkCoreBasicObservation
+Title: "Max's blood pressure"
+Description: "Example of a blood pressure measurement for the patient Max"
 Usage: #example
 * status = #final
 * category = $observation-category#vital-signs
@@ -248,9 +275,12 @@ Usage: #example
 * component[+].code.coding[0] = $LOINC#8462-4
 * component[=].code.coding[+] = $sct#407555005
 * component[=].valueQuantity = 78 'mm[Hg]' "mmHg"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxSaturation
 InstanceOf: DkCoreBasicObservation
+Title: "Max's oxygen saturation"
+Description: "Example of an oxygen saturation measurement for the patient Max"
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
@@ -259,9 +289,12 @@ Usage: #example
 * subject = Reference(Max)
 * effectiveDateTime = "2023-08-08T13:30:00.000Z"
 * method = $sct#272391002 "måling"
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxGlasgowComaScale
 InstanceOf: DkCoreObservation
+Title: "Max's Glasgow Coma Scale"
+Description: "Example of a Glasgow Coma Scale assessment for the patient Max"
 Usage: #example
 * status = #final
 * code.coding[LOINC] = $LOINC#9269-2
@@ -282,7 +315,7 @@ Usage: #example
 * component[=].valueCodeableConcept.coding = $LOINC#LA6560-2 "Confused"
 * component[+].code = $LOINC#9267-6 "Glasgow coma score eye opening"
 * component[=].valueCodeableConcept.coding = $LOINC#LA6556-0 "Eyes open spontaneously"
-
+* performer = Reference(SidselSygeplejerske)
 
 Instance: MaxTOKS
 InstanceOf: Bundle
@@ -314,6 +347,8 @@ Usage: #example
 
 Instance: MaxVitalSignsPanel
 InstanceOf: DkCoreBasicObservation
+Title: "Max's vital signs panel"
+Description: "Example of a vital signs panel grouping the vital signs observations for the patient Max"
 Usage: #example
 * category = $observation-category#vital-signs
 * status = #final
@@ -324,3 +359,5 @@ Usage: #example
 * hasMember[+] = Reference(MaxRespirationRate)
 * hasMember[+] = Reference(MaxHeartRate)
 * hasMember[+] = Reference(MaxBodyTemperature)
+* performer = Reference(SidselSygeplejerske)
+
